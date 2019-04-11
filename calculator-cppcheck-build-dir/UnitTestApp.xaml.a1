@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4263169522">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Activate"/>
+    <functioncall functionName="App"/>
+    <functioncall functionName="Arguments"/>
+    <functioncall functionName="Content"/>
+    <functioncall functionName="CreateDefaultUI"/>
+    <functioncall functionName="FailureException"/>
+    <functioncall functionName="Frame"/>
+    <functioncall functionName="HttpProgress"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="IsDebuggerPresent"/>
+    <functioncall functionName="Name"/>
+    <functioncall functionName="NavigationFailedEventHandler"/>
+    <functioncall functionName="OnNavigationFailed"/>
+    <functioncall functionName="OnSuspending"/>
+    <functioncall functionName="Run"/>
+    <functioncall functionName="SuspendingEventHandler"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="rootFrame"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="void"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3491445769">
+        <error id="unreadVariable" severity="style" msg="Variable &apos;logscale&apos; is assigned a value that is never used." verbose="Variable &apos;logscale&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" line="526"/>
+            <symbol>logscale</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:396:13" call-funcname="i32torat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="149" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="298" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="297" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="323" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="346" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="372" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="398" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="424" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="451" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="473" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="507" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="525" call-argexpr="my_two_pi" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="508" info="Assignment 'my_two_pi=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="326" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="454" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:423:13" call-funcname="divrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="485" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" call-funcname="_dumprawnum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="2" my-argname="rat" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:396:13" call-funcname="i32torat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="149" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="298" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="297" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="323" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="346" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="372" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="398" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="424" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="451" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="473" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="507" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="525" call-argexpr="my_two_pi" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="508" info="Assignment 'my_two_pi=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="326" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="454" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:423:13" call-funcname="divrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="485" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" call-funcname="_dumprawnum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="2" my-argname="rat" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="298" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="297" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="323" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="346" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="372" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="398" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="424" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452" call-argexpr="rattmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="451" info="Assignment 'rattmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="473" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509" call-argexpr="pret" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="507" info="Assignment 'pret=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="525" call-argexpr="my_two_pi" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\support.cpp" linenr="508" info="Assignment 'my_two_pi=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="326" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:419:13" call-funcname="addrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="454" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:423:13" call-funcname="divrat" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="485" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="2"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" call-funcname="_dumprawnum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:447:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="324"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="347"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="373"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="399"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="425"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:448:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="452"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:578:6" my-argnr="2" my-argname="rat" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="581"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:428:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="292"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:450:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="348"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:449:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="374"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:452:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="400"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:451:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="426"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:442:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="474"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:441:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="509"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:453:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="552"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp:596:6" my-argnr="2" my-argname="num" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/support.cpp" linenr="602"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="ChangeConstants" lineNumber="120"/>
+    <functiondecl functionName="intrat" lineNumber="288"/>
+    <functiondecl functionName="rat_equ" lineNumber="320"/>
+    <functiondecl functionName="rat_ge" lineNumber="343"/>
+    <functiondecl functionName="rat_gt" lineNumber="369"/>
+    <functiondecl functionName="rat_le" lineNumber="394"/>
+    <functiondecl functionName="rat_lt" lineNumber="421"/>
+    <functiondecl functionName="rat_neq" lineNumber="448"/>
+    <functiondecl functionName="scale" lineNumber="471"/>
+    <functiondecl functionName="scale2pi" lineNumber="505"/>
+    <functiondecl functionName="inbetween" lineNumber="549"/>
+    <functiondecl functionName="_dumprawrat" lineNumber="578"/>
+    <functiondecl functionName="_dumprawnum" lineNumber="596"/>
+    <functiondecl functionName="_readconstants" lineNumber="615"/>
+    <functiondecl functionName="trimit" lineNumber="679"/>
+    <functiondecl functionName="ChangeConstants" lineNumber="120"/>
+    <functiondecl functionName="intrat" lineNumber="288"/>
+    <functiondecl functionName="rat_equ" lineNumber="320"/>
+    <functiondecl functionName="rat_ge" lineNumber="343"/>
+    <functiondecl functionName="rat_gt" lineNumber="369"/>
+    <functiondecl functionName="rat_le" lineNumber="394"/>
+    <functiondecl functionName="rat_lt" lineNumber="421"/>
+    <functiondecl functionName="rat_neq" lineNumber="448"/>
+    <functiondecl functionName="scale" lineNumber="471"/>
+    <functiondecl functionName="scale2pi" lineNumber="505"/>
+    <functiondecl functionName="inbetween" lineNumber="549"/>
+    <functiondecl functionName="_dumprawrat" lineNumber="578"/>
+    <functiondecl functionName="_dumprawnum" lineNumber="596"/>
+    <functiondecl functionName="_readconstants" lineNumber="615"/>
+    <functiondecl functionName="trimit" lineNumber="679"/>
+    <functiondecl functionName="ChangeConstants" lineNumber="120"/>
+    <functiondecl functionName="intrat" lineNumber="288"/>
+    <functiondecl functionName="rat_equ" lineNumber="320"/>
+    <functiondecl functionName="rat_ge" lineNumber="343"/>
+    <functiondecl functionName="rat_gt" lineNumber="369"/>
+    <functiondecl functionName="rat_le" lineNumber="394"/>
+    <functiondecl functionName="rat_lt" lineNumber="421"/>
+    <functiondecl functionName="rat_neq" lineNumber="448"/>
+    <functiondecl functionName="scale" lineNumber="471"/>
+    <functiondecl functionName="scale2pi" lineNumber="505"/>
+    <functiondecl functionName="inbetween" lineNumber="549"/>
+    <functiondecl functionName="_dumprawrat" lineNumber="578"/>
+    <functiondecl functionName="_dumprawnum" lineNumber="596"/>
+    <functiondecl functionName="_readconstants" lineNumber="615"/>
+    <functiondecl functionName="trimit" lineNumber="679"/>
+    <functioncall functionName="ANGLE_DEG"/>
+    <functioncall functionName="ANGLE_GRAD"/>
+    <functioncall functionName="ANGLE_RAD"/>
+    <functioncall functionName="BASEX"/>
+    <functioncall functionName="FMT_ENGINEERING"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="FMT_SCIENTIFIC"/>
+    <functioncall functionName="INIT_AND_DUMP_RAW_NUM_IF_NULL"/>
+    <functioncall functionName="INIT_AND_DUMP_RAW_RAT_IF_NULL"/>
+    <functioncall functionName="OutputDebugString"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="_createrat"/>
+    <functioncall functionName="_destroynum"/>
+    <functioncall functionName="_destroyrat"/>
+    <functioncall functionName="_dumprawnum"/>
+    <functioncall functionName="_dumprawrat"/>
+    <functioncall functionName="_dupnum"/>
+    <functioncall functionName="_exprat"/>
+    <functioncall functionName="_readconstants"/>
+    <functioncall functionName="addrat"/>
+    <functioncall functionName="asinrat"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="bret"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="divrat"/>
+    <functioncall functionName="e_to_one_half"/>
+    <functioncall functionName="equnum"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="extraPrecision"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flatrat"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="g_ftrueinfinite"/>
+    <functioncall functionName="g_ratio"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="i32tonum"/>
+    <functioncall functionName="i32torat"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="init_num_five"/>
+    <functioncall functionName="init_num_one"/>
+    <functioncall functionName="init_num_six"/>
+    <functioncall functionName="init_num_ten"/>
+    <functioncall functionName="init_num_two"/>
+    <functioncall functionName="init_p_e_to_one_half"/>
+    <functioncall functionName="init_p_ln_ten"/>
+    <functioncall functionName="init_p_ln_two"/>
+    <functioncall functionName="init_p_one_pt_five_pi"/>
+    <functioncall functionName="init_p_pi"/>
+    <functioncall functionName="init_p_pi_over_two"/>
+    <functioncall functionName="init_p_pt_eight_five"/>
+    <functioncall functionName="init_p_rad_to_deg"/>
+    <functioncall functionName="init_p_rad_to_grad"/>
+    <functioncall functionName="init_p_rat_180"/>
+    <functioncall functionName="init_p_rat_200"/>
+    <functioncall functionName="init_p_rat_360"/>
+    <functioncall functionName="init_p_rat_400"/>
+    <functioncall functionName="init_p_rat_byte"/>
+    <functioncall functionName="init_p_rat_dword"/>
+    <functioncall functionName="init_p_rat_exp"/>
+    <functioncall functionName="init_p_rat_half"/>
+    <functioncall functionName="init_p_rat_max_exp"/>
+    <functioncall functionName="init_p_rat_max_fact"/>
+    <functioncall functionName="init_p_rat_max_i32"/>
+    <functioncall functionName="init_p_rat_min_exp"/>
+    <functioncall functionName="init_p_rat_min_fact"/>
+    <functioncall functionName="init_p_rat_min_i32"/>
+    <functioncall functionName="init_p_rat_neg_one"/>
+    <functioncall functionName="init_p_rat_negsmallest"/>
+    <functioncall functionName="init_p_rat_one"/>
+    <functioncall functionName="init_p_rat_qword"/>
+    <functioncall functionName="init_p_rat_six"/>
+    <functioncall functionName="init_p_rat_smallest"/>
+    <functioncall functionName="init_p_rat_ten"/>
+    <functioncall functionName="init_p_rat_two"/>
+    <functioncall functionName="init_p_rat_word"/>
+    <functioncall functionName="init_p_rat_zero"/>
+    <functioncall functionName="init_p_two_pi"/>
+    <functioncall functionName="init_q_e_to_one_half"/>
+    <functioncall functionName="init_q_ln_ten"/>
+    <functioncall functionName="init_q_ln_two"/>
+    <functioncall functionName="init_q_one_pt_five_pi"/>
+    <functioncall functionName="init_q_pi"/>
+    <functioncall functionName="init_q_pi_over_two"/>
+    <functioncall functionName="init_q_pt_eight_five"/>
+    <functioncall functionName="init_q_rad_to_deg"/>
+    <functioncall functionName="init_q_rad_to_grad"/>
+    <functioncall functionName="init_q_rat_180"/>
+    <functioncall functionName="init_q_rat_200"/>
+    <functioncall functionName="init_q_rat_360"/>
+    <functioncall functionName="init_q_rat_400"/>
+    <functioncall functionName="init_q_rat_byte"/>
+    <functioncall functionName="init_q_rat_dword"/>
+    <functioncall functionName="init_q_rat_exp"/>
+    <functioncall functionName="init_q_rat_half"/>
+    <functioncall functionName="init_q_rat_max_exp"/>
+    <functioncall functionName="init_q_rat_max_fact"/>
+    <functioncall functionName="init_q_rat_max_i32"/>
+    <functioncall functionName="init_q_rat_min_exp"/>
+    <functioncall functionName="init_q_rat_min_fact"/>
+    <functioncall functionName="init_q_rat_min_i32"/>
+    <functioncall functionName="init_q_rat_neg_one"/>
+    <functioncall functionName="init_q_rat_negsmallest"/>
+    <functioncall functionName="init_q_rat_one"/>
+    <functioncall functionName="init_q_rat_qword"/>
+    <functioncall functionName="init_q_rat_six"/>
+    <functioncall functionName="init_q_rat_smallest"/>
+    <functioncall functionName="init_q_rat_ten"/>
+    <functioncall functionName="init_q_rat_two"/>
+    <functioncall functionName="init_q_rat_word"/>
+    <functioncall functionName="init_q_rat_zero"/>
+    <functioncall functionName="init_q_two_pi"/>
+    <functioncall functionName="intrat"/>
+    <functioncall functionName="ln_ten"/>
+    <functioncall functionName="ln_two"/>
+    <functioncall functionName="lograt"/>
+    <functioncall functionName="logscale"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="modrat"/>
+    <functioncall functionName="mulrat"/>
+    <functioncall functionName="my_two_pi"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="num_five"/>
+    <functioncall functionName="num_one"/>
+    <functioncall functionName="num_six"/>
+    <functioncall functionName="num_ten"/>
+    <functioncall functionName="num_two"/>
+    <functioncall functionName="numpowi32"/>
+    <functioncall functionName="one_pt_five_pi"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="pi"/>
+    <functioncall functionName="pi_over_two"/>
+    <functioncall functionName="pp"/>
+    <functioncall functionName="pq"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="pret"/>
+    <functioncall functionName="pt_eight_five"/>
+    <functioncall functionName="px"/>
+    <functioncall functionName="rad_to_deg"/>
+    <functioncall functionName="rad_to_grad"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="range"/>
+    <functioncall functionName="rat_180"/>
+    <functioncall functionName="rat_200"/>
+    <functioncall functionName="rat_360"/>
+    <functioncall functionName="rat_400"/>
+    <functioncall functionName="rat_byte"/>
+    <functioncall functionName="rat_dword"/>
+    <functioncall functionName="rat_exp"/>
+    <functioncall functionName="rat_gt"/>
+    <functioncall functionName="rat_half"/>
+    <functioncall functionName="rat_lt"/>
+    <functioncall functionName="rat_max_exp"/>
+    <functioncall functionName="rat_max_fact"/>
+    <functioncall functionName="rat_max_i32"/>
+    <functioncall functionName="rat_min_exp"/>
+    <functioncall functionName="rat_min_fact"/>
+    <functioncall functionName="rat_min_i32"/>
+    <functioncall functionName="rat_nRadix"/>
+    <functioncall functionName="rat_neg_one"/>
+    <functioncall functionName="rat_negsmallest"/>
+    <functioncall functionName="rat_one"/>
+    <functioncall functionName="rat_qword"/>
+    <functioncall functionName="rat_six"/>
+    <functioncall functionName="rat_smallest"/>
+    <functioncall functionName="rat_ten"/>
+    <functioncall functionName="rat_two"/>
+    <functioncall functionName="rat_word"/>
+    <functioncall functionName="rat_zero"/>
+    <functioncall functionName="ratpowi32"/>
+    <functioncall functionName="rattmp"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="scalefact"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="subrat"/>
+    <functioncall functionName="trim"/>
+    <functioncall functionName="two_pi"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="varname"/>
+    <functioncall functionName="wcout"/>
+    <functioncall functionName="zernum"/>
+  </FileInfo>
+</analyzerinfo>

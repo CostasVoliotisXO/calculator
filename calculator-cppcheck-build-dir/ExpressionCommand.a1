@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3209060247">
+  <FileInfo check="Bounds checking">
+    <ArraySize array="g_sids" size="120"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:12:16" my-argnr="2" my-argname="item" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="17"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:26:16" my-argnr="1" my-argname="size" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="28"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:149:16" my-argnr="1" my-argname="suffix" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="151"/>
+  </FileInfo>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_command&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_command&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" line="36"/>
+            <symbol>m_command</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_command&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_command&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" line="42"/>
+            <symbol>m_command</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalculatorVector::GetSize&apos; can be const." verbose="The member function &apos;CalculatorVector::GetSize&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="26"/>
+            <symbol>CalculatorVector::GetSize</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="149"/>
+            <symbol>CalculatorVector::GetExpressionSuffix</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalcEngine::CalcNumSec::IsEmpty&apos; can be const." verbose="The member function &apos;CalcEngine::CalcNumSec::IsEmpty&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="22"/>
+            <symbol>CalcEngine::CalcNumSec::IsEmpty</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalcEngine::CalcNumSec::IsNegative&apos; can be const." verbose="The member function &apos;CalcEngine::CalcNumSec::IsNegative&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="24"/>
+            <symbol>CalcEngine::CalcNumSec::IsNegative</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CCalcEngine::FInErrorState&apos; can be const." verbose="The member function &apos;CCalcEngine::FInErrorState&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcEngine.h" line="60"/>
+            <symbol>CCalcEngine::FInErrorState</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CCalcEngine::FInRecordingState&apos; can be const." verbose="The member function &apos;CCalcEngine::FInRecordingState&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcEngine.h" line="61"/>
+            <symbol>CCalcEngine::FInRecordingState</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;COpndCommand::GetString&apos; can be const." verbose="The member function &apos;COpndCommand::GetString&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="70"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" line="290"/>
+            <symbol>COpndCommand::GetString</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="21"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="23"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="24"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="25"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CalcInput&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CalcInput&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="39"/>
+            <symbol>CalcInput</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CParentheses&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CParentheses&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="12"/>
+            <symbol>CParentheses</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CUnaryCommand&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CUnaryCommand&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="24"/>
+            <symbol>CUnaryCommand</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CBinaryCommand&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CBinaryCommand&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="39"/>
+            <symbol>CBinaryCommand</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetCommand" lineNumber="19"/>
+    <functiondecl functionName="GetCommandType" lineNumber="24"/>
+    <functiondecl functionName="Accept" lineNumber="29"/>
+    <functiondecl functionName="GetCommands" lineNumber="47"/>
+    <functiondecl functionName="GetCommandType" lineNumber="52"/>
+    <functiondecl functionName="SetCommand" lineNumber="57"/>
+    <functiondecl functionName="SetCommands" lineNumber="63"/>
+    <functiondecl functionName="Accept" lineNumber="70"/>
+    <functiondecl functionName="SetCommand" lineNumber="78"/>
+    <functiondecl functionName="GetCommand" lineNumber="83"/>
+    <functiondecl functionName="GetCommandType" lineNumber="88"/>
+    <functiondecl functionName="Accept" lineNumber="93"/>
+    <functiondecl functionName="GetCommands" lineNumber="113"/>
+    <functiondecl functionName="AppendCommand" lineNumber="123"/>
+    <functiondecl functionName="ToggleSign" lineNumber="141"/>
+    <functiondecl functionName="RemoveFromEnd" lineNumber="159"/>
+    <functiondecl functionName="IsNegative" lineNumber="187"/>
+    <functiondecl functionName="IsSciFmt" lineNumber="192"/>
+    <functiondecl functionName="IsDecimalPresent" lineNumber="197"/>
+    <functiondecl functionName="GetCommandType" lineNumber="202"/>
+    <functiondecl functionName="ClearAllAndAppendCommand" lineNumber="207"/>
+    <functiondecl functionName="GetToken" lineNumber="216"/>
+    <functiondecl functionName="GetString" lineNumber="290"/>
+    <functiondecl functionName="Accept" lineNumber="302"/>
+    <functioncall functionName="Append"/>
+    <functioncall functionName="BIN_RADIX"/>
+    <functioncall functionName="BYTE_WIDTH"/>
+    <functioncall functionName="Backspace"/>
+    <functioncall functionName="BinaryCommand"/>
+    <functioncall functionName="CBinaryCommand"/>
+    <functioncall functionName="COpndCommand"/>
+    <functioncall functionName="CParentheses"/>
+    <functioncall functionName="CUnaryCommand"/>
+    <functioncall functionName="CalcInput"/>
+    <functioncall functionName="ChangeConstants"/>
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClearAllAndAppendCommand"/>
+    <functioncall functionName="Command0"/>
+    <functioncall functionName="DEC_RADIX"/>
+    <functioncall functionName="DWORD_WIDTH"/>
+    <functioncall functionName="Decimal"/>
+    <functioncall functionName="Eight"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="Five"/>
+    <functioncall functionName="Four"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetExpressionSuffix"/>
+    <functioncall functionName="GetSize"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="HEX_RADIX"/>
+    <functioncall functionName="IdStrFromCmdId"/>
+    <functioncall functionName="MAXPRECDEPTH"/>
+    <functioncall functionName="NUM_WIDTH_LENGTH"/>
+    <functioncall functionName="Negate"/>
+    <functioncall functionName="Nine"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="Number"/>
+    <functioncall functionName="OCT_RADIX"/>
+    <functioncall functionName="One"/>
+    <functioncall functionName="OperandCommand"/>
+    <functioncall functionName="Parentheses"/>
+    <functioncall functionName="QWORD_WIDTH"/>
+    <functioncall functionName="Rational"/>
+    <functioncall functionName="RemoveAt"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="S_OK"/>
+    <functioncall functionName="Seven"/>
+    <functioncall functionName="Six"/>
+    <functioncall functionName="Three"/>
+    <functioncall functionName="ToString"/>
+    <functioncall functionName="Two"/>
+    <functioncall functionName="UnaryCommand"/>
+    <functioncall functionName="Visit"/>
+    <functioncall functionName="WORD_WIDTH"/>
+    <functioncall functionName="Zero"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="chExp"/>
+    <functioncall functionName="chNegate"/>
+    <functioncall functionName="chPlus"/>
+    <functioncall functionName="chZero"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="command"/>
+    <functioncall functionName="command1"/>
+    <functioncall functionName="command2"/>
+    <functioncall functionName="commandCount"/>
+    <functioncall functionName="commands"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="currentPair"/>
+    <functioncall functionName="decSymbol"/>
+    <functioncall functionName="decimalSymbol"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="expressionSuffix"/>
+    <functioncall functionName="fDecimal"/>
+    <functioncall functionName="fDigitsFound"/>
+    <functioncall functionName="fNegative"/>
+    <functioncall functionName="fSciFmt"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="hr"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="ids"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="isNegative"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="iter"/>
+    <functioncall functionName="long"/>
+    <functioncall functionName="m_base"/>
+    <functioncall functionName="m_command"/>
+    <functioncall functionName="m_commands"/>
+    <functioncall functionName="m_decPtIndex"/>
+    <functioncall functionName="m_decSymbol"/>
+    <functioncall functionName="m_exponent"/>
+    <functioncall functionName="m_fDecimal"/>
+    <functioncall functionName="m_fInitialized"/>
+    <functioncall functionName="m_fNegative"/>
+    <functioncall functionName="m_fSciFmt"/>
+    <functioncall functionName="m_hasDecimal"/>
+    <functioncall functionName="m_hasExponent"/>
+    <functioncall functionName="m_isNegative"/>
+    <functioncall functionName="m_radix"/>
+    <functioncall functionName="make_shared"/>
+    <functioncall functionName="nCommands"/>
+    <functioncall functionName="nOpCode"/>
+    <functioncall functionName="nTokens"/>
+    <functioncall functionName="nextOpCode"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="num"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="rat"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="startIter"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="to_wstring"/>
+    <functioncall functionName="trimIdx"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

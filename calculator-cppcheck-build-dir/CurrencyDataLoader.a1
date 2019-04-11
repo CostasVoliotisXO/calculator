@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3341728781">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;didLoad&apos; can be reduced." verbose="The scope of the variable &apos;didLoad&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp" line="196"/>
+            <symbol>didLoad</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CurrencyUnitMetadata&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CurrencyUnitMetadata&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="45"/>
+            <symbol>CurrencyUnitMetadata</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CurrencyDataLoader&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CurrencyDataLoader&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="54"/>
+            <symbol>CurrencyDataLoader</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="UnregisterForNetworkBehaviorChanges" lineNumber="135"/>
+    <functiondecl functionName="RegisterForNetworkBehaviorChanges" lineNumber="140"/>
+    <functiondecl functionName="LoadFinished" lineNumber="162"/>
+    <functiondecl functionName="LoadedFromCache" lineNumber="167"/>
+    <functiondecl functionName="LoadedFromWeb" lineNumber="172"/>
+    <functiondecl functionName="ResetLoadStatus" lineNumber="177"/>
+    <functiondecl functionName="LoadData" lineNumber="183"/>
+    <functiondecl functionName="LoadOrderedCategories" lineNumber="216"/>
+    <functiondecl functionName="TryLoadDataFromCacheAsync" lineNumber="313"/>
+    <functiondecl functionName="TryFinishLoadFromCacheAsync" lineNumber="356"/>
+    <functiondecl functionName="TryLoadDataFromWebAsync" lineNumber="398"/>
+    <functiondecl functionName="TryLoadDataFromWebOverrideAsync" lineNumber="483"/>
+    <functiondecl functionName="GuaranteeSelectedUnits" lineNumber="668"/>
+    <functiondecl functionName="NotifyDataLoadFinished" lineNumber="690"/>
+    <functiondecl functionName="SaveLangCodeAndTimestamp" lineNumber="703"/>
+    <functiondecl functionName="UpdateDisplayedTimestamp" lineNumber="715"/>
+    <functiondecl functionName="GetCurrencyTimestamp" lineNumber="725"/>
+    <functiondecl functionName="GetDefaultFromToCurrency" lineNumber="749"/>
+    <functiondecl functionName="TryGetLastUsedCurrenciesFromLocalSettings" lineNumber="784"/>
+    <functioncall functionName="ALL_RATIOS_DATA_FILENAME"/>
+    <functioncall functionName="AllRatiosDataFilename"/>
+    <functioncall functionName="CACHE_DELIMITER"/>
+    <functioncall functionName="CACHE_LANGCODE_KEY"/>
+    <functioncall functionName="CACHE_TIMESTAMP_KEY"/>
+    <functioncall functionName="CURRENCY_CODE_KEY"/>
+    <functioncall functionName="CURRENCY_UNIT_FROM_KEY"/>
+    <functioncall functionName="CURRENCY_UNIT_TO_KEY"/>
+    <functioncall functionName="CacheLangcodeKey"/>
+    <functioncall functionName="CacheTimestampKey"/>
+    <functioncall functionName="ConversionData"/>
+    <functioncall functionName="Currency"/>
+    <functioncall functionName="CurrencyDataLoadFinished"/>
+    <functioncall functionName="CurrencyDataLoader"/>
+    <functioncall functionName="CurrencyRatio"/>
+    <functioncall functionName="CurrencyTimestampCallback"/>
+    <functioncall functionName="CurrencyUnitFromKey"/>
+    <functioncall functionName="CurrencyUnitMetadata"/>
+    <functioncall functionName="CurrencyUnitToKey"/>
+    <functioncall functionName="DAY_DURATION"/>
+    <functioncall functionName="DEFAULT_FROM_CURRENCY"/>
+    <functioncall functionName="DEFAULT_FROM_TO_CURRENCY_FILE_URI"/>
+    <functioncall functionName="DEFAULT_TO_CURRENCY"/>
+    <functioncall functionName="Data"/>
+    <functioncall functionName="Data_Zetabytes"/>
+    <functioncall functionName="DateTimeFormatter"/>
+    <functioncall functionName="DefaultCurrencyCode"/>
+    <functioncall functionName="Equals"/>
+    <functioncall functionName="FORMATTER_DIGIT_COUNT"/>
+    <functioncall functionName="FROM_KEY"/>
+    <functioncall functionName="FailedToLoad"/>
+    <functioncall functionName="FinalizeUnits"/>
+    <functioncall functionName="Format"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetCurrencyMetadata"/>
+    <functioncall functionName="GetCurrencyRatios"/>
+    <functioncall functionName="GetCurrencyTimestamp"/>
+    <functioncall functionName="GetDefaultFromToCurrency"/>
+    <functioncall functionName="GetDigitSymbolFromEnUsDigit"/>
+    <functioncall functionName="GetFileFromApplicationUriAsync"/>
+    <functioncall functionName="GetForCurrentThread"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetLocalizedString"/>
+    <functioncall functionName="GetNamedNumber"/>
+    <functioncall functionName="GetNamedObject"/>
+    <functioncall functionName="GetNamedString"/>
+    <functioncall functionName="GetNetworkAccessBehavior"/>
+    <functioncall functionName="GetObject"/>
+    <functioncall functionName="GetRegionalSettingsAwareDecimalFormatter"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="GetUniversalSystemTime"/>
+    <functioncall functionName="GuaranteeSelectedUnits"/>
+    <functioncall functionName="HasKey"/>
+    <functioncall functionName="HttpProgress"/>
+    <functioncall functionName="Insert"/>
+    <functioncall functionName="IsDateTimeOlderThan"/>
+    <functioncall functionName="IsRtlLayout"/>
+    <functioncall functionName="LoadFinished"/>
+    <functioncall functionName="LoadedFromCache"/>
+    <functioncall functionName="LoadedFromWeb"/>
+    <functioncall functionName="LocalCacheFolder"/>
+    <functioncall functionName="LocalSettings"/>
+    <functioncall functionName="LogPlatformException"/>
+    <functioncall functionName="LogStandardException"/>
+    <functioncall functionName="LogUserRequestedRefreshFailed"/>
+    <functioncall functionName="Lookup"/>
+    <functioncall functionName="NetworkBehaviorChanged"/>
+    <functioncall functionName="NetworkBehaviorChangedHandler"/>
+    <functioncall functionName="NotLoaded"/>
+    <functioncall functionName="NotifyDataLoadFinished"/>
+    <functioncall functionName="OnNetworkBehaviorChanged"/>
+    <functioncall functionName="Parse"/>
+    <functioncall functionName="RATIO_KEY"/>
+    <functioncall functionName="ReadFileFromFolder"/>
+    <functioncall functionName="ReadTextAsync"/>
+    <functioncall functionName="RegisterForNetworkBehaviorChanges"/>
+    <functioncall functionName="ReplaceExisting"/>
+    <functioncall functionName="ResetLoadStatus"/>
+    <functioncall functionName="STATIC_DATA_FILENAME"/>
+    <functioncall functionName="SaveLangCodeAndTimestamp"/>
+    <functioncall functionName="SaveSelectedUnitsToLocalSettings"/>
+    <functioncall functionName="Serialize"/>
+    <functioncall functionName="SetResponseLanguage"/>
+    <functioncall functionName="SetSourceCurrencyCode"/>
+    <functioncall functionName="Size"/>
+    <functioncall functionName="StaticDataFilename"/>
+    <functioncall functionName="StringReference"/>
+    <functioncall functionName="TO_KEY"/>
+    <functioncall functionName="TryFinishLoadFromCacheAsync"/>
+    <functioncall functionName="TryGetLastUsedCurrenciesFromLocalSettings"/>
+    <functioncall functionName="TryLoadDataFromCacheAsync"/>
+    <functioncall functionName="TryLoadDataFromWebAsync"/>
+    <functioncall functionName="TryParse"/>
+    <functioncall functionName="TryParseAllRatiosData"/>
+    <functioncall functionName="TryParseStaticData"/>
+    <functioncall functionName="TryParseWebResponses"/>
+    <functioncall functionName="UnitHash"/>
+    <functioncall functionName="UniversalTime"/>
+    <functioncall functionName="UnregisterForNetworkBehaviorChanges"/>
+    <functioncall functionName="UpdateDisplayedTimestamp"/>
+    <functioncall functionName="Uri"/>
+    <functioncall functionName="Values"/>
+    <functioncall functionName="WEEK_DURATION"/>
+    <functioncall functionName="WriteFileToFolder"/>
+    <functioncall functionName="__FUNCTIONW__"/>
+    <functioncall functionName="accessibleRatioString"/>
+    <functioncall functionName="allRatiosData"/>
+    <functioncall functionName="allRatiosJson"/>
+    <functioncall functionName="allRatiosResponse"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cachedFiles"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="client"/>
+    <functioncall functionName="conversions"/>
+    <functioncall functionName="countryCode"/>
+    <functioncall functionName="countryName"/>
+    <functioncall functionName="create_task"/>
+    <functioncall functionName="currencyCode"/>
+    <functioncall functionName="currencyName"/>
+    <functioncall functionName="currencySymbol"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="defaultCurrencies"/>
+    <functioncall functionName="defaultFromToCurrencyFile"/>
+    <functioncall functionName="didLoad"/>
+    <functioncall functionName="didParse"/>
+    <functioncall functionName="double"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ex"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fileContents"/>
+    <functioncall functionName="fileUri"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="foundInLocalSettings"/>
+    <functioncall functionName="fromCurrency"/>
+    <functioncall functionName="fromKey"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="isConversionSource"/>
+    <functioncall functionName="isConversionTarget"/>
+    <functioncall functionName="isConversionTargetSet"/>
+    <functioncall functionName="isWeekOld"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="loadComplete"/>
+    <functioncall functionName="loadFunctions"/>
+    <functioncall functionName="localCacheFolder"/>
+    <functioncall functionName="lock"/>
+    <functioncall functionName="m_cacheTimestamp"/>
+    <functioncall functionName="m_client"/>
+    <functioncall functionName="m_currencyUnits"/>
+    <functioncall functionName="m_currencyUnitsMutex"/>
+    <functioncall functionName="m_isRtlLanguage"/>
+    <functioncall functionName="m_loadStatus"/>
+    <functioncall functionName="m_meteredOverrideSet"/>
+    <functioncall functionName="m_networkAccessBehavior"/>
+    <functioncall functionName="m_networkManager"/>
+    <functioncall functionName="m_ratioFormat"/>
+    <functioncall functionName="m_responseLanguage"/>
+    <functioncall functionName="m_timestampFormat"/>
+    <functioncall functionName="make_pair"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="newBehavior"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="pair"/>
+    <functioncall functionName="parsedData"/>
+    <functioncall functionName="pow"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="ratio"/>
+    <functioncall functionName="ratioMap"/>
+    <functioncall functionName="ratioString"/>
+    <functioncall functionName="rawJson"/>
+    <functioncall functionName="relativeRatio"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="rounded"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="scale"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="sort"/>
+    <functioncall functionName="sourceCurrencyCode"/>
+    <functioncall functionName="staticData"/>
+    <functioncall functionName="staticDataJson"/>
+    <functioncall functionName="staticDataResponse"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="symbol"/>
+    <functioncall functionName="symbol1"/>
+    <functioncall functionName="symbol2"/>
+    <functioncall functionName="targetCurrencyCode"/>
+    <functioncall functionName="targetUnit"/>
+    <functioncall functionName="task"/>
+    <functioncall functionName="then"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="timestamp"/>
+    <functioncall functionName="toCurrency"/>
+    <functioncall functionName="toKey"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unit"/>
+    <functioncall functionName="unit1"/>
+    <functioncall functionName="unit2"/>
+    <functioncall functionName="unitFactor"/>
+    <functioncall functionName="use_current"/>
+    <functioncall functionName="vector"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

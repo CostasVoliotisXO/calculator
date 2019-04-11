@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="3" str="#"/>
+    <tok fileIndex="0" linenr="3" str="include"/>
+    <tok fileIndex="0" linenr="3" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;Header Files/Number.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="using"/>
+    <tok fileIndex="0" linenr="6" str="namespace"/>
+    <tok fileIndex="0" linenr="6" str="std"/>
+    <tok fileIndex="0" linenr="6" str=";"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="9" str="{"/>
+    <tok fileIndex="0" linenr="10" str="Number"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Number"/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="10" str="noexcept"/>
+    <tok fileIndex="0" linenr="10" str=":"/>
+    <tok fileIndex="0" linenr="11" str="Number"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str="1"/>
+    <tok fileIndex="0" linenr="11" str=","/>
+    <tok fileIndex="0" linenr="11" str="0"/>
+    <tok fileIndex="0" linenr="11" str=","/>
+    <tok fileIndex="0" linenr="11" str="{"/>
+    <tok fileIndex="0" linenr="11" str="0"/>
+    <tok fileIndex="0" linenr="11" str="}"/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="12" str="}"/>
+    <tok fileIndex="0" linenr="14" str="Number"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="Number"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="int32_t"/>
+    <tok fileIndex="0" linenr="14" str="sign"/>
+    <tok fileIndex="0" linenr="14" str=","/>
+    <tok fileIndex="0" linenr="14" str="int32_t"/>
+    <tok fileIndex="0" linenr="14" str="exp"/>
+    <tok fileIndex="0" linenr="14" str=","/>
+    <tok fileIndex="0" linenr="14" str="vector"/>
+    <tok fileIndex="0" linenr="14" str="&lt;"/>
+    <tok fileIndex="0" linenr="14" str="uint32_t"/>
+    <tok fileIndex="0" linenr="14" str="&gt;"/>
+    <tok fileIndex="0" linenr="14" str="const"/>
+    <tok fileIndex="0" linenr="14" str="&amp;"/>
+    <tok fileIndex="0" linenr="14" str="mantissa"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="14" str="noexcept"/>
+    <tok fileIndex="0" linenr="14" str=":"/>
+    <tok fileIndex="0" linenr="15" str="m_sign"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="15" str="sign"/>
+    <tok fileIndex="0" linenr="15" str="}"/>
+    <tok fileIndex="0" linenr="15" str=","/>
+    <tok fileIndex="0" linenr="16" str="m_exp"/>
+    <tok fileIndex="0" linenr="16" str="{"/>
+    <tok fileIndex="0" linenr="16" str="exp"/>
+    <tok fileIndex="0" linenr="16" str="}"/>
+    <tok fileIndex="0" linenr="16" str=","/>
+    <tok fileIndex="0" linenr="17" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="17" str="mantissa"/>
+    <tok fileIndex="0" linenr="17" str="}"/>
+    <tok fileIndex="0" linenr="18" str="{"/>
+    <tok fileIndex="0" linenr="18" str="}"/>
+    <tok fileIndex="0" linenr="20" str="Number"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="Number"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="PNUMBER"/>
+    <tok fileIndex="0" linenr="20" str="p"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="20" str="noexcept"/>
+    <tok fileIndex="0" linenr="20" str=":"/>
+    <tok fileIndex="0" linenr="21" str="m_sign"/>
+    <tok fileIndex="0" linenr="21" str="{"/>
+    <tok fileIndex="0" linenr="21" str="p"/>
+    <tok fileIndex="0" linenr="21" str="-&gt;"/>
+    <tok fileIndex="0" linenr="21" str="sign"/>
+    <tok fileIndex="0" linenr="21" str="}"/>
+    <tok fileIndex="0" linenr="21" str=","/>
+    <tok fileIndex="0" linenr="22" str="m_exp"/>
+    <tok fileIndex="0" linenr="22" str="{"/>
+    <tok fileIndex="0" linenr="22" str="p"/>
+    <tok fileIndex="0" linenr="22" str="-&gt;"/>
+    <tok fileIndex="0" linenr="22" str="exp"/>
+    <tok fileIndex="0" linenr="22" str="}"/>
+    <tok fileIndex="0" linenr="22" str=","/>
+    <tok fileIndex="0" linenr="23" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="23" str="{"/>
+    <tok fileIndex="0" linenr="23" str="}"/>
+    <tok fileIndex="0" linenr="24" str="{"/>
+    <tok fileIndex="0" linenr="25" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="25" str="."/>
+    <tok fileIndex="0" linenr="25" str="reserve"/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="p"/>
+    <tok fileIndex="0" linenr="25" str="-&gt;"/>
+    <tok fileIndex="0" linenr="25" str="cdigit"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="copy"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="p"/>
+    <tok fileIndex="0" linenr="26" str="-&gt;"/>
+    <tok fileIndex="0" linenr="26" str="mant"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="p"/>
+    <tok fileIndex="0" linenr="26" str="-&gt;"/>
+    <tok fileIndex="0" linenr="26" str="mant"/>
+    <tok fileIndex="0" linenr="26" str="+"/>
+    <tok fileIndex="0" linenr="26" str="p"/>
+    <tok fileIndex="0" linenr="26" str="-&gt;"/>
+    <tok fileIndex="0" linenr="26" str="cdigit"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="back_inserter"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="27" str="}"/>
+    <tok fileIndex="0" linenr="29" str="PNUMBER"/>
+    <tok fileIndex="0" linenr="29" str="Number"/>
+    <tok fileIndex="0" linenr="29" str="::"/>
+    <tok fileIndex="0" linenr="29" str="ToPNUMBER"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="29" str="const"/>
+    <tok fileIndex="0" linenr="30" str="{"/>
+    <tok fileIndex="0" linenr="31" str="PNUMBER"/>
+    <tok fileIndex="0" linenr="31" str="ret"/>
+    <tok fileIndex="0" linenr="31" str="="/>
+    <tok fileIndex="0" linenr="31" str="_createnum"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str="static_cast"/>
+    <tok fileIndex="0" linenr="31" str="&lt;"/>
+    <tok fileIndex="0" linenr="31" str="uint32_t"/>
+    <tok fileIndex="0" linenr="31" str="&gt;"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str="this"/>
+    <tok fileIndex="0" linenr="31" str="-&gt;"/>
+    <tok fileIndex="0" linenr="31" str="Mantissa"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str="."/>
+    <tok fileIndex="0" linenr="31" str="size"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str="+"/>
+    <tok fileIndex="0" linenr="31" str="1"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="32" str="ret"/>
+    <tok fileIndex="0" linenr="32" str="-&gt;"/>
+    <tok fileIndex="0" linenr="32" str="sign"/>
+    <tok fileIndex="0" linenr="32" str="="/>
+    <tok fileIndex="0" linenr="32" str="this"/>
+    <tok fileIndex="0" linenr="32" str="-&gt;"/>
+    <tok fileIndex="0" linenr="32" str="Sign"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="32" str=";"/>
+    <tok fileIndex="0" linenr="33" str="ret"/>
+    <tok fileIndex="0" linenr="33" str="-&gt;"/>
+    <tok fileIndex="0" linenr="33" str="exp"/>
+    <tok fileIndex="0" linenr="33" str="="/>
+    <tok fileIndex="0" linenr="33" str="this"/>
+    <tok fileIndex="0" linenr="33" str="-&gt;"/>
+    <tok fileIndex="0" linenr="33" str="Exp"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="34" str="ret"/>
+    <tok fileIndex="0" linenr="34" str="-&gt;"/>
+    <tok fileIndex="0" linenr="34" str="cdigit"/>
+    <tok fileIndex="0" linenr="34" str="="/>
+    <tok fileIndex="0" linenr="34" str="static_cast"/>
+    <tok fileIndex="0" linenr="34" str="&lt;"/>
+    <tok fileIndex="0" linenr="34" str="int32_t"/>
+    <tok fileIndex="0" linenr="34" str="&gt;"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="this"/>
+    <tok fileIndex="0" linenr="34" str="-&gt;"/>
+    <tok fileIndex="0" linenr="34" str="Mantissa"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str="."/>
+    <tok fileIndex="0" linenr="34" str="size"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="36" str="MANTTYPE"/>
+    <tok fileIndex="0" linenr="36" str="*"/>
+    <tok fileIndex="0" linenr="36" str="ptrRet"/>
+    <tok fileIndex="0" linenr="36" str="="/>
+    <tok fileIndex="0" linenr="36" str="ret"/>
+    <tok fileIndex="0" linenr="36" str="-&gt;"/>
+    <tok fileIndex="0" linenr="36" str="mant"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="for"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="auto"/>
+    <tok fileIndex="0" linenr="37" str="const"/>
+    <tok fileIndex="0" linenr="37" str="&amp;"/>
+    <tok fileIndex="0" linenr="37" str="digit"/>
+    <tok fileIndex="0" linenr="37" str=":"/>
+    <tok fileIndex="0" linenr="37" str="this"/>
+    <tok fileIndex="0" linenr="37" str="-&gt;"/>
+    <tok fileIndex="0" linenr="37" str="Mantissa"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="38" str="{"/>
+    <tok fileIndex="0" linenr="39" str="*"/>
+    <tok fileIndex="0" linenr="39" str="ptrRet"/>
+    <tok fileIndex="0" linenr="39" str="++"/>
+    <tok fileIndex="0" linenr="39" str="="/>
+    <tok fileIndex="0" linenr="39" str="digit"/>
+    <tok fileIndex="0" linenr="39" str=";"/>
+    <tok fileIndex="0" linenr="40" str="}"/>
+    <tok fileIndex="0" linenr="42" str="return"/>
+    <tok fileIndex="0" linenr="42" str="ret"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="}"/>
+    <tok fileIndex="0" linenr="45" str="int32_t"/>
+    <tok fileIndex="0" linenr="45" str="const"/>
+    <tok fileIndex="0" linenr="45" str="&amp;"/>
+    <tok fileIndex="0" linenr="45" str="Number"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="Sign"/>
+    <tok fileIndex="0" linenr="45" str="("/>
+    <tok fileIndex="0" linenr="45" str=")"/>
+    <tok fileIndex="0" linenr="45" str="const"/>
+    <tok fileIndex="0" linenr="46" str="{"/>
+    <tok fileIndex="0" linenr="47" str="return"/>
+    <tok fileIndex="0" linenr="47" str="m_sign"/>
+    <tok fileIndex="0" linenr="47" str=";"/>
+    <tok fileIndex="0" linenr="48" str="}"/>
+    <tok fileIndex="0" linenr="50" str="int32_t"/>
+    <tok fileIndex="0" linenr="50" str="const"/>
+    <tok fileIndex="0" linenr="50" str="&amp;"/>
+    <tok fileIndex="0" linenr="50" str="Number"/>
+    <tok fileIndex="0" linenr="50" str="::"/>
+    <tok fileIndex="0" linenr="50" str="Exp"/>
+    <tok fileIndex="0" linenr="50" str="("/>
+    <tok fileIndex="0" linenr="50" str=")"/>
+    <tok fileIndex="0" linenr="50" str="const"/>
+    <tok fileIndex="0" linenr="51" str="{"/>
+    <tok fileIndex="0" linenr="52" str="return"/>
+    <tok fileIndex="0" linenr="52" str="m_exp"/>
+    <tok fileIndex="0" linenr="52" str=";"/>
+    <tok fileIndex="0" linenr="53" str="}"/>
+    <tok fileIndex="0" linenr="55" str="vector"/>
+    <tok fileIndex="0" linenr="55" str="&lt;"/>
+    <tok fileIndex="0" linenr="55" str="uint32_t"/>
+    <tok fileIndex="0" linenr="55" str="&gt;"/>
+    <tok fileIndex="0" linenr="55" str="const"/>
+    <tok fileIndex="0" linenr="55" str="&amp;"/>
+    <tok fileIndex="0" linenr="55" str="Number"/>
+    <tok fileIndex="0" linenr="55" str="::"/>
+    <tok fileIndex="0" linenr="55" str="Mantissa"/>
+    <tok fileIndex="0" linenr="55" str="("/>
+    <tok fileIndex="0" linenr="55" str=")"/>
+    <tok fileIndex="0" linenr="55" str="const"/>
+    <tok fileIndex="0" linenr="56" str="{"/>
+    <tok fileIndex="0" linenr="57" str="return"/>
+    <tok fileIndex="0" linenr="57" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="57" str=";"/>
+    <tok fileIndex="0" linenr="58" str="}"/>
+    <tok fileIndex="0" linenr="60" str="bool"/>
+    <tok fileIndex="0" linenr="60" str="Number"/>
+    <tok fileIndex="0" linenr="60" str="::"/>
+    <tok fileIndex="0" linenr="60" str="IsZero"/>
+    <tok fileIndex="0" linenr="60" str="("/>
+    <tok fileIndex="0" linenr="60" str=")"/>
+    <tok fileIndex="0" linenr="60" str="const"/>
+    <tok fileIndex="0" linenr="61" str="{"/>
+    <tok fileIndex="0" linenr="62" str="return"/>
+    <tok fileIndex="0" linenr="62" str="all_of"/>
+    <tok fileIndex="0" linenr="62" str="("/>
+    <tok fileIndex="0" linenr="62" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="62" str="."/>
+    <tok fileIndex="0" linenr="62" str="begin"/>
+    <tok fileIndex="0" linenr="62" str="("/>
+    <tok fileIndex="0" linenr="62" str=")"/>
+    <tok fileIndex="0" linenr="62" str=","/>
+    <tok fileIndex="0" linenr="62" str="m_mantissa"/>
+    <tok fileIndex="0" linenr="62" str="."/>
+    <tok fileIndex="0" linenr="62" str="end"/>
+    <tok fileIndex="0" linenr="62" str="("/>
+    <tok fileIndex="0" linenr="62" str=")"/>
+    <tok fileIndex="0" linenr="62" str=","/>
+    <tok fileIndex="0" linenr="62" str="["/>
+    <tok fileIndex="0" linenr="62" str="]"/>
+    <tok fileIndex="0" linenr="62" str="("/>
+    <tok fileIndex="0" linenr="62" str="auto"/>
+    <tok fileIndex="0" linenr="62" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="62" str="i"/>
+    <tok fileIndex="0" linenr="62" str=")"/>
+    <tok fileIndex="0" linenr="62" str="{"/>
+    <tok fileIndex="0" linenr="62" str="return"/>
+    <tok fileIndex="0" linenr="62" str="i"/>
+    <tok fileIndex="0" linenr="62" str="=="/>
+    <tok fileIndex="0" linenr="62" str="0"/>
+    <tok fileIndex="0" linenr="62" str=";"/>
+    <tok fileIndex="0" linenr="62" str="}"/>
+    <tok fileIndex="0" linenr="62" str=")"/>
+    <tok fileIndex="0" linenr="62" str=";"/>
+    <tok fileIndex="0" linenr="63" str="}"/>
+    <tok fileIndex="0" linenr="64" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="3" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="4" str="#include &quot;Header Files/Number.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134974DEAA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="8" str="namespace" scope="00000134A89B33B0" type="name"/>
+    <token id="00000134974DEA40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="8" str="CalcEngine" scope="00000134A89B33B0" type="name" astParent="00000134974DF220"/>
+    <token id="00000134974DF220" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="9" str="{" scope="00000134A89B46D0" link="00000134974E4E00" astOperand1="00000134974DEA40" astOperand2="00000134974DECE0"/>
+    <token id="00000134974DE320" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DEBC0"/>
+    <token id="00000134974DEBC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="::" scope="00000134A89B46D0" astParent="00000134974DECE0" astOperand1="00000134974DE320" astOperand2="00000134974DEB00"/>
+    <token id="00000134974DEB00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DEBC0"/>
+    <token id="00000134974DECE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="(" scope="00000134A89B46D0" link="00000134974DE620" astParent="00000134974DF220" astOperand1="00000134974DEBC0"/>
+    <token id="00000134974DE620" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str=")" scope="00000134A89B46D0" link="00000134974DECE0"/>
+    <token id="00000134974DEC20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="noexcept" scope="00000134A89B46D0" type="name" astParent="00000134974E4EC0"/>
+    <token id="00000134974E4EC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="(" scope="00000134A89B46D0" link="00000134974E3E40" astParent="00000134974DE4A0" astOperand1="00000134974DEC20" astOperand2="00000134974E3EA0"/>
+    <token id="00000134974E3EA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str="true" scope="00000134A89B46D0" type="name" values="00000134A8C04610" astParent="00000134974E4EC0"/>
+    <token id="00000134974E3E40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str=")" scope="00000134A89B46D0" link="00000134974E4EC0"/>
+    <token id="00000134974DE4A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="10" str=":" scope="00000134A89B46D0" astOperand1="00000134974E4EC0" astOperand2="00000134974DE680"/>
+    <token id="00000134974DEB60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DE680"/>
+    <token id="00000134974DE680" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="(" scope="00000134A89B46D0" link="00000134974DEC80" astParent="00000134974DE4A0" astOperand1="00000134974DEB60" astOperand2="00000134974DE440"/>
+    <token id="00000134974DE7A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="1" scope="00000134A89B46D0" type="number" isInt="True" values="00000134A8C04730" astParent="00000134974DE740" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974DE740" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="," scope="00000134A89B46D0" astParent="00000134974DE440" astOperand1="00000134974DE7A0" astOperand2="00000134974DDDE0"/>
+    <token id="00000134974DDDE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="0" scope="00000134A89B46D0" type="number" isInt="True" values="00000134A8C041B0" astParent="00000134974DE740" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974DE440" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="," scope="00000134A89B46D0" astParent="00000134974DE680" astOperand1="00000134974DE740" astOperand2="00000134974DE920"/>
+    <token id="00000134974DE920" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="{" scope="00000134A89B46D0" link="00000134974DF340" astParent="00000134974DE440"/>
+    <token id="00000134974DF2E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="0" scope="00000134A89B46D0" type="number" isInt="True" values="00000134A8C041D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974DF340" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str="}" scope="00000134A89B46D0" link="00000134974DE920"/>
+    <token id="00000134974DEC80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="11" str=")" scope="00000134A89B46D0" link="00000134974DE680"/>
+    <token id="00000134974DE800" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="12" str="{" scope="00000134A89B1E70" link="00000134974DE260"/>
+    <token id="00000134974DE260" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="12" str="}" scope="00000134A89B1E70" link="00000134974DE800"/>
+    <token id="00000134974DE860" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DF100"/>
+    <token id="00000134974DF100" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="::" scope="00000134A89B46D0" astParent="00000134974DDD80" astOperand1="00000134974DE860" astOperand2="00000134974DED40"/>
+    <token id="00000134974DED40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DF100"/>
+    <token id="00000134974DDD80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="(" scope="00000134A89B46D0" link="00000134974DDC00" astOperand1="00000134974DF100" astOperand2="00000134974DE560"/>
+    <token id="00000134974DEF80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="int32_t" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974DE500" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="sign" scope="00000134A89B46D0" type="name" varId="1" astParent="00000134974DF0A0"/>
+    <token id="00000134974DF0A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="," scope="00000134A89B46D0" astParent="00000134974DE560" astOperand1="00000134974DE500" astOperand2="00000134974DE5C0"/>
+    <token id="00000134974DF1C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="int32_t" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974DE5C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="exp" scope="00000134A89B46D0" type="name" varId="2" astParent="00000134974DF0A0"/>
+    <token id="00000134974DE560" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="," scope="00000134A89B46D0" astParent="00000134974DDD80" astOperand1="00000134974DF0A0" astOperand2="00000134974E68A0"/>
+    <token id="00000134974E6240" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="std" scope="00000134A89B46D0" type="name" astParent="00000134974E68A0"/>
+    <token id="00000134974E68A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="::" scope="00000134A89B46D0" astParent="00000134974DE560" astOperand1="00000134974E6240" astOperand2="00000134974DEDA0"/>
+    <token id="00000134974DEDA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="vector" scope="00000134A89B46D0" type="name" astParent="00000134974E68A0"/>
+    <token id="00000134974DE0E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="&lt;" scope="00000134A89B46D0" link="00000134974DE8C0"/>
+    <token id="00000134974DE6E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="uint32_t" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974DE8C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="&gt;" scope="00000134A89B46D0" link="00000134974DE0E0"/>
+    <token id="00000134974DEE00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974DDFC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="&amp;" scope="00000134A89B46D0" type="op"/>
+    <token id="00000134974DF160" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="mantissa" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974DDC00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str=")" scope="00000134A89B46D0" link="00000134974DDD80"/>
+    <token id="00000134974DEE60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="noexcept" scope="00000134A89B46D0" type="name" astParent="00000134974E3F00"/>
+    <token id="00000134974E3F00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="(" scope="00000134A89B46D0" link="00000134974E46E0" astParent="00000134974DDBA0" astOperand1="00000134974DEE60" astOperand2="00000134974E5040"/>
+    <token id="00000134974E5040" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str="true" scope="00000134A89B46D0" type="name" values="00000134A8C04630" astParent="00000134974E3F00"/>
+    <token id="00000134974E46E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str=")" scope="00000134A89B46D0" link="00000134974E3F00"/>
+    <token id="00000134974DDBA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="14" str=":" scope="00000134A89B46D0" astParent="00000134974DE9E0" astOperand1="00000134974E3F00" astOperand2="00000134974DDE40"/>
+    <token id="00000134974DE980" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="15" str="m_sign" scope="00000134A89B46D0" type="name" astParent="00000134974DDE40"/>
+    <token id="00000134974DDE40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="15" str="{" scope="00000134A89B46D0" link="00000134974DEF20" astParent="00000134974DDBA0" astOperand1="00000134974DE980" astOperand2="00000134974DEEC0"/>
+    <token id="00000134974DEEC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="15" str="sign" scope="00000134A89B46D0" type="name" varId="1" astParent="00000134974DDE40"/>
+    <token id="00000134974DEF20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="15" str="}" scope="00000134A89B46D0" link="00000134974DDE40"/>
+    <token id="00000134974DE9E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="15" str="," scope="00000134A89B46D0" astParent="00000134974DDD20" astOperand1="00000134974DDBA0" astOperand2="00000134974DDC60"/>
+    <token id="00000134974DEFE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="16" str="m_exp" scope="00000134A89B46D0" type="name" astParent="00000134974DDC60"/>
+    <token id="00000134974DDC60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="16" str="{" scope="00000134A89B46D0" link="00000134974DE2C0" astParent="00000134974DE9E0" astOperand1="00000134974DEFE0" astOperand2="00000134974DF040"/>
+    <token id="00000134974DF040" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="16" str="exp" scope="00000134A89B46D0" type="name" varId="2" astParent="00000134974DDC60"/>
+    <token id="00000134974DE2C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="16" str="}" scope="00000134A89B46D0" link="00000134974DDC60"/>
+    <token id="00000134974DDD20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="16" str="," scope="00000134A89B46D0" astOperand1="00000134974DE9E0" astOperand2="00000134974DDF60"/>
+    <token id="00000134974DDEA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="17" str="m_mantissa" scope="00000134A89B46D0" type="name" astParent="00000134974DDF60"/>
+    <token id="00000134974DDF60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="17" str="{" scope="00000134A89B46D0" link="00000134974DE140" astParent="00000134974DDD20" astOperand1="00000134974DDEA0" astOperand2="00000134974DE080"/>
+    <token id="00000134974DE080" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="17" str="mantissa" scope="00000134A89B46D0" type="name" astParent="00000134974DDF60"/>
+    <token id="00000134974DE140" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="17" str="}" scope="00000134A89B46D0" link="00000134974DDF60"/>
+    <token id="00000134974DE1A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="18" str="{" scope="00000134A89B2F70" link="00000134974DE200"/>
+    <token id="00000134974DE200" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="18" str="}" scope="00000134A89B2F70" link="00000134974DE1A0"/>
+    <token id="00000134974DF9A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DF460"/>
+    <token id="00000134974DF460" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="::" scope="00000134A89B46D0" astParent="00000134974E0B40" astOperand1="00000134974DF9A0" astOperand2="00000134974DF940"/>
+    <token id="00000134974DF940" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DF460"/>
+    <token id="00000134974E0B40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="(" scope="00000134A89B46D0" link="00000134974E05A0" astOperand1="00000134974DF460" astOperand2="00000134974E0900"/>
+    <token id="00000134974E0000" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="PNUMBER" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E0900" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="p" scope="00000134A89B46D0" type="name" varId="3" astParent="00000134974E0B40"/>
+    <token id="00000134974E05A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str=")" scope="00000134A89B46D0" link="00000134974E0B40"/>
+    <token id="00000134974DFF40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="noexcept" scope="00000134A89B46D0" type="name" astParent="00000134974E6360"/>
+    <token id="00000134974E6360" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="(" scope="00000134A89B46D0" link="00000134974E3F60" astParent="00000134974DFB80" astOperand1="00000134974DFF40" astOperand2="00000134974E4080"/>
+    <token id="00000134974E4080" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str="true" scope="00000134A89B46D0" type="name" values="00000134A8C04650" astParent="00000134974E6360"/>
+    <token id="00000134974E3F60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str=")" scope="00000134A89B46D0" link="00000134974E6360"/>
+    <token id="00000134974DFB80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="20" str=":" scope="00000134A89B46D0" astParent="00000134974DF400" astOperand1="00000134974E6360" astOperand2="00000134974E0720"/>
+    <token id="00000134974DFA00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="m_sign" scope="00000134A89B46D0" type="name" astParent="00000134974E0720"/>
+    <token id="00000134974E0720" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="{" scope="00000134A89B46D0" link="00000134974E04E0" astParent="00000134974DFB80" astOperand1="00000134974DFA00" astOperand2="00000134974DFA60"/>
+    <token id="00000134974DFD00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="p" scope="00000134A89B46D0" type="name" varId="3" astParent="00000134974DFA60"/>
+    <token id="00000134974DFA60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="." scope="00000134A89B46D0" astParent="00000134974E0720" astOperand1="00000134974DFD00" astOperand2="00000134974E0060" originalName="->"/>
+    <token id="00000134974E0060" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="sign" scope="00000134A89B46D0" type="name" varId="4" astParent="00000134974DFA60"/>
+    <token id="00000134974E04E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="}" scope="00000134A89B46D0" link="00000134974E0720"/>
+    <token id="00000134974DF400" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="21" str="," scope="00000134A89B46D0" astParent="00000134974E0AE0" astOperand1="00000134974DFB80" astOperand2="00000134974DF4C0"/>
+    <token id="00000134974E0600" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="m_exp" scope="00000134A89B46D0" type="name" astParent="00000134974DF4C0"/>
+    <token id="00000134974DF4C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="{" scope="00000134A89B46D0" link="00000134974E0120" astParent="00000134974DF400" astOperand1="00000134974E0600" astOperand2="00000134974DF5E0"/>
+    <token id="00000134974DFFA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="p" scope="00000134A89B46D0" type="name" varId="3" astParent="00000134974DF5E0"/>
+    <token id="00000134974DF5E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="." scope="00000134A89B46D0" astParent="00000134974DF4C0" astOperand1="00000134974DFFA0" astOperand2="00000134974DFBE0" originalName="->"/>
+    <token id="00000134974DFBE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="exp" scope="00000134A89B46D0" type="name" varId="5" astParent="00000134974DF5E0"/>
+    <token id="00000134974E0120" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="}" scope="00000134A89B46D0" link="00000134974DF4C0"/>
+    <token id="00000134974E0AE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="22" str="," scope="00000134A89B46D0" astOperand1="00000134974DF400" astOperand2="00000134974E0240"/>
+    <token id="00000134974E0A80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="23" str="m_mantissa" scope="00000134A89B46D0" type="name" astParent="00000134974E0240"/>
+    <token id="00000134974E0240" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="23" str="{" scope="00000134A89B46D0" link="00000134974E00C0" astParent="00000134974E0AE0" astOperand1="00000134974E0A80"/>
+    <token id="00000134974E00C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="23" str="}" scope="00000134A89B46D0" link="00000134974E0240"/>
+    <token id="00000134974DFAC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="24" str="{" scope="00000134A89B0A40" link="00000134974E03C0"/>
+    <token id="00000134974E0180" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="m_mantissa" scope="00000134A89B0A40" type="name" astParent="00000134974E0960"/>
+    <token id="00000134974E0960" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="." scope="00000134A89B0A40" astParent="00000134974DF580" astOperand1="00000134974E0180" astOperand2="00000134974E0480"/>
+    <token id="00000134974E0480" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="reserve" scope="00000134A89B0A40" type="name" astParent="00000134974E0960"/>
+    <token id="00000134974DF580" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="(" scope="00000134A89B0A40" link="00000134974E09C0" astOperand1="00000134974E0960" astOperand2="00000134974DFCA0"/>
+    <token id="00000134974E0780" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="p" scope="00000134A89B0A40" type="name" varId="3" astParent="00000134974DFCA0"/>
+    <token id="00000134974DFCA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="." scope="00000134A89B0A40" astParent="00000134974DF580" astOperand1="00000134974E0780" astOperand2="00000134974E08A0" originalName="->"/>
+    <token id="00000134974E08A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str="cdigit" scope="00000134A89B0A40" type="name" varId="6" astParent="00000134974DFCA0"/>
+    <token id="00000134974E09C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str=")" scope="00000134A89B0A40" link="00000134974DF580"/>
+    <token id="00000134974DFDC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="25" str=";" scope="00000134A89B0A40"/>
+    <token id="00000134974E6180" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="std" scope="00000134A89B0A40" type="name" astParent="00000134974E5580"/>
+    <token id="00000134974E5580" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="::" scope="00000134A89B0A40" astParent="00000134974E02A0" astOperand1="00000134974E6180" astOperand2="00000134974DFD60"/>
+    <token id="00000134974DFD60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="copy" scope="00000134A89B0A40" type="name" astParent="00000134974E5580"/>
+    <token id="00000134974E02A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="(" scope="00000134A89B0A40" link="00000134974E07E0" astOperand1="00000134974E5580" astOperand2="00000134974E0660"/>
+    <token id="00000134974DF8E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="p" scope="00000134A89B0A40" type="name" varId="3" astParent="00000134974DFE20"/>
+    <token id="00000134974DFE20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="." scope="00000134A89B0A40" astParent="00000134974E0540" astOperand1="00000134974DF8E0" astOperand2="00000134974DFC40" originalName="->"/>
+    <token id="00000134974DFC40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="mant" scope="00000134A89B0A40" type="name" varId="7" astParent="00000134974DFE20"/>
+    <token id="00000134974E0540" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="," scope="00000134A89B0A40" astParent="00000134974E0660" astOperand1="00000134974DFE20" astOperand2="00000134974E0300"/>
+    <token id="00000134974DF7C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="p" scope="00000134A89B0A40" type="name" varId="3" astParent="00000134974E0A20"/>
+    <token id="00000134974E0A20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="." scope="00000134A89B0A40" astParent="00000134974E0300" astOperand1="00000134974DF7C0" astOperand2="00000134974DF520" originalName="->"/>
+    <token id="00000134974DF520" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="mant" scope="00000134A89B0A40" type="name" varId="7" astParent="00000134974E0A20"/>
+    <token id="00000134974E0300" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="+" scope="00000134A89B0A40" type="op" isArithmeticalOp="True" astParent="00000134974E0540" astOperand1="00000134974E0A20" astOperand2="00000134974E01E0"/>
+    <token id="00000134974DF3A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="p" scope="00000134A89B0A40" type="name" varId="3" astParent="00000134974E01E0"/>
+    <token id="00000134974E01E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="." scope="00000134A89B0A40" astParent="00000134974E0300" astOperand1="00000134974DF3A0" astOperand2="00000134974DF640" originalName="->"/>
+    <token id="00000134974DF640" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="cdigit" scope="00000134A89B0A40" type="name" varId="6" astParent="00000134974E01E0"/>
+    <token id="00000134974E0660" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="," scope="00000134A89B0A40" astParent="00000134974E02A0" astOperand1="00000134974E0540" astOperand2="00000134974DFE80"/>
+    <token id="00000134974E64E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="std" scope="00000134A89B0A40" type="name" astParent="00000134974E6420"/>
+    <token id="00000134974E6420" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="::" scope="00000134A89B0A40" astParent="00000134974DFE80" astOperand1="00000134974E64E0" astOperand2="00000134974E0420"/>
+    <token id="00000134974E0420" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="back_inserter" scope="00000134A89B0A40" type="name" astParent="00000134974E6420"/>
+    <token id="00000134974DFE80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="(" scope="00000134A89B0A40" link="00000134974DF6A0" astParent="00000134974E0660" astOperand1="00000134974E6420" astOperand2="00000134974E0360"/>
+    <token id="00000134974E0360" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str="m_mantissa" scope="00000134A89B0A40" type="name" astParent="00000134974DFE80"/>
+    <token id="00000134974DF6A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str=")" scope="00000134A89B0A40" link="00000134974DFE80"/>
+    <token id="00000134974E07E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str=")" scope="00000134A89B0A40" link="00000134974E02A0"/>
+    <token id="00000134974DFB20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="26" str=";" scope="00000134A89B0A40"/>
+    <token id="00000134974E03C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="27" str="}" scope="00000134A89B0A40" link="00000134974DFAC0"/>
+    <token id="00000134974E06C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="PNUMBER" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E0840" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974DF820"/>
+    <token id="00000134974DF820" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="::" scope="00000134A89B46D0" astParent="00000134974DFEE0" astOperand1="00000134974E0840" astOperand2="00000134974DF700"/>
+    <token id="00000134974DF700" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="ToPNUMBER" scope="00000134A89B46D0" type="name" astParent="00000134974DF820"/>
+    <token id="00000134974DFEE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="(" scope="00000134A89B46D0" link="00000134974DF760" astOperand1="00000134974DF820"/>
+    <token id="00000134974DF760" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str=")" scope="00000134A89B46D0" link="00000134974DFEE0"/>
+    <token id="00000134974DF880" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="29" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E0C60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="30" str="{" scope="00000134A89B47E0" link="00000134974E30C0"/>
+    <token id="00000134974E1140" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="PNUMBER" scope="00000134A89B47E0" type="name"/>
+    <token id="00000134974E2340" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0"/>
+    <token id="00000134974E1800" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E5460" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E5940"/>
+    <token id="00000134974E5940" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="=" scope="00000134A89B47E0" type="op" isAssignmentOp="True" astOperand1="00000134974E5460" astOperand2="00000134974E1DA0"/>
+    <token id="00000134974E2100" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="_createnum" scope="00000134A89B47E0" type="name" astParent="00000134974E1DA0"/>
+    <token id="00000134974E1DA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="(" scope="00000134A89B47E0" link="00000134974E0D20" astParent="00000134974E5940" astOperand1="00000134974E2100" astOperand2="00000134974E1EC0"/>
+    <token id="00000134974E1740" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="static_cast" scope="00000134A89B47E0" type="name" astParent="00000134974E1500"/>
+    <token id="00000134974E1380" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="&lt;" scope="00000134A89B47E0" link="00000134974E1F20"/>
+    <token id="00000134974E1200" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="uint32_t" scope="00000134A89B47E0" type="name"/>
+    <token id="00000134974E1F20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="&gt;" scope="00000134A89B47E0" link="00000134974E1380"/>
+    <token id="00000134974E1500" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="(" scope="00000134A89B47E0" link="00000134974E0BA0" astParent="00000134974E1EC0" astOperand1="00000134974E1740" astOperand2="00000134974E0FC0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134974E1260" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="this" scope="00000134A89B47E0" type="name" astParent="00000134974E1860"/>
+    <token id="00000134974E1860" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="." scope="00000134A89B47E0" astParent="00000134974E0C00" astOperand1="00000134974E1260" astOperand2="00000134974E1CE0" originalName="->"/>
+    <token id="00000134974E1CE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="Mantissa" scope="00000134A89B47E0" type="name" astParent="00000134974E1860"/>
+    <token id="00000134974E0C00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="(" scope="00000134A89B47E0" link="00000134974E1E00" astParent="00000134974E0CC0" astOperand1="00000134974E1860"/>
+    <token id="00000134974E1E00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=")" scope="00000134A89B47E0" link="00000134974E0C00"/>
+    <token id="00000134974E0CC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="." scope="00000134A89B47E0" astParent="00000134974E0FC0" astOperand1="00000134974E0C00" astOperand2="00000134974E18C0"/>
+    <token id="00000134974E18C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="size" scope="00000134A89B47E0" type="name" astParent="00000134974E0CC0"/>
+    <token id="00000134974E0FC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="(" scope="00000134A89B47E0" link="00000134974E2280" astParent="00000134974E1500" astOperand1="00000134974E0CC0"/>
+    <token id="00000134974E2280" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=")" scope="00000134A89B47E0" link="00000134974E0FC0"/>
+    <token id="00000134974E0BA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=")" scope="00000134A89B47E0" link="00000134974E1500"/>
+    <token id="00000134974E1EC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="+" scope="00000134A89B47E0" type="op" isArithmeticalOp="True" astParent="00000134974E1DA0" astOperand1="00000134974E1500" astOperand2="00000134974E13E0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134974E13E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str="1" scope="00000134A89B47E0" type="number" isInt="True" values="00000134A8C04430" astParent="00000134974E1EC0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974E0D20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=")" scope="00000134A89B47E0" link="00000134974E1DA0"/>
+    <token id="00000134974E0D80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="31" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E1440" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E1D40"/>
+    <token id="00000134974E1D40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="." scope="00000134A89B47E0" astParent="00000134974E0DE0" astOperand1="00000134974E1440" astOperand2="00000134974E17A0" originalName="->"/>
+    <token id="00000134974E17A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="sign" scope="00000134A89B47E0" type="name" varId="9" astParent="00000134974E1D40"/>
+    <token id="00000134974E0DE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="=" scope="00000134A89B47E0" type="op" isAssignmentOp="True" astOperand1="00000134974E1D40" astOperand2="00000134974E20A0"/>
+    <token id="00000134974E1920" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="this" scope="00000134A89B47E0" type="name" astParent="00000134974E1F80"/>
+    <token id="00000134974E1F80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="." scope="00000134A89B47E0" astParent="00000134974E20A0" astOperand1="00000134974E1920" astOperand2="00000134974E1980" originalName="->"/>
+    <token id="00000134974E1980" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="Sign" scope="00000134A89B47E0" type="name" astParent="00000134974E1F80"/>
+    <token id="00000134974E20A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str="(" scope="00000134A89B47E0" link="00000134974E1BC0" astParent="00000134974E0DE0" astOperand1="00000134974E1F80"/>
+    <token id="00000134974E1BC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str=")" scope="00000134A89B47E0" link="00000134974E20A0"/>
+    <token id="00000134974E0F60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="32" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E14A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E1020"/>
+    <token id="00000134974E1020" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="." scope="00000134A89B47E0" astParent="00000134974E12C0" astOperand1="00000134974E14A0" astOperand2="00000134974E11A0" originalName="->"/>
+    <token id="00000134974E11A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="exp" scope="00000134A89B47E0" type="name" varId="10" astParent="00000134974E1020"/>
+    <token id="00000134974E12C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="=" scope="00000134A89B47E0" type="op" isAssignmentOp="True" astOperand1="00000134974E1020" astOperand2="00000134974E15C0"/>
+    <token id="00000134974E0E40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="this" scope="00000134A89B47E0" type="name" astParent="00000134974E1080"/>
+    <token id="00000134974E1080" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="." scope="00000134A89B47E0" astParent="00000134974E15C0" astOperand1="00000134974E0E40" astOperand2="00000134974E0EA0" originalName="->"/>
+    <token id="00000134974E0EA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="Exp" scope="00000134A89B47E0" type="name" astParent="00000134974E1080"/>
+    <token id="00000134974E15C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str="(" scope="00000134A89B47E0" link="00000134974E1AA0" astParent="00000134974E12C0" astOperand1="00000134974E1080"/>
+    <token id="00000134974E1AA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str=")" scope="00000134A89B47E0" link="00000134974E15C0"/>
+    <token id="00000134974E1B00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="33" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E1FE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E1E60"/>
+    <token id="00000134974E1E60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="." scope="00000134A89B47E0" astParent="00000134974E0F00" astOperand1="00000134974E1FE0" astOperand2="00000134974E1680" originalName="->"/>
+    <token id="00000134974E1680" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="cdigit" scope="00000134A89B47E0" type="name" varId="11" astParent="00000134974E1E60"/>
+    <token id="00000134974E0F00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="=" scope="00000134A89B47E0" type="op" isAssignmentOp="True" astOperand1="00000134974E1E60" astOperand2="00000134974E10E0"/>
+    <token id="00000134974E1320" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="static_cast" scope="00000134A89B47E0" type="name" astParent="00000134974E10E0"/>
+    <token id="00000134974E1560" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="&lt;" scope="00000134A89B47E0" link="00000134974E2040"/>
+    <token id="00000134974E19E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="int32_t" scope="00000134A89B47E0" type="name"/>
+    <token id="00000134974E2040" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="&gt;" scope="00000134A89B47E0" link="00000134974E1560"/>
+    <token id="00000134974E10E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="(" scope="00000134A89B47E0" link="00000134974E22E0" astParent="00000134974E0F00" astOperand1="00000134974E1320" astOperand2="00000134974E1C20" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974E1620" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="this" scope="00000134A89B47E0" type="name" astParent="00000134974E21C0"/>
+    <token id="00000134974E21C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="." scope="00000134A89B47E0" astParent="00000134974E1A40" astOperand1="00000134974E1620" astOperand2="00000134974E16E0" originalName="->"/>
+    <token id="00000134974E16E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="Mantissa" scope="00000134A89B47E0" type="name" astParent="00000134974E21C0"/>
+    <token id="00000134974E1A40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="(" scope="00000134A89B47E0" link="00000134974E1B60" astParent="00000134974E2160" astOperand1="00000134974E21C0"/>
+    <token id="00000134974E1B60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str=")" scope="00000134A89B47E0" link="00000134974E1A40"/>
+    <token id="00000134974E2160" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="." scope="00000134A89B47E0" astParent="00000134974E1C20" astOperand1="00000134974E1A40" astOperand2="00000134974E2220"/>
+    <token id="00000134974E2220" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="size" scope="00000134A89B47E0" type="name" astParent="00000134974E2160"/>
+    <token id="00000134974E1C20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str="(" scope="00000134A89B47E0" link="00000134974E1C80" astParent="00000134974E10E0" astOperand1="00000134974E2160"/>
+    <token id="00000134974E1C80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str=")" scope="00000134A89B47E0" link="00000134974E1C20"/>
+    <token id="00000134974E22E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str=")" scope="00000134A89B47E0" link="00000134974E10E0"/>
+    <token id="00000134974E2E20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="34" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E2C40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="MANTTYPE" scope="00000134A89B47E0" type="name" astParent="00000134974E3840"/>
+    <token id="00000134974E3840" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="*" scope="00000134A89B47E0" type="op" isArithmeticalOp="True" astOperand1="00000134974E2C40" astOperand2="00000134974E25E0"/>
+    <token id="00000134974E25E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="ptrRet" scope="00000134A89B47E0" type="name" varId="12" variable="0000013491668230" astParent="00000134974E3840"/>
+    <token id="00000134974E3900" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E5E20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="ptrRet" scope="00000134A89B47E0" type="name" varId="12" variable="0000013491668230" astParent="00000134974E54C0"/>
+    <token id="00000134974E54C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="=" scope="00000134A89B47E0" type="op" isAssignmentOp="True" astOperand1="00000134974E5E20" astOperand2="00000134974E3540"/>
+    <token id="00000134974E3360" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E3540"/>
+    <token id="00000134974E3540" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="." scope="00000134A89B47E0" astParent="00000134974E54C0" astOperand1="00000134974E3360" astOperand2="00000134974E35A0" originalName="->"/>
+    <token id="00000134974E35A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str="mant" scope="00000134A89B47E0" type="name" varId="13" astParent="00000134974E3540"/>
+    <token id="00000134974E3480" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="36" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E2FA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="for" scope="00000134A89B47E0" type="name" astParent="00000134974E2700"/>
+    <token id="00000134974E2700" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="(" scope="00000134A89B47E0" link="00000134974E2640" astOperand1="00000134974E2FA0" astOperand2="00000134974E3240"/>
+    <token id="00000134974E2760" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="const" scope="00000134A89B47E0" type="name"/>
+    <token id="00000134974E33C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="auto" scope="00000134A89B47E0" type="name"/>
+    <token id="00000134974E3600" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="&amp;" scope="00000134A89B47E0" type="op"/>
+    <token id="00000134974E3000" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="digit" scope="00000134A89B47E0" type="name" varId="14" variable="0000013491667A50" astParent="00000134974E3240"/>
+    <token id="00000134974E3240" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str=":" scope="00000134A89B47E0" astParent="00000134974E2700" astOperand1="00000134974E3000" astOperand2="00000134974E2E80"/>
+    <token id="00000134974E3960" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="this" scope="00000134A89B47E0" type="name" astParent="00000134974E2EE0"/>
+    <token id="00000134974E2EE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="." scope="00000134A89B47E0" astParent="00000134974E2E80" astOperand1="00000134974E3960" astOperand2="00000134974E2A60" originalName="->"/>
+    <token id="00000134974E2A60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="Mantissa" scope="00000134A89B47E0" type="name" astParent="00000134974E2EE0"/>
+    <token id="00000134974E2E80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str="(" scope="00000134A89B47E0" link="00000134974E2460" astParent="00000134974E3240" astOperand1="00000134974E2EE0"/>
+    <token id="00000134974E2460" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str=")" scope="00000134A89B47E0" link="00000134974E2E80"/>
+    <token id="00000134974E2640" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="37" str=")" scope="00000134A89B47E0" link="00000134974E2700"/>
+    <token id="00000134974E3A80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="38" str="{" scope="00000134A89B36E0" link="00000134974E2D60"/>
+    <token id="00000134974E32A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str="*" scope="00000134A89B36E0" type="op" isArithmeticalOp="True" astParent="00000134974E34E0" astOperand1="00000134974E3060"/>
+    <token id="00000134974E2F40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str="ptrRet" scope="00000134A89B36E0" type="name" varId="12" variable="0000013491668230" astParent="00000134974E3060"/>
+    <token id="00000134974E3060" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str="++" scope="00000134A89B36E0" type="op" astParent="00000134974E32A0" astOperand1="00000134974E2F40"/>
+    <token id="00000134974E34E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str="=" scope="00000134A89B36E0" type="op" isAssignmentOp="True" astOperand1="00000134974E32A0" astOperand2="00000134974E2B80"/>
+    <token id="00000134974E2B80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str="digit" scope="00000134A89B36E0" type="name" varId="14" variable="0000013491667A50" astParent="00000134974E34E0"/>
+    <token id="00000134974E29A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="39" str=";" scope="00000134A89B36E0"/>
+    <token id="00000134974E2D60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="40" str="}" scope="00000134A89B36E0" link="00000134974E3A80"/>
+    <token id="00000134974E2BE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="42" str="return" scope="00000134A89B47E0" type="name" astOperand1="00000134974E24C0"/>
+    <token id="00000134974E24C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="42" str="ret" scope="00000134A89B47E0" type="name" varId="8" variable="0000013491667DD0" astParent="00000134974E2BE0"/>
+    <token id="00000134974E3B40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="42" str=";" scope="00000134A89B47E0"/>
+    <token id="00000134974E30C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="43" str="}" scope="00000134A89B47E0" link="00000134974E0C60"/>
+    <token id="00000134974E38A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E3120" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="int32_t" scope="00000134A89B46D0" type="name" astParent="00000134974E39C0"/>
+    <token id="00000134974E39C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="&amp;" scope="00000134A89B46D0" type="op" astOperand1="00000134974E3120" astOperand2="00000134974E3AE0"/>
+    <token id="00000134974E37E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974E2CA0"/>
+    <token id="00000134974E2CA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="::" scope="00000134A89B46D0" astParent="00000134974E3AE0" astOperand1="00000134974E37E0" astOperand2="00000134974E3300"/>
+    <token id="00000134974E3300" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="Sign" scope="00000134A89B46D0" type="name" astParent="00000134974E2CA0"/>
+    <token id="00000134974E3AE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="(" scope="00000134A89B46D0" link="00000134974E27C0" astParent="00000134974E39C0" astOperand1="00000134974E2CA0"/>
+    <token id="00000134974E27C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str=")" scope="00000134A89B46D0" link="00000134974E3AE0"/>
+    <token id="00000134974E2520" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="45" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E2820" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="46" str="{" scope="00000134A89B4180" link="00000134974E3660"/>
+    <token id="00000134974E3420" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="47" str="return" scope="00000134A89B4180" type="name" astOperand1="00000134974E3A20"/>
+    <token id="00000134974E3A20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="47" str="m_sign" scope="00000134A89B4180" type="name" astParent="00000134974E3420"/>
+    <token id="00000134974E2B20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="47" str=";" scope="00000134A89B4180"/>
+    <token id="00000134974E3660" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="48" str="}" scope="00000134A89B4180" link="00000134974E2820"/>
+    <token id="00000134974E3720" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E36C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="int32_t" scope="00000134A89B46D0" type="name" astParent="00000134974E3180"/>
+    <token id="00000134974E3180" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="&amp;" scope="00000134A89B46D0" type="op" astOperand1="00000134974E36C0" astOperand2="00000134974E31E0"/>
+    <token id="00000134974E3780" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974E2D00"/>
+    <token id="00000134974E2D00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="::" scope="00000134A89B46D0" astParent="00000134974E31E0" astOperand1="00000134974E3780" astOperand2="00000134974E23A0"/>
+    <token id="00000134974E23A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="Exp" scope="00000134A89B46D0" type="name" astParent="00000134974E2D00"/>
+    <token id="00000134974E31E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="(" scope="00000134A89B46D0" link="00000134974E2400" astParent="00000134974E3180" astOperand1="00000134974E2D00"/>
+    <token id="00000134974E2400" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str=")" scope="00000134A89B46D0" link="00000134974E31E0"/>
+    <token id="00000134974E2580" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="50" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E26A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="51" str="{" scope="00000134A89B12C0" link="00000134974E2940"/>
+    <token id="00000134974E2DC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="52" str="return" scope="00000134A89B12C0" type="name" astOperand1="00000134974E2880"/>
+    <token id="00000134974E2880" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="52" str="m_exp" scope="00000134A89B12C0" type="name" astParent="00000134974E2DC0"/>
+    <token id="00000134974E28E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="52" str=";" scope="00000134A89B12C0"/>
+    <token id="00000134974E2940" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="53" str="}" scope="00000134A89B12C0" link="00000134974E26A0"/>
+    <token id="00000134974E6900" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="std" scope="00000134A89B46D0" type="name" astParent="00000134974E63C0"/>
+    <token id="00000134974E63C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="::" scope="00000134A89B46D0" astOperand1="00000134974E6900" astOperand2="00000134974E2A00"/>
+    <token id="00000134974E2A00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="vector" scope="00000134A89B46D0" type="name" astParent="00000134974E63C0"/>
+    <token id="00000134974E2AC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="&lt;" scope="00000134A89B46D0" link="00000134974E5280"/>
+    <token id="00000134974E52E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="uint32_t" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E5280" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="&gt;" scope="00000134A89B46D0" link="00000134974E2AC0"/>
+    <token id="00000134974E4A40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="const" scope="00000134A89B46D0" type="name" astParent="00000134974E47A0"/>
+    <token id="00000134974E47A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="&amp;" scope="00000134A89B46D0" type="op" astOperand1="00000134974E4A40" astOperand2="00000134974E4C80"/>
+    <token id="00000134974E4260" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974E4800"/>
+    <token id="00000134974E4800" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="::" scope="00000134A89B46D0" astParent="00000134974E4C80" astOperand1="00000134974E4260" astOperand2="00000134974E5100"/>
+    <token id="00000134974E5100" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="Mantissa" scope="00000134A89B46D0" type="name" astParent="00000134974E4800"/>
+    <token id="00000134974E4C80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="(" scope="00000134A89B46D0" link="00000134974E3D80" astParent="00000134974E47A0" astOperand1="00000134974E4800"/>
+    <token id="00000134974E3D80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str=")" scope="00000134A89B46D0" link="00000134974E4C80"/>
+    <token id="00000134974E4F80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="55" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E44A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="56" str="{" scope="00000134A89B43A0" link="00000134974E4560"/>
+    <token id="00000134974E50A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="57" str="return" scope="00000134A89B43A0" type="name" astOperand1="00000134974E51C0"/>
+    <token id="00000134974E51C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="57" str="m_mantissa" scope="00000134A89B43A0" type="name" astParent="00000134974E50A0"/>
+    <token id="00000134974E45C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="57" str=";" scope="00000134A89B43A0"/>
+    <token id="00000134974E4560" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="58" str="}" scope="00000134A89B43A0" link="00000134974E44A0"/>
+    <token id="00000134974E4AA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="bool" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E40E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="Number" scope="00000134A89B46D0" type="name" astParent="00000134974E4500"/>
+    <token id="00000134974E4500" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="::" scope="00000134A89B46D0" astParent="00000134974E4CE0" astOperand1="00000134974E40E0" astOperand2="00000134974E4380"/>
+    <token id="00000134974E4380" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="IsZero" scope="00000134A89B46D0" type="name" astParent="00000134974E4500"/>
+    <token id="00000134974E4CE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="(" scope="00000134A89B46D0" link="00000134974E3FC0" astOperand1="00000134974E4500"/>
+    <token id="00000134974E3FC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str=")" scope="00000134A89B46D0" link="00000134974E4CE0"/>
+    <token id="00000134974E5160" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="60" str="const" scope="00000134A89B46D0" type="name"/>
+    <token id="00000134974E3C00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="61" str="{" scope="00000134A89B3D40" link="00000134974E4BC0"/>
+    <token id="00000134974E4B00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="return" scope="00000134A89B3D40" type="name" astOperand1="00000134974E4980"/>
+    <token id="00000134974E5220" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="all_of" scope="00000134A89B3D40" type="name" astParent="00000134974E4980"/>
+    <token id="00000134974E4980" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="(" scope="00000134A89B3D40" link="00000134974E4620" astParent="00000134974E4B00" astOperand1="00000134974E5220" astOperand2="00000134974E4020"/>
+    <token id="00000134974E3DE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="m_mantissa" scope="00000134A89B3D40" type="name" astParent="00000134974E4D40"/>
+    <token id="00000134974E4D40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="." scope="00000134A89B3D40" astParent="00000134974E43E0" astOperand1="00000134974E3DE0" astOperand2="00000134974E4C20"/>
+    <token id="00000134974E4C20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="begin" scope="00000134A89B3D40" type="name" astParent="00000134974E4D40"/>
+    <token id="00000134974E43E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="(" scope="00000134A89B3D40" link="00000134974E4860" astParent="00000134974E5340" astOperand1="00000134974E4D40"/>
+    <token id="00000134974E4860" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=")" scope="00000134A89B3D40" link="00000134974E43E0"/>
+    <token id="00000134974E5340" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="," scope="00000134A89B3D40" astParent="00000134974E4020" astOperand1="00000134974E43E0" astOperand2="00000134974E4B60"/>
+    <token id="00000134974E4FE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="m_mantissa" scope="00000134A89B3D40" type="name" astParent="00000134974E42C0"/>
+    <token id="00000134974E42C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="." scope="00000134A89B3D40" astParent="00000134974E4B60" astOperand1="00000134974E4FE0" astOperand2="00000134974E4920"/>
+    <token id="00000134974E4920" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="end" scope="00000134A89B3D40" type="name" astParent="00000134974E42C0"/>
+    <token id="00000134974E4B60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="(" scope="00000134A89B3D40" link="00000134974E4740" astParent="00000134974E5340" astOperand1="00000134974E42C0"/>
+    <token id="00000134974E4740" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=")" scope="00000134A89B3D40" link="00000134974E4B60"/>
+    <token id="00000134974E4020" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="," scope="00000134A89B3D40" astParent="00000134974E4980" astOperand1="00000134974E5340" astOperand2="00000134974E3BA0"/>
+    <token id="00000134974E3BA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="[" scope="00000134A89B3D40" link="00000134974E4680" astParent="00000134974E4020" astOperand1="00000134974E4E60"/>
+    <token id="00000134974E4680" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="]" scope="00000134A89B3D40" link="00000134974E3BA0"/>
+    <token id="00000134974E4E60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="(" scope="00000134A89B3D40" link="00000134974E3CC0" astParent="00000134974E3BA0" astOperand1="00000134974E48C0"/>
+    <token id="00000134974E41A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="auto" scope="00000134A89B3D40" type="name"/>
+    <token id="00000134974E3C60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="&amp;&amp;" scope="00000134A89B3D40" type="op" isLogicalOp="True" valueType-type="bool"/>
+    <token id="00000134974E4140" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="i" scope="00000134A89B3D40" type="name" varId="15"/>
+    <token id="00000134974E3CC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=")" scope="00000134A89B3D40" link="00000134974E4E60"/>
+    <token id="00000134974E48C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="{" scope="00000134A89B3A10" link="00000134974E4F20" astParent="00000134974E4E60"/>
+    <token id="00000134974E3D20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="return" scope="00000134A89B3A10" type="name" astOperand1="00000134974E49E0"/>
+    <token id="00000134974E4DA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="i" scope="00000134A89B3A10" type="name" varId="15" astParent="00000134974E49E0"/>
+    <token id="00000134974E49E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="==" scope="00000134A89B3A10" type="op" isComparisonOp="True" astParent="00000134974E3D20" astOperand1="00000134974E4DA0" astOperand2="00000134974E4440" valueType-type="bool"/>
+    <token id="00000134974E4440" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="0" scope="00000134A89B3A10" type="number" isInt="True" values="00000134A8C04470" astParent="00000134974E49E0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134974E4200" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=";" scope="00000134A89B3A10"/>
+    <token id="00000134974E4F20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str="}" scope="00000134A89B3A10" link="00000134974E48C0"/>
+    <token id="00000134974E4620" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=")" scope="00000134A89B3D40" link="00000134974E4980"/>
+    <token id="00000134974E4320" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="62" str=";" scope="00000134A89B3D40"/>
+    <token id="00000134974E4BC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="63" str="}" scope="00000134A89B3D40" link="00000134974E3C00"/>
+    <token id="00000134974E4E00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/Number.cpp" linenr="64" str="}" scope="00000134A89B46D0" link="00000134974DF220"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A89B33B0" type="Global"/>
+    <scope id="00000134A89B46D0" type="Namespace" className="CalcEngine" bodyStart="00000134974DF220" bodyEnd="00000134974E4E00" nestedIn="00000134A89B33B0"/>
+    <scope id="00000134A89B1E70" type="Function" className="Number" bodyStart="00000134974DE800" bodyEnd="00000134974DE260" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B2F70" type="Function" className="Number" bodyStart="00000134974DE1A0" bodyEnd="00000134974DE200" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B0A40" type="Function" className="Number" bodyStart="00000134974DFAC0" bodyEnd="00000134974E03C0" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B47E0" type="Function" className="ToPNUMBER" bodyStart="00000134974E0C60" bodyEnd="00000134974E30C0" nestedIn="00000134A89B46D0">
+      <varlist>
+        <var id="0000013491667DD0"/>
+        <var id="0000013491668230"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A89B36E0" type="For" bodyStart="00000134974E3A80" bodyEnd="00000134974E2D60" nestedIn="00000134A89B47E0">
+      <varlist>
+        <var id="0000013491667A50"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A89B4180" type="Function" className="Sign" bodyStart="00000134974E2820" bodyEnd="00000134974E3660" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B12C0" type="Function" className="Exp" bodyStart="00000134974E26A0" bodyEnd="00000134974E2940" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B43A0" type="Function" className="Mantissa" bodyStart="00000134974E44A0" bodyEnd="00000134974E4560" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B3D40" type="Function" className="IsZero" bodyStart="00000134974E3C00" bodyEnd="00000134974E4BC0" nestedIn="00000134A89B46D0"/>
+    <scope id="00000134A89B3A10" type="Lambda" bodyStart="00000134974E48C0" bodyEnd="00000134974E4F20" nestedIn="00000134A89B3D40"/>
+  </scopes>
+  <variables>
+    <var id="0000013491667A50" nameToken="00000134974E3000" typeStartToken="00000134974E33C0" typeEndToken="00000134974E3600" access="Local" scope="00000134A89B36E0" constness="1" isArgument="false" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="true" isPointer="false" isReference="true" isStatic="false"/>
+    <var id="0000013491667DD0" nameToken="00000134974E2340" typeStartToken="00000134974E1140" typeEndToken="00000134974E1140" access="Local" scope="00000134A89B47E0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491668230" nameToken="00000134974E25E0" typeStartToken="00000134974E2C40" typeEndToken="00000134974E3840" access="Local" scope="00000134A89B47E0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="true" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A8C04610">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04730">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C041B0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C041D0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04630">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04650">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04430">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04470">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

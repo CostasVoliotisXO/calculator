@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2917566515">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="IsValidViewState" lineNumber="14"/>
+    <functioncall functionName="DockedView"/>
+    <functioncall functionName="Equals"/>
+    <functioncall functionName="Snap"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3877717464">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ptrb&apos; can be reduced." verbose="The scope of the variable &apos;ptrb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="85"/>
+            <symbol>ptrb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ptrc&apos; can be reduced." verbose="The scope of the variable &apos;ptrc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="86"/>
+            <symbol>ptrc</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;da&apos; can be reduced." verbose="The scope of the variable &apos;da&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="91"/>
+            <symbol>da</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;digit&apos; can be reduced." verbose="The scope of the variable &apos;digit&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="304"/>
+            <symbol>digit</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;da&apos; is assigned a value that is never used." verbose="Variable &apos;da&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="91"/>
+            <symbol>da</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cy&apos; is assigned a value that is never used." verbose="Variable &apos;cy&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="92"/>
+            <symbol>cy</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mcy&apos; is assigned a value that is never used." verbose="Variable &apos;mcy&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" line="94"/>
+            <symbol>mcy</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="298" call-argexpr="rem" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" linenr="268" info="Assignment 'rem=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="331" call-argexpr="lasttmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" linenr="325" info="Assignment 'lasttmp=nullptr', assigned value is 0"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:430:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="40"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="98"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="100"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:422:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="224"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="283"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="98"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="275"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="298" call-argexpr="rem" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" linenr="268" info="Assignment 'rem=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="331" call-argexpr="lasttmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\basex.cpp" linenr="325" info="Assignment 'lasttmp=nullptr', assigned value is 0"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:430:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="40"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="98"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="100"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:422:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="224"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="283"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:20:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="98"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp:204:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/basex.cpp" linenr="275"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="mulnumx" lineNumber="37"/>
+    <functiondecl functionName="_mulnumx" lineNumber="79"/>
+    <functiondecl functionName="numpowi32x" lineNumber="177"/>
+    <functiondecl functionName="divnumx" lineNumber="221"/>
+    <functiondecl functionName="_divnumx" lineNumber="260"/>
+    <functiondecl functionName="mulnumx" lineNumber="37"/>
+    <functiondecl functionName="_mulnumx" lineNumber="79"/>
+    <functiondecl functionName="numpowi32x" lineNumber="177"/>
+    <functiondecl functionName="divnumx" lineNumber="221"/>
+    <functiondecl functionName="_divnumx" lineNumber="260"/>
+    <functioncall functionName="ANGLE_DEG"/>
+    <functioncall functionName="ANGLE_GRAD"/>
+    <functioncall functionName="ANGLE_RAD"/>
+    <functioncall functionName="BASEX"/>
+    <functioncall functionName="FMT_ENGINEERING"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="FMT_SCIENTIFIC"/>
+    <functioncall functionName="OutputDebugString"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="_destroynum"/>
+    <functioncall functionName="_divnumx"/>
+    <functioncall functionName="_dupnum"/>
+    <functioncall functionName="_mulnumx"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="addnum"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="cdigits"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="g_ratio"/>
+    <functioncall functionName="i32tonum"/>
+    <functioncall functionName="iadigit"/>
+    <functioncall functionName="ibdigit"/>
+    <functioncall functionName="icdigit"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="lasttmp"/>
+    <functioncall functionName="lessnum"/>
+    <functioncall functionName="lret"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="mcy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="mulnumx"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="pa"/>
+    <functioncall functionName="power"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="proot"/>
+    <functioncall functionName="ptrc"/>
+    <functioncall functionName="rem"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="thismax"/>
+    <functioncall functionName="tmp"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="zernum"/>
+  </FileInfo>
+</analyzerinfo>

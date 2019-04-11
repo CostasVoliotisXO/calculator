@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3249139371">
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;asinanglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." verbose="Function &apos;asinanglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" line="85"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\ratpak.h" line="356"/>
+            <symbol>asinanglerat</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;acosanglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." verbose="Function &apos;acosanglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" line="176"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\ratpak.h" line="346"/>
+            <symbol>acosanglerat</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;atananglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." verbose="Function &apos;atananglerat&apos; argument 1 names different: declaration &apos;px&apos; definition &apos;pa&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" line="265"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\ratpak.h" line="366"/>
+            <symbol>atananglerat</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="73" call-argexpr="thisterm" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'thisterm=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="74" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="105" call-argexpr="phack" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="97" info="Assignment 'phack=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="186" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="192" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="186" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="278" call-argexpr="thisterm" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'thisterm=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="280" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:423:13" call-funcname="divrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="30" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:23:6" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" call-funcname="asinrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="88" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:356:13" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" call-funcname="acosrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="179" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:346:13" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" call-funcname="atanrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="268" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:366:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:68:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="99"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:183:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="209"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:272:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="297"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:68:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="99"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:183:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="209"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:272:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="297"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="73" call-argexpr="thisterm" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'thisterm=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="74" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="71" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="105" call-argexpr="phack" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="97" info="Assignment 'phack=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="186" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="192" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="186" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="xx" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'xx=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="278" call-argexpr="thisterm" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'thisterm=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="280" call-argexpr="n2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\itrans.cpp" linenr="275" info="Assignment 'n2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:423:13" call-funcname="divrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="30" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:23:6" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" call-funcname="asinrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="88" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:356:13" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" call-funcname="acosrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="179" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:346:13" my-argnr="1"/>
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" call-funcname="atanrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="268" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:366:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:68:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="99"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:183:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="209"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:272:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="297"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:68:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="71"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:362:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="99"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:183:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="186"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:352:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="209"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp:272:6" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="275"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:372:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/itrans.cpp" linenr="297"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="ascalerat" lineNumber="23"/>
+    <functiondecl functionName="_asinrat" lineNumber="68"/>
+    <functiondecl functionName="asinanglerat" lineNumber="85"/>
+    <functiondecl functionName="asinrat" lineNumber="92"/>
+    <functiondecl functionName="acosanglerat" lineNumber="176"/>
+    <functiondecl functionName="_acosrat" lineNumber="183"/>
+    <functiondecl functionName="acosrat" lineNumber="204"/>
+    <functiondecl functionName="atananglerat" lineNumber="265"/>
+    <functiondecl functionName="_atanrat" lineNumber="272"/>
+    <functiondecl functionName="atanrat" lineNumber="291"/>
+    <functiondecl functionName="ascalerat" lineNumber="23"/>
+    <functiondecl functionName="_asinrat" lineNumber="68"/>
+    <functiondecl functionName="asinanglerat" lineNumber="85"/>
+    <functiondecl functionName="asinrat" lineNumber="92"/>
+    <functiondecl functionName="acosanglerat" lineNumber="176"/>
+    <functiondecl functionName="_acosrat" lineNumber="183"/>
+    <functiondecl functionName="acosrat" lineNumber="204"/>
+    <functiondecl functionName="atananglerat" lineNumber="265"/>
+    <functiondecl functionName="_atanrat" lineNumber="272"/>
+    <functiondecl functionName="atanrat" lineNumber="291"/>
+    <functioncall functionName="ANGLE_DEG"/>
+    <functioncall functionName="ANGLE_GRAD"/>
+    <functioncall functionName="ANGLE_RAD"/>
+    <functioncall functionName="BASEX"/>
+    <functioncall functionName="FMT_ENGINEERING"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="FMT_SCIENTIFIC"/>
+    <functioncall functionName="OutputDebugString"/>
+    <functioncall functionName="_asinrat"/>
+    <functioncall functionName="_atanrat"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="_createrat"/>
+    <functioncall functionName="_destroynum"/>
+    <functioncall functionName="_destroyrat"/>
+    <functioncall functionName="_dupnum"/>
+    <functioncall functionName="acosrat"/>
+    <functioncall functionName="addnum"/>
+    <functioncall functionName="addrat"/>
+    <functioncall functionName="angletype"/>
+    <functioncall functionName="ascalerat"/>
+    <functioncall functionName="asinrat"/>
+    <functioncall functionName="atanrat"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="divrat"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="i32tonum"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="mulnumx"/>
+    <functioncall functionName="mulrat"/>
+    <functioncall functionName="n2"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="num_one"/>
+    <functioncall functionName="pa"/>
+    <functioncall functionName="phack"/>
+    <functioncall functionName="pi"/>
+    <functioncall functionName="pi_over_two"/>
+    <functioncall functionName="pp"/>
+    <functioncall functionName="pq"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="pret"/>
+    <functioncall functionName="pt_eight_five"/>
+    <functioncall functionName="px"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="rat_360"/>
+    <functioncall functionName="rat_400"/>
+    <functioncall functionName="rat_equ"/>
+    <functioncall functionName="rat_ge"/>
+    <functioncall functionName="rat_gt"/>
+    <functioncall functionName="rat_le"/>
+    <functioncall functionName="rat_negsmallest"/>
+    <functioncall functionName="rat_one"/>
+    <functioncall functionName="rat_smallest"/>
+    <functioncall functionName="rat_two"/>
+    <functioncall functionName="rootrat"/>
+    <functioncall functionName="sgn"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="subrat"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="thisterm"/>
+    <functioncall functionName="throw"/>
+    <functioncall functionName="tmpx"/>
+    <functioncall functionName="trimit"/>
+    <functioncall functionName="two_pi"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="xx"/>
+    <functioncall functionName="zernum"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1663217635">
+        <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" line="179"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;factrat&apos; argument 1 names different: declaration &apos;pa&apos; definition &apos;px&apos;." verbose="Function &apos;factrat&apos; argument 1 names different: declaration &apos;pa&apos; definition &apos;px&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" line="196"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\ratpak.h" line="425"/>
+            <symbol>factrat</symbol>
+        </error>
+        <error id="constArgument" severity="style" msg="Argument &apos;*pn&apos; to function _destroyrat is always 0" verbose="Argument &apos;*pn&apos; to function _destroyrat is always 0" cwe="570">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" line="192" info="Argument &apos;*pn&apos; to function _destroyrat is always 0"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" line="191" info="*pn is assigned value 0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="89" call-argexpr="tmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="65" info="Assignment 'tmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="102" call-argexpr="term" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="69" info="Assignment 'term=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="115" call-argexpr="factorial" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="63" info="Assignment 'factorial=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="116" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="118" call-argexpr="mpy" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="72" info="Assignment 'mpy=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="121" call-argexpr="a2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="68" info="Assignment 'a2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="125" call-argexpr="sum" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="70" info="Assignment 'sum=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="133" call-argexpr="err" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="71" info="Assignment 'err=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="209" call-argexpr="fact" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="199" info="Assignment 'fact=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="211" call-argexpr="neg_rat_one" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="201" info="Assignment 'neg_rat_one=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="214" call-argexpr="frac" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="200" info="Assignment 'frac=nullptr', assigned value is 0"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp:60:6" my-argnr="1" my-argname="pn" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="91"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:425:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="203"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp:60:6" my-argnr="1" my-argname="pn" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="91"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:425:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="203"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="89" call-argexpr="tmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="65" info="Assignment 'tmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="102" call-argexpr="term" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="69" info="Assignment 'term=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="115" call-argexpr="factorial" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="63" info="Assignment 'factorial=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="116" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="118" call-argexpr="mpy" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="72" info="Assignment 'mpy=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="121" call-argexpr="a2" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="68" info="Assignment 'a2=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="125" call-argexpr="sum" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="70" info="Assignment 'sum=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="133" call-argexpr="err" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="71" info="Assignment 'err=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="209" call-argexpr="fact" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="199" info="Assignment 'fact=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="211" call-argexpr="neg_rat_one" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="201" info="Assignment 'neg_rat_one=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:417:13" call-funcname="_destroyrat" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="214" call-argexpr="frac" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\fact.cpp" linenr="200" info="Assignment 'frac=nullptr', assigned value is 0"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp:60:6" my-argnr="1" my-argname="pn" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="91"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:425:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="203"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp:60:6" my-argnr="1" my-argname="pn" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="91"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:425:13" my-argnr="1" my-argname="px" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/fact.cpp" linenr="203"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="_gamma" lineNumber="60"/>
+    <functiondecl functionName="factrat" lineNumber="196"/>
+    <functiondecl functionName="_gamma" lineNumber="60"/>
+    <functiondecl functionName="factrat" lineNumber="196"/>
+    <functioncall functionName="ANGLE_DEG"/>
+    <functioncall functionName="ANGLE_GRAD"/>
+    <functioncall functionName="ANGLE_RAD"/>
+    <functioncall functionName="BASEX"/>
+    <functioncall functionName="FMT_ENGINEERING"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="FMT_SCIENTIFIC"/>
+    <functioncall functionName="OutputDebugString"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="_createrat"/>
+    <functioncall functionName="_destroynum"/>
+    <functioncall functionName="_destroyrat"/>
+    <functioncall functionName="_dupnum"/>
+    <functioncall functionName="_gamma"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="a2"/>
+    <functioncall functionName="addnum"/>
+    <functioncall functionName="addrat"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="divrat"/>
+    <functioncall functionName="err"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="exprat"/>
+    <functioncall functionName="fact"/>
+    <functioncall functionName="factorial"/>
+    <functioncall functionName="frac"/>
+    <functioncall functionName="fracrat"/>
+    <functioncall functionName="i32tonum"/>
+    <functioncall functionName="i32torat"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="intrat"/>
+    <functioncall functionName="lograt"/>
+    <functioncall functionName="mpy"/>
+    <functioncall functionName="mulnumx"/>
+    <functioncall functionName="mulrat"/>
+    <functioncall functionName="neg_rat_one"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="num_one"/>
+    <functioncall functionName="oldprec"/>
+    <functioncall functionName="one_pt_five"/>
+    <functioncall functionName="pn"/>
+    <functioncall functionName="powratcomp"/>
+    <functioncall functionName="pp"/>
+    <functioncall functionName="pq"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="px"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="ratRadix"/>
+    <functioncall functionName="rat_gt"/>
+    <functioncall functionName="rat_lt"/>
+    <functioncall functionName="rat_max_fact"/>
+    <functioncall functionName="rat_min_fact"/>
+    <functioncall functionName="rat_neq"/>
+    <functioncall functionName="rat_one"/>
+    <functioncall functionName="rat_two"/>
+    <functioncall functionName="rat_zero"/>
+    <functioncall functionName="ratprec"/>
+    <functioncall functionName="rattoi32"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="subrat"/>
+    <functioncall functionName="sum"/>
+    <functioncall functionName="term"/>
+    <functioncall functionName="throw"/>
+    <functioncall functionName="tmp"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="zerrat"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,259 @@
+src\CalcManager\CalculatorHistory.cpp,65,style,Unsigned expression 'uIdx' can't be negative so it is unnecessary to test it.
+src\CalcManager\CalculatorVector.h,26,style,Technically the member function 'CalculatorVector::GetSize' can be const.
+src\CalcManager\CalculatorVector.h,149,performance,Technically the member function 'CalculatorVector::GetExpressionSuffix' can be static (but you may consider moving to unnamed namespace).
+src\CalcManager\CalculatorHistory.h,34,style,Class 'CalculatorHistory' has a constructor with 1 argument that is not explicit.
+src\CalcManager\CalculatorManager.cpp,25,warning,Member variable 'CalculatorManager::m_pHistory' is not initialized in the constructor.
+src\CalcManager\CalculatorManager.cpp,863,style,Consider using std::copy algorithm instead of a raw loop.
+src\CalcManager\CalculatorManager.cpp,432,style,The function 'DeSerializeCommands' is never used.
+src\CalcManager\CalculatorManager.cpp,407,style,The function 'DeSerializeMemory' is never used.
+src\CalcManager\CalculatorManager.cpp,364,style,The function 'DeSerializePrimaryDisplay' is never used.
+src\CalcManager\CalculatorManager.cpp,67,style,The function 'DisplayPasteError' is never used.
+src\CalcManager\CalculatorManager.cpp,739,style,The function 'GetCurrentDegreeMode' is never used.
+src\CalcManager\CalculatorManager.cpp,669,style,The function 'GetHistoryItems' is never used.
+src\CalcManager\CalculatorManager.cpp,772,style,The function 'GetResultForRadix' is never used.
+src\CalcManager\CalculatorManager.cpp,398,style,The function 'GetSerializedMemory' is never used.
+src\CalcManager\CalculatorManager.cpp,355,style,The function 'GetSerializedPrimaryDisplay' is never used.
+src\CalcManager\CalculatorManager.cpp,792,style,The function 'IsEngineRecording' is never used.
+src\CalcManager\CalculatorManager.cpp,691,style,The function 'RemoveHistoryItem' is never used.
+src\CalcManager\CalculatorManager.cpp,423,style,The function 'SerializeCommands' is never used.
+src\CalcManager\CalculatorManager.cpp,336,style,The function 'SerializeSavedDegreeMode' is never used.
+src\CalcManager\CalculatorManager.cpp,797,style,The function 'SetInHistoryItemLoadMode' is never used.
+src\CalcManager\CalculatorManager.cpp,777,style,The function 'SetPrecision' is never used.
+src\CalcManager\CalculatorManager.cpp,701,style,The function 'SetRadix' is never used.
+src\CalcManager\Header Files\CalcInput.h,22,style,Technically the member function 'CalcEngine::CalcNumSec::IsEmpty' can be const.
+src\CalcManager\Header Files\CalcInput.h,24,style,Technically the member function 'CalcEngine::CalcNumSec::IsNegative' can be const.
+src\CalcManager\Header Files\CalcInput.h,39,style,Class 'CalcInput' has a constructor with 1 argument that is not explicit.
+src\CalcManager\Header Files\CalcEngine.h,60,style,Technically the member function 'CCalcEngine::FInErrorState' can be const.
+src\CalcManager\Header Files\CalcEngine.h,61,style,Technically the member function 'CCalcEngine::FInRecordingState' can be const.
+src\CalcManager\Header Files\Rational.h,21,style,Class 'Rational' has a constructor with 1 argument that is not explicit.
+src\CalcManager\Header Files\Rational.h,23,style,Class 'Rational' has a constructor with 1 argument that is not explicit.
+src\CalcManager\Header Files\Rational.h,24,style,Class 'Rational' has a constructor with 1 argument that is not explicit.
+src\CalcManager\Header Files\Rational.h,25,style,Class 'Rational' has a constructor with 1 argument that is not explicit.
+src\CalcManager\ExpressionCommand.h,12,style,Class 'CParentheses' has a constructor with 1 argument that is not explicit.
+src\CalcManager\ExpressionCommand.h,24,style,Class 'CUnaryCommand' has a constructor with 1 argument that is not explicit.
+src\CalcManager\ExpressionCommand.h,39,style,Class 'CBinaryCommand' has a constructor with 1 argument that is not explicit.
+src\CalcManager\ExpressionCommand.h,70,style,Technically the member function 'COpndCommand::GetString' can be const.
+src\CalcManager\ExpressionCommand.cpp,36,performance,Variable 'm_command' is assigned in constructor body. Consider performing initialization in initialization list.
+src\CalcManager\ExpressionCommand.cpp,42,performance,Variable 'm_command' is assigned in constructor body. Consider performing initialization in initialization list.
+src\CalcManager\ExpressionCommand.cpp,302,style,The function 'Accept' is never used.
+src\CalcManager\ExpressionCommand.cpp,123,style,The function 'AppendCommand' is never used.
+src\CalcManager\ExpressionCommand.cpp,216,style,The function 'GetToken' is never used.
+src\CalcManager\ExpressionCommand.cpp,159,style,The function 'RemoveFromEnd' is never used.
+src\CalcManager\ExpressionCommand.cpp,78,style,The function 'SetCommand' is never used.
+src\CalcManager\ExpressionCommand.cpp,141,style,The function 'ToggleSign' is never used.
+src\CalcManager\ExpressionCommand.cpp,29,style,The function 'Accept' is never used.
+src\CalcManager\ExpressionCommand.cpp,57,style,The function 'SetCommand' is never used.
+src\CalcManager\UnitConverter.cpp,948,style,Variable 'm_fromType' is reassigned a value before the old one has been used.
+src\CalcManager\UnitConverter.cpp,949,style,Variable 'm_toType' is reassigned a value before the old one has been used.
+src\CalcManager\UnitConverter.cpp,398,style,Function 'RestoreUserPreferences' argument 1 names different: declaration 'userPreference' definition 'userPreferences'.
+src\CalcManager\UnitConverter.cpp,1027,style,Function 'TrimString' argument 1 names different: declaration 'input' definition 'returnString'.
+src\CalcManager\UnitConverter.cpp,1035,performance,Prefer prefix ++/-- operators for non-primitive types.
+src\CalcManager\UnitConverter.cpp,361,style,Consider using std::transform algorithm instead of a raw loop.
+src\CalcManager\UnitConverter.cpp,337,style,The function 'DeSerialize' is never used.
+src\CalcManager\UnitConverter.cpp,132,style,The function 'GetCurrentCategory' is never used.
+src\CalcManager\UnitConverter.cpp,398,style,The function 'RestoreUserPreferences' is never used.
+src\CalcManager\UnitConverter.cpp,417,style,The function 'SaveUserPreferences' is never used.
+src\CalcManager\UnitConverter.cpp,97,style,The function 'SetCurrentCategory' is never used.
+src\CalcManager\UnitConverter.cpp,143,style,The function 'SetCurrentUnitTypes' is never used.
+src\CalcManager\UnitConverter.cpp,170,style,The function 'SwitchActive' is never used.
+src\CalcManager\UnitConverter.h,12,warning,Member variable 'Unit::id' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,12,warning,Member variable 'Unit::isConversionSource' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,12,warning,Member variable 'Unit::isConversionTarget' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,12,warning,Member variable 'Unit::isWhimsical' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,58,warning,Member variable 'Category::id' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,58,warning,Member variable 'Category::supportsNegative' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,104,warning,Member variable 'ConversionData::ratio' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,104,warning,Member variable 'ConversionData::offset' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,104,warning,Member variable 'ConversionData::offsetFirst' is not initialized in the constructor.
+src\CalcManager\UnitConverter.h,24,performance,Variable 'name' is assigned in constructor body. Consider performing initialization in initialization list.
+src\CalcManager\UnitConverter.h,25,performance,Variable 'accessibleName' is assigned in constructor body. Consider performing initialization in initialization list.
+src\CalcManager\UnitConverter.h,203,style,Class 'UnitConverter' has a constructor with 1 argument that is not explicit.
+src\CalcManager\UnitConverter.h,13,performance,Function parameter 'name' should be passed by const reference.
+src\CalcManager\UnitConverter.h,13,performance,Function parameter 'abbreviation' should be passed by const reference.
+src\CalcManager\UnitConverter.h,18,performance,Function parameter 'abbreviation' should be passed by const reference.
+src\CalcManager\UnitConverter.h,60,performance,Function parameter 'name' should be passed by const reference.
+src\CalcManager\CEngine\scicomm.cpp,188,style,The scope of the variable 'nPrev' can be reduced.
+src\CalcManager\CEngine\scicomm.cpp,875,style,struct member 'UFNE::fDontUseInExpEval' is never used.
+src\CalcManager\CEngine\scidisp.cpp,224,style,The scope of the variable 'currentGroup' can be reduced.
+src\CalcManager\CEngine\scidisp.cpp,224,style,Variable 'currentGroup' is assigned a value that is never used.
+src\CalcManager\Ratpack\basex.cpp,85,style,The scope of the variable 'ptrb' can be reduced.
+src\CalcManager\Ratpack\basex.cpp,86,style,The scope of the variable 'ptrc' can be reduced.
+src\CalcManager\Ratpack\basex.cpp,91,style,The scope of the variable 'da' can be reduced.
+src\CalcManager\Ratpack\basex.cpp,304,style,The scope of the variable 'digit' can be reduced.
+src\CalcManager\Ratpack\basex.cpp,91,style,Variable 'da' is assigned a value that is never used.
+src\CalcManager\Ratpack\basex.cpp,92,style,Variable 'cy' is assigned a value that is never used.
+src\CalcManager\Ratpack\basex.cpp,94,style,Variable 'mcy' is assigned a value that is never used.
+src\CalcManager\Ratpack\conv.cpp,663,style,The scope of the variable 'curChar' can be reduced.
+src\CalcManager\Ratpack\conv.cpp,1450,style,The function 'i32factnum' is never used.
+src\CalcManager\Ratpack\conv.cpp,1480,style,The function 'i32prodnum' is never used.
+src\CalcManager\Ratpack\conv.cpp,1071,error,Null pointer dereference: pnum
+src\CalcManager\Ratpack\exp.cpp,273,style,Function 'powrat' argument 1 names different: declaration 'pa' definition 'px'.
+src\CalcManager\Ratpack\exp.cpp,273,style,Function 'powrat' argument 2 names different: declaration 'b' definition 'y'.
+src\CalcManager\Ratpack\exp.cpp,300,style,Function 'powratNumeratorDenominator' argument 1 names different: declaration 'pa' definition 'px'.
+src\CalcManager\Ratpack\exp.cpp,300,style,Function 'powratNumeratorDenominator' argument 2 names different: declaration 'b' definition 'y'.
+src\CalcManager\Ratpack\exp.cpp,409,style,Function 'powratcomp' argument 1 names different: declaration 'pa' definition 'px'.
+src\CalcManager\Ratpack\exp.cpp,409,style,Function 'powratcomp' argument 2 names different: declaration 'b' definition 'y'.
+src\CalcManager\Ratpack\exp.cpp,230,style,The function 'log10rat' is never used.
+src\CalcManager\Ratpack\fact.cpp,179,style,Assignment of function parameter has no effect outside the function.
+src\CalcManager\Ratpack\fact.cpp,196,style,Function 'factrat' argument 1 names different: declaration 'pa' definition 'px'.
+src\CalcManager\Ratpack\fact.cpp,192,style,Argument '*pn' to function _destroyrat is always 0
+src\CalcManager\Ratpack\itrans.cpp,85,style,Function 'asinanglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\itrans.cpp,176,style,Function 'acosanglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\itrans.cpp,265,style,Function 'atananglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\itrans.cpp,183,style,The function '_acosrat' is never used.
+src\CalcManager\Ratpack\logic.cpp,25,style,The scope of the variable 'intb' can be reduced.
+src\CalcManager\Ratpack\logic.cpp,48,style,The scope of the variable 'intb' can be reduced.
+src\CalcManager\Ratpack\logic.cpp,143,style,The scope of the variable 'da' can be reduced.
+src\CalcManager\Ratpack\num.cpp,72,style,The scope of the variable 'da' can be reduced.
+src\CalcManager\Ratpack\num.cpp,73,style,The scope of the variable 'db' can be reduced.
+src\CalcManager\Ratpack\num.cpp,225,style,The scope of the variable 'pchb' can be reduced.
+src\CalcManager\Ratpack\num.cpp,226,style,The scope of the variable 'pchc' can be reduced.
+src\CalcManager\Ratpack\num.cpp,231,style,The scope of the variable 'da' can be reduced.
+src\CalcManager\Ratpack\num.cpp,434,style,The scope of the variable 'digit' can be reduced.
+src\CalcManager\Ratpack\num.cpp,231,style,Variable 'da' is assigned a value that is never used.
+src\CalcManager\Ratpack\num.cpp,232,style,Variable 'cy' is assigned a value that is never used.
+src\CalcManager\Ratpack\num.cpp,234,style,Variable 'mcy' is assigned a value that is never used.
+src\CalcManager\Ratpack\num.cpp,443,style,Consider using std::find_if algorithm instead of a raw loop.
+src\CalcManager\Ratpack\rat.cpp,266,style,Function 'rootrat' argument 1 names different: declaration 'pa' definition 'py'.
+src\CalcManager\Ratpack\rat.cpp,266,style,Function 'rootrat' argument 2 names different: declaration 'b' definition 'n'.
+src\CalcManager\Ratpack\support.cpp,526,style,Variable 'logscale' is assigned a value that is never used.
+src\CalcManager\Ratpack\trans.cpp,105,style,Function 'sinanglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\trans.cpp,200,style,Function 'cosanglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\trans.cpp,272,style,Function 'tananglerat' argument 1 names different: declaration 'px' definition 'pa'.
+src\CalcManager\Ratpack\trans.cpp,194,style,The function 'cosrat' is never used.
+src\CalcManager\Ratpack\trans.cpp,99,style,The function 'sinrat' is never used.
+src\CalcManager\Ratpack\trans.cpp,266,style,The function 'tanrat' is never used.
+src\CalcManager\Ratpack\transh.cpp,162,style,Variable 'pret->pp' is reassigned a value before the old one has been used.
+src\CalcManager\Ratpack\transh.cpp,163,style,Variable 'pret->pq' is reassigned a value before the old one has been used.
+src\CalcViewModel\Common\Automation\NarratorAnnouncement.h,32,information,The code 'class NarratorAnnouncement sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\DisplayExpressionToken.h,18,information,The code 'class DisplayExpressionToken sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\NavCategory.h,101,information,The code 'class NavCategory sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\NavCategory.h,210,information,The code 'class NavCategoryGroup sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\HistoryItemViewModel.h,14,information,The code 'class HistoryItemViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\HistoryViewModel.h,22,information,The code 'class HistoryViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\MemoryItemViewModel.h,18,information,The code 'class MemoryItemViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\StandardCalculatorViewModel.h,36,information,The code 'class StandardCalculatorViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\DateCalculator.h,22,information,The code 'class _Enum_is_bitflag_ DateUnit {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\DateCalculator.h,58,performance,Technically the member function 'CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate' can be static (but you may consider moving to unnamed namespace).
+src\CalcViewModel\Common\DateCalculator.h,43,style,Class 'DateCalculationEngine' has a constructor with 1 argument that is not explicit.
+src\CalcViewModel\DateCalculatorViewModel.h,16,information,The code 'class DateCalculatorViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\NetworkManager.h,17,information,The code 'class NetworkManager sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\UnitConverterViewModel.h,19,information,The code 'class Category sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\UnitConverterViewModel.h,52,information,The code 'class Unit sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\UnitConverterViewModel.h,91,information,The code 'class SupplementaryResult sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\UnitConverterViewModel.h,119,information,The code 'class Activatable sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\UnitConverterViewModel.h,142,information,The code 'class UnitConverterViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\ApplicationViewModel.h,15,information,The code 'class ApplicationViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\DelegateCommand.h,42,error,Syntax Error: AST broken, binary operator '>' doesn't have two operands.
+src\CalcViewModel\Common\LocalizationService.h,21,information,The code 'class LocalizationService sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.h,13,information,The code 'class CalculatorButtonPressedEventArgs sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\CalculatorDisplay.cpp,28,style,Function 'SetPrimaryDisplay' argument 1 names different: declaration 'displayString' definition 'displayStringValue'.
+src\CalcViewModel\Common\CalculatorDisplay.cpp,83,style,Function 'SetMemorizedNumbers' argument 1 names different: declaration 'memorizedNumbers' definition 'newMemorizedNumbers'.
+src\CalcViewModel\Common\CalculatorDisplay.cpp,18,style,The function 'SetCallback' is never used.
+src\CalcViewModel\Common\CalculatorDisplay.cpp,23,style,The function 'SetHistoryCallback' is never used.
+src\CalcViewModel\Common\DateCalculator.cpp,237,style,The scope of the variable 'days' can be reduced.
+src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp,68,style,Variable 'cmdVector' is assigned a value that is never used.
+src\CalcViewModel\Common\ExpressionCommandDeserializer.h,21,performance,Technically the member function 'CalculatorApp::Common::CommandDeserializer::DeserializeParentheses' can be static (but you may consider moving to unnamed namespace).
+src\CalcViewModel\Common\ExpressionCommandDeserializer.h,23,performance,Technically the member function 'CalculatorApp::Common::CommandDeserializer::DeserializeBinary' can be static (but you may consider moving to unnamed namespace).
+src\CalcViewModel\Common\ExpressionCommandDeserializer.h,15,style,Class 'CommandDeserializer' has a constructor with 1 argument that is not explicit.
+src\CalcViewModel\Common\KeyboardShortcutManager.h,13,information,The code 'class KeyboardShortcutManager sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\Automation\LiveRegionHost.h,19,information,The code 'class LiveRegionHost sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\Automation\NotificationHost.h,13,information,The code 'class NotificationHost sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.h,22,style,Unused private function: 'NarratorAnnouncementHostFactory::Initialize'
+src\CalcViewModel\Common\Automation\NarratorNotifier.h,11,information,The code 'class NarratorNotifier sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp,196,style,The scope of the variable 'didLoad' can be reduced.
+src\CalcViewModel\DataLoaders\CurrencyDataLoader.h,45,style,Struct 'CurrencyUnitMetadata' has a constructor with 1 argument that is not explicit.
+src\CalcViewModel\DataLoaders\CurrencyDataLoader.h,54,style,Class 'CurrencyDataLoader' has a constructor with 1 argument that is not explicit.
+src\CalcViewModel\DataLoaders\CurrencyHttpClient.cpp,34,warning,Redundant code: Found a statement that begins with string constant.
+src\CalcViewModel\DataLoaders\CurrencyHttpClient.cpp,42,warning,Redundant code: Found a statement that begins with string constant.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,15,warning,Member variable 'OrderedUnit::order' is not initialized in the constructor.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,34,warning,Member variable 'ExplicitUnitConversionData::parentUnitId' is not initialized in the constructor.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,34,warning,Member variable 'ExplicitUnitConversionData::unitId' is not initialized in the constructor.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,50,style,Class 'UnitConverterDataLoader' has a constructor with 1 argument that is not explicit.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,17,performance,Function parameter 'name' should be passed by const reference.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h,17,performance,Function parameter 'abbreviation' should be passed by const reference.
+src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp,150,style,Consider using std::transform algorithm instead of a raw loop.
+src\Calculator\WindowFrameService.h,10,information,The code 'class WindowFrameService sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\App.xaml.h,25,information,The code 'class App sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\AboutFlyout.xaml.h,10,information,The code 'class AboutFlyout sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\MainPage.xaml.h,23,information,The code 'class MainPage sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\MainPage.xaml.h,39,error,Syntax Error: AST broken, binary operator '>' doesn't have two operands.
+src\Calculator\Common\TitleBarHelper.h,26,performance,Technically the member function 'CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight' can be static (but you may consider moving to unnamed namespace).
+src\Calculator\Common\TitleBarHelper.h,27,performance,Technically the member function 'CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility' can be static (but you may consider moving to unnamed namespace).
+src\Calculator\Controls\CalculationResult.h,14,information,The code 'class CalculationResult sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\CalculationResultAutomationPeer.h,12,information,The code 'class CalculationResultAutomationPeer sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\CalculatorButton.h,13,information,The code 'class CalculatorButton sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\FlipButtons.h,13,information,The code 'class FlipButtons sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\OperandTextBox.h,10,information,The code 'class OperandTextBox sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\OperatorTextBox.h,10,information,The code 'class OperatorTextBox sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\OverflowTextBlock.h,12,information,The code 'class OverflowTextBlock sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\OverflowTextBlockAutomationPeer.h,12,information,The code 'class OverflowTextBlockAutomationPeer sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\OverflowTextBlockAutomationPeer.h,18,error,Syntax Error: AST broken, binary operator '>' doesn't have two operands.
+src\Calculator\Controls\RadixButton.h,10,information,The code 'class RadixButton sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\SupplementaryItemsControl.h,8,information,The code 'class SupplementaryItemsControl sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\SupplementaryItemsControl.h,19,information,The code 'class SupplementaryContentPresenter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\SupplementaryItemsControl.h,29,information,The code 'class SupplementaryContentPresenterAP sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Controls\SupplementaryItemsControl.h,37,error,Syntax Error: AST broken, binary operator '>' doesn't have two operands.
+src\Calculator\Converters\BitFlipAutomationNameConverter.h,14,information,The code 'class BitFlipAutomationNameConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\BooleanNegationConverter.h,14,information,The code 'class BooleanNegationConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\BooleanToVisibilityConverter.h,14,information,The code 'class BooleanToVisibilityConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\BooleanToVisibilityConverter.h,32,information,The code 'class BooleanToVisibilityNegationConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\ExpressionItemContainerStyle.h,11,information,The code 'class ExpressionItemContainerStyle sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\ExpressionItemTemplateSelector.h,11,information,The code 'class ExpressionItemTemplateSelector sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\ItemSizeToVisibilityConverter.h,11,information,The code 'class ItemSizeToVisibilityConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\ItemSizeToVisibilityConverter.h,18,information,The code 'class ItemSizeToVisibilityNegationConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\RadixToStringConverter.h,14,information,The code 'class RadixToStringConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Converters\VisibilityNegationConverter.h,14,information,The code 'class VisibilityNegationConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignStandardCalculatorViewModel.h,12,information,The code 'class MemorySlot sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignStandardCalculatorViewModel.h,33,information,The code 'class StandardCalculatorViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignUnitConverterViewModel.h,21,information,The code 'class CategoryViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignUnitConverterViewModel.h,40,information,The code 'class UnitViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignUnitConverterViewModel.h,54,information,The code 'class UnitConverterSupplementaryResultViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignUnitConverterViewModel.h,69,information,The code 'class UnitConverterViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\DesignData\DesignAppViewModel.h,24,information,The code 'class AppViewModel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\Calculator.xaml.h,40,information,The code 'class Calculator sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorStandardOperators.xaml.h,17,information,The code 'class CalculatorStandardOperators sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\Memory.xaml.h,20,information,The code 'class Memory sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\HistoryList.xaml.h,20,information,The code 'class HistoryList sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorProgrammerBitFlipPanel.xaml.h,21,information,The code 'class CalculatorProgrammerBitFlipPanel sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorProgrammerBitFlipPanel.xaml.cpp,200,error,Iterators of different containers are used together.
+src\Calculator\Views\CalculatorProgrammerDisplayPanel.xaml.h,12,information,The code 'class CalculatorProgrammerDisplayPanel sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorProgrammerOperators.xaml.h,13,information,The code 'class CalculatorProgrammerOperators sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorProgrammerRadixOperators.xaml.h,13,information,The code 'class CalculatorProgrammerRadixOperators sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorScientificAngleButtons.xaml.h,17,information,The code 'class CalculatorScientificAngleButtons sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\CalculatorScientificOperators.xaml.h,20,information,The code 'class CalculatorScientificOperators sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\DateCalculator.xaml.h,25,information,The code 'class DateCalculator sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\Memory.xaml.cpp,72,style,Variable 'memorySlot' is assigned a value that is never used.
+src\Calculator\Views\MemoryListItem.xaml.h,15,information,The code 'class MemoryListItem sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\NumberPad.xaml.h,17,information,The code 'class NumberPad sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\OperatorsPanel.xaml.h,15,information,The code 'class OperatorsPanel sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\SupplementaryResults.xaml.h,20,information,The code 'class DelighterUnitToStyleConverter sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\SupplementaryResults.xaml.h,37,information,The code 'class SupplementaryResultDataTemplateSelector sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\SupplementaryResults.xaml.h,62,information,The code 'class SupplementaryResultNoOverflowStackPanel sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\SupplementaryResults.xaml.h,69,information,The code 'class SupplementaryResults sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\TitleBar.xaml.h,10,information,The code 'class TitleBar sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\UnitConverter.xaml.h,20,information,The code 'class UnitConverter sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\Calculator\Views\StateTriggers\AspectRatioTrigger.h,22,information,The code 'class AspectRatioTrigger sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h,29,information,The code 'class MockAsyncOperationWithProgress sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalculatorUnitTests\UnitTestApp.xaml.h,22,information,The code 'class App sealed {' is not handled. You can use -I or --include to add handling of this code.
+src\CalculatorUnitTests\CalcEngineTests.cpp,27,error,syntax error
+src\CalculatorUnitTests\CalcInputTest.cpp,19,error,syntax error
+src\CalculatorUnitTests\CalculatorManagerTest.cpp,167,error,syntax error
+src\CalculatorUnitTests\CopyPasteManagerTest.cpp,42,error,syntax error
+src\CalculatorUnitTests\CurrencyConverterUnitTests.cpp,191,error,syntax error
+src\CalculatorUnitTests\DateCalculatorUnitTests.cpp,49,error,syntax error
+src\CalculatorUnitTests\Module.cpp,19,error,syntax error
+src\CalculatorUnitTests\MultiWindowUnitTests.cpp,60,error,syntax error
+src\CalculatorUnitTests\NavCategoryUnitTests.cpp,356,error,syntax error
+src\CalculatorUnitTests\StandardViewModelUnitTests.cpp,844,error,Syntax Error: AST broken, binary operator '=' doesn't have two operands.
+src\CalculatorUnitTests\UnitConverterTest.cpp,189,error,syntax error
+src\CalculatorUnitTests\UnitConverterViewModelUnitTests.cpp,265,information,The code 'class MockActivatable sealed :' is not handled. You can use -I or --include to add handling of this code.
+src\CalculatorUnitTests\UnitConverterViewModelUnitTests.cpp,37,error,syntax error
+src\CalculatorUnitTests\UtilsTests.cpp,19,error,syntax error
+src\CalculatorUnitTests\AsyncHelper.cpp,36,style,The function 'Delay' is never used.
+src\CalculatorUnitTests\AsyncHelper.cpp,26,style,The function 'RunOnUIThread' is never used.
+src\CalcViewModel\ViewState.cpp,14,style,The function 'IsValidViewState' is never used.
+src\Calculator\Common\AppLifecycleLogger.cpp,66,style,The function 'LaunchUIResponsive' is never used.
+src\Calculator\Common\AppLifecycleLogger.cpp,75,style,The function 'LaunchVisibleComplete' is never used.
+src\Calculator\Common\AppLifecycleLogger.cpp,84,style,The function 'ResumeUIResponsive' is never used.
+src\Calculator\Common\AppLifecycleLogger.cpp,93,style,The function 'ResumeVisibleComplete' is never used.

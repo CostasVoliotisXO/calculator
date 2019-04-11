@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1760015355">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\StandardViewModelUnitTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\StandardViewModelUnitTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;=&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;=&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\StandardViewModelUnitTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\StandardViewModelUnitTests.cpp" line="844"/>
+        </error>
+</analyzerinfo>

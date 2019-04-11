@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;Header Files/CalcEngine.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="#"/>
+    <tok fileIndex="0" linenr="6" str="include"/>
+    <tok fileIndex="0" linenr="6" str="&quot;Header Files/CalcUtils.h&quot;"/>
+    <tok fileIndex="0" linenr="8" str="bool"/>
+    <tok fileIndex="0" linenr="8" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="8" str="("/>
+    <tok fileIndex="0" linenr="8" str="OpCode"/>
+    <tok fileIndex="0" linenr="8" str="op"/>
+    <tok fileIndex="0" linenr="8" str=","/>
+    <tok fileIndex="0" linenr="8" str="uint32_t"/>
+    <tok fileIndex="0" linenr="8" str="x"/>
+    <tok fileIndex="0" linenr="8" str=","/>
+    <tok fileIndex="0" linenr="8" str="uint32_t"/>
+    <tok fileIndex="0" linenr="8" str="y"/>
+    <tok fileIndex="0" linenr="8" str=")"/>
+    <tok fileIndex="0" linenr="9" str="{"/>
+    <tok fileIndex="0" linenr="10" str="return"/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str="op"/>
+    <tok fileIndex="0" linenr="10" str="&gt;="/>
+    <tok fileIndex="0" linenr="10" str="x"/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="10" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str="op"/>
+    <tok fileIndex="0" linenr="10" str="&lt;="/>
+    <tok fileIndex="0" linenr="10" str="y"/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="}"/>
+    <tok fileIndex="0" linenr="13" str="bool"/>
+    <tok fileIndex="0" linenr="13" str="IsBinOpCode"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="OpCode"/>
+    <tok fileIndex="0" linenr="13" str="opCode"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="15" str="return"/>
+    <tok fileIndex="0" linenr="15" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="15" str="("/>
+    <tok fileIndex="0" linenr="15" str="opCode"/>
+    <tok fileIndex="0" linenr="15" str=","/>
+    <tok fileIndex="0" linenr="15" str="IDC_AND"/>
+    <tok fileIndex="0" linenr="15" str=","/>
+    <tok fileIndex="0" linenr="15" str="IDC_PWR"/>
+    <tok fileIndex="0" linenr="15" str=")"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="16" str="}"/>
+    <tok fileIndex="0" linenr="18" str="// WARNING: IDC_SIGN is a special unary op but still this doesn't catch this. Caller has to be aware"/>
+    <tok fileIndex="0" linenr="19" str="// of it and catch it themselves or not needing this"/>
+    <tok fileIndex="0" linenr="20" str="bool"/>
+    <tok fileIndex="0" linenr="20" str="IsUnaryOpCode"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="OpCode"/>
+    <tok fileIndex="0" linenr="20" str="opCode"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="21" str="{"/>
+    <tok fileIndex="0" linenr="22" str="return"/>
+    <tok fileIndex="0" linenr="22" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="opCode"/>
+    <tok fileIndex="0" linenr="22" str=","/>
+    <tok fileIndex="0" linenr="22" str="IDC_UNARYFIRST"/>
+    <tok fileIndex="0" linenr="22" str=","/>
+    <tok fileIndex="0" linenr="22" str="IDC_UNARYLAST"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="}"/>
+    <tok fileIndex="0" linenr="25" str="bool"/>
+    <tok fileIndex="0" linenr="25" str="IsDigitOpCode"/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="OpCode"/>
+    <tok fileIndex="0" linenr="25" str="opCode"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="26" str="{"/>
+    <tok fileIndex="0" linenr="27" str="return"/>
+    <tok fileIndex="0" linenr="27" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="opCode"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="IDC_0"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="IDC_F"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="27" str=";"/>
+    <tok fileIndex="0" linenr="28" str="}"/>
+    <tok fileIndex="0" linenr="30" str="// Some commands are not affecting the state machine state of the calc flow. But these are more of"/>
+    <tok fileIndex="0" linenr="31" str="// some gui mode kind of settings (eg Inv button, or Deg,Rad , Back etc.). This list is getting bigger &amp; bigger"/>
+    <tok fileIndex="0" linenr="32" str="// so we abstract this as a separate routine. Note: There is another side to this. Some commands are not"/>
+    <tok fileIndex="0" linenr="33" str="// gui mode setting to begin with, but once it is discovered it is invalid and we want to behave as though it"/>
+    <tok fileIndex="0" linenr="34" str="// was never inout, we need to revert the state changes made as a result of this test"/>
+    <tok fileIndex="0" linenr="35" str="bool"/>
+    <tok fileIndex="0" linenr="35" str="IsGuiSettingOpCode"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str="OpCode"/>
+    <tok fileIndex="0" linenr="35" str="opCode"/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="36" str="{"/>
+    <tok fileIndex="0" linenr="37" str="if"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="opCode"/>
+    <tok fileIndex="0" linenr="37" str=","/>
+    <tok fileIndex="0" linenr="37" str="IDM_HEX"/>
+    <tok fileIndex="0" linenr="37" str=","/>
+    <tok fileIndex="0" linenr="37" str="IDM_BIN"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str="||"/>
+    <tok fileIndex="0" linenr="38" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="38" str="("/>
+    <tok fileIndex="0" linenr="38" str="opCode"/>
+    <tok fileIndex="0" linenr="38" str=","/>
+    <tok fileIndex="0" linenr="38" str="IDM_QWORD"/>
+    <tok fileIndex="0" linenr="38" str=","/>
+    <tok fileIndex="0" linenr="38" str="IDM_BYTE"/>
+    <tok fileIndex="0" linenr="38" str=")"/>
+    <tok fileIndex="0" linenr="38" str="||"/>
+    <tok fileIndex="0" linenr="39" str="IsOpInRange"/>
+    <tok fileIndex="0" linenr="39" str="("/>
+    <tok fileIndex="0" linenr="39" str="opCode"/>
+    <tok fileIndex="0" linenr="39" str=","/>
+    <tok fileIndex="0" linenr="39" str="IDM_DEG"/>
+    <tok fileIndex="0" linenr="39" str=","/>
+    <tok fileIndex="0" linenr="39" str="IDM_GRAD"/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="40" str="{"/>
+    <tok fileIndex="0" linenr="41" str="return"/>
+    <tok fileIndex="0" linenr="41" str="true"/>
+    <tok fileIndex="0" linenr="41" str=";"/>
+    <tok fileIndex="0" linenr="42" str="}"/>
+    <tok fileIndex="0" linenr="44" str="switch"/>
+    <tok fileIndex="0" linenr="44" str="("/>
+    <tok fileIndex="0" linenr="44" str="opCode"/>
+    <tok fileIndex="0" linenr="44" str=")"/>
+    <tok fileIndex="0" linenr="45" str="{"/>
+    <tok fileIndex="0" linenr="46" str="case"/>
+    <tok fileIndex="0" linenr="46" str="IDC_INV"/>
+    <tok fileIndex="0" linenr="46" str=":"/>
+    <tok fileIndex="0" linenr="47" str="case"/>
+    <tok fileIndex="0" linenr="47" str="IDC_FE"/>
+    <tok fileIndex="0" linenr="47" str=":"/>
+    <tok fileIndex="0" linenr="48" str="case"/>
+    <tok fileIndex="0" linenr="48" str="IDC_MCLEAR"/>
+    <tok fileIndex="0" linenr="48" str=":"/>
+    <tok fileIndex="0" linenr="49" str="case"/>
+    <tok fileIndex="0" linenr="49" str="IDC_BACK"/>
+    <tok fileIndex="0" linenr="49" str=":"/>
+    <tok fileIndex="0" linenr="50" str="case"/>
+    <tok fileIndex="0" linenr="50" str="IDC_EXP"/>
+    <tok fileIndex="0" linenr="50" str=":"/>
+    <tok fileIndex="0" linenr="51" str="case"/>
+    <tok fileIndex="0" linenr="51" str="IDC_STORE"/>
+    <tok fileIndex="0" linenr="51" str=":"/>
+    <tok fileIndex="0" linenr="52" str="case"/>
+    <tok fileIndex="0" linenr="52" str="IDC_MPLUS"/>
+    <tok fileIndex="0" linenr="52" str=":"/>
+    <tok fileIndex="0" linenr="53" str="case"/>
+    <tok fileIndex="0" linenr="53" str="IDC_MMINUS"/>
+    <tok fileIndex="0" linenr="53" str=":"/>
+    <tok fileIndex="0" linenr="54" str="return"/>
+    <tok fileIndex="0" linenr="54" str="true"/>
+    <tok fileIndex="0" linenr="54" str=";"/>
+    <tok fileIndex="0" linenr="55" str="}"/>
+    <tok fileIndex="0" linenr="57" str="// most of the commands"/>
+    <tok fileIndex="0" linenr="58" str="return"/>
+    <tok fileIndex="0" linenr="58" str="false"/>
+    <tok fileIndex="0" linenr="58" str=";"/>
+    <tok fileIndex="0" linenr="59" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="5" str="#include &quot;Header Files/CalcEngine.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="6" str="#include &quot;Header Files/CalcUtils.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0000013491665D00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="bool" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491665DC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="IsOpInRange" scope="00000134A89B0B50" type="name" function="0000013491629570" astParent="00000134916663C0"/>
+    <token id="00000134916663C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="(" scope="00000134A89B0B50" link="00000134916656A0" astOperand1="0000013491665DC0" astOperand2="0000013491665460" valueType-type="bool"/>
+    <token id="0000013491665280" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="OpCode" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491665700" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="op" scope="00000134A89B0B50" type="name" varId="1" variable="000001349115DDC0" astParent="00000134916661E0"/>
+    <token id="00000134916661E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="," scope="00000134A89B0B50" astParent="0000013491665460" astOperand1="0000013491665700" astOperand2="00000134916655E0"/>
+    <token id="0000013491665940" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="uint32_t" scope="00000134A89B0B50" type="name"/>
+    <token id="00000134916655E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="x" scope="00000134A89B0B50" type="name" varId="2" variable="000001349115DF10" astParent="00000134916661E0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013491665460" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="," scope="00000134A89B0B50" astParent="00000134916663C0" astOperand1="00000134916661E0" astOperand2="00000134916654C0"/>
+    <token id="00000134916660C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="uint32_t" scope="00000134A89B0B50" type="name"/>
+    <token id="00000134916654C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str="y" scope="00000134A89B0B50" type="name" varId="3" variable="000001349115E300" astParent="0000013491665460" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134916656A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="8" str=")" scope="00000134A89B0B50" link="00000134916663C0"/>
+    <token id="0000013491665F40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="9" str="{" scope="00000134A89B1F80" link="00000134916653A0"/>
+    <token id="0000013491665340" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="return" scope="00000134A89B1F80" type="name" astOperand1="0000013491665E20"/>
+    <token id="0000013491665100" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="(" scope="00000134A89B1F80" link="0000013491665B80"/>
+    <token id="0000013491665520" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="(" scope="00000134A89B1F80" link="0000013491665580"/>
+    <token id="0000013491666360" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="op" scope="00000134A89B1F80" type="name" varId="1" variable="000001349115DDC0" astParent="00000134916659A0"/>
+    <token id="00000134916659A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="&gt;=" scope="00000134A89B1F80" type="op" isComparisonOp="True" astParent="0000013491665E20" astOperand1="0000013491666360" astOperand2="0000013491665820" valueType-type="bool"/>
+    <token id="0000013491665820" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="x" scope="00000134A89B1F80" type="name" varId="2" variable="000001349115DF10" astParent="00000134916659A0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013491665580" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str=")" scope="00000134A89B1F80" link="0000013491665520"/>
+    <token id="0000013491665E20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="&amp;&amp;" scope="00000134A89B1F80" type="op" isLogicalOp="True" astParent="0000013491665340" astOperand1="00000134916659A0" astOperand2="0000013491665760" valueType-type="bool"/>
+    <token id="0000013491665040" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="(" scope="00000134A89B1F80" link="0000013491665AC0"/>
+    <token id="0000013491665160" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="op" scope="00000134A89B1F80" type="name" varId="1" variable="000001349115DDC0" astParent="0000013491665760"/>
+    <token id="0000013491665760" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="&lt;=" scope="00000134A89B1F80" type="op" isComparisonOp="True" astParent="0000013491665E20" astOperand1="0000013491665160" astOperand2="0000013491666180" valueType-type="bool"/>
+    <token id="0000013491666180" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str="y" scope="00000134A89B1F80" type="name" varId="3" variable="000001349115E300" astParent="0000013491665760" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013491665AC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str=")" scope="00000134A89B1F80" link="0000013491665040"/>
+    <token id="0000013491665B80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str=")" scope="00000134A89B1F80" link="0000013491665100"/>
+    <token id="0000013491666300" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="10" str=";" scope="00000134A89B1F80"/>
+    <token id="00000134916653A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="11" str="}" scope="00000134A89B1F80" link="0000013491665F40"/>
+    <token id="00000134916652E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str="bool" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491664F80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str="IsBinOpCode" scope="00000134A89B0B50" type="name" function="00000134916286D0" astParent="0000013491665640"/>
+    <token id="0000013491665640" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str="(" scope="00000134A89B0B50" link="0000013491665A00" astOperand1="0000013491664F80" astOperand2="0000013491665CA0" valueType-type="bool"/>
+    <token id="0000013491665E80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str="OpCode" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491665CA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str="opCode" scope="00000134A89B0B50" type="name" varId="4" variable="000001349E900FE0" astParent="0000013491665640"/>
+    <token id="0000013491665A00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="13" str=")" scope="00000134A89B0B50" link="0000013491665640"/>
+    <token id="0000013491666240" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="14" str="{" scope="00000134A89B0D70" link="0000013491665BE0"/>
+    <token id="0000013491665EE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="return" scope="00000134A89B0D70" type="name" astOperand1="0000013491666480"/>
+    <token id="00000134916657C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="IsOpInRange" scope="00000134A89B0D70" type="name" function="0000013491629570" astParent="0000013491666480"/>
+    <token id="0000013491666480" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="(" scope="00000134A89B0D70" link="0000013491666060" astParent="0000013491665EE0" astOperand1="00000134916657C0" astOperand2="00000134916662A0" valueType-type="bool"/>
+    <token id="0000013491665880" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="opCode" scope="00000134A89B0D70" type="name" varId="4" variable="000001349E900FE0" astParent="0000013491665FA0"/>
+    <token id="0000013491665FA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="," scope="00000134A89B0D70" astParent="00000134916662A0" astOperand1="0000013491665880" astOperand2="0000013491666000"/>
+    <token id="0000013491666000" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="IDC_AND" scope="00000134A89B0D70" type="name" astParent="0000013491665FA0"/>
+    <token id="00000134916662A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="," scope="00000134A89B0D70" astParent="0000013491666480" astOperand1="0000013491665FA0" astOperand2="0000013491665A60"/>
+    <token id="0000013491665A60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str="IDC_PWR" scope="00000134A89B0D70" type="name" astParent="00000134916662A0"/>
+    <token id="0000013491666060" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str=")" scope="00000134A89B0D70" link="0000013491666480"/>
+    <token id="0000013491665B20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="15" str=";" scope="00000134A89B0D70"/>
+    <token id="0000013491665BE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="16" str="}" scope="00000134A89B0D70" link="0000013491666240"/>
+    <token id="0000013491665C40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str="bool" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491666120" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str="IsUnaryOpCode" scope="00000134A89B0B50" type="name" function="0000013491629720" astParent="0000013491666420"/>
+    <token id="0000013491666420" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str="(" scope="00000134A89B0B50" link="00000134916665A0" astOperand1="0000013491666120" astOperand2="00000134916650A0" valueType-type="bool"/>
+    <token id="00000134916664E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str="OpCode" scope="00000134A89B0B50" type="name"/>
+    <token id="00000134916650A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str="opCode" scope="00000134A89B0B50" type="name" varId="5" variable="000001349E901050" astParent="0000013491666420"/>
+    <token id="00000134916665A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="20" str=")" scope="00000134A89B0B50" link="0000013491666420"/>
+    <token id="0000013491665400" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="21" str="{" scope="00000134A89B2910" link="0000013491667140"/>
+    <token id="0000013491666540" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="return" scope="00000134A89B2910" type="name" astOperand1="0000013491666660"/>
+    <token id="0000013491666600" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="IsOpInRange" scope="00000134A89B2910" type="name" function="0000013491629570" astParent="0000013491666660"/>
+    <token id="0000013491666660" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="(" scope="00000134A89B2910" link="00000134916669C0" astParent="0000013491666540" astOperand1="0000013491666600" astOperand2="0000013491665220" valueType-type="bool"/>
+    <token id="0000013491664EC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="opCode" scope="00000134A89B2910" type="name" varId="5" variable="000001349E901050" astParent="0000013491664F20"/>
+    <token id="0000013491664F20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="," scope="00000134A89B2910" astParent="0000013491665220" astOperand1="0000013491664EC0" astOperand2="00000134916651C0"/>
+    <token id="00000134916651C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="IDC_UNARYFIRST" scope="00000134A89B2910" type="name" astParent="0000013491664F20"/>
+    <token id="0000013491665220" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="," scope="00000134A89B2910" astParent="0000013491666660" astOperand1="0000013491664F20" astOperand2="0000013491666840"/>
+    <token id="0000013491666840" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str="IDC_UNARYLAST" scope="00000134A89B2910" type="name" astParent="0000013491665220"/>
+    <token id="00000134916669C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str=")" scope="00000134A89B2910" link="0000013491666660"/>
+    <token id="0000013491666D80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="22" str=";" scope="00000134A89B2910"/>
+    <token id="0000013491667140" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="23" str="}" scope="00000134A89B2910" link="0000013491665400"/>
+    <token id="0000013491666DE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str="bool" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491666EA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str="IsDigitOpCode" scope="00000134A89B0B50" type="name" function="0000013491628B50" astParent="00000134916668A0"/>
+    <token id="00000134916668A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str="(" scope="00000134A89B0B50" link="00000134916666C0" astOperand1="0000013491666EA0" astOperand2="0000013491666780" valueType-type="bool"/>
+    <token id="0000013491666BA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str="OpCode" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491666780" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str="opCode" scope="00000134A89B0B50" type="name" varId="6" variable="000001349E900E90" astParent="00000134916668A0"/>
+    <token id="00000134916666C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="25" str=")" scope="00000134A89B0B50" link="00000134916668A0"/>
+    <token id="0000013491666F00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="26" str="{" scope="00000134A89B0710" link="0000013491667500"/>
+    <token id="0000013491666C60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="return" scope="00000134A89B0710" type="name" astOperand1="0000013491666900"/>
+    <token id="00000134916671A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="IsOpInRange" scope="00000134A89B0710" type="name" function="0000013491629570" astParent="0000013491666900"/>
+    <token id="0000013491666900" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="(" scope="00000134A89B0710" link="0000013491666AE0" astParent="0000013491666C60" astOperand1="00000134916671A0" astOperand2="0000013491666A80" valueType-type="bool"/>
+    <token id="0000013491667080" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="opCode" scope="00000134A89B0710" type="name" varId="6" variable="000001349E900E90" astParent="0000013491666CC0"/>
+    <token id="0000013491666CC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="," scope="00000134A89B0710" astParent="0000013491666A80" astOperand1="0000013491667080" astOperand2="0000013491666960"/>
+    <token id="0000013491666960" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="IDC_0" scope="00000134A89B0710" type="name" astParent="0000013491666CC0"/>
+    <token id="0000013491666A80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="," scope="00000134A89B0710" astParent="0000013491666900" astOperand1="0000013491666CC0" astOperand2="00000134916674A0"/>
+    <token id="00000134916674A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str="IDC_F" scope="00000134A89B0710" type="name" astParent="0000013491666A80"/>
+    <token id="0000013491666AE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str=")" scope="00000134A89B0710" link="0000013491666900"/>
+    <token id="0000013491666E40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="27" str=";" scope="00000134A89B0710"/>
+    <token id="0000013491667500" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="28" str="}" scope="00000134A89B0710" link="0000013491666F00"/>
+    <token id="0000013491667200" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str="bool" scope="00000134A89B0B50" type="name"/>
+    <token id="00000134916675C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str="IsGuiSettingOpCode" scope="00000134A89B0B50" type="name" function="00000134916299F0" astParent="0000013491666F60"/>
+    <token id="0000013491666F60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str="(" scope="00000134A89B0B50" link="00000134916670E0" astOperand1="00000134916675C0" astOperand2="0000013491667020" valueType-type="bool"/>
+    <token id="0000013491666FC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str="OpCode" scope="00000134A89B0B50" type="name"/>
+    <token id="0000013491667020" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str="opCode" scope="00000134A89B0B50" type="name" varId="7" variable="000001349E900E20" astParent="0000013491666F60"/>
+    <token id="00000134916670E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="35" str=")" scope="00000134A89B0B50" link="0000013491666F60"/>
+    <token id="0000013491667260" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="36" str="{" scope="00000134A89B3D40" link="0000013491664CE0"/>
+    <token id="0000013491666A20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="if" scope="00000134A89B3D40" type="name" astParent="0000013491667380"/>
+    <token id="0000013491667380" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="(" scope="00000134A89B3D40" link="0000013491664080" astOperand1="0000013491666A20" astOperand2="0000013491663BA0"/>
+    <token id="00000134916672C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="IsOpInRange" scope="00000134A89B3D40" type="name" function="0000013491629570" astParent="0000013491666B40"/>
+    <token id="0000013491666B40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="(" scope="00000134A89B3D40" link="0000013491667560" astParent="00000134916667E0" astOperand1="00000134916672C0" astOperand2="0000013491666C00" valueType-type="bool"/>
+    <token id="0000013491667440" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="opCode" scope="00000134A89B3D40" type="name" varId="7" variable="000001349E900E20" astParent="0000013491667320"/>
+    <token id="0000013491667320" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="," scope="00000134A89B3D40" astParent="0000013491666C00" astOperand1="0000013491667440" astOperand2="0000013491666720"/>
+    <token id="0000013491666720" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="IDM_HEX" scope="00000134A89B3D40" type="name" astParent="0000013491667320"/>
+    <token id="0000013491666C00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="," scope="00000134A89B3D40" astParent="0000013491666B40" astOperand1="0000013491667320" astOperand2="00000134916673E0"/>
+    <token id="00000134916673E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="IDM_BIN" scope="00000134A89B3D40" type="name" astParent="0000013491666C00"/>
+    <token id="0000013491667560" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str=")" scope="00000134A89B3D40" link="0000013491666B40"/>
+    <token id="00000134916667E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="37" str="||" scope="00000134A89B3D40" type="op" isLogicalOp="True" astParent="0000013491663BA0" astOperand1="0000013491666B40" astOperand2="00000134916646E0" valueType-type="bool"/>
+    <token id="0000013491666D20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="IsOpInRange" scope="00000134A89B3D40" type="name" function="0000013491629570" astParent="00000134916646E0"/>
+    <token id="00000134916646E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="(" scope="00000134A89B3D40" link="0000013491663FC0" astParent="00000134916667E0" astOperand1="0000013491666D20" astOperand2="0000013491663D20" valueType-type="bool"/>
+    <token id="0000013491664620" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="opCode" scope="00000134A89B3D40" type="name" varId="7" variable="000001349E900E20" astParent="0000013491664740"/>
+    <token id="0000013491664740" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="," scope="00000134A89B3D40" astParent="0000013491663D20" astOperand1="0000013491664620" astOperand2="0000013491664DA0"/>
+    <token id="0000013491664DA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="IDM_QWORD" scope="00000134A89B3D40" type="name" astParent="0000013491664740"/>
+    <token id="0000013491663D20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="," scope="00000134A89B3D40" astParent="00000134916646E0" astOperand1="0000013491664740" astOperand2="0000013491664560"/>
+    <token id="0000013491664560" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="IDM_BYTE" scope="00000134A89B3D40" type="name" astParent="0000013491663D20"/>
+    <token id="0000013491663FC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str=")" scope="00000134A89B3D40" link="00000134916646E0"/>
+    <token id="0000013491663BA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="38" str="||" scope="00000134A89B3D40" type="op" isLogicalOp="True" astParent="0000013491667380" astOperand1="00000134916667E0" astOperand2="0000013491663CC0" valueType-type="bool"/>
+    <token id="0000013491664200" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="IsOpInRange" scope="00000134A89B3D40" type="name" function="0000013491629570" astParent="0000013491663CC0"/>
+    <token id="0000013491663CC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="(" scope="00000134A89B3D40" link="00000134916639C0" astParent="0000013491663BA0" astOperand1="0000013491664200" astOperand2="0000013491663F00" valueType-type="bool"/>
+    <token id="00000134916640E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="opCode" scope="00000134A89B3D40" type="name" varId="7" variable="000001349E900E20" astParent="0000013491663EA0"/>
+    <token id="0000013491663EA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="," scope="00000134A89B3D40" astParent="0000013491663F00" astOperand1="00000134916640E0" astOperand2="0000013491664E60"/>
+    <token id="0000013491664E60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="IDM_DEG" scope="00000134A89B3D40" type="name" astParent="0000013491663EA0"/>
+    <token id="0000013491663F00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="," scope="00000134A89B3D40" astParent="0000013491663CC0" astOperand1="0000013491663EA0" astOperand2="0000013491663840"/>
+    <token id="0000013491663840" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str="IDM_GRAD" scope="00000134A89B3D40" type="name" astParent="0000013491663F00"/>
+    <token id="00000134916639C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str=")" scope="00000134A89B3D40" link="0000013491663CC0"/>
+    <token id="0000013491664080" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="39" str=")" scope="00000134A89B3D40" link="0000013491667380"/>
+    <token id="0000013491664260" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="40" str="{" scope="00000134A89B4180" link="0000013491663780"/>
+    <token id="0000013491664E00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="41" str="return" scope="00000134A89B4180" type="name" astOperand1="00000134916638A0"/>
+    <token id="00000134916638A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="41" str="true" scope="00000134A89B4180" type="name" values="00000134A8C044D0" astParent="0000013491664E00"/>
+    <token id="00000134916636C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="41" str=";" scope="00000134A89B4180"/>
+    <token id="0000013491663780" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="42" str="}" scope="00000134A89B4180" link="0000013491664260"/>
+    <token id="0000013491664020" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="44" str="switch" scope="00000134A89B3D40" type="name" astParent="0000013491663F60"/>
+    <token id="0000013491663F60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="44" str="(" scope="00000134A89B3D40" link="0000013491663900" astOperand1="0000013491664020" astOperand2="0000013491664D40"/>
+    <token id="0000013491664D40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="44" str="opCode" scope="00000134A89B3D40" type="name" varId="7" variable="000001349E900E20" astParent="0000013491663F60"/>
+    <token id="0000013491663900" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="44" str=")" scope="00000134A89B3D40" link="0000013491663F60"/>
+    <token id="0000013491663960" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="45" str="{" scope="00000134A89B3080" link="0000013491664AA0"/>
+    <token id="00000134916647A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="46" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491663A20"/>
+    <token id="0000013491663A20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="46" str="IDC_INV" scope="00000134A89B3080" type="name" astParent="00000134916647A0"/>
+    <token id="0000013491663C60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="46" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491663A80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="47" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491664140"/>
+    <token id="0000013491664140" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="47" str="IDC_FE" scope="00000134A89B3080" type="name" astParent="0000013491663A80"/>
+    <token id="0000013491663B40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="47" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491663C00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="48" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491663D80"/>
+    <token id="0000013491663D80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="48" str="IDC_MCLEAR" scope="00000134A89B3080" type="name" astParent="0000013491663C00"/>
+    <token id="0000013491663DE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="48" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491663E40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="49" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491664B60"/>
+    <token id="0000013491664B60" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="49" str="IDC_BACK" scope="00000134A89B3080" type="name" astParent="0000013491663E40"/>
+    <token id="00000134916641A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="49" str=":" scope="00000134A89B3080"/>
+    <token id="00000134916642C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="50" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491664320"/>
+    <token id="0000013491664320" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="50" str="IDC_EXP" scope="00000134A89B3080" type="name" astParent="00000134916642C0"/>
+    <token id="00000134916645C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="50" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491664380" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="51" str="case" scope="00000134A89B3080" type="name" astOperand1="00000134916643E0"/>
+    <token id="00000134916643E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="51" str="IDC_STORE" scope="00000134A89B3080" type="name" astParent="0000013491664380"/>
+    <token id="0000013491664440" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="51" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491664980" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="52" str="case" scope="00000134A89B3080" type="name" astOperand1="00000134916644A0"/>
+    <token id="00000134916644A0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="52" str="IDC_MPLUS" scope="00000134A89B3080" type="name" astParent="0000013491664980"/>
+    <token id="0000013491664800" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="52" str=":" scope="00000134A89B3080"/>
+    <token id="0000013491664B00" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="53" str="case" scope="00000134A89B3080" type="name" astOperand1="0000013491664860"/>
+    <token id="0000013491664860" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="53" str="IDC_MMINUS" scope="00000134A89B3080" type="name" astParent="0000013491664B00"/>
+    <token id="00000134916648C0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="53" str=":" scope="00000134A89B3080"/>
+    <token id="00000134912CA620" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="53" str=";" scope="00000134A89B3080"/>
+    <token id="0000013491664920" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="54" str="return" scope="00000134A89B3080" type="name" astOperand1="00000134916649E0"/>
+    <token id="00000134916649E0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="54" str="true" scope="00000134A89B3080" type="name" values="00000134A8C044F0" astParent="0000013491664920"/>
+    <token id="0000013491664A40" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="54" str=";" scope="00000134A89B3080"/>
+    <token id="0000013491664AA0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="55" str="}" scope="00000134A89B3080" link="0000013491663960"/>
+    <token id="0000013491664BC0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="58" str="return" scope="00000134A89B3D40" type="name" astOperand1="0000013491664C20"/>
+    <token id="0000013491664C20" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="58" str="false" scope="00000134A89B3D40" type="name" values="00000134A8C043D0" astParent="0000013491664BC0"/>
+    <token id="0000013491664C80" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="58" str=";" scope="00000134A89B3D40"/>
+    <token id="0000013491664CE0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/CalcUtils.cpp" linenr="59" str="}" scope="00000134A89B3D40" link="0000013491667260"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A89B0B50" type="Global">
+      <functionList>
+        <function id="0000013491629570" tokenDef="0000013491665DC0" name="IsOpInRange" type="Function">
+          <arg nr="1" variable="000001349115DDC0"/>
+          <arg nr="2" variable="000001349115DF10"/>
+          <arg nr="3" variable="000001349115E300"/>
+        </function>
+        <function id="00000134916286D0" tokenDef="0000013491664F80" name="IsBinOpCode" type="Function">
+          <arg nr="1" variable="000001349E900FE0"/>
+        </function>
+        <function id="0000013491629720" tokenDef="0000013491666120" name="IsUnaryOpCode" type="Function">
+          <arg nr="1" variable="000001349E901050"/>
+        </function>
+        <function id="0000013491628B50" tokenDef="0000013491666EA0" name="IsDigitOpCode" type="Function">
+          <arg nr="1" variable="000001349E900E90"/>
+        </function>
+        <function id="00000134916299F0" tokenDef="00000134916675C0" name="IsGuiSettingOpCode" type="Function">
+          <arg nr="1" variable="000001349E900E20"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="00000134A89B1F80" type="Function" className="IsOpInRange" bodyStart="0000013491665F40" bodyEnd="00000134916653A0" nestedIn="00000134A89B0B50" function="0000013491629570"/>
+    <scope id="00000134A89B0D70" type="Function" className="IsBinOpCode" bodyStart="0000013491666240" bodyEnd="0000013491665BE0" nestedIn="00000134A89B0B50" function="00000134916286D0"/>
+    <scope id="00000134A89B2910" type="Function" className="IsUnaryOpCode" bodyStart="0000013491665400" bodyEnd="0000013491667140" nestedIn="00000134A89B0B50" function="0000013491629720"/>
+    <scope id="00000134A89B0710" type="Function" className="IsDigitOpCode" bodyStart="0000013491666F00" bodyEnd="0000013491667500" nestedIn="00000134A89B0B50" function="0000013491628B50"/>
+    <scope id="00000134A89B3D40" type="Function" className="IsGuiSettingOpCode" bodyStart="0000013491667260" bodyEnd="0000013491664CE0" nestedIn="00000134A89B0B50" function="00000134916299F0"/>
+    <scope id="00000134A89B4180" type="If" bodyStart="0000013491664260" bodyEnd="0000013491663780" nestedIn="00000134A89B3D40"/>
+    <scope id="00000134A89B3080" type="Switch" bodyStart="0000013491663960" bodyEnd="0000013491664AA0" nestedIn="00000134A89B3D40"/>
+  </scopes>
+  <variables>
+    <var id="000001349115DDC0" nameToken="0000013491665700" typeStartToken="0000013491665280" typeEndToken="0000013491665280" access="Argument" scope="00000134A89B1F80" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349115DF10" nameToken="00000134916655E0" typeStartToken="0000013491665940" typeEndToken="0000013491665940" access="Argument" scope="00000134A89B1F80" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349115E300" nameToken="00000134916654C0" typeStartToken="00000134916660C0" typeEndToken="00000134916660C0" access="Argument" scope="00000134A89B1F80" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349E900E20" nameToken="0000013491667020" typeStartToken="0000013491666FC0" typeEndToken="0000013491666FC0" access="Argument" scope="00000134A89B3D40" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349E900E90" nameToken="0000013491666780" typeStartToken="0000013491666BA0" typeEndToken="0000013491666BA0" access="Argument" scope="00000134A89B0710" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349E900FE0" nameToken="0000013491665CA0" typeStartToken="0000013491665E80" typeEndToken="0000013491665E80" access="Argument" scope="00000134A89B0D70" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349E901050" nameToken="00000134916650A0" typeStartToken="00000134916664E0" typeEndToken="00000134916664E0" access="Argument" scope="00000134A89B2910" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A8C044D0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C044F0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C043D0">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

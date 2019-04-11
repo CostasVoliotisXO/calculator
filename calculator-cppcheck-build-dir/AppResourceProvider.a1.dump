@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;AppResourceProvider.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="Platform"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="ApplicationModel"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Resources"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="11" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="13" str="m_stringResLoader"/>
+    <tok fileIndex="0" linenr="13" str="="/>
+    <tok fileIndex="0" linenr="13" str="ResourceLoader"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="GetForViewIndependentUse"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="13" str=";"/>
+    <tok fileIndex="0" linenr="14" str="m_cEngineStringResLoader"/>
+    <tok fileIndex="0" linenr="14" str="="/>
+    <tok fileIndex="0" linenr="14" str="ResourceLoader"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="GetForViewIndependentUse"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="L"/>
+    <tok fileIndex="0" linenr="14" str="&quot;CEngineStrings&quot;"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="15" str="}"/>
+    <tok fileIndex="0" linenr="17" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="17" str="&amp;"/>
+    <tok fileIndex="0" linenr="17" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="GetInstance"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="18" str="{"/>
+    <tok fileIndex="0" linenr="19" str="static"/>
+    <tok fileIndex="0" linenr="19" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="19" str="s_instance"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="return"/>
+    <tok fileIndex="0" linenr="20" str="s_instance"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="}"/>
+    <tok fileIndex="0" linenr="23" str="String"/>
+    <tok fileIndex="0" linenr="23" str="^"/>
+    <tok fileIndex="0" linenr="23" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="GetResourceString"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="_In_"/>
+    <tok fileIndex="0" linenr="23" str="String"/>
+    <tok fileIndex="0" linenr="23" str="^"/>
+    <tok fileIndex="0" linenr="23" str="key"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="24" str="{"/>
+    <tok fileIndex="0" linenr="25" str="return"/>
+    <tok fileIndex="0" linenr="25" str="m_stringResLoader"/>
+    <tok fileIndex="0" linenr="25" str="-&gt;"/>
+    <tok fileIndex="0" linenr="25" str="GetString"/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="key"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="}"/>
+    <tok fileIndex="0" linenr="28" str="String"/>
+    <tok fileIndex="0" linenr="28" str="^"/>
+    <tok fileIndex="0" linenr="28" str="AppResourceProvider"/>
+    <tok fileIndex="0" linenr="28" str="::"/>
+    <tok fileIndex="0" linenr="28" str="GetCEngineString"/>
+    <tok fileIndex="0" linenr="28" str="("/>
+    <tok fileIndex="0" linenr="28" str="_In_"/>
+    <tok fileIndex="0" linenr="28" str="String"/>
+    <tok fileIndex="0" linenr="28" str="^"/>
+    <tok fileIndex="0" linenr="28" str="key"/>
+    <tok fileIndex="0" linenr="28" str=")"/>
+    <tok fileIndex="0" linenr="29" str="{"/>
+    <tok fileIndex="0" linenr="30" str="return"/>
+    <tok fileIndex="0" linenr="30" str="m_cEngineStringResLoader"/>
+    <tok fileIndex="0" linenr="30" str="-&gt;"/>
+    <tok fileIndex="0" linenr="30" str="GetString"/>
+    <tok fileIndex="0" linenr="30" str="("/>
+    <tok fileIndex="0" linenr="30" str="key"/>
+    <tok fileIndex="0" linenr="30" str=")"/>
+    <tok fileIndex="0" linenr="30" str=";"/>
+    <tok fileIndex="0" linenr="31" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="5" str="#include &quot;AppResourceProvider.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A3463A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="6" str="namespace" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3463EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="6" str="CalculatorApp" scope="0000013491279C50" type="name" astParent="00000134A3464B10"/>
+    <token id="00000134A3464B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="7" str="{" scope="0000013491279920" link="00000134A3466850" astOperand1="00000134A3463EB0" astOperand2="00000134A34649F0"/>
+    <token id="00000134A3464C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="8" str="class" scope="0000013491279920" type="name"/>
+    <token id="00000134A34649F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="8" str="AppResourceProvider" scope="0000013491279920" type="name" type-scope="0000013491279810" astParent="00000134A3464B10"/>
+    <token id="00000134A3463AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="9" str="{" scope="0000013491279810" link="00000134A3466550"/>
+    <token id="00000134A3464750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="10" str="public:" scope="0000013491279810" type="name"/>
+    <token id="00000134A34641B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str="static" scope="0000013491279810" type="name"/>
+    <token id="00000134A3464450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str="AppResourceProvider" scope="0000013491279810" type="name" type-scope="0000013491279810" astParent="00000134A3463910"/>
+    <token id="00000134A3463910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str="&amp;" scope="0000013491279810" type="op" astOperand1="00000134A3464450" astOperand2="00000134A3464C90"/>
+    <token id="00000134A3464510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str="GetInstance" scope="0000013491279810" type="name" function="00000134A2141150" astParent="00000134A3464C90"/>
+    <token id="00000134A3464C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str="(" scope="0000013491279810" link="00000134A3463F70" astParent="00000134A3463910" astOperand1="00000134A3464510" valueType-type="record" valueType-typeScope="0000013491279810"/>
+    <token id="00000134A3463F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str=")" scope="0000013491279810" link="00000134A3464C90"/>
+    <token id="00000134A34647B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="11" str=";" scope="0000013491279810"/>
+    <token id="00000134A3464CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="Platform" scope="0000013491279810" type="name" astParent="00000134A3463FD0"/>
+    <token id="00000134A3463FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="::" scope="0000013491279810" astParent="00000134A34648D0" astOperand1="00000134A3464CF0" astOperand2="00000134A3464B70"/>
+    <token id="00000134A3464B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="String" scope="0000013491279810" type="name" astParent="00000134A3463FD0"/>
+    <token id="00000134A34648D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="^" scope="0000013491279810" type="op" astOperand1="00000134A3463FD0" astOperand2="00000134A34640F0"/>
+    <token id="00000134A3464090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="GetResourceString" scope="0000013491279810" type="name" astParent="00000134A34640F0"/>
+    <token id="00000134A34640F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="(" scope="0000013491279810" link="00000134A3464390" astParent="00000134A34648D0" astOperand1="00000134A3464090" astOperand2="00000134A34642D0"/>
+    <token id="00000134A3464150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="Platform" scope="0000013491279810" type="name" astParent="00000134A3464270"/>
+    <token id="00000134A3464270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="::" scope="0000013491279810" astParent="00000134A34642D0" astOperand1="00000134A3464150" astOperand2="00000134A3464330"/>
+    <token id="00000134A3464330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="String" scope="0000013491279810" type="name" astParent="00000134A3464270"/>
+    <token id="00000134A34642D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="^" scope="0000013491279810" type="op" astParent="00000134A34640F0" astOperand1="00000134A3464270" astOperand2="00000134A3464990"/>
+    <token id="00000134A3464990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str="key" scope="0000013491279810" type="name" astParent="00000134A34642D0"/>
+    <token id="00000134A3464390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str=")" scope="0000013491279810" link="00000134A34640F0"/>
+    <token id="00000134A34646F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="12" str=";" scope="0000013491279810"/>
+    <token id="00000134A34643F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="Platform" scope="0000013491279810" type="name" astParent="00000134A3463CD0"/>
+    <token id="00000134A3463CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="::" scope="0000013491279810" astParent="00000134A3464DB0" astOperand1="00000134A34643F0" astOperand2="00000134A34644B0"/>
+    <token id="00000134A34644B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="String" scope="0000013491279810" type="name" astParent="00000134A3463CD0"/>
+    <token id="00000134A3464DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="^" scope="0000013491279810" type="op" astOperand1="00000134A3463CD0" astOperand2="00000134A3464570"/>
+    <token id="00000134A3464870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="GetCEngineString" scope="0000013491279810" type="name" astParent="00000134A3464570"/>
+    <token id="00000134A3464570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="(" scope="0000013491279810" link="00000134A3464630" astParent="00000134A3464DB0" astOperand1="00000134A3464870" astOperand2="00000134A3463970"/>
+    <token id="00000134A34645D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="Platform" scope="0000013491279810" type="name" astParent="00000134A3463DF0"/>
+    <token id="00000134A3463DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="::" scope="0000013491279810" astParent="00000134A3463970" astOperand1="00000134A34645D0" astOperand2="00000134A3465050"/>
+    <token id="00000134A3465050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="String" scope="0000013491279810" type="name" astParent="00000134A3463DF0"/>
+    <token id="00000134A3463970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="^" scope="0000013491279810" type="op" astParent="00000134A3464570" astOperand1="00000134A3463DF0" astOperand2="00000134A3464BD0"/>
+    <token id="00000134A3464BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str="key" scope="0000013491279810" type="name" astParent="00000134A3463970"/>
+    <token id="00000134A3464630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str=")" scope="0000013491279810" link="00000134A3464570"/>
+    <token id="00000134A3464690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="13" str=";" scope="0000013491279810"/>
+    <token id="00000134A3464E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="15" str="private:" scope="0000013491279810" type="name"/>
+    <token id="00000134A3464ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="16" str="AppResourceProvider" scope="0000013491279810" type="name" function="00000134A21404F0" astParent="00000134A3464A50"/>
+    <token id="00000134A3464A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="16" str="(" scope="0000013491279810" link="00000134A3464FF0" astOperand1="00000134A3464ED0"/>
+    <token id="00000134A3464FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="16" str=")" scope="0000013491279810" link="00000134A3464A50"/>
+    <token id="00000134A34650B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="16" str=";" scope="0000013491279810"/>
+    <token id="00000134A34639D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="Windows" scope="0000013491279810" type="name" astParent="00000134A3463A90"/>
+    <token id="00000134A3463A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="::" scope="0000013491279810" astParent="00000134A3463BB0" astOperand1="00000134A34639D0" astOperand2="00000134A3463B50"/>
+    <token id="00000134A3463B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="ApplicationModel" scope="0000013491279810" type="name" astParent="00000134A3463A90"/>
+    <token id="00000134A3463BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="::" scope="0000013491279810" astParent="00000134A3463C70" astOperand1="00000134A3463A90" astOperand2="00000134A3463C10"/>
+    <token id="00000134A3463C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="Resources" scope="0000013491279810" type="name" astParent="00000134A3463BB0"/>
+    <token id="00000134A3463C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="::" scope="0000013491279810" astParent="00000134A3463D90" astOperand1="00000134A3463BB0" astOperand2="00000134A3463D30"/>
+    <token id="00000134A3463D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="ResourceLoader" scope="0000013491279810" type="name" astParent="00000134A3463C70"/>
+    <token id="00000134A3463D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="^" scope="0000013491279810" type="op" astOperand1="00000134A3463C70" astOperand2="00000134A3463E50"/>
+    <token id="00000134A3463E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str="m_stringResLoader" scope="0000013491279810" type="name" astParent="00000134A3463D90"/>
+    <token id="00000134A3465DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="17" str=";" scope="0000013491279810"/>
+    <token id="00000134A3465770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="Windows" scope="0000013491279810" type="name" astParent="00000134A3465650"/>
+    <token id="00000134A3465650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="::" scope="0000013491279810" astParent="00000134A3466190" astOperand1="00000134A3465770" astOperand2="00000134A34657D0"/>
+    <token id="00000134A34657D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="ApplicationModel" scope="0000013491279810" type="name" astParent="00000134A3465650"/>
+    <token id="00000134A3466190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="::" scope="0000013491279810" astParent="00000134A34661F0" astOperand1="00000134A3465650" astOperand2="00000134A3465590"/>
+    <token id="00000134A3465590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="Resources" scope="0000013491279810" type="name" astParent="00000134A3466190"/>
+    <token id="00000134A34661F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="::" scope="0000013491279810" astParent="00000134A3465D70" astOperand1="00000134A3466190" astOperand2="00000134A3465CB0"/>
+    <token id="00000134A3465CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="ResourceLoader" scope="0000013491279810" type="name" astParent="00000134A34661F0"/>
+    <token id="00000134A3465D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="^" scope="0000013491279810" type="op" astOperand1="00000134A34661F0" astOperand2="00000134A3465A10"/>
+    <token id="00000134A3465A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str="m_cEngineStringResLoader" scope="0000013491279810" type="name" astParent="00000134A3465D70"/>
+    <token id="00000134A34668B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="18" str=";" scope="0000013491279810"/>
+    <token id="00000134A3466550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="19" str="}" scope="0000013491279810" link="00000134A3463AF0"/>
+    <token id="00000134A3466010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="19" str=";" scope="0000013491279920"/>
+    <token id="00000134A3466850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.h" linenr="20" str="}" scope="0000013491279920" link="00000134A3464B10"/>
+    <token id="00000134A3466310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="7" str="using" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3466370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="7" str="namespace" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="7" str="Platform" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="7" str=";" scope="0000013491279C50"/>
+    <token id="00000134A3465E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="using" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="namespace" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="Windows" scope="0000013491279C50" type="name" astParent="00000134A3466250"/>
+    <token id="00000134A3466250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="::" scope="0000013491279C50" astParent="00000134A3465FB0" astOperand1="00000134A3465A70" astOperand2="00000134A3466430"/>
+    <token id="00000134A3466430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="ApplicationModel" scope="0000013491279C50" type="name" astParent="00000134A3466250"/>
+    <token id="00000134A3465FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="::" scope="0000013491279C50" astOperand1="00000134A3466250" astOperand2="00000134A3466490"/>
+    <token id="00000134A3466490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str="Resources" scope="0000013491279C50" type="name" astParent="00000134A3465FB0"/>
+    <token id="00000134A3465410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="8" str=";" scope="0000013491279C50"/>
+    <token id="00000134A34651D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="9" str="using" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="9" str="namespace" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3465230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="9" str="CalculatorApp" scope="0000013491279C50" type="name"/>
+    <token id="00000134A34664F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="9" str=";" scope="0000013491279C50"/>
+    <token id="00000134A34659B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="11" str="AppResourceProvider" scope="0000013491279C50" type="name" astParent="00000134A34655F0"/>
+    <token id="00000134A34655F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="11" str="::" scope="0000013491279C50" astParent="00000134A3465890" astOperand1="00000134A34659B0" astOperand2="00000134A3465B30"/>
+    <token id="00000134A3465B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="11" str="AppResourceProvider" scope="0000013491279C50" type="name" function="00000134A21404F0" astParent="00000134A34655F0"/>
+    <token id="00000134A3465890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="11" str="(" scope="0000013491279C50" link="00000134A3465950" astOperand1="00000134A34655F0"/>
+    <token id="00000134A3465950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="11" str=")" scope="0000013491279C50" link="00000134A3465890"/>
+    <token id="00000134A3465BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="12" str="{" scope="000001349124C180" link="00000134A34666D0"/>
+    <token id="00000134A34665B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="m_stringResLoader" scope="000001349124C180" type="name" astParent="00000134A34656B0"/>
+    <token id="00000134A34656B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="=" scope="000001349124C180" type="op" isAssignmentOp="True" astOperand1="00000134A34665B0" astOperand2="00000134A3465E90"/>
+    <token id="00000134A34662B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="ResourceLoader" scope="000001349124C180" type="name" astParent="00000134A3466610"/>
+    <token id="00000134A3466610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="::" scope="000001349124C180" astParent="00000134A3465E90" astOperand1="00000134A34662B0" astOperand2="00000134A3465290"/>
+    <token id="00000134A3465290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="GetForViewIndependentUse" scope="000001349124C180" type="name" astParent="00000134A3466610"/>
+    <token id="00000134A3465E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str="(" scope="000001349124C180" link="00000134A3465B90" astParent="00000134A34656B0" astOperand1="00000134A3466610"/>
+    <token id="00000134A3465B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str=")" scope="000001349124C180" link="00000134A3465E90"/>
+    <token id="00000134A34652F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="13" str=";" scope="000001349124C180"/>
+    <token id="00000134A3466070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="m_cEngineStringResLoader" scope="000001349124C180" type="name" astParent="00000134A3465710"/>
+    <token id="00000134A3465710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="=" scope="000001349124C180" type="op" isAssignmentOp="True" astOperand1="00000134A3466070" astOperand2="00000134A3466670"/>
+    <token id="00000134A3465AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="ResourceLoader" scope="000001349124C180" type="name" astParent="00000134A3465EF0"/>
+    <token id="00000134A3465EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="::" scope="000001349124C180" astParent="00000134A3466670" astOperand1="00000134A3465AD0" astOperand2="00000134A3465C50"/>
+    <token id="00000134A3465C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="GetForViewIndependentUse" scope="000001349124C180" type="name" astParent="00000134A3465EF0"/>
+    <token id="00000134A3466670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="(" scope="000001349124C180" link="00000134A3465D10" astParent="00000134A3465710" astOperand1="00000134A3465EF0" astOperand2="00000134A3465350"/>
+    <token id="00000134A3465350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str="&quot;CEngineStrings&quot;" scope="000001349124C180" type="string" strlen="14" values="0000013496E87F20" astParent="00000134A3466670" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="00000134A3465D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str=")" scope="000001349124C180" link="00000134A3466670"/>
+    <token id="00000134A3465F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="14" str=";" scope="000001349124C180"/>
+    <token id="00000134A34666D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="15" str="}" scope="000001349124C180" link="00000134A3465BF0"/>
+    <token id="00000134A34660D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="AppResourceProvider" scope="0000013491279C50" type="name" astParent="00000134A3466730"/>
+    <token id="00000134A3466730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="&amp;" scope="0000013491279C50" type="op" astOperand1="00000134A34660D0" astOperand2="00000134A34653B0"/>
+    <token id="00000134A3466130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="AppResourceProvider" scope="0000013491279C50" type="name" astParent="00000134A3466790"/>
+    <token id="00000134A3466790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="::" scope="0000013491279C50" astParent="00000134A34653B0" astOperand1="00000134A3466130" astOperand2="00000134A34667F0"/>
+    <token id="00000134A34667F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="GetInstance" scope="0000013491279C50" type="name" function="00000134A2141150" astParent="00000134A3466790"/>
+    <token id="00000134A34653B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str="(" scope="0000013491279C50" link="00000134A3465470" astParent="00000134A3466730" astOperand1="00000134A3466790" valueType-type="record" valueType-typeScope="0000013491279810"/>
+    <token id="00000134A3465470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="17" str=")" scope="0000013491279C50" link="00000134A34653B0"/>
+    <token id="00000134A34654D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="18" str="{" scope="0000013491541DA0" link="00000134A34677B0"/>
+    <token id="00000134A3467810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="19" str="static" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A3467150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="19" str="AppResourceProvider" scope="0000013491541DA0" type="name" type-scope="0000013491279810"/>
+    <token id="00000134A3467990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="19" str="s_instance" scope="0000013491541DA0" type="name" varId="1" variable="000001349DA51C20" valueType-type="record" valueType-typeScope="0000013491279810"/>
+    <token id="00000134A3466D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="19" str=";" scope="0000013491541DA0"/>
+    <token id="00000134A3467AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="20" str="return" scope="0000013491541DA0" type="name" astOperand1="00000134A3466F10"/>
+    <token id="00000134A3466F10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="20" str="s_instance" scope="0000013491541DA0" type="name" varId="1" variable="000001349DA51C20" astParent="00000134A3467AB0" valueType-type="record" valueType-typeScope="0000013491279810"/>
+    <token id="00000134A3467C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="20" str=";" scope="0000013491541DA0"/>
+    <token id="00000134A34677B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="21" str="}" scope="0000013491541DA0" link="00000134A34654D0"/>
+    <token id="00000134A3467BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="String" scope="0000013491279C50" type="name" astParent="00000134A3466FD0"/>
+    <token id="00000134A3466FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="^" scope="0000013491279C50" type="op" astOperand1="00000134A3467BD0" astOperand2="00000134A3467090"/>
+    <token id="00000134A3466DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="AppResourceProvider" scope="0000013491279C50" type="name" astParent="00000134A3467510"/>
+    <token id="00000134A3467510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="::" scope="0000013491279C50" astParent="00000134A3467090" astOperand1="00000134A3466DF0" astOperand2="00000134A3466E50"/>
+    <token id="00000134A3466E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="GetResourceString" scope="0000013491279C50" type="name" astParent="00000134A3467510"/>
+    <token id="00000134A3467090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="(" scope="0000013491279C50" link="00000134A3467750" astParent="00000134A3466FD0" astOperand1="00000134A3467510" astOperand2="00000134A3466CD0"/>
+    <token id="00000134A34671B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="String" scope="0000013491279C50" type="name" astParent="00000134A3466CD0"/>
+    <token id="00000134A3466CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="^" scope="0000013491279C50" type="op" astParent="00000134A3467090" astOperand1="00000134A34671B0" astOperand2="00000134A3467570"/>
+    <token id="00000134A3467570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str="key" scope="0000013491279C50" type="name" astParent="00000134A3466CD0"/>
+    <token id="00000134A3467750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="23" str=")" scope="0000013491279C50" link="00000134A3467090"/>
+    <token id="00000134A3467210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="24" str="{" scope="0000013491279C50" link="00000134A34675D0"/>
+    <token id="00000134A3467030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="return" scope="0000013491279C50" type="name" astOperand1="00000134A3467270"/>
+    <token id="00000134A3467D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="m_stringResLoader" scope="0000013491279C50" type="name" astParent="00000134A3467870"/>
+    <token id="00000134A3467870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="." scope="0000013491279C50" astParent="00000134A3467270" astOperand1="00000134A3467D50" astOperand2="00000134A3467F30" originalName="->"/>
+    <token id="00000134A3467F30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="GetString" scope="0000013491279C50" type="name" astParent="00000134A3467870"/>
+    <token id="00000134A3467270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="(" scope="0000013491279C50" link="00000134A34678D0" astParent="00000134A3467030" astOperand1="00000134A3467870" astOperand2="00000134A34674B0"/>
+    <token id="00000134A34674B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str="key" scope="0000013491279C50" type="name" astParent="00000134A3467270"/>
+    <token id="00000134A34678D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str=")" scope="0000013491279C50" link="00000134A3467270"/>
+    <token id="00000134A3466F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="25" str=";" scope="0000013491279C50"/>
+    <token id="00000134A34675D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="26" str="}" scope="0000013491279C50" link="00000134A3467210"/>
+    <token id="00000134A3467B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="String" scope="0000013491279C50" type="name" astParent="00000134A3466EB0"/>
+    <token id="00000134A3466EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="^" scope="0000013491279C50" type="op" astOperand1="00000134A3467B10" astOperand2="00000134A3466C10"/>
+    <token id="00000134A3467690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="AppResourceProvider" scope="0000013491279C50" type="name" astParent="00000134A3467930"/>
+    <token id="00000134A3467930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="::" scope="0000013491279C50" astParent="00000134A3466C10" astOperand1="00000134A3467690" astOperand2="00000134A34670F0"/>
+    <token id="00000134A34670F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="GetCEngineString" scope="0000013491279C50" type="name" astParent="00000134A3467930"/>
+    <token id="00000134A3466C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="(" scope="0000013491279C50" link="00000134A3467B70" astParent="00000134A3466EB0" astOperand1="00000134A3467930" astOperand2="00000134A34672D0"/>
+    <token id="00000134A34669D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="String" scope="0000013491279C50" type="name" astParent="00000134A34672D0"/>
+    <token id="00000134A34672D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="^" scope="0000013491279C50" type="op" astParent="00000134A3466C10" astOperand1="00000134A34669D0" astOperand2="00000134A3466A30"/>
+    <token id="00000134A3466A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str="key" scope="0000013491279C50" type="name" astParent="00000134A34672D0"/>
+    <token id="00000134A3467B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="28" str=")" scope="0000013491279C50" link="00000134A3466C10"/>
+    <token id="00000134A34676F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="29" str="{" scope="0000013491279C50" link="00000134A3467450"/>
+    <token id="00000134A3466AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="return" scope="0000013491279C50" type="name" astOperand1="00000134A34679F0"/>
+    <token id="00000134A3467330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="m_cEngineStringResLoader" scope="0000013491279C50" type="name" astParent="00000134A3467390"/>
+    <token id="00000134A3467390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="." scope="0000013491279C50" astParent="00000134A34679F0" astOperand1="00000134A3467330" astOperand2="00000134A34673F0" originalName="->"/>
+    <token id="00000134A34673F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="GetString" scope="0000013491279C50" type="name" astParent="00000134A3467390"/>
+    <token id="00000134A34679F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="(" scope="0000013491279C50" link="00000134A3467CF0" astParent="00000134A3466AF0" astOperand1="00000134A3467390" astOperand2="00000134A3467F90"/>
+    <token id="00000134A3467F90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str="key" scope="0000013491279C50" type="name" astParent="00000134A34679F0"/>
+    <token id="00000134A3467CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str=")" scope="0000013491279C50" link="00000134A34679F0"/>
+    <token id="00000134A3467C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="30" str=";" scope="0000013491279C50"/>
+    <token id="00000134A3467450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/AppResourceProvider.cpp" linenr="31" str="}" scope="0000013491279C50" link="00000134A34676F0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013491279C50" type="Global"/>
+    <scope id="0000013491279920" type="Namespace" className="CalculatorApp" bodyStart="00000134A3464B10" bodyEnd="00000134A3466850" nestedIn="0000013491279C50"/>
+    <scope id="0000013491279810" type="Class" className="AppResourceProvider" bodyStart="00000134A3463AF0" bodyEnd="00000134A3466550" nestedIn="0000013491279920">
+      <functionList>
+        <function id="00000134A2141150" tokenDef="00000134A3464510" name="GetInstance" type="Function"/>
+        <function id="00000134A21404F0" tokenDef="00000134A3464ED0" name="AppResourceProvider" type="Constructor"/>
+      </functionList>
+    </scope>
+    <scope id="000001349124C180" type="Function" className="AppResourceProvider" bodyStart="00000134A3465BF0" bodyEnd="00000134A34666D0" nestedIn="0000013491279C50" function="00000134A21404F0"/>
+    <scope id="0000013491541DA0" type="Function" className="GetInstance" bodyStart="00000134A34654D0" bodyEnd="00000134A34677B0" nestedIn="0000013491279C50" function="00000134A2141150">
+      <varlist>
+        <var id="000001349DA51C20"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="000001349DA51C20" nameToken="00000134A3467990" typeStartToken="00000134A3467150" typeEndToken="00000134A3467150" access="Local" scope="0000013491541DA0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="true"/>
+  </variables>
+  <valueflow>
+    <values id="0000013496E87F20">
+      <value tokvalue="00000134A3465350" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2729228130">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorProgrammerOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorProgrammerOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorProgrammerOperators.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorProgrammerOperators.xaml.h" line="13"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="BIN_RADIX"/>
+    <functioncall functionName="CalculatorProgrammerOperators"/>
+    <functioncall functionName="CopyToClipboard"/>
+    <functioncall functionName="DEC_RADIX"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="GetApplicationViewIdForWindow"/>
+    <functioncall functionName="GetForCurrentThread"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetRawDisplayValue"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="HEX_RADIX"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="LogRadixButtonUsed"/>
+    <functioncall functionName="Model"/>
+    <functioncall functionName="OCT_RADIX"/>
+    <functioncall functionName="SwitchProgrammerModeBase"/>
+    <functioncall functionName="SymbolButtonStyle"/>
+    <functioncall functionName="Target"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="radixType"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

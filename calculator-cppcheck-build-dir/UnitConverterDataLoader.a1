@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="490229327">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;OrderedUnit::order&apos; is not initialized in the constructor." verbose="Member variable &apos;OrderedUnit::order&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="15"/>
+            <symbol>OrderedUnit::order</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ExplicitUnitConversionData::parentUnitId&apos; is not initialized in the constructor." verbose="Member variable &apos;ExplicitUnitConversionData::parentUnitId&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="34"/>
+            <symbol>ExplicitUnitConversionData::parentUnitId</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ExplicitUnitConversionData::unitId&apos; is not initialized in the constructor." verbose="Member variable &apos;ExplicitUnitConversionData::unitId&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="34"/>
+            <symbol>ExplicitUnitConversionData::unitId</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;UnitConverterDataLoader&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;UnitConverterDataLoader&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="50"/>
+            <symbol>UnitConverterDataLoader</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CurrencyUnitMetadata&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CurrencyUnitMetadata&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="45"/>
+            <symbol>CurrencyUnitMetadata</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CurrencyDataLoader&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CurrencyDataLoader&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="54"/>
+            <symbol>CurrencyDataLoader</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;name&apos; should be passed by const reference." verbose="Parameter &apos;name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="17"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;abbreviation&apos; should be passed by const reference." verbose="Parameter &apos;abbreviation&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="17"/>
+            <symbol>abbreviation</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" line="150"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="LoadOrderedCategories" lineNumber="29"/>
+    <functiondecl functionName="LoadData" lineNumber="66"/>
+    <functioncall functionName="Angle"/>
+    <functioncall functionName="Angle_Degree"/>
+    <functioncall functionName="Angle_Gradian"/>
+    <functioncall functionName="Angle_Radian"/>
+    <functioncall functionName="Area"/>
+    <functioncall functionName="Area_Acre"/>
+    <functioncall functionName="Area_Castle"/>
+    <functioncall functionName="Area_Hand"/>
+    <functioncall functionName="Area_Hectare"/>
+    <functioncall functionName="Area_Paper"/>
+    <functioncall functionName="Area_SoccerField"/>
+    <functioncall functionName="Area_SquareCentimeter"/>
+    <functioncall functionName="Area_SquareFoot"/>
+    <functioncall functionName="Area_SquareInch"/>
+    <functioncall functionName="Area_SquareKilometer"/>
+    <functioncall functionName="Area_SquareMeter"/>
+    <functioncall functionName="Area_SquareMile"/>
+    <functioncall functionName="Area_SquareMillimeter"/>
+    <functioncall functionName="Area_SquareYard"/>
+    <functioncall functionName="CONVERT_WITH_OFFSET_FIRST"/>
+    <functioncall functionName="Categories"/>
+    <functioncall functionName="CodeTwoLetter"/>
+    <functioncall functionName="ConversionData"/>
+    <functioncall functionName="CreateConverterCategory"/>
+    <functioncall functionName="Currency"/>
+    <functioncall functionName="CurrencyRatio"/>
+    <functioncall functionName="CurrencyUnitMetadata"/>
+    <functioncall functionName="Data"/>
+    <functioncall functionName="Data_Bit"/>
+    <functioncall functionName="Data_Byte"/>
+    <functioncall functionName="Data_CD"/>
+    <functioncall functionName="Data_DVD"/>
+    <functioncall functionName="Data_Exabits"/>
+    <functioncall functionName="Data_Exabytes"/>
+    <functioncall functionName="Data_Exbibits"/>
+    <functioncall functionName="Data_Exbibytes"/>
+    <functioncall functionName="Data_FloppyDisk"/>
+    <functioncall functionName="Data_Gibibits"/>
+    <functioncall functionName="Data_Gibibytes"/>
+    <functioncall functionName="Data_Gigabit"/>
+    <functioncall functionName="Data_Gigabyte"/>
+    <functioncall functionName="Data_Kibibits"/>
+    <functioncall functionName="Data_Kibibytes"/>
+    <functioncall functionName="Data_Kilobit"/>
+    <functioncall functionName="Data_Kilobyte"/>
+    <functioncall functionName="Data_Mebibits"/>
+    <functioncall functionName="Data_Mebibytes"/>
+    <functioncall functionName="Data_Megabit"/>
+    <functioncall functionName="Data_Megabyte"/>
+    <functioncall functionName="Data_Pebibits"/>
+    <functioncall functionName="Data_Pebibytes"/>
+    <functioncall functionName="Data_Petabit"/>
+    <functioncall functionName="Data_Petabyte"/>
+    <functioncall functionName="Data_Tebibits"/>
+    <functioncall functionName="Data_Tebibytes"/>
+    <functioncall functionName="Data_Terabit"/>
+    <functioncall functionName="Data_Terabyte"/>
+    <functioncall functionName="Data_Yobibits"/>
+    <functioncall functionName="Data_Yobibytes"/>
+    <functioncall functionName="Data_Yottabit"/>
+    <functioncall functionName="Data_Yottabyte"/>
+    <functioncall functionName="Data_Zebibits"/>
+    <functioncall functionName="Data_Zebibytes"/>
+    <functioncall functionName="Data_Zetabits"/>
+    <functioncall functionName="Data_Zetabytes"/>
+    <functioncall functionName="Deserialize"/>
+    <functioncall functionName="Energy"/>
+    <functioncall functionName="Energy_Banana"/>
+    <functioncall functionName="Energy_Battery"/>
+    <functioncall functionName="Energy_BritishThermalUnit"/>
+    <functioncall functionName="Energy_Calorie"/>
+    <functioncall functionName="Energy_ElectronVolt"/>
+    <functioncall functionName="Energy_FootPound"/>
+    <functioncall functionName="Energy_Joule"/>
+    <functioncall functionName="Energy_Kilocalorie"/>
+    <functioncall functionName="Energy_Kilojoule"/>
+    <functioncall functionName="Energy_SliceOfCake"/>
+    <functioncall functionName="ExplicitUnitConversionData"/>
+    <functioncall functionName="GetCategories"/>
+    <functioncall functionName="GetConversionData"/>
+    <functioncall functionName="GetExplicitConversionData"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetLocalizedStringName"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="GetUnits"/>
+    <functioncall functionName="HttpProgress"/>
+    <functioncall functionName="IsConverterViewMode"/>
+    <functioncall functionName="Length"/>
+    <functioncall functionName="Length_Centimeter"/>
+    <functioncall functionName="Length_Foot"/>
+    <functioncall functionName="Length_Hand"/>
+    <functioncall functionName="Length_Inch"/>
+    <functioncall functionName="Length_JumboJet"/>
+    <functioncall functionName="Length_Kilometer"/>
+    <functioncall functionName="Length_Meter"/>
+    <functioncall functionName="Length_Micron"/>
+    <functioncall functionName="Length_Mile"/>
+    <functioncall functionName="Length_Millimeter"/>
+    <functioncall functionName="Length_Nanometer"/>
+    <functioncall functionName="Length_NauticalMile"/>
+    <functioncall functionName="Length_Paperclip"/>
+    <functioncall functionName="Length_Yard"/>
+    <functioncall functionName="Mode"/>
+    <functioncall functionName="OrderedUnit"/>
+    <functioncall functionName="Power"/>
+    <functioncall functionName="Power_BritishThermalUnitPerMinute"/>
+    <functioncall functionName="Power_FootPoundPerMinute"/>
+    <functioncall functionName="Power_Horse"/>
+    <functioncall functionName="Power_Horsepower"/>
+    <functioncall functionName="Power_Kilowatt"/>
+    <functioncall functionName="Power_LightBulb"/>
+    <functioncall functionName="Power_TrainEngine"/>
+    <functioncall functionName="Power_Watt"/>
+    <functioncall functionName="Pressure"/>
+    <functioncall functionName="Pressure_Atmosphere"/>
+    <functioncall functionName="Pressure_Bar"/>
+    <functioncall functionName="Pressure_KiloPascal"/>
+    <functioncall functionName="Pressure_MillimeterOfMercury"/>
+    <functioncall functionName="Pressure_PSI"/>
+    <functioncall functionName="Pressure_Pascal"/>
+    <functioncall functionName="Serialize"/>
+    <functioncall functionName="Speed"/>
+    <functioncall functionName="Speed_CentimetersPerSecond"/>
+    <functioncall functionName="Speed_FeetPerSecond"/>
+    <functioncall functionName="Speed_Horse"/>
+    <functioncall functionName="Speed_Jet"/>
+    <functioncall functionName="Speed_KilometersPerHour"/>
+    <functioncall functionName="Speed_Knot"/>
+    <functioncall functionName="Speed_Mach"/>
+    <functioncall functionName="Speed_MetersPerSecond"/>
+    <functioncall functionName="Speed_MilesPerHour"/>
+    <functioncall functionName="Speed_Turtle"/>
+    <functioncall functionName="SupportsNegative"/>
+    <functioncall functionName="Temperature"/>
+    <functioncall functionName="Temperature_DegreesCelsius"/>
+    <functioncall functionName="Temperature_DegreesFahrenheit"/>
+    <functioncall functionName="Temperature_Kelvin"/>
+    <functioncall functionName="Time"/>
+    <functioncall functionName="Time_Day"/>
+    <functioncall functionName="Time_Hour"/>
+    <functioncall functionName="Time_Microsecond"/>
+    <functioncall functionName="Time_Millisecond"/>
+    <functioncall functionName="Time_Minute"/>
+    <functioncall functionName="Time_Second"/>
+    <functioncall functionName="Time_Week"/>
+    <functioncall functionName="Time_Year"/>
+    <functioncall functionName="Unit"/>
+    <functioncall functionName="UnitConverterDataLoader"/>
+    <functioncall functionName="UnitHash"/>
+    <functioncall functionName="Volume"/>
+    <functioncall functionName="Volume_Bathtub"/>
+    <functioncall functionName="Volume_CoffeeCup"/>
+    <functioncall functionName="Volume_CubicCentimeter"/>
+    <functioncall functionName="Volume_CubicFoot"/>
+    <functioncall functionName="Volume_CubicInch"/>
+    <functioncall functionName="Volume_CubicMeter"/>
+    <functioncall functionName="Volume_CubicYard"/>
+    <functioncall functionName="Volume_CupUS"/>
+    <functioncall functionName="Volume_FluidOunceUK"/>
+    <functioncall functionName="Volume_FluidOunceUS"/>
+    <functioncall functionName="Volume_GallonUK"/>
+    <functioncall functionName="Volume_GallonUS"/>
+    <functioncall functionName="Volume_Liter"/>
+    <functioncall functionName="Volume_Milliliter"/>
+    <functioncall functionName="Volume_PintUK"/>
+    <functioncall functionName="Volume_PintUS"/>
+    <functioncall functionName="Volume_QuartUK"/>
+    <functioncall functionName="Volume_QuartUS"/>
+    <functioncall functionName="Volume_SwimmingPool"/>
+    <functioncall functionName="Volume_TablespoonUK"/>
+    <functioncall functionName="Volume_TablespoonUS"/>
+    <functioncall functionName="Volume_TeaspoonUK"/>
+    <functioncall functionName="Volume_TeaspoonUS"/>
+    <functioncall functionName="Weight"/>
+    <functioncall functionName="Weight_Carat"/>
+    <functioncall functionName="Weight_Centigram"/>
+    <functioncall functionName="Weight_Decagram"/>
+    <functioncall functionName="Weight_Decigram"/>
+    <functioncall functionName="Weight_Elephant"/>
+    <functioncall functionName="Weight_Gram"/>
+    <functioncall functionName="Weight_Hectogram"/>
+    <functioncall functionName="Weight_Kilogram"/>
+    <functioncall functionName="Weight_LongTon"/>
+    <functioncall functionName="Weight_Milligram"/>
+    <functioncall functionName="Weight_Ounce"/>
+    <functioncall functionName="Weight_Pound"/>
+    <functioncall functionName="Weight_ShortTon"/>
+    <functioncall functionName="Weight_Snowflake"/>
+    <functioncall functionName="Weight_SoccerBall"/>
+    <functioncall functionName="Weight_Stone"/>
+    <functioncall functionName="Weight_Tonne"/>
+    <functioncall functionName="Weight_Whale"/>
+    <functioncall functionName="abbreviation"/>
+    <functioncall functionName="angleUnits"/>
+    <functioncall functionName="areaUnits"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="category"/>
+    <functioncall functionName="categoryId"/>
+    <functioncall functionName="categoryToUnitConversionDataMap"/>
+    <functioncall functionName="categoryViewMode"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="conversionData"/>
+    <functioncall functionName="conversionDataList"/>
+    <functioncall functionName="conversions"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="dataUnits"/>
+    <functioncall functionName="double"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="emplace_back"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="energyUnits"/>
+    <functioncall functionName="explicitConversionData"/>
+    <functioncall functionName="factor"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="find_if"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="isConversionSource"/>
+    <functioncall functionName="isConversionTarget"/>
+    <functioncall functionName="isWhimsical"/>
+    <functioncall functionName="lengthUnits"/>
+    <functioncall functionName="m_categoryList"/>
+    <functioncall functionName="m_currentRegionCode"/>
+    <functioncall functionName="make_shared"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="objectCategory"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="offsetFirst"/>
+    <functioncall functionName="order"/>
+    <functioncall functionName="orderedUnitMap"/>
+    <functioncall functionName="orderedUnits"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="pair"/>
+    <functioncall functionName="parentUnitId"/>
+    <functioncall functionName="parsedData"/>
+    <functioncall functionName="powerUnits"/>
+    <functioncall functionName="pressureUnits"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="ratio"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="sort"/>
+    <functioncall functionName="speedUnits"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="stringId"/>
+    <functioncall functionName="supportedCategories"/>
+    <functioncall functionName="symbol"/>
+    <functioncall functionName="tempUnits"/>
+    <functioncall functionName="timeUnits"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="u"/>
+    <functioncall functionName="unit"/>
+    <functioncall functionName="unitDataList"/>
+    <functioncall functionName="unitId"/>
+    <functioncall functionName="unitList"/>
+    <functioncall functionName="useFahrenheit"/>
+    <functioncall functionName="useSI"/>
+    <functioncall functionName="useUSCustomary"/>
+    <functioncall functionName="useWattInsteadOfKilowatt"/>
+    <functioncall functionName="volumeUnits"/>
+    <functioncall functionName="weightUnits"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

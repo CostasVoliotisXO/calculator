@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1858017704">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorScientificOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorScientificOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorScientificOperators.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorScientificOperators.xaml.h" line="20"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="CalculatorScientificOperators"/>
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_DEFAULT"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_DEFAULT_AND_CALLBACK"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="E"/>
+    <functioncall functionName="GoToState"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="IsErrorVisualState"/>
+    <functioncall functionName="IsShiftChecked"/>
+    <functioncall functionName="IsWideLayout"/>
+    <functioncall functionName="OnViewModelPropertyChanged"/>
+    <functioncall functionName="PropertyChangedEventHandler"/>
+    <functioncall functionName="SetOpenParenthesisCountNarratorAnnouncement"/>
+    <functioncall functionName="SetOperatorRowVisibility"/>
+    <functioncall functionName="SetValue"/>
+    <functioncall functionName="ShiftButtonChecked"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="VirtualKeyProperty"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="invRowVis"/>
+    <functioncall functionName="isChecked"/>
+    <functioncall functionName="newState"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="rowVis"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

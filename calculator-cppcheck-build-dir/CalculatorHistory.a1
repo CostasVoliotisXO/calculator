@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4271798754">
+        <error id="unsignedPositive" severity="style" msg="Unsigned expression &apos;uIdx&apos; can&apos;t be negative so it is unnecessary to test it." verbose="Unsigned expression &apos;uIdx&apos; can&apos;t be negative so it is unnecessary to test it." cwe="570">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.cpp" line="65" info="Unsigned positive"/>
+            <symbol>uIdx</symbol>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:12:16" my-argnr="2" my-argname="item" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="17"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:26:16" my-argnr="1" my-argname="size" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="28"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:149:16" my-argnr="1" my-argname="suffix" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="151"/>
+  </FileInfo>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalculatorVector::GetSize&apos; can be const." verbose="The member function &apos;CalculatorVector::GetSize&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="26"/>
+            <symbol>CalculatorVector::GetSize</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="149"/>
+            <symbol>CalculatorVector::GetExpressionSuffix</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CalculatorHistory&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CalculatorHistory&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.h" line="34"/>
+            <symbol>CalculatorHistory</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="RemoveItem" lineNumber="47"/>
+    <functiondecl functionName="GetHistory" lineNumber="58"/>
+    <functiondecl functionName="GetHistoryItem" lineNumber="63"/>
+    <functiondecl functionName="ClearHistory" lineNumber="74"/>
+    <functioncall functionName="AddItem"/>
+    <functioncall functionName="Backspace"/>
+    <functioncall functionName="BinaryCommand"/>
+    <functioncall functionName="CM_SCI"/>
+    <functioncall functionName="CalculatorHistory"/>
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClearHistory"/>
+    <functioncall functionName="Decimal"/>
+    <functioncall functionName="Eight"/>
+    <functioncall functionName="Five"/>
+    <functioncall functionName="Four"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetExpressionSuffix"/>
+    <functioncall functionName="GetSize"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="Negate"/>
+    <functioncall functionName="Nine"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="One"/>
+    <functioncall functionName="OperandCommand"/>
+    <functioncall functionName="Parentheses"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="S_OK"/>
+    <functioncall functionName="Seven"/>
+    <functioncall functionName="Six"/>
+    <functioncall functionName="Three"/>
+    <functioncall functionName="Two"/>
+    <functioncall functionName="UnaryCommand"/>
+    <functioncall functionName="Zero"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="commands"/>
+    <functioncall functionName="currentPair"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="expressionSuffix"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="generatedExpression"/>
+    <functioncall functionName="hr"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="iter"/>
+    <functioncall functionName="long"/>
+    <functioncall functionName="m_maxHistorySize"/>
+    <functioncall functionName="make_shared"/>
+    <functioncall functionName="maxSize"/>
+    <functioncall functionName="nTokens"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="spHistoryItem"/>
+    <functioncall functionName="startIter"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="tokens"/>
+    <functioncall functionName="uIdx"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

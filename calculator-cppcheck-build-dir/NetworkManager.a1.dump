@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;NetworkManager.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Platform"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Windows"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Networking"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Connectivity"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="11" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="13" str="m_NetworkStatusChangedToken"/>
+    <tok fileIndex="0" linenr="13" str="="/>
+    <tok fileIndex="0" linenr="14" str="NetworkInformation"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="NetworkStatusChanged"/>
+    <tok fileIndex="0" linenr="14" str="+="/>
+    <tok fileIndex="0" linenr="14" str="ref"/>
+    <tok fileIndex="0" linenr="14" str="new"/>
+    <tok fileIndex="0" linenr="14" str="NetworkStatusChangedEventHandler"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="15" str="this"/>
+    <tok fileIndex="0" linenr="15" str=","/>
+    <tok fileIndex="0" linenr="15" str="&amp;"/>
+    <tok fileIndex="0" linenr="15" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="15" str="::"/>
+    <tok fileIndex="0" linenr="15" str="OnNetworkStatusChange"/>
+    <tok fileIndex="0" linenr="15" str=","/>
+    <tok fileIndex="0" linenr="15" str="CallbackContext"/>
+    <tok fileIndex="0" linenr="15" str="::"/>
+    <tok fileIndex="0" linenr="15" str="Same"/>
+    <tok fileIndex="0" linenr="15" str=")"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="16" str="}"/>
+    <tok fileIndex="0" linenr="18" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="18" str="::"/>
+    <tok fileIndex="0" linenr="18" str="~"/>
+    <tok fileIndex="0" linenr="18" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="19" str="{"/>
+    <tok fileIndex="0" linenr="20" str="NetworkInformation"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="NetworkStatusChanged"/>
+    <tok fileIndex="0" linenr="20" str="-="/>
+    <tok fileIndex="0" linenr="20" str="m_NetworkStatusChangedToken"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="}"/>
+    <tok fileIndex="0" linenr="23" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="23" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="GetNetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="24" str="{"/>
+    <tok fileIndex="0" linenr="25" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="25" str="behavior"/>
+    <tok fileIndex="0" linenr="25" str="="/>
+    <tok fileIndex="0" linenr="25" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="25" str="::"/>
+    <tok fileIndex="0" linenr="25" str="Offline"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="ConnectionProfile"/>
+    <tok fileIndex="0" linenr="26" str="^"/>
+    <tok fileIndex="0" linenr="26" str="connectionProfile"/>
+    <tok fileIndex="0" linenr="26" str="="/>
+    <tok fileIndex="0" linenr="26" str="NetworkInformation"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="GetInternetConnectionProfile"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="27" str="if"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="connectionProfile"/>
+    <tok fileIndex="0" linenr="27" str="!="/>
+    <tok fileIndex="0" linenr="27" str="nullptr"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="28" str="{"/>
+    <tok fileIndex="0" linenr="29" str="NetworkConnectivityLevel"/>
+    <tok fileIndex="0" linenr="29" str="connectivityLevel"/>
+    <tok fileIndex="0" linenr="29" str="="/>
+    <tok fileIndex="0" linenr="29" str="connectionProfile"/>
+    <tok fileIndex="0" linenr="29" str="-&gt;"/>
+    <tok fileIndex="0" linenr="29" str="GetNetworkConnectivityLevel"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="29" str=";"/>
+    <tok fileIndex="0" linenr="30" str="if"/>
+    <tok fileIndex="0" linenr="30" str="("/>
+    <tok fileIndex="0" linenr="30" str="connectivityLevel"/>
+    <tok fileIndex="0" linenr="30" str="=="/>
+    <tok fileIndex="0" linenr="30" str="NetworkConnectivityLevel"/>
+    <tok fileIndex="0" linenr="30" str="::"/>
+    <tok fileIndex="0" linenr="30" str="InternetAccess"/>
+    <tok fileIndex="0" linenr="31" str="||"/>
+    <tok fileIndex="0" linenr="31" str="connectivityLevel"/>
+    <tok fileIndex="0" linenr="31" str="=="/>
+    <tok fileIndex="0" linenr="31" str="NetworkConnectivityLevel"/>
+    <tok fileIndex="0" linenr="31" str="::"/>
+    <tok fileIndex="0" linenr="31" str="ConstrainedInternetAccess"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="32" str="{"/>
+    <tok fileIndex="0" linenr="33" str="ConnectionCost"/>
+    <tok fileIndex="0" linenr="33" str="^"/>
+    <tok fileIndex="0" linenr="33" str="connectionCost"/>
+    <tok fileIndex="0" linenr="33" str="="/>
+    <tok fileIndex="0" linenr="33" str="connectionProfile"/>
+    <tok fileIndex="0" linenr="33" str="-&gt;"/>
+    <tok fileIndex="0" linenr="33" str="GetConnectionCost"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="34" str="behavior"/>
+    <tok fileIndex="0" linenr="34" str="="/>
+    <tok fileIndex="0" linenr="34" str="ConvertCostInfoToBehavior"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="connectionCost"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="35" str="}"/>
+    <tok fileIndex="0" linenr="36" str="}"/>
+    <tok fileIndex="0" linenr="38" str="return"/>
+    <tok fileIndex="0" linenr="38" str="behavior"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="39" str="}"/>
+    <tok fileIndex="0" linenr="41" str="void"/>
+    <tok fileIndex="0" linenr="41" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="41" str="::"/>
+    <tok fileIndex="0" linenr="41" str="OnNetworkStatusChange"/>
+    <tok fileIndex="0" linenr="41" str="("/>
+    <tok fileIndex="0" linenr="41" str="_In_"/>
+    <tok fileIndex="0" linenr="41" str="Object"/>
+    <tok fileIndex="0" linenr="41" str="^"/>
+    <tok fileIndex="0" linenr="41" str="/*sender*/"/>
+    <tok fileIndex="0" linenr="41" str=")"/>
+    <tok fileIndex="0" linenr="42" str="{"/>
+    <tok fileIndex="0" linenr="43" str="NetworkBehaviorChanged"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str="GetNetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="44" str="}"/>
+    <tok fileIndex="0" linenr="46" str="// See app behavior guidelines at https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj835821(v=win.10).aspx"/>
+    <tok fileIndex="0" linenr="47" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="47" str="NetworkManager"/>
+    <tok fileIndex="0" linenr="47" str="::"/>
+    <tok fileIndex="0" linenr="47" str="ConvertCostInfoToBehavior"/>
+    <tok fileIndex="0" linenr="47" str="("/>
+    <tok fileIndex="0" linenr="47" str="_In_"/>
+    <tok fileIndex="0" linenr="47" str="ConnectionCost"/>
+    <tok fileIndex="0" linenr="47" str="^"/>
+    <tok fileIndex="0" linenr="47" str="connectionCost"/>
+    <tok fileIndex="0" linenr="47" str=")"/>
+    <tok fileIndex="0" linenr="48" str="{"/>
+    <tok fileIndex="0" linenr="49" str="if"/>
+    <tok fileIndex="0" linenr="49" str="("/>
+    <tok fileIndex="0" linenr="49" str="connectionCost"/>
+    <tok fileIndex="0" linenr="49" str="-&gt;"/>
+    <tok fileIndex="0" linenr="49" str="Roaming"/>
+    <tok fileIndex="0" linenr="49" str="||"/>
+    <tok fileIndex="0" linenr="49" str="connectionCost"/>
+    <tok fileIndex="0" linenr="49" str="-&gt;"/>
+    <tok fileIndex="0" linenr="49" str="OverDataLimit"/>
+    <tok fileIndex="0" linenr="50" str="||"/>
+    <tok fileIndex="0" linenr="50" str="connectionCost"/>
+    <tok fileIndex="0" linenr="50" str="-&gt;"/>
+    <tok fileIndex="0" linenr="50" str="NetworkCostType"/>
+    <tok fileIndex="0" linenr="50" str="=="/>
+    <tok fileIndex="0" linenr="50" str="NetworkCostType"/>
+    <tok fileIndex="0" linenr="50" str="::"/>
+    <tok fileIndex="0" linenr="50" str="Variable"/>
+    <tok fileIndex="0" linenr="51" str="||"/>
+    <tok fileIndex="0" linenr="51" str="connectionCost"/>
+    <tok fileIndex="0" linenr="51" str="-&gt;"/>
+    <tok fileIndex="0" linenr="51" str="NetworkCostType"/>
+    <tok fileIndex="0" linenr="51" str="=="/>
+    <tok fileIndex="0" linenr="51" str="NetworkCostType"/>
+    <tok fileIndex="0" linenr="51" str="::"/>
+    <tok fileIndex="0" linenr="51" str="Fixed"/>
+    <tok fileIndex="0" linenr="51" str=")"/>
+    <tok fileIndex="0" linenr="52" str="{"/>
+    <tok fileIndex="0" linenr="53" str="return"/>
+    <tok fileIndex="0" linenr="53" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="53" str="::"/>
+    <tok fileIndex="0" linenr="53" str="OptIn"/>
+    <tok fileIndex="0" linenr="53" str=";"/>
+    <tok fileIndex="0" linenr="54" str="}"/>
+    <tok fileIndex="0" linenr="56" str="return"/>
+    <tok fileIndex="0" linenr="56" str="NetworkAccessBehavior"/>
+    <tok fileIndex="0" linenr="56" str="::"/>
+    <tok fileIndex="0" linenr="56" str="Normal"/>
+    <tok fileIndex="0" linenr="56" str=";"/>
+    <tok fileIndex="0" linenr="57" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="5" str="#include &quot;NetworkManager.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A347ACB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="6" str="namespace" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347A350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="6" str="CalculatorApp" scope="00000134A933BB80" type="name" astParent="00000134A347A8F0"/>
+    <token id="00000134A347A8F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="7" str="{" scope="00000134A933BC90" link="00000134A347C9F0" astOperand1="00000134A347A350" astOperand2="00000134A347B610"/>
+    <token id="00000134A347B670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="8" str="public" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="8" str="enum" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="8" str="class" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="8" str="NetworkAccessBehavior" scope="00000134A933BC90" type="name" type-scope="00000134A933BDA0" astParent="00000134A347A8F0"/>
+    <token id="00000134A347AE30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="9" str="{" scope="00000134A933BDA0" link="00000134A347A4D0"/>
+    <token id="00000134A347A470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="10" str="Normal" scope="00000134A933BDA0" type="name" values="00000134A91FDFC0" astParent="00000134A347A3B0" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347A3B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="10" str="=" scope="00000134A933BDA0" type="op" isAssignmentOp="True" astParent="00000134A347A950" astOperand1="00000134A347A470" astOperand2="00000134A347B130" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347B130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="10" str="0" scope="00000134A933BDA0" type="number" isInt="True" values="00000134A91FDEE0" astParent="00000134A347A3B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347A950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="10" str="," scope="00000134A933BDA0" astParent="00000134A347B3D0" astOperand1="00000134A347A3B0" astOperand2="00000134A347A290"/>
+    <token id="00000134A347B370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="11" str="OptIn" scope="00000134A933BDA0" type="name" values="00000134A91FDCC0" astParent="00000134A347A290" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347A290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="11" str="=" scope="00000134A933BDA0" type="op" isAssignmentOp="True" astParent="00000134A347A950" astOperand1="00000134A347B370" astOperand2="00000134A347B190" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347B190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="11" str="1" scope="00000134A933BDA0" type="number" isInt="True" values="00000134A91FDE60" astParent="00000134A347A290" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347B3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="11" str="," scope="00000134A933BDA0" astOperand1="00000134A347A950" astOperand2="00000134A347B430"/>
+    <token id="00000134A347ABF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="12" str="Offline" scope="00000134A933BDA0" type="name" values="00000134A91FDF40" astParent="00000134A347B430" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347B430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="12" str="=" scope="00000134A933BDA0" type="op" isAssignmentOp="True" astParent="00000134A347B3D0" astOperand1="00000134A347ABF0" astOperand2="00000134A347B4F0" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347B4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="12" str="2" scope="00000134A933BDA0" type="number" isInt="True" values="00000134A91FE040" astParent="00000134A347B430" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347A4D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="13" str="}" scope="00000134A933BDA0" link="00000134A347AE30"/>
+    <token id="00000134A347A410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="13" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347AA70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="public" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="delegate" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="void" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347AB90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="NetworkBehaviorChangedHandler" scope="00000134A933BC90" type="name" function="00000134A213BEA0" astParent="00000134A347AAD0"/>
+    <token id="00000134A347AAD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="(" scope="00000134A933BC90" link="00000134A347B490" astOperand1="00000134A347AB90" astOperand2="00000134A347AD10" valueType-type="void"/>
+    <token id="00000134A347AB30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="NetworkAccessBehavior" scope="00000134A933BC90" type="name" type-scope="00000134A933BDA0"/>
+    <token id="00000134A347AD10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str="behavior" scope="00000134A933BC90" type="name" varId="1" variable="000001349DA45CF0" astParent="00000134A347AAD0" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347B490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str=")" scope="00000134A933BC90" link="00000134A347AAD0"/>
+    <token id="00000134A347B2B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="15" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347AD70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="17" str="public" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="17" str="ref" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="17" str="class" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="17" str="NetworkManager" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A9B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="17" str="sealed" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347AA10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="18" str="{" scope="00000134A933BC90" link="00000134A347C930"/>
+    <token id="00000134A347B730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="19" str="public:" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B5B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="20" str="NetworkManager" scope="00000134A933BC90" type="name" function="00000134A213CA70" astParent="00000134A347B010"/>
+    <token id="00000134A347B010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="20" str="(" scope="00000134A933BC90" link="00000134A347B790" astOperand1="00000134A347B5B0"/>
+    <token id="00000134A347B790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="20" str=")" scope="00000134A933BC90" link="00000134A347B010"/>
+    <token id="00000134A347AE90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="20" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347AC50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str="static" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str="NetworkAccessBehavior" scope="00000134A933BC90" type="name" type-scope="00000134A933BDA0"/>
+    <token id="00000134A347A890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str="GetNetworkAccessBehavior" scope="00000134A933BC90" type="name" function="00000134A213CB00" astParent="00000134A347B7F0"/>
+    <token id="00000134A347B7F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str="(" scope="00000134A933BC90" link="00000134A347ADD0" astOperand1="00000134A347A890" valueType-type="record" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347ADD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str=")" scope="00000134A933BC90" link="00000134A347B7F0"/>
+    <token id="00000134A347A1D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="22" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347B850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="24" str="event" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="24" str="NetworkBehaviorChangedHandler" scope="00000134A933BC90" type="name" astParent="00000134A347B250"/>
+    <token id="00000134A347B250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="24" str="^" scope="00000134A933BC90" type="op" astOperand1="00000134A347B1F0" astOperand2="00000134A347AEF0"/>
+    <token id="00000134A347AEF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="24" str="NetworkBehaviorChanged" scope="00000134A933BC90" type="name" astParent="00000134A347B250"/>
+    <token id="00000134A347AF50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="24" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347AFB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="26" str="private:" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347A770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="27" str="~" scope="00000134A933BC90" type="op"/>
+    <token id="00000134A347B070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="27" str="NetworkManager" scope="00000134A933BC90" type="name" function="00000134A213CA70" astParent="00000134A347B0D0"/>
+    <token id="00000134A347B0D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="27" str="(" scope="00000134A933BC90" link="00000134A347A6B0" astOperand1="00000134A347B070"/>
+    <token id="00000134A347A6B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="27" str=")" scope="00000134A933BC90" link="00000134A347B0D0"/>
+    <token id="00000134A347B8B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="27" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347A7D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="void" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347B310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="OnNetworkStatusChange" scope="00000134A933BC90" type="name" function="00000134A213CE60" astParent="00000134A347A110"/>
+    <token id="00000134A347A110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="(" scope="00000134A933BC90" link="00000134A347C150" astOperand1="00000134A347B310" astOperand2="00000134A347C0F0" valueType-type="void"/>
+    <token id="00000134A347A2F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="Platform" scope="00000134A933BC90" type="name" astParent="00000134A347B970"/>
+    <token id="00000134A347B970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="::" scope="00000134A933BC90" astParent="00000134A347C0F0" astOperand1="00000134A347A2F0" astOperand2="00000134A347C570"/>
+    <token id="00000134A347C570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="Object" scope="00000134A933BC90" type="name" astParent="00000134A347B970"/>
+    <token id="00000134A347C0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="^" scope="00000134A933BC90" type="op" astParent="00000134A347A110" astOperand1="00000134A347B970" astOperand2="00000134A347BAF0"/>
+    <token id="00000134A347BAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str="sender" scope="00000134A933BC90" type="name" astParent="00000134A347C0F0"/>
+    <token id="00000134A347C150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str=")" scope="00000134A933BC90" link="00000134A347A110"/>
+    <token id="00000134A347CAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="29" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347CCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="static" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347C450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="NetworkAccessBehavior" scope="00000134A933BC90" type="name" type-scope="00000134A933BDA0"/>
+    <token id="00000134A347BDF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="ConvertCostInfoToBehavior" scope="00000134A933BC90" type="name" function="00000134A213BCF0" astParent="00000134A347C4B0"/>
+    <token id="00000134A347C4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="(" scope="00000134A933BC90" link="00000134A347C8D0" astOperand1="00000134A347BDF0" astOperand2="00000134A347C2D0" valueType-type="record" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347C510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="Windows" scope="00000134A933BC90" type="name" astParent="00000134A347CFF0"/>
+    <token id="00000134A347CFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="::" scope="00000134A933BC90" astParent="00000134A347BF70" astOperand1="00000134A347C510" astOperand2="00000134A347BFD0"/>
+    <token id="00000134A347BFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="Networking" scope="00000134A933BC90" type="name" astParent="00000134A347CFF0"/>
+    <token id="00000134A347BF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="::" scope="00000134A933BC90" astParent="00000134A347C270" astOperand1="00000134A347CFF0" astOperand2="00000134A347BE50"/>
+    <token id="00000134A347BE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="Connectivity" scope="00000134A933BC90" type="name" astParent="00000134A347BF70"/>
+    <token id="00000134A347C270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="::" scope="00000134A933BC90" astParent="00000134A347C2D0" astOperand1="00000134A347BF70" astOperand2="00000134A347BB50"/>
+    <token id="00000134A347BB50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="ConnectionCost" scope="00000134A933BC90" type="name" astParent="00000134A347C270"/>
+    <token id="00000134A347C2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="^" scope="00000134A933BC90" type="op" astParent="00000134A347C4B0" astOperand1="00000134A347C270" astOperand2="00000134A347CB10"/>
+    <token id="00000134A347CB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str="connectionCost" scope="00000134A933BC90" type="name" astParent="00000134A347C2D0"/>
+    <token id="00000134A347C8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str=")" scope="00000134A933BC90" link="00000134A347C4B0"/>
+    <token id="00000134A347BCD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="30" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347C990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="32" str="private:" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347BEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="Windows" scope="00000134A933BC90" type="name" astParent="00000134A347CBD0"/>
+    <token id="00000134A347CBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="::" scope="00000134A933BC90" astParent="00000134A347BD30" astOperand1="00000134A347BEB0" astOperand2="00000134A347C750"/>
+    <token id="00000134A347C750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="Foundation" scope="00000134A933BC90" type="name" astParent="00000134A347CBD0"/>
+    <token id="00000134A347BD30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="::" scope="00000134A933BC90" astOperand1="00000134A347CBD0" astOperand2="00000134A347CE70"/>
+    <token id="00000134A347C330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="EventRegistrationToken" scope="00000134A933BC90" type="name"/>
+    <token id="00000134A347CE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str="m_NetworkStatusChangedToken" scope="00000134A933BC90" type="name" varId="2" astParent="00000134A347BD30"/>
+    <token id="00000134A347CB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="33" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347C930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="34" str="}" scope="00000134A933BC90" link="00000134A347AA10"/>
+    <token id="00000134A347BD90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="34" str=";" scope="00000134A933BC90"/>
+    <token id="00000134A347C9F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.h" linenr="35" str="}" scope="00000134A933BC90" link="00000134A347A8F0"/>
+    <token id="00000134A347C390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="7" str="using" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347BF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="7" str="namespace" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347CC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="7" str="CalculatorApp" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347C7B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="7" str=";" scope="00000134A933BB80"/>
+    <token id="00000134A347C030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="8" str="using" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347CA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="8" str="namespace" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347C3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="8" str="Platform" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347C1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="8" str=";" scope="00000134A933BB80"/>
+    <token id="00000134A347BA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="using" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347C5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="namespace" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347B910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="Windows" scope="00000134A933BB80" type="name" astParent="00000134A347CC90"/>
+    <token id="00000134A347CC90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="::" scope="00000134A933BB80" astParent="00000134A347C690" astOperand1="00000134A347B910" astOperand2="00000134A347C630"/>
+    <token id="00000134A347C630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="Networking" scope="00000134A933BB80" type="name" astParent="00000134A347CC90"/>
+    <token id="00000134A347C690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="::" scope="00000134A933BB80" astOperand1="00000134A347CC90" astOperand2="00000134A347C6F0"/>
+    <token id="00000134A347C6F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str="Connectivity" scope="00000134A933BB80" type="name" astParent="00000134A347C690"/>
+    <token id="00000134A347C810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="9" str=";" scope="00000134A933BB80"/>
+    <token id="00000134A347D0B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="11" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347C090"/>
+    <token id="00000134A347C090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="11" str="::" scope="00000134A933BB80" astParent="00000134A347C870" astOperand1="00000134A347D0B0" astOperand2="00000134A347B9D0"/>
+    <token id="00000134A347B9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="11" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347C090"/>
+    <token id="00000134A347C870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="11" str="(" scope="00000134A933BB80" link="00000134A347BA90" astOperand1="00000134A347C090"/>
+    <token id="00000134A347BA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="11" str=")" scope="00000134A933BB80" link="00000134A347C870"/>
+    <token id="00000134A347CD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="12" str="{" scope="00000134A933BFC0" link="00000134A347E310"/>
+    <token id="00000134A347BBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="13" str="m_NetworkStatusChangedToken" scope="00000134A933BFC0" type="name" astParent="00000134A347CDB0"/>
+    <token id="00000134A347CDB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="13" str="=" scope="00000134A933BFC0" type="op" isAssignmentOp="True" astOperand1="00000134A347BBB0" astOperand2="00000134A347CF90"/>
+    <token id="00000134A347CE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="NetworkInformation" scope="00000134A933BFC0" type="name" astParent="00000134A347CED0"/>
+    <token id="00000134A347CED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="::" scope="00000134A933BFC0" astParent="00000134A347CF90" astOperand1="00000134A347CE10" astOperand2="00000134A347CF30"/>
+    <token id="00000134A347CF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="NetworkStatusChanged" scope="00000134A933BFC0" type="name" astParent="00000134A347CED0"/>
+    <token id="00000134A347CF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="+=" scope="00000134A933BFC0" type="op" isAssignmentOp="True" astParent="00000134A347CDB0" astOperand1="00000134A347CED0" astOperand2="00000134A347E010"/>
+    <token id="00000134A347D050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="ref" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A347BC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="new" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A347BC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="NetworkStatusChangedEventHandler" scope="00000134A933BFC0" type="name" astParent="00000134A347E010"/>
+    <token id="00000134A347E010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="14" str="(" scope="00000134A933BFC0" link="00000134A347E1F0" astParent="00000134A347CF90" astOperand1="00000134A347BC70" astOperand2="00000134A347E2B0"/>
+    <token id="00000134A347E610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="this" scope="00000134A933BFC0" type="name" astParent="00000134A347DE30"/>
+    <token id="00000134A347DE30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="," scope="00000134A933BFC0" astParent="00000134A347E2B0" astOperand1="00000134A347E610" astOperand2="00000134A347DB30"/>
+    <token id="00000134A347DB30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="&amp;" scope="00000134A933BFC0" type="op" astParent="00000134A347DE30" astOperand1="00000134A347D2F0"/>
+    <token id="00000134A347E670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="NetworkManager" scope="00000134A933BFC0" type="name" astParent="00000134A347D2F0"/>
+    <token id="00000134A347D2F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="::" scope="00000134A933BFC0" astParent="00000134A347DB30" astOperand1="00000134A347E670" astOperand2="00000134A347D8F0"/>
+    <token id="00000134A347D8F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="OnNetworkStatusChange" scope="00000134A933BFC0" type="name" astParent="00000134A347D2F0"/>
+    <token id="00000134A347E2B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="," scope="00000134A933BFC0" astParent="00000134A347E010" astOperand1="00000134A347DE30" astOperand2="00000134A347DCB0"/>
+    <token id="00000134A347E6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="CallbackContext" scope="00000134A933BFC0" type="name" astParent="00000134A347DCB0"/>
+    <token id="00000134A347DCB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="::" scope="00000134A933BFC0" astParent="00000134A347E2B0" astOperand1="00000134A347E6D0" astOperand2="00000134A347D7D0"/>
+    <token id="00000134A347D7D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str="Same" scope="00000134A933BFC0" type="name" astParent="00000134A347DCB0"/>
+    <token id="00000134A347E1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str=")" scope="00000134A933BFC0" link="00000134A347E010"/>
+    <token id="00000134A347E430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="15" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A347E310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="16" str="}" scope="00000134A933BFC0" link="00000134A347CD50"/>
+    <token id="00000134A347E4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347DF50"/>
+    <token id="00000134A347DF50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str="::" scope="00000134A933BB80" astParent="00000134A347D710" astOperand1="00000134A347E4F0" astOperand2="00000134A347D410"/>
+    <token id="00000134A347D9B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str="~" scope="00000134A933BB80" type="op"/>
+    <token id="00000134A347D410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347DF50"/>
+    <token id="00000134A347D710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str="(" scope="00000134A933BB80" link="00000134A347DB90" astOperand1="00000134A347DF50"/>
+    <token id="00000134A347DB90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="18" str=")" scope="00000134A933BB80" link="00000134A347D710"/>
+    <token id="00000134A347DE90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="19" str="{" scope="00000134A957D7E0" link="00000134A347D950"/>
+    <token id="00000134A347E5B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str="NetworkInformation" scope="00000134A957D7E0" type="name" astParent="00000134A347D1D0"/>
+    <token id="00000134A347D1D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str="::" scope="00000134A957D7E0" astParent="00000134A347DD10" astOperand1="00000134A347E5B0" astOperand2="00000134A347D110"/>
+    <token id="00000134A347D110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str="NetworkStatusChanged" scope="00000134A957D7E0" type="name" astParent="00000134A347D1D0"/>
+    <token id="00000134A347DD10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str="-=" scope="00000134A957D7E0" type="op" isAssignmentOp="True" astOperand1="00000134A347D1D0" astOperand2="00000134A347D350"/>
+    <token id="00000134A347D350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str="m_NetworkStatusChangedToken" scope="00000134A957D7E0" type="name" astParent="00000134A347DD10"/>
+    <token id="00000134A347D890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="20" str=";" scope="00000134A957D7E0"/>
+    <token id="00000134A347D950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="21" str="}" scope="00000134A957D7E0" link="00000134A347DE90"/>
+    <token id="00000134A347DA10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str="NetworkAccessBehavior" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347DA70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347E370"/>
+    <token id="00000134A347E370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str="::" scope="00000134A933BB80" astParent="00000134A347D290" astOperand1="00000134A347DA70" astOperand2="00000134A347E8B0"/>
+    <token id="00000134A347E8B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str="GetNetworkAccessBehavior" scope="00000134A933BB80" type="name" astParent="00000134A347E370"/>
+    <token id="00000134A347D290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str="(" scope="00000134A933BB80" link="00000134A347E730" astOperand1="00000134A347E370"/>
+    <token id="00000134A347E730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="23" str=")" scope="00000134A933BB80" link="00000134A347D290"/>
+    <token id="00000134A347D470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="24" str="{" scope="00000134A957D8F0" link="00000134A34800B0"/>
+    <token id="00000134A347E3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="NetworkAccessBehavior" scope="00000134A957D8F0" type="name" type-scope="00000134A933BDA0"/>
+    <token id="00000134A347E7F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="behavior" scope="00000134A957D8F0" type="name" varId="3" variable="000001349DA43B40" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347D830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str=";" scope="00000134A957D8F0"/>
+    <token id="00000134A347C210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="behavior" scope="00000134A957D8F0" type="name" varId="3" variable="000001349DA43B40" astParent="00000134A3481010" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A3481010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="=" scope="00000134A957D8F0" type="op" isAssignmentOp="True" astOperand1="00000134A347C210" astOperand2="00000134A347DBF0" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347E250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="NetworkAccessBehavior" scope="00000134A957D8F0" type="name" astParent="00000134A347DBF0"/>
+    <token id="00000134A347DBF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="::" scope="00000134A957D8F0" astParent="00000134A3481010" astOperand1="00000134A347E250" astOperand2="00000134A347DAD0"/>
+    <token id="00000134A347DAD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str="Offline" scope="00000134A957D8F0" type="name" astParent="00000134A347DBF0"/>
+    <token id="00000134A347E490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="25" str=";" scope="00000134A957D8F0"/>
+    <token id="00000134A347E550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="ConnectionProfile" scope="00000134A957D8F0" type="name" astParent="00000134A347D230"/>
+    <token id="00000134A347D230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="^" scope="00000134A957D8F0" type="op" astParent="00000134A347E850" astOperand1="00000134A347E550" astOperand2="00000134A347E790"/>
+    <token id="00000134A347E790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="connectionProfile" scope="00000134A957D8F0" type="name" astParent="00000134A347D230"/>
+    <token id="00000134A347E850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="=" scope="00000134A957D8F0" type="op" isAssignmentOp="True" astOperand1="00000134A347D230" astOperand2="00000134A347DD70"/>
+    <token id="00000134A347DC50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="NetworkInformation" scope="00000134A957D8F0" type="name" astParent="00000134A347D170"/>
+    <token id="00000134A347D170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="::" scope="00000134A957D8F0" astParent="00000134A347DD70" astOperand1="00000134A347DC50" astOperand2="00000134A347D3B0"/>
+    <token id="00000134A347D3B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="GetInternetConnectionProfile" scope="00000134A957D8F0" type="name" astParent="00000134A347D170"/>
+    <token id="00000134A347DD70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str="(" scope="00000134A957D8F0" link="00000134A347D4D0" astParent="00000134A347E850" astOperand1="00000134A347D170"/>
+    <token id="00000134A347D4D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str=")" scope="00000134A957D8F0" link="00000134A347DD70"/>
+    <token id="00000134A347D530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="26" str=";" scope="00000134A957D8F0"/>
+    <token id="00000134A347D590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str="if" scope="00000134A957D8F0" type="name" astParent="00000134A347D5F0"/>
+    <token id="00000134A347D5F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str="(" scope="00000134A957D8F0" link="00000134A347E130" astOperand1="00000134A347D590" astOperand2="00000134A347D650"/>
+    <token id="00000134A347DEF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str="connectionProfile" scope="00000134A957D8F0" type="name" astParent="00000134A347D650"/>
+    <token id="00000134A347D650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str="!=" scope="00000134A957D8F0" type="op" isComparisonOp="True" astParent="00000134A347D5F0" astOperand1="00000134A347DEF0" astOperand2="00000134A347D6B0" valueType-type="bool"/>
+    <token id="00000134A347D6B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str="nullptr" scope="00000134A957D8F0" type="name" values="00000134A91FDC80" astParent="00000134A347D650"/>
+    <token id="00000134A347E130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="27" str=")" scope="00000134A957D8F0" link="00000134A347D5F0"/>
+    <token id="00000134A347DDD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="28" str="{" scope="0000013491279810" link="00000134A347F330"/>
+    <token id="00000134A347D770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="NetworkConnectivityLevel" scope="0000013491279810" type="name"/>
+    <token id="00000134A347DFB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="connectivityLevel" scope="0000013491279810" type="name" varId="4" variable="000001349DA454A0"/>
+    <token id="00000134A347E070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str=";" scope="0000013491279810"/>
+    <token id="00000134A3481070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="connectivityLevel" scope="0000013491279810" type="name" varId="4" variable="000001349DA454A0" astParent="00000134A3481190"/>
+    <token id="00000134A3481190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="=" scope="0000013491279810" type="op" isAssignmentOp="True" astOperand1="00000134A3481070" astOperand2="00000134A347F3F0"/>
+    <token id="00000134A347E0D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="connectionProfile" scope="0000013491279810" type="name" astParent="00000134A347E190"/>
+    <token id="00000134A347E190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="." scope="0000013491279810" astParent="00000134A347F3F0" astOperand1="00000134A347E0D0" astOperand2="00000134A347FCF0" originalName="->"/>
+    <token id="00000134A347FCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="GetNetworkConnectivityLevel" scope="0000013491279810" type="name" astParent="00000134A347E190"/>
+    <token id="00000134A347F3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str="(" scope="0000013491279810" link="00000134A347ED90" astParent="00000134A3481190" astOperand1="00000134A347E190"/>
+    <token id="00000134A347ED90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str=")" scope="0000013491279810" link="00000134A347F3F0"/>
+    <token id="00000134A347EE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="29" str=";" scope="0000013491279810"/>
+    <token id="00000134A347F5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="if" scope="0000013491279810" type="name" astParent="00000134A347F1B0"/>
+    <token id="00000134A347F1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="(" scope="0000013491279810" link="00000134A347F2D0" astOperand1="00000134A347F5D0" astOperand2="00000134A347EB50"/>
+    <token id="00000134A347EC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="connectivityLevel" scope="0000013491279810" type="name" varId="4" variable="000001349DA454A0" astParent="00000134A3480050"/>
+    <token id="00000134A3480050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="==" scope="0000013491279810" type="op" isComparisonOp="True" astParent="00000134A347EB50" astOperand1="00000134A347EC10" astOperand2="00000134A347F630" valueType-type="bool"/>
+    <token id="00000134A347F150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="NetworkConnectivityLevel" scope="0000013491279810" type="name" astParent="00000134A347F630"/>
+    <token id="00000134A347F630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="::" scope="0000013491279810" astParent="00000134A3480050" astOperand1="00000134A347F150" astOperand2="00000134A347F870"/>
+    <token id="00000134A347F870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="30" str="InternetAccess" scope="0000013491279810" type="name" astParent="00000134A347F630"/>
+    <token id="00000134A347EB50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="||" scope="0000013491279810" type="op" isLogicalOp="True" astParent="00000134A347F1B0" astOperand1="00000134A3480050" astOperand2="00000134A347ED30" valueType-type="bool"/>
+    <token id="00000134A347F090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="connectivityLevel" scope="0000013491279810" type="name" varId="4" variable="000001349DA454A0" astParent="00000134A347ED30"/>
+    <token id="00000134A347ED30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="==" scope="0000013491279810" type="op" isComparisonOp="True" astParent="00000134A347EB50" astOperand1="00000134A347F090" astOperand2="00000134A347FBD0" valueType-type="bool"/>
+    <token id="00000134A347EAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="NetworkConnectivityLevel" scope="0000013491279810" type="name" astParent="00000134A347FBD0"/>
+    <token id="00000134A347FBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="::" scope="0000013491279810" astParent="00000134A347ED30" astOperand1="00000134A347EAF0" astOperand2="00000134A347FE10"/>
+    <token id="00000134A347FE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str="ConstrainedInternetAccess" scope="0000013491279810" type="name" astParent="00000134A347FBD0"/>
+    <token id="00000134A347F2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="31" str=")" scope="0000013491279810" link="00000134A347F1B0"/>
+    <token id="00000134A347EC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="32" str="{" scope="0000013491279920" link="00000134A347EA90"/>
+    <token id="00000134A347EDF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="ConnectionCost" scope="0000013491279920" type="name" astParent="00000134A347EBB0"/>
+    <token id="00000134A347EBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="^" scope="0000013491279920" type="op" astParent="00000134A347EEB0" astOperand1="00000134A347EDF0" astOperand2="00000134A347FB70"/>
+    <token id="00000134A347FB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="connectionCost" scope="0000013491279920" type="name" astParent="00000134A347EBB0"/>
+    <token id="00000134A347EEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="=" scope="0000013491279920" type="op" isAssignmentOp="True" astOperand1="00000134A347EBB0" astOperand2="00000134A347ECD0"/>
+    <token id="00000134A347EFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="connectionProfile" scope="0000013491279920" type="name" astParent="00000134A347F9F0"/>
+    <token id="00000134A347F9F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="." scope="0000013491279920" astParent="00000134A347ECD0" astOperand1="00000134A347EFD0" astOperand2="00000134A347FED0" originalName="->"/>
+    <token id="00000134A347FED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="GetConnectionCost" scope="0000013491279920" type="name" astParent="00000134A347F9F0"/>
+    <token id="00000134A347ECD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str="(" scope="0000013491279920" link="00000134A347F270" astParent="00000134A347EEB0" astOperand1="00000134A347F9F0"/>
+    <token id="00000134A347F270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str=")" scope="0000013491279920" link="00000134A347ECD0"/>
+    <token id="00000134A347FAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="33" str=";" scope="0000013491279920"/>
+    <token id="00000134A347F8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str="behavior" scope="0000013491279920" type="name" varId="3" variable="000001349DA43B40" astParent="00000134A347EF10" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347EF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str="=" scope="0000013491279920" type="op" isAssignmentOp="True" astOperand1="00000134A347F8D0" astOperand2="00000134A347F450" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347F210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str="ConvertCostInfoToBehavior" scope="0000013491279920" type="name" astParent="00000134A347F450"/>
+    <token id="00000134A347F450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str="(" scope="0000013491279920" link="00000134A347FB10" astParent="00000134A347EF10" astOperand1="00000134A347F210" astOperand2="00000134A347F930"/>
+    <token id="00000134A347F930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str="connectionCost" scope="0000013491279920" type="name" astParent="00000134A347F450"/>
+    <token id="00000134A347FB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str=")" scope="0000013491279920" link="00000134A347F450"/>
+    <token id="00000134A347F6F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="34" str=";" scope="0000013491279920"/>
+    <token id="00000134A347EA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="35" str="}" scope="0000013491279920" link="00000134A347EC70"/>
+    <token id="00000134A347F330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="36" str="}" scope="0000013491279810" link="00000134A347DDD0"/>
+    <token id="00000134A347F390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="38" str="return" scope="00000134A957D8F0" type="name" astOperand1="00000134A347FFF0"/>
+    <token id="00000134A347FFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="38" str="behavior" scope="00000134A957D8F0" type="name" varId="3" variable="000001349DA43B40" astParent="00000134A347F390" valueType-type="int" valueType-sign="signed" valueType-typeScope="00000134A933BDA0"/>
+    <token id="00000134A347F4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="38" str=";" scope="00000134A957D8F0"/>
+    <token id="00000134A34800B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="39" str="}" scope="00000134A957D8F0" link="00000134A347D470"/>
+    <token id="00000134A347F030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="void" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347F510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347EF70"/>
+    <token id="00000134A347EF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="::" scope="00000134A933BB80" astParent="00000134A347FA50" astOperand1="00000134A347F510" astOperand2="00000134A347F690"/>
+    <token id="00000134A347F690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="OnNetworkStatusChange" scope="00000134A933BB80" type="name" astParent="00000134A347EF70"/>
+    <token id="00000134A347F0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="(" scope="00000134A933BB80" link="00000134A347FC30" astOperand1="00000134A347FA50"/>
+    <token id="00000134A347F570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="Object" scope="00000134A933BB80" type="name" astParent="00000134A347FA50"/>
+    <token id="00000134A347FA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str="^" scope="00000134A933BB80" type="op" astParent="00000134A347F0F0" astOperand1="00000134A347EF70" astOperand2="00000134A347F570"/>
+    <token id="00000134A347FC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="41" str=")" scope="00000134A933BB80" link="00000134A347F0F0"/>
+    <token id="00000134A347FC90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="42" str="{" scope="000001349124C180" link="00000134A347FE70"/>
+    <token id="00000134A347E910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str="NetworkBehaviorChanged" scope="000001349124C180" type="name" astParent="00000134A347F750"/>
+    <token id="00000134A347F750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str="(" scope="000001349124C180" link="00000134A347FD50" astOperand1="00000134A347E910" astOperand2="00000134A347F810"/>
+    <token id="00000134A347F7B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str="GetNetworkAccessBehavior" scope="000001349124C180" type="name" astParent="00000134A347F810"/>
+    <token id="00000134A347F810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str="(" scope="000001349124C180" link="00000134A347F990" astParent="00000134A347F750" astOperand1="00000134A347F7B0"/>
+    <token id="00000134A347F990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str=")" scope="000001349124C180" link="00000134A347F810"/>
+    <token id="00000134A347FD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str=")" scope="000001349124C180" link="00000134A347F750"/>
+    <token id="00000134A347FDB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="43" str=";" scope="000001349124C180"/>
+    <token id="00000134A347FE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="44" str="}" scope="000001349124C180" link="00000134A347FC90"/>
+    <token id="00000134A347E970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="NetworkAccessBehavior" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A347FF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="NetworkManager" scope="00000134A933BB80" type="name" astParent="00000134A347FF90"/>
+    <token id="00000134A347FF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="::" scope="00000134A933BB80" astParent="00000134A347EA30" astOperand1="00000134A347FF30" astOperand2="00000134A347E9D0"/>
+    <token id="00000134A347E9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="ConvertCostInfoToBehavior" scope="00000134A933BB80" type="name" astParent="00000134A347FF90"/>
+    <token id="00000134A347EA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="(" scope="00000134A933BB80" link="00000134A34812B0" astOperand1="00000134A347FF90" astOperand2="00000134A34802F0"/>
+    <token id="00000134A34808F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="ConnectionCost" scope="00000134A933BB80" type="name" astParent="00000134A34802F0"/>
+    <token id="00000134A34802F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="^" scope="00000134A933BB80" type="op" astParent="00000134A347EA30" astOperand1="00000134A34808F0" astOperand2="00000134A3480950"/>
+    <token id="00000134A3480950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str="connectionCost" scope="00000134A933BB80" type="name" astParent="00000134A34802F0"/>
+    <token id="00000134A34812B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="47" str=")" scope="00000134A933BB80" link="00000134A347EA30"/>
+    <token id="00000134A34814F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="48" str="{" scope="0000013491541DA0" link="00000134A3480FB0"/>
+    <token id="00000134A3480AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="if" scope="0000013491541DA0" type="name" astParent="00000134A3480470"/>
+    <token id="00000134A3480470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="(" scope="0000013491541DA0" link="00000134A3480CB0" astOperand1="00000134A3480AD0" astOperand2="00000134A3480BF0"/>
+    <token id="00000134A34805F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="connectionCost" scope="0000013491541DA0" type="name" astParent="00000134A3480350"/>
+    <token id="00000134A3480350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="." scope="0000013491541DA0" astParent="00000134A3480590" astOperand1="00000134A34805F0" astOperand2="00000134A3481370" originalName="->"/>
+    <token id="00000134A3481370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="Roaming" scope="0000013491541DA0" type="name" astParent="00000134A3480350"/>
+    <token id="00000134A3480590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="||" scope="0000013491541DA0" type="op" isLogicalOp="True" astParent="00000134A34816D0" astOperand1="00000134A3480350" astOperand2="00000134A34809B0" valueType-type="bool"/>
+    <token id="00000134A34810D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="connectionCost" scope="0000013491541DA0" type="name" astParent="00000134A34809B0"/>
+    <token id="00000134A34809B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="." scope="0000013491541DA0" astParent="00000134A3480590" astOperand1="00000134A34810D0" astOperand2="00000134A3480B30" originalName="->"/>
+    <token id="00000134A3480B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="49" str="OverDataLimit" scope="0000013491541DA0" type="name" astParent="00000134A34809B0"/>
+    <token id="00000134A34816D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="||" scope="0000013491541DA0" type="op" isLogicalOp="True" astParent="00000134A3480BF0" astOperand1="00000134A3480590" astOperand2="00000134A3480B90" valueType-type="bool"/>
+    <token id="00000134A3481850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="connectionCost" scope="0000013491541DA0" type="name" astParent="00000134A3481670"/>
+    <token id="00000134A3481670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="." scope="0000013491541DA0" astParent="00000134A3480B90" astOperand1="00000134A3481850" astOperand2="00000134A3480A10" originalName="->"/>
+    <token id="00000134A3480A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="NetworkCostType" scope="0000013491541DA0" type="name" astParent="00000134A3481670"/>
+    <token id="00000134A3480B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="==" scope="0000013491541DA0" type="op" isComparisonOp="True" astParent="00000134A34816D0" astOperand1="00000134A3481670" astOperand2="00000134A3480F50" valueType-type="bool"/>
+    <token id="00000134A3480E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="NetworkCostType" scope="0000013491541DA0" type="name" astParent="00000134A3480F50"/>
+    <token id="00000134A3480F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="::" scope="0000013491541DA0" astParent="00000134A3480B90" astOperand1="00000134A3480E30" astOperand2="00000134A34801D0"/>
+    <token id="00000134A34801D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="50" str="Variable" scope="0000013491541DA0" type="name" astParent="00000134A3480F50"/>
+    <token id="00000134A3480BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="||" scope="0000013491541DA0" type="op" isLogicalOp="True" astParent="00000134A3480470" astOperand1="00000134A34816D0" astOperand2="00000134A3480290" valueType-type="bool"/>
+    <token id="00000134A3481130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="connectionCost" scope="0000013491541DA0" type="name" astParent="00000134A3481310"/>
+    <token id="00000134A3481310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="." scope="0000013491541DA0" astParent="00000134A3480290" astOperand1="00000134A3481130" astOperand2="00000134A3480EF0" originalName="->"/>
+    <token id="00000134A3480EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="NetworkCostType" scope="0000013491541DA0" type="name" astParent="00000134A3481310"/>
+    <token id="00000134A3480290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="==" scope="0000013491541DA0" type="op" isComparisonOp="True" astParent="00000134A3480BF0" astOperand1="00000134A3481310" astOperand2="00000134A3480A70" valueType-type="bool"/>
+    <token id="00000134A3480C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="NetworkCostType" scope="0000013491541DA0" type="name" astParent="00000134A3480A70"/>
+    <token id="00000134A3480A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="::" scope="0000013491541DA0" astParent="00000134A3480290" astOperand1="00000134A3480C50" astOperand2="00000134A34817F0"/>
+    <token id="00000134A34817F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str="Fixed" scope="0000013491541DA0" type="name" astParent="00000134A3480A70"/>
+    <token id="00000134A3480CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="51" str=")" scope="0000013491541DA0" link="00000134A3480470"/>
+    <token id="00000134A34818B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="52" str="{" scope="00000134A8D52510" link="00000134A3480890"/>
+    <token id="00000134A3480830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="53" str="return" scope="00000134A8D52510" type="name" astOperand1="00000134A34803B0"/>
+    <token id="00000134A3480D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="53" str="NetworkAccessBehavior" scope="00000134A8D52510" type="name" astParent="00000134A34803B0"/>
+    <token id="00000134A34803B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="53" str="::" scope="00000134A8D52510" astParent="00000134A3480830" astOperand1="00000134A3480D10" astOperand2="00000134A3480D70"/>
+    <token id="00000134A3480D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="53" str="OptIn" scope="00000134A8D52510" type="name" astParent="00000134A34803B0"/>
+    <token id="00000134A3480410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="53" str=";" scope="00000134A8D52510"/>
+    <token id="00000134A3480890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="54" str="}" scope="00000134A8D52510" link="00000134A34818B0"/>
+    <token id="00000134A3481610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="56" str="return" scope="0000013491541DA0" type="name" astOperand1="00000134A3480230"/>
+    <token id="00000134A3480DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="56" str="NetworkAccessBehavior" scope="0000013491541DA0" type="name" astParent="00000134A3480230"/>
+    <token id="00000134A3480230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="56" str="::" scope="0000013491541DA0" astParent="00000134A3481610" astOperand1="00000134A3480DD0" astOperand2="00000134A3481250"/>
+    <token id="00000134A3481250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="56" str="Normal" scope="0000013491541DA0" type="name" astParent="00000134A3480230"/>
+    <token id="00000134A3480E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="56" str=";" scope="0000013491541DA0"/>
+    <token id="00000134A3480FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/NetworkManager.cpp" linenr="57" str="}" scope="0000013491541DA0" link="00000134A34814F0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A933BB80" type="Global"/>
+    <scope id="00000134A933BC90" type="Namespace" className="CalculatorApp" bodyStart="00000134A347A8F0" bodyEnd="00000134A347C9F0" nestedIn="00000134A933BB80">
+      <functionList>
+        <function id="00000134A213BEA0" tokenDef="00000134A347AB90" name="NetworkBehaviorChangedHandler" type="Function">
+          <arg nr="1" variable="000001349DA45CF0"/>
+        </function>
+        <function id="00000134A213CA70" tokenDef="00000134A347B5B0" name="NetworkManager" type="Function"/>
+        <function id="00000134A213CB00" tokenDef="00000134A347A890" name="GetNetworkAccessBehavior" type="Function"/>
+        <function id="00000134A213CE60" tokenDef="00000134A347B310" name="OnNetworkStatusChange" type="Function">
+          <arg nr="1" variable="000001349DA44940"/>
+        </function>
+        <function id="00000134A213BCF0" tokenDef="00000134A347BDF0" name="ConvertCostInfoToBehavior" type="Function">
+          <arg nr="1" variable="000001349DA457B0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="00000134A933BDA0" type="Enum" className="NetworkAccessBehavior" bodyStart="00000134A347AE30" bodyEnd="00000134A347A4D0" nestedIn="00000134A933BC90"/>
+    <scope id="00000134A933BFC0" type="Function" className="NetworkManager" bodyStart="00000134A347CD50" bodyEnd="00000134A347E310" nestedIn="00000134A933BB80"/>
+    <scope id="00000134A957D7E0" type="Function" className="NetworkManager" bodyStart="00000134A347DE90" bodyEnd="00000134A347D950" nestedIn="00000134A933BB80"/>
+    <scope id="00000134A957D8F0" type="Function" className="GetNetworkAccessBehavior" bodyStart="00000134A347D470" bodyEnd="00000134A34800B0" nestedIn="00000134A933BB80">
+      <varlist>
+        <var id="000001349DA43B40"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491279810" type="If" bodyStart="00000134A347DDD0" bodyEnd="00000134A347F330" nestedIn="00000134A957D8F0">
+      <varlist>
+        <var id="000001349DA454A0"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491279920" type="If" bodyStart="00000134A347EC70" bodyEnd="00000134A347EA90" nestedIn="0000013491279810"/>
+    <scope id="000001349124C180" type="Function" className="OnNetworkStatusChange" bodyStart="00000134A347FC90" bodyEnd="00000134A347FE70" nestedIn="00000134A933BB80"/>
+    <scope id="0000013491541DA0" type="Function" className="ConvertCostInfoToBehavior" bodyStart="00000134A34814F0" bodyEnd="00000134A3480FB0" nestedIn="00000134A933BB80"/>
+    <scope id="00000134A8D52510" type="If" bodyStart="00000134A34818B0" bodyEnd="00000134A3480890" nestedIn="0000013491541DA0"/>
+  </scopes>
+  <variables>
+    <var id="000001349DA43B40" nameToken="00000134A347E7F0" typeStartToken="00000134A347E3D0" typeEndToken="00000134A347E3D0" access="Local" scope="00000134A957D8F0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA44940" nameToken="00000134A347BAF0" typeStartToken="00000134A347A2F0" typeEndToken="00000134A347C0F0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA454A0" nameToken="00000134A347DFB0" typeStartToken="00000134A347D770" typeEndToken="00000134A347D770" access="Local" scope="0000013491279810" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA457B0" nameToken="00000134A347CB10" typeStartToken="00000134A347C510" typeEndToken="00000134A347C2D0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA45CF0" nameToken="00000134A347AD10" typeStartToken="00000134A347AB30" typeEndToken="00000134A347AB30" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A91FDFC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDEE0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDCC0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDE60">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDF40">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FE040">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FDC80">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

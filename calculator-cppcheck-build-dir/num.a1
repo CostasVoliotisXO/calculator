@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3436549536">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;da&apos; can be reduced." verbose="The scope of the variable &apos;da&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="72"/>
+            <symbol>da</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;db&apos; can be reduced." verbose="The scope of the variable &apos;db&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="73"/>
+            <symbol>db</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pchb&apos; can be reduced." verbose="The scope of the variable &apos;pchb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="225"/>
+            <symbol>pchb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pchc&apos; can be reduced." verbose="The scope of the variable &apos;pchc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="226"/>
+            <symbol>pchc</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;da&apos; can be reduced." verbose="The scope of the variable &apos;da&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="231"/>
+            <symbol>da</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;digit&apos; can be reduced." verbose="The scope of the variable &apos;digit&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="434"/>
+            <symbol>digit</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;da&apos; is assigned a value that is never used." verbose="Variable &apos;da&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="231"/>
+            <symbol>da</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cy&apos; is assigned a value that is never used." verbose="Variable &apos;cy&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="232"/>
+            <symbol>cy</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mcy&apos; is assigned a value that is never used." verbose="Variable &apos;mcy&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="234"/>
+            <symbol>mcy</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="337" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="358" call-argexpr="lasttmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="350" info="Assignment 'lasttmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="416" call-argexpr="rem" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="414" info="Assignment 'rem=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="417" call-argexpr="tmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="415" info="Assignment 'tmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="423" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="427" call-argexpr="newValue" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="426" info="Assignment 'newValue=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" call-funcname="_divnum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="386" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:421:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:418:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="48"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="78"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="83"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:429:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="200"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="238"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="239"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:439:13" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="322"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:421:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="383"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="396"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="403"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:311:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="516"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:311:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="516"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:312:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="585"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:312:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="585"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:313:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="640"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="78"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="238"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:439:13" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="322"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="396"/>
+  </FileInfo>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" line="443"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="337" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="358" call-argexpr="lasttmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="350" info="Assignment 'lasttmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="416" call-argexpr="rem" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="414" info="Assignment 'rem=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="417" call-argexpr="tmp" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="415" info="Assignment 'tmp=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:337:16" call-funcname="i32tonum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="423" call-argexpr="0L" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:416:13" call-funcname="_destroynum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="427" call-argexpr="newValue" call-argvaluetype="0" call-argvalue="0">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\Ratpack\num.cpp" linenr="426" info="Assignment 'newValue=nullptr', assigned value is 0"/>
+</function-call><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" call-funcname="_divnum" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="386" my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:421:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:418:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="48"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="78"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="83"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:429:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="200"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="238"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="239"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:439:13" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="322"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:421:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="383"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="396"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="403"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:311:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="516"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:311:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="516"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:312:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="585"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:312:13" my-argnr="2" my-argname="b" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="585"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:313:13" my-argnr="1" my-argname="a" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="640"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:43:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="78"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:195:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="238"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/ratpak.h:439:13" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="322"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp:378:6" my-argnr="1" my-argname="pa" filename="C:/sample repositories/calculator-master/src/CalcManager/Ratpack/num.cpp" linenr="396"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="addnum" lineNumber="45"/>
+    <functiondecl functionName="_addnum" lineNumber="61"/>
+    <functiondecl functionName="mulnum" lineNumber="197"/>
+    <functiondecl functionName="_mulnum" lineNumber="219"/>
+    <functiondecl functionName="remnum" lineNumber="315"/>
+    <functiondecl functionName="divnum" lineNumber="380"/>
+    <functiondecl functionName="_divnum" lineNumber="394"/>
+    <functiondecl functionName="equnum" lineNumber="505"/>
+    <functiondecl functionName="lessnum" lineNumber="573"/>
+    <functiondecl functionName="zernum" lineNumber="635"/>
+    <functiondecl functionName="addnum" lineNumber="45"/>
+    <functiondecl functionName="_addnum" lineNumber="61"/>
+    <functiondecl functionName="mulnum" lineNumber="197"/>
+    <functiondecl functionName="_mulnum" lineNumber="219"/>
+    <functiondecl functionName="remnum" lineNumber="315"/>
+    <functiondecl functionName="divnum" lineNumber="380"/>
+    <functiondecl functionName="_divnum" lineNumber="394"/>
+    <functiondecl functionName="equnum" lineNumber="505"/>
+    <functiondecl functionName="lessnum" lineNumber="573"/>
+    <functiondecl functionName="zernum" lineNumber="635"/>
+    <functioncall functionName="ANGLE_DEG"/>
+    <functioncall functionName="ANGLE_GRAD"/>
+    <functioncall functionName="ANGLE_RAD"/>
+    <functioncall functionName="FMT_ENGINEERING"/>
+    <functioncall functionName="FMT_FLOAT"/>
+    <functioncall functionName="FMT_SCIENTIFIC"/>
+    <functioncall functionName="OutputDebugString"/>
+    <functioncall functionName="_addnum"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="_destroynum"/>
+    <functioncall functionName="_divnum"/>
+    <functioncall functionName="_dupnum"/>
+    <functioncall functionName="_mulnum"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="addnum"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="cdigits"/>
+    <functioncall functionName="cy"/>
+    <functioncall functionName="da"/>
+    <functioncall functionName="db"/>
+    <functioncall functionName="diff"/>
+    <functioncall functionName="digit"/>
+    <functioncall functionName="emplace_front"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="fcompla"/>
+    <functioncall functionName="fcomplb"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="front"/>
+    <functioncall functionName="i32tonum"/>
+    <functioncall functionName="iadigit"/>
+    <functioncall functionName="ibdigit"/>
+    <functioncall functionName="icdigit"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="lasttmp"/>
+    <functioncall functionName="lessnum"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="max"/>
+    <functioncall functionName="mcy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="multiple"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="num"/>
+    <functioncall functionName="numberList"/>
+    <functioncall functionName="pa"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="ptrc"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="rem"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="thismax"/>
+    <functioncall functionName="tmp"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="zernum"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="401606348">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class ItemSizeToVisibilityConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class ItemSizeToVisibilityConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.h" line="11"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class ItemSizeToVisibilityNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class ItemSizeToVisibilityNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class BooleanToVisibilityConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class BooleanToVisibilityConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\BooleanToVisibilityConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class BooleanToVisibilityNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class BooleanToVisibilityNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\ItemSizeToVisibilityConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\BooleanToVisibilityConverter.h" line="32"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="boolValue"/>
+    <functioncall functionName="language"/>
+    <functioncall functionName="parameter"/>
+    <functioncall functionName="targetType"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="void"/>
+  </FileInfo>
+</analyzerinfo>

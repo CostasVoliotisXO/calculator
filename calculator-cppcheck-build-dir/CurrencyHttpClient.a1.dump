@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;CurrencyHttpClient.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="DataLoaders"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Platform"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="std"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Foundation"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="Windows"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Web"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Http"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="13" str="static"/>
+    <tok fileIndex="0" linenr="13" str="constexpr"/>
+    <tok fileIndex="0" linenr="13" str="auto"/>
+    <tok fileIndex="0" linenr="13" str="sc_MetadataUriLocalizeFor"/>
+    <tok fileIndex="0" linenr="13" str="="/>
+    <tok fileIndex="0" linenr="13" str="L"/>
+    <tok fileIndex="0" linenr="13" str="&quot;https://go.microsoft.com/fwlink/?linkid=2041093&amp;localizeFor=&quot;"/>
+    <tok fileIndex="0" linenr="13" str=";"/>
+    <tok fileIndex="0" linenr="14" str="static"/>
+    <tok fileIndex="0" linenr="14" str="constexpr"/>
+    <tok fileIndex="0" linenr="14" str="auto"/>
+    <tok fileIndex="0" linenr="14" str="sc_RatiosUriRelativeTo"/>
+    <tok fileIndex="0" linenr="14" str="="/>
+    <tok fileIndex="0" linenr="14" str="L"/>
+    <tok fileIndex="0" linenr="14" str="&quot;https://go.microsoft.com/fwlink/?linkid=2041339&amp;localCurrency=&quot;"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="16" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str=":"/>
+    <tok fileIndex="0" linenr="17" str="m_client"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str="ref"/>
+    <tok fileIndex="0" linenr="17" str="new"/>
+    <tok fileIndex="0" linenr="17" str="HttpClient"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str=","/>
+    <tok fileIndex="0" linenr="18" str="m_responseLanguage"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="L"/>
+    <tok fileIndex="0" linenr="18" str="&quot;en-US&quot;"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="19" str="{"/>
+    <tok fileIndex="0" linenr="20" str="}"/>
+    <tok fileIndex="0" linenr="22" str="void"/>
+    <tok fileIndex="0" linenr="22" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="SetSourceCurrencyCode"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="String"/>
+    <tok fileIndex="0" linenr="22" str="^"/>
+    <tok fileIndex="0" linenr="22" str="sourceCurrencyCode"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="23" str="{"/>
+    <tok fileIndex="0" linenr="24" str="m_sourceCurrencyCode"/>
+    <tok fileIndex="0" linenr="24" str="="/>
+    <tok fileIndex="0" linenr="24" str="sourceCurrencyCode"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+    <tok fileIndex="0" linenr="27" str="void"/>
+    <tok fileIndex="0" linenr="27" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="27" str="::"/>
+    <tok fileIndex="0" linenr="27" str="SetResponseLanguage"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="String"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="responseLanguage"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="28" str="{"/>
+    <tok fileIndex="0" linenr="29" str="m_responseLanguage"/>
+    <tok fileIndex="0" linenr="29" str="="/>
+    <tok fileIndex="0" linenr="29" str="responseLanguage"/>
+    <tok fileIndex="0" linenr="29" str=";"/>
+    <tok fileIndex="0" linenr="30" str="}"/>
+    <tok fileIndex="0" linenr="32" str="IAsyncOperationWithProgress"/>
+    <tok fileIndex="0" linenr="32" str="&lt;"/>
+    <tok fileIndex="0" linenr="32" str="String"/>
+    <tok fileIndex="0" linenr="32" str="^"/>
+    <tok fileIndex="0" linenr="32" str=","/>
+    <tok fileIndex="0" linenr="32" str="HttpProgress"/>
+    <tok fileIndex="0" linenr="32" str="&gt;"/>
+    <tok fileIndex="0" linenr="32" str="^"/>
+    <tok fileIndex="0" linenr="32" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="32" str="::"/>
+    <tok fileIndex="0" linenr="32" str="GetCurrencyMetadata"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="33" str="{"/>
+    <tok fileIndex="0" linenr="34" str="wstring"/>
+    <tok fileIndex="0" linenr="34" str="uri"/>
+    <tok fileIndex="0" linenr="34" str="="/>
+    <tok fileIndex="0" linenr="34" str="wstring"/>
+    <tok fileIndex="0" linenr="34" str="{"/>
+    <tok fileIndex="0" linenr="34" str="sc_MetadataUriLocalizeFor"/>
+    <tok fileIndex="0" linenr="34" str="}"/>
+    <tok fileIndex="0" linenr="34" str="+"/>
+    <tok fileIndex="0" linenr="34" str="m_responseLanguage"/>
+    <tok fileIndex="0" linenr="34" str="-&gt;"/>
+    <tok fileIndex="0" linenr="34" str="Data"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="35" str="auto"/>
+    <tok fileIndex="0" linenr="35" str="metadataUri"/>
+    <tok fileIndex="0" linenr="35" str="="/>
+    <tok fileIndex="0" linenr="35" str="ref"/>
+    <tok fileIndex="0" linenr="35" str="new"/>
+    <tok fileIndex="0" linenr="35" str="Uri"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str="StringReference"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str="uri"/>
+    <tok fileIndex="0" linenr="35" str="."/>
+    <tok fileIndex="0" linenr="35" str="c_str"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="35" str=";"/>
+    <tok fileIndex="0" linenr="37" str="return"/>
+    <tok fileIndex="0" linenr="37" str="m_client"/>
+    <tok fileIndex="0" linenr="37" str="-&gt;"/>
+    <tok fileIndex="0" linenr="37" str="GetStringAsync"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="metadataUri"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str=";"/>
+    <tok fileIndex="0" linenr="38" str="}"/>
+    <tok fileIndex="0" linenr="40" str="IAsyncOperationWithProgress"/>
+    <tok fileIndex="0" linenr="40" str="&lt;"/>
+    <tok fileIndex="0" linenr="40" str="String"/>
+    <tok fileIndex="0" linenr="40" str="^"/>
+    <tok fileIndex="0" linenr="40" str=","/>
+    <tok fileIndex="0" linenr="40" str="HttpProgress"/>
+    <tok fileIndex="0" linenr="40" str="&gt;"/>
+    <tok fileIndex="0" linenr="40" str="^"/>
+    <tok fileIndex="0" linenr="40" str="CurrencyHttpClient"/>
+    <tok fileIndex="0" linenr="40" str="::"/>
+    <tok fileIndex="0" linenr="40" str="GetCurrencyRatios"/>
+    <tok fileIndex="0" linenr="40" str="("/>
+    <tok fileIndex="0" linenr="40" str=")"/>
+    <tok fileIndex="0" linenr="41" str="{"/>
+    <tok fileIndex="0" linenr="42" str="wstring"/>
+    <tok fileIndex="0" linenr="42" str="uri"/>
+    <tok fileIndex="0" linenr="42" str="="/>
+    <tok fileIndex="0" linenr="42" str="wstring"/>
+    <tok fileIndex="0" linenr="42" str="{"/>
+    <tok fileIndex="0" linenr="42" str="sc_RatiosUriRelativeTo"/>
+    <tok fileIndex="0" linenr="42" str="}"/>
+    <tok fileIndex="0" linenr="42" str="+"/>
+    <tok fileIndex="0" linenr="42" str="m_sourceCurrencyCode"/>
+    <tok fileIndex="0" linenr="42" str="-&gt;"/>
+    <tok fileIndex="0" linenr="42" str="Data"/>
+    <tok fileIndex="0" linenr="42" str="("/>
+    <tok fileIndex="0" linenr="42" str=")"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="auto"/>
+    <tok fileIndex="0" linenr="43" str="ratiosUri"/>
+    <tok fileIndex="0" linenr="43" str="="/>
+    <tok fileIndex="0" linenr="43" str="ref"/>
+    <tok fileIndex="0" linenr="43" str="new"/>
+    <tok fileIndex="0" linenr="43" str="Uri"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str="StringReference"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str="uri"/>
+    <tok fileIndex="0" linenr="43" str="."/>
+    <tok fileIndex="0" linenr="43" str="c_str"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="45" str="return"/>
+    <tok fileIndex="0" linenr="45" str="m_client"/>
+    <tok fileIndex="0" linenr="45" str="-&gt;"/>
+    <tok fileIndex="0" linenr="45" str="GetStringAsync"/>
+    <tok fileIndex="0" linenr="45" str="("/>
+    <tok fileIndex="0" linenr="45" str="ratiosUri"/>
+    <tok fileIndex="0" linenr="45" str=")"/>
+    <tok fileIndex="0" linenr="45" str=";"/>
+    <tok fileIndex="0" linenr="46" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="5" str="#include &quot;CurrencyHttpClient.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="6" str="#include &quot;ICurrencyHttpClient.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B3ADA20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="6" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3ADE40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="6" str="CalculatorApp" scope="00000134912421D0" type="name" astParent="000001349B3ADA80"/>
+    <token id="000001349B3ADA80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="7" str="{" scope="00000134912421D0" link="000001349B3AFA60" astOperand1="000001349B3ADE40" astOperand2="000001349B3ADAE0"/>
+    <token id="000001349B3ADB40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="8" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3AD300" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="8" str="DataLoaders" scope="00000134912421D0" type="name" astParent="000001349B3ADAE0"/>
+    <token id="000001349B3ADAE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="9" str="{" scope="00000134912421D0" link="000001349B3AEEC0" astParent="000001349B3ADA80" astOperand1="000001349B3AD300" astOperand2="000001349B3AE740"/>
+    <token id="000001349B3AD0C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="10" str="class" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3AE740" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="10" str="ICurrencyHttpClient" scope="00000134912421D0" type="name" astParent="000001349B3ADAE0"/>
+    <token id="000001349B3AD480" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="11" str="{" scope="00000134912423F0" link="000001349B3AFDC0"/>
+    <token id="000001349B3ADD20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="12" str="public:" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AD180" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="virtual" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AE320" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="~" scope="00000134912423F0" type="op"/>
+    <token id="000001349B3AD9C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="ICurrencyHttpClient" scope="00000134912423F0" type="name" function="00000134A213C950" astParent="000001349B3AE2C0"/>
+    <token id="000001349B3AE2C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="(" scope="00000134912423F0" link="000001349B3ADF60" astOperand1="000001349B3AD9C0"/>
+    <token id="000001349B3ADF60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str=")" scope="00000134912423F0" link="000001349B3AE2C0"/>
+    <token id="000001349B3AE3E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="{" scope="0000013491541DA0" link="000001349B3AD600"/>
+    <token id="000001349B3AD600" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="13" str="}" scope="0000013491541DA0" link="000001349B3AE3E0"/>
+    <token id="000001349B3AD2A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="virtual" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AD1E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="void" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AE500" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="SetSourceCurrencyCode" scope="00000134912423F0" type="name" function="00000134A213D130" astParent="000001349B3AE7A0"/>
+    <token id="000001349B3AE7A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="(" scope="00000134912423F0" link="000001349B3AD120" astParent="000001349B3AD360" astOperand1="000001349B3AE500" astOperand2="000001349B3AD840" valueType-type="void"/>
+    <token id="000001349B3AE860" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="Platform" scope="00000134912423F0" type="name" astParent="000001349B3AD240"/>
+    <token id="000001349B3AD240" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="::" scope="00000134912423F0" astParent="000001349B3AD840" astOperand1="000001349B3AE860" astOperand2="000001349B3ADBA0"/>
+    <token id="000001349B3ADBA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="String" scope="00000134912423F0" type="name" astParent="000001349B3AD240"/>
+    <token id="000001349B3AD840" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="^" scope="00000134912423F0" type="op" astParent="000001349B3AE7A0" astOperand1="000001349B3AD240" astOperand2="000001349B3AD540"/>
+    <token id="000001349B3AD540" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="sourceCurrencyCode" scope="00000134912423F0" type="name" astParent="000001349B3AD840"/>
+    <token id="000001349B3AD120" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str=")" scope="00000134912423F0" link="000001349B3AE7A0"/>
+    <token id="000001349B3AD360" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="=" scope="00000134912423F0" type="op" isAssignmentOp="True" astOperand1="000001349B3AE7A0" astOperand2="000001349B3ADC00" valueType-type="void"/>
+    <token id="000001349B3ADC00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str="0" scope="00000134912423F0" type="number" isInt="True" values="00000134A920B4E0" astParent="000001349B3AD360" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B3ADF00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="15" str=";" scope="00000134912423F0"/>
+    <token id="000001349B3ADFC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="virtual" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3ADD80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="void" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AD3C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="SetResponseLanguage" scope="00000134912423F0" type="name" function="00000134A213C290" astParent="000001349B3ADC60"/>
+    <token id="000001349B3ADC60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="(" scope="00000134912423F0" link="000001349B3AE080" astParent="000001349B3AE020" astOperand1="000001349B3AD3C0" astOperand2="000001349B3AD420" valueType-type="void"/>
+    <token id="000001349B3ADCC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="Platform" scope="00000134912423F0" type="name" astParent="000001349B3AD660"/>
+    <token id="000001349B3AD660" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="::" scope="00000134912423F0" astParent="000001349B3AD420" astOperand1="000001349B3ADCC0" astOperand2="000001349B3AD900"/>
+    <token id="000001349B3AD900" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="String" scope="00000134912423F0" type="name" astParent="000001349B3AD660"/>
+    <token id="000001349B3AD420" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="^" scope="00000134912423F0" type="op" astParent="000001349B3ADC60" astOperand1="000001349B3AD660" astOperand2="000001349B3ADDE0"/>
+    <token id="000001349B3ADDE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="responseLanguage" scope="00000134912423F0" type="name" astParent="000001349B3AD420"/>
+    <token id="000001349B3AE080" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str=")" scope="00000134912423F0" link="000001349B3ADC60"/>
+    <token id="000001349B3AE020" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="=" scope="00000134912423F0" type="op" isAssignmentOp="True" astOperand1="000001349B3ADC60" astOperand2="000001349B3AD7E0" valueType-type="void"/>
+    <token id="000001349B3AD7E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str="0" scope="00000134912423F0" type="number" isInt="True" values="00000134A920B360" astParent="000001349B3AE020" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B3AD960" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="16" str=";" scope="00000134912423F0"/>
+    <token id="000001349B3AE560" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="virtual" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3ADEA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Windows" scope="00000134912423F0" type="name" astParent="000001349B3AD780"/>
+    <token id="000001349B3AD780" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AE380" astOperand1="000001349B3ADEA0" astOperand2="000001349B3AE0E0"/>
+    <token id="000001349B3AE0E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Foundation" scope="00000134912423F0" type="name" astParent="000001349B3AD780"/>
+    <token id="000001349B3AE380" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AD4E0" astOperand1="000001349B3AD780" astOperand2="000001349B3AD720"/>
+    <token id="000001349B3AD720" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="IAsyncOperationWithProgress" scope="00000134912423F0" type="name" astParent="000001349B3AE380"/>
+    <token id="000001349B3AD4E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="&lt;" scope="00000134912423F0" type="op" isComparisonOp="True" astParent="000001349B3AE1A0" astOperand1="000001349B3AE380" astOperand2="000001349B3AD5A0" valueType-type="bool"/>
+    <token id="000001349B3AD8A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Platform" scope="00000134912423F0" type="name" astParent="000001349B3AD5A0"/>
+    <token id="000001349B3AD5A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AD4E0" astOperand1="000001349B3AD8A0" astOperand2="000001349B3AE140"/>
+    <token id="000001349B3AE140" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="String" scope="00000134912423F0" type="name" astParent="000001349B3AD5A0"/>
+    <token id="000001349B3AE1A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="^" scope="00000134912423F0" type="op" astParent="000001349B3AE6E0" astOperand2="000001349B3AD4E0"/>
+    <token id="000001349B3AE200" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="," scope="00000134912423F0" astOperand2="000001349B3AFAC0"/>
+    <token id="000001349B3AE260" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Windows" scope="00000134912423F0" type="name" astParent="000001349B3AE680"/>
+    <token id="000001349B3AE680" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AE4A0" astOperand1="000001349B3AE260" astOperand2="000001349B3AE440"/>
+    <token id="000001349B3AE440" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Web" scope="00000134912423F0" type="name" astParent="000001349B3AE680"/>
+    <token id="000001349B3AE4A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AE620" astOperand1="000001349B3AE680" astOperand2="000001349B3AE5C0"/>
+    <token id="000001349B3AE5C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="Http" scope="00000134912423F0" type="name" astParent="000001349B3AE4A0"/>
+    <token id="000001349B3AE620" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="::" scope="00000134912423F0" astParent="000001349B3AE6E0" astOperand1="000001349B3AE4A0" astOperand2="000001349B3AD6C0"/>
+    <token id="000001349B3AD6C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="HttpProgress" scope="00000134912423F0" type="name" astParent="000001349B3AE620"/>
+    <token id="000001349B3AE6E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="&gt;" scope="00000134912423F0" type="op" isComparisonOp="True" astParent="000001349B3B0000" astOperand1="000001349B3AE1A0" astOperand2="000001349B3AE620" valueType-type="bool"/>
+    <token id="000001349B3B0000" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="^" scope="00000134912423F0" type="op" astParent="000001349B3AFAC0" astOperand1="000001349B3AE6E0" astOperand2="000001349B3AF760"/>
+    <token id="000001349B3AE980" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="GetCurrencyMetadata" scope="00000134912423F0" type="name" astParent="000001349B3AF760"/>
+    <token id="000001349B3AF760" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="(" scope="00000134912423F0" link="000001349B3AEE00" astParent="000001349B3B0000" astOperand1="000001349B3AE980"/>
+    <token id="000001349B3AEE00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str=")" scope="00000134912423F0" link="000001349B3AF760"/>
+    <token id="000001349B3AFAC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="=" scope="00000134912423F0" type="op" isAssignmentOp="True" astParent="000001349B3AE200" astOperand1="000001349B3B0000" astOperand2="000001349B3AF7C0"/>
+    <token id="000001349B3AF7C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str="0" scope="00000134912423F0" type="number" isInt="True" values="00000134A920B760" astParent="000001349B3AFAC0" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B3AFBE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="18" str=";" scope="00000134912423F0"/>
+    <token id="000001349B3AEE60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="virtual" scope="00000134912423F0" type="name"/>
+    <token id="000001349B3AEAA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Windows" scope="00000134912423F0" type="name" astParent="000001349B3AE9E0"/>
+    <token id="000001349B3AE9E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AFB20" astOperand1="000001349B3AEAA0" astOperand2="000001349B3B0060"/>
+    <token id="000001349B3B0060" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Foundation" scope="00000134912423F0" type="name" astParent="000001349B3AE9E0"/>
+    <token id="000001349B3AFB20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AEA40" astOperand1="000001349B3AE9E0" astOperand2="000001349B3AF340"/>
+    <token id="000001349B3AF340" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="IAsyncOperationWithProgress" scope="00000134912423F0" type="name" astParent="000001349B3AFB20"/>
+    <token id="000001349B3AEA40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="&lt;" scope="00000134912423F0" type="op" isComparisonOp="True" astParent="000001349B3AF820" astOperand1="000001349B3AFB20" astOperand2="000001349B3AF040" valueType-type="bool"/>
+    <token id="000001349B3AF220" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Platform" scope="00000134912423F0" type="name" astParent="000001349B3AF040"/>
+    <token id="000001349B3AF040" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AEA40" astOperand1="000001349B3AF220" astOperand2="000001349B3AFC40"/>
+    <token id="000001349B3AFC40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="String" scope="00000134912423F0" type="name" astParent="000001349B3AF040"/>
+    <token id="000001349B3AF820" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="^" scope="00000134912423F0" type="op" astParent="000001349B3AFA00" astOperand2="000001349B3AEA40"/>
+    <token id="000001349B3AF0A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="," scope="00000134912423F0" astOperand2="000001349B3AFCA0"/>
+    <token id="000001349B3AEF20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Windows" scope="00000134912423F0" type="name" astParent="000001349B3AF880"/>
+    <token id="000001349B3AF880" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AFD00" astOperand1="000001349B3AEF20" astOperand2="000001349B3AF9A0"/>
+    <token id="000001349B3AF9A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Web" scope="00000134912423F0" type="name" astParent="000001349B3AF880"/>
+    <token id="000001349B3AFD00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AFFA0" astOperand1="000001349B3AF880" astOperand2="000001349B3AEC80"/>
+    <token id="000001349B3AEC80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="Http" scope="00000134912423F0" type="name" astParent="000001349B3AFD00"/>
+    <token id="000001349B3AFFA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="::" scope="00000134912423F0" astParent="000001349B3AFA00" astOperand1="000001349B3AFD00" astOperand2="000001349B3AED40"/>
+    <token id="000001349B3AED40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="HttpProgress" scope="00000134912423F0" type="name" astParent="000001349B3AFFA0"/>
+    <token id="000001349B3AFA00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="&gt;" scope="00000134912423F0" type="op" isComparisonOp="True" astParent="000001349B3AFB80" astOperand1="000001349B3AF820" astOperand2="000001349B3AFFA0" valueType-type="bool"/>
+    <token id="000001349B3AFB80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="^" scope="00000134912423F0" type="op" astParent="000001349B3AFCA0" astOperand1="000001349B3AFA00" astOperand2="000001349B3AECE0"/>
+    <token id="000001349B3AF100" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="GetCurrencyRatios" scope="00000134912423F0" type="name" astParent="000001349B3AECE0"/>
+    <token id="000001349B3AECE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="(" scope="00000134912423F0" link="000001349B3AF280" astParent="000001349B3AFB80" astOperand1="000001349B3AF100"/>
+    <token id="000001349B3AF280" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str=")" scope="00000134912423F0" link="000001349B3AECE0"/>
+    <token id="000001349B3AFCA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="=" scope="00000134912423F0" type="op" isAssignmentOp="True" astParent="000001349B3AF0A0" astOperand1="000001349B3AFB80" astOperand2="000001349B3AEDA0"/>
+    <token id="000001349B3AEDA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str="0" scope="00000134912423F0" type="number" isInt="True" values="00000134A920B3A0" astParent="000001349B3AFCA0" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B3AF2E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="19" str=";" scope="00000134912423F0"/>
+    <token id="000001349B3AFDC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="20" str="}" scope="00000134912423F0" link="000001349B3AD480"/>
+    <token id="000001349B3AF5E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="20" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3AEEC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="21" str="}" scope="00000134912421D0" link="000001349B3ADAE0"/>
+    <token id="000001349B3AFA60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/ICurrencyHttpClient.h" linenr="22" str="}" scope="00000134912421D0" link="000001349B3ADA80"/>
+    <token id="000001349B3AF8E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="8" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3AF3A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="8" str="CalculatorApp" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3AF940" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="9" str="{" scope="0000013491242500" link="000001349B3B1E60"/>
+    <token id="000001349B3AF700" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="10" str="namespace" scope="0000013491242500" type="name"/>
+    <token id="000001349B3AEC20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="10" str="DataLoaders" scope="0000013491242500" type="name"/>
+    <token id="000001349B3AEB00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="11" str="{" scope="00000134912422E0" link="000001349B3B2460"/>
+    <token id="000001349B3AFD60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="12" str="class" scope="00000134912422E0" type="name"/>
+    <token id="000001349B3AFE20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="12" str="CurrencyHttpClient" scope="00000134912422E0" type="name" type-scope="0000013496CA93C0"/>
+    <token id="000001349B3AFE80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="12" str=":" scope="00000134912422E0"/>
+    <token id="000001349B3AEF80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="12" str="public" scope="00000134912422E0" type="name"/>
+    <token id="000001349B3AF400" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="12" str="ICurrencyHttpClient" scope="00000134912422E0" type="name" type-scope="00000134912423F0"/>
+    <token id="000001349B3AFEE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="13" str="{" scope="0000013496CA93C0" link="000001349B3B20A0"/>
+    <token id="000001349B3AE920" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="14" str="public:" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3AE8C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="15" str="CurrencyHttpClient" scope="0000013496CA93C0" type="name" function="00000134A213CB00" astParent="000001349B3AEB60"/>
+    <token id="000001349B3AEB60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="15" str="(" scope="0000013496CA93C0" link="000001349B3AEBC0" astOperand1="000001349B3AE8C0"/>
+    <token id="000001349B3AEBC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="15" str=")" scope="0000013496CA93C0" link="000001349B3AEB60"/>
+    <token id="000001349B3AEFE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="15" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3AF160" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3AF1C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="SetSourceCurrencyCode" scope="0000013496CA93C0" type="name" function="00000134A213CEF0" astParent="000001349B3AF460"/>
+    <token id="000001349B3AF460" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="(" scope="0000013496CA93C0" link="000001349B3B0600" astOperand1="000001349B3AF1C0" astOperand2="000001349B3AF640" valueType-type="void"/>
+    <token id="000001349B3AF4C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3AF520"/>
+    <token id="000001349B3AF520" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="::" scope="0000013496CA93C0" astParent="000001349B3AF640" astOperand1="000001349B3AF4C0" astOperand2="000001349B3AF580"/>
+    <token id="000001349B3AF580" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3AF520"/>
+    <token id="000001349B3AF640" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3AF460" astOperand1="000001349B3AF520" astOperand2="000001349B3AF6A0"/>
+    <token id="000001349B3AF6A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="sourceCurrencyCode" scope="0000013496CA93C0" type="name" astParent="000001349B3AF640"/>
+    <token id="000001349B3B0600" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str=")" scope="0000013496CA93C0" link="000001349B3AF460"/>
+    <token id="000001349B3B0AE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str="override" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B1140" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="17" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B09C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B12C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="SetResponseLanguage" scope="0000013496CA93C0" type="name" function="00000134A213BC60" astParent="000001349B3B11A0"/>
+    <token id="000001349B3B11A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="(" scope="0000013496CA93C0" link="000001349B3B08A0" astOperand1="000001349B3B12C0" astOperand2="000001349B3B1260" valueType-type="void"/>
+    <token id="000001349B3B0840" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3B1620"/>
+    <token id="000001349B3B1620" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="::" scope="0000013496CA93C0" astParent="000001349B3B1260" astOperand1="000001349B3B0840" astOperand2="000001349B3B05A0"/>
+    <token id="000001349B3B05A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3B1620"/>
+    <token id="000001349B3B1260" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3B11A0" astOperand1="000001349B3B1620" astOperand2="000001349B3B17A0"/>
+    <token id="000001349B3B17A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="responseLanguage" scope="0000013496CA93C0" type="name" astParent="000001349B3B1260"/>
+    <token id="000001349B3B08A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str=")" scope="0000013496CA93C0" link="000001349B3B11A0"/>
+    <token id="000001349B3B0240" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str="override" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B0C60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="18" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B0540" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B3B0BA0"/>
+    <token id="000001349B3B0BA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B14A0" astOperand1="000001349B3B0540" astOperand2="000001349B3B0660"/>
+    <token id="000001349B3B0660" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Foundation" scope="0000013496CA93C0" type="name" astParent="000001349B3B0BA0"/>
+    <token id="000001349B3B14A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B0F60" astOperand1="000001349B3B0BA0" astOperand2="000001349B3B0180"/>
+    <token id="000001349B3B0180" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="IAsyncOperationWithProgress" scope="0000013496CA93C0" type="name" astParent="000001349B3B14A0"/>
+    <token id="000001349B3B0F60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="&lt;" scope="0000013496CA93C0" type="op" isComparisonOp="True" astParent="000001349B3B1800" astOperand1="000001349B3B14A0" astOperand2="000001349B3B1500" valueType-type="bool"/>
+    <token id="000001349B3B1200" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3B1500"/>
+    <token id="000001349B3B1500" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B0F60" astOperand1="000001349B3B1200" astOperand2="000001349B3B0480"/>
+    <token id="000001349B3B0480" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3B1500"/>
+    <token id="000001349B3B1800" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3B0FC0" astOperand2="000001349B3B0F60"/>
+    <token id="000001349B3B06C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="," scope="0000013496CA93C0" astOperand2="000001349B3B07E0"/>
+    <token id="000001349B3B1320" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B3B1380"/>
+    <token id="000001349B3B1380" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B1680" astOperand1="000001349B3B1320" astOperand2="000001349B3B04E0"/>
+    <token id="000001349B3B04E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Web" scope="0000013496CA93C0" type="name" astParent="000001349B3B1380"/>
+    <token id="000001349B3B1680" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B15C0" astOperand1="000001349B3B1380" astOperand2="000001349B3B1560"/>
+    <token id="000001349B3B1560" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="Http" scope="0000013496CA93C0" type="name" astParent="000001349B3B1680"/>
+    <token id="000001349B3B15C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="::" scope="0000013496CA93C0" astParent="000001349B3B0FC0" astOperand1="000001349B3B1680" astOperand2="000001349B3B1080"/>
+    <token id="000001349B3B1080" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="HttpProgress" scope="0000013496CA93C0" type="name" astParent="000001349B3B15C0"/>
+    <token id="000001349B3B0FC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="&gt;" scope="0000013496CA93C0" type="op" isComparisonOp="True" astParent="000001349B3B07E0" astOperand1="000001349B3B1800" astOperand2="000001349B3B15C0" valueType-type="bool"/>
+    <token id="000001349B3B07E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3B06C0" astOperand1="000001349B3B0FC0" astOperand2="000001349B3B0720"/>
+    <token id="000001349B3B0CC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="GetCurrencyMetadata" scope="0000013496CA93C0" type="name" astParent="000001349B3B0720"/>
+    <token id="000001349B3B0720" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="(" scope="0000013496CA93C0" link="000001349B3B13E0" astParent="000001349B3B07E0" astOperand1="000001349B3B0CC0"/>
+    <token id="000001349B3B13E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str=")" scope="0000013496CA93C0" link="000001349B3B0720"/>
+    <token id="000001349B3B1020" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str="override" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B0B40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="20" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B10E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B3B0F00"/>
+    <token id="000001349B3B0F00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B0300" astOperand1="000001349B3B10E0" astOperand2="000001349B3B0420"/>
+    <token id="000001349B3B0420" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Foundation" scope="0000013496CA93C0" type="name" astParent="000001349B3B0F00"/>
+    <token id="000001349B3B0300" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B01E0" astOperand1="000001349B3B0F00" astOperand2="000001349B3B0780"/>
+    <token id="000001349B3B0780" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="IAsyncOperationWithProgress" scope="0000013496CA93C0" type="name" astParent="000001349B3B0300"/>
+    <token id="000001349B3B01E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="&lt;" scope="0000013496CA93C0" type="op" isComparisonOp="True" astParent="000001349B3B1860" astOperand1="000001349B3B0300" astOperand2="000001349B3B0900" valueType-type="bool"/>
+    <token id="000001349B3B1440" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3B0900"/>
+    <token id="000001349B3B0900" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B01E0" astOperand1="000001349B3B1440" astOperand2="000001349B3B16E0"/>
+    <token id="000001349B3B16E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3B0900"/>
+    <token id="000001349B3B1860" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3B0360" astOperand2="000001349B3B01E0"/>
+    <token id="000001349B3B0960" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="," scope="0000013496CA93C0" astOperand2="000001349B3B03C0"/>
+    <token id="000001349B3B0E40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B3B1740"/>
+    <token id="000001349B3B1740" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B0EA0" astOperand1="000001349B3B0E40" astOperand2="000001349B3B00C0"/>
+    <token id="000001349B3B00C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Web" scope="0000013496CA93C0" type="name" astParent="000001349B3B1740"/>
+    <token id="000001349B3B0EA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B0120" astOperand1="000001349B3B1740" astOperand2="000001349B3B0A20"/>
+    <token id="000001349B3B0A20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="Http" scope="0000013496CA93C0" type="name" astParent="000001349B3B0EA0"/>
+    <token id="000001349B3B0120" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B3B0360" astOperand1="000001349B3B0EA0" astOperand2="000001349B3B02A0"/>
+    <token id="000001349B3B02A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="HttpProgress" scope="0000013496CA93C0" type="name" astParent="000001349B3B0120"/>
+    <token id="000001349B3B0360" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="&gt;" scope="0000013496CA93C0" type="op" isComparisonOp="True" astParent="000001349B3B03C0" astOperand1="000001349B3B1860" astOperand2="000001349B3B0120" valueType-type="bool"/>
+    <token id="000001349B3B03C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B3B0960" astOperand1="000001349B3B0360" astOperand2="000001349B3B0C00"/>
+    <token id="000001349B3B0A80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="GetCurrencyRatios" scope="0000013496CA93C0" type="name" astParent="000001349B3B0C00"/>
+    <token id="000001349B3B0C00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="(" scope="0000013496CA93C0" link="000001349B3B0D20" astParent="000001349B3B03C0" astOperand1="000001349B3B0A80"/>
+    <token id="000001349B3B0D20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str=")" scope="0000013496CA93C0" link="000001349B3B0C00"/>
+    <token id="000001349B3B0D80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str="override" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B0DE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="21" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B2520" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="23" str="private:" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B3B22E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B3B2940"/>
+    <token id="000001349B3B2940" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="::" scope="0000013496CA93C0" astParent="000001349B3B2FA0" astOperand1="000001349B3B22E0" astOperand2="000001349B3B2040"/>
+    <token id="000001349B3B2040" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="Web" scope="0000013496CA93C0" type="name" astParent="000001349B3B2940"/>
+    <token id="000001349B3B2FA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="::" scope="0000013496CA93C0" astParent="000001349B3B2220" astOperand1="000001349B3B2940" astOperand2="000001349B3B23A0"/>
+    <token id="000001349B3B23A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="Http" scope="0000013496CA93C0" type="name" astParent="000001349B3B2FA0"/>
+    <token id="000001349B3B2220" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="::" scope="0000013496CA93C0" astParent="000001349B3B28E0" astOperand1="000001349B3B2FA0" astOperand2="000001349B3B26A0"/>
+    <token id="000001349B3B26A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="HttpClient" scope="0000013496CA93C0" type="name" astParent="000001349B3B2220"/>
+    <token id="000001349B3B28E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B3B2220" astOperand2="000001349B3B2E80"/>
+    <token id="000001349B3B2E80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str="m_client" scope="0000013496CA93C0" type="name" astParent="000001349B3B28E0"/>
+    <token id="000001349B3B2340" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="24" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B2B80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3B2400"/>
+    <token id="000001349B3B2400" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str="::" scope="0000013496CA93C0" astParent="000001349B3B1C80" astOperand1="000001349B3B2B80" astOperand2="000001349B3B2580"/>
+    <token id="000001349B3B2580" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3B2400"/>
+    <token id="000001349B3B1C80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B3B2400" astOperand2="000001349B3B1FE0"/>
+    <token id="000001349B3B1FE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str="m_responseLanguage" scope="0000013496CA93C0" type="name" astParent="000001349B3B1C80"/>
+    <token id="000001349B3B2280" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="25" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B1D40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B3B2760"/>
+    <token id="000001349B3B2760" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str="::" scope="0000013496CA93C0" astParent="000001349B3B1DA0" astOperand1="000001349B3B1D40" astOperand2="000001349B3B2E20"/>
+    <token id="000001349B3B2E20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str="String" scope="0000013496CA93C0" type="name" astParent="000001349B3B2760"/>
+    <token id="000001349B3B1DA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B3B2760" astOperand2="000001349B3B1CE0"/>
+    <token id="000001349B3B1CE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str="m_sourceCurrencyCode" scope="0000013496CA93C0" type="name" astParent="000001349B3B1DA0"/>
+    <token id="000001349B3B2AC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="26" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B3B20A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="27" str="}" scope="0000013496CA93C0" link="000001349B3AFEE0"/>
+    <token id="000001349B3B1A40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="27" str=";" scope="00000134912422E0"/>
+    <token id="000001349B3B2460" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="28" str="}" scope="00000134912422E0" link="000001349B3AEB00"/>
+    <token id="000001349B3B1E60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.h" linenr="29" str="}" scope="0000013491242500" link="000001349B3AF940"/>
+    <token id="000001349B3B24C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str="using" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B1EC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2CA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str="CalculatorApp" scope="00000134912421D0" type="name" astParent="000001349B3B2DC0"/>
+    <token id="000001349B3B2DC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str="::" scope="00000134912421D0" astOperand1="000001349B3B2CA0" astOperand2="000001349B3B1BC0"/>
+    <token id="000001349B3B1BC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str="DataLoaders" scope="00000134912421D0" type="name" astParent="000001349B3B2DC0"/>
+    <token id="000001349B3B1C20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="7" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B25E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="8" str="using" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2640" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="8" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2820" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="8" str="Platform" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2880" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="8" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B2700" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str="using" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2A00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2F40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str="Windows" scope="00000134912421D0" type="name" astParent="000001349B3B3060"/>
+    <token id="000001349B3B3060" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str="::" scope="00000134912421D0" astOperand1="000001349B3B2F40" astOperand2="000001349B3B1F80"/>
+    <token id="000001349B3B1F80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str="Foundation" scope="00000134912421D0" type="name" astParent="000001349B3B3060"/>
+    <token id="000001349B3B2EE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="10" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B29A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="using" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2A60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="namespace" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2B20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="Windows" scope="00000134912421D0" type="name" astParent="000001349B3B2BE0"/>
+    <token id="000001349B3B2BE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="::" scope="00000134912421D0" astParent="000001349B3B2160" astOperand1="000001349B3B2B20" astOperand2="000001349B3B2C40"/>
+    <token id="000001349B3B2C40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="Web" scope="00000134912421D0" type="name" astParent="000001349B3B2BE0"/>
+    <token id="000001349B3B2160" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="::" scope="00000134912421D0" astOperand1="000001349B3B2BE0" astOperand2="000001349B3B21C0"/>
+    <token id="000001349B3B21C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str="Http" scope="00000134912421D0" type="name" astParent="000001349B3B2160"/>
+    <token id="000001349B3B2D00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="11" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B1980" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="static" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B2D60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="const" scope="00000134912421D0" type="name" originalName="constexpr"/>
+    <token id="000001349B3B18C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="auto" scope="00000134912421D0" type="name" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B1920" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="sc_MetadataUriLocalizeFor" scope="00000134912421D0" type="name" varId="1" variable="000001349165E420" astParent="000001349B3B19E0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B19E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True" astOperand1="000001349B3B1920" astOperand2="000001349B3B1AA0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B1AA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str="&quot;https://go.microsoft.com/fwlink/?linkid=2041093&amp;localizeFor=&quot;" scope="00000134912421D0" type="string" strlen="60" values="00000134A920B920" astParent="000001349B3B19E0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B1B60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="13" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B4380" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="static" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4260" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="const" scope="00000134912421D0" type="name" originalName="constexpr"/>
+    <token id="000001349B3B46E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="auto" scope="00000134912421D0" type="name" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B3480" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="sc_RatiosUriRelativeTo" scope="00000134912421D0" type="name" varId="2" variable="000001349165E570" astParent="000001349B3B4140" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B4140" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True" astOperand1="000001349B3B3480" astOperand2="000001349B3B44A0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B44A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str="&quot;https://go.microsoft.com/fwlink/?linkid=2041339&amp;localCurrency=&quot;" scope="00000134912421D0" type="string" strlen="62" values="00000134A920B900" astParent="000001349B3B4140" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B4200" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="14" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B3360" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str="CurrencyHttpClient" scope="00000134912421D0" type="name" astParent="000001349B3B41A0"/>
+    <token id="000001349B3B41A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str="::" scope="00000134912421D0" astParent="000001349B3B3720" astOperand1="000001349B3B3360" astOperand2="000001349B3B3A80"/>
+    <token id="000001349B3B3A80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str="CurrencyHttpClient" scope="00000134912421D0" type="name" function="00000134A213CB00" astParent="000001349B3B41A0"/>
+    <token id="000001349B3B3720" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str="(" scope="00000134912421D0" link="000001349B3B4020" astParent="000001349B3B3EA0" astOperand1="000001349B3B41A0"/>
+    <token id="000001349B3B4020" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str=")" scope="00000134912421D0" link="000001349B3B3720"/>
+    <token id="000001349B3B3EA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="16" str=":" scope="00000134912421D0" astParent="000001349B3B3300" astOperand1="000001349B3B3720" astOperand2="000001349B3B4800"/>
+    <token id="000001349B3B4680" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="m_client" scope="00000134912421D0" type="name" astParent="000001349B3B4800"/>
+    <token id="000001349B3B4800" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="(" scope="00000134912421D0" link="000001349B3B3B40" astParent="000001349B3B3EA0" astOperand1="000001349B3B4680" astOperand2="000001349B3B3E40"/>
+    <token id="000001349B3B4320" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="ref" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4740" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="new" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B3A20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="HttpClient" scope="00000134912421D0" type="name" astParent="000001349B3B3E40"/>
+    <token id="000001349B3B3E40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="(" scope="00000134912421D0" link="000001349B3B3AE0" astParent="000001349B3B4800" astOperand1="000001349B3B3A20"/>
+    <token id="000001349B3B3AE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str=")" scope="00000134912421D0" link="000001349B3B3E40"/>
+    <token id="000001349B3B3B40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str=")" scope="00000134912421D0" link="000001349B3B4800"/>
+    <token id="000001349B3B3300" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="17" str="," scope="00000134912421D0" astOperand1="000001349B3B3EA0" astOperand2="000001349B3B3BA0"/>
+    <token id="000001349B3B36C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="18" str="m_responseLanguage" scope="00000134912421D0" type="name" astParent="000001349B3B3BA0"/>
+    <token id="000001349B3B3BA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="18" str="(" scope="00000134912421D0" link="000001349B3B3D80" astParent="000001349B3B3300" astOperand1="000001349B3B36C0" astOperand2="000001349B3B3D20"/>
+    <token id="000001349B3B3D20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="18" str="&quot;en-US&quot;" scope="00000134912421D0" type="string" strlen="5" values="00000134A920B520" astParent="000001349B3B3BA0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="000001349B3B3D80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="18" str=")" scope="00000134912421D0" link="000001349B3B3BA0"/>
+    <token id="000001349B3B4860" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="19" str="{" scope="0000013496CA92B0" link="000001349B3B3180"/>
+    <token id="000001349B3B3180" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="20" str="}" scope="0000013496CA92B0" link="000001349B3B4860"/>
+    <token id="000001349B3B43E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="void" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B39C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="CurrencyHttpClient" scope="00000134912421D0" type="name" astParent="000001349B3B4440"/>
+    <token id="000001349B3B4440" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="::" scope="00000134912421D0" astParent="000001349B3B3F00" astOperand1="000001349B3B39C0" astOperand2="000001349B3B4500"/>
+    <token id="000001349B3B4500" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="SetSourceCurrencyCode" scope="00000134912421D0" type="name" astParent="000001349B3B4440"/>
+    <token id="000001349B3B3F00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="(" scope="00000134912421D0" link="000001349B3B45C0" astOperand1="000001349B3B4440" astOperand2="000001349B3B4080"/>
+    <token id="000001349B3B4560" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="String" scope="00000134912421D0" type="name" astParent="000001349B3B4080"/>
+    <token id="000001349B3B4080" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="^" scope="00000134912421D0" type="op" astParent="000001349B3B3F00" astOperand1="000001349B3B4560" astOperand2="000001349B3B3780"/>
+    <token id="000001349B3B3780" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str="sourceCurrencyCode" scope="00000134912421D0" type="name" astParent="000001349B3B4080"/>
+    <token id="000001349B3B45C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="22" str=")" scope="00000134912421D0" link="000001349B3B3F00"/>
+    <token id="000001349B3B3DE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="23" str="{" scope="0000013496CA94D0" link="000001349B3B4620"/>
+    <token id="000001349B3B3C00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="24" str="m_sourceCurrencyCode" scope="0000013496CA94D0" type="name" astParent="000001349B3B3C60"/>
+    <token id="000001349B3B3C60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="24" str="=" scope="0000013496CA94D0" type="op" isAssignmentOp="True" astOperand1="000001349B3B3C00" astOperand2="000001349B3B3CC0"/>
+    <token id="000001349B3B3CC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="24" str="sourceCurrencyCode" scope="0000013496CA94D0" type="name" astParent="000001349B3B3C60"/>
+    <token id="000001349B3B3FC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="24" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B3B4620" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="25" str="}" scope="0000013496CA94D0" link="000001349B3B3DE0"/>
+    <token id="000001349B3B47A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="void" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B30C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="CurrencyHttpClient" scope="00000134912421D0" type="name" astParent="000001349B3B3F60"/>
+    <token id="000001349B3B3F60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="::" scope="00000134912421D0" astParent="000001349B3B3600" astOperand1="000001349B3B30C0" astOperand2="000001349B3B3120"/>
+    <token id="000001349B3B3120" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="SetResponseLanguage" scope="00000134912421D0" type="name" astParent="000001349B3B3F60"/>
+    <token id="000001349B3B3600" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="(" scope="00000134912421D0" link="000001349B3B33C0" astOperand1="000001349B3B3F60" astOperand2="000001349B3B32A0"/>
+    <token id="000001349B3B3240" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="String" scope="00000134912421D0" type="name" astParent="000001349B3B32A0"/>
+    <token id="000001349B3B32A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="^" scope="00000134912421D0" type="op" astParent="000001349B3B3600" astOperand1="000001349B3B3240" astOperand2="000001349B3B3540"/>
+    <token id="000001349B3B3540" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str="responseLanguage" scope="00000134912421D0" type="name" astParent="000001349B3B32A0"/>
+    <token id="000001349B3B33C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="27" str=")" scope="00000134912421D0" link="000001349B3B3600"/>
+    <token id="000001349B3B3420" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="28" str="{" scope="0000013496CA8B40" link="000001349B3B3840"/>
+    <token id="000001349B3B40E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="29" str="m_responseLanguage" scope="0000013496CA8B40" type="name" astParent="000001349B3B35A0"/>
+    <token id="000001349B3B35A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="29" str="=" scope="0000013496CA8B40" type="op" isAssignmentOp="True" astOperand1="000001349B3B40E0" astOperand2="000001349B3B3660"/>
+    <token id="000001349B3B3660" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="29" str="responseLanguage" scope="0000013496CA8B40" type="name" astParent="000001349B3B35A0"/>
+    <token id="000001349B3B37E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="29" str=";" scope="0000013496CA8B40"/>
+    <token id="000001349B3B3840" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="30" str="}" scope="0000013496CA8B40" link="000001349B3B3420"/>
+    <token id="000001349B3B38A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="IAsyncOperationWithProgress" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B3900" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="&lt;" scope="00000134912421D0" type="op" isComparisonOp="True" valueType-type="bool"/>
+    <token id="000001349B3B3960" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="String" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5280" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="^" scope="00000134912421D0" type="op"/>
+    <token id="000001349B3B4C80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="," scope="00000134912421D0"/>
+    <token id="000001349B3B5520" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="HttpProgress" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4E00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="&gt;" scope="00000134912421D0" type="op" isComparisonOp="True" valueType-type="bool"/>
+    <token id="000001349B3B52E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="^" scope="00000134912421D0" type="op"/>
+    <token id="000001349B3B6000" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="CurrencyHttpClient" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5A60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B53A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="GetCurrencyMetadata" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5640" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str="(" scope="00000134912421D0" link="000001349B3B5220"/>
+    <token id="000001349B3B5220" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="32" str=")" scope="00000134912421D0" link="000001349B3B5640"/>
+    <token id="000001349B3B5340" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="33" str="{" scope="00000134912421D0" link="000001349B3B5940"/>
+    <token id="000001349B3B6D80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="std" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B61E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B4B00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="wstring" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5400" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="uri" scope="00000134912421D0" type="name" varId="3"/>
+    <token id="000001349B3B48C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B1E00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="uri" scope="00000134912421D0" type="name" varId="3"/>
+    <token id="000001349B3B34E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True"/>
+    <token id="000001349B3B6900" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="std" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B66C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B5100" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="wstring" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4E60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="{" scope="00000134912421D0" link="000001349B3B6060"/>
+    <token id="000001349B3B5D60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="sc_MetadataUriLocalizeFor" scope="00000134912421D0" type="name" varId="1" variable="000001349165E420" valueType-type="short" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="000001349B3B6060" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="}" scope="00000134912421D0" link="000001349B3B4E60"/>
+    <token id="000001349B3B4980" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="+" scope="00000134912421D0" type="op" isArithmeticalOp="True"/>
+    <token id="000001349B3B5460" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="m_responseLanguage" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4EC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="." scope="00000134912421D0" originalName="->"/>
+    <token id="000001349B3B5AC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="Data" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5760" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str="(" scope="00000134912421D0" link="000001349B3B5BE0"/>
+    <token id="000001349B3B5BE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str=")" scope="00000134912421D0" link="000001349B3B5760"/>
+    <token id="000001349B3B4F20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="34" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B4AA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="auto" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B49E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="metadataUri" scope="00000134912421D0" type="name" varId="4"/>
+    <token id="000001349B3B4920" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B31E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="metadataUri" scope="00000134912421D0" type="name" varId="4"/>
+    <token id="000001349B3B42C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True"/>
+    <token id="000001349B3B5B20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="ref" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B50A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="new" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4A40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="Uri" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B54C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="(" scope="00000134912421D0" link="000001349B3B56A0"/>
+    <token id="000001349B3B4D40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="StringReference" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5580" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="(" scope="00000134912421D0" link="000001349B3B55E0"/>
+    <token id="000001349B3B4DA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="uri" scope="00000134912421D0" type="name" varId="3"/>
+    <token id="000001349B3B5CA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="." scope="00000134912421D0"/>
+    <token id="000001349B3B5DC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="c_str" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B4BC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str="(" scope="00000134912421D0" link="000001349B3B4C20"/>
+    <token id="000001349B3B4C20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str=")" scope="00000134912421D0" link="000001349B3B4BC0"/>
+    <token id="000001349B3B55E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str=")" scope="00000134912421D0" link="000001349B3B5580"/>
+    <token id="000001349B3B56A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str=")" scope="00000134912421D0" link="000001349B3B54C0"/>
+    <token id="000001349B3B5820" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="35" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B5880" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="return" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5700" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="m_client" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B57C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="." scope="00000134912421D0" originalName="->"/>
+    <token id="000001349B3B4F80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="GetStringAsync" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5160" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="(" scope="00000134912421D0" link="000001349B3B4CE0"/>
+    <token id="000001349B3B4B60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str="metadataUri" scope="00000134912421D0" type="name" varId="4"/>
+    <token id="000001349B3B4CE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str=")" scope="00000134912421D0" link="000001349B3B5160"/>
+    <token id="000001349B3B58E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="37" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B5940" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="38" str="}" scope="00000134912421D0" link="000001349B3B5340"/>
+    <token id="000001349B3B5D00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="IAsyncOperationWithProgress" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B59A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="&lt;" scope="00000134912421D0" link="000001349B3B51C0"/>
+    <token id="000001349B3B5A00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="String" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5B80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="^" scope="00000134912421D0" type="op"/>
+    <token id="000001349B3B5C40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="," scope="00000134912421D0"/>
+    <token id="000001349B3B4FE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="HttpProgress" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B51C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="&gt;" scope="00000134912421D0" link="000001349B3B59A0"/>
+    <token id="000001349B3B5040" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="^" scope="00000134912421D0" type="op"/>
+    <token id="000001349B3B5E20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="CurrencyHttpClient" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5E80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B5EE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="GetCurrencyRatios" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B5F40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str="(" scope="00000134912421D0" link="000001349B3B5FA0"/>
+    <token id="000001349B3B5FA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="40" str=")" scope="00000134912421D0" link="000001349B3B5F40"/>
+    <token id="000001349B3B65A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="41" str="{" scope="00000134912421D0" link="000001349B3B6C60"/>
+    <token id="000001349B3B7500" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="std" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B67E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B7200" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="wstring" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B7020" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="uri" scope="00000134912421D0" type="name" varId="5"/>
+    <token id="000001349B3B6B40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B6720" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="uri" scope="00000134912421D0" type="name" varId="5"/>
+    <token id="000001349B3B75C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True"/>
+    <token id="000001349B3B7560" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="std" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B62A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="::" scope="00000134912421D0"/>
+    <token id="000001349B3B6F60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="wstring" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6F00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="{" scope="00000134912421D0" link="000001349B3B7380"/>
+    <token id="000001349B3B7260" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="sc_RatiosUriRelativeTo" scope="00000134912421D0" type="name" varId="2" variable="000001349165E570" valueType-type="short" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="000001349B3B7380" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="}" scope="00000134912421D0" link="000001349B3B6F00"/>
+    <token id="000001349B3B7620" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="+" scope="00000134912421D0" type="op" isArithmeticalOp="True"/>
+    <token id="000001349B3B7800" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="m_sourceCurrencyCode" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B73E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="." scope="00000134912421D0" originalName="->"/>
+    <token id="000001349B3B6240" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="Data" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6420" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str="(" scope="00000134912421D0" link="000001349B3B7140"/>
+    <token id="000001349B3B7140" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str=")" scope="00000134912421D0" link="000001349B3B6420"/>
+    <token id="000001349B3B6120" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="42" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B72C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="auto" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6180" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="ratiosUri" scope="00000134912421D0" type="name" varId="6"/>
+    <token id="000001349B3B6FC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B6E40" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="ratiosUri" scope="00000134912421D0" type="name" varId="6"/>
+    <token id="000001349B3B6660" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="=" scope="00000134912421D0" type="op" isAssignmentOp="True"/>
+    <token id="000001349B3B6480" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="ref" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B7080" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="new" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6DE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="Uri" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B7440" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="(" scope="00000134912421D0" link="000001349B3B6600"/>
+    <token id="000001349B3B70E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="StringReference" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B7320" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="(" scope="00000134912421D0" link="000001349B3B6D20"/>
+    <token id="000001349B3B6CC0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="uri" scope="00000134912421D0" type="name" varId="5"/>
+    <token id="000001349B3B60C0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="." scope="00000134912421D0"/>
+    <token id="000001349B3B6BA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="c_str" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6A80" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str="(" scope="00000134912421D0" link="000001349B3B64E0"/>
+    <token id="000001349B3B64E0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str=")" scope="00000134912421D0" link="000001349B3B6A80"/>
+    <token id="000001349B3B6D20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str=")" scope="00000134912421D0" link="000001349B3B7320"/>
+    <token id="000001349B3B6600" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str=")" scope="00000134912421D0" link="000001349B3B7440"/>
+    <token id="000001349B3B6AE0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="43" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B71A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="return" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6840" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="m_client" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B77A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="." scope="00000134912421D0" originalName="->"/>
+    <token id="000001349B3B6C00" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="GetStringAsync" scope="00000134912421D0" type="name"/>
+    <token id="000001349B3B6A20" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="(" scope="00000134912421D0" link="000001349B3B74A0"/>
+    <token id="000001349B3B6EA0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str="ratiosUri" scope="00000134912421D0" type="name" varId="6"/>
+    <token id="000001349B3B74A0" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str=")" scope="00000134912421D0" link="000001349B3B6A20"/>
+    <token id="000001349B3B7680" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="45" str=";" scope="00000134912421D0"/>
+    <token id="000001349B3B6C60" file="C:/sample repositories/calculator-master/src/CalcViewModel/DataLoaders/CurrencyHttpClient.cpp" linenr="46" str="}" scope="00000134912421D0" link="000001349B3B65A0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134912421D0" type="Global">
+      <varlist>
+        <var id="000001349165E420"/>
+        <var id="000001349165E570"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491242500" type="Namespace" className="CalculatorApp" bodyStart="000001349B3AF940" bodyEnd="000001349B3B1E60" nestedIn="00000134912421D0"/>
+    <scope id="00000134912422E0" type="Namespace" className="DataLoaders" bodyStart="000001349B3AEB00" bodyEnd="000001349B3B2460" nestedIn="0000013491242500"/>
+    <scope id="00000134912423F0" type="Class" className="ICurrencyHttpClient" bodyStart="000001349B3AD480" bodyEnd="000001349B3AFDC0" nestedIn="00000134912422E0">
+      <functionList>
+        <function id="00000134A213C950" tokenDef="000001349B3AD9C0" name="ICurrencyHttpClient" type="Destructor" isVirtual="true"/>
+        <function id="00000134A213D130" tokenDef="000001349B3AE500" name="SetSourceCurrencyCode" type="Function" isVirtual="true">
+          <arg nr="1" variable="000001349165D1C0"/>
+        </function>
+        <function id="00000134A213C290" tokenDef="000001349B3AD3C0" name="SetResponseLanguage" type="Function" isVirtual="true">
+          <arg nr="1" variable="000001349165D9A0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013491541DA0" type="Function" className="ICurrencyHttpClient" bodyStart="000001349B3AE3E0" bodyEnd="000001349B3AD600" nestedIn="00000134912423F0" function="00000134A213C950"/>
+    <scope id="0000013496CA93C0" type="Class" className="CurrencyHttpClient" bodyStart="000001349B3AFEE0" bodyEnd="000001349B3B20A0" nestedIn="00000134912422E0">
+      <functionList>
+        <function id="00000134A213CB00" tokenDef="000001349B3AE8C0" name="CurrencyHttpClient" type="Constructor"/>
+        <function id="00000134A213CEF0" tokenDef="000001349B3AF1C0" name="SetSourceCurrencyCode" type="Function" isImplicitlyVirtual="true">
+          <arg nr="1" variable="000001349165D230"/>
+        </function>
+        <function id="00000134A213BC60" tokenDef="000001349B3B12C0" name="SetResponseLanguage" type="Function" isImplicitlyVirtual="true">
+          <arg nr="1" variable="000001349165E730"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013496CA92B0" type="Function" className="CurrencyHttpClient" bodyStart="000001349B3B4860" bodyEnd="000001349B3B3180" nestedIn="00000134912421D0" function="00000134A213CB00"/>
+    <scope id="0000013496CA94D0" type="Function" className="SetSourceCurrencyCode" bodyStart="000001349B3B3DE0" bodyEnd="000001349B3B4620" nestedIn="00000134912421D0"/>
+    <scope id="0000013496CA8B40" type="Function" className="SetResponseLanguage" bodyStart="000001349B3B3420" bodyEnd="000001349B3B3840" nestedIn="00000134912421D0"/>
+  </scopes>
+  <variables>
+    <var id="000001349165D1C0" nameToken="000001349B3AD540" typeStartToken="000001349B3AE860" typeEndToken="000001349B3AD840" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165D230" nameToken="000001349B3AF6A0" typeStartToken="000001349B3AF4C0" typeEndToken="000001349B3AF640" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165D9A0" nameToken="000001349B3ADDE0" typeStartToken="000001349B3ADCC0" typeEndToken="000001349B3AD420" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165E420" nameToken="000001349B3B1920" typeStartToken="000001349B3B18C0" typeEndToken="000001349B3B18C0" access="Global" scope="00000134912421D0" constness="1" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="true"/>
+    <var id="000001349165E570" nameToken="000001349B3B3480" typeStartToken="000001349B3B46E0" typeEndToken="000001349B3B46E0" access="Global" scope="00000134912421D0" constness="1" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="true"/>
+    <var id="000001349165E730" nameToken="000001349B3B17A0" typeStartToken="000001349B3B0840" typeEndToken="000001349B3B1260" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920B4E0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B360">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B760">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B3A0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B920">
+      <value tokvalue="000001349B3B1AA0" known="true"/>
+    </values>
+    <values id="00000134A920B900">
+      <value tokvalue="000001349B3B44A0" known="true"/>
+    </values>
+    <values id="00000134A920B520">
+      <value tokvalue="000001349B3B3D20" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

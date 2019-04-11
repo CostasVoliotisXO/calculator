@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>calculator-cppcheck-build-dir</builddir>
+    <platform>Unspecified</platform>
+    <analyze-all-vs-configs>true</analyze-all-vs-configs>
+    <paths>
+        <dir name="C:/sample repositories/calculator-master"/>
+    </paths>
+    <libraries>
+        <library>avr</library>
+        <library>bsd</library>
+        <library>embedded_sql</library>
+        <library>gnu</library>
+        <library>gtk</library>
+        <library>microsoft_sal</library>
+        <library>motif</library>
+        <library>posix</library>
+        <library>qt</library>
+        <library>sdl</library>
+        <library>sfml</library>
+        <library>windows</library>
+        <library>wxwidgets</library>
+    </libraries>
+    <addons>
+        <addon>threadsafety</addon>
+        <addon>cert</addon>
+    </addons>
+</project>

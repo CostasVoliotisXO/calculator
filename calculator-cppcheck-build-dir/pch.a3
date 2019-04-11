@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1701969824">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\pch.cpp" file="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\pch.cpp" file="C:\sample repositories\calculator-master\src\Calculator\App.xaml.h" line="25"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="GetViewId"/>
+    <functioncall functionName="RemoveWindowFromMap"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="frameService"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="m_frameOpenedInWindow"/>
+    <functioncall functionName="m_frameService"/>
+    <functioncall functionName="m_parent"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="success"/>
+  </FileInfo>
+</analyzerinfo>

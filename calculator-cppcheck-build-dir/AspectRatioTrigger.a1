@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3620103363">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class AspectRatioTrigger sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class AspectRatioTrigger sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\StateTriggers\AspectRatioTrigger.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\StateTriggers\AspectRatioTrigger.h" line="22"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ActiveIfEqual"/>
+    <functioncall functionName="Aspect"/>
+    <functioncall functionName="AspectRatioTrigger"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_CALLBACK"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_DEFAULT"/>
+    <functioncall functionName="Height"/>
+    <functioncall functionName="NewSize"/>
+    <functioncall functionName="NumeratorAspect"/>
+    <functioncall functionName="OnSizeChanged"/>
+    <functioncall functionName="RegisterSizeChanged"/>
+    <functioncall functionName="SetActive"/>
+    <functioncall functionName="SizeChangedEventHandler"/>
+    <functioncall functionName="Source"/>
+    <functioncall functionName="Threshold"/>
+    <functioncall functionName="UnregisterSizeChanged"/>
+    <functioncall functionName="UpdateIsActive"/>
+    <functioncall functionName="Width"/>
+    <functioncall functionName="abs"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="denominator"/>
+    <functioncall functionName="double"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isActive"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="oldValue"/>
+    <functioncall functionName="ratio"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="this"/>
+  </FileInfo>
+</analyzerinfo>

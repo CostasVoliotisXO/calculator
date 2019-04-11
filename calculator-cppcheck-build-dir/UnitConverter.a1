@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3202773925">
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;m_fromType&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;m_fromType&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="948"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="931"/>
+            <symbol>m_fromType</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;m_toType&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;m_toType&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="949"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="937"/>
+            <symbol>m_toType</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;RestoreUserPreferences&apos; argument 1 names different: declaration &apos;userPreference&apos; definition &apos;userPreferences&apos;." verbose="Function &apos;RestoreUserPreferences&apos; argument 1 names different: declaration &apos;userPreference&apos; definition &apos;userPreferences&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="398"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="216"/>
+            <symbol>RestoreUserPreferences</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;TrimString&apos; argument 1 names different: declaration &apos;input&apos; definition &apos;returnString&apos;." verbose="Function &apos;TrimString&apos; argument 1 names different: declaration &apos;input&apos; definition &apos;returnString&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="1027"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="234"/>
+            <symbol>TrimString</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="1035"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:236:22" call-funcname="RoundSignificant" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="771" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:236:22" call-funcname="RoundSignificant" call-argnr="2" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="811" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:236:22" call-funcname="RoundSignificant" call-argnr="1" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="985" call-argexpr="returnValue" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" linenr="997" info="Assuming that condition 'returnValue!=0' is not redundant"/>
+</function-call>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:238:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="196"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:239:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="233"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:242:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="275"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:238:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="196"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:239:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="233"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.h:242:22" my-argnr="2" my-argname="delimiter" filename="C:/sample repositories/calculator-master/src/CalcManager/UnitConverter.cpp" linenr="275"/>
+  </FileInfo>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Unit::id&apos; is not initialized in the constructor." verbose="Member variable &apos;Unit::id&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="12"/>
+            <symbol>Unit::id</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Unit::isConversionSource&apos; is not initialized in the constructor." verbose="Member variable &apos;Unit::isConversionSource&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="12"/>
+            <symbol>Unit::isConversionSource</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Unit::isConversionTarget&apos; is not initialized in the constructor." verbose="Member variable &apos;Unit::isConversionTarget&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="12"/>
+            <symbol>Unit::isConversionTarget</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Unit::isWhimsical&apos; is not initialized in the constructor." verbose="Member variable &apos;Unit::isWhimsical&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="12"/>
+            <symbol>Unit::isWhimsical</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Category::id&apos; is not initialized in the constructor." verbose="Member variable &apos;Category::id&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="58"/>
+            <symbol>Category::id</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Category::supportsNegative&apos; is not initialized in the constructor." verbose="Member variable &apos;Category::supportsNegative&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="58"/>
+            <symbol>Category::supportsNegative</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ConversionData::ratio&apos; is not initialized in the constructor." verbose="Member variable &apos;ConversionData::ratio&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="104"/>
+            <symbol>ConversionData::ratio</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ConversionData::offset&apos; is not initialized in the constructor." verbose="Member variable &apos;ConversionData::offset&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="104"/>
+            <symbol>ConversionData::offset</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ConversionData::offsetFirst&apos; is not initialized in the constructor." verbose="Member variable &apos;ConversionData::offsetFirst&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="104"/>
+            <symbol>ConversionData::offsetFirst</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;name&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;name&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="24"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;accessibleName&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;accessibleName&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="25"/>
+            <symbol>accessibleName</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;UnitConverter&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;UnitConverter&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="203"/>
+            <symbol>UnitConverter</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;name&apos; should be passed by const reference." verbose="Parameter &apos;name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="13"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;abbreviation&apos; should be passed by const reference." verbose="Parameter &apos;abbreviation&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="13"/>
+            <symbol>abbreviation</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;abbreviation&apos; should be passed by const reference." verbose="Parameter &apos;abbreviation&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="18"/>
+            <symbol>abbreviation</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;name&apos; should be passed by const reference." verbose="Parameter &apos;name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.h" line="60"/>
+            <symbol>name</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\UnitConverter.cpp" line="361"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Initialize" lineNumber="69"/>
+    <functiondecl functionName="CheckLoad" lineNumber="74"/>
+    <functiondecl functionName="GetCategories" lineNumber="86"/>
+    <functiondecl functionName="SetCurrentCategory" lineNumber="97"/>
+    <functiondecl functionName="GetCurrentCategory" lineNumber="132"/>
+    <functiondecl functionName="SetCurrentUnitTypes" lineNumber="143"/>
+    <functiondecl functionName="SwitchActive" lineNumber="170"/>
+    <functiondecl functionName="CategoryToString" lineNumber="193"/>
+    <functiondecl functionName="StringToVector" lineNumber="200"/>
+    <functiondecl functionName="StringToCategory" lineNumber="219"/>
+    <functiondecl functionName="UnitToString" lineNumber="230"/>
+    <functiondecl functionName="StringToUnit" lineNumber="237"/>
+    <functiondecl functionName="StringToConversionData" lineNumber="252"/>
+    <functiondecl functionName="ConversionDataToString" lineNumber="263"/>
+    <functiondecl functionName="Serialize" lineNumber="282"/>
+    <functiondecl functionName="DeSerialize" lineNumber="337"/>
+    <functiondecl functionName="RestoreUserPreferences" lineNumber="398"/>
+    <functiondecl functionName="SaveUserPreferences" lineNumber="417"/>
+    <functiondecl functionName="Quote" lineNumber="433"/>
+    <functiondecl functionName="Unquote" lineNumber="458"/>
+    <functiondecl functionName="SendCommand" lineNumber="497"/>
+    <functiondecl functionName="RefreshCurrencyRatios" lineNumber="665"/>
+    <functiondecl functionName="GetCurrencyConverterDataLoader" lineNumber="690"/>
+    <functiondecl functionName="Convert" lineNumber="700"/>
+    <functiondecl functionName="CalculateSuggested" lineNumber="715"/>
+    <functiondecl functionName="Reset" lineNumber="835"/>
+    <functiondecl functionName="GetDataLoaderForCategory" lineNumber="890"/>
+    <functiondecl functionName="InitializeSelectedUnits" lineNumber="908"/>
+    <functiondecl functionName="ClearValues" lineNumber="955"/>
+    <functiondecl functionName="AnyUnitIsEmpty" lineNumber="965"/>
+    <functiondecl functionName="Calculate" lineNumber="973"/>
+    <functiondecl functionName="TrimString" lineNumber="1027"/>
+    <functiondecl functionName="RoundSignificant" lineNumber="1054"/>
+    <functiondecl functionName="UpdateCurrencySymbols" lineNumber="1063"/>
+    <functiondecl functionName="UpdateViewModel" lineNumber="1076"/>
+    <functioncall functionName="AnyUnitIsEmpty"/>
+    <functioncall functionName="Backspace"/>
+    <functioncall functionName="BinaryCommand"/>
+    <functioncall functionName="Calculate"/>
+    <functioncall functionName="CalculateSuggested"/>
+    <functioncall functionName="Category"/>
+    <functioncall functionName="CategoryHash"/>
+    <functioncall functionName="CategoryToString"/>
+    <functioncall functionName="CheckLoad"/>
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClearValues"/>
+    <functioncall functionName="ConversionData"/>
+    <functioncall functionName="ConversionDataToString"/>
+    <functioncall functionName="Convert"/>
+    <functioncall functionName="CurrencyRatiosCallback"/>
+    <functioncall functionName="CurrencySymbolsCallback"/>
+    <functioncall functionName="Decimal"/>
+    <functioncall functionName="DisplayCallback"/>
+    <functioncall functionName="EMPTY_UNIT"/>
+    <functioncall functionName="Eight"/>
+    <functioncall functionName="Five"/>
+    <functioncall functionName="Four"/>
+    <functioncall functionName="GetCurrencyConverterDataLoader"/>
+    <functioncall functionName="GetCurrencyRatioEquality"/>
+    <functioncall functionName="GetCurrencySymbols"/>
+    <functioncall functionName="GetCurrencyTimestamp"/>
+    <functioncall functionName="GetDataLoaderForCategory"/>
+    <functioncall functionName="InitializeSelectedUnits"/>
+    <functioncall functionName="LEFTESCAPECHAR"/>
+    <functioncall functionName="LoadData"/>
+    <functioncall functionName="LoadOrderedCategories"/>
+    <functioncall functionName="LoadOrderedRatios"/>
+    <functioncall functionName="LoadOrderedUnits"/>
+    <functioncall functionName="MAXIMUMDIGITSALLOWED"/>
+    <functioncall functionName="MaxDigitsReached"/>
+    <functioncall functionName="Negate"/>
+    <functioncall functionName="Nine"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="OPTIMALDIGITSALLOWED"/>
+    <functioncall functionName="One"/>
+    <functioncall functionName="OperandCommand"/>
+    <functioncall functionName="Parentheses"/>
+    <functioncall functionName="Quote"/>
+    <functioncall functionName="RIGHTESCAPECHAR"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="RoundSignificant"/>
+    <functioncall functionName="SetViewModelCallback"/>
+    <functioncall functionName="Seven"/>
+    <functioncall functionName="Six"/>
+    <functioncall functionName="StringToCategory"/>
+    <functioncall functionName="StringToConversionData"/>
+    <functioncall functionName="StringToUnit"/>
+    <functioncall functionName="StringToVector"/>
+    <functioncall functionName="SuggestedValueCallback"/>
+    <functioncall functionName="SupportsCategory"/>
+    <functioncall functionName="Three"/>
+    <functioncall functionName="TrimString"/>
+    <functioncall functionName="TryLoadDataFromWebOverrideAsync"/>
+    <functioncall functionName="Two"/>
+    <functioncall functionName="UnaryCommand"/>
+    <functioncall functionName="Unit"/>
+    <functioncall functionName="UnitConverter"/>
+    <functioncall functionName="UnitHash"/>
+    <functioncall functionName="UnitToString"/>
+    <functioncall functionName="Unquote"/>
+    <functioncall functionName="UpdateCurrencySymbols"/>
+    <functioncall functionName="UpdateViewModel"/>
+    <functioncall functionName="Zero"/>
+    <functioncall functionName="_wtoi"/>
+    <functioncall functionName="abbreviation"/>
+    <functioncall functionName="abs"/>
+    <functioncall functionName="accessibleName"/>
+    <functioncall functionName="addRemainder"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="back"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="category"/>
+    <functioncall functionName="categoryListTokens"/>
+    <functioncall functionName="categoryString"/>
+    <functioncall functionName="categoryToUnitString"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clearBack"/>
+    <functioncall functionName="clearFront"/>
+    <functioncall functionName="command"/>
+    <functioncall functionName="compare"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="conversion"/>
+    <functioncall functionName="convertedValue"/>
+    <functioncall functionName="countryName"/>
+    <functioncall functionName="create_task"/>
+    <functioncall functionName="cur"/>
+    <functioncall functionName="curUnits"/>
+    <functioncall functionName="currencyDataLoader"/>
+    <functioncall functionName="currencyName"/>
+    <functioncall functionName="dataLoader"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delimiter"/>
+    <functioncall functionName="didLoad"/>
+    <functioncall functionName="dynamic_pointer_cast"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="fromType"/>
+    <functioncall functionName="front"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="input"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="intermediateVector"/>
+    <functioncall functionName="intermediateWhimsicalVector"/>
+    <functioncall functionName="isConversionSource"/>
+    <functioncall functionName="isConversionTarget"/>
+    <functioncall functionName="isWhimsical"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="log10"/>
+    <functioncall functionName="m_categories"/>
+    <functioncall functionName="m_categoryToUnits"/>
+    <functioncall functionName="m_currencyDataLoader"/>
+    <functioncall functionName="m_currentCategory"/>
+    <functioncall functionName="m_currentDisplay"/>
+    <functioncall functionName="m_currentHasDecimal"/>
+    <functioncall functionName="m_fromType"/>
+    <functioncall functionName="m_ratioMap"/>
+    <functioncall functionName="m_returnDisplay"/>
+    <functioncall functionName="m_returnHasDecimal"/>
+    <functioncall functionName="m_switchedActive"/>
+    <functioncall functionName="m_toType"/>
+    <functioncall functionName="magnitude"/>
+    <functioncall functionName="make_pair"/>
+    <functioncall functionName="make_tuple"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nameValue2"/>
+    <functioncall functionName="newCallback"/>
+    <functioncall functionName="newEntry"/>
+    <functioncall functionName="newUnitList"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="npos"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="numPreDecimal"/>
+    <functioncall functionName="numSignificant"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="offsetFirst"/>
+    <functioncall functionName="out"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="pop_back"/>
+    <functioncall functionName="pow"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="quotedString"/>
+    <functioncall functionName="quotedSubString"/>
+    <functioncall functionName="ratio"/>
+    <functioncall functionName="ratioMapList"/>
+    <functioncall functionName="ratioMapTokens"/>
+    <functioncall functionName="ratios"/>
+    <functioncall functionName="readyCategoryFound"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="returnString"/>
+    <functioncall functionName="returnValue"/>
+    <functioncall functionName="roundedString"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="serializedData"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="sort"/>
+    <functioncall functionName="startIndex"/>
+    <functioncall functionName="stod"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="subkey"/>
+    <functioncall functionName="substr"/>
+    <functioncall functionName="subtoken"/>
+    <functioncall functionName="supportsNegative"/>
+    <functioncall functionName="swap"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="task_from_result"/>
+    <functioncall functionName="then"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="timestamp"/>
+    <functioncall functionName="toType"/>
+    <functioncall functionName="to_wstring"/>
+    <functioncall functionName="token"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="u"/>
+    <functioncall functionName="unit"/>
+    <functioncall functionName="unitToUnitToDoubleString"/>
+    <functioncall functionName="unitVector"/>
+    <functioncall functionName="unitVectorTokens"/>
+    <functioncall functionName="units"/>
+    <functioncall functionName="unquotedString"/>
+    <functioncall functionName="use_default"/>
+    <functioncall functionName="userPreferences"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="vector"/>
+    <functioncall functionName="w"/>
+    <functioncall functionName="wchar_t"/>
+    <functioncall functionName="wcslen"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

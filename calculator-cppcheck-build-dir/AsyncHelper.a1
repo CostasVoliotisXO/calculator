@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3500490014">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\AsyncHelper.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\AsyncHelper.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="RunOnUIThreadAsync" lineNumber="16"/>
+    <functiondecl functionName="RunOnUIThread" lineNumber="26"/>
+    <functiondecl functionName="Delay" lineNumber="36"/>
+    <functiondecl functionName="Sleep" lineNumber="42"/>
+    <functioncall functionName="App"/>
+    <functioncall functionName="CREATE_EVENT_MANUAL_RESET"/>
+    <functioncall functionName="Close"/>
+    <functioncall functionName="CreateEventEx"/>
+    <functioncall functionName="DispatchedHandler"/>
+    <functioncall functionName="EVENT_ALL_ACCESS"/>
+    <functioncall functionName="Exception"/>
+    <functioncall functionName="Get"/>
+    <functioncall functionName="HttpProgress"/>
+    <functioncall functionName="IsValid"/>
+    <functioncall functionName="Normal"/>
+    <functioncall functionName="RunAsync"/>
+    <functioncall functionName="RunOnUIThreadAsync"/>
+    <functioncall functionName="SetEvent"/>
+    <functioncall functionName="Sleep"/>
+    <functioncall functionName="ToString"/>
+    <functioncall functionName="WaitForSingleObjectEx"/>
+    <functioncall functionName="WaitForTask &lt; void &gt;"/>
+    <functioncall functionName="action"/>
+    <functioncall functionName="bad_alloc"/>
+    <functioncall functionName="bind"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="create_task"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="event"/>
+    <functioncall functionName="ex"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="join"/>
+    <functioncall functionName="milliseconds"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="sleep_for"/>
+    <functioncall functionName="t"/>
+    <functioncall functionName="then"/>
+    <functioncall functionName="timeout"/>
+    <functioncall functionName="timer"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="uiTask"/>
+    <functioncall functionName="use_arbitrary"/>
+    <functioncall functionName="wait"/>
+    <functioncall functionName="waitTask"/>
+  </FileInfo>
+</analyzerinfo>

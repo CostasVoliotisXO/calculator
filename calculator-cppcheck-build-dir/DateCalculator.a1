@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3057631294">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class _Enum_is_bitflag_ DateUnit {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class _Enum_is_bitflag_ DateUnit {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.h" line="22"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;days&apos; can be reduced." verbose="The scope of the variable &apos;days&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" line="237"/>
+            <symbol>days</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.h" line="58"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" line="275"/>
+            <symbol>CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;DateCalculationEngine&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;DateCalculationEngine&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DateCalculator.h" line="43"/>
+            <symbol>DateCalculationEngine</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="AdjustCalendarDate" lineNumber="275"/>
+    <functioncall functionName="AddDays"/>
+    <functioncall functionName="AddMonths"/>
+    <functioncall functionName="AddWeeks"/>
+    <functioncall functionName="AddYears"/>
+    <functioncall functionName="AdjustCalendarDate"/>
+    <functioncall functionName="Calendar"/>
+    <functioncall functionName="ChangeCalendarSystem"/>
+    <functioncall functionName="ChangeTimeZone"/>
+    <functioncall functionName="DateCalculationEngine"/>
+    <functioncall functionName="FirstMonthInThisYear"/>
+    <functioncall functionName="GetCalendarSystem"/>
+    <functioncall functionName="GetDateTime"/>
+    <functioncall functionName="GetDifferenceInDays"/>
+    <functioncall functionName="Gregorian"/>
+    <functioncall functionName="NumberOfDaysInThisMonth"/>
+    <functioncall functionName="NumberOfMonthsInThisYear"/>
+    <functioncall functionName="SetDateTime"/>
+    <functioncall functionName="TryGetCalendarDaysInMonth"/>
+    <functioncall functionName="TryGetCalendarDaysInYear"/>
+    <functioncall functionName="UniversalTime"/>
+    <functioncall functionName="approximateDaysInYear"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c_day"/>
+    <functioncall functionName="c_daysInWeek"/>
+    <functioncall functionName="c_unitsOfDate"/>
+    <functioncall functionName="calendarIdentifier"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="currentCalendarSystem"/>
+    <functioncall functionName="date"/>
+    <functioncall functionName="date1"/>
+    <functioncall functionName="date2"/>
+    <functioncall functionName="dateUnit"/>
+    <functioncall functionName="day"/>
+    <functioncall functionName="days"/>
+    <functioncall functionName="daysDiff"/>
+    <functioncall functionName="daysInMonth"/>
+    <functioncall functionName="daysInThisMonth"/>
+    <functioncall functionName="difference"/>
+    <functioncall functionName="endDate"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isEndDateHit"/>
+    <functioncall functionName="month"/>
+    <functioncall functionName="monthResult"/>
+    <functioncall functionName="outputFormat"/>
+    <functioncall functionName="pivotDate"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="startDate"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="tempDaysDiff"/>
+    <functioncall functionName="tempPivotDate"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unitIndex"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="year"/>
+  </FileInfo>
+</analyzerinfo>

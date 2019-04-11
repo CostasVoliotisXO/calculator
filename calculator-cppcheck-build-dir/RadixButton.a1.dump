@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;RadixButton.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="#"/>
+    <tok fileIndex="0" linenr="6" str="include"/>
+    <tok fileIndex="0" linenr="6" str="&quot;CalcViewModel/Common/LocalizationSettings.h&quot;"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Common"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Controls"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="Platform"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="12" str="using"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="std"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="13" str="using"/>
+    <tok fileIndex="0" linenr="13" str="namespace"/>
+    <tok fileIndex="0" linenr="13" str="Windows"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="Foundation"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="Collections"/>
+    <tok fileIndex="0" linenr="13" str=";"/>
+    <tok fileIndex="0" linenr="14" str="using"/>
+    <tok fileIndex="0" linenr="14" str="namespace"/>
+    <tok fileIndex="0" linenr="14" str="Windows"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="System"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="15" str="using"/>
+    <tok fileIndex="0" linenr="15" str="namespace"/>
+    <tok fileIndex="0" linenr="15" str="Windows"/>
+    <tok fileIndex="0" linenr="15" str="::"/>
+    <tok fileIndex="0" linenr="15" str="UI"/>
+    <tok fileIndex="0" linenr="15" str="::"/>
+    <tok fileIndex="0" linenr="15" str="Xaml"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="16" str="using"/>
+    <tok fileIndex="0" linenr="16" str="namespace"/>
+    <tok fileIndex="0" linenr="16" str="Windows"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="UI"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Xaml"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Input"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="17" str="using"/>
+    <tok fileIndex="0" linenr="17" str="namespace"/>
+    <tok fileIndex="0" linenr="17" str="Windows"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="UI"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="Xaml"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="Data"/>
+    <tok fileIndex="0" linenr="17" str=";"/>
+    <tok fileIndex="0" linenr="19" str="String"/>
+    <tok fileIndex="0" linenr="19" str="^"/>
+    <tok fileIndex="0" linenr="19" str="RadixButton"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="GetRawDisplayValue"/>
+    <tok fileIndex="0" linenr="19" str="("/>
+    <tok fileIndex="0" linenr="19" str=")"/>
+    <tok fileIndex="0" linenr="20" str="{"/>
+    <tok fileIndex="0" linenr="21" str="wstring"/>
+    <tok fileIndex="0" linenr="21" str="rawValue"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="String"/>
+    <tok fileIndex="0" linenr="22" str="^"/>
+    <tok fileIndex="0" linenr="22" str="radixContent"/>
+    <tok fileIndex="0" linenr="22" str="="/>
+    <tok fileIndex="0" linenr="22" str="Content"/>
+    <tok fileIndex="0" linenr="22" str="-&gt;"/>
+    <tok fileIndex="0" linenr="22" str="ToString"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="LocalizationSettings"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="GetInstance"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str="."/>
+    <tok fileIndex="0" linenr="23" str="RemoveGroupSeparators"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="radixContent"/>
+    <tok fileIndex="0" linenr="23" str="-&gt;"/>
+    <tok fileIndex="0" linenr="23" str="Data"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=","/>
+    <tok fileIndex="0" linenr="23" str="radixContent"/>
+    <tok fileIndex="0" linenr="23" str="-&gt;"/>
+    <tok fileIndex="0" linenr="23" str="Length"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=","/>
+    <tok fileIndex="0" linenr="23" str="&amp;"/>
+    <tok fileIndex="0" linenr="23" str="rawValue"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="return"/>
+    <tok fileIndex="0" linenr="24" str="ref"/>
+    <tok fileIndex="0" linenr="24" str="new"/>
+    <tok fileIndex="0" linenr="24" str="String"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str="rawValue"/>
+    <tok fileIndex="0" linenr="24" str="."/>
+    <tok fileIndex="0" linenr="24" str="c_str"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="5" str="#include &quot;RadixButton.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="6" str="#include &quot;CalcViewModel/Common/LocalizationSettings.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B47AAA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="6" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47AF20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="6" str="CalculatorApp" scope="0000013491268750" type="name" astParent="000001349B47B640"/>
+    <token id="000001349B47B640" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="7" str="{" scope="00000134913BDC20" link="000001349B47AB60" astOperand1="000001349B47AF20" astOperand2="000001349B47B100"/>
+    <token id="000001349B47B340" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="8" str="namespace" scope="00000134913BDC20" type="name"/>
+    <token id="000001349B47AD40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="8" str="Controls" scope="00000134913BDC20" type="name" astParent="000001349B47B100"/>
+    <token id="000001349B47B100" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="9" str="{" scope="00000134913BC190" link="000001349B47B220" astParent="000001349B47B640" astOperand1="000001349B47AD40" astOperand2="000001349B47ABC0"/>
+    <token id="000001349B47BE20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="public" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47C000" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="ref" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47BC40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="class" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47ADA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="RadixButton" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47B520" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="sealed" scope="00000134913BC190" type="name" astParent="000001349B47ABC0"/>
+    <token id="000001349B47ABC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str=":" scope="00000134913BC190" astParent="000001349B47B100" astOperand1="000001349B47B520" astOperand2="000001349B47B820"/>
+    <token id="000001349B47B7C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="public" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47AE00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="Windows" scope="00000134913BC190" type="name" astParent="000001349B47BE80"/>
+    <token id="000001349B47BE80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="::" scope="00000134913BC190" astParent="000001349B47B280" astOperand1="000001349B47AE00" astOperand2="000001349B47B3A0"/>
+    <token id="000001349B47B3A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="UI" scope="00000134913BC190" type="name" astParent="000001349B47BE80"/>
+    <token id="000001349B47B280" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="::" scope="00000134913BC190" astParent="000001349B47B1C0" astOperand1="000001349B47BE80" astOperand2="000001349B47AE60"/>
+    <token id="000001349B47AE60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="Xaml" scope="00000134913BC190" type="name" astParent="000001349B47B280"/>
+    <token id="000001349B47B1C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="::" scope="00000134913BC190" astParent="000001349B47B820" astOperand1="000001349B47B280" astOperand2="000001349B47B880"/>
+    <token id="000001349B47B880" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="Controls" scope="00000134913BC190" type="name" astParent="000001349B47B1C0"/>
+    <token id="000001349B47B820" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="::" scope="00000134913BC190" astParent="000001349B47ABC0" astOperand1="000001349B47B1C0" astOperand2="000001349B47B160"/>
+    <token id="000001349B47B160" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="10" str="RadioButton" scope="00000134913BC190" type="name" astParent="000001349B47B820"/>
+    <token id="000001349B47B760" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="11" str="{" scope="00000134913BC190" link="000001349B47A9E0"/>
+    <token id="000001349B47BD60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="12" str="public:" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47B2E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str="RadixButton" scope="00000134913BC190" type="name" function="00000134A2140DF0" astParent="000001349B47BFA0"/>
+    <token id="000001349B47BFA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str="(" scope="00000134913BC190" link="000001349B47BF40" astOperand1="000001349B47B2E0"/>
+    <token id="000001349B47BF40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str=")" scope="00000134913BC190" link="000001349B47BFA0"/>
+    <token id="000001349B47B700" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str="{" scope="00000134913BC080" link="000001349B47AB00"/>
+    <token id="000001349B47AB00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str="}" scope="00000134913BC080" link="000001349B47B700"/>
+    <token id="000001349B47BB20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="13" str=";" scope="00000134913BC190"/>
+    <token id="000001349B47B040" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="14" str="internal" scope="00000134913BC190" type="name"/>
+    <token id="000001349B47AA40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="14" str=":" scope="00000134913BC190"/>
+    <token id="000001349B47B8E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="Platform" scope="00000134913BC190" type="name" astParent="000001349B47B940"/>
+    <token id="000001349B47B940" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="::" scope="00000134913BC190" astParent="000001349B47A8C0" astOperand1="000001349B47B8E0" astOperand2="000001349B47C060"/>
+    <token id="000001349B47C060" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="String" scope="00000134913BC190" type="name" astParent="000001349B47B940"/>
+    <token id="000001349B47A8C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="^" scope="00000134913BC190" type="op" astOperand1="000001349B47B940" astOperand2="000001349B47B9A0"/>
+    <token id="000001349B47A980" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="GetRawDisplayValue" scope="00000134913BC190" type="name" astParent="000001349B47B9A0"/>
+    <token id="000001349B47B9A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str="(" scope="00000134913BC190" link="000001349B47B400" astParent="000001349B47A8C0" astOperand1="000001349B47A980"/>
+    <token id="000001349B47B400" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str=")" scope="00000134913BC190" link="000001349B47B9A0"/>
+    <token id="000001349B47AC20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="15" str=";" scope="00000134913BC190"/>
+    <token id="000001349B47A9E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="16" str="}" scope="00000134913BC190" link="000001349B47B760"/>
+    <token id="000001349B47BAC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="16" str=";" scope="00000134913BC190"/>
+    <token id="000001349B47B220" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="17" str="}" scope="00000134913BC190" link="000001349B47B100"/>
+    <token id="000001349B47AB60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.h" linenr="18" str="}" scope="00000134913BDC20" link="000001349B47B640"/>
+    <token id="000001349B47BB80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="8" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47B460" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="8" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47AC80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="8" str="CalculatorApp" scope="0000013491268750" type="name"/>
+    <token id="000001349B47B4C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="8" str=";" scope="0000013491268750"/>
+    <token id="000001349B47B6A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47AF80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47AFE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str="CalculatorApp" scope="0000013491268750" type="name" astParent="000001349B47BA00"/>
+    <token id="000001349B47BA00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str="::" scope="0000013491268750" astOperand1="000001349B47AFE0" astOperand2="000001349B47AEC0"/>
+    <token id="000001349B47AEC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str="Common" scope="0000013491268750" type="name" astParent="000001349B47BA00"/>
+    <token id="000001349B47BA60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="9" str=";" scope="0000013491268750"/>
+    <token id="000001349B47BDC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47B580" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47B5E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str="CalculatorApp" scope="0000013491268750" type="name" astParent="000001349B47BBE0"/>
+    <token id="000001349B47BBE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str="::" scope="0000013491268750" astOperand1="000001349B47B5E0" astOperand2="000001349B47BCA0"/>
+    <token id="000001349B47BCA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str="Controls" scope="0000013491268750" type="name" astParent="000001349B47BBE0"/>
+    <token id="000001349B47BD00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="10" str=";" scope="0000013491268750"/>
+    <token id="000001349B47C480" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="11" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C5A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="11" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47CAE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="11" str="Platform" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C120" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="11" str=";" scope="0000013491268750"/>
+    <token id="000001349B47D3E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C9C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47D860" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="Windows" scope="0000013491268750" type="name" astParent="000001349B47D800"/>
+    <token id="000001349B47D800" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="::" scope="0000013491268750" astParent="000001349B47D320" astOperand1="000001349B47D860" astOperand2="000001349B47CB40"/>
+    <token id="000001349B47CB40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="Foundation" scope="0000013491268750" type="name" astParent="000001349B47D800"/>
+    <token id="000001349B47D320" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="::" scope="0000013491268750" astOperand1="000001349B47D800" astOperand2="000001349B47D680"/>
+    <token id="000001349B47D680" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str="Collections" scope="0000013491268750" type="name" astParent="000001349B47D320"/>
+    <token id="000001349B47C900" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="13" str=";" scope="0000013491268750"/>
+    <token id="000001349B47D620" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C0C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47D440" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str="Windows" scope="0000013491268750" type="name" astParent="000001349B47C540"/>
+    <token id="000001349B47C540" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str="::" scope="0000013491268750" astOperand1="000001349B47D440" astOperand2="000001349B47CD80"/>
+    <token id="000001349B47CD80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str="System" scope="0000013491268750" type="name" astParent="000001349B47C540"/>
+    <token id="000001349B47C3C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="14" str=";" scope="0000013491268750"/>
+    <token id="000001349B47CFC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C4E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47D6E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="Windows" scope="0000013491268750" type="name" astParent="000001349B47CBA0"/>
+    <token id="000001349B47CBA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="::" scope="0000013491268750" astParent="000001349B47C660" astOperand1="000001349B47D6E0" astOperand2="000001349B47CA80"/>
+    <token id="000001349B47CA80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="UI" scope="0000013491268750" type="name" astParent="000001349B47CBA0"/>
+    <token id="000001349B47C660" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="::" scope="0000013491268750" astOperand1="000001349B47CBA0" astOperand2="000001349B47CA20"/>
+    <token id="000001349B47CA20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str="Xaml" scope="0000013491268750" type="name" astParent="000001349B47C660"/>
+    <token id="000001349B47D080" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="15" str=";" scope="0000013491268750"/>
+    <token id="000001349B47D020" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C960" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47CF60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="Windows" scope="0000013491268750" type="name" astParent="000001349B47D560"/>
+    <token id="000001349B47D560" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="::" scope="0000013491268750" astParent="000001349B47CC00" astOperand1="000001349B47CF60" astOperand2="000001349B47D740"/>
+    <token id="000001349B47D740" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="UI" scope="0000013491268750" type="name" astParent="000001349B47D560"/>
+    <token id="000001349B47CC00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="::" scope="0000013491268750" astParent="000001349B47C180" astOperand1="000001349B47D560" astOperand2="000001349B47D7A0"/>
+    <token id="000001349B47D7A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="Xaml" scope="0000013491268750" type="name" astParent="000001349B47CC00"/>
+    <token id="000001349B47C180" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="::" scope="0000013491268750" astOperand1="000001349B47CC00" astOperand2="000001349B47CF00"/>
+    <token id="000001349B47CF00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str="Input" scope="0000013491268750" type="name" astParent="000001349B47C180"/>
+    <token id="000001349B47C300" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="16" str=";" scope="0000013491268750"/>
+    <token id="000001349B47D380" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="using" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C840" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="namespace" scope="0000013491268750" type="name"/>
+    <token id="000001349B47C240" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="Windows" scope="0000013491268750" type="name" astParent="000001349B47D0E0"/>
+    <token id="000001349B47D0E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="::" scope="0000013491268750" astParent="000001349B47C1E0" astOperand1="000001349B47C240" astOperand2="000001349B47D1A0"/>
+    <token id="000001349B47D1A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="UI" scope="0000013491268750" type="name" astParent="000001349B47D0E0"/>
+    <token id="000001349B47C1E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="::" scope="0000013491268750" astParent="000001349B47C360" astOperand1="000001349B47D0E0" astOperand2="000001349B47C2A0"/>
+    <token id="000001349B47C2A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="Xaml" scope="0000013491268750" type="name" astParent="000001349B47C1E0"/>
+    <token id="000001349B47C360" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="::" scope="0000013491268750" astOperand1="000001349B47C1E0" astOperand2="000001349B47C420"/>
+    <token id="000001349B47C420" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str="Data" scope="0000013491268750" type="name" astParent="000001349B47C360"/>
+    <token id="000001349B47D4A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="17" str=";" scope="0000013491268750"/>
+    <token id="000001349B47CC60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="String" scope="0000013491268750" type="name" astParent="000001349B47CCC0"/>
+    <token id="000001349B47CCC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="^" scope="0000013491268750" type="op" astOperand1="000001349B47CC60" astOperand2="000001349B47D500"/>
+    <token id="000001349B47C6C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="RadixButton" scope="0000013491268750" type="name" astParent="000001349B47C720"/>
+    <token id="000001349B47C720" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="::" scope="0000013491268750" astParent="000001349B47D500" astOperand1="000001349B47C6C0" astOperand2="000001349B47CEA0"/>
+    <token id="000001349B47CEA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="GetRawDisplayValue" scope="0000013491268750" type="name" astParent="000001349B47C720"/>
+    <token id="000001349B47D500" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str="(" scope="0000013491268750" link="000001349B47CDE0" astParent="000001349B47CCC0" astOperand1="000001349B47C720"/>
+    <token id="000001349B47CDE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="19" str=")" scope="0000013491268750" link="000001349B47D500"/>
+    <token id="000001349B47C7E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="20" str="{" scope="0000013491268750" link="000001349B47EAC0"/>
+    <token id="000001349B47E6A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="21" str="std" scope="0000013491268750" type="name" astParent="000001349B47D9E0"/>
+    <token id="000001349B47D9E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="21" str="::" scope="0000013491268750" astOperand1="000001349B47E6A0" astOperand2="000001349B47D200"/>
+    <token id="000001349B47CE40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="21" str="wstring" scope="0000013491268750" type="name"/>
+    <token id="000001349B47D200" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="21" str="rawValue" scope="0000013491268750" type="name" varId="1" variable="000001349165E570" astParent="000001349B47D9E0"/>
+    <token id="000001349B47C8A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="21" str=";" scope="0000013491268750"/>
+    <token id="000001349B47D260" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="String" scope="0000013491268750" type="name" astParent="000001349B47D2C0"/>
+    <token id="000001349B47D2C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="^" scope="0000013491268750" type="op" astParent="000001349B47E760" astOperand1="000001349B47D260" astOperand2="000001349B47D5C0"/>
+    <token id="000001349B47D5C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="radixContent" scope="0000013491268750" type="name" astParent="000001349B47D2C0"/>
+    <token id="000001349B47E760" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="=" scope="0000013491268750" type="op" isAssignmentOp="True" astOperand1="000001349B47D2C0" astOperand2="000001349B47DE00"/>
+    <token id="000001349B47ED60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="Content" scope="0000013491268750" type="name" astParent="000001349B47E460"/>
+    <token id="000001349B47E460" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="." scope="0000013491268750" astParent="000001349B47DE00" astOperand1="000001349B47ED60" astOperand2="000001349B47D980" originalName="->"/>
+    <token id="000001349B47D980" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="ToString" scope="0000013491268750" type="name" astParent="000001349B47E460"/>
+    <token id="000001349B47DE00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str="(" scope="0000013491268750" link="000001349B47EA00" astParent="000001349B47E760" astOperand1="000001349B47E460"/>
+    <token id="000001349B47EA00" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str=")" scope="0000013491268750" link="000001349B47DE00"/>
+    <token id="000001349B47EB80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="22" str=";" scope="0000013491268750"/>
+    <token id="000001349B47EA60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="LocalizationSettings" scope="0000013491268750" type="name" astParent="000001349B47DCE0"/>
+    <token id="000001349B47DCE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="::" scope="0000013491268750" astParent="000001349B47E4C0" astOperand1="000001349B47EA60" astOperand2="000001349B47E700"/>
+    <token id="000001349B47E700" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="GetInstance" scope="0000013491268750" type="name" function="00000134A2141810" astParent="000001349B47DCE0"/>
+    <token id="000001349B47E4C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="(" scope="0000013491268750" link="000001349B47E520" astParent="000001349B47E580" astOperand1="000001349B47DCE0"/>
+    <token id="000001349B47E520" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str=")" scope="0000013491268750" link="000001349B47E4C0"/>
+    <token id="000001349B47E580" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="." scope="0000013491268750" astParent="000001349B47E3A0" astOperand1="000001349B47E4C0" astOperand2="000001349B47DE60"/>
+    <token id="000001349B47DE60" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="RemoveGroupSeparators" scope="0000013491268750" type="name" astParent="000001349B47E580"/>
+    <token id="000001349B47E3A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="(" scope="0000013491268750" link="000001349B47E100" astOperand1="000001349B47E580" astOperand2="000001349B47DF20"/>
+    <token id="000001349B47EF40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="radixContent" scope="0000013491268750" type="name" astParent="000001349B47E0A0"/>
+    <token id="000001349B47E0A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="." scope="0000013491268750" astParent="000001349B47E1C0" astOperand1="000001349B47EF40" astOperand2="000001349B47EB20" originalName="->"/>
+    <token id="000001349B47EB20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="Data" scope="0000013491268750" type="name" astParent="000001349B47E0A0"/>
+    <token id="000001349B47E1C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="(" scope="0000013491268750" link="000001349B47EBE0" astParent="000001349B47E880" astOperand1="000001349B47E0A0"/>
+    <token id="000001349B47EBE0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str=")" scope="0000013491268750" link="000001349B47E1C0"/>
+    <token id="000001349B47E880" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="," scope="0000013491268750" astParent="000001349B47DF20" astOperand1="000001349B47E1C0" astOperand2="000001349B47E220"/>
+    <token id="000001349B47E8E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="radixContent" scope="0000013491268750" type="name" astParent="000001349B47DEC0"/>
+    <token id="000001349B47DEC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="." scope="0000013491268750" astParent="000001349B47E220" astOperand1="000001349B47E8E0" astOperand2="000001349B47E7C0" originalName="->"/>
+    <token id="000001349B47E7C0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="Length" scope="0000013491268750" type="name" astParent="000001349B47DEC0"/>
+    <token id="000001349B47E220" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="(" scope="0000013491268750" link="000001349B47EE20" astParent="000001349B47E880" astOperand1="000001349B47DEC0"/>
+    <token id="000001349B47EE20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str=")" scope="0000013491268750" link="000001349B47E220"/>
+    <token id="000001349B47DF20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="," scope="0000013491268750" astParent="000001349B47E3A0" astOperand1="000001349B47E880" astOperand2="000001349B47E5E0"/>
+    <token id="000001349B47E5E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="&amp;" scope="0000013491268750" type="op" astParent="000001349B47DF20" astOperand1="000001349B47D920"/>
+    <token id="000001349B47D920" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str="rawValue" scope="0000013491268750" type="name" varId="1" variable="000001349165E570" astParent="000001349B47E5E0"/>
+    <token id="000001349B47E100" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str=")" scope="0000013491268750" link="000001349B47E3A0"/>
+    <token id="000001349B47E820" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="23" str=";" scope="0000013491268750"/>
+    <token id="000001349B47EC40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="return" scope="0000013491268750" type="name" astOperand1="000001349B47E940"/>
+    <token id="000001349B47DBC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="ref" scope="0000013491268750" type="name"/>
+    <token id="000001349B47E400" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="new" scope="0000013491268750" type="name"/>
+    <token id="000001349B47DC20" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="String" scope="0000013491268750" type="name" function="00000134A213FEC0" astParent="000001349B47E940"/>
+    <token id="000001349B47E940" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="(" scope="0000013491268750" link="000001349B47E2E0" astParent="000001349B47EC40" astOperand1="000001349B47DC20" astOperand2="000001349B47E280"/>
+    <token id="000001349B47DD40" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="rawValue" scope="0000013491268750" type="name" varId="1" variable="000001349165E570" astParent="000001349B47EE80"/>
+    <token id="000001349B47EE80" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="." scope="0000013491268750" astParent="000001349B47E280" astOperand1="000001349B47DD40" astOperand2="000001349B47E640"/>
+    <token id="000001349B47E640" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="c_str" scope="0000013491268750" type="name" astParent="000001349B47EE80"/>
+    <token id="000001349B47E280" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str="(" scope="0000013491268750" link="000001349B47DDA0" astParent="000001349B47E940" astOperand1="000001349B47EE80"/>
+    <token id="000001349B47DDA0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str=")" scope="0000013491268750" link="000001349B47E280"/>
+    <token id="000001349B47E2E0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str=")" scope="0000013491268750" link="000001349B47E940"/>
+    <token id="000001349B47E9A0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="24" str=";" scope="0000013491268750"/>
+    <token id="000001349B47EAC0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/RadixButton.cpp" linenr="25" str="}" scope="0000013491268750" link="000001349B47C7E0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013491268750" type="Global">
+      <functionList>
+        <function id="00000134A2141810" tokenDef="000001349B47E700" name="GetInstance" type="Function"/>
+        <function id="00000134A213FEC0" tokenDef="000001349B47DC20" name="String" type="Function">
+          <arg nr="1" variable="000001349165E570"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="00000134913BDC20" type="Namespace" className="CalculatorApp" bodyStart="000001349B47B640" bodyEnd="000001349B47AB60" nestedIn="0000013491268750"/>
+    <scope id="00000134913BC190" type="Namespace" className="Controls" bodyStart="000001349B47B100" bodyEnd="000001349B47B220" nestedIn="00000134913BDC20">
+      <functionList>
+        <function id="00000134A2140DF0" tokenDef="000001349B47B2E0" name="RadixButton" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="00000134913BC080" type="Function" className="RadixButton" bodyStart="000001349B47B700" bodyEnd="000001349B47AB00" nestedIn="00000134913BC190" function="00000134A2140DF0"/>
+  </scopes>
+  <variables>
+    <var id="000001349165E570" nameToken="000001349B47DD40" typeStartToken="000001349B47DD40" typeEndToken="000001349B47E940" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>

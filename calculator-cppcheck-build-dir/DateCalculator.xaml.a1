@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3670498258">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class DateCalculator sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class DateCalculator sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\DateCalculator.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\DateCalculator.xaml.h" line="25"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Box"/>
+    <functioncall functionName="Calendar"/>
+    <functioncall functionName="ChangeCalendarSystem"/>
+    <functioncall functionName="CopyToClipboard"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="DateCalcOption_Changed"/>
+    <functioncall functionName="DateCalculator"/>
+    <functioncall functionName="DateDiffAllUnitsResultLabel"/>
+    <functioncall functionName="DateResultLabel"/>
+    <functioncall functionName="FindName"/>
+    <functioncall functionName="Focus"/>
+    <functioncall functionName="Format"/>
+    <functioncall functionName="FromElement"/>
+    <functioncall functionName="GetApplicationViewIdForWindow"/>
+    <functioncall functionName="GetCalendarIdentifier"/>
+    <functioncall functionName="GetDateTime"/>
+    <functioncall functionName="GetFirstDayOfWeek"/>
+    <functioncall functionName="GetForCurrentThread"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetLocaleName"/>
+    <functioncall functionName="GetName"/>
+    <functioncall functionName="GetRegionalSettingsAwareDateTimeFormatter"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="Gregorian"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="IsAddMode"/>
+    <functioncall functionName="IsCalendarOpen"/>
+    <functioncall functionName="IsDateDiffMode"/>
+    <functioncall functionName="LiveRegionChanged"/>
+    <functioncall functionName="LogDateAddSubtractModeUsed"/>
+    <functioncall functionName="LogDateDifferenceModeUsed"/>
+    <functioncall functionName="MaxDate"/>
+    <functioncall functionName="MinDate"/>
+    <functioncall functionName="PlaceholderText"/>
+    <functioncall functionName="Programmatic"/>
+    <functioncall functionName="RaiseAutomationEvent"/>
+    <functioncall functionName="RaiseLiveRegionChangedAutomationEvent"/>
+    <functioncall functionName="ReselectCalendarDate"/>
+    <functioncall functionName="SelectionChangedEventHandler"/>
+    <functioncall functionName="Target"/>
+    <functioncall functionName="Text"/>
+    <functioncall functionName="TwentyFourHour"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="c_maxYear"/>
+    <functioncall functionName="c_minYear"/>
+    <functioncall functionName="dateTime"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="maxYear"/>
+    <functioncall functionName="minYear"/>
+    <functioncall functionName="placeholderText"/>
+    <functioncall functionName="resultTextBlock"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="today"/>
+  </FileInfo>
+</analyzerinfo>

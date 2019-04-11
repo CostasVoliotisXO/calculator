@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="317182822">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryItemsControl sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryItemsControl sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.h" line="8"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryContentPresenter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryContentPresenter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.h" line="19"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryContentPresenterAP sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryContentPresenterAP sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.h" line="29"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\SupplementaryItemsControl.h" line="37"/>
+        </error>
+</analyzerinfo>

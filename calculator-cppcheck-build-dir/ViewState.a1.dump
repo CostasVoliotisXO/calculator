@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h"/>
+    <file index="3" name="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;ViewState.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="8" str="{"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="ViewState"/>
+    <tok fileIndex="0" linenr="10" str="{"/>
+    <tok fileIndex="0" linenr="11" str="Platform"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="StringReference"/>
+    <tok fileIndex="0" linenr="11" str="Snap"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str="L"/>
+    <tok fileIndex="0" linenr="11" str="&quot;Snap&quot;"/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="12" str="Platform"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="StringReference"/>
+    <tok fileIndex="0" linenr="12" str="DockedView"/>
+    <tok fileIndex="0" linenr="12" str="("/>
+    <tok fileIndex="0" linenr="12" str="L"/>
+    <tok fileIndex="0" linenr="12" str="&quot;DockedView&quot;"/>
+    <tok fileIndex="0" linenr="12" str=")"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="14" str="bool"/>
+    <tok fileIndex="0" linenr="14" str="IsValidViewState"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="Platform"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="String"/>
+    <tok fileIndex="0" linenr="14" str="^"/>
+    <tok fileIndex="0" linenr="14" str="viewState"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="16" str="return"/>
+    <tok fileIndex="0" linenr="16" str="viewState"/>
+    <tok fileIndex="0" linenr="16" str="-&gt;"/>
+    <tok fileIndex="0" linenr="16" str="Equals"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="ViewState"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Snap"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str="||"/>
+    <tok fileIndex="0" linenr="16" str="viewState"/>
+    <tok fileIndex="0" linenr="16" str="-&gt;"/>
+    <tok fileIndex="0" linenr="16" str="Equals"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="ViewState"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="DockedView"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="17" str="}"/>
+    <tok fileIndex="0" linenr="18" str="}"/>
+    <tok fileIndex="0" linenr="19" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="5" str="#include &quot;ViewState.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="7" str="#include &quot;targetver.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="9" str="#ifndef WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="10" str="#define WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="11" str="#endif"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="15" str="#define NOMINMAX"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="17" str="#include &lt;windows.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="19" str="#include &lt;collection.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="20" str="#include &lt;unordered_map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="21" str="#include &lt;map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="22" str="#include &lt;vector&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="23" str="#include &lt;ppltasks.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="24" str="#include &lt;pplawait.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="25" str="#include &lt;memory&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="26" str="#include &lt;mutex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="27" str="#include &lt;cassert&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="28" str="#include &lt;locale&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="29" str="#include &lt;sal.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="30" str="#include &lt;sstream&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="31" str="#include &lt;concrt.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="32" str="#include &lt;regex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="33" str="#include &lt;iterator&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="35" str="#include &quot;winrt/base.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="36" str="#include &quot;winrt/Windows.Foundation.Diagnostics.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="37" str="#include &quot;winrt/Windows.Globalization.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="38" str="#include &quot;winrt/Windows.Globalization.DateTimeFormatting.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="39" str="#include &quot;winrt/Windows.System.UserProfile.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="40" str="#include &quot;winrt/Windows.UI.Xaml.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h" linenr="11" str="#include &lt;SDKDDKVer.h&gt;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A3466E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467750" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="CalculatorApp" scope="0000013491279920" type="name" astParent="00000134A34672D0"/>
+    <token id="00000134A34672D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="{" scope="0000013491279920" link="00000134A346ADB0" astOperand1="00000134A3467750" astOperand2="00000134A3466D30"/>
+    <token id="00000134A3468110" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="Common" scope="0000013491279920" type="name" astParent="00000134A3466D30"/>
+    <token id="00000134A3466D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="{" scope="000001349127A1A0" link="00000134A346AD50" astParent="00000134A34672D0" astOperand1="00000134A3467ED0"/>
+    <token id="00000134A346AD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="}" scope="000001349127A1A0" link="00000134A3466D30"/>
+    <token id="00000134A346ADB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="}" scope="0000013491279920" link="00000134A34672D0"/>
+    <token id="00000134A3467FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="6" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="6" str="CalculatorApp" scope="0000013491279920" type="name"/>
+    <token id="00000134A3468050" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="7" str="{" scope="0000013491279920" link="00000134A3468230"/>
+    <token id="00000134A3467810" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="8" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A3466DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="8" str="ViewState" scope="0000013491279920" type="name"/>
+    <token id="00000134A3466910" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="9" str="{" scope="0000013491279920" link="00000134A3469430"/>
+    <token id="00000134A3466970" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str="extern" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467510" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str="Platform" scope="0000013491279920" type="name" astParent="00000134A34669D0"/>
+    <token id="00000134A34669D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str="::" scope="0000013491279920" astOperand1="00000134A3467510" astOperand2="00000134A3466BB0"/>
+    <token id="00000134A3466AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str="StringReference" scope="0000013491279920" type="name"/>
+    <token id="00000134A3466BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str="Snap" scope="0000013491279920" type="name" varId="1" astParent="00000134A34669D0"/>
+    <token id="00000134A3467570" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="10" str=";" scope="0000013491279920"/>
+    <token id="00000134A3467870" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str="extern" scope="0000013491279920" type="name"/>
+    <token id="00000134A34678D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str="Platform" scope="0000013491279920" type="name" astParent="00000134A34679F0"/>
+    <token id="00000134A34679F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str="::" scope="0000013491279920" astOperand1="00000134A34678D0" astOperand2="00000134A3467A50"/>
+    <token id="00000134A3467690" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str="StringReference" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str="DockedView" scope="0000013491279920" type="name" varId="2" astParent="00000134A34679F0"/>
+    <token id="00000134A3467AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="11" str=";" scope="0000013491279920"/>
+    <token id="00000134A3469490" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="bool" scope="0000013491279920" type="name"/>
+    <token id="00000134A3468E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="IsValidViewState" scope="0000013491279920" type="name" function="00000134A2141420" astParent="00000134A34686B0"/>
+    <token id="00000134A34686B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="(" scope="0000013491279920" link="00000134A3469850" astOperand1="00000134A3468E90" astOperand2="00000134A3468D10" valueType-type="bool"/>
+    <token id="00000134A3469670" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="Platform" scope="0000013491279920" type="name" astParent="00000134A3468290"/>
+    <token id="00000134A3468290" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="::" scope="0000013491279920" astParent="00000134A3468D10" astOperand1="00000134A3469670" astOperand2="00000134A3468AD0"/>
+    <token id="00000134A3468AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="String" scope="0000013491279920" type="name" astParent="00000134A3468290"/>
+    <token id="00000134A3468D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="^" scope="0000013491279920" type="op" astParent="00000134A34686B0" astOperand1="00000134A3468290" astOperand2="00000134A3469550"/>
+    <token id="00000134A3469550" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str="viewState" scope="0000013491279920" type="name" astParent="00000134A3468D10"/>
+    <token id="00000134A3469850" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str=")" scope="0000013491279920" link="00000134A34686B0"/>
+    <token id="00000134A3468C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="13" str=";" scope="0000013491279920"/>
+    <token id="00000134A3469430" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="14" str="}" scope="0000013491279920" link="00000134A3466910"/>
+    <token id="00000134A3468230" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.h" linenr="15" str="}" scope="0000013491279920" link="00000134A3468050"/>
+    <token id="00000134A3468890" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="7" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A34684D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="7" str="CalculatorApp" scope="0000013491279920" type="name"/>
+    <token id="00000134A3468F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="8" str="{" scope="0000013491279C50" link="00000134A3469910"/>
+    <token id="00000134A3468B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="9" str="namespace" scope="0000013491279C50" type="name"/>
+    <token id="00000134A3468590" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="9" str="ViewState" scope="0000013491279C50" type="name"/>
+    <token id="00000134A34687D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="10" str="{" scope="0000013491541DA0" link="00000134A3469FD0"/>
+    <token id="00000134A3468530" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="Platform" scope="0000013491541DA0" type="name" astParent="00000134A34688F0"/>
+    <token id="00000134A34688F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="::" scope="0000013491541DA0" astParent="00000134A34682F0" astOperand1="00000134A3468530" astOperand2="00000134A34685F0"/>
+    <token id="00000134A34690D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="StringReference" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A34685F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="Snap" scope="0000013491541DA0" type="name" varId="3" variable="000001349DA4F1B0" astParent="00000134A34688F0"/>
+    <token id="00000134A34682F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="(" scope="0000013491541DA0" link="00000134A3468DD0" astOperand1="00000134A34688F0" astOperand2="00000134A3468830"/>
+    <token id="00000134A3468830" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str="&quot;Snap&quot;" scope="0000013491541DA0" type="string" strlen="4" values="0000013496E87EE0" astParent="00000134A34682F0" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="00000134A3468DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str=")" scope="0000013491541DA0" link="00000134A34682F0"/>
+    <token id="00000134A34683B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="11" str=";" scope="0000013491541DA0"/>
+    <token id="00000134A3469790" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="Platform" scope="0000013491541DA0" type="name" astParent="00000134A34695B0"/>
+    <token id="00000134A34695B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="::" scope="0000013491541DA0" astParent="00000134A3468470" astOperand1="00000134A3469790" astOperand2="00000134A3468BF0"/>
+    <token id="00000134A3468350" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="StringReference" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A3468BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="DockedView" scope="0000013491541DA0" type="name" varId="4" variable="000001349DA4F300" astParent="00000134A34695B0"/>
+    <token id="00000134A3468470" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="(" scope="0000013491541DA0" link="00000134A34694F0" astOperand1="00000134A34695B0" astOperand2="00000134A3468CB0"/>
+    <token id="00000134A3468CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str="&quot;DockedView&quot;" scope="0000013491541DA0" type="string" strlen="10" values="0000013496E87DA0" astParent="00000134A3468470" valueType-type="short" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="wchar_t"/>
+    <token id="00000134A34694F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str=")" scope="0000013491541DA0" link="00000134A3468470"/>
+    <token id="00000134A3468E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="12" str=";" scope="0000013491541DA0"/>
+    <token id="00000134A3469070" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="bool" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A34696D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="IsValidViewState" scope="0000013491541DA0" type="name" function="00000134A2141420" astParent="00000134A3469250"/>
+    <token id="00000134A3469250" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="(" scope="0000013491541DA0" link="00000134A3468B90" astOperand1="00000134A34696D0" astOperand2="00000134A3468650" valueType-type="bool"/>
+    <token id="00000134A34693D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="Platform" scope="0000013491541DA0" type="name" astParent="00000134A3468410"/>
+    <token id="00000134A3468410" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="::" scope="0000013491541DA0" astParent="00000134A3468650" astOperand1="00000134A34693D0" astOperand2="00000134A34698B0"/>
+    <token id="00000134A34698B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="String" scope="0000013491541DA0" type="name" astParent="00000134A3468410"/>
+    <token id="00000134A3468650" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="^" scope="0000013491541DA0" type="op" astParent="00000134A3469250" astOperand1="00000134A3468410" astOperand2="00000134A3468710"/>
+    <token id="00000134A3468710" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str="viewState" scope="0000013491541DA0" type="name" astParent="00000134A3468650"/>
+    <token id="00000134A3468B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="14" str=")" scope="0000013491541DA0" link="00000134A3469250"/>
+    <token id="00000134A3468770" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="15" str="{" scope="000001349124C180" link="00000134A3469A30"/>
+    <token id="00000134A34689B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="return" scope="000001349124C180" type="name" astOperand1="00000134A3469010"/>
+    <token id="00000134A3468EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="viewState" scope="000001349124C180" type="name" astParent="00000134A3468A10"/>
+    <token id="00000134A3468A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="." scope="000001349124C180" astParent="00000134A3469610" astOperand1="00000134A3468EF0" astOperand2="00000134A3468D70" originalName="->"/>
+    <token id="00000134A3468D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="Equals" scope="000001349124C180" type="name" astParent="00000134A3468A10"/>
+    <token id="00000134A3469610" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="(" scope="000001349124C180" link="00000134A3468A70" astParent="00000134A3469010" astOperand1="00000134A3468A10" astOperand2="00000134A3468FB0"/>
+    <token id="00000134A3468170" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="ViewState" scope="000001349124C180" type="name" astParent="00000134A3468FB0"/>
+    <token id="00000134A3468FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="::" scope="000001349124C180" astParent="00000134A3469610" astOperand1="00000134A3468170" astOperand2="00000134A3469730"/>
+    <token id="00000134A3469730" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="Snap" scope="000001349124C180" type="name" varId="3" variable="000001349DA4F1B0" astParent="00000134A3468FB0"/>
+    <token id="00000134A3468A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str=")" scope="000001349124C180" link="00000134A3469610"/>
+    <token id="00000134A3469010" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="||" scope="000001349124C180" type="op" isLogicalOp="True" astParent="00000134A34689B0" astOperand1="00000134A3469610" astOperand2="00000134A34692B0" valueType-type="bool"/>
+    <token id="00000134A3469130" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="viewState" scope="000001349124C180" type="name" astParent="00000134A3469190"/>
+    <token id="00000134A3469190" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="." scope="000001349124C180" astParent="00000134A34692B0" astOperand1="00000134A3469130" astOperand2="00000134A34691F0" originalName="->"/>
+    <token id="00000134A34691F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="Equals" scope="000001349124C180" type="name" astParent="00000134A3469190"/>
+    <token id="00000134A34692B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="(" scope="000001349124C180" link="00000134A34681D0" astParent="00000134A3469010" astOperand1="00000134A3469190" astOperand2="00000134A3469370"/>
+    <token id="00000134A3469310" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="ViewState" scope="000001349124C180" type="name" astParent="00000134A3469370"/>
+    <token id="00000134A3469370" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="::" scope="000001349124C180" astParent="00000134A34692B0" astOperand1="00000134A3469310" astOperand2="00000134A34697F0"/>
+    <token id="00000134A34697F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str="DockedView" scope="000001349124C180" type="name" varId="4" variable="000001349DA4F300" astParent="00000134A3469370"/>
+    <token id="00000134A34681D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str=")" scope="000001349124C180" link="00000134A34692B0"/>
+    <token id="00000134A3469CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="16" str=";" scope="000001349124C180"/>
+    <token id="00000134A3469A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="17" str="}" scope="000001349124C180" link="00000134A3468770"/>
+    <token id="00000134A3469FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="18" str="}" scope="0000013491541DA0" link="00000134A34687D0"/>
+    <token id="00000134A3469910" file="C:/sample repositories/calculator-master/src/CalcViewModel/ViewState.cpp" linenr="19" str="}" scope="0000013491279C50" link="00000134A3468F50"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013491279920" type="Global"/>
+    <scope id="0000013491279C50" type="Namespace" className="CalculatorApp" bodyStart="00000134A3468F50" bodyEnd="00000134A3469910" nestedIn="0000013491279920"/>
+    <scope id="000001349127A1A0" type="Namespace" className="Common" bodyStart="00000134A3466D30" bodyEnd="00000134A346AD50" nestedIn="0000013491279C50"/>
+    <scope id="0000013491541DA0" type="Namespace" className="ViewState" bodyStart="00000134A34687D0" bodyEnd="00000134A3469FD0" nestedIn="0000013491279C50">
+      <functionList>
+        <function id="00000134A2141420" tokenDef="00000134A3468E90" name="IsValidViewState" type="Function">
+          <arg nr="1" variable="000001349DA4F220"/>
+        </function>
+      </functionList>
+      <varlist>
+        <var id="000001349DA4F1B0"/>
+        <var id="000001349DA4F300"/>
+      </varlist>
+    </scope>
+    <scope id="000001349124C180" type="Function" className="IsValidViewState" bodyStart="00000134A3468770" bodyEnd="00000134A3469A30" nestedIn="0000013491541DA0" function="00000134A2141420"/>
+  </scopes>
+  <variables>
+    <var id="000001349DA4F1B0" nameToken="00000134A34685F0" typeStartToken="00000134A3468530" typeEndToken="00000134A34690D0" access="Namespace" scope="0000013491541DA0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA4F220" nameToken="00000134A3468710" typeStartToken="00000134A34693D0" typeEndToken="00000134A3468650" access="Argument" scope="000001349124C180" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA4F300" nameToken="00000134A3468BF0" typeStartToken="00000134A3469790" typeEndToken="00000134A3468350" access="Namespace" scope="0000013491541DA0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="0000013496E87EE0">
+      <value tokvalue="00000134A3468830" known="true"/>
+    </values>
+    <values id="0000013496E87DA0">
+      <value tokvalue="00000134A3468CB0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

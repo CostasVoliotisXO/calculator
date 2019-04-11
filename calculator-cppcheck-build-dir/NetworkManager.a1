@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="403815760">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NetworkManager sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NetworkManager sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\NetworkManager.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\NetworkManager.h" line="17"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ConvertCostInfoToBehavior"/>
+    <functioncall functionName="GetConnectionCost"/>
+    <functioncall functionName="GetInternetConnectionProfile"/>
+    <functioncall functionName="GetNetworkAccessBehavior"/>
+    <functioncall functionName="GetNetworkConnectivityLevel"/>
+    <functioncall functionName="NetworkBehaviorChanged"/>
+    <functioncall functionName="NetworkManager"/>
+    <functioncall functionName="NetworkStatusChangedEventHandler"/>
+    <functioncall functionName="Offline"/>
+    <functioncall functionName="OnNetworkStatusChange"/>
+    <functioncall functionName="Same"/>
+    <functioncall functionName="connectionCost"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="this"/>
+  </FileInfo>
+</analyzerinfo>

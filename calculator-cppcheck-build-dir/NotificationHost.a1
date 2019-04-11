@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1224829734">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NotificationHost.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NotificationHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NotificationHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NotificationHost.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NotificationHost.h" line="13"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ActivityId"/>
+    <functioncall functionName="Announcement"/>
+    <functioncall functionName="FromElement"/>
+    <functioncall functionName="GetWindowsNotificationKind"/>
+    <functioncall functionName="GetWindowsNotificationProcessing"/>
+    <functioncall functionName="IsMethodPresent"/>
+    <functioncall functionName="Kind"/>
+    <functioncall functionName="NarratorAnnouncement"/>
+    <functioncall functionName="NotificationHost"/>
+    <functioncall functionName="Processing"/>
+    <functioncall functionName="RaiseNotificationEvent"/>
+    <functioncall functionName="TextBlock"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="customKindType"/>
+    <functioncall functionName="customProcessingType"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_host"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="switch"/>
+  </FileInfo>
+</analyzerinfo>

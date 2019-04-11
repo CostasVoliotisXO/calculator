@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="589813728">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\LiveRegionHost.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class LiveRegionHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class LiveRegionHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\LiveRegionHost.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\LiveRegionHost.h" line="19"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Announcement"/>
+    <functioncall functionName="Assertive"/>
+    <functioncall functionName="FromElement"/>
+    <functioncall functionName="LiveRegionChanged"/>
+    <functioncall functionName="LiveRegionHost"/>
+    <functioncall functionName="NarratorAnnouncement"/>
+    <functioncall functionName="RaiseAutomationEvent"/>
+    <functioncall functionName="SetLiveSetting"/>
+    <functioncall functionName="SetName"/>
+    <functioncall functionName="TextBlock"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_host"/>
+    <functioncall functionName="nullptr"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4018403869">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class OperandTextBox sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class OperandTextBox sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\OperandTextBox.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\OperandTextBox.h" line="10"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="GetParent"/>
+    <functioncall functionName="OnApplyTemplate"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

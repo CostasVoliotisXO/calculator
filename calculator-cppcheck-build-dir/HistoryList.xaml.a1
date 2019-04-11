@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1758794917">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class HistoryList sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class HistoryList sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\HistoryList.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\HistoryList.xaml.h" line="20"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ClickedItem"/>
+    <functioncall functionName="CreateTitleBarHelperIfNotDocked"/>
+    <functioncall functionName="CustomTitleBar"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="DeleteItem"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetFlowDirection"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GridLength"/>
+    <functioncall functionName="HistoryList"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="Items"/>
+    <functioncall functionName="RowHeight"/>
+    <functioncall functionName="ScrollIntoView"/>
+    <functioncall functionName="ShowItem"/>
+    <functioncall functionName="Size"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="clickedItem"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="swipedItem"/>
+  </FileInfo>
+</analyzerinfo>

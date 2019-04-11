@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2745558348">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorButton sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorButton sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\CalculatorButton.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\CalculatorButton.h" line="13"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="AuditoryFeedback"/>
+    <functioncall functionName="Binding"/>
+    <functioncall functionName="ButtonId"/>
+    <functioncall functionName="CalculatorButton"/>
+    <functioncall functionName="CalculatorButtonPressedEventArgs"/>
+    <functioncall functionName="CommandProperty"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_CALLBACK"/>
+    <functioncall functionName="HoverBackground"/>
+    <functioncall functionName="HoverForeground"/>
+    <functioncall functionName="NumbersAndOperatorsEnum"/>
+    <functioncall functionName="OnKeyDown"/>
+    <functioncall functionName="OnKeyUp"/>
+    <functioncall functionName="PressBackground"/>
+    <functioncall functionName="PressForeground"/>
+    <functioncall functionName="PropertyPath"/>
+    <functioncall functionName="SetBinding"/>
+    <functioncall functionName="commandBinding"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="return"/>
+  </FileInfo>
+</analyzerinfo>

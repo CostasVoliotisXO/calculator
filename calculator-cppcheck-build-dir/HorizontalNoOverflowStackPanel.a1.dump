@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="//"/>
+    <tok fileIndex="0" linenr="5" str="// HorizontalNoOverflowStackPanel.xaml.cpp"/>
+    <tok fileIndex="0" linenr="6" str="// Implementation of the HorizontalNoOverflowStackPanel class"/>
+    <tok fileIndex="0" linenr="7" str="//"/>
+    <tok fileIndex="0" linenr="9" str="#"/>
+    <tok fileIndex="0" linenr="9" str="include"/>
+    <tok fileIndex="0" linenr="9" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="10" str="#"/>
+    <tok fileIndex="0" linenr="10" str="include"/>
+    <tok fileIndex="0" linenr="10" str="&quot;HorizontalNoOverflowStackPanel.h&quot;"/>
+    <tok fileIndex="0" linenr="12" str="using"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="std"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="13" str="using"/>
+    <tok fileIndex="0" linenr="13" str="namespace"/>
+    <tok fileIndex="0" linenr="13" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="Controls"/>
+    <tok fileIndex="0" linenr="13" str=";"/>
+    <tok fileIndex="0" linenr="14" str="using"/>
+    <tok fileIndex="0" linenr="14" str="namespace"/>
+    <tok fileIndex="0" linenr="14" str="Windows"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="Foundation"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="16" str="Size"/>
+    <tok fileIndex="0" linenr="16" str="HorizontalNoOverflowStackPanel"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="MeasureOverride"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="Size"/>
+    <tok fileIndex="0" linenr="16" str="availableSize"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="float"/>
+    <tok fileIndex="0" linenr="18" str="maxHeight"/>
+    <tok fileIndex="0" linenr="18" str="="/>
+    <tok fileIndex="0" linenr="18" str="0"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="19" str="float"/>
+    <tok fileIndex="0" linenr="19" str="width"/>
+    <tok fileIndex="0" linenr="19" str="="/>
+    <tok fileIndex="0" linenr="19" str="0"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="for"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="auto"/>
+    <tok fileIndex="0" linenr="20" str="child"/>
+    <tok fileIndex="0" linenr="20" str=":"/>
+    <tok fileIndex="0" linenr="20" str="Children"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="21" str="{"/>
+    <tok fileIndex="0" linenr="22" str="child"/>
+    <tok fileIndex="0" linenr="22" str="-&gt;"/>
+    <tok fileIndex="0" linenr="22" str="Measure"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="Size"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="numeric_limits"/>
+    <tok fileIndex="0" linenr="22" str="&lt;"/>
+    <tok fileIndex="0" linenr="22" str="float"/>
+    <tok fileIndex="0" linenr="22" str="&gt;"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="infinity"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=","/>
+    <tok fileIndex="0" linenr="22" str="numeric_limits"/>
+    <tok fileIndex="0" linenr="22" str="&lt;"/>
+    <tok fileIndex="0" linenr="22" str="float"/>
+    <tok fileIndex="0" linenr="22" str="&gt;"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="infinity"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="maxHeight"/>
+    <tok fileIndex="0" linenr="23" str="="/>
+    <tok fileIndex="0" linenr="23" str="max"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="maxHeight"/>
+    <tok fileIndex="0" linenr="23" str=","/>
+    <tok fileIndex="0" linenr="23" str="child"/>
+    <tok fileIndex="0" linenr="23" str="-&gt;"/>
+    <tok fileIndex="0" linenr="23" str="DesiredSize"/>
+    <tok fileIndex="0" linenr="23" str="."/>
+    <tok fileIndex="0" linenr="23" str="Height"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="width"/>
+    <tok fileIndex="0" linenr="24" str="+="/>
+    <tok fileIndex="0" linenr="24" str="child"/>
+    <tok fileIndex="0" linenr="24" str="-&gt;"/>
+    <tok fileIndex="0" linenr="24" str="DesiredSize"/>
+    <tok fileIndex="0" linenr="24" str="."/>
+    <tok fileIndex="0" linenr="24" str="Width"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+    <tok fileIndex="0" linenr="26" str="return"/>
+    <tok fileIndex="0" linenr="26" str="Size"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="min"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="width"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="availableSize"/>
+    <tok fileIndex="0" linenr="26" str="."/>
+    <tok fileIndex="0" linenr="26" str="Width"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="min"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="availableSize"/>
+    <tok fileIndex="0" linenr="26" str="."/>
+    <tok fileIndex="0" linenr="26" str="Height"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="maxHeight"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="27" str="}"/>
+    <tok fileIndex="0" linenr="29" str="bool"/>
+    <tok fileIndex="0" linenr="29" str="HorizontalNoOverflowStackPanel"/>
+    <tok fileIndex="0" linenr="29" str="::"/>
+    <tok fileIndex="0" linenr="29" str="ShouldPrioritizeLastItem"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="30" str="{"/>
+    <tok fileIndex="0" linenr="31" str="return"/>
+    <tok fileIndex="0" linenr="31" str="false"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="32" str="}"/>
+    <tok fileIndex="0" linenr="34" str="Size"/>
+    <tok fileIndex="0" linenr="34" str="HorizontalNoOverflowStackPanel"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="ArrangeOverride"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="Size"/>
+    <tok fileIndex="0" linenr="34" str="finalSize"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="35" str="{"/>
+    <tok fileIndex="0" linenr="36" str="if"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="Children"/>
+    <tok fileIndex="0" linenr="36" str="-&gt;"/>
+    <tok fileIndex="0" linenr="36" str="Size"/>
+    <tok fileIndex="0" linenr="36" str="=="/>
+    <tok fileIndex="0" linenr="36" str="0"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="37" str="{"/>
+    <tok fileIndex="0" linenr="38" str="return"/>
+    <tok fileIndex="0" linenr="38" str="finalSize"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="39" str="}"/>
+    <tok fileIndex="0" linenr="41" str="float"/>
+    <tok fileIndex="0" linenr="41" str="posX"/>
+    <tok fileIndex="0" linenr="41" str="="/>
+    <tok fileIndex="0" linenr="41" str="0"/>
+    <tok fileIndex="0" linenr="41" str=";"/>
+    <tok fileIndex="0" linenr="42" str="auto"/>
+    <tok fileIndex="0" linenr="42" str="lastChild"/>
+    <tok fileIndex="0" linenr="42" str="="/>
+    <tok fileIndex="0" linenr="42" str="Children"/>
+    <tok fileIndex="0" linenr="42" str="-&gt;"/>
+    <tok fileIndex="0" linenr="42" str="GetAt"/>
+    <tok fileIndex="0" linenr="42" str="("/>
+    <tok fileIndex="0" linenr="42" str="Children"/>
+    <tok fileIndex="0" linenr="42" str="-&gt;"/>
+    <tok fileIndex="0" linenr="42" str="Size"/>
+    <tok fileIndex="0" linenr="42" str="-"/>
+    <tok fileIndex="0" linenr="42" str="1"/>
+    <tok fileIndex="0" linenr="42" str=")"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="float"/>
+    <tok fileIndex="0" linenr="43" str="lastChildWidth"/>
+    <tok fileIndex="0" linenr="43" str="="/>
+    <tok fileIndex="0" linenr="43" str="0"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="44" str="if"/>
+    <tok fileIndex="0" linenr="44" str="("/>
+    <tok fileIndex="0" linenr="44" str="Children"/>
+    <tok fileIndex="0" linenr="44" str="-&gt;"/>
+    <tok fileIndex="0" linenr="44" str="Size"/>
+    <tok fileIndex="0" linenr="44" str="&gt;"/>
+    <tok fileIndex="0" linenr="44" str="2"/>
+    <tok fileIndex="0" linenr="44" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="44" str="ShouldPrioritizeLastItem"/>
+    <tok fileIndex="0" linenr="44" str="("/>
+    <tok fileIndex="0" linenr="44" str=")"/>
+    <tok fileIndex="0" linenr="44" str=")"/>
+    <tok fileIndex="0" linenr="45" str="{"/>
+    <tok fileIndex="0" linenr="46" str="lastChildWidth"/>
+    <tok fileIndex="0" linenr="46" str="="/>
+    <tok fileIndex="0" linenr="46" str="lastChild"/>
+    <tok fileIndex="0" linenr="46" str="-&gt;"/>
+    <tok fileIndex="0" linenr="46" str="DesiredSize"/>
+    <tok fileIndex="0" linenr="46" str="."/>
+    <tok fileIndex="0" linenr="46" str="Width"/>
+    <tok fileIndex="0" linenr="46" str=";"/>
+    <tok fileIndex="0" linenr="47" str="}"/>
+    <tok fileIndex="0" linenr="48" str="for"/>
+    <tok fileIndex="0" linenr="48" str="("/>
+    <tok fileIndex="0" linenr="48" str="auto"/>
+    <tok fileIndex="0" linenr="48" str="item"/>
+    <tok fileIndex="0" linenr="48" str=":"/>
+    <tok fileIndex="0" linenr="48" str="Children"/>
+    <tok fileIndex="0" linenr="48" str=")"/>
+    <tok fileIndex="0" linenr="49" str="{"/>
+    <tok fileIndex="0" linenr="50" str="auto"/>
+    <tok fileIndex="0" linenr="50" str="widthAvailable"/>
+    <tok fileIndex="0" linenr="50" str="="/>
+    <tok fileIndex="0" linenr="50" str="finalSize"/>
+    <tok fileIndex="0" linenr="50" str="."/>
+    <tok fileIndex="0" linenr="50" str="Width"/>
+    <tok fileIndex="0" linenr="50" str="-"/>
+    <tok fileIndex="0" linenr="50" str="posX"/>
+    <tok fileIndex="0" linenr="50" str=";"/>
+    <tok fileIndex="0" linenr="51" str="if"/>
+    <tok fileIndex="0" linenr="51" str="("/>
+    <tok fileIndex="0" linenr="51" str="item"/>
+    <tok fileIndex="0" linenr="51" str="!="/>
+    <tok fileIndex="0" linenr="51" str="lastChild"/>
+    <tok fileIndex="0" linenr="51" str=")"/>
+    <tok fileIndex="0" linenr="52" str="{"/>
+    <tok fileIndex="0" linenr="53" str="widthAvailable"/>
+    <tok fileIndex="0" linenr="53" str="-="/>
+    <tok fileIndex="0" linenr="53" str="lastChildWidth"/>
+    <tok fileIndex="0" linenr="53" str=";"/>
+    <tok fileIndex="0" linenr="54" str="}"/>
+    <tok fileIndex="0" linenr="55" str="float"/>
+    <tok fileIndex="0" linenr="55" str="itemWidth"/>
+    <tok fileIndex="0" linenr="55" str="="/>
+    <tok fileIndex="0" linenr="55" str="item"/>
+    <tok fileIndex="0" linenr="55" str="-&gt;"/>
+    <tok fileIndex="0" linenr="55" str="DesiredSize"/>
+    <tok fileIndex="0" linenr="55" str="."/>
+    <tok fileIndex="0" linenr="55" str="Width"/>
+    <tok fileIndex="0" linenr="55" str=";"/>
+    <tok fileIndex="0" linenr="56" str="if"/>
+    <tok fileIndex="0" linenr="56" str="("/>
+    <tok fileIndex="0" linenr="56" str="widthAvailable"/>
+    <tok fileIndex="0" linenr="56" str="&gt;"/>
+    <tok fileIndex="0" linenr="56" str="0"/>
+    <tok fileIndex="0" linenr="56" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="56" str="itemWidth"/>
+    <tok fileIndex="0" linenr="56" str="&lt;="/>
+    <tok fileIndex="0" linenr="56" str="widthAvailable"/>
+    <tok fileIndex="0" linenr="56" str=")"/>
+    <tok fileIndex="0" linenr="57" str="{"/>
+    <tok fileIndex="0" linenr="58" str="//stack the items horizontally (left to right)"/>
+    <tok fileIndex="0" linenr="59" str="item"/>
+    <tok fileIndex="0" linenr="59" str="-&gt;"/>
+    <tok fileIndex="0" linenr="59" str="Arrange"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str="Rect"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str="posX"/>
+    <tok fileIndex="0" linenr="59" str=","/>
+    <tok fileIndex="0" linenr="59" str="0"/>
+    <tok fileIndex="0" linenr="59" str=","/>
+    <tok fileIndex="0" linenr="59" str="itemWidth"/>
+    <tok fileIndex="0" linenr="59" str=","/>
+    <tok fileIndex="0" linenr="59" str="finalSize"/>
+    <tok fileIndex="0" linenr="59" str="."/>
+    <tok fileIndex="0" linenr="59" str="Height"/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="59" str=";"/>
+    <tok fileIndex="0" linenr="60" str="posX"/>
+    <tok fileIndex="0" linenr="60" str="+="/>
+    <tok fileIndex="0" linenr="60" str="item"/>
+    <tok fileIndex="0" linenr="60" str="-&gt;"/>
+    <tok fileIndex="0" linenr="60" str="RenderSize"/>
+    <tok fileIndex="0" linenr="60" str="."/>
+    <tok fileIndex="0" linenr="60" str="Width"/>
+    <tok fileIndex="0" linenr="60" str=";"/>
+    <tok fileIndex="0" linenr="61" str="}"/>
+    <tok fileIndex="0" linenr="62" str="else"/>
+    <tok fileIndex="0" linenr="63" str="{"/>
+    <tok fileIndex="0" linenr="64" str="//Not display the item"/>
+    <tok fileIndex="0" linenr="65" str="item"/>
+    <tok fileIndex="0" linenr="65" str="-&gt;"/>
+    <tok fileIndex="0" linenr="65" str="Arrange"/>
+    <tok fileIndex="0" linenr="65" str="("/>
+    <tok fileIndex="0" linenr="65" str="Rect"/>
+    <tok fileIndex="0" linenr="65" str="("/>
+    <tok fileIndex="0" linenr="65" str="0"/>
+    <tok fileIndex="0" linenr="65" str=","/>
+    <tok fileIndex="0" linenr="65" str="0"/>
+    <tok fileIndex="0" linenr="65" str=","/>
+    <tok fileIndex="0" linenr="65" str="0"/>
+    <tok fileIndex="0" linenr="65" str=","/>
+    <tok fileIndex="0" linenr="65" str="0"/>
+    <tok fileIndex="0" linenr="65" str=")"/>
+    <tok fileIndex="0" linenr="65" str=")"/>
+    <tok fileIndex="0" linenr="65" str=";"/>
+    <tok fileIndex="0" linenr="66" str="}"/>
+    <tok fileIndex="0" linenr="67" str="}"/>
+    <tok fileIndex="0" linenr="68" str="return"/>
+    <tok fileIndex="0" linenr="68" str="finalSize"/>
+    <tok fileIndex="0" linenr="68" str=";"/>
+    <tok fileIndex="0" linenr="69" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="9" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="10" str="#include &quot;HorizontalNoOverflowStackPanel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="9" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="10" str="#include &quot;CalcViewModel/Common/Utils.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A346D510" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="12" str="namespace" scope="0000013491268420" type="name"/>
+    <token id="00000134A346CF10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="12" str="CalculatorApp" scope="0000013491268420" type="name" astParent="00000134A346D870"/>
+    <token id="00000134A346D870" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="13" str="{" scope="0000013491268DB0" link="00000134A346E650" astOperand1="00000134A346CF10" astOperand2="00000134A346CAF0"/>
+    <token id="00000134A346C9D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="14" str="namespace" scope="0000013491268DB0" type="name"/>
+    <token id="00000134A346D2D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="14" str="Controls" scope="0000013491268DB0" type="name" astParent="00000134A346CAF0"/>
+    <token id="00000134A346CAF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="15" str="{" scope="0000013491268EC0" link="00000134A346E830" astParent="00000134A346D870" astOperand1="00000134A346D2D0" astOperand2="00000134A346DE10"/>
+    <token id="00000134A346CF70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="public" scope="0000013491268EC0" type="name"/>
+    <token id="00000134A346DF90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="ref" scope="0000013491268EC0" type="name"/>
+    <token id="00000134A346D0F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="class" scope="0000013491268EC0" type="name"/>
+    <token id="00000134A346CD90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="HorizontalNoOverflowStackPanel" scope="0000013491268EC0" type="name" type-scope="0000013491268750" astParent="00000134A346DE10"/>
+    <token id="00000134A346DE10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str=":" scope="0000013491268EC0" astParent="00000134A346CAF0" astOperand1="00000134A346CD90" astOperand2="00000134A346DAB0"/>
+    <token id="00000134A346D1B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="public" scope="0000013491268EC0" type="name"/>
+    <token id="00000134A346D570" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="Windows" scope="0000013491268EC0" type="name" astParent="00000134A346DDB0"/>
+    <token id="00000134A346DDB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="::" scope="0000013491268EC0" astParent="00000134A346DF30" astOperand1="00000134A346D570" astOperand2="00000134A346DB70"/>
+    <token id="00000134A346DB70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="UI" scope="0000013491268EC0" type="name" astParent="00000134A346DDB0"/>
+    <token id="00000134A346DF30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="::" scope="0000013491268EC0" astParent="00000134A346DA50" astOperand1="00000134A346DDB0" astOperand2="00000134A346D9F0"/>
+    <token id="00000134A346D9F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="Xaml" scope="0000013491268EC0" type="name" astParent="00000134A346DF30"/>
+    <token id="00000134A346DA50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="::" scope="0000013491268EC0" astParent="00000134A346DAB0" astOperand1="00000134A346DF30" astOperand2="00000134A346CE50"/>
+    <token id="00000134A346CE50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="Controls" scope="0000013491268EC0" type="name" astParent="00000134A346DA50"/>
+    <token id="00000134A346DAB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="::" scope="0000013491268EC0" astParent="00000134A346DE10" astOperand1="00000134A346DA50" astOperand2="00000134A346CDF0"/>
+    <token id="00000134A346CDF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="16" str="Panel" scope="0000013491268EC0" type="name" astParent="00000134A346DAB0"/>
+    <token id="00000134A346D150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="17" str="{" scope="0000013491268750" link="00000134A346E170"/>
+    <token id="00000134A346D3F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="18" str="DEPENDENCY_PROPERTY_OWNER" scope="0000013491268750" type="name" function="00000134A21416F0" astParent="00000134A346DCF0"/>
+    <token id="00000134A346DCF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="18" str="(" scope="0000013491268750" link="00000134A346E050" astOperand1="00000134A346D3F0" astOperand2="00000134A346DE70"/>
+    <token id="00000134A346DE70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="18" str="HorizontalNoOverflowStackPanel" scope="0000013491268750" type="name" type-scope="0000013491268750" astParent="00000134A346DCF0"/>
+    <token id="00000134A346E050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="18" str=")" scope="0000013491268750" link="00000134A346DCF0"/>
+    <token id="00000134A346CC10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="18" str=";" scope="0000013491268750"/>
+    <token id="00000134A346CCD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="20" str="internal" scope="0000013491268750" type="name"/>
+    <token id="00000134A346D210" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="20" str=":" scope="0000013491268750"/>
+    <token id="00000134A346D930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="21" str="HorizontalNoOverflowStackPanel" scope="0000013491268750" type="name" type-scope="0000013491268750" astParent="00000134A346CEB0"/>
+    <token id="00000134A346CEB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="21" str="(" scope="0000013491268750" link="00000134A346DED0" astOperand1="00000134A346D930" valueType-type="record" valueType-typeScope="0000013491268750"/>
+    <token id="00000134A346DED0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="21" str=")" scope="0000013491268750" link="00000134A346CEB0"/>
+    <token id="00000134A346CFD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="21" str="{" scope="0000013491268750" link="00000134A346D750"/>
+    <token id="00000134A346D750" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="21" str="}" scope="0000013491268750" link="00000134A346CFD0"/>
+    <token id="00000134A346DFF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="22" str="protected:" scope="0000013491268750" type="name"/>
+    <token id="00000134A346E0B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="virtual" scope="0000013491268750" type="name"/>
+    <token id="00000134A346D8D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Windows" scope="0000013491268750" type="name" astParent="00000134A346CB50"/>
+    <token id="00000134A346CB50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="::" scope="0000013491268750" astParent="00000134A346CA30" astOperand1="00000134A346D8D0" astOperand2="00000134A346D030"/>
+    <token id="00000134A346D030" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Foundation" scope="0000013491268750" type="name" astParent="00000134A346CB50"/>
+    <token id="00000134A346CA30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="::" scope="0000013491268750" astParent="00000134A346D390" astOperand1="00000134A346CB50" astOperand2="00000134A346D330"/>
+    <token id="00000134A346CBB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Size" scope="0000013491268750" type="name"/>
+    <token id="00000134A346D330" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="MeasureOverride" scope="0000013491268750" type="name" function="00000134A2140340" astParent="00000134A346CA30"/>
+    <token id="00000134A346D390" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="(" scope="0000013491268750" link="00000134A346DB10" astOperand1="00000134A346CA30" astOperand2="00000134A346D4B0"/>
+    <token id="00000134A346D450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Windows" scope="0000013491268750" type="name" astParent="00000134A346D690"/>
+    <token id="00000134A346D690" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="::" scope="0000013491268750" astParent="00000134A346D4B0" astOperand1="00000134A346D450" astOperand2="00000134A346D990"/>
+    <token id="00000134A346D990" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Foundation" scope="0000013491268750" type="name" astParent="00000134A346D690"/>
+    <token id="00000134A346D4B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="::" scope="0000013491268750" astParent="00000134A346D390" astOperand1="00000134A346D690" astOperand2="00000134A346D6F0"/>
+    <token id="00000134A346D5D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="Size" scope="0000013491268750" type="name"/>
+    <token id="00000134A346D6F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="availableSize" scope="0000013491268750" type="name" varId="1" variable="0000013491659B80" astParent="00000134A346D4B0"/>
+    <token id="00000134A346DB10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str=")" scope="0000013491268750" link="00000134A346D390"/>
+    <token id="00000134A346D7B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str="override" scope="0000013491268750" type="name"/>
+    <token id="00000134A346D810" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="23" str=";" scope="0000013491268750"/>
+    <token id="00000134A346DBD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="virtual" scope="0000013491268750" type="name"/>
+    <token id="00000134A346DC30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Windows" scope="0000013491268750" type="name" astParent="00000134A346DC90"/>
+    <token id="00000134A346DC90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="::" scope="0000013491268750" astParent="00000134A346E890" astOperand1="00000134A346DC30" astOperand2="00000134A346F070"/>
+    <token id="00000134A346F070" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Foundation" scope="0000013491268750" type="name" astParent="00000134A346DC90"/>
+    <token id="00000134A346E890" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="::" scope="0000013491268750" astParent="00000134A346E2F0" astOperand1="00000134A346DC90" astOperand2="00000134A346F7F0"/>
+    <token id="00000134A346EFB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Size" scope="0000013491268750" type="name"/>
+    <token id="00000134A346F7F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="ArrangeOverride" scope="0000013491268750" type="name" function="00000134A2140D60" astParent="00000134A346E890"/>
+    <token id="00000134A346E2F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="(" scope="0000013491268750" link="00000134A346E290" astOperand1="00000134A346E890" astOperand2="00000134A346F010"/>
+    <token id="00000134A346EA10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Windows" scope="0000013491268750" type="name" astParent="00000134A346E7D0"/>
+    <token id="00000134A346E7D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="::" scope="0000013491268750" astParent="00000134A346F010" astOperand1="00000134A346EA10" astOperand2="00000134A346EF50"/>
+    <token id="00000134A346EF50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Foundation" scope="0000013491268750" type="name" astParent="00000134A346E7D0"/>
+    <token id="00000134A346F010" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="::" scope="0000013491268750" astParent="00000134A346E2F0" astOperand1="00000134A346E7D0" astOperand2="00000134A346F2B0"/>
+    <token id="00000134A346E1D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="Size" scope="0000013491268750" type="name"/>
+    <token id="00000134A346F2B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="finalSize" scope="0000013491268750" type="name" varId="2" variable="0000013491659C60" astParent="00000134A346F010"/>
+    <token id="00000134A346E290" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str=")" scope="0000013491268750" link="00000134A346E2F0"/>
+    <token id="00000134A346EB30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str="override" scope="0000013491268750" type="name"/>
+    <token id="00000134A346F490" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="24" str=";" scope="0000013491268750"/>
+    <token id="00000134A346F130" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str="virtual" scope="0000013491268750" type="name"/>
+    <token id="00000134A346E410" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str="bool" scope="0000013491268750" type="name"/>
+    <token id="00000134A346F670" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str="ShouldPrioritizeLastItem" scope="0000013491268750" type="name" function="00000134A2141150" astParent="00000134A346E470"/>
+    <token id="00000134A346E470" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str="(" scope="0000013491268750" link="00000134A346F6D0" values="00000134A920BEE0" astOperand1="00000134A346F670" valueType-type="bool"/>
+    <token id="00000134A346F6D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str=")" scope="0000013491268750" link="00000134A346E470"/>
+    <token id="00000134A346F730" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="25" str=";" scope="0000013491268750"/>
+    <token id="00000134A346E170" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="26" str="}" scope="0000013491268750" link="00000134A346D150"/>
+    <token id="00000134A346EEF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="26" str=";" scope="0000013491268EC0"/>
+    <token id="00000134A346E830" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="27" str="}" scope="0000013491268EC0" link="00000134A346CAF0"/>
+    <token id="00000134A346E650" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.h" linenr="28" str="}" scope="0000013491268DB0" link="00000134A346D870"/>
+    <token id="00000134A346E710" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str="using" scope="0000013491268420" type="name"/>
+    <token id="00000134A346F430" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str="namespace" scope="0000013491268420" type="name"/>
+    <token id="00000134A346F310" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str="CalculatorApp" scope="0000013491268420" type="name" astParent="00000134A346E230"/>
+    <token id="00000134A346E230" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str="::" scope="0000013491268420" astOperand1="00000134A346F310" astOperand2="00000134A346E9B0"/>
+    <token id="00000134A346E9B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str="Controls" scope="0000013491268420" type="name" astParent="00000134A346E230"/>
+    <token id="00000134A346F1F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="13" str=";" scope="0000013491268420"/>
+    <token id="00000134A346F370" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str="using" scope="0000013491268420" type="name"/>
+    <token id="00000134A346F190" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str="namespace" scope="0000013491268420" type="name"/>
+    <token id="00000134A346E6B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str="Windows" scope="0000013491268420" type="name" astParent="00000134A346F3D0"/>
+    <token id="00000134A346F3D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str="::" scope="0000013491268420" astOperand1="00000134A346E6B0" astOperand2="00000134A346E350"/>
+    <token id="00000134A346E350" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str="Foundation" scope="0000013491268420" type="name" astParent="00000134A346F3D0"/>
+    <token id="00000134A346F250" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="14" str=";" scope="0000013491268420"/>
+    <token id="00000134A346F4F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="Size" scope="0000013491268420" type="name"/>
+    <token id="00000134A346E770" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="HorizontalNoOverflowStackPanel" scope="0000013491268420" type="name" astParent="00000134A346E4D0"/>
+    <token id="00000134A346E4D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="::" scope="0000013491268420" astParent="00000134A346F550" astOperand1="00000134A346E770" astOperand2="00000134A346E8F0"/>
+    <token id="00000134A346E8F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="MeasureOverride" scope="0000013491268420" type="name" astParent="00000134A346E4D0"/>
+    <token id="00000134A346F550" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="(" scope="0000013491268420" link="00000134A346E5F0" astOperand1="00000134A346E4D0" astOperand2="00000134A346E590"/>
+    <token id="00000134A346F850" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="Size" scope="0000013491268420" type="name"/>
+    <token id="00000134A346E590" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str="availableSize" scope="0000013491268420" type="name" varId="3" astParent="00000134A346F550"/>
+    <token id="00000134A346E5F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="16" str=")" scope="0000013491268420" link="00000134A346F550"/>
+    <token id="00000134A346E950" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="17" str="{" scope="00000134912680F0" link="00000134A3471710"/>
+    <token id="00000134A346EB90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str="float" scope="00000134912680F0" type="name"/>
+    <token id="00000134A346EBF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str="maxHeight" scope="00000134912680F0" type="name" varId="4" variable="000001349165A910" valueType-type="float"/>
+    <token id="00000134A346EA70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str=";" scope="00000134912680F0"/>
+    <token id="00000134A346D270" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str="maxHeight" scope="00000134912680F0" type="name" varId="4" variable="000001349165A910" astParent="00000134A34743B0" valueType-type="float"/>
+    <token id="00000134A34743B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str="=" scope="00000134912680F0" type="op" isAssignmentOp="True" astOperand1="00000134A346D270" astOperand2="00000134A346F5B0" valueType-type="float"/>
+    <token id="00000134A346F5B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str="0" scope="00000134912680F0" type="number" isInt="True" values="00000134A920B1A0" astParent="00000134A34743B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A346F610" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="18" str=";" scope="00000134912680F0"/>
+    <token id="00000134A346ECB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str="float" scope="00000134912680F0" type="name"/>
+    <token id="00000134A346E3B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str="width" scope="00000134912680F0" type="name" varId="5" variable="000001349165B010" valueType-type="float"/>
+    <token id="00000134A346EC50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str=";" scope="00000134912680F0"/>
+    <token id="00000134A3475550" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str="width" scope="00000134912680F0" type="name" varId="5" variable="000001349165B010" astParent="00000134A34755B0" valueType-type="float"/>
+    <token id="00000134A34755B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str="=" scope="00000134912680F0" type="op" isAssignmentOp="True" astOperand1="00000134A3475550" astOperand2="00000134A346F8B0" valueType-type="float"/>
+    <token id="00000134A346F8B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str="0" scope="00000134912680F0" type="number" isInt="True" values="00000134A920B580" astParent="00000134A34755B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A346E110" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="19" str=";" scope="00000134912680F0"/>
+    <token id="00000134A346ED10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str="for" scope="00000134912680F0" type="name" astParent="00000134A346ED70"/>
+    <token id="00000134A346ED70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str="(" scope="00000134912680F0" link="00000134A346FA90" astOperand1="00000134A346ED10" astOperand2="00000134A346EE90"/>
+    <token id="00000134A346EDD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str="auto" scope="00000134912680F0" type="name"/>
+    <token id="00000134A346EE30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str="child" scope="00000134912680F0" type="name" varId="6" variable="000001349165A7C0" astParent="00000134A346EE90"/>
+    <token id="00000134A346EE90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str=":" scope="00000134912680F0" astParent="00000134A346ED70" astOperand1="00000134A346EE30" astOperand2="00000134A346FBB0"/>
+    <token id="00000134A346FBB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str="Children" scope="00000134912680F0" type="name" astParent="00000134A346EE90"/>
+    <token id="00000134A346FA90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="20" str=")" scope="00000134912680F0" link="00000134A346ED70"/>
+    <token id="00000134A3470450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="21" str="{" scope="0000013491268970" link="00000134A346FCD0"/>
+    <token id="00000134A3470270" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="child" scope="0000013491268970" type="name" varId="6" variable="000001349165A7C0" astParent="00000134A3470D50"/>
+    <token id="00000134A3470D50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="." scope="0000013491268970" astParent="00000134A3470F30" astOperand1="00000134A3470270" astOperand2="00000134A3470B70" originalName="->"/>
+    <token id="00000134A3470B70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="Measure" scope="0000013491268970" type="name" astParent="00000134A3470D50"/>
+    <token id="00000134A3470F30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="(" scope="0000013491268970" link="00000134A3470FF0" astOperand1="00000134A3470D50" astOperand2="00000134A3470A50"/>
+    <token id="00000134A34709F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="Size" scope="0000013491268970" type="name" astParent="00000134A3470A50"/>
+    <token id="00000134A3470A50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="(" scope="0000013491268970" link="00000134A3470750" astParent="00000134A3470F30" astOperand1="00000134A34709F0" astOperand2="00000134A34700F0"/>
+    <token id="00000134A346FE50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="numeric_limits" scope="0000013491268970" type="name" astParent="00000134A346FEB0"/>
+    <token id="00000134A3470AB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="&lt;" scope="0000013491268970" link="00000134A3470090"/>
+    <token id="00000134A346FD90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="float" scope="0000013491268970" type="name"/>
+    <token id="00000134A3470090" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="&gt;" scope="0000013491268970" link="00000134A3470AB0"/>
+    <token id="00000134A346FEB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="::" scope="0000013491268970" astParent="00000134A346F9D0" astOperand1="00000134A346FE50" astOperand2="00000134A346F970"/>
+    <token id="00000134A346F970" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="infinity" scope="0000013491268970" type="name" astParent="00000134A346FEB0"/>
+    <token id="00000134A346F9D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="(" scope="0000013491268970" link="00000134A3470E10" astParent="00000134A34700F0" astOperand1="00000134A346FEB0"/>
+    <token id="00000134A3470E10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str=")" scope="0000013491268970" link="00000134A346F9D0"/>
+    <token id="00000134A34700F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="," scope="0000013491268970" astParent="00000134A3470A50" astOperand1="00000134A346F9D0" astOperand2="00000134A3470E70"/>
+    <token id="00000134A3470870" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="numeric_limits" scope="0000013491268970" type="name" astParent="00000134A34708D0"/>
+    <token id="00000134A3470150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="&lt;" scope="0000013491268970" link="00000134A346FF70"/>
+    <token id="00000134A346FB50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="float" scope="0000013491268970" type="name"/>
+    <token id="00000134A346FF70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="&gt;" scope="0000013491268970" link="00000134A3470150"/>
+    <token id="00000134A34708D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="::" scope="0000013491268970" astParent="00000134A3470E70" astOperand1="00000134A3470870" astOperand2="00000134A346FDF0"/>
+    <token id="00000134A346FDF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="infinity" scope="0000013491268970" type="name" astParent="00000134A34708D0"/>
+    <token id="00000134A3470E70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str="(" scope="0000013491268970" link="00000134A346FFD0" astParent="00000134A34700F0" astOperand1="00000134A34708D0"/>
+    <token id="00000134A346FFD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str=")" scope="0000013491268970" link="00000134A3470E70"/>
+    <token id="00000134A3470750" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str=")" scope="0000013491268970" link="00000134A3470A50"/>
+    <token id="00000134A3470FF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str=")" scope="0000013491268970" link="00000134A3470F30"/>
+    <token id="00000134A34701B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="22" str=";" scope="0000013491268970"/>
+    <token id="00000134A3471050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="maxHeight" scope="0000013491268970" type="name" varId="4" variable="000001349165A910" astParent="00000134A3470930" valueType-type="float"/>
+    <token id="00000134A3470930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="=" scope="0000013491268970" type="op" isAssignmentOp="True" astOperand1="00000134A3471050" astOperand2="00000134A3470030" valueType-type="float"/>
+    <token id="00000134A3475F70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="std" scope="0000013491268970" type="name" astParent="00000134A3475D30"/>
+    <token id="00000134A3475D30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="::" scope="0000013491268970" astParent="00000134A3470030" astOperand1="00000134A3475F70" astOperand2="00000134A346FC10"/>
+    <token id="00000134A346FC10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="max" scope="0000013491268970" type="name" astParent="00000134A3475D30"/>
+    <token id="00000134A3470030" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="(" scope="0000013491268970" link="00000134A34702D0" astParent="00000134A3470930" astOperand1="00000134A3475D30" astOperand2="00000134A346FF10"/>
+    <token id="00000134A3470F90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="maxHeight" scope="0000013491268970" type="name" varId="4" variable="000001349165A910" astParent="00000134A346FF10" valueType-type="float"/>
+    <token id="00000134A346FF10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="," scope="0000013491268970" astParent="00000134A3470030" astOperand1="00000134A3470F90" astOperand2="00000134A346F910"/>
+    <token id="00000134A3470990" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="child" scope="0000013491268970" type="name" varId="6" variable="000001349165A7C0" astParent="00000134A3470ED0"/>
+    <token id="00000134A3470ED0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="." scope="0000013491268970" astParent="00000134A346F910" astOperand1="00000134A3470990" astOperand2="00000134A34710B0" originalName="->"/>
+    <token id="00000134A34710B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="DesiredSize" scope="0000013491268970" type="name" varId="7" astParent="00000134A3470ED0"/>
+    <token id="00000134A346F910" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="." scope="0000013491268970" astParent="00000134A346FF10" astOperand1="00000134A3470ED0" astOperand2="00000134A3470210"/>
+    <token id="00000134A3470210" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str="Height" scope="0000013491268970" type="name" varId="8" astParent="00000134A346F910"/>
+    <token id="00000134A34702D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str=")" scope="0000013491268970" link="00000134A3470030"/>
+    <token id="00000134A346FA30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="23" str=";" scope="0000013491268970"/>
+    <token id="00000134A346FAF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="width" scope="0000013491268970" type="name" varId="5" variable="000001349165B010" astParent="00000134A346FC70" valueType-type="float"/>
+    <token id="00000134A346FC70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="+=" scope="0000013491268970" type="op" isAssignmentOp="True" astOperand1="00000134A346FAF0" astOperand2="00000134A3470390" valueType-type="float"/>
+    <token id="00000134A3470810" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="child" scope="0000013491268970" type="name" varId="6" variable="000001349165A7C0" astParent="00000134A3470CF0"/>
+    <token id="00000134A3470CF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="." scope="0000013491268970" astParent="00000134A3470390" astOperand1="00000134A3470810" astOperand2="00000134A3470B10" originalName="->"/>
+    <token id="00000134A3470B10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="DesiredSize" scope="0000013491268970" type="name" varId="7" astParent="00000134A3470CF0"/>
+    <token id="00000134A3470390" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="." scope="0000013491268970" astParent="00000134A346FC70" astOperand1="00000134A3470CF0" astOperand2="00000134A34704B0"/>
+    <token id="00000134A34704B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str="Width" scope="0000013491268970" type="name" varId="9" astParent="00000134A3470390"/>
+    <token id="00000134A3470BD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="24" str=";" scope="0000013491268970"/>
+    <token id="00000134A346FCD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="25" str="}" scope="0000013491268970" link="00000134A3470450"/>
+    <token id="00000134A3470510" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="return" scope="00000134912680F0" type="name" astOperand1="00000134A346FD30"/>
+    <token id="00000134A3470DB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="Size" scope="00000134912680F0" type="name" astParent="00000134A346FD30"/>
+    <token id="00000134A346FD30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="(" scope="00000134912680F0" link="00000134A3471770" astParent="00000134A3470510" astOperand1="00000134A3470DB0" astOperand2="00000134A34707B0"/>
+    <token id="00000134A3475F10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="std" scope="00000134912680F0" type="name" astParent="00000134A3476930"/>
+    <token id="00000134A3476930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="::" scope="00000134912680F0" astParent="00000134A34706F0" astOperand1="00000134A3475F10" astOperand2="00000134A3470330"/>
+    <token id="00000134A3470330" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="min" scope="00000134912680F0" type="name" astParent="00000134A3476930"/>
+    <token id="00000134A34706F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="(" scope="00000134912680F0" link="00000134A3470630" astParent="00000134A34707B0" astOperand1="00000134A3476930" astOperand2="00000134A3470570"/>
+    <token id="00000134A34703F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="width" scope="00000134912680F0" type="name" varId="5" variable="000001349165B010" astParent="00000134A3470570" valueType-type="float"/>
+    <token id="00000134A3470570" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="," scope="00000134912680F0" astParent="00000134A34706F0" astOperand1="00000134A34703F0" astOperand2="00000134A3470690"/>
+    <token id="00000134A3470C30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="availableSize" scope="00000134912680F0" type="name" varId="3" astParent="00000134A3470690"/>
+    <token id="00000134A3470690" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="." scope="00000134912680F0" astParent="00000134A3470570" astOperand1="00000134A3470C30" astOperand2="00000134A34705D0"/>
+    <token id="00000134A34705D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="Width" scope="00000134912680F0" type="name" varId="10" astParent="00000134A3470690"/>
+    <token id="00000134A3470630" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str=")" scope="00000134912680F0" link="00000134A34706F0"/>
+    <token id="00000134A34707B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="," scope="00000134912680F0" astParent="00000134A346FD30" astOperand1="00000134A34706F0" astOperand2="00000134A3472430"/>
+    <token id="00000134A3476E10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="std" scope="00000134912680F0" type="name" astParent="00000134A3476E70"/>
+    <token id="00000134A3476E70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="::" scope="00000134912680F0" astParent="00000134A3472430" astOperand1="00000134A3476E10" astOperand2="00000134A3470C90"/>
+    <token id="00000134A3470C90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="min" scope="00000134912680F0" type="name" astParent="00000134A3476E70"/>
+    <token id="00000134A3472430" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="(" scope="00000134912680F0" link="00000134A3471FB0" astParent="00000134A34707B0" astOperand1="00000134A3476E70" astOperand2="00000134A3471290"/>
+    <token id="00000134A3472550" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="availableSize" scope="00000134912680F0" type="name" varId="3" astParent="00000134A3471F50"/>
+    <token id="00000134A3471F50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="." scope="00000134912680F0" astParent="00000134A3471290" astOperand1="00000134A3472550" astOperand2="00000134A34713B0"/>
+    <token id="00000134A34713B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="Height" scope="00000134912680F0" type="name" varId="11" astParent="00000134A3471F50"/>
+    <token id="00000134A3471290" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="," scope="00000134912680F0" astParent="00000134A3472430" astOperand1="00000134A3471F50" astOperand2="00000134A34722B0"/>
+    <token id="00000134A34722B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str="maxHeight" scope="00000134912680F0" type="name" varId="4" variable="000001349165A910" astParent="00000134A3471290" valueType-type="float"/>
+    <token id="00000134A3471FB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str=")" scope="00000134912680F0" link="00000134A3472430"/>
+    <token id="00000134A3471770" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str=")" scope="00000134912680F0" link="00000134A346FD30"/>
+    <token id="00000134A34716B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="26" str=";" scope="00000134912680F0"/>
+    <token id="00000134A3471710" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="27" str="}" scope="00000134912680F0" link="00000134A346E950"/>
+    <token id="00000134A3471470" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str="bool" scope="0000013491268420" type="name"/>
+    <token id="00000134A34711D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str="HorizontalNoOverflowStackPanel" scope="0000013491268420" type="name" astParent="00000134A34717D0"/>
+    <token id="00000134A34717D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str="::" scope="0000013491268420" astParent="00000134A34723D0" astOperand1="00000134A34711D0" astOperand2="00000134A3471EF0"/>
+    <token id="00000134A3471EF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str="ShouldPrioritizeLastItem" scope="0000013491268420" type="name" function="00000134A2141150" astParent="00000134A34717D0"/>
+    <token id="00000134A34723D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str="(" scope="0000013491268420" link="00000134A3471830" astOperand1="00000134A34717D0" valueType-type="bool"/>
+    <token id="00000134A3471830" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="29" str=")" scope="0000013491268420" link="00000134A34723D0"/>
+    <token id="00000134A3471D10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="30" str="{" scope="0000013491268530" link="00000134A34725B0"/>
+    <token id="00000134A3472370" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="31" str="return" scope="0000013491268530" type="name" astOperand1="00000134A3471350"/>
+    <token id="00000134A3471350" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="31" str="false" scope="0000013491268530" type="name" values="00000134A920BE80" astParent="00000134A3472370"/>
+    <token id="00000134A3471B90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="31" str=";" scope="0000013491268530"/>
+    <token id="00000134A34725B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="32" str="}" scope="0000013491268530" link="00000134A3471D10"/>
+    <token id="00000134A3472610" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="Size" scope="0000013491268420" type="name"/>
+    <token id="00000134A3471BF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="HorizontalNoOverflowStackPanel" scope="0000013491268420" type="name" astParent="00000134A3471AD0"/>
+    <token id="00000134A3471AD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="::" scope="0000013491268420" astParent="00000134A3471890" astOperand1="00000134A3471BF0" astOperand2="00000134A34712F0"/>
+    <token id="00000134A34712F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="ArrangeOverride" scope="0000013491268420" type="name" astParent="00000134A3471AD0"/>
+    <token id="00000134A3471890" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="(" scope="0000013491268420" link="00000134A3472670" astOperand1="00000134A3471AD0" astOperand2="00000134A34718F0"/>
+    <token id="00000134A3472790" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="Size" scope="0000013491268420" type="name"/>
+    <token id="00000134A34718F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str="finalSize" scope="0000013491268420" type="name" varId="12" astParent="00000134A3471890"/>
+    <token id="00000134A3472670" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="34" str=")" scope="0000013491268420" link="00000134A3471890"/>
+    <token id="00000134A3471B30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="35" str="{" scope="0000013491268200" link="00000134A34754F0"/>
+    <token id="00000134A3471950" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="if" scope="0000013491268200" type="name" astParent="00000134A3471C50"/>
+    <token id="00000134A3471C50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="(" scope="0000013491268200" link="00000134A3471D70" astOperand1="00000134A3471950" astOperand2="00000134A34719B0"/>
+    <token id="00000134A3471E90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="Children" scope="0000013491268200" type="name" astParent="00000134A3472010"/>
+    <token id="00000134A3472010" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="." scope="0000013491268200" astParent="00000134A34719B0" astOperand1="00000134A3471E90" astOperand2="00000134A34714D0" originalName="->"/>
+    <token id="00000134A34714D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="Size" scope="0000013491268200" type="name" astParent="00000134A3472010"/>
+    <token id="00000134A34719B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="==" scope="0000013491268200" type="op" isComparisonOp="True" astParent="00000134A3471C50" astOperand1="00000134A3472010" astOperand2="00000134A3471CB0" valueType-type="bool"/>
+    <token id="00000134A3471CB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str="0" scope="0000013491268200" type="number" isInt="True" values="00000134A920B5C0" astParent="00000134A34719B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3471D70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="36" str=")" scope="0000013491268200" link="00000134A3471C50"/>
+    <token id="00000134A34728B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="37" str="{" scope="0000013491268640" link="00000134A3471DD0"/>
+    <token id="00000134A3471530" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="38" str="return" scope="0000013491268640" type="name" astOperand1="00000134A3471A10"/>
+    <token id="00000134A3471A10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="38" str="finalSize" scope="0000013491268640" type="name" varId="12" astParent="00000134A3471530"/>
+    <token id="00000134A3471A70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="38" str=";" scope="0000013491268640"/>
+    <token id="00000134A3471DD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="39" str="}" scope="0000013491268640" link="00000134A34728B0"/>
+    <token id="00000134A3471590" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str="float" scope="0000013491268200" type="name"/>
+    <token id="00000134A3471650" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str="posX" scope="0000013491268200" type="name" varId="13" variable="000001349165AB40" valueType-type="float"/>
+    <token id="00000134A3472190" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str=";" scope="0000013491268200"/>
+    <token id="00000134A3475A90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str="posX" scope="0000013491268200" type="name" varId="13" variable="000001349165AB40" astParent="00000134A3476450" valueType-type="float"/>
+    <token id="00000134A3476450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str="=" scope="0000013491268200" type="op" isAssignmentOp="True" astOperand1="00000134A3475A90" astOperand2="00000134A3472850" valueType-type="float"/>
+    <token id="00000134A3472850" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str="0" scope="0000013491268200" type="number" isInt="True" values="00000134A920B5E0" astParent="00000134A3476450" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3471410" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="41" str=";" scope="0000013491268200"/>
+    <token id="00000134A34715F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="auto" scope="0000013491268200" type="name"/>
+    <token id="00000134A3471E30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="lastChild" scope="0000013491268200" type="name" varId="14" variable="000001349165ABB0"/>
+    <token id="00000134A3472070" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str=";" scope="0000013491268200"/>
+    <token id="00000134A3476150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="lastChild" scope="0000013491268200" type="name" varId="14" variable="000001349165ABB0" astParent="00000134A3476270"/>
+    <token id="00000134A3476270" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="=" scope="0000013491268200" type="op" isAssignmentOp="True" astOperand1="00000134A3476150" astOperand2="00000134A3472490"/>
+    <token id="00000134A34720D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="Children" scope="0000013491268200" type="name" astParent="00000134A3472130"/>
+    <token id="00000134A3472130" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="." scope="0000013491268200" astParent="00000134A3472490" astOperand1="00000134A34720D0" astOperand2="00000134A34721F0" originalName="->"/>
+    <token id="00000134A34721F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="GetAt" scope="0000013491268200" type="name" astParent="00000134A3472130"/>
+    <token id="00000134A3472490" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="(" scope="0000013491268200" link="00000134A3471170" astParent="00000134A3476270" astOperand1="00000134A3472130" astOperand2="00000134A3471110"/>
+    <token id="00000134A3472250" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="Children" scope="0000013491268200" type="name" astParent="00000134A3472310"/>
+    <token id="00000134A3472310" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="." scope="0000013491268200" astParent="00000134A3471110" astOperand1="00000134A3472250" astOperand2="00000134A34724F0" originalName="->"/>
+    <token id="00000134A34724F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="Size" scope="0000013491268200" type="name" astParent="00000134A3472310"/>
+    <token id="00000134A3471110" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="-" scope="0000013491268200" type="op" isArithmeticalOp="True" astParent="00000134A3472490" astOperand1="00000134A3472310" astOperand2="00000134A34726D0"/>
+    <token id="00000134A34726D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str="1" scope="0000013491268200" type="number" isInt="True" values="00000134A920B600" astParent="00000134A3471110" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3471170" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str=")" scope="0000013491268200" link="00000134A3472490"/>
+    <token id="00000134A3471230" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="42" str=";" scope="0000013491268200"/>
+    <token id="00000134A3472730" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str="float" scope="0000013491268200" type="name"/>
+    <token id="00000134A34727F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str="lastChildWidth" scope="0000013491268200" type="name" varId="15" variable="00000134916596B0" valueType-type="float"/>
+    <token id="00000134A3473AB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str=";" scope="0000013491268200"/>
+    <token id="00000134A34770B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str="lastChildWidth" scope="0000013491268200" type="name" varId="15" variable="00000134916596B0" astParent="00000134A3476FF0" valueType-type="float"/>
+    <token id="00000134A3476FF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str="=" scope="0000013491268200" type="op" isAssignmentOp="True" astOperand1="00000134A34770B0" astOperand2="00000134A3472BB0" valueType-type="float"/>
+    <token id="00000134A3472BB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str="0" scope="0000013491268200" type="number" isInt="True" values="00000134A920B860" astParent="00000134A3476FF0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3472A90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="43" str=";" scope="0000013491268200"/>
+    <token id="00000134A3473450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="if" scope="0000013491268200" type="name" astParent="00000134A3473270"/>
+    <token id="00000134A3473270" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="(" scope="0000013491268200" link="00000134A3472AF0" astOperand1="00000134A3473450" astOperand2="00000134A3473630"/>
+    <token id="00000134A3473FF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="Children" scope="0000013491268200" type="name" astParent="00000134A3473D50"/>
+    <token id="00000134A3473D50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="." scope="0000013491268200" astParent="00000134A34732D0" astOperand1="00000134A3473FF0" astOperand2="00000134A34729D0" originalName="->"/>
+    <token id="00000134A34729D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="Size" scope="0000013491268200" type="name" astParent="00000134A3473D50"/>
+    <token id="00000134A34732D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="&gt;" scope="0000013491268200" type="op" isComparisonOp="True" astParent="00000134A3473630" astOperand1="00000134A3473D50" astOperand2="00000134A3474050" valueType-type="bool"/>
+    <token id="00000134A3474050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="2" scope="0000013491268200" type="number" isInt="True" values="00000134A920B880" astParent="00000134A34732D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3473630" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="&amp;&amp;" scope="0000013491268200" type="op" isLogicalOp="True" astParent="00000134A3473270" astOperand1="00000134A34732D0" astOperand2="00000134A34734B0" valueType-type="bool"/>
+    <token id="00000134A34736F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="ShouldPrioritizeLastItem" scope="0000013491268200" type="name" astParent="00000134A34734B0"/>
+    <token id="00000134A34734B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str="(" scope="0000013491268200" link="00000134A3473870" astParent="00000134A3473630" astOperand1="00000134A34736F0"/>
+    <token id="00000134A3473870" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str=")" scope="0000013491268200" link="00000134A34734B0"/>
+    <token id="00000134A3472AF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="44" str=")" scope="0000013491268200" link="00000134A3473270"/>
+    <token id="00000134A3473510" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="45" str="{" scope="0000013491268310" link="00000134A3472F70"/>
+    <token id="00000134A3473DB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="lastChildWidth" scope="0000013491268310" type="name" varId="15" variable="00000134916596B0" astParent="00000134A3473E10" valueType-type="float"/>
+    <token id="00000134A3473E10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="=" scope="0000013491268310" type="op" isAssignmentOp="True" astOperand1="00000134A3473DB0" astOperand2="00000134A3473330" valueType-type="float"/>
+    <token id="00000134A3472F10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="lastChild" scope="0000013491268310" type="name" varId="14" variable="000001349165ABB0" astParent="00000134A3473750"/>
+    <token id="00000134A3473750" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="." scope="0000013491268310" astParent="00000134A3473330" astOperand1="00000134A3472F10" astOperand2="00000134A3473ED0" originalName="->"/>
+    <token id="00000134A3473ED0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="DesiredSize" scope="0000013491268310" type="name" varId="16" astParent="00000134A3473750"/>
+    <token id="00000134A3473330" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="." scope="0000013491268310" astParent="00000134A3473E10" astOperand1="00000134A3473750" astOperand2="00000134A3473BD0"/>
+    <token id="00000134A3473BD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str="Width" scope="0000013491268310" type="name" varId="17" astParent="00000134A3473330"/>
+    <token id="00000134A3473690" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="46" str=";" scope="0000013491268310"/>
+    <token id="00000134A3472F70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="47" str="}" scope="0000013491268310" link="00000134A3473510"/>
+    <token id="00000134A3473570" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str="for" scope="0000013491268200" type="name" astParent="00000134A3473390"/>
+    <token id="00000134A3473390" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str="(" scope="0000013491268200" link="00000134A3472C10" astOperand1="00000134A3473570" astOperand2="00000134A3473E70"/>
+    <token id="00000134A3472B50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str="auto" scope="0000013491268200" type="name"/>
+    <token id="00000134A3473C30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str="item" scope="0000013491268200" type="name" varId="18" variable="00000134916599C0" astParent="00000134A3473E70"/>
+    <token id="00000134A3473E70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str=":" scope="0000013491268200" astParent="00000134A3473390" astOperand1="00000134A3473C30" astOperand2="00000134A34737B0"/>
+    <token id="00000134A34737B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str="Children" scope="0000013491268200" type="name" astParent="00000134A3473E70"/>
+    <token id="00000134A3472C10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="48" str=")" scope="0000013491268200" link="00000134A3473390"/>
+    <token id="00000134A3472C70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="49" str="{" scope="0000013491268B90" link="00000134A34752B0"/>
+    <token id="00000134A3473B10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="auto" scope="0000013491268B90" type="name"/>
+    <token id="00000134A3473810" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="widthAvailable" scope="0000013491268B90" type="name" varId="19" variable="0000013491659720"/>
+    <token id="00000134A3472FD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str=";" scope="0000013491268B90"/>
+    <token id="00000134A3477050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="widthAvailable" scope="0000013491268B90" type="name" varId="19" variable="0000013491659720" astParent="00000134A3476630"/>
+    <token id="00000134A3476630" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="=" scope="0000013491268B90" type="op" isAssignmentOp="True" astOperand1="00000134A3477050" astOperand2="00000134A3473F30"/>
+    <token id="00000134A3472EB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="finalSize" scope="0000013491268B90" type="name" varId="12" astParent="00000134A3473030"/>
+    <token id="00000134A3473030" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="." scope="0000013491268B90" astParent="00000134A3473F30" astOperand1="00000134A3472EB0" astOperand2="00000134A3472CD0"/>
+    <token id="00000134A3472CD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="Width" scope="0000013491268B90" type="name" varId="20" astParent="00000134A3473030"/>
+    <token id="00000134A3473F30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="-" scope="0000013491268B90" type="op" isArithmeticalOp="True" astParent="00000134A3476630" astOperand1="00000134A3473030" astOperand2="00000134A3473F90"/>
+    <token id="00000134A3473F90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str="posX" scope="0000013491268B90" type="name" varId="13" variable="000001349165AB40" astParent="00000134A3473F30" valueType-type="float"/>
+    <token id="00000134A3472970" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="50" str=";" scope="0000013491268B90"/>
+    <token id="00000134A34738D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str="if" scope="0000013491268B90" type="name" astParent="00000134A3473090"/>
+    <token id="00000134A3473090" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str="(" scope="0000013491268B90" link="00000134A3472D90" astOperand1="00000134A34738D0" astOperand2="00000134A3472D30"/>
+    <token id="00000134A34730F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str="item" scope="0000013491268B90" type="name" varId="18" variable="00000134916599C0" astParent="00000134A3472D30"/>
+    <token id="00000134A3472D30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str="!=" scope="0000013491268B90" type="op" isComparisonOp="True" astParent="00000134A3473090" astOperand1="00000134A34730F0" astOperand2="00000134A34740B0" valueType-type="bool"/>
+    <token id="00000134A34740B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str="lastChild" scope="0000013491268B90" type="name" varId="14" variable="000001349165ABB0" astParent="00000134A3472D30"/>
+    <token id="00000134A3472D90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="51" str=")" scope="0000013491268B90" link="00000134A3473090"/>
+    <token id="00000134A3473930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="52" str="{" scope="0000013491268CA0" link="00000134A34733F0"/>
+    <token id="00000134A3472910" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="53" str="widthAvailable" scope="0000013491268CA0" type="name" varId="19" variable="0000013491659720" astParent="00000134A3473990"/>
+    <token id="00000134A3473990" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="53" str="-=" scope="0000013491268CA0" type="op" isAssignmentOp="True" astOperand1="00000134A3472910" astOperand2="00000134A3473150"/>
+    <token id="00000134A3473150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="53" str="lastChildWidth" scope="0000013491268CA0" type="name" varId="15" variable="00000134916596B0" astParent="00000134A3473990" valueType-type="float"/>
+    <token id="00000134A34731B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="53" str=";" scope="0000013491268CA0"/>
+    <token id="00000134A34733F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="54" str="}" scope="0000013491268CA0" link="00000134A3473930"/>
+    <token id="00000134A3472A30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="float" scope="0000013491268B90" type="name"/>
+    <token id="00000134A3472DF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="itemWidth" scope="0000013491268B90" type="name" varId="21" variable="0000013491659A30" valueType-type="float"/>
+    <token id="00000134A3473210" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str=";" scope="0000013491268B90"/>
+    <token id="00000134A34766F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="itemWidth" scope="0000013491268B90" type="name" varId="21" variable="0000013491659A30" astParent="00000134A3476A50" valueType-type="float"/>
+    <token id="00000134A3476A50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="=" scope="0000013491268B90" type="op" isAssignmentOp="True" astOperand1="00000134A34766F0" astOperand2="00000134A3473A50" valueType-type="float"/>
+    <token id="00000134A3472E50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="item" scope="0000013491268B90" type="name" varId="18" variable="00000134916599C0" astParent="00000134A34735D0"/>
+    <token id="00000134A34735D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="." scope="0000013491268B90" astParent="00000134A3473A50" astOperand1="00000134A3472E50" astOperand2="00000134A34739F0" originalName="->"/>
+    <token id="00000134A34739F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="DesiredSize" scope="0000013491268B90" type="name" varId="22" astParent="00000134A34735D0"/>
+    <token id="00000134A3473A50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="." scope="0000013491268B90" astParent="00000134A3476A50" astOperand1="00000134A34735D0" astOperand2="00000134A3473B70"/>
+    <token id="00000134A3473B70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str="Width" scope="0000013491268B90" type="name" varId="23" astParent="00000134A3473A50"/>
+    <token id="00000134A3473C90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="55" str=";" scope="0000013491268B90"/>
+    <token id="00000134A3473CF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="if" scope="0000013491268B90" type="name" astParent="00000134A34748F0"/>
+    <token id="00000134A34748F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="(" scope="0000013491268B90" link="00000134A34758B0" astOperand1="00000134A3473CF0" astOperand2="00000134A3474DD0"/>
+    <token id="00000134A34751F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="widthAvailable" scope="0000013491268B90" type="name" varId="19" variable="0000013491659720" astParent="00000134A3474770"/>
+    <token id="00000134A3474770" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="&gt;" scope="0000013491268B90" type="op" isComparisonOp="True" astParent="00000134A3474DD0" astOperand1="00000134A34751F0" astOperand2="00000134A3474C50" valueType-type="bool"/>
+    <token id="00000134A3474C50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="0" scope="0000013491268B90" type="number" isInt="True" values="00000134A920BE40" astParent="00000134A3474770" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3474DD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="&amp;&amp;" scope="0000013491268B90" type="op" isLogicalOp="True" astParent="00000134A34748F0" astOperand1="00000134A3474770" astOperand2="00000134A3474AD0" valueType-type="bool"/>
+    <token id="00000134A34741D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="itemWidth" scope="0000013491268B90" type="name" varId="21" variable="0000013491659A30" astParent="00000134A3474AD0" valueType-type="float"/>
+    <token id="00000134A3474AD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="&lt;=" scope="0000013491268B90" type="op" isComparisonOp="True" astParent="00000134A3474DD0" astOperand1="00000134A34741D0" astOperand2="00000134A3474350" valueType-type="bool"/>
+    <token id="00000134A3474350" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str="widthAvailable" scope="0000013491268B90" type="name" varId="19" variable="0000013491659720" astParent="00000134A3474AD0"/>
+    <token id="00000134A34758B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="56" str=")" scope="0000013491268B90" link="00000134A34748F0"/>
+    <token id="00000134A3474290" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="57" str="{" scope="00000134A68EE0D0" link="00000134A3474CB0"/>
+    <token id="00000134A3474530" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="item" scope="00000134A68EE0D0" type="name" varId="18" variable="00000134916599C0" astParent="00000134A3474F50"/>
+    <token id="00000134A3474F50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="." scope="00000134A68EE0D0" astParent="00000134A3474D10" astOperand1="00000134A3474530" astOperand2="00000134A3475430" originalName="->"/>
+    <token id="00000134A3475430" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="Arrange" scope="00000134A68EE0D0" type="name" astParent="00000134A3474F50"/>
+    <token id="00000134A3474D10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="(" scope="00000134A68EE0D0" link="00000134A3475070" astOperand1="00000134A3474F50" astOperand2="00000134A3474230"/>
+    <token id="00000134A3474650" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="Rect" scope="00000134A68EE0D0" type="name" astParent="00000134A3474230"/>
+    <token id="00000134A3474230" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="(" scope="00000134A68EE0D0" link="00000134A3474710" astParent="00000134A3474D10" astOperand1="00000134A3474650" astOperand2="00000134A3475730"/>
+    <token id="00000134A34756D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="posX" scope="00000134A68EE0D0" type="name" varId="13" variable="000001349165AB40" astParent="00000134A3475670" valueType-type="float"/>
+    <token id="00000134A3475670" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="," scope="00000134A68EE0D0" astParent="00000134A34747D0" astOperand1="00000134A34756D0" astOperand2="00000134A34757F0"/>
+    <token id="00000134A34757F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="0" scope="00000134A68EE0D0" type="number" isInt="True" values="00000134A920BD80" astParent="00000134A3475670" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A34747D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="," scope="00000134A68EE0D0" astParent="00000134A3475730" astOperand1="00000134A3475670" astOperand2="00000134A3474BF0"/>
+    <token id="00000134A3474BF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="itemWidth" scope="00000134A68EE0D0" type="name" varId="21" variable="0000013491659A30" astParent="00000134A34747D0" valueType-type="float"/>
+    <token id="00000134A3475730" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="," scope="00000134A68EE0D0" astParent="00000134A3474230" astOperand1="00000134A34747D0" astOperand2="00000134A3475370"/>
+    <token id="00000134A3475250" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="finalSize" scope="00000134A68EE0D0" type="name" varId="12" astParent="00000134A3475370"/>
+    <token id="00000134A3475370" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="." scope="00000134A68EE0D0" astParent="00000134A3475730" astOperand1="00000134A3475250" astOperand2="00000134A3474D70"/>
+    <token id="00000134A3474D70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str="Height" scope="00000134A68EE0D0" type="name" varId="24" astParent="00000134A3475370"/>
+    <token id="00000134A3474710" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str=")" scope="00000134A68EE0D0" link="00000134A3474230"/>
+    <token id="00000134A3475070" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str=")" scope="00000134A68EE0D0" link="00000134A3474D10"/>
+    <token id="00000134A3474170" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="59" str=";" scope="00000134A68EE0D0"/>
+    <token id="00000134A3474B30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="posX" scope="00000134A68EE0D0" type="name" varId="13" variable="000001349165AB40" astParent="00000134A34742F0" valueType-type="float"/>
+    <token id="00000134A34742F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="+=" scope="00000134A68EE0D0" type="op" isAssignmentOp="True" astOperand1="00000134A3474B30" astOperand2="00000134A3475610" valueType-type="float"/>
+    <token id="00000134A3474830" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="item" scope="00000134A68EE0D0" type="name" varId="18" variable="00000134916599C0" astParent="00000134A3475790"/>
+    <token id="00000134A3475790" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="." scope="00000134A68EE0D0" astParent="00000134A3475610" astOperand1="00000134A3474830" astOperand2="00000134A3474950" originalName="->"/>
+    <token id="00000134A3474950" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="RenderSize" scope="00000134A68EE0D0" type="name" varId="25" astParent="00000134A3475790"/>
+    <token id="00000134A3475610" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="." scope="00000134A68EE0D0" astParent="00000134A34742F0" astOperand1="00000134A3475790" astOperand2="00000134A3474B90"/>
+    <token id="00000134A3474B90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str="Width" scope="00000134A68EE0D0" type="name" varId="26" astParent="00000134A3475610"/>
+    <token id="00000134A3474890" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="60" str=";" scope="00000134A68EE0D0"/>
+    <token id="00000134A3474CB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="61" str="}" scope="00000134A68EE0D0" link="00000134A3474290"/>
+    <token id="00000134A3474E90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="62" str="else" scope="0000013491268B90" type="name"/>
+    <token id="00000134A3474FB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="63" str="{" scope="00000134A68EF3F0" link="00000134A3475130"/>
+    <token id="00000134A3474470" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="item" scope="00000134A68EF3F0" type="name" varId="18" variable="00000134916599C0" astParent="00000134A34749B0"/>
+    <token id="00000134A34749B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="." scope="00000134A68EF3F0" astParent="00000134A3474EF0" astOperand1="00000134A3474470" astOperand2="00000134A3474E30" originalName="->"/>
+    <token id="00000134A3474E30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="Arrange" scope="00000134A68EF3F0" type="name" astParent="00000134A34749B0"/>
+    <token id="00000134A3474EF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="(" scope="00000134A68EF3F0" link="00000134A34745F0" astOperand1="00000134A34749B0" astOperand2="00000134A3474590"/>
+    <token id="00000134A3474110" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="Rect" scope="00000134A68EF3F0" type="name" astParent="00000134A3474590"/>
+    <token id="00000134A3474590" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="(" scope="00000134A68EF3F0" link="00000134A3474410" astParent="00000134A3474EF0" astOperand1="00000134A3474110" astOperand2="00000134A3475190"/>
+    <token id="00000134A3474A10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="0" scope="00000134A68EF3F0" type="number" isInt="True" values="00000134A920BCA0" astParent="00000134A3474A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3474A70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="," scope="00000134A68EF3F0" astParent="00000134A34744D0" astOperand1="00000134A3474A10" astOperand2="00000134A3475010"/>
+    <token id="00000134A3475010" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="0" scope="00000134A68EF3F0" type="number" isInt="True" values="00000134A920BCC0" astParent="00000134A3474A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A34744D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="," scope="00000134A68EF3F0" astParent="00000134A3475190" astOperand1="00000134A3474A70" astOperand2="00000134A34746B0"/>
+    <token id="00000134A34746B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="0" scope="00000134A68EF3F0" type="number" isInt="True" values="00000134A920BD00" astParent="00000134A34744D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3475190" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="," scope="00000134A68EF3F0" astParent="00000134A3474590" astOperand1="00000134A34744D0" astOperand2="00000134A3475850"/>
+    <token id="00000134A3475850" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str="0" scope="00000134A68EF3F0" type="number" isInt="True" values="00000134A920BD20" astParent="00000134A3475190" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A3474410" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str=")" scope="00000134A68EF3F0" link="00000134A3474590"/>
+    <token id="00000134A34745F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str=")" scope="00000134A68EF3F0" link="00000134A3474EF0"/>
+    <token id="00000134A34750D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="65" str=";" scope="00000134A68EF3F0"/>
+    <token id="00000134A3475130" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="66" str="}" scope="00000134A68EF3F0" link="00000134A3474FB0"/>
+    <token id="00000134A34752B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="67" str="}" scope="0000013491268B90" link="00000134A3472C70"/>
+    <token id="00000134A3475310" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="68" str="return" scope="0000013491268200" type="name" astOperand1="00000134A34753D0"/>
+    <token id="00000134A34753D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="68" str="finalSize" scope="0000013491268200" type="name" varId="12" astParent="00000134A3475310"/>
+    <token id="00000134A3475490" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="68" str=";" scope="0000013491268200"/>
+    <token id="00000134A34754F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/HorizontalNoOverflowStackPanel.cpp" linenr="69" str="}" scope="0000013491268200" link="00000134A3471B30"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013491268420" type="Global"/>
+    <scope id="0000013491268DB0" type="Namespace" className="CalculatorApp" bodyStart="00000134A346D870" bodyEnd="00000134A346E650" nestedIn="0000013491268420"/>
+    <scope id="0000013491268EC0" type="Namespace" className="Controls" bodyStart="00000134A346CAF0" bodyEnd="00000134A346E830" nestedIn="0000013491268DB0"/>
+    <scope id="0000013491268750" type="Class" className="HorizontalNoOverflowStackPanel" bodyStart="00000134A346D150" bodyEnd="00000134A346E170" nestedIn="0000013491268EC0">
+      <functionList>
+        <function id="00000134A21416F0" tokenDef="00000134A346D3F0" name="DEPENDENCY_PROPERTY_OWNER" type="Function">
+          <arg nr="1" variable="0000013491659AA0"/>
+        </function>
+        <function id="00000134A2140340" tokenDef="00000134A346D330" name="MeasureOverride" type="Function" isVirtual="true">
+          <arg nr="1" variable="0000013491659B80"/>
+        </function>
+        <function id="00000134A2140D60" tokenDef="00000134A346F7F0" name="ArrangeOverride" type="Function" isVirtual="true">
+          <arg nr="1" variable="0000013491659C60"/>
+        </function>
+        <function id="00000134A2141150" tokenDef="00000134A346F670" name="ShouldPrioritizeLastItem" type="Function" isVirtual="true"/>
+      </functionList>
+    </scope>
+    <scope id="00000134912680F0" type="Function" className="MeasureOverride" bodyStart="00000134A346E950" bodyEnd="00000134A3471710" nestedIn="0000013491268420">
+      <varlist>
+        <var id="000001349165A910"/>
+        <var id="000001349165B010"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491268970" type="For" bodyStart="00000134A3470450" bodyEnd="00000134A346FCD0" nestedIn="00000134912680F0">
+      <varlist>
+        <var id="000001349165A7C0"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491268530" type="Function" className="ShouldPrioritizeLastItem" bodyStart="00000134A3471D10" bodyEnd="00000134A34725B0" nestedIn="0000013491268420" function="00000134A2141150"/>
+    <scope id="0000013491268200" type="Function" className="ArrangeOverride" bodyStart="00000134A3471B30" bodyEnd="00000134A34754F0" nestedIn="0000013491268420">
+      <varlist>
+        <var id="000001349165AB40"/>
+        <var id="000001349165ABB0"/>
+        <var id="00000134916596B0"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491268640" type="If" bodyStart="00000134A34728B0" bodyEnd="00000134A3471DD0" nestedIn="0000013491268200"/>
+    <scope id="0000013491268310" type="If" bodyStart="00000134A3473510" bodyEnd="00000134A3472F70" nestedIn="0000013491268200"/>
+    <scope id="0000013491268B90" type="For" bodyStart="00000134A3472C70" bodyEnd="00000134A34752B0" nestedIn="0000013491268200">
+      <varlist>
+        <var id="00000134916599C0"/>
+        <var id="0000013491659720"/>
+        <var id="0000013491659A30"/>
+      </varlist>
+    </scope>
+    <scope id="0000013491268CA0" type="If" bodyStart="00000134A3473930" bodyEnd="00000134A34733F0" nestedIn="0000013491268B90"/>
+    <scope id="00000134A68EE0D0" type="If" bodyStart="00000134A3474290" bodyEnd="00000134A3474CB0" nestedIn="0000013491268B90"/>
+    <scope id="00000134A68EF3F0" type="Else" bodyStart="00000134A3474FB0" bodyEnd="00000134A3475130" nestedIn="0000013491268B90"/>
+  </scopes>
+  <variables>
+    <var id="00000134916596B0" nameToken="00000134A34727F0" typeStartToken="00000134A3472730" typeEndToken="00000134A3472730" access="Local" scope="0000013491268200" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491659720" nameToken="00000134A3473810" typeStartToken="00000134A3473B10" typeEndToken="00000134A3473B10" access="Local" scope="0000013491268B90" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134916599C0" nameToken="00000134A3473C30" typeStartToken="00000134A3472B50" typeEndToken="00000134A3472B50" access="Local" scope="0000013491268B90" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491659A30" nameToken="00000134A3472DF0" typeStartToken="00000134A3472A30" typeEndToken="00000134A3472A30" access="Local" scope="0000013491268B90" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491659AA0" nameToken="0000000000000000" typeStartToken="00000134A346DE70" typeEndToken="00000134A346DE70" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491659B80" nameToken="00000134A346D6F0" typeStartToken="00000134A346D450" typeEndToken="00000134A346D5D0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013491659C60" nameToken="00000134A346F2B0" typeStartToken="00000134A346EA10" typeEndToken="00000134A346E1D0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165A7C0" nameToken="00000134A346EE30" typeStartToken="00000134A346EDD0" typeEndToken="00000134A346EDD0" access="Local" scope="0000013491268970" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165A910" nameToken="00000134A346EBF0" typeStartToken="00000134A346EB90" typeEndToken="00000134A346EB90" access="Local" scope="00000134912680F0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165AB40" nameToken="00000134A3471650" typeStartToken="00000134A3471590" typeEndToken="00000134A3471590" access="Local" scope="0000013491268200" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165ABB0" nameToken="00000134A3471E30" typeStartToken="00000134A34715F0" typeEndToken="00000134A34715F0" access="Local" scope="0000013491268200" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165B010" nameToken="00000134A346E3B0" typeStartToken="00000134A346ECB0" typeEndToken="00000134A346ECB0" access="Local" scope="00000134912680F0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920BEE0">
+      <value intvalue="0" possible="true"/>
+    </values>
+    <values id="00000134A920B1A0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B580">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BE80">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B5C0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B5E0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B600">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A920B860">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B880">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A920BE40">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BD80">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BCA0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BCC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BD00">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920BD20">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

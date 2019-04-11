@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1237145832">
+  <FileInfo check="Bounds checking">
+    <ArraySize array="g_sids" size="120"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:12:16" my-argnr="2" my-argname="item" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="17"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:26:16" my-argnr="1" my-argname="size" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="28"/>
+    <unsafe-usage my-id="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h:149:16" my-argnr="1" my-argname="suffix" filename="C:/sample repositories/calculator-master/src/CalcManager/CalculatorVector.h" linenr="151"/>
+  </FileInfo>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CalculatorManager::m_pHistory&apos; is not initialized in the constructor." verbose="Member variable &apos;CalculatorManager::m_pHistory&apos; is not initialized in the constructor." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" line="25"/>
+            <symbol>CalculatorManager::m_pHistory</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalculatorVector::GetSize&apos; can be const." verbose="The member function &apos;CalculatorVector::GetSize&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="26"/>
+            <symbol>CalculatorVector::GetSize</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorVector::GetExpressionSuffix&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorVector.h" line="149"/>
+            <symbol>CalculatorVector::GetExpressionSuffix</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalcEngine::CalcNumSec::IsEmpty&apos; can be const." verbose="The member function &apos;CalcEngine::CalcNumSec::IsEmpty&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="22"/>
+            <symbol>CalcEngine::CalcNumSec::IsEmpty</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CalcEngine::CalcNumSec::IsNegative&apos; can be const." verbose="The member function &apos;CalcEngine::CalcNumSec::IsNegative&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="24"/>
+            <symbol>CalcEngine::CalcNumSec::IsNegative</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CCalcEngine::FInErrorState&apos; can be const." verbose="The member function &apos;CCalcEngine::FInErrorState&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcEngine.h" line="60"/>
+            <symbol>CCalcEngine::FInErrorState</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;CCalcEngine::FInRecordingState&apos; can be const." verbose="The member function &apos;CCalcEngine::FInRecordingState&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcEngine.h" line="61"/>
+            <symbol>CCalcEngine::FInRecordingState</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="21"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="23"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="24"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Rational&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\Rational.h" line="25"/>
+            <symbol>Rational</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CParentheses&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CParentheses&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="12"/>
+            <symbol>CParentheses</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CUnaryCommand&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CUnaryCommand&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="24"/>
+            <symbol>CUnaryCommand</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CBinaryCommand&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CBinaryCommand&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\ExpressionCommand.h" line="39"/>
+            <symbol>CBinaryCommand</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CalcInput&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CalcInput&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\Header Files\CalcInput.h" line="39"/>
+            <symbol>CalcInput</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CalculatorHistory&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CalculatorHistory&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorHistory.h" line="34"/>
+            <symbol>CalculatorHistory</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CalculatorManager.cpp" line="863"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SetPrimaryDisplay" lineNumber="54"/>
+    <functiondecl functionName="SetIsInError" lineNumber="62"/>
+    <functiondecl functionName="DisplayPasteError" lineNumber="67"/>
+    <functiondecl functionName="MaxDigitsReached" lineNumber="72"/>
+    <functiondecl functionName="BinaryOperatorReceived" lineNumber="77"/>
+    <functiondecl functionName="MemoryItemChanged" lineNumber="82"/>
+    <functiondecl functionName="SetMemorizedNumbers" lineNumber="105"/>
+    <functiondecl functionName="SetParenDisplayText" lineNumber="114"/>
+    <functiondecl functionName="OnNoRightParenAdded" lineNumber="122"/>
+    <functiondecl functionName="Reset" lineNumber="134"/>
+    <functiondecl functionName="SetStandardMode" lineNumber="164"/>
+    <functiondecl functionName="SetScientificMode" lineNumber="182"/>
+    <functiondecl functionName="SetProgrammerMode" lineNumber="199"/>
+    <functiondecl functionName="SendCommand" lineNumber="219"/>
+    <functiondecl functionName="MapCommandForSerialize" lineNumber="308"/>
+    <functiondecl functionName="MapCommandForDeSerialize" lineNumber="323"/>
+    <functiondecl functionName="SerializeSavedDegreeMode" lineNumber="336"/>
+    <functiondecl functionName="SerializePrimaryDisplay" lineNumber="341"/>
+    <functiondecl functionName="GetSerializedPrimaryDisplay" lineNumber="355"/>
+    <functiondecl functionName="DeSerializePrimaryDisplay" lineNumber="364"/>
+    <functiondecl functionName="LoadPersistedPrimaryValue" lineNumber="377"/>
+    <functiondecl functionName="SerializeMemory" lineNumber="387"/>
+    <functiondecl functionName="GetSerializedMemory" lineNumber="398"/>
+    <functiondecl functionName="DeSerializeMemory" lineNumber="407"/>
+    <functiondecl functionName="SerializeCommands" lineNumber="423"/>
+    <functiondecl functionName="DeSerializeCommands" lineNumber="432"/>
+    <functiondecl functionName="MemorizeNumber" lineNumber="493"/>
+    <functiondecl functionName="MemorizedNumberLoad" lineNumber="522"/>
+    <functiondecl functionName="MemorizedNumberAdd" lineNumber="541"/>
+    <functiondecl functionName="MemorizedNumberClear" lineNumber="567"/>
+    <functiondecl functionName="MemorizedNumberSubtract" lineNumber="582"/>
+    <functiondecl functionName="MemorizedNumberClearAll" lineNumber="615"/>
+    <functiondecl functionName="MemorizedNumberSelect" lineNumber="629"/>
+    <functiondecl functionName="MemorizedNumberChanged" lineNumber="645"/>
+    <functiondecl functionName="SaveMemoryCommand" lineNumber="659"/>
+    <functiondecl functionName="GetHistoryItems" lineNumber="669"/>
+    <functiondecl functionName="GetHistoryItem" lineNumber="681"/>
+    <functiondecl functionName="OnHistoryItemAdded" lineNumber="686"/>
+    <functiondecl functionName="RemoveHistoryItem" lineNumber="691"/>
+    <functiondecl functionName="ClearHistory" lineNumber="696"/>
+    <functiondecl functionName="SetRadix" lineNumber="701"/>
+    <functiondecl functionName="SetMemorizedNumbersString" lineNumber="723"/>
+    <functiondecl functionName="GetCurrentDegreeMode" lineNumber="739"/>
+    <functiondecl functionName="GetResultForRadix" lineNumber="772"/>
+    <functiondecl functionName="SetPrecision" lineNumber="777"/>
+    <functiondecl functionName="UpdateMaxIntDigits" lineNumber="782"/>
+    <functiondecl functionName="DecimalSeparator" lineNumber="787"/>
+    <functiondecl functionName="IsEngineRecording" lineNumber="792"/>
+    <functiondecl functionName="SetInHistoryItemLoadMode" lineNumber="797"/>
+    <functiondecl functionName="DeSerializeRational" lineNumber="834"/>
+    <functiondecl functionName="DeSerializeNumber" lineNumber="880"/>
+    <functioncall functionName="AddItem"/>
+    <functioncall functionName="BIN_RADIX"/>
+    <functioncall functionName="BYTE_WIDTH"/>
+    <functioncall functionName="Backspace"/>
+    <functioncall functionName="BinaryCommand"/>
+    <functioncall functionName="BinaryOperatorReceived"/>
+    <functioncall functionName="CM_SCI"/>
+    <functioncall functionName="CUnaryCommand"/>
+    <functioncall functionName="CalcInput"/>
+    <functioncall functionName="CalculatorManager"/>
+    <functioncall functionName="ChangeConstants"/>
+    <functioncall functionName="ChangePrecision"/>
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClearHistory"/>
+    <functioncall functionName="CommandCOS"/>
+    <functioncall functionName="CommandCOSH"/>
+    <functioncall functionName="CommandDEG"/>
+    <functioncall functionName="CommandINV"/>
+    <functioncall functionName="CommandLN"/>
+    <functioncall functionName="CommandNULL"/>
+    <functioncall functionName="CommandSIGN"/>
+    <functioncall functionName="CommandSIN"/>
+    <functioncall functionName="CommandSINH"/>
+    <functioncall functionName="CommandTAN"/>
+    <functioncall functionName="CommandTANH"/>
+    <functioncall functionName="DEC_RADIX"/>
+    <functioncall functionName="DWORD_WIDTH"/>
+    <functioncall functionName="DeSerializeNumber"/>
+    <functioncall functionName="DeSerializeRational"/>
+    <functioncall functionName="Decimal"/>
+    <functioncall functionName="DecimalSeparator"/>
+    <functioncall functionName="DisplayError"/>
+    <functioncall functionName="Eight"/>
+    <functioncall functionName="Exp"/>
+    <functioncall functionName="FInErrorState"/>
+    <functioncall functionName="FInRecordingState"/>
+    <functioncall functionName="Five"/>
+    <functioncall functionName="Four"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetCEngineString"/>
+    <functioncall functionName="GetCurrentRadix"/>
+    <functioncall functionName="GetCurrentResultForRadix"/>
+    <functioncall functionName="GetExpressionSuffix"/>
+    <functioncall functionName="GetHistory"/>
+    <functioncall functionName="GetHistoryItem"/>
+    <functioncall functionName="GetSize"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="GetStringForDisplay"/>
+    <functioncall functionName="GroupDigitsPerRadix"/>
+    <functioncall functionName="HEX_RADIX"/>
+    <functioncall functionName="IdStrFromCmdId"/>
+    <functioncall functionName="InitialOneTimeOnlySetup"/>
+    <functioncall functionName="LoadPersistedPrimaryValue"/>
+    <functioncall functionName="MAXPRECDEPTH"/>
+    <functioncall functionName="MAX_HISTORY_ITEMS"/>
+    <functioncall functionName="Mantissa"/>
+    <functioncall functionName="MapCommandForDeSerialize"/>
+    <functioncall functionName="MapCommandForSerialize"/>
+    <functioncall functionName="MaxDigitsReached"/>
+    <functioncall functionName="MaxHistorySize"/>
+    <functioncall functionName="MemorizeNumber"/>
+    <functioncall functionName="MemorizedNumberAdd"/>
+    <functioncall functionName="MemorizedNumberChanged"/>
+    <functioncall functionName="MemorizedNumberClear"/>
+    <functioncall functionName="MemorizedNumberClearAll"/>
+    <functioncall functionName="MemorizedNumberLoad"/>
+    <functioncall functionName="MemorizedNumberSelect"/>
+    <functioncall functionName="MemorizedNumberSubtract"/>
+    <functioncall functionName="MemoryItemChanged"/>
+    <functioncall functionName="NUM_WIDTH_LENGTH"/>
+    <functioncall functionName="Negate"/>
+    <functioncall functionName="Nine"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="Number"/>
+    <functioncall functionName="OCT_RADIX"/>
+    <functioncall functionName="OnHistoryItemAdded"/>
+    <functioncall functionName="OnNoRightParenAdded"/>
+    <functioncall functionName="One"/>
+    <functioncall functionName="OperandCommand"/>
+    <functioncall functionName="P"/>
+    <functioncall functionName="Parentheses"/>
+    <functioncall functionName="PersistedMemObject"/>
+    <functioncall functionName="ProcessCommand"/>
+    <functioncall functionName="ProgrammerMode"/>
+    <functioncall functionName="ProgrammerModePrecision"/>
+    <functioncall functionName="Q"/>
+    <functioncall functionName="QWORD_WIDTH"/>
+    <functioncall functionName="Rational"/>
+    <functioncall functionName="RemoveItem"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="S_OK"/>
+    <functioncall functionName="SaveMemoryCommand"/>
+    <functioncall functionName="ScientificMode"/>
+    <functioncall functionName="ScientificModePrecision"/>
+    <functioncall functionName="SendCommand"/>
+    <functioncall functionName="SerializeMemory"/>
+    <functioncall functionName="SerializeNumber"/>
+    <functioncall functionName="SerializePrimaryDisplay"/>
+    <functioncall functionName="SerializeRational"/>
+    <functioncall functionName="SetExpressionDisplay"/>
+    <functioncall functionName="SetIsInError"/>
+    <functioncall functionName="SetMemorizedNumbers"/>
+    <functioncall functionName="SetMemorizedNumbersString"/>
+    <functioncall functionName="SetParenDisplayText"/>
+    <functioncall functionName="SetPrimaryDisplay"/>
+    <functioncall functionName="SetProgrammerMode"/>
+    <functioncall functionName="SetScientificMode"/>
+    <functioncall functionName="SetStandardMode"/>
+    <functioncall functionName="Seven"/>
+    <functioncall functionName="Sign"/>
+    <functioncall functionName="Six"/>
+    <functioncall functionName="StandardMode"/>
+    <functioncall functionName="StandardModePrecision"/>
+    <functioncall functionName="Three"/>
+    <functioncall functionName="Two"/>
+    <functioncall functionName="UnaryCommand"/>
+    <functioncall functionName="UpdateMaxIntDigits"/>
+    <functioncall functionName="WORD_WIDTH"/>
+    <functioncall functionName="Zero"/>
+    <functioncall functionName="addedItemIndex"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clearMemory"/>
+    <functioncall functionName="command"/>
+    <functioncall functionName="commandToSave"/>
+    <functioncall functionName="commands"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="currentPair"/>
+    <functioncall functionName="decSymbol"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="digit"/>
+    <functioncall functionName="displayCallback"/>
+    <functioncall functionName="displayString"/>
+    <functioncall functionName="eMode"/>
+    <functioncall functionName="emplace_back"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="expressionSuffix"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="hr"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="iRadixType"/>
+    <functioncall functionName="ids"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="indexOfMemory"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="invalid_argument"/>
+    <functioncall functionName="isError"/>
+    <functioncall functionName="isHistoryItemLoadMode"/>
+    <functioncall functionName="isNegative"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="iter"/>
+    <functioncall functionName="itr"/>
+    <functioncall functionName="long"/>
+    <functioncall functionName="m_base"/>
+    <functioncall functionName="m_currentCalculatorEngine"/>
+    <functioncall functionName="m_currentDegreeMode"/>
+    <functioncall functionName="m_decPtIndex"/>
+    <functioncall functionName="m_decSymbol"/>
+    <functioncall functionName="m_displayCallback"/>
+    <functioncall functionName="m_exponent"/>
+    <functioncall functionName="m_hasDecimal"/>
+    <functioncall functionName="m_hasExponent"/>
+    <functioncall functionName="m_inHistoryItemLoadMode"/>
+    <functioncall functionName="m_isExponentialFormat"/>
+    <functioncall functionName="m_isNegative"/>
+    <functioncall functionName="m_maximumMemorySize"/>
+    <functioncall functionName="m_memorizedNumbers"/>
+    <functioncall functionName="m_pSciHistory"/>
+    <functioncall functionName="m_pStdHistory"/>
+    <functioncall functionName="m_persistedPrimaryValue"/>
+    <functioncall functionName="m_programmerCalculatorEngine"/>
+    <functioncall functionName="m_radix"/>
+    <functioncall functionName="m_resourceProvider"/>
+    <functioncall functionName="m_savedDegreeMode"/>
+    <functioncall functionName="m_scientificCalculatorEngine"/>
+    <functioncall functionName="m_standardCalculatorEngine"/>
+    <functioncall functionName="make_unique"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="memorizedNumbers"/>
+    <functioncall functionName="memoryCommand"/>
+    <functioncall functionName="memoryItem"/>
+    <functioncall functionName="memoryObject"/>
+    <functioncall functionName="nOpCode"/>
+    <functioncall functionName="nTokens"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="out_of_range"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="pHistory"/>
+    <functioncall functionName="parenthesisCount"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="q"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="resourceProvider"/>
+    <functioncall functionName="resultVector"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="startIter"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="stringValue"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="tokens"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="uIdx"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

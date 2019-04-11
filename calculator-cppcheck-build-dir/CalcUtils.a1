@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4231021524">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="IsOpInRange" lineNumber="8"/>
+    <functiondecl functionName="IsBinOpCode" lineNumber="13"/>
+    <functiondecl functionName="IsUnaryOpCode" lineNumber="20"/>
+    <functiondecl functionName="IsDigitOpCode" lineNumber="25"/>
+    <functiondecl functionName="IsGuiSettingOpCode" lineNumber="35"/>
+    <functioncall functionName="IDC_0"/>
+    <functioncall functionName="IDC_AND"/>
+    <functioncall functionName="IDC_F"/>
+    <functioncall functionName="IDC_PWR"/>
+    <functioncall functionName="IDC_UNARYFIRST"/>
+    <functioncall functionName="IDC_UNARYLAST"/>
+    <functioncall functionName="IDM_BIN"/>
+    <functioncall functionName="IDM_BYTE"/>
+    <functioncall functionName="IDM_DEG"/>
+    <functioncall functionName="IDM_GRAD"/>
+    <functioncall functionName="IDM_HEX"/>
+    <functioncall functionName="IDM_QWORD"/>
+    <functioncall functionName="IsOpInRange"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="opCode"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="switch"/>
+  </FileInfo>
+</analyzerinfo>

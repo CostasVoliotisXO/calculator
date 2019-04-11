@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2903861496">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CategoryViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CategoryViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="21"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class UnitViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class UnitViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="40"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class UnitConverterSupplementaryResultViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class UnitConverterSupplementaryResultViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="54"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class UnitConverterViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class UnitConverterViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="69"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Abbreviation"/>
+    <functioncall functionName="Append"/>
+    <functioncall functionName="Categories"/>
+    <functioncall functionName="CategoryViewModel"/>
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="CurrentCategory"/>
+    <functioncall functionName="Name"/>
+    <functioncall functionName="NegateVisibility"/>
+    <functioncall functionName="OBSERVABLE_OBJECT"/>
+    <functioncall functionName="OBSERVABLE_PROPERTY_R"/>
+    <functioncall functionName="OBSERVABLE_PROPERTY_RW"/>
+    <functioncall functionName="SupplementaryResults"/>
+    <functioncall functionName="Unit"/>
+    <functioncall functionName="Unit1"/>
+    <functioncall functionName="Unit2"/>
+    <functioncall functionName="UnitConverterSupplementaryResultViewModel"/>
+    <functioncall functionName="UnitViewModel"/>
+    <functioncall functionName="Units"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="Value1"/>
+    <functioncall functionName="Value1Active"/>
+    <functioncall functionName="Value2"/>
+    <functioncall functionName="Value2Active"/>
+    <functioncall functionName="Vector"/>
+    <functioncall functionName="Visibility"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="abbr"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="m_Abbreviation"/>
+    <functioncall functionName="m_CurrentCategory"/>
+    <functioncall functionName="m_Name"/>
+    <functioncall functionName="m_NegateVisibility"/>
+    <functioncall functionName="m_Unit1"/>
+    <functioncall functionName="m_Unit2"/>
+    <functioncall functionName="m_Value"/>
+    <functioncall functionName="m_Value1"/>
+    <functioncall functionName="m_Value1Active"/>
+    <functioncall functionName="m_Value2"/>
+    <functioncall functionName="m_Value2Active"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="negateVisibility"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="unit"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

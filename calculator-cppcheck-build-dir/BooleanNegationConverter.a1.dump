@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;BooleanNegationConverter.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Converters"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Platform"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Foundation"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="Windows"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="UI"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Xaml"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Interop"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="13" str="Object"/>
+    <tok fileIndex="0" linenr="13" str="^"/>
+    <tok fileIndex="0" linenr="13" str="BooleanNegationConverter"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="Convert"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="Object"/>
+    <tok fileIndex="0" linenr="13" str="^"/>
+    <tok fileIndex="0" linenr="13" str="value"/>
+    <tok fileIndex="0" linenr="13" str=","/>
+    <tok fileIndex="0" linenr="13" str="TypeName"/>
+    <tok fileIndex="0" linenr="13" str="targetType"/>
+    <tok fileIndex="0" linenr="13" str=","/>
+    <tok fileIndex="0" linenr="13" str="Object"/>
+    <tok fileIndex="0" linenr="13" str="^"/>
+    <tok fileIndex="0" linenr="13" str="parameter"/>
+    <tok fileIndex="0" linenr="13" str=","/>
+    <tok fileIndex="0" linenr="13" str="String"/>
+    <tok fileIndex="0" linenr="13" str="^"/>
+    <tok fileIndex="0" linenr="13" str="language"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="15" str="("/>
+    <tok fileIndex="0" linenr="15" str="void"/>
+    <tok fileIndex="0" linenr="15" str=")"/>
+    <tok fileIndex="0" linenr="15" str="targetType"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="15" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="void"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str="parameter"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="16" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str="void"/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str="language"/>
+    <tok fileIndex="0" linenr="17" str=";"/>
+    <tok fileIndex="0" linenr="17" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="19" str="auto"/>
+    <tok fileIndex="0" linenr="19" str="boxedBool"/>
+    <tok fileIndex="0" linenr="19" str="="/>
+    <tok fileIndex="0" linenr="19" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="19" str="&lt;"/>
+    <tok fileIndex="0" linenr="19" str="Box"/>
+    <tok fileIndex="0" linenr="19" str="&lt;"/>
+    <tok fileIndex="0" linenr="19" str="bool"/>
+    <tok fileIndex="0" linenr="19" str="&gt;"/>
+    <tok fileIndex="0" linenr="19" str="^"/>
+    <tok fileIndex="0" linenr="19" str="&gt;"/>
+    <tok fileIndex="0" linenr="19" str="("/>
+    <tok fileIndex="0" linenr="19" str="value"/>
+    <tok fileIndex="0" linenr="19" str=")"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="auto"/>
+    <tok fileIndex="0" linenr="20" str="boolValue"/>
+    <tok fileIndex="0" linenr="20" str="="/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="boxedBool"/>
+    <tok fileIndex="0" linenr="20" str="!="/>
+    <tok fileIndex="0" linenr="20" str="nullptr"/>
+    <tok fileIndex="0" linenr="20" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="20" str="boxedBool"/>
+    <tok fileIndex="0" linenr="20" str="-&gt;"/>
+    <tok fileIndex="0" linenr="20" str="Value"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="return"/>
+    <tok fileIndex="0" linenr="21" str="!"/>
+    <tok fileIndex="0" linenr="21" str="boolValue"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="}"/>
+    <tok fileIndex="0" linenr="24" str="Object"/>
+    <tok fileIndex="0" linenr="24" str="^"/>
+    <tok fileIndex="0" linenr="24" str="BooleanNegationConverter"/>
+    <tok fileIndex="0" linenr="24" str="::"/>
+    <tok fileIndex="0" linenr="24" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str="Object"/>
+    <tok fileIndex="0" linenr="24" str="^"/>
+    <tok fileIndex="0" linenr="24" str="value"/>
+    <tok fileIndex="0" linenr="24" str=","/>
+    <tok fileIndex="0" linenr="24" str="TypeName"/>
+    <tok fileIndex="0" linenr="24" str="targetType"/>
+    <tok fileIndex="0" linenr="24" str=","/>
+    <tok fileIndex="0" linenr="24" str="Object"/>
+    <tok fileIndex="0" linenr="24" str="^"/>
+    <tok fileIndex="0" linenr="24" str="parameter"/>
+    <tok fileIndex="0" linenr="24" str=","/>
+    <tok fileIndex="0" linenr="24" str="String"/>
+    <tok fileIndex="0" linenr="24" str="^"/>
+    <tok fileIndex="0" linenr="24" str="language"/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="25" str="{"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="void"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str="targetType"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="26" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="void"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="27" str="parameter"/>
+    <tok fileIndex="0" linenr="27" str=";"/>
+    <tok fileIndex="0" linenr="27" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="28" str="("/>
+    <tok fileIndex="0" linenr="28" str="void"/>
+    <tok fileIndex="0" linenr="28" str=")"/>
+    <tok fileIndex="0" linenr="28" str="language"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="28" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="30" str="auto"/>
+    <tok fileIndex="0" linenr="30" str="boxedBool"/>
+    <tok fileIndex="0" linenr="30" str="="/>
+    <tok fileIndex="0" linenr="30" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="30" str="&lt;"/>
+    <tok fileIndex="0" linenr="30" str="Box"/>
+    <tok fileIndex="0" linenr="30" str="&lt;"/>
+    <tok fileIndex="0" linenr="30" str="bool"/>
+    <tok fileIndex="0" linenr="30" str="&gt;"/>
+    <tok fileIndex="0" linenr="30" str="^"/>
+    <tok fileIndex="0" linenr="30" str="&gt;"/>
+    <tok fileIndex="0" linenr="30" str="("/>
+    <tok fileIndex="0" linenr="30" str="value"/>
+    <tok fileIndex="0" linenr="30" str=")"/>
+    <tok fileIndex="0" linenr="30" str=";"/>
+    <tok fileIndex="0" linenr="31" str="auto"/>
+    <tok fileIndex="0" linenr="31" str="boolValue"/>
+    <tok fileIndex="0" linenr="31" str="="/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str="boxedBool"/>
+    <tok fileIndex="0" linenr="31" str="!="/>
+    <tok fileIndex="0" linenr="31" str="nullptr"/>
+    <tok fileIndex="0" linenr="31" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="31" str="boxedBool"/>
+    <tok fileIndex="0" linenr="31" str="-&gt;"/>
+    <tok fileIndex="0" linenr="31" str="Value"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="32" str="return"/>
+    <tok fileIndex="0" linenr="32" str="!"/>
+    <tok fileIndex="0" linenr="32" str="boolValue"/>
+    <tok fileIndex="0" linenr="32" str=";"/>
+    <tok fileIndex="0" linenr="33" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="5" str="#include &quot;BooleanNegationConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B4860E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="6" str="namespace" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B4854E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="6" str="CalculatorApp" scope="000001349138F1C0" type="name" astParent="000001349B485BA0"/>
+    <token id="000001349B485BA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="7" str="{" scope="000001349138EA50" link="000001349B4788E0" astOperand1="000001349B4854E0" astOperand2="000001349B4866E0"/>
+    <token id="000001349B486680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="8" str="namespace" scope="000001349138EA50" type="name"/>
+    <token id="000001349B4866E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="8" str="Converters" scope="000001349138EA50" type="name" astParent="000001349B485BA0"/>
+    <token id="000001349B486320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="9" str="{" scope="000001349138F0B0" link="000001349B476A20"/>
+    <token id="000001349B485C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="[" scope="000001349138F0B0" link="000001349B486380"/>
+    <token id="000001349B4861A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="Windows" scope="000001349138F0B0" type="name" astParent="000001349B4855A0"/>
+    <token id="000001349B4855A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="::" scope="000001349138F0B0" astParent="000001349B4867A0" astOperand1="000001349B4861A0" astOperand2="000001349B485D80"/>
+    <token id="000001349B485D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="Foundation" scope="000001349138F0B0" type="name" astParent="000001349B4855A0"/>
+    <token id="000001349B4867A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="::" scope="000001349138F0B0" astParent="000001349B485600" astOperand1="000001349B4855A0" astOperand2="000001349B485A80"/>
+    <token id="000001349B485A80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="Metadata" scope="000001349138F0B0" type="name" astParent="000001349B4867A0"/>
+    <token id="000001349B485600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="::" scope="000001349138F0B0" astOperand1="000001349B4867A0" astOperand2="000001349B486140"/>
+    <token id="000001349B486140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="WebHostHidden" scope="000001349138F0B0" type="name" astParent="000001349B485600"/>
+    <token id="000001349B486380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="13" str="]" scope="000001349138F0B0" link="000001349B485C60"/>
+    <token id="000001349B486440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="public" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B486800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="ref" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B485E40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="class" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B4864A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="BooleanNegationConverter" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B4862C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="sealed" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B485A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str=":" scope="000001349138F0B0"/>
+    <token id="000001349B486500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="Windows" scope="000001349138F0B0" type="name" astParent="000001349B486200"/>
+    <token id="000001349B486200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="::" scope="000001349138F0B0" astParent="000001349B486860" astOperand1="000001349B486500" astOperand2="000001349B485660"/>
+    <token id="000001349B485660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="UI" scope="000001349138F0B0" type="name" astParent="000001349B486200"/>
+    <token id="000001349B486860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="::" scope="000001349138F0B0" astParent="000001349B485120" astOperand1="000001349B486200" astOperand2="000001349B486560"/>
+    <token id="000001349B486560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="Xaml" scope="000001349138F0B0" type="name" astParent="000001349B486860"/>
+    <token id="000001349B485120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="::" scope="000001349138F0B0" astParent="000001349B4856C0" astOperand1="000001349B486860" astOperand2="000001349B485720"/>
+    <token id="000001349B485720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="Data" scope="000001349138F0B0" type="name" astParent="000001349B485120"/>
+    <token id="000001349B4856C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="::" scope="000001349138F0B0" astOperand1="000001349B485120" astOperand2="000001349B485180"/>
+    <token id="000001349B485180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="14" str="IValueConverter" scope="000001349138F0B0" type="name" astParent="000001349B4856C0"/>
+    <token id="000001349B485480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="15" str="{" scope="000001349138F0B0" link="000001349B476960"/>
+    <token id="000001349B4851E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="16" str="public:" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B485240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="virtual" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B486620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B486740"/>
+    <token id="000001349B486740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B4852A0" astOperand1="000001349B486620" astOperand2="000001349B485900"/>
+    <token id="000001349B485900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B486740"/>
+    <token id="000001349B4852A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B486740" astOperand2="000001349B485840"/>
+    <token id="000001349B485300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Convert" scope="000001349138F0B0" type="name" astParent="000001349B485840"/>
+    <token id="000001349B485840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="(" scope="000001349138F0B0" link="000001349B4774A0" astParent="000001349B4852A0" astOperand1="000001349B485300" astOperand2="000001349B486920"/>
+    <token id="000001349B485360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B4858A0"/>
+    <token id="000001349B4858A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B485AE0" astOperand1="000001349B485360" astOperand2="000001349B485D20"/>
+    <token id="000001349B485D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B4858A0"/>
+    <token id="000001349B485AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="^" scope="000001349138F0B0" type="op" astParent="000001349B485420" astOperand1="000001349B4858A0" astOperand2="000001349B4853C0"/>
+    <token id="000001349B4853C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="value" scope="000001349138F0B0" type="name" astParent="000001349B485AE0"/>
+    <token id="000001349B485420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="," scope="000001349138F0B0" astParent="000001349B485F00" astOperand1="000001349B485AE0" astOperand2="000001349B485DE0"/>
+    <token id="000001349B485B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Windows" scope="000001349138F0B0" type="name" astParent="000001349B485960"/>
+    <token id="000001349B485960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B485540" astOperand1="000001349B485B40" astOperand2="000001349B485780"/>
+    <token id="000001349B485780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="UI" scope="000001349138F0B0" type="name" astParent="000001349B485960"/>
+    <token id="000001349B485540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B4859C0" astOperand1="000001349B485960" astOperand2="000001349B4857E0"/>
+    <token id="000001349B4857E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Xaml" scope="000001349138F0B0" type="name" astParent="000001349B485540"/>
+    <token id="000001349B4859C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B485DE0" astOperand1="000001349B485540" astOperand2="000001349B485C00"/>
+    <token id="000001349B485C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Interop" scope="000001349138F0B0" type="name" astParent="000001349B4859C0"/>
+    <token id="000001349B485DE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B485420" astOperand1="000001349B4859C0" astOperand2="000001349B485EA0"/>
+    <token id="000001349B485CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B485EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="targetType" scope="000001349138F0B0" type="name" varId="1" astParent="000001349B485DE0"/>
+    <token id="000001349B485F00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="," scope="000001349138F0B0" astParent="000001349B486920" astOperand1="000001349B485420" astOperand2="000001349B486EC0"/>
+    <token id="000001349B485F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B485FC0"/>
+    <token id="000001349B485FC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B486EC0" astOperand1="000001349B485F60" astOperand2="000001349B486020"/>
+    <token id="000001349B486020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B485FC0"/>
+    <token id="000001349B486EC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="^" scope="000001349138F0B0" type="op" astParent="000001349B485F00" astOperand1="000001349B485FC0" astOperand2="000001349B486B60"/>
+    <token id="000001349B486B60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B486EC0"/>
+    <token id="000001349B486920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="," scope="000001349138F0B0" astParent="000001349B485840" astOperand1="000001349B485F00" astOperand2="000001349B486980"/>
+    <token id="000001349B486D40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B486BC0"/>
+    <token id="000001349B486BC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="::" scope="000001349138F0B0" astParent="000001349B486980" astOperand1="000001349B486D40" astOperand2="000001349B486E00"/>
+    <token id="000001349B486E00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="String" scope="000001349138F0B0" type="name" astParent="000001349B486BC0"/>
+    <token id="000001349B486980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="^" scope="000001349138F0B0" type="op" astParent="000001349B486920" astOperand1="000001349B486BC0" astOperand2="000001349B4770E0"/>
+    <token id="000001349B4770E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str="language" scope="000001349138F0B0" type="name" astParent="000001349B486980"/>
+    <token id="000001349B4774A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str=")" scope="000001349138F0B0" link="000001349B485840"/>
+    <token id="000001349B476D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="17" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B477080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="virtual" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B476720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B477740"/>
+    <token id="000001349B477740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B476840" astOperand1="000001349B476720" astOperand2="000001349B476AE0"/>
+    <token id="000001349B476AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B477740"/>
+    <token id="000001349B476840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B477740" astOperand2="000001349B476EA0"/>
+    <token id="000001349B476F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="ConvertBack" scope="000001349138F0B0" type="name" astParent="000001349B476EA0"/>
+    <token id="000001349B476EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="(" scope="000001349138F0B0" link="000001349B4768A0" astParent="000001349B476840" astOperand1="000001349B476F60" astOperand2="000001349B477320"/>
+    <token id="000001349B4762A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B477020"/>
+    <token id="000001349B477020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B476B40" astOperand1="000001349B4762A0" astOperand2="000001349B4763C0"/>
+    <token id="000001349B4763C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B477020"/>
+    <token id="000001349B476B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B477200" astOperand1="000001349B477020" astOperand2="000001349B476180"/>
+    <token id="000001349B476180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="value" scope="000001349138F0B0" type="name" astParent="000001349B476B40"/>
+    <token id="000001349B477200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B4771A0" astOperand1="000001349B476B40" astOperand2="000001349B4775C0"/>
+    <token id="000001349B476120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Windows" scope="000001349138F0B0" type="name" astParent="000001349B477140"/>
+    <token id="000001349B477140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B477500" astOperand1="000001349B476120" astOperand2="000001349B476CC0"/>
+    <token id="000001349B476CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="UI" scope="000001349138F0B0" type="name" astParent="000001349B477140"/>
+    <token id="000001349B477500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B476780" astOperand1="000001349B477140" astOperand2="000001349B4777A0"/>
+    <token id="000001349B4777A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Xaml" scope="000001349138F0B0" type="name" astParent="000001349B477500"/>
+    <token id="000001349B476780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B4775C0" astOperand1="000001349B477500" astOperand2="000001349B4761E0"/>
+    <token id="000001349B4761E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Interop" scope="000001349138F0B0" type="name" astParent="000001349B476780"/>
+    <token id="000001349B4775C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B477200" astOperand1="000001349B476780" astOperand2="000001349B476C00"/>
+    <token id="000001349B476C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B476C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="targetType" scope="000001349138F0B0" type="name" varId="2" astParent="000001349B4775C0"/>
+    <token id="000001349B4771A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B477320" astOperand1="000001349B477200" astOperand2="000001349B477620"/>
+    <token id="000001349B476420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B476D20"/>
+    <token id="000001349B476D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B477620" astOperand1="000001349B476420" astOperand2="000001349B477260"/>
+    <token id="000001349B477260" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B476D20"/>
+    <token id="000001349B477620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B4771A0" astOperand1="000001349B476D20" astOperand2="000001349B476540"/>
+    <token id="000001349B476540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B477620"/>
+    <token id="000001349B477320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B476EA0" astOperand1="000001349B4771A0" astOperand2="000001349B4772C0"/>
+    <token id="000001349B4767E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="Platform" scope="000001349138F0B0" type="name" astParent="000001349B477800"/>
+    <token id="000001349B477800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B4772C0" astOperand1="000001349B4767E0" astOperand2="000001349B477680"/>
+    <token id="000001349B477680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="String" scope="000001349138F0B0" type="name" astParent="000001349B477800"/>
+    <token id="000001349B4772C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B477320" astOperand1="000001349B477800" astOperand2="000001349B477860"/>
+    <token id="000001349B477860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str="language" scope="000001349138F0B0" type="name" astParent="000001349B4772C0"/>
+    <token id="000001349B4768A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str=")" scope="000001349138F0B0" link="000001349B476EA0"/>
+    <token id="000001349B476900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="18" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B476960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="19" str="}" scope="000001349138F0B0" link="000001349B485480"/>
+    <token id="000001349B4769C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="19" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B476A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="20" str="}" scope="000001349138F0B0" link="000001349B486320"/>
+    <token id="000001349B4788E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.h" linenr="21" str="}" scope="000001349138EA50" link="000001349B485BA0"/>
+    <token id="000001349B477CE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str="using" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B4783A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str="namespace" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478E80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str="CalculatorApp" scope="000001349138F1C0" type="name" astParent="000001349B478EE0"/>
+    <token id="000001349B478EE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str="::" scope="000001349138F1C0" astOperand1="000001349B478E80" astOperand2="000001349B478B20"/>
+    <token id="000001349B478B20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str="Converters" scope="000001349138F1C0" type="name" astParent="000001349B478EE0"/>
+    <token id="000001349B478460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="7" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B4789A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="9" str="using" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B477DA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="9" str="namespace" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="9" str="Platform" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478FA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="9" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B478280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str="using" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B477E00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str="namespace" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478940" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str="Windows" scope="000001349138F1C0" type="name" astParent="000001349B478B80"/>
+    <token id="000001349B478B80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str="::" scope="000001349138F1C0" astOperand1="000001349B478940" astOperand2="000001349B478BE0"/>
+    <token id="000001349B478BE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str="Foundation" scope="000001349138F1C0" type="name" astParent="000001349B478B80"/>
+    <token id="000001349B479000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="10" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B478640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="using" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B477E60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="namespace" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478C40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="Windows" scope="000001349138F1C0" type="name" astParent="000001349B478040"/>
+    <token id="000001349B478040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="::" scope="000001349138F1C0" astParent="000001349B478820" astOperand1="000001349B478C40" astOperand2="000001349B477D40"/>
+    <token id="000001349B477D40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="UI" scope="000001349138F1C0" type="name" astParent="000001349B478040"/>
+    <token id="000001349B478820" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="::" scope="000001349138F1C0" astParent="000001349B478700" astOperand1="000001349B478040" astOperand2="000001349B477F80"/>
+    <token id="000001349B477F80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="Xaml" scope="000001349138F1C0" type="name" astParent="000001349B478820"/>
+    <token id="000001349B478700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="::" scope="000001349138F1C0" astOperand1="000001349B478820" astOperand2="000001349B477A40"/>
+    <token id="000001349B477A40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str="Interop" scope="000001349138F1C0" type="name" astParent="000001349B478700"/>
+    <token id="000001349B477980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="11" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B4784C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B478880"/>
+    <token id="000001349B478880" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="^" scope="000001349138F1C0" type="op" astOperand1="000001349B4784C0" astOperand2="000001349B478F40"/>
+    <token id="000001349B479060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="BooleanNegationConverter" scope="000001349138F1C0" type="name" astParent="000001349B478100"/>
+    <token id="000001349B478100" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="::" scope="000001349138F1C0" astParent="000001349B478F40" astOperand1="000001349B479060" astOperand2="000001349B4786A0"/>
+    <token id="000001349B4786A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="Convert" scope="000001349138F1C0" type="name" astParent="000001349B478100"/>
+    <token id="000001349B478F40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="(" scope="000001349138F1C0" link="000001349B478A00" astParent="000001349B478880" astOperand1="000001349B478100" astOperand2="000001349B477C80"/>
+    <token id="000001349B477EC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B477C20"/>
+    <token id="000001349B477C20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="^" scope="000001349138F1C0" type="op" astParent="000001349B477F20" astOperand1="000001349B477EC0" astOperand2="000001349B478520"/>
+    <token id="000001349B478520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="value" scope="000001349138F1C0" type="name" astParent="000001349B477C20"/>
+    <token id="000001349B477F20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="," scope="000001349138F1C0" astParent="000001349B477920" astOperand1="000001349B477C20" astOperand2="000001349B478CA0"/>
+    <token id="000001349B4778C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="TypeName" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478CA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="targetType" scope="000001349138F1C0" type="name" varId="3" astParent="000001349B477F20"/>
+    <token id="000001349B477920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="," scope="000001349138F1C0" astParent="000001349B477C80" astOperand1="000001349B477F20" astOperand2="000001349B4780A0"/>
+    <token id="000001349B477FE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B4780A0"/>
+    <token id="000001349B4780A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="^" scope="000001349138F1C0" type="op" astParent="000001349B477920" astOperand1="000001349B477FE0" astOperand2="000001349B4779E0"/>
+    <token id="000001349B4779E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="parameter" scope="000001349138F1C0" type="name" astParent="000001349B4780A0"/>
+    <token id="000001349B477C80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="," scope="000001349138F1C0" astParent="000001349B478F40" astOperand1="000001349B477920" astOperand2="000001349B478D00"/>
+    <token id="000001349B477AA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="String" scope="000001349138F1C0" type="name" astParent="000001349B478D00"/>
+    <token id="000001349B478D00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="^" scope="000001349138F1C0" type="op" astParent="000001349B477C80" astOperand1="000001349B477AA0" astOperand2="000001349B477B00"/>
+    <token id="000001349B477B00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str="language" scope="000001349138F1C0" type="name" astParent="000001349B478D00"/>
+    <token id="000001349B478A00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="13" str=")" scope="000001349138F1C0" link="000001349B478F40"/>
+    <token id="000001349B478A60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="14" str="{" scope="000001349138F1C0" link="000001349B47A800"/>
+    <token id="000001349B478160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="15" str="(" scope="000001349138F1C0" link="000001349B478D60" astOperand1="000001349B4781C0" valueType-type="void"/>
+    <token id="000001349B477B60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="15" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B478D60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="15" str=")" scope="000001349138F1C0" link="000001349B478160"/>
+    <token id="000001349B4781C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="15" str="targetType" scope="000001349138F1C0" type="name" varId="3" astParent="000001349B478160"/>
+    <token id="000001349B477BC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="15" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B478220" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="16" str="(" scope="000001349138F1C0" link="000001349B4782E0" astOperand1="000001349B478AC0" valueType-type="void"/>
+    <token id="000001349B4785E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="16" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B4782E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="16" str=")" scope="000001349138F1C0" link="000001349B478220"/>
+    <token id="000001349B478AC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="16" str="parameter" scope="000001349138F1C0" type="name" astParent="000001349B478220"/>
+    <token id="000001349B478340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="16" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B478400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="17" str="(" scope="000001349138F1C0" link="000001349B4787C0" astOperand1="000001349B478DC0" valueType-type="void"/>
+    <token id="000001349B478760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="17" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B4787C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="17" str=")" scope="000001349138F1C0" link="000001349B478400"/>
+    <token id="000001349B478DC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="17" str="language" scope="000001349138F1C0" type="name" astParent="000001349B478400"/>
+    <token id="000001349B478E20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="17" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47A380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="auto" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B479300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="boxedBool" scope="000001349138F1C0" type="name" varId="4"/>
+    <token id="000001349B479D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B4865C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="boxedBool" scope="000001349138F1C0" type="name" varId="4" astParent="000001349B47BAC0"/>
+    <token id="000001349B47BAC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="=" scope="000001349138F1C0" type="op" isAssignmentOp="True" astOperand1="000001349B4865C0" astOperand2="000001349B47A740"/>
+    <token id="000001349B479960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="dynamic_cast" scope="000001349138F1C0" type="name" function="00000134A2140340" astParent="000001349B47A740"/>
+    <token id="000001349B4797E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="&lt;" scope="000001349138F1C0" link="000001349B4799C0"/>
+    <token id="000001349B479720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="Box" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B479C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="&lt;" scope="000001349138F1C0" link="000001349B47A440"/>
+    <token id="000001349B479780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="bool" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47A440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="&gt;" scope="000001349138F1C0" link="000001349B479C00"/>
+    <token id="000001349B47A2C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="^" scope="000001349138F1C0" type="op"/>
+    <token id="000001349B4799C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="&gt;" scope="000001349138F1C0" link="000001349B4797E0"/>
+    <token id="000001349B47A740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="(" scope="000001349138F1C0" link="000001349B479A20" astParent="000001349B47BAC0" astOperand1="000001349B479960" astOperand2="000001349B479D80"/>
+    <token id="000001349B479D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str="value" scope="000001349138F1C0" type="name" astParent="000001349B47A740"/>
+    <token id="000001349B479A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str=")" scope="000001349138F1C0" link="000001349B47A740"/>
+    <token id="000001349B479CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="19" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B4791E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="auto" scope="000001349138F1C0" type="name" valueType-type="bool"/>
+    <token id="000001349B47A0E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="boolValue" scope="000001349138F1C0" type="name" varId="5" valueType-type="bool"/>
+    <token id="000001349B47A4A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47B340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="boolValue" scope="000001349138F1C0" type="name" varId="5" astParent="000001349B47B040" valueType-type="bool"/>
+    <token id="000001349B47B040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="=" scope="000001349138F1C0" type="op" isAssignmentOp="True" astOperand1="000001349B47B340" astOperand2="000001349B47A1A0" valueType-type="bool"/>
+    <token id="000001349B479DE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="boxedBool" scope="000001349138F1C0" type="name" varId="4" astParent="000001349B479A80"/>
+    <token id="000001349B479A80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="!=" scope="000001349138F1C0" type="op" isComparisonOp="True" astParent="000001349B47A1A0" astOperand1="000001349B479DE0" astOperand2="000001349B47A320" valueType-type="bool"/>
+    <token id="000001349B47A320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="nullptr" scope="000001349138F1C0" type="name" values="00000134A920B280" astParent="000001349B479A80"/>
+    <token id="000001349B47A1A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="&amp;&amp;" scope="000001349138F1C0" type="op" isLogicalOp="True" astParent="000001349B47B040" astOperand1="000001349B479A80" astOperand2="000001349B47A7A0" valueType-type="bool"/>
+    <token id="000001349B479AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="boxedBool" scope="000001349138F1C0" type="name" varId="4" astParent="000001349B47A7A0"/>
+    <token id="000001349B47A7A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="." scope="000001349138F1C0" astParent="000001349B47A1A0" astOperand1="000001349B479AE0" astOperand2="000001349B47A500" originalName="->"/>
+    <token id="000001349B47A500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str="Value" scope="000001349138F1C0" type="name" varId="6" astParent="000001349B47A7A0"/>
+    <token id="000001349B47A560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="20" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47A3E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="21" str="return" scope="000001349138F1C0" type="name" astOperand1="000001349B47A140"/>
+    <token id="000001349B47A140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="21" str="!" scope="000001349138F1C0" type="op" isLogicalOp="True" astParent="000001349B47A3E0" astOperand1="000001349B479BA0" valueType-type="bool"/>
+    <token id="000001349B479BA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="21" str="boolValue" scope="000001349138F1C0" type="name" varId="5" astParent="000001349B47A140"/>
+    <token id="000001349B479EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="21" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47A800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="22" str="}" scope="000001349138F1C0" link="000001349B478A60"/>
+    <token id="000001349B4796C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B479420"/>
+    <token id="000001349B479420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="^" scope="000001349138F1C0" type="op" astOperand1="000001349B4796C0" astOperand2="000001349B479E40"/>
+    <token id="000001349B479840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="BooleanNegationConverter" scope="000001349138F1C0" type="name" astParent="000001349B4798A0"/>
+    <token id="000001349B4798A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="::" scope="000001349138F1C0" astParent="000001349B479E40" astOperand1="000001349B479840" astOperand2="000001349B479C60"/>
+    <token id="000001349B479C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="ConvertBack" scope="000001349138F1C0" type="name" astParent="000001349B4798A0"/>
+    <token id="000001349B479E40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="(" scope="000001349138F1C0" link="000001349B479120" astParent="000001349B479420" astOperand1="000001349B4798A0" astOperand2="000001349B47A680"/>
+    <token id="000001349B47A020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B479F00"/>
+    <token id="000001349B479F00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="^" scope="000001349138F1C0" type="op" astParent="000001349B479F60" astOperand1="000001349B47A020" astOperand2="000001349B479240"/>
+    <token id="000001349B479240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="value" scope="000001349138F1C0" type="name" astParent="000001349B479F00"/>
+    <token id="000001349B479F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="," scope="000001349138F1C0" astParent="000001349B47A200" astOperand1="000001349B479F00" astOperand2="000001349B47A080"/>
+    <token id="000001349B479FC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="TypeName" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47A080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="targetType" scope="000001349138F1C0" type="name" varId="7" astParent="000001349B479F60"/>
+    <token id="000001349B47A200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="," scope="000001349138F1C0" astParent="000001349B47A680" astOperand1="000001349B479F60" astOperand2="000001349B47A860"/>
+    <token id="000001349B47A5C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="Object" scope="000001349138F1C0" type="name" astParent="000001349B47A860"/>
+    <token id="000001349B47A860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="^" scope="000001349138F1C0" type="op" astParent="000001349B47A200" astOperand1="000001349B47A5C0" astOperand2="000001349B47A620"/>
+    <token id="000001349B47A620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="parameter" scope="000001349138F1C0" type="name" astParent="000001349B47A860"/>
+    <token id="000001349B47A680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="," scope="000001349138F1C0" astParent="000001349B479E40" astOperand1="000001349B47A200" astOperand2="000001349B4790C0"/>
+    <token id="000001349B47A6E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="String" scope="000001349138F1C0" type="name" astParent="000001349B4790C0"/>
+    <token id="000001349B4790C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="^" scope="000001349138F1C0" type="op" astParent="000001349B47A680" astOperand1="000001349B47A6E0" astOperand2="000001349B479480"/>
+    <token id="000001349B479480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str="language" scope="000001349138F1C0" type="name" astParent="000001349B4790C0"/>
+    <token id="000001349B479120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="24" str=")" scope="000001349138F1C0" link="000001349B479E40"/>
+    <token id="000001349B4792A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="25" str="{" scope="000001349138F1C0" link="000001349B47AE60"/>
+    <token id="000001349B479180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="26" str="(" scope="000001349138F1C0" link="000001349B479360" astOperand1="000001349B4793C0" valueType-type="void"/>
+    <token id="000001349B479660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="26" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B479360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="26" str=")" scope="000001349138F1C0" link="000001349B479180"/>
+    <token id="000001349B4793C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="26" str="targetType" scope="000001349138F1C0" type="name" varId="7" astParent="000001349B479180"/>
+    <token id="000001349B4794E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="26" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B479540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="27" str="(" scope="000001349138F1C0" link="000001349B479600" astOperand1="000001349B47B9A0" valueType-type="void"/>
+    <token id="000001349B4795A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="27" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B479600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="27" str=")" scope="000001349138F1C0" link="000001349B479540"/>
+    <token id="000001349B47B9A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="27" str="parameter" scope="000001349138F1C0" type="name" astParent="000001349B479540"/>
+    <token id="000001349B47B6A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="27" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47AFE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="28" str="(" scope="000001349138F1C0" link="000001349B47BDC0" astOperand1="000001349B47B700" valueType-type="void"/>
+    <token id="000001349B47BD60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="28" str="void" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47BDC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="28" str=")" scope="000001349138F1C0" link="000001349B47AFE0"/>
+    <token id="000001349B47B700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="28" str="language" scope="000001349138F1C0" type="name" astParent="000001349B47AFE0"/>
+    <token id="000001349B47BA60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="28" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47B400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="auto" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47B580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="boxedBool" scope="000001349138F1C0" type="name" varId="8"/>
+    <token id="000001349B47B520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47B0A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="boxedBool" scope="000001349138F1C0" type="name" varId="8" astParent="000001349B47AEC0"/>
+    <token id="000001349B47AEC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="=" scope="000001349138F1C0" type="op" isAssignmentOp="True" astOperand1="000001349B47B0A0" astOperand2="000001349B47A8C0"/>
+    <token id="000001349B47B280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="dynamic_cast" scope="000001349138F1C0" type="name" astParent="000001349B47A8C0"/>
+    <token id="000001349B47AF20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="&lt;" scope="000001349138F1C0" link="000001349B47BF40"/>
+    <token id="000001349B47B5E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="Box" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47B160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="&lt;" scope="000001349138F1C0" link="000001349B47AF80"/>
+    <token id="000001349B47BD00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="bool" scope="000001349138F1C0" type="name"/>
+    <token id="000001349B47AF80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="&gt;" scope="000001349138F1C0" link="000001349B47B160"/>
+    <token id="000001349B47C060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="^" scope="000001349138F1C0" type="op"/>
+    <token id="000001349B47BF40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="&gt;" scope="000001349138F1C0" link="000001349B47AF20"/>
+    <token id="000001349B47A8C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="(" scope="000001349138F1C0" link="000001349B47AB00" astParent="000001349B47AEC0" astOperand1="000001349B47B280" astOperand2="000001349B47B1C0"/>
+    <token id="000001349B47B1C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str="value" scope="000001349138F1C0" type="name" astParent="000001349B47A8C0"/>
+    <token id="000001349B47AB00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str=")" scope="000001349138F1C0" link="000001349B47A8C0"/>
+    <token id="000001349B47B8E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="30" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47ACE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="auto" scope="000001349138F1C0" type="name" valueType-type="bool"/>
+    <token id="000001349B47B3A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="boolValue" scope="000001349138F1C0" type="name" varId="9" valueType-type="bool"/>
+    <token id="000001349B47BE80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47BCA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="boolValue" scope="000001349138F1C0" type="name" varId="9" astParent="000001349B47ABC0" valueType-type="bool"/>
+    <token id="000001349B47ABC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="=" scope="000001349138F1C0" type="op" isAssignmentOp="True" astOperand1="000001349B47BCA0" astOperand2="000001349B47ADA0" valueType-type="bool"/>
+    <token id="000001349B47BEE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="boxedBool" scope="000001349138F1C0" type="name" varId="8" astParent="000001349B47B460"/>
+    <token id="000001349B47B460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="!=" scope="000001349138F1C0" type="op" isComparisonOp="True" astParent="000001349B47ADA0" astOperand1="000001349B47BEE0" astOperand2="000001349B47BA00" valueType-type="bool"/>
+    <token id="000001349B47BA00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="nullptr" scope="000001349138F1C0" type="name" values="00000134A920B580" astParent="000001349B47B460"/>
+    <token id="000001349B47ADA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="&amp;&amp;" scope="000001349138F1C0" type="op" isLogicalOp="True" astParent="000001349B47ABC0" astOperand1="000001349B47B460" astOperand2="000001349B47BFA0" valueType-type="bool"/>
+    <token id="000001349B47B640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="boxedBool" scope="000001349138F1C0" type="name" varId="8" astParent="000001349B47BFA0"/>
+    <token id="000001349B47BFA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="." scope="000001349138F1C0" astParent="000001349B47ADA0" astOperand1="000001349B47B640" astOperand2="000001349B47B2E0" originalName="->"/>
+    <token id="000001349B47B2E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str="Value" scope="000001349138F1C0" type="name" varId="10" astParent="000001349B47BFA0"/>
+    <token id="000001349B47AE00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="31" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47BB80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="32" str="return" scope="000001349138F1C0" type="name" astOperand1="000001349B47BBE0"/>
+    <token id="000001349B47BBE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="32" str="!" scope="000001349138F1C0" type="op" isLogicalOp="True" astParent="000001349B47BB80" astOperand1="000001349B47C000" valueType-type="bool"/>
+    <token id="000001349B47C000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="32" str="boolValue" scope="000001349138F1C0" type="name" varId="9" astParent="000001349B47BBE0"/>
+    <token id="000001349B47B760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="32" str=";" scope="000001349138F1C0"/>
+    <token id="000001349B47AE60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanNegationConverter.cpp" linenr="33" str="}" scope="000001349138F1C0" link="000001349B4792A0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349138F1C0" type="Global">
+      <functionList>
+        <function id="00000134A2140340" tokenDef="000001349B479960" name="dynamic_cast" type="Function">
+          <arg nr="1" variable="0000013491660090"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="000001349138EA50" type="Namespace" className="CalculatorApp" bodyStart="000001349B485BA0" bodyEnd="000001349B4788E0" nestedIn="000001349138F1C0"/>
+    <scope id="000001349138F0B0" type="Namespace" className="Converters" bodyStart="000001349B486320" bodyEnd="000001349B476A20" nestedIn="000001349138EA50"/>
+  </scopes>
+  <variables>
+    <var id="0000013491660090" nameToken="0000000000000000" typeStartToken="000001349B479D80" typeEndToken="000001349B479D80" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920B280">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B580">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

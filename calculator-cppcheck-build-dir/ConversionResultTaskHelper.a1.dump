@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;ConversionResultTaskHelper.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Common"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="concurrency"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="std"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="11" str="ConversionResultTaskHelper"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="ConversionResultTaskHelper"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str="unsigned"/>
+    <tok fileIndex="0" linenr="11" str="int"/>
+    <tok fileIndex="0" linenr="11" str="delay"/>
+    <tok fileIndex="0" linenr="11" str=","/>
+    <tok fileIndex="0" linenr="11" str="const"/>
+    <tok fileIndex="0" linenr="11" str="function"/>
+    <tok fileIndex="0" linenr="11" str="&lt;"/>
+    <tok fileIndex="0" linenr="11" str="void"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="11" str="&gt;"/>
+    <tok fileIndex="0" linenr="11" str="functionToRun"/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="11" str=":"/>
+    <tok fileIndex="0" linenr="12" str="m_delay"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="12" str="delay"/>
+    <tok fileIndex="0" linenr="12" str="}"/>
+    <tok fileIndex="0" linenr="12" str=","/>
+    <tok fileIndex="0" linenr="13" str="m_storedFunction"/>
+    <tok fileIndex="0" linenr="13" str="{"/>
+    <tok fileIndex="0" linenr="13" str="functionToRun"/>
+    <tok fileIndex="0" linenr="13" str="}"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="15" str="auto"/>
+    <tok fileIndex="0" linenr="15" str="token"/>
+    <tok fileIndex="0" linenr="15" str="="/>
+    <tok fileIndex="0" linenr="15" str="m_cts"/>
+    <tok fileIndex="0" linenr="15" str="."/>
+    <tok fileIndex="0" linenr="15" str="get_token"/>
+    <tok fileIndex="0" linenr="15" str="("/>
+    <tok fileIndex="0" linenr="15" str=")"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="16" str="auto"/>
+    <tok fileIndex="0" linenr="16" str="delayTask"/>
+    <tok fileIndex="0" linenr="16" str="="/>
+    <tok fileIndex="0" linenr="16" str="CompleteAfter"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="delay"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="17" str="delayTask"/>
+    <tok fileIndex="0" linenr="17" str="."/>
+    <tok fileIndex="0" linenr="17" str="then"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str="["/>
+    <tok fileIndex="0" linenr="17" str="this"/>
+    <tok fileIndex="0" linenr="17" str=","/>
+    <tok fileIndex="0" linenr="17" str="token"/>
+    <tok fileIndex="0" linenr="17" str="]"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="18" str="{"/>
+    <tok fileIndex="0" linenr="19" str="if"/>
+    <tok fileIndex="0" linenr="19" str="("/>
+    <tok fileIndex="0" linenr="19" str="!"/>
+    <tok fileIndex="0" linenr="19" str="token"/>
+    <tok fileIndex="0" linenr="19" str="."/>
+    <tok fileIndex="0" linenr="19" str="is_canceled"/>
+    <tok fileIndex="0" linenr="19" str="("/>
+    <tok fileIndex="0" linenr="19" str=")"/>
+    <tok fileIndex="0" linenr="19" str=")"/>
+    <tok fileIndex="0" linenr="20" str="{"/>
+    <tok fileIndex="0" linenr="21" str="m_storedFunction"/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="}"/>
+    <tok fileIndex="0" linenr="23" str="}"/>
+    <tok fileIndex="0" linenr="23" str=","/>
+    <tok fileIndex="0" linenr="23" str="task_continuation_context"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="use_current"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="}"/>
+    <tok fileIndex="0" linenr="26" str="ConversionResultTaskHelper"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="~"/>
+    <tok fileIndex="0" linenr="26" str="ConversionResultTaskHelper"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="27" str="{"/>
+    <tok fileIndex="0" linenr="28" str="m_cts"/>
+    <tok fileIndex="0" linenr="28" str="."/>
+    <tok fileIndex="0" linenr="28" str="cancel"/>
+    <tok fileIndex="0" linenr="28" str="("/>
+    <tok fileIndex="0" linenr="28" str=")"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="29" str="}"/>
+    <tok fileIndex="0" linenr="31" str="#"/>
+    <tok fileIndex="0" linenr="31" str="pragma"/>
+    <tok fileIndex="0" linenr="31" str="optimize"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str="&quot;&quot;"/>
+    <tok fileIndex="0" linenr="31" str=","/>
+    <tok fileIndex="0" linenr="31" str="off"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="32" str="// Creates a task that completes after the specified delay."/>
+    <tok fileIndex="0" linenr="33" str="//"/>
+    <tok fileIndex="0" linenr="34" str="// Taken from: How to: Create a Task that Completes After a Delay"/>
+    <tok fileIndex="0" linenr="35" str="// https://msdn.microsoft.com/en-us/library/hh873170.aspx"/>
+    <tok fileIndex="0" linenr="36" str="task"/>
+    <tok fileIndex="0" linenr="36" str="&lt;"/>
+    <tok fileIndex="0" linenr="36" str="void"/>
+    <tok fileIndex="0" linenr="36" str="&gt;"/>
+    <tok fileIndex="0" linenr="36" str="ConversionResultTaskHelper"/>
+    <tok fileIndex="0" linenr="36" str="::"/>
+    <tok fileIndex="0" linenr="36" str="CompleteAfter"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="unsigned"/>
+    <tok fileIndex="0" linenr="36" str="int"/>
+    <tok fileIndex="0" linenr="36" str="timeout"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="37" str="{"/>
+    <tok fileIndex="0" linenr="38" str="co_await"/>
+    <tok fileIndex="0" linenr="38" str="winrt"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="resume_after"/>
+    <tok fileIndex="0" linenr="38" str="("/>
+    <tok fileIndex="0" linenr="38" str="winrt"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="Windows"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="Foundation"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="TimeSpan"/>
+    <tok fileIndex="0" linenr="38" str="{"/>
+    <tok fileIndex="0" linenr="38" str="std"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="chrono"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="duration"/>
+    <tok fileIndex="0" linenr="38" str="&lt;"/>
+    <tok fileIndex="0" linenr="38" str="uint32_t"/>
+    <tok fileIndex="0" linenr="38" str=","/>
+    <tok fileIndex="0" linenr="38" str="std"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="milli"/>
+    <tok fileIndex="0" linenr="38" str="&gt;"/>
+    <tok fileIndex="0" linenr="38" str="("/>
+    <tok fileIndex="0" linenr="38" str="timeout"/>
+    <tok fileIndex="0" linenr="38" str=")"/>
+    <tok fileIndex="0" linenr="38" str="}"/>
+    <tok fileIndex="0" linenr="38" str=")"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="39" str="}"/>
+    <tok fileIndex="0" linenr="39" str=";"/>
+    <tok fileIndex="0" linenr="40" str="#"/>
+    <tok fileIndex="0" linenr="40" str="pragma"/>
+    <tok fileIndex="0" linenr="40" str="optimize"/>
+    <tok fileIndex="0" linenr="40" str="("/>
+    <tok fileIndex="0" linenr="40" str="&quot;&quot;"/>
+    <tok fileIndex="0" linenr="40" str=","/>
+    <tok fileIndex="0" linenr="40" str="on"/>
+    <tok fileIndex="0" linenr="40" str=")"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="5" str="#include &quot;ConversionResultTaskHelper.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="31" str="#pragma optimize(&quot;&quot;, off)"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="40" str="#pragma optimize(&quot;&quot;, on)"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A34627D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="6" str="namespace" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A34623B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="6" str="CalculatorApp" scope="00000134A933BDA0" type="name" astParent="00000134A3463190"/>
+    <token id="00000134A3463190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="7" str="{" scope="00000134A933BEB0" link="00000134A34650B0" astOperand1="00000134A34623B0" astOperand2="00000134A3462F50"/>
+    <token id="00000134A3462D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="8" str="namespace" scope="00000134A933BEB0" type="name"/>
+    <token id="00000134A3463730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="8" str="Common" scope="00000134A933BEB0" type="name" astParent="00000134A3462F50"/>
+    <token id="00000134A3462F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="9" str="{" scope="00000134A933C620" link="00000134A3464630" astParent="00000134A3463190" astOperand1="00000134A3463730" astOperand2="00000134A3463310"/>
+    <token id="00000134A34622F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="10" str="class" scope="00000134A933C620" type="name"/>
+    <token id="00000134A3463310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="10" str="ConversionResultTaskHelper" scope="00000134A933C620" type="name" type-scope="00000134A933BFC0" astParent="00000134A3462F50"/>
+    <token id="00000134A3463370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="11" str="{" scope="00000134A933BFC0" link="00000134A34645D0"/>
+    <token id="00000134A3462890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="12" str="public:" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3462BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="ConversionResultTaskHelper" scope="00000134A933BFC0" type="name" function="00000134A213F650" astParent="00000134A3462470"/>
+    <token id="00000134A3462470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="(" scope="00000134A933BFC0" link="00000134A34636D0" astOperand1="00000134A3462BF0" astOperand2="00000134A3462830"/>
+    <token id="00000134A3463130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="int" scope="00000134A933BFC0" type="name" isUnsigned="true"/>
+    <token id="00000134A3462410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="delay" scope="00000134A933BFC0" type="name" varId="1" astParent="00000134A3462830"/>
+    <token id="00000134A3462830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="," scope="00000134A933BFC0" astParent="00000134A3462470" astOperand1="00000134A3462410" astOperand2="00000134A34637F0"/>
+    <token id="00000134A3462D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="const" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3463790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="std" scope="00000134A933BFC0" type="name" astParent="00000134A34637F0"/>
+    <token id="00000134A34637F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="::" scope="00000134A933BFC0" astParent="00000134A3462830" astOperand1="00000134A3463790" astOperand2="00000134A3462EF0"/>
+    <token id="00000134A3462EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="function" scope="00000134A933BFC0" type="name" astParent="00000134A34637F0"/>
+    <token id="00000134A3462FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="&lt;" scope="00000134A933BFC0" link="00000134A34631F0"/>
+    <token id="00000134A3463490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="void" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A34624D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="(" scope="00000134A933BFC0" link="00000134A34633D0" valueType-type="void"/>
+    <token id="00000134A34633D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str=")" scope="00000134A933BFC0" link="00000134A34624D0"/>
+    <token id="00000134A34631F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="&gt;" scope="00000134A933BFC0" link="00000134A3462FB0"/>
+    <token id="00000134A3462530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str="functionToRun" scope="00000134A933BFC0" type="name" varId="2"/>
+    <token id="00000134A34636D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str=")" scope="00000134A933BFC0" link="00000134A3462470"/>
+    <token id="00000134A3463430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="13" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A3462C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="14" str="~" scope="00000134A933BFC0" type="op" astOperand1="00000134A3463010"/>
+    <token id="00000134A3462590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="14" str="ConversionResultTaskHelper" scope="00000134A933BFC0" type="name" function="00000134A213D880" astParent="00000134A3463010"/>
+    <token id="00000134A3463010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="14" str="(" scope="00000134A933BFC0" link="00000134A34634F0" astParent="00000134A3462C50" astOperand1="00000134A3462590"/>
+    <token id="00000134A34634F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="14" str=")" scope="00000134A933BFC0" link="00000134A3463010"/>
+    <token id="00000134A3462A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="14" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A3463850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="16" str="private:" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3463550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="concurrency" scope="00000134A933BFC0" type="name" astParent="00000134A34626B0"/>
+    <token id="00000134A34626B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="::" scope="00000134A933BFC0" astOperand1="00000134A3463550" astOperand2="00000134A3462350"/>
+    <token id="00000134A3462350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="task" scope="00000134A933BFC0" type="name" astParent="00000134A34626B0"/>
+    <token id="00000134A3462A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="&lt;" scope="00000134A933BFC0" link="00000134A3462950"/>
+    <token id="00000134A3462230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="void" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3462950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="&gt;" scope="00000134A933BFC0" link="00000134A3462A70"/>
+    <token id="00000134A34635B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="CompleteAfter" scope="00000134A933BFC0" type="name" function="00000134A213F800" astParent="00000134A34629B0"/>
+    <token id="00000134A34629B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="(" scope="00000134A933BFC0" link="00000134A3462DD0" astOperand1="00000134A34635B0" astOperand2="00000134A34638B0"/>
+    <token id="00000134A3462AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="int" scope="00000134A933BFC0" type="name" isUnsigned="true"/>
+    <token id="00000134A34638B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str="timeout" scope="00000134A933BFC0" type="name" varId="3" astParent="00000134A34629B0"/>
+    <token id="00000134A3462DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str=")" scope="00000134A933BFC0" link="00000134A34629B0"/>
+    <token id="00000134A3462B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="17" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A3462110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="19" str="int" scope="00000134A933BFC0" type="name" isUnsigned="true"/>
+    <token id="00000134A3462B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="19" str="m_delay" scope="00000134A933BFC0" type="name" varId="4" variable="000001349DA41530" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A3462E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="19" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A34621D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="20" str="concurrency" scope="00000134A933BFC0" type="name" astParent="00000134A34630D0"/>
+    <token id="00000134A34630D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="20" str="::" scope="00000134A933BFC0" astOperand1="00000134A34621D0" astOperand2="00000134A3464E10"/>
+    <token id="00000134A3462290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="20" str="cancellation_token_source" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3464E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="20" str="m_cts" scope="00000134A933BFC0" type="name" varId="5" variable="000001349DA42BF0" astParent="00000134A34630D0"/>
+    <token id="00000134A3464E70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="20" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A3463E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="const" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3463D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="std" scope="00000134A933BFC0" type="name" astParent="00000134A3464150"/>
+    <token id="00000134A3464150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="::" scope="00000134A933BFC0" astOperand1="00000134A3463D90" astOperand2="00000134A3464810"/>
+    <token id="00000134A3464810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="function" scope="00000134A933BFC0" type="name" astParent="00000134A3464150"/>
+    <token id="00000134A3464CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="&lt;" scope="00000134A933BFC0" link="00000134A3463EB0"/>
+    <token id="00000134A3464B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="void" scope="00000134A933BFC0" type="name"/>
+    <token id="00000134A3464870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="(" scope="00000134A933BFC0" link="00000134A34641B0" valueType-type="void"/>
+    <token id="00000134A34641B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str=")" scope="00000134A933BFC0" link="00000134A3464870"/>
+    <token id="00000134A3463EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="&gt;" scope="00000134A933BFC0" link="00000134A3464CF0"/>
+    <token id="00000134A34639D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str="m_storedFunction" scope="00000134A933BFC0" type="name" varId="6" variable="000001349DA413E0"/>
+    <token id="00000134A3463C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="21" str=";" scope="00000134A933BFC0"/>
+    <token id="00000134A34645D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="22" str="}" scope="00000134A933BFC0" link="00000134A3463370"/>
+    <token id="00000134A34640F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="22" str=";" scope="00000134A933C620"/>
+    <token id="00000134A3464630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="23" str="}" scope="00000134A933C620" link="00000134A3462F50"/>
+    <token id="00000134A34650B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.h" linenr="24" str="}" scope="00000134A933BEB0" link="00000134A3463190"/>
+    <token id="00000134A3464210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str="using" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3464690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str="namespace" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3463910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str="CalculatorApp" scope="00000134A933BDA0" type="name" astParent="00000134A3464270"/>
+    <token id="00000134A3464270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str="::" scope="00000134A933BDA0" astOperand1="00000134A3463910" astOperand2="00000134A34648D0"/>
+    <token id="00000134A34648D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str="Common" scope="00000134A933BDA0" type="name" astParent="00000134A3464270"/>
+    <token id="00000134A3463F10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="7" str=";" scope="00000134A933BDA0"/>
+    <token id="00000134A3464ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="8" str="using" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3464BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="8" str="namespace" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3464F30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="8" str="concurrency" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3464FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="8" str=";" scope="00000134A933BDA0"/>
+    <token id="00000134A3463AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="ConversionResultTaskHelper" scope="00000134A933BDA0" type="name" astParent="00000134A3463A90"/>
+    <token id="00000134A3463A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="::" scope="00000134A933BDA0" astParent="00000134A3464A50" astOperand1="00000134A3463AF0" astOperand2="00000134A34642D0"/>
+    <token id="00000134A34642D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="ConversionResultTaskHelper" scope="00000134A933BDA0" type="name" function="00000134A213F650" astParent="00000134A3463A90"/>
+    <token id="00000134A3464A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="(" scope="00000134A933BDA0" link="00000134A34644B0" astParent="00000134A3463BB0" astOperand1="00000134A3463A90" astOperand2="00000134A3464450"/>
+    <token id="00000134A3464930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="int" scope="00000134A933BDA0" type="name" isUnsigned="true"/>
+    <token id="00000134A3463C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="delay" scope="00000134A933BDA0" type="name" varId="7" variable="000001349DA42800" astParent="00000134A3464450" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A3464450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="," scope="00000134A933BDA0" astParent="00000134A3464A50" astOperand1="00000134A3463C70" astOperand2="00000134A34678D0"/>
+    <token id="00000134A34643F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="const" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3466970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="std" scope="00000134A933BDA0" type="name" astParent="00000134A34678D0"/>
+    <token id="00000134A34678D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="::" scope="00000134A933BDA0" astParent="00000134A3464450" astOperand1="00000134A3466970" astOperand2="00000134A3464330"/>
+    <token id="00000134A3464330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="function" scope="00000134A933BDA0" type="name" astParent="00000134A34678D0"/>
+    <token id="00000134A34647B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="&lt;" scope="00000134A933BDA0" link="00000134A34649F0"/>
+    <token id="00000134A3464B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="void" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3463B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="(" scope="00000134A933BDA0" link="00000134A3464990" valueType-type="void"/>
+    <token id="00000134A3464990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str=")" scope="00000134A933BDA0" link="00000134A3463B50"/>
+    <token id="00000134A34649F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="&gt;" scope="00000134A933BDA0" link="00000134A34647B0"/>
+    <token id="00000134A3464C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str="functionToRun" scope="00000134A933BDA0" type="name" varId="8" variable="000001349DA42020"/>
+    <token id="00000134A34644B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str=")" scope="00000134A933BDA0" link="00000134A3464A50"/>
+    <token id="00000134A3463BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="11" str=":" scope="00000134A933BDA0" astParent="00000134A3464AB0" astOperand1="00000134A3464A50" astOperand2="00000134A34646F0"/>
+    <token id="00000134A3463CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="12" str="m_delay" scope="00000134A933BDA0" type="name" varId="4" variable="000001349DA41530" astParent="00000134A34646F0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A34646F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="12" str="{" scope="00000134A933BDA0" link="00000134A3464390" astParent="00000134A3463BB0" astOperand1="00000134A3463CD0" astOperand2="00000134A3463D30"/>
+    <token id="00000134A3463D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="12" str="delay" scope="00000134A933BDA0" type="name" varId="7" variable="000001349DA42800" astParent="00000134A34646F0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A3464390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="12" str="}" scope="00000134A933BDA0" link="00000134A34646F0"/>
+    <token id="00000134A3464AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="12" str="," scope="00000134A933BDA0" astOperand1="00000134A3463BB0" astOperand2="00000134A3464C90"/>
+    <token id="00000134A3464510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="13" str="m_storedFunction" scope="00000134A933BDA0" type="name" varId="6" variable="000001349DA413E0" astParent="00000134A3464C90"/>
+    <token id="00000134A3464C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="13" str="{" scope="00000134A933BDA0" link="00000134A3464DB0" astParent="00000134A3464AB0" astOperand1="00000134A3464510" astOperand2="00000134A3464750"/>
+    <token id="00000134A3464750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="13" str="functionToRun" scope="00000134A933BDA0" type="name" varId="8" variable="000001349DA42020" astParent="00000134A3464C90"/>
+    <token id="00000134A3464DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="13" str="}" scope="00000134A933BDA0" link="00000134A3464C90"/>
+    <token id="00000134A3463F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="14" str="{" scope="00000134A933C730" link="00000134A34668B0"/>
+    <token id="00000134A3463FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="auto" scope="00000134A933C730" type="name"/>
+    <token id="00000134A3464090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="token" scope="00000134A933C730" type="name" varId="9" variable="000001349DA414C0"/>
+    <token id="00000134A3464570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str=";" scope="00000134A933C730"/>
+    <token id="00000134A3462650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="token" scope="00000134A933C730" type="name" varId="9" variable="000001349DA414C0" astParent="00000134A34628F0"/>
+    <token id="00000134A34628F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="=" scope="00000134A933C730" type="op" isAssignmentOp="True" astOperand1="00000134A3462650" astOperand2="00000134A3465DD0"/>
+    <token id="00000134A34653B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="m_cts" scope="00000134A933C730" type="name" varId="5" variable="000001349DA42BF0" astParent="00000134A34651D0"/>
+    <token id="00000134A34651D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="." scope="00000134A933C730" astParent="00000134A3465DD0" astOperand1="00000134A34653B0" astOperand2="00000134A3465650"/>
+    <token id="00000134A3465650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="get_token" scope="00000134A933C730" type="name" astParent="00000134A34651D0"/>
+    <token id="00000134A3465DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str="(" scope="00000134A933C730" link="00000134A3465D70" astParent="00000134A34628F0" astOperand1="00000134A34651D0"/>
+    <token id="00000134A3465D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str=")" scope="00000134A933C730" link="00000134A3465DD0"/>
+    <token id="00000134A3466250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="15" str=";" scope="00000134A933C730"/>
+    <token id="00000134A3465350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="auto" scope="00000134A933C730" type="name"/>
+    <token id="00000134A3465290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="delayTask" scope="00000134A933C730" type="name" varId="10" variable="000001349DA42640"/>
+    <token id="00000134A3466670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str=";" scope="00000134A933C730"/>
+    <token id="00000134A34680B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="delayTask" scope="00000134A933C730" type="name" varId="10" variable="000001349DA42640" astParent="00000134A3466910"/>
+    <token id="00000134A3466910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="=" scope="00000134A933C730" type="op" isAssignmentOp="True" astOperand1="00000134A34680B0" astOperand2="00000134A34652F0"/>
+    <token id="00000134A34656B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="CompleteAfter" scope="00000134A933C730" type="name" function="00000134A213F800" astParent="00000134A34652F0"/>
+    <token id="00000134A34652F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="(" scope="00000134A933C730" link="00000134A34661F0" astParent="00000134A3466910" astOperand1="00000134A34656B0" astOperand2="00000134A3466310"/>
+    <token id="00000134A3466310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str="delay" scope="00000134A933C730" type="name" varId="7" variable="000001349DA42800" astParent="00000134A34652F0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A34661F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str=")" scope="00000134A933C730" link="00000134A34652F0"/>
+    <token id="00000134A3465B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="16" str=";" scope="00000134A933C730"/>
+    <token id="00000134A3466490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="delayTask" scope="00000134A933C730" type="name" varId="10" variable="000001349DA42640" astParent="00000134A3465950"/>
+    <token id="00000134A3465950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="." scope="00000134A933C730" astParent="00000134A34659B0" astOperand1="00000134A3466490" astOperand2="00000134A3465EF0"/>
+    <token id="00000134A3465EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="then" scope="00000134A933C730" type="name" astParent="00000134A3465950"/>
+    <token id="00000134A34659B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="(" scope="00000134A933C730" link="00000134A3466790" astOperand1="00000134A3465950" astOperand2="00000134A3466610"/>
+    <token id="00000134A3465890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="[" scope="00000134A933C730" link="00000134A34657D0" astParent="00000134A3466610" astOperand1="00000134A3465110"/>
+    <token id="00000134A3466430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="this" scope="00000134A933C730" type="name"/>
+    <token id="00000134A3465470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="," scope="00000134A933C730"/>
+    <token id="00000134A3465410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="token" scope="00000134A933C730" type="name" varId="9" variable="000001349DA414C0"/>
+    <token id="00000134A34657D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="]" scope="00000134A933C730" link="00000134A3465890"/>
+    <token id="00000134A3465110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str="(" scope="00000134A933C730" link="00000134A3465D10" astParent="00000134A3465890" astOperand1="00000134A3465FB0"/>
+    <token id="00000134A3465D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="17" str=")" scope="00000134A933C730" link="00000134A3465110"/>
+    <token id="00000134A3465FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="18" str="{" scope="00000134A933C0D0" link="00000134A3465E90" astParent="00000134A3465110"/>
+    <token id="00000134A3466190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="if" scope="00000134A933C0D0" type="name" astParent="00000134A3465E30"/>
+    <token id="00000134A3465E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="(" scope="00000134A933C0D0" link="00000134A3465BF0" astOperand1="00000134A3466190" astOperand2="00000134A3466010"/>
+    <token id="00000134A3466010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="!" scope="00000134A933C0D0" type="op" isLogicalOp="True" astParent="00000134A3465E30" astOperand1="00000134A3465A10" valueType-type="bool"/>
+    <token id="00000134A3466370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="token" scope="00000134A933C0D0" type="name" varId="9" variable="000001349DA414C0" astParent="00000134A34667F0"/>
+    <token id="00000134A34667F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="." scope="00000134A933C0D0" astParent="00000134A3465A10" astOperand1="00000134A3466370" astOperand2="00000134A3465B90"/>
+    <token id="00000134A3465B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="is_canceled" scope="00000134A933C0D0" type="name" astParent="00000134A34667F0"/>
+    <token id="00000134A3465A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str="(" scope="00000134A933C0D0" link="00000134A3465710" astParent="00000134A3466010" astOperand1="00000134A34667F0"/>
+    <token id="00000134A3465710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str=")" scope="00000134A933C0D0" link="00000134A3465A10"/>
+    <token id="00000134A3465BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="19" str=")" scope="00000134A933C0D0" link="00000134A3465E30"/>
+    <token id="00000134A3465770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="20" str="{" scope="00000134A933C1E0" link="00000134A34654D0"/>
+    <token id="00000134A34664F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="21" str="m_storedFunction" scope="00000134A933C1E0" type="name" varId="6" variable="000001349DA413E0" astParent="00000134A3466550"/>
+    <token id="00000134A3466550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="21" str="(" scope="00000134A933C1E0" link="00000134A3465C50" astOperand1="00000134A34664F0"/>
+    <token id="00000134A3465C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="21" str=")" scope="00000134A933C1E0" link="00000134A3466550"/>
+    <token id="00000134A3466730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="21" str=";" scope="00000134A933C1E0"/>
+    <token id="00000134A34654D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="22" str="}" scope="00000134A933C1E0" link="00000134A3465770"/>
+    <token id="00000134A3465E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="}" scope="00000134A933C0D0" link="00000134A3465FB0"/>
+    <token id="00000134A3466610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="," scope="00000134A933C730" astParent="00000134A34659B0" astOperand1="00000134A3465890" astOperand2="00000134A34666D0"/>
+    <token id="00000134A3465A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="task_continuation_context" scope="00000134A933C730" type="name" astParent="00000134A34665B0"/>
+    <token id="00000134A34665B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="::" scope="00000134A933C730" astParent="00000134A34666D0" astOperand1="00000134A3465A70" astOperand2="00000134A34662B0"/>
+    <token id="00000134A34662B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="use_current" scope="00000134A933C730" type="name" astParent="00000134A34665B0"/>
+    <token id="00000134A34666D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str="(" scope="00000134A933C730" link="00000134A3465F50" astParent="00000134A3466610" astOperand1="00000134A34665B0"/>
+    <token id="00000134A3465F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str=")" scope="00000134A933C730" link="00000134A34666D0"/>
+    <token id="00000134A3466790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str=")" scope="00000134A933C730" link="00000134A34659B0"/>
+    <token id="00000134A3466850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="23" str=";" scope="00000134A933C730"/>
+    <token id="00000134A34668B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="24" str="}" scope="00000134A933C730" link="00000134A3463F70"/>
+    <token id="00000134A3465170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str="ConversionResultTaskHelper" scope="00000134A933BDA0" type="name" astParent="00000134A3465230"/>
+    <token id="00000134A3465230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str="::" scope="00000134A933BDA0" astParent="00000134A34655F0" astOperand1="00000134A3465170" astOperand2="00000134A3465530"/>
+    <token id="00000134A3465590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str="~" scope="00000134A933BDA0" type="op"/>
+    <token id="00000134A3465530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str="ConversionResultTaskHelper" scope="00000134A933BDA0" type="name" function="00000134A213D880" astParent="00000134A3465230"/>
+    <token id="00000134A34655F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str="(" scope="00000134A933BDA0" link="00000134A3466130" astOperand1="00000134A3465230"/>
+    <token id="00000134A3466130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="26" str=")" scope="00000134A933BDA0" link="00000134A34655F0"/>
+    <token id="00000134A3465830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="27" str="{" scope="00000134A933C2F0" link="00000134A3467B70"/>
+    <token id="00000134A34660D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str="m_cts" scope="00000134A933C2F0" type="name" varId="5" variable="000001349DA42BF0" astParent="00000134A3466070"/>
+    <token id="00000134A3466070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str="." scope="00000134A933C2F0" astParent="00000134A34658F0" astOperand1="00000134A34660D0" astOperand2="00000134A3465CB0"/>
+    <token id="00000134A3465CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str="cancel" scope="00000134A933C2F0" type="name" astParent="00000134A3466070"/>
+    <token id="00000134A34658F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str="(" scope="00000134A933C2F0" link="00000134A3465AD0" astOperand1="00000134A3466070"/>
+    <token id="00000134A3465AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str=")" scope="00000134A933C2F0" link="00000134A34658F0"/>
+    <token id="00000134A3466CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="28" str=";" scope="00000134A933C2F0"/>
+    <token id="00000134A3467B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="29" str="}" scope="00000134A933C2F0" link="00000134A3465830"/>
+    <token id="00000134A3467870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="task" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3466A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="&lt;" scope="00000134A933BDA0" link="00000134A3466FD0"/>
+    <token id="00000134A34676F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="void" scope="00000134A933BDA0" type="name"/>
+    <token id="00000134A3466FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="&gt;" scope="00000134A933BDA0" link="00000134A3466A90"/>
+    <token id="00000134A3467BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="ConversionResultTaskHelper" scope="00000134A933BDA0" type="name" astParent="00000134A34673F0"/>
+    <token id="00000134A34673F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="::" scope="00000134A933BDA0" astParent="00000134A3467450" astOperand1="00000134A3467BD0" astOperand2="00000134A3467930"/>
+    <token id="00000134A3467930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="CompleteAfter" scope="00000134A933BDA0" type="name" function="00000134A213F800" astParent="00000134A34673F0"/>
+    <token id="00000134A3467450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="(" scope="00000134A933BDA0" link="00000134A3466AF0" astOperand1="00000134A34673F0" astOperand2="00000134A3467690"/>
+    <token id="00000134A3467150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="int" scope="00000134A933BDA0" type="name" isUnsigned="true"/>
+    <token id="00000134A3467690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str="timeout" scope="00000134A933BDA0" type="name" varId="11" variable="000001349DA417D0" astParent="00000134A3467450" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A3466AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="36" str=")" scope="00000134A933BDA0" link="00000134A3467450"/>
+    <token id="00000134A34671B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="37" str="{" scope="00000134A933C400" link="00000134A3467750"/>
+    <token id="00000134A3467B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="co_await" scope="00000134A933C400" type="name"/>
+    <token id="00000134A3467DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="winrt" scope="00000134A933C400" type="name" astParent="00000134A3467C30"/>
+    <token id="00000134A3467C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933C400" astParent="00000134A3466DF0" astOperand1="00000134A3467DB0" astOperand2="00000134A3467090"/>
+    <token id="00000134A3467090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="resume_after" scope="00000134A933C400" type="name" astParent="00000134A3467C30"/>
+    <token id="00000134A3466DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="(" scope="00000134A933C400" link="00000134A34675D0" astOperand1="00000134A3467C30" astOperand2="00000134A3466D30"/>
+    <token id="00000134A3467630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="winrt" scope="00000134A933C400" type="name" astParent="00000134A3467FF0"/>
+    <token id="00000134A3467FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933C400" astParent="00000134A3466E50" astOperand1="00000134A3467630" astOperand2="00000134A3466BB0"/>
+    <token id="00000134A3466BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="Windows" scope="00000134A933C400" type="name" astParent="00000134A3467FF0"/>
+    <token id="00000134A3466E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933C400" astParent="00000134A3467210" astOperand1="00000134A3467FF0" astOperand2="00000134A3466B50"/>
+    <token id="00000134A3466B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="Foundation" scope="00000134A933C400" type="name" astParent="00000134A3466E50"/>
+    <token id="00000134A3467210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933C400" astParent="00000134A3466D30" astOperand1="00000134A3466E50" astOperand2="00000134A3466A30"/>
+    <token id="00000134A3466A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="TimeSpan" scope="00000134A933C400" type="name" astParent="00000134A3467210"/>
+    <token id="00000134A3466D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="{" scope="00000134A933BB80" link="00000134A3467570" astParent="00000134A3466DF0" astOperand1="00000134A3467210" astOperand2="00000134A3467390"/>
+    <token id="00000134A3467C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="std" scope="00000134A933BB80" type="name" astParent="00000134A3466C70"/>
+    <token id="00000134A3466C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933BB80" astParent="00000134A34679F0" astOperand1="00000134A3467C90" astOperand2="00000134A3467270"/>
+    <token id="00000134A3467270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="chrono" scope="00000134A933BB80" type="name" astParent="00000134A3466C70"/>
+    <token id="00000134A34679F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933BB80" astParent="00000134A3467390" astOperand1="00000134A3466C70" astOperand2="00000134A3467F90"/>
+    <token id="00000134A3467F90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="duration" scope="00000134A933BB80" type="name" astParent="00000134A34679F0"/>
+    <token id="00000134A34674B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="&lt;" scope="00000134A933BB80" link="00000134A3467D50"/>
+    <token id="00000134A3466EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="uint32_t" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A3467CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="," scope="00000134A933BB80"/>
+    <token id="00000134A3467A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="std" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A34672D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="::" scope="00000134A933BB80"/>
+    <token id="00000134A3467330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="milli" scope="00000134A933BB80" type="name"/>
+    <token id="00000134A3467D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="&gt;" scope="00000134A933BB80" link="00000134A34674B0"/>
+    <token id="00000134A3467390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="(" scope="00000134A933BB80" link="00000134A3467990" astParent="00000134A3466D30" astOperand1="00000134A34679F0" astOperand2="00000134A3467510"/>
+    <token id="00000134A3467510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="timeout" scope="00000134A933BB80" type="name" varId="11" variable="000001349DA417D0" astParent="00000134A3467390" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A3467990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str=")" scope="00000134A933BB80" link="00000134A3467390"/>
+    <token id="00000134A3467570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str="}" scope="00000134A933BB80" link="00000134A3466D30"/>
+    <token id="00000134A34675D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str=")" scope="00000134A933C400" link="00000134A3466DF0"/>
+    <token id="00000134A3468050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="38" str=";" scope="00000134A933C400"/>
+    <token id="00000134A3467750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="39" str="}" scope="00000134A933C400" link="00000134A34671B0"/>
+    <token id="00000134A3466C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ConversionResultTaskHelper.cpp" linenr="39" str=";" scope="00000134A933BDA0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A933BDA0" type="Global"/>
+    <scope id="00000134A933BEB0" type="Namespace" className="CalculatorApp" bodyStart="00000134A3463190" bodyEnd="00000134A34650B0" nestedIn="00000134A933BDA0"/>
+    <scope id="00000134A933C620" type="Namespace" className="Common" bodyStart="00000134A3462F50" bodyEnd="00000134A3464630" nestedIn="00000134A933BEB0"/>
+    <scope id="00000134A933BFC0" type="Class" className="ConversionResultTaskHelper" bodyStart="00000134A3463370" bodyEnd="00000134A34645D0" nestedIn="00000134A933C620">
+      <functionList>
+        <function id="00000134A213F650" tokenDef="00000134A3462BF0" name="ConversionResultTaskHelper" type="Constructor">
+          <arg nr="1" variable="000001349DA42800"/>
+          <arg nr="2" variable="000001349DA42020"/>
+        </function>
+        <function id="00000134A213D880" tokenDef="00000134A3462590" name="ConversionResultTaskHelper" type="Destructor"/>
+        <function id="00000134A213F800" tokenDef="00000134A34635B0" name="CompleteAfter" type="Function">
+          <arg nr="1" variable="000001349DA417D0"/>
+        </function>
+      </functionList>
+      <varlist>
+        <var id="000001349DA41530"/>
+        <var id="000001349DA42BF0"/>
+        <var id="000001349DA413E0"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A933C730" type="Function" className="ConversionResultTaskHelper" bodyStart="00000134A3463F70" bodyEnd="00000134A34668B0" nestedIn="00000134A933BDA0" function="00000134A213F650">
+      <varlist>
+        <var id="000001349DA414C0"/>
+        <var id="000001349DA42640"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A933C0D0" type="Lambda" bodyStart="00000134A3465FB0" bodyEnd="00000134A3465E90" nestedIn="00000134A933C730"/>
+    <scope id="00000134A933C1E0" type="If" bodyStart="00000134A3465770" bodyEnd="00000134A34654D0" nestedIn="00000134A933C0D0"/>
+    <scope id="00000134A933C2F0" type="Function" className="ConversionResultTaskHelper" bodyStart="00000134A3465830" bodyEnd="00000134A3467B70" nestedIn="00000134A933BDA0" function="00000134A213D880"/>
+    <scope id="00000134A933C400" type="Function" className="CompleteAfter" bodyStart="00000134A34671B0" bodyEnd="00000134A3467750" nestedIn="00000134A933BDA0" function="00000134A213F800"/>
+    <scope id="00000134A933BB80" type="Unconditional" bodyStart="00000134A3466D30" bodyEnd="00000134A3467570" nestedIn="00000134A933C400"/>
+  </scopes>
+  <variables>
+    <var id="000001349DA413E0" nameToken="00000134A34639D0" typeStartToken="00000134A3463D90" typeEndToken="00000134A3463EB0" access="Private" scope="00000134A933BFC0" constness="1" isArgument="false" isArray="false" isClass="true" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA414C0" nameToken="00000134A3464090" typeStartToken="00000134A3463FD0" typeEndToken="00000134A3463FD0" access="Local" scope="00000134A933C730" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA41530" nameToken="00000134A3462B90" typeStartToken="00000134A3462110" typeEndToken="00000134A3462110" access="Private" scope="00000134A933BFC0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA417D0" nameToken="00000134A3467690" typeStartToken="00000134A3467150" typeEndToken="00000134A3467150" access="Argument" scope="00000134A933C400" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42020" nameToken="00000134A3464C30" typeStartToken="00000134A3466970" typeEndToken="00000134A34649F0" access="Argument" scope="00000134A933C730" constness="1" isArgument="true" isArray="false" isClass="true" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42640" nameToken="00000134A3465290" typeStartToken="00000134A3465350" typeEndToken="00000134A3465350" access="Local" scope="00000134A933C730" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42800" nameToken="00000134A3463C70" typeStartToken="00000134A3464930" typeEndToken="00000134A3464930" access="Argument" scope="00000134A933C730" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42BF0" nameToken="00000134A3464E10" typeStartToken="00000134A34621D0" typeEndToken="00000134A3462290" access="Private" scope="00000134A933BFC0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>

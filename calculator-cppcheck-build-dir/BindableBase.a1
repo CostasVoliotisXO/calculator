@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2066457987">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="DependencyObject"/>
+    <functioncall functionName="GetType"/>
+    <functioncall functionName="INotifyPropertyChanged"/>
+    <functioncall functionName="PropertyChanged"/>
+    <functioncall functionName="PropertyChangedEventArgs"/>
+    <functioncall functionName="ToString"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="propertyName"/>
+    <functioncall functionName="this"/>
+  </FileInfo>
+</analyzerinfo>

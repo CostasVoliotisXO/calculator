@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1749108447">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetCommand"/>
+    <functioncall functionName="GetCommands"/>
+    <functioncall functionName="GetSize"/>
+    <functioncall functionName="IsDecimalPresent"/>
+    <functioncall functionName="IsNegative"/>
+    <functioncall functionName="IsSciFmt"/>
+    <functioncall functionName="SerializeCommandVisitor"/>
+    <functioncall functionName="WriteBoolean"/>
+    <functioncall functionName="WriteInt32"/>
+    <functioncall functionName="WriteUInt32"/>
+    <functioncall functionName="cmd"/>
+    <functioncall functionName="cmdSize"/>
+    <functioncall functionName="dataWriter"/>
+    <functioncall functionName="eachOpndcmd"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="m_dataWriter"/>
+    <functioncall functionName="opndCmdSize"/>
+    <functioncall functionName="parenthesisCmd"/>
+  </FileInfo>
+</analyzerinfo>

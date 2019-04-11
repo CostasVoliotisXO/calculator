@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4232800868">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorProgrammerRadixOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorProgrammerRadixOperators sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorProgrammerRadixOperators.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorProgrammerRadixOperators.xaml.h" line="13"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Binding"/>
+    <functioncall functionName="CalculatorProgrammerRadixOperators"/>
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="FindName"/>
+    <functioncall functionName="GoToState"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="OnViewModelPropertyChanged"/>
+    <functioncall functionName="ProgModeRadixChange"/>
+    <functioncall functionName="ProgModeRadixChangeHandler"/>
+    <functioncall functionName="ProgRadixOps"/>
+    <functioncall functionName="PropertyChangedEventHandler"/>
+    <functioncall functionName="PropertyPath"/>
+    <functioncall functionName="SetBinding"/>
+    <functioncall functionName="SetOpenParenthesisCountNarratorAnnouncement"/>
+    <functioncall functionName="SetVisibilityBinding"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="VisibilityProperty"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="booleanToVisibilityNegationConverter"/>
+    <functioncall functionName="commandBinding"/>
+    <functioncall functionName="converter"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isShiftChecked"/>
+    <functioncall functionName="m_isErrorVisualState"/>
+    <functioncall functionName="newState"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;VisibilityNegationConverter.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="Platform"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Foundation"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Windows"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="UI"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Xaml"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="UI"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Xaml"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Interop"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="13" str="{"/>
+    <tok fileIndex="0" linenr="14" str="namespace"/>
+    <tok fileIndex="0" linenr="14" str="Common"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="16" str="Object"/>
+    <tok fileIndex="0" linenr="16" str="^"/>
+    <tok fileIndex="0" linenr="16" str="VisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Convert"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="Object"/>
+    <tok fileIndex="0" linenr="16" str="^"/>
+    <tok fileIndex="0" linenr="16" str="value"/>
+    <tok fileIndex="0" linenr="16" str=","/>
+    <tok fileIndex="0" linenr="16" str="TypeName"/>
+    <tok fileIndex="0" linenr="16" str="/*targetType*/"/>
+    <tok fileIndex="0" linenr="16" str=","/>
+    <tok fileIndex="0" linenr="16" str="Object"/>
+    <tok fileIndex="0" linenr="16" str="^"/>
+    <tok fileIndex="0" linenr="16" str="/*parameter*/"/>
+    <tok fileIndex="0" linenr="16" str=","/>
+    <tok fileIndex="0" linenr="16" str="String"/>
+    <tok fileIndex="0" linenr="16" str="^"/>
+    <tok fileIndex="0" linenr="16" str="/*language*/"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="auto"/>
+    <tok fileIndex="0" linenr="18" str="boxedVisibility"/>
+    <tok fileIndex="0" linenr="18" str="="/>
+    <tok fileIndex="0" linenr="18" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="18" str="&lt;"/>
+    <tok fileIndex="0" linenr="18" str="Box"/>
+    <tok fileIndex="0" linenr="18" str="&lt;"/>
+    <tok fileIndex="0" linenr="18" str="Visibility"/>
+    <tok fileIndex="0" linenr="18" str="&gt;"/>
+    <tok fileIndex="0" linenr="18" str="^"/>
+    <tok fileIndex="0" linenr="18" str="&gt;"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="value"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="19" str="Visibility"/>
+    <tok fileIndex="0" linenr="19" str="visibility"/>
+    <tok fileIndex="0" linenr="19" str="="/>
+    <tok fileIndex="0" linenr="19" str="Visibility"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="Collapsed"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="if"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="boxedVisibility"/>
+    <tok fileIndex="0" linenr="20" str="!="/>
+    <tok fileIndex="0" linenr="20" str="nullptr"/>
+    <tok fileIndex="0" linenr="20" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="20" str="boxedVisibility"/>
+    <tok fileIndex="0" linenr="20" str="-&gt;"/>
+    <tok fileIndex="0" linenr="20" str="Value"/>
+    <tok fileIndex="0" linenr="20" str="=="/>
+    <tok fileIndex="0" linenr="20" str="Visibility"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="Collapsed"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="21" str="{"/>
+    <tok fileIndex="0" linenr="22" str="visibility"/>
+    <tok fileIndex="0" linenr="22" str="="/>
+    <tok fileIndex="0" linenr="22" str="Visibility"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="Visible"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="}"/>
+    <tok fileIndex="0" linenr="24" str="return"/>
+    <tok fileIndex="0" linenr="24" str="visibility"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+    <tok fileIndex="0" linenr="27" str="Object"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="VisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="27" str="::"/>
+    <tok fileIndex="0" linenr="27" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="Object"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="value"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="TypeName"/>
+    <tok fileIndex="0" linenr="27" str="targetType"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="Object"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="parameter"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="String"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="language"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="28" str="{"/>
+    <tok fileIndex="0" linenr="29" str="return"/>
+    <tok fileIndex="0" linenr="29" str="Convert"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str="value"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="targetType"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="parameter"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="language"/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="29" str=";"/>
+    <tok fileIndex="0" linenr="30" str="}"/>
+    <tok fileIndex="0" linenr="31" str="}"/>
+    <tok fileIndex="0" linenr="32" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="5" str="#include &quot;VisibilityNegationConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A346F5B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="6" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346E7D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="6" str="CalculatorApp" scope="00000134913901B0" type="name" astParent="00000134A346E830"/>
+    <token id="00000134A346E830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="7" str="{" scope="00000134913901B0" link="00000134A346FF70" astOperand1="00000134A346E7D0" astOperand2="00000134A346F8B0"/>
+    <token id="00000134A346E710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="8" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346F8B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="8" str="Common" scope="00000134913901B0" type="name" astParent="00000134A346E830"/>
+    <token id="00000134A346E9B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="9" str="{" scope="00000134913901B0" link="00000134A346FA30"/>
+    <token id="00000134A346F610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="[" scope="00000134913901B0" link="00000134A346EC50"/>
+    <token id="00000134A346E8F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A346F070"/>
+    <token id="00000134A346F070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="::" scope="00000134913901B0" astParent="00000134A346E3B0" astOperand1="00000134A346E8F0" astOperand2="00000134A346E770"/>
+    <token id="00000134A346E770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="Foundation" scope="00000134913901B0" type="name" astParent="00000134A346F070"/>
+    <token id="00000134A346E3B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="::" scope="00000134913901B0" astParent="00000134A346F010" astOperand1="00000134A346F070" astOperand2="00000134A346E410"/>
+    <token id="00000134A346E410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="Metadata" scope="00000134913901B0" type="name" astParent="00000134A346E3B0"/>
+    <token id="00000134A346F010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="::" scope="00000134913901B0" astOperand1="00000134A346E3B0" astOperand2="00000134A346E5F0"/>
+    <token id="00000134A346E5F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="WebHostHidden" scope="00000134913901B0" type="name" astParent="00000134A346F010"/>
+    <token id="00000134A346EC50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="13" str="]" scope="00000134913901B0" link="00000134A346F610"/>
+    <token id="00000134A346EA70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="public" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346E650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="ref" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346ED10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="class" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346EFB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="VisibilityNegationConverter" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346F7F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="sealed" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346E6B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str=":" scope="00000134913901B0"/>
+    <token id="00000134A346E470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A346EB90"/>
+    <token id="00000134A346EB90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="::" scope="00000134913901B0" astParent="00000134A346ECB0" astOperand1="00000134A346E470" astOperand2="00000134A346E110"/>
+    <token id="00000134A346E110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="UI" scope="00000134913901B0" type="name" astParent="00000134A346EB90"/>
+    <token id="00000134A346ECB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="::" scope="00000134913901B0" astParent="00000134A346E950" astOperand1="00000134A346EB90" astOperand2="00000134A346F670"/>
+    <token id="00000134A346F670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="Xaml" scope="00000134913901B0" type="name" astParent="00000134A346ECB0"/>
+    <token id="00000134A346E950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="::" scope="00000134913901B0" astParent="00000134A346ED70" astOperand1="00000134A346ECB0" astOperand2="00000134A346F370"/>
+    <token id="00000134A346F370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="Data" scope="00000134913901B0" type="name" astParent="00000134A346E950"/>
+    <token id="00000134A346ED70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="::" scope="00000134913901B0" astOperand1="00000134A346E950" astOperand2="00000134A346F4F0"/>
+    <token id="00000134A346F4F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="14" str="IValueConverter" scope="00000134913901B0" type="name" astParent="00000134A346ED70"/>
+    <token id="00000134A346F1F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="15" str="{" scope="00000134913901B0" link="00000134A34706F0"/>
+    <token id="00000134A346E4D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="16" str="public:" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346EEF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="virtual" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346F0D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A346EBF0"/>
+    <token id="00000134A346EBF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346F430" astOperand1="00000134A346F0D0" astOperand2="00000134A346E530"/>
+    <token id="00000134A346E530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Object" scope="00000134913901B0" type="name" astParent="00000134A346EBF0"/>
+    <token id="00000134A346F430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="^" scope="00000134913901B0" type="op" astOperand1="00000134A346EBF0" astOperand2="00000134A346F6D0"/>
+    <token id="00000134A346EA10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Convert" scope="00000134913901B0" type="name" astParent="00000134A346F6D0"/>
+    <token id="00000134A346F6D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="(" scope="00000134913901B0" link="00000134A3471050" astParent="00000134A346F430" astOperand1="00000134A346EA10" astOperand2="00000134A346E2F0"/>
+    <token id="00000134A346EE30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A346F130"/>
+    <token id="00000134A346F130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346F850" astOperand1="00000134A346EE30" astOperand2="00000134A346E590"/>
+    <token id="00000134A346E590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Object" scope="00000134913901B0" type="name" astParent="00000134A346F130"/>
+    <token id="00000134A346F850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="^" scope="00000134913901B0" type="op" astParent="00000134A346E890" astOperand1="00000134A346F130" astOperand2="00000134A346EDD0"/>
+    <token id="00000134A346EDD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="value" scope="00000134913901B0" type="name" astParent="00000134A346F850"/>
+    <token id="00000134A346E890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="," scope="00000134913901B0" astParent="00000134A346EB30" astOperand1="00000134A346F850" astOperand2="00000134A346F250"/>
+    <token id="00000134A346F730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A346EAD0"/>
+    <token id="00000134A346EAD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346E1D0" astOperand1="00000134A346F730" astOperand2="00000134A346EE90"/>
+    <token id="00000134A346EE90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="UI" scope="00000134913901B0" type="name" astParent="00000134A346EAD0"/>
+    <token id="00000134A346E1D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346E230" astOperand1="00000134A346EAD0" astOperand2="00000134A346E170"/>
+    <token id="00000134A346E170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Xaml" scope="00000134913901B0" type="name" astParent="00000134A346E1D0"/>
+    <token id="00000134A346E230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346F250" astOperand1="00000134A346E1D0" astOperand2="00000134A346F310"/>
+    <token id="00000134A346F310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Interop" scope="00000134913901B0" type="name" astParent="00000134A346E230"/>
+    <token id="00000134A346F250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346E890" astOperand1="00000134A346E230" astOperand2="00000134A346F790"/>
+    <token id="00000134A346F490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="TypeName" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346F790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="targetType" scope="00000134913901B0" type="name" varId="1" astParent="00000134A346F250"/>
+    <token id="00000134A346EB30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="," scope="00000134913901B0" astParent="00000134A346E2F0" astOperand1="00000134A346E890" astOperand2="00000134A346F550"/>
+    <token id="00000134A346EF50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A346F190"/>
+    <token id="00000134A346F190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A346F550" astOperand1="00000134A346EF50" astOperand2="00000134A346F2B0"/>
+    <token id="00000134A346F2B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Object" scope="00000134913901B0" type="name" astParent="00000134A346F190"/>
+    <token id="00000134A346F550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="^" scope="00000134913901B0" type="op" astParent="00000134A346EB30" astOperand1="00000134A346F190" astOperand2="00000134A346E290"/>
+    <token id="00000134A346E290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="parameter" scope="00000134913901B0" type="name" astParent="00000134A346F550"/>
+    <token id="00000134A346E2F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="," scope="00000134913901B0" astParent="00000134A346F6D0" astOperand1="00000134A346EB30" astOperand2="00000134A3470990"/>
+    <token id="00000134A346E350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A3470570"/>
+    <token id="00000134A3470570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="::" scope="00000134913901B0" astParent="00000134A3470990" astOperand1="00000134A346E350" astOperand2="00000134A3470ED0"/>
+    <token id="00000134A3470ED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="String" scope="00000134913901B0" type="name" astParent="00000134A3470570"/>
+    <token id="00000134A3470990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="^" scope="00000134913901B0" type="op" astParent="00000134A346E2F0" astOperand1="00000134A3470570" astOperand2="00000134A346FB50"/>
+    <token id="00000134A346FB50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str="language" scope="00000134913901B0" type="name" astParent="00000134A3470990"/>
+    <token id="00000134A3471050" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str=")" scope="00000134913901B0" link="00000134A346F6D0"/>
+    <token id="00000134A3470C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="17" str=";" scope="00000134913901B0"/>
+    <token id="00000134A3470870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="virtual" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470BD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A3470330"/>
+    <token id="00000134A3470330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A346FCD0" astOperand1="00000134A3470BD0" astOperand2="00000134A3470810"/>
+    <token id="00000134A3470810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Object" scope="00000134913901B0" type="name" astParent="00000134A3470330"/>
+    <token id="00000134A346FCD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="^" scope="00000134913901B0" type="op" astOperand1="00000134A3470330" astOperand2="00000134A3470E70"/>
+    <token id="00000134A3470F90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="ConvertBack" scope="00000134913901B0" type="name" astParent="00000134A3470E70"/>
+    <token id="00000134A3470E70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="(" scope="00000134913901B0" link="00000134A3470CF0" astParent="00000134A346FCD0" astOperand1="00000134A3470F90" astOperand2="00000134A3470210"/>
+    <token id="00000134A3470FF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A3470DB0"/>
+    <token id="00000134A3470DB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A3470030" astOperand1="00000134A3470FF0" astOperand2="00000134A346FFD0"/>
+    <token id="00000134A346FFD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Object" scope="00000134913901B0" type="name" astParent="00000134A3470DB0"/>
+    <token id="00000134A3470030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="^" scope="00000134913901B0" type="op" astParent="00000134A34710B0" astOperand1="00000134A3470DB0" astOperand2="00000134A346FF10"/>
+    <token id="00000134A346FF10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="value" scope="00000134913901B0" type="name" astParent="00000134A3470030"/>
+    <token id="00000134A34710B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="," scope="00000134913901B0" astParent="00000134A3470D50" astOperand1="00000134A3470030" astOperand2="00000134A34704B0"/>
+    <token id="00000134A34701B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A3470930"/>
+    <token id="00000134A3470930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A3470B70" astOperand1="00000134A34701B0" astOperand2="00000134A3470E10"/>
+    <token id="00000134A3470E10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="UI" scope="00000134913901B0" type="name" astParent="00000134A3470930"/>
+    <token id="00000134A3470B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A3470450" astOperand1="00000134A3470930" astOperand2="00000134A34705D0"/>
+    <token id="00000134A34705D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Xaml" scope="00000134913901B0" type="name" astParent="00000134A3470B70"/>
+    <token id="00000134A3470450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A34704B0" astOperand1="00000134A3470B70" astOperand2="00000134A346FDF0"/>
+    <token id="00000134A346FDF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Interop" scope="00000134913901B0" type="name" astParent="00000134A3470450"/>
+    <token id="00000134A34704B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A34710B0" astOperand1="00000134A3470450" astOperand2="00000134A3470630"/>
+    <token id="00000134A3470F30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="TypeName" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="targetType" scope="00000134913901B0" type="name" varId="2" astParent="00000134A34704B0"/>
+    <token id="00000134A3470D50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="," scope="00000134913901B0" astParent="00000134A3470210" astOperand1="00000134A34710B0" astOperand2="00000134A34709F0"/>
+    <token id="00000134A34700F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A346FBB0"/>
+    <token id="00000134A346FBB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A34709F0" astOperand1="00000134A34700F0" astOperand2="00000134A34707B0"/>
+    <token id="00000134A34707B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Object" scope="00000134913901B0" type="name" astParent="00000134A346FBB0"/>
+    <token id="00000134A34709F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="^" scope="00000134913901B0" type="op" astParent="00000134A3470D50" astOperand1="00000134A346FBB0" astOperand2="00000134A346F970"/>
+    <token id="00000134A346F970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="parameter" scope="00000134913901B0" type="name" astParent="00000134A34709F0"/>
+    <token id="00000134A3470210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="," scope="00000134913901B0" astParent="00000134A3470E70" astOperand1="00000134A3470D50" astOperand2="00000134A3470C90"/>
+    <token id="00000134A3470270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="Platform" scope="00000134913901B0" type="name" astParent="00000134A346F910"/>
+    <token id="00000134A346F910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="::" scope="00000134913901B0" astParent="00000134A3470C90" astOperand1="00000134A3470270" astOperand2="00000134A34708D0"/>
+    <token id="00000134A34708D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="String" scope="00000134913901B0" type="name" astParent="00000134A346F910"/>
+    <token id="00000134A3470C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="^" scope="00000134913901B0" type="op" astParent="00000134A3470210" astOperand1="00000134A346F910" astOperand2="00000134A346F9D0"/>
+    <token id="00000134A346F9D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str="language" scope="00000134913901B0" type="name" astParent="00000134A3470C90"/>
+    <token id="00000134A3470CF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str=")" scope="00000134913901B0" link="00000134A3470E70"/>
+    <token id="00000134A3470690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="18" str=";" scope="00000134913901B0"/>
+    <token id="00000134A34706F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="19" str="}" scope="00000134913901B0" link="00000134A346F1F0"/>
+    <token id="00000134A346FEB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="19" str=";" scope="00000134913901B0"/>
+    <token id="00000134A346FA30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="20" str="}" scope="00000134913901B0" link="00000134A346E9B0"/>
+    <token id="00000134A346FF70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.h" linenr="21" str="}" scope="00000134913901B0" link="00000134A346E830"/>
+    <token id="00000134A346FA90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="7" str="using" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346FAF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="7" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="7" str="Platform" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470A50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="7" str=";" scope="00000134913901B0"/>
+    <token id="00000134A346FC10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str="using" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346FE50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470AB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A3470B10"/>
+    <token id="00000134A3470B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str="::" scope="00000134913901B0" astOperand1="00000134A3470AB0" astOperand2="00000134A34702D0"/>
+    <token id="00000134A34702D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str="Foundation" scope="00000134913901B0" type="name" astParent="00000134A3470B10"/>
+    <token id="00000134A346FC70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="8" str=";" scope="00000134913901B0"/>
+    <token id="00000134A346FD30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="using" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3470090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A346FD90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A3470150"/>
+    <token id="00000134A3470150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="::" scope="00000134913901B0" astParent="00000134A3470510" astOperand1="00000134A346FD90" astOperand2="00000134A3470390"/>
+    <token id="00000134A3470390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="UI" scope="00000134913901B0" type="name" astParent="00000134A3470150"/>
+    <token id="00000134A3470510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="::" scope="00000134913901B0" astOperand1="00000134A3470150" astOperand2="00000134A34703F0"/>
+    <token id="00000134A34703F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str="Xaml" scope="00000134913901B0" type="name" astParent="00000134A3470510"/>
+    <token id="00000134A34716B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="9" str=";" scope="00000134913901B0"/>
+    <token id="00000134A3471110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="using" scope="00000134913901B0" type="name"/>
+    <token id="00000134A34714D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3471890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="Windows" scope="00000134913901B0" type="name" astParent="00000134A3471950"/>
+    <token id="00000134A3471950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="::" scope="00000134913901B0" astParent="00000134A3471170" astOperand1="00000134A3471890" astOperand2="00000134A3472070"/>
+    <token id="00000134A3472070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="UI" scope="00000134913901B0" type="name" astParent="00000134A3471950"/>
+    <token id="00000134A3471170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="::" scope="00000134913901B0" astParent="00000134A3472430" astOperand1="00000134A3471950" astOperand2="00000134A3471B30"/>
+    <token id="00000134A3471B30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="Xaml" scope="00000134913901B0" type="name" astParent="00000134A3471170"/>
+    <token id="00000134A3472430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="::" scope="00000134913901B0" astOperand1="00000134A3471170" astOperand2="00000134A3471B90"/>
+    <token id="00000134A3471B90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str="Interop" scope="00000134913901B0" type="name" astParent="00000134A3472430"/>
+    <token id="00000134A3471470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="10" str=";" scope="00000134913901B0"/>
+    <token id="00000134A3471530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="12" str="namespace" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3471650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="12" str="CalculatorApp" scope="00000134913901B0" type="name"/>
+    <token id="00000134A3471770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="13" str="{" scope="00000134913902C0" link="00000134A3472970"/>
+    <token id="00000134A3471FB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="14" str="namespace" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3471590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="14" str="Common" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3471410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="15" str="{" scope="00000134913900A0" link="00000134A3472AF0"/>
+    <token id="00000134A34717D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="Object" scope="00000134913900A0" type="name" astParent="00000134A3472550"/>
+    <token id="00000134A3472670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="^" scope="00000134913900A0" type="op" astOperand2="00000134A34715F0"/>
+    <token id="00000134A3471BF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="VisibilityNegationConverter" scope="00000134913900A0" type="name" astParent="00000134A3471D70"/>
+    <token id="00000134A3471D70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="::" scope="00000134913900A0" astParent="00000134A3472370" astOperand1="00000134A3471BF0" astOperand2="00000134A3471C50"/>
+    <token id="00000134A3471C50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="Convert" scope="00000134913900A0" type="name" astParent="00000134A3471D70"/>
+    <token id="00000134A34715F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="(" scope="00000134913900A0" link="00000134A34719B0" astParent="00000134A3472670" astOperand1="00000134A3472550"/>
+    <token id="00000134A3471CB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="Object" scope="00000134913900A0" type="name" astParent="00000134A3471F50"/>
+    <token id="00000134A3471F50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="^" scope="00000134913900A0" type="op" astParent="00000134A3471710" astOperand1="00000134A3471CB0" astOperand2="00000134A3471830"/>
+    <token id="00000134A3471830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="value" scope="00000134913900A0" type="name" astParent="00000134A3471F50"/>
+    <token id="00000134A3471710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="," scope="00000134913900A0" astParent="00000134A34718F0" astOperand1="00000134A3471F50" astOperand2="00000134A3472730"/>
+    <token id="00000134A3472730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="TypeName" scope="00000134913900A0" type="name" astParent="00000134A3471710"/>
+    <token id="00000134A3472370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="," scope="00000134913900A0" astParent="00000134A34726D0" astOperand1="00000134A3471D70" astOperand2="00000134A34718F0"/>
+    <token id="00000134A3471D10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="Object" scope="00000134913900A0" type="name" astParent="00000134A34718F0"/>
+    <token id="00000134A34718F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="^" scope="00000134913900A0" type="op" astParent="00000134A3472370" astOperand1="00000134A3471710" astOperand2="00000134A3471D10"/>
+    <token id="00000134A3472550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="," scope="00000134913900A0" astParent="00000134A34715F0" astOperand1="00000134A34717D0" astOperand2="00000134A34726D0"/>
+    <token id="00000134A3471DD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="String" scope="00000134913900A0" type="name" astParent="00000134A34726D0"/>
+    <token id="00000134A34726D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str="^" scope="00000134913900A0" type="op" astParent="00000134A3472550" astOperand1="00000134A3472370" astOperand2="00000134A3471DD0"/>
+    <token id="00000134A34719B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="16" str=")" scope="00000134913900A0" link="00000134A34715F0"/>
+    <token id="00000134A3471A10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="17" str="{" scope="00000134913900A0" link="00000134A3473090"/>
+    <token id="00000134A3472010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="auto" scope="00000134913900A0" type="name"/>
+    <token id="00000134A34720D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="boxedVisibility" scope="00000134913900A0" type="name" varId="3"/>
+    <token id="00000134A34724F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str=";" scope="00000134913900A0"/>
+    <token id="00000134A346F3D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="boxedVisibility" scope="00000134913900A0" type="name" varId="3" astParent="00000134A3473330"/>
+    <token id="00000134A3473330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="=" scope="00000134913900A0" type="op" isAssignmentOp="True" astOperand1="00000134A346F3D0" astOperand2="00000134A3471EF0"/>
+    <token id="00000134A3471A70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="dynamic_cast" scope="00000134913900A0" type="name" function="00000134A213F920" astParent="00000134A3471EF0"/>
+    <token id="00000134A3471AD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="&lt;" scope="00000134913900A0" link="00000134A3472310"/>
+    <token id="00000134A3471E30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="Box" scope="00000134913900A0" type="name"/>
+    <token id="00000134A3471E90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="&lt;" scope="00000134913900A0" link="00000134A34722B0"/>
+    <token id="00000134A3472250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="Visibility" scope="00000134913900A0" type="name"/>
+    <token id="00000134A34722B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="&gt;" scope="00000134913900A0" link="00000134A3471E90"/>
+    <token id="00000134A3472610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="^" scope="00000134913900A0" type="op"/>
+    <token id="00000134A3472310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="&gt;" scope="00000134913900A0" link="00000134A3471AD0"/>
+    <token id="00000134A3471EF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="(" scope="00000134913900A0" link="00000134A3472130" astParent="00000134A3473330" astOperand1="00000134A3471A70" astOperand2="00000134A34723D0"/>
+    <token id="00000134A34723D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str="value" scope="00000134913900A0" type="name" astParent="00000134A3471EF0"/>
+    <token id="00000134A3472130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str=")" scope="00000134913900A0" link="00000134A3471EF0"/>
+    <token id="00000134A3472190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="18" str=";" scope="00000134913900A0"/>
+    <token id="00000134A3472490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="Visibility" scope="00000134913900A0" type="name"/>
+    <token id="00000134A34721F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="visibility" scope="00000134913900A0" type="name" varId="4"/>
+    <token id="00000134A34725B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str=";" scope="00000134913900A0"/>
+    <token id="00000134A3473570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="visibility" scope="00000134913900A0" type="name" varId="4" astParent="00000134A34729D0"/>
+    <token id="00000134A34729D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="=" scope="00000134913900A0" type="op" isAssignmentOp="True" astOperand1="00000134A3473570" astOperand2="00000134A3472790"/>
+    <token id="00000134A34711D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="Visibility" scope="00000134913900A0" type="name" astParent="00000134A3472790"/>
+    <token id="00000134A3472790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="::" scope="00000134913900A0" astParent="00000134A34729D0" astOperand1="00000134A34711D0" astOperand2="00000134A34727F0"/>
+    <token id="00000134A34727F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str="Collapsed" scope="00000134913900A0" type="name" astParent="00000134A3472790"/>
+    <token id="00000134A3472850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="19" str=";" scope="00000134913900A0"/>
+    <token id="00000134A34728B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="if" scope="00000134913900A0" type="name" astParent="00000134A3471230"/>
+    <token id="00000134A3471230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="(" scope="00000134913900A0" link="00000134A34736F0" astOperand1="00000134A34728B0" astOperand2="00000134A34713B0"/>
+    <token id="00000134A3471290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="boxedVisibility" scope="00000134913900A0" type="name" varId="3" astParent="00000134A34712F0"/>
+    <token id="00000134A34712F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="!=" scope="00000134913900A0" type="op" isComparisonOp="True" astParent="00000134A34713B0" astOperand1="00000134A3471290" astOperand2="00000134A3471350" valueType-type="bool"/>
+    <token id="00000134A3471350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="nullptr" scope="00000134913900A0" type="name" values="00000134A920BE80" astParent="00000134A34712F0"/>
+    <token id="00000134A34713B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="&amp;&amp;" scope="00000134913900A0" type="op" isLogicalOp="True" astParent="00000134A3471230" astOperand1="00000134A34712F0" astOperand2="00000134A3473CF0" valueType-type="bool"/>
+    <token id="00000134A34730F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="boxedVisibility" scope="00000134913900A0" type="name" varId="3" astParent="00000134A3473B70"/>
+    <token id="00000134A3473B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="." scope="00000134913900A0" astParent="00000134A3473CF0" astOperand1="00000134A34730F0" astOperand2="00000134A3473450" originalName="->"/>
+    <token id="00000134A3473450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="Value" scope="00000134913900A0" type="name" varId="5" astParent="00000134A3473B70"/>
+    <token id="00000134A3473CF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="==" scope="00000134913900A0" type="op" isComparisonOp="True" astParent="00000134A34713B0" astOperand1="00000134A3473B70" astOperand2="00000134A3472C70" valueType-type="bool"/>
+    <token id="00000134A34739F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="Visibility" scope="00000134913900A0" type="name" astParent="00000134A3472C70"/>
+    <token id="00000134A3472C70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="::" scope="00000134913900A0" astParent="00000134A3473CF0" astOperand1="00000134A34739F0" astOperand2="00000134A3473BD0"/>
+    <token id="00000134A3473BD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str="Collapsed" scope="00000134913900A0" type="name" astParent="00000134A3472C70"/>
+    <token id="00000134A34736F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="20" str=")" scope="00000134913900A0" link="00000134A3471230"/>
+    <token id="00000134A34737B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="21" str="{" scope="00000134913900A0" link="00000134A3473810"/>
+    <token id="00000134A34733F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str="visibility" scope="00000134913900A0" type="name" varId="4" astParent="00000134A3472C10"/>
+    <token id="00000134A3472C10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str="=" scope="00000134913900A0" type="op" isAssignmentOp="True" astOperand1="00000134A34733F0" astOperand2="00000134A3473150"/>
+    <token id="00000134A3473C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str="Visibility" scope="00000134913900A0" type="name" astParent="00000134A3473150"/>
+    <token id="00000134A3473150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str="::" scope="00000134913900A0" astParent="00000134A3472C10" astOperand1="00000134A3473C30" astOperand2="00000134A3473DB0"/>
+    <token id="00000134A3473DB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str="Visible" scope="00000134913900A0" type="name" astParent="00000134A3473150"/>
+    <token id="00000134A3473630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="22" str=";" scope="00000134913900A0"/>
+    <token id="00000134A3473810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="23" str="}" scope="00000134913900A0" link="00000134A34737B0"/>
+    <token id="00000134A3472CD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="24" str="return" scope="00000134913900A0" type="name" astOperand1="00000134A3473FF0"/>
+    <token id="00000134A3473FF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="24" str="visibility" scope="00000134913900A0" type="name" varId="4" astParent="00000134A3472CD0"/>
+    <token id="00000134A3473390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="24" str=";" scope="00000134913900A0"/>
+    <token id="00000134A3473090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="25" str="}" scope="00000134913900A0" link="00000134A3471A10"/>
+    <token id="00000134A3473ED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="Object" scope="00000134913900A0" type="name" astParent="00000134A3473210"/>
+    <token id="00000134A3473210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="^" scope="00000134913900A0" type="op" astOperand1="00000134A3473ED0" astOperand2="00000134A34738D0"/>
+    <token id="00000134A3472EB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="VisibilityNegationConverter" scope="00000134913900A0" type="name" astParent="00000134A3473870"/>
+    <token id="00000134A3473870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="::" scope="00000134913900A0" astParent="00000134A34738D0" astOperand1="00000134A3472EB0" astOperand2="00000134A3472FD0"/>
+    <token id="00000134A3472FD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="ConvertBack" scope="00000134913900A0" type="name" astParent="00000134A3473870"/>
+    <token id="00000134A34738D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="(" scope="00000134913900A0" link="00000134A3472D90" astParent="00000134A3473210" astOperand1="00000134A3473870" astOperand2="00000134A3473690"/>
+    <token id="00000134A3473C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="Object" scope="00000134913900A0" type="name" astParent="00000134A3473930"/>
+    <token id="00000134A3473930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="^" scope="00000134913900A0" type="op" astParent="00000134A3473750" astOperand1="00000134A3473C90" astOperand2="00000134A3473D50"/>
+    <token id="00000134A3473D50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="value" scope="00000134913900A0" type="name" astParent="00000134A3473930"/>
+    <token id="00000134A3473750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="," scope="00000134913900A0" astParent="00000134A3473E70" astOperand1="00000134A3473930" astOperand2="00000134A3473B10"/>
+    <token id="00000134A3473E10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="TypeName" scope="00000134913900A0" type="name"/>
+    <token id="00000134A3473B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="targetType" scope="00000134913900A0" type="name" varId="6" astParent="00000134A3473750"/>
+    <token id="00000134A3473E70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="," scope="00000134913900A0" astParent="00000134A3473690" astOperand1="00000134A3473750" astOperand2="00000134A3472D30"/>
+    <token id="00000134A3472910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="Object" scope="00000134913900A0" type="name" astParent="00000134A3472D30"/>
+    <token id="00000134A3472D30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="^" scope="00000134913900A0" type="op" astParent="00000134A3473E70" astOperand1="00000134A3472910" astOperand2="00000134A3473A50"/>
+    <token id="00000134A3473A50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="parameter" scope="00000134913900A0" type="name" astParent="00000134A3472D30"/>
+    <token id="00000134A3473690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="," scope="00000134913900A0" astParent="00000134A34738D0" astOperand1="00000134A3473E70" astOperand2="00000134A3473AB0"/>
+    <token id="00000134A3473990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="String" scope="00000134913900A0" type="name" astParent="00000134A3473AB0"/>
+    <token id="00000134A3473AB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="^" scope="00000134913900A0" type="op" astParent="00000134A3473690" astOperand1="00000134A3473990" astOperand2="00000134A3473F30"/>
+    <token id="00000134A3473F30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str="language" scope="00000134913900A0" type="name" astParent="00000134A3473AB0"/>
+    <token id="00000134A3472D90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="27" str=")" scope="00000134913900A0" link="00000134A34738D0"/>
+    <token id="00000134A34735D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="28" str="{" scope="00000134913900A0" link="00000134A3472F70"/>
+    <token id="00000134A34734B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="return" scope="00000134913900A0" type="name" astOperand1="00000134A3473510"/>
+    <token id="00000134A3473030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="Convert" scope="00000134913900A0" type="name" astParent="00000134A3473510"/>
+    <token id="00000134A3473510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="(" scope="00000134913900A0" link="00000134A3472F10" astParent="00000134A34734B0" astOperand1="00000134A3473030" astOperand2="00000134A3473270"/>
+    <token id="00000134A3472DF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="value" scope="00000134913900A0" type="name" astParent="00000134A34731B0"/>
+    <token id="00000134A34731B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="," scope="00000134913900A0" astParent="00000134A3474050" astOperand1="00000134A3472DF0" astOperand2="00000134A3473F90"/>
+    <token id="00000134A3473F90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="targetType" scope="00000134913900A0" type="name" varId="6" astParent="00000134A34731B0"/>
+    <token id="00000134A3474050" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="," scope="00000134913900A0" astParent="00000134A3473270" astOperand1="00000134A34731B0" astOperand2="00000134A34740B0"/>
+    <token id="00000134A34740B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="parameter" scope="00000134913900A0" type="name" astParent="00000134A3474050"/>
+    <token id="00000134A3473270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="," scope="00000134913900A0" astParent="00000134A3473510" astOperand1="00000134A3474050" astOperand2="00000134A3472E50"/>
+    <token id="00000134A3472E50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str="language" scope="00000134913900A0" type="name" astParent="00000134A3473270"/>
+    <token id="00000134A3472F10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str=")" scope="00000134913900A0" link="00000134A3473510"/>
+    <token id="00000134A34732D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="29" str=";" scope="00000134913900A0"/>
+    <token id="00000134A3472F70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="30" str="}" scope="00000134913900A0" link="00000134A34735D0"/>
+    <token id="00000134A3472AF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="31" str="}" scope="00000134913900A0" link="00000134A3471410"/>
+    <token id="00000134A3472970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/VisibilityNegationConverter.cpp" linenr="32" str="}" scope="00000134913902C0" link="00000134A3471770"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134913901B0" type="Global"/>
+    <scope id="00000134913902C0" type="Namespace" className="CalculatorApp" bodyStart="00000134A3471770" bodyEnd="00000134A3472970" nestedIn="00000134913901B0"/>
+    <scope id="00000134913900A0" type="Namespace" className="Common" bodyStart="00000134A3471410" bodyEnd="00000134A3472AF0" nestedIn="00000134913902C0">
+      <functionList>
+        <function id="00000134A213F920" tokenDef="00000134A3471A70" name="dynamic_cast" type="Function">
+          <arg nr="1" variable="000001349165F5A0"/>
+        </function>
+      </functionList>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="000001349165F5A0" nameToken="0000000000000000" typeStartToken="00000134A34723D0" typeEndToken="00000134A34723D0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920BE80">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

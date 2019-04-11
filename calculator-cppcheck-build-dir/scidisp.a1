@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="370805446">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;currentGroup&apos; can be reduced." verbose="The scope of the variable &apos;currentGroup&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CEngine\scidisp.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CEngine\scidisp.cpp" line="224"/>
+            <symbol>currentGroup</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;currentGroup&apos; is assigned a value that is never used." verbose="Variable &apos;currentGroup&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcManager\CEngine\scidisp.cpp" file="C:\sample repositories\calculator-master\src\CalcManager\CEngine\scidisp.cpp" line="224"/>
+            <symbol>currentGroup</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="CALC_E_OVERFLOW"/>
+    <functioncall functionName="DisplayError"/>
+    <functioncall functionName="GetStringForDisplay"/>
+    <functioncall functionName="GroupDigits"/>
+    <functioncall functionName="GroupDigitsPerRadix"/>
+    <functioncall functionName="IDS_ERR_INPUT_OVERFLOW"/>
+    <functioncall functionName="IDS_ERR_UNK_CH"/>
+    <functioncall functionName="Integer"/>
+    <functioncall functionName="IsNumberInvalid"/>
+    <functioncall functionName="MAX_EXPONENT"/>
+    <functioncall functionName="NUM_WIDTH"/>
+    <functioncall functionName="SetPrimaryDisplay"/>
+    <functioncall functionName="ToString"/>
+    <functioncall functionName="TruncateNumForIntMath"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_decPostSepStr"/>
+    <functioncall functionName="c_decPreSepStr"/>
+    <functioncall functionName="currentGroup"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="dec"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delimiter"/>
+    <functioncall functionName="displayString"/>
+    <functioncall functionName="distance"/>
+    <functioncall functionName="emplace_back"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="hasDecimal"/>
+    <functioncall functionName="hasExponent"/>
+    <functioncall functionName="iMantissa"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="intEnd"/>
+    <functioncall functionName="intItr"/>
+    <functioncall functionName="isNumNegative"/>
+    <functioncall functionName="iswdigit"/>
+    <functioncall functionName="itr"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="m_bRecord"/>
+    <functioncall functionName="m_currentVal"/>
+    <functioncall functionName="m_decGrouping"/>
+    <functioncall functionName="m_decimalSeparator"/>
+    <functioncall functionName="m_fIntegerMode"/>
+    <functioncall functionName="m_groupSeparator"/>
+    <functioncall functionName="m_nFE"/>
+    <functioncall functionName="m_numberString"/>
+    <functioncall functionName="m_numwidth"/>
+    <functioncall functionName="m_precision"/>
+    <functioncall functionName="m_radix"/>
+    <functioncall functionName="matches"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="numberString"/>
+    <functioncall functionName="radix"/>
+    <functioncall functionName="rat"/>
+    <functioncall functionName="rbegin"/>
+    <functioncall functionName="regex_match"/>
+    <functioncall functionName="rend"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="rx"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="substr"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="wcstoul"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

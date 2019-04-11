@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.87"/>
+    <errors>
+        <error id="unsignedPositive" severity="style" msg="Unsigned expression &amp;#039;uIdx&amp;#039; can&amp;#039;t be negative so it is unnecessary to test it." verbose="Unsigned expression &amp;#039;uIdx&amp;#039; can&amp;#039;t be negative so it is unnecessary to test it." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorHistory.cpp" line="65"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;CalculatorVector::GetSize&amp;#039; can be const." verbose="The member function &amp;#039;CalculatorVector::GetSize&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorVector.h" line="26"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorVector::GetExpressionSuffix&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorVector::GetExpressionSuffix&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorVector.h" line="149"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CalculatorHistory&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CalculatorHistory&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorHistory.h" line="34"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="863"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DeSerializeCommands&amp;#039; is never used." verbose="The function &amp;#039;DeSerializeCommands&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="432"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DeSerializeMemory&amp;#039; is never used." verbose="The function &amp;#039;DeSerializeMemory&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="407"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DeSerializePrimaryDisplay&amp;#039; is never used." verbose="The function &amp;#039;DeSerializePrimaryDisplay&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="364"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DisplayPasteError&amp;#039; is never used." verbose="The function &amp;#039;DisplayPasteError&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="67"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetCurrentDegreeMode&amp;#039; is never used." verbose="The function &amp;#039;GetCurrentDegreeMode&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="739"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetHistoryItems&amp;#039; is never used." verbose="The function &amp;#039;GetHistoryItems&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="669"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetResultForRadix&amp;#039; is never used." verbose="The function &amp;#039;GetResultForRadix&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="772"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetSerializedMemory&amp;#039; is never used." verbose="The function &amp;#039;GetSerializedMemory&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="398"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetSerializedPrimaryDisplay&amp;#039; is never used." verbose="The function &amp;#039;GetSerializedPrimaryDisplay&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="355"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;IsEngineRecording&amp;#039; is never used." verbose="The function &amp;#039;IsEngineRecording&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="792"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;RemoveHistoryItem&amp;#039; is never used." verbose="The function &amp;#039;RemoveHistoryItem&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="691"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SerializeCommands&amp;#039; is never used." verbose="The function &amp;#039;SerializeCommands&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="423"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SerializeSavedDegreeMode&amp;#039; is never used." verbose="The function &amp;#039;SerializeSavedDegreeMode&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="336"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetInHistoryItemLoadMode&amp;#039; is never used." verbose="The function &amp;#039;SetInHistoryItemLoadMode&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="797"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetPrecision&amp;#039; is never used." verbose="The function &amp;#039;SetPrecision&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="777"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetRadix&amp;#039; is never used." verbose="The function &amp;#039;SetRadix&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CalculatorManager.cpp" line="701"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;CalcEngine::CalcNumSec::IsEmpty&amp;#039; can be const." verbose="The member function &amp;#039;CalcEngine::CalcNumSec::IsEmpty&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\CalcInput.h" line="22"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;CalcEngine::CalcNumSec::IsNegative&amp;#039; can be const." verbose="The member function &amp;#039;CalcEngine::CalcNumSec::IsNegative&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\CalcInput.h" line="24"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CalcInput&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CalcInput&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\CalcInput.h" line="39"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;CCalcEngine::FInErrorState&amp;#039; can be const." verbose="The member function &amp;#039;CCalcEngine::FInErrorState&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\CalcEngine.h" line="60"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;CCalcEngine::FInRecordingState&amp;#039; can be const." verbose="The member function &amp;#039;CCalcEngine::FInRecordingState&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\CalcEngine.h" line="61"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\Rational.h" line="21"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\Rational.h" line="23"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\Rational.h" line="24"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Rational&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Header Files\Rational.h" line="25"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CParentheses&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CParentheses&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.h" line="12"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CUnaryCommand&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CUnaryCommand&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.h" line="24"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CBinaryCommand&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CBinaryCommand&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.h" line="39"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &amp;#039;COpndCommand::GetString&amp;#039; can be const." verbose="The member function &amp;#039;COpndCommand::GetString&amp;#039; can be made a const function. Making this function &amp;#039;const&amp;#039; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.h" line="70" info=""/>
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="290" info=""/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;m_command&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;m_command&amp;#039; a value by passing the value to the constructor in the initialization list." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="36"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;m_command&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;m_command&amp;#039; a value by passing the value to the constructor in the initialization list." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="42"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Accept&amp;#039; is never used." verbose="The function &amp;#039;Accept&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="302"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;AppendCommand&amp;#039; is never used." verbose="The function &amp;#039;AppendCommand&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="123"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetToken&amp;#039; is never used." verbose="The function &amp;#039;GetToken&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="216"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;RemoveFromEnd&amp;#039; is never used." verbose="The function &amp;#039;RemoveFromEnd&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="159"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetCommand&amp;#039; is never used." verbose="The function &amp;#039;SetCommand&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="78"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ToggleSign&amp;#039; is never used." verbose="The function &amp;#039;ToggleSign&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="141"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Accept&amp;#039; is never used." verbose="The function &amp;#039;Accept&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="29"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetCommand&amp;#039; is never used." verbose="The function &amp;#039;SetCommand&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\ExpressionCommand.cpp" line="57"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;m_fromType&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;m_fromType&amp;#039; is reassigned a value before the old one has been used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="948" info=""/>
+            <location file="src\CalcManager\UnitConverter.cpp" line="931" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;m_toType&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;m_toType&amp;#039; is reassigned a value before the old one has been used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="949" info=""/>
+            <location file="src\CalcManager\UnitConverter.cpp" line="937" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;RestoreUserPreferences&amp;#039; argument 1 names different: declaration &amp;#039;userPreference&amp;#039; definition &amp;#039;userPreferences&amp;#039;." verbose="Function &amp;#039;RestoreUserPreferences&amp;#039; argument 1 names different: declaration &amp;#039;userPreference&amp;#039; definition &amp;#039;userPreferences&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="398" info=""/>
+            <location file="src\CalcManager\UnitConverter.h" line="216" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;TrimString&amp;#039; argument 1 names different: declaration &amp;#039;input&amp;#039; definition &amp;#039;returnString&amp;#039;." verbose="Function &amp;#039;TrimString&amp;#039; argument 1 names different: declaration &amp;#039;input&amp;#039; definition &amp;#039;returnString&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="1027" info=""/>
+            <location file="src\CalcManager\UnitConverter.h" line="234" info=""/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="1035"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="361"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DeSerialize&amp;#039; is never used." verbose="The function &amp;#039;DeSerialize&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="337"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;GetCurrentCategory&amp;#039; is never used." verbose="The function &amp;#039;GetCurrentCategory&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="132"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;RestoreUserPreferences&amp;#039; is never used." verbose="The function &amp;#039;RestoreUserPreferences&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="398"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SaveUserPreferences&amp;#039; is never used." verbose="The function &amp;#039;SaveUserPreferences&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="417"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetCurrentCategory&amp;#039; is never used." verbose="The function &amp;#039;SetCurrentCategory&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="97"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetCurrentUnitTypes&amp;#039; is never used." verbose="The function &amp;#039;SetCurrentUnitTypes&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="143"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SwitchActive&amp;#039; is never used." verbose="The function &amp;#039;SwitchActive&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.cpp" line="170"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;name&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;name&amp;#039; a value by passing the value to the constructor in the initialization list." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="24"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;accessibleName&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;accessibleName&amp;#039; a value by passing the value to the constructor in the initialization list." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="25"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;UnitConverter&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;UnitConverter&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="203"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;name&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;name&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="13"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;abbreviation&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;abbreviation&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="13"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;abbreviation&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;abbreviation&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="18"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;name&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;name&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcManager\UnitConverter.h" line="60"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;nPrev&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;nPrev&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CEngine\scicomm.cpp" line="188"/>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &amp;#039;UFNE::fDontUseInExpEval&amp;#039; is never used." verbose="struct member &amp;#039;UFNE::fDontUseInExpEval&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CEngine\scicomm.cpp" line="875"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;currentGroup&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;currentGroup&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CEngine\scidisp.cpp" line="224"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;currentGroup&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;currentGroup&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\CEngine\scidisp.cpp" line="224"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;ptrb&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;ptrb&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="85"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;ptrc&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;ptrc&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="86"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;da&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;da&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="91"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;digit&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;digit&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="304"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;da&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;da&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="91"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;cy&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;cy&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="92"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;mcy&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;mcy&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\basex.cpp" line="94"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;curChar&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;curChar&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\conv.cpp" line="663"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;i32factnum&amp;#039; is never used." verbose="The function &amp;#039;i32factnum&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\conv.cpp" line="1450"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;i32prodnum&amp;#039; is never used." verbose="The function &amp;#039;i32prodnum&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\conv.cpp" line="1480"/>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: pnum" verbose="Null pointer dereference: pnum" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\conv.cpp" line="1071" info="Dereferencing argument pnum that is null"/>
+            <location file="src\CalcManager\Ratpack\conv.cpp" line="777" info="Calling function stripzeroesnum, 1st argument is null"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." verbose="Function &amp;#039;powrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="273" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="435" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powrat&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." verbose="Function &amp;#039;powrat&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="273" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="435" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powratNumeratorDenominator&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." verbose="Function &amp;#039;powratNumeratorDenominator&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="300" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="436" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powratNumeratorDenominator&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." verbose="Function &amp;#039;powratNumeratorDenominator&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="300" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="436" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powratcomp&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." verbose="Function &amp;#039;powratcomp&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="409" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="437" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;powratcomp&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." verbose="Function &amp;#039;powratcomp&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;y&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="409" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="437" info=""/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;log10rat&amp;#039; is never used." verbose="The function &amp;#039;log10rat&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\exp.cpp" line="230"/>
+        </error>
+        <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\fact.cpp" line="179"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;factrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." verbose="Function &amp;#039;factrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;px&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\fact.cpp" line="196" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="425" info=""/>
+        </error>
+        <error id="constArgument" severity="style" msg="Argument &amp;#039;*pn&amp;#039; to function _destroyrat is always 0" verbose="Argument &amp;#039;*pn&amp;#039; to function _destroyrat is always 0" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\fact.cpp" line="192" info="Argument &amp;#039;*pn&amp;#039; to function _destroyrat is always 0"/>
+            <location file="src\CalcManager\Ratpack\fact.cpp" line="191" info="*pn is assigned value 0"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;asinanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;asinanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\itrans.cpp" line="85" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="356" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;acosanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;acosanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\itrans.cpp" line="176" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="346" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;atananglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;atananglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\itrans.cpp" line="265" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="366" info=""/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_acosrat&amp;#039; is never used." verbose="The function &amp;#039;_acosrat&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\itrans.cpp" line="183"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;intb&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;intb&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\logic.cpp" line="25"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;intb&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;intb&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\logic.cpp" line="48"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;da&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;da&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\logic.cpp" line="143"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;da&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;da&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="72"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;db&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;db&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="73"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pchb&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pchb&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="225"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pchc&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pchc&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="226"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;da&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;da&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="231"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;digit&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;digit&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="434"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;da&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;da&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="231"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;cy&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;cy&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="232"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;mcy&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;mcy&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="234"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\num.cpp" line="443"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;rootrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;py&amp;#039;." verbose="Function &amp;#039;rootrat&amp;#039; argument 1 names different: declaration &amp;#039;pa&amp;#039; definition &amp;#039;py&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\rat.cpp" line="266" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="440" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;rootrat&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;n&amp;#039;." verbose="Function &amp;#039;rootrat&amp;#039; argument 2 names different: declaration &amp;#039;b&amp;#039; definition &amp;#039;n&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\rat.cpp" line="266" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="440" info=""/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;logscale&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;logscale&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\support.cpp" line="526"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;sinanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;sinanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="105" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="405" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;cosanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;cosanglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="200" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="382" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;tananglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." verbose="Function &amp;#039;tananglerat&amp;#039; argument 1 names different: declaration &amp;#039;px&amp;#039; definition &amp;#039;pa&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="272" info=""/>
+            <location file="src\CalcManager\Ratpack\ratpak.h" line="412" info=""/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;cosrat&amp;#039; is never used." verbose="The function &amp;#039;cosrat&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="194"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;sinrat&amp;#039; is never used." verbose="The function &amp;#039;sinrat&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="99"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;tanrat&amp;#039; is never used." verbose="The function &amp;#039;tanrat&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\trans.cpp" line="266"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;pret-&amp;gt;pp&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;pret-&amp;gt;pp&amp;#039; is reassigned a value before the old one has been used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\transh.cpp" line="162" info=""/>
+            <location file="src\CalcManager\Ratpack\transh.cpp" line="160" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;pret-&amp;gt;pq&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;pret-&amp;gt;pq&amp;#039; is reassigned a value before the old one has been used." sinceDate="4/10/2019">
+            <location file="src\CalcManager\Ratpack\transh.cpp" line="163" info=""/>
+            <location file="src\CalcManager\Ratpack\transh.cpp" line="160" info=""/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NarratorAnnouncement sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NarratorAnnouncement sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class DisplayExpressionToken sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class DisplayExpressionToken sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DisplayExpressionToken.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NavCategory sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NavCategory sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\NavCategory.h" line="101"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NavCategoryGroup sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NavCategoryGroup sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\NavCategory.h" line="210"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class HistoryItemViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class HistoryItemViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\HistoryItemViewModel.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class HistoryViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class HistoryViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\HistoryViewModel.h" line="22"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MemoryItemViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MemoryItemViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\MemoryItemViewModel.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class StandardCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class StandardCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\StandardCalculatorViewModel.h" line="36"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class _Enum_is_bitflag_ DateUnit {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class _Enum_is_bitflag_ DateUnit {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DateCalculator.h" line="22"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorApp::Common::DateCalculation::DateCalculationEngine::AdjustCalendarDate&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DateCalculator.h" line="58" info=""/>
+            <location file="src\CalcViewModel\Common\DateCalculator.cpp" line="275" info=""/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;DateCalculationEngine&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;DateCalculationEngine&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DateCalculator.h" line="43"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class DateCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class DateCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DateCalculatorViewModel.h" line="16"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NetworkManager sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NetworkManager sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\NetworkManager.h" line="17"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class Category sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class Category sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\UnitConverterViewModel.h" line="19"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class Unit sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class Unit sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\UnitConverterViewModel.h" line="52"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryResult sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryResult sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\UnitConverterViewModel.h" line="91"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class Activatable sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class Activatable sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\UnitConverterViewModel.h" line="119"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class UnitConverterViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class UnitConverterViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\UnitConverterViewModel.h" line="142"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class ApplicationViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class ApplicationViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\ApplicationViewModel.h" line="15"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." verbose="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DelegateCommand.h" line="42"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class LocalizationService sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class LocalizationService sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\LocalizationService.h" line="21"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorButtonPressedEventArgs sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorButtonPressedEventArgs sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.h" line="13"/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;SetPrimaryDisplay&amp;#039; argument 1 names different: declaration &amp;#039;displayString&amp;#039; definition &amp;#039;displayStringValue&amp;#039;." verbose="Function &amp;#039;SetPrimaryDisplay&amp;#039; argument 1 names different: declaration &amp;#039;displayString&amp;#039; definition &amp;#039;displayStringValue&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.cpp" line="28" info=""/>
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.h" line="19" info=""/>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &amp;#039;SetMemorizedNumbers&amp;#039; argument 1 names different: declaration &amp;#039;memorizedNumbers&amp;#039; definition &amp;#039;newMemorizedNumbers&amp;#039;." verbose="Function &amp;#039;SetMemorizedNumbers&amp;#039; argument 1 names different: declaration &amp;#039;memorizedNumbers&amp;#039; definition &amp;#039;newMemorizedNumbers&amp;#039;." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.cpp" line="83" info=""/>
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.h" line="22" info=""/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetCallback&amp;#039; is never used." verbose="The function &amp;#039;SetCallback&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.cpp" line="18"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SetHistoryCallback&amp;#039; is never used." verbose="The function &amp;#039;SetHistoryCallback&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\CalculatorDisplay.cpp" line="23"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;days&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;days&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\DateCalculator.cpp" line="237"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;cmdVector&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;cmdVector&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="68"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorApp::Common::CommandDeserializer::DeserializeParentheses&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorApp::Common::CommandDeserializer::DeserializeParentheses&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="21" info=""/>
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="59" info=""/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorApp::Common::CommandDeserializer::DeserializeBinary&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorApp::Common::CommandDeserializer::DeserializeBinary&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="23" info=""/>
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="83" info=""/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CommandDeserializer&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CommandDeserializer&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="15"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class KeyboardShortcutManager sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class KeyboardShortcutManager sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\KeyboardShortcutManager.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class LiveRegionHost sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class LiveRegionHost sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\Automation\LiveRegionHost.h" line="19"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NotificationHost sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NotificationHost sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\Automation\NotificationHost.h" line="13"/>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &amp;#039;NarratorAnnouncementHostFactory::Initialize&amp;#039;" verbose="Unused private function: &amp;#039;NarratorAnnouncementHostFactory::Initialize&amp;#039;" sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.h" line="22"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NarratorNotifier sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NarratorNotifier sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\Common\Automation\NarratorNotifier.h" line="11"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;didLoad&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;didLoad&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\CurrencyDataLoader.cpp" line="196"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;CurrencyUnitMetadata&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;CurrencyUnitMetadata&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="45"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;CurrencyDataLoader&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;CurrencyDataLoader&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\CurrencyDataLoader.h" line="54"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;UnitConverterDataLoader&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;UnitConverterDataLoader&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="50"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;name&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;name&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="17"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;abbreviation&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;abbreviation&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\UnitConverterDataLoader.h" line="17"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\DataLoaders\UnitConverterDataLoader.cpp" line="150"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class WindowFrameService sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class WindowFrameService sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\WindowFrameService.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class App sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class App sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\App.xaml.h" line="25"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class AboutFlyout sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class AboutFlyout sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\AboutFlyout.xaml.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MainPage sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MainPage sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\MainPage.xaml.h" line="23"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." verbose="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\MainPage.xaml.h" line="39"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\TitleBarHelper.h" line="26" info=""/>
+            <location file="src\Calculator\Common\TitleBarHelper.cpp" line="55" info=""/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &amp;#039;CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility&amp;#039; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &amp;#039;CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility&amp;#039; can be made a static function. Making a function static can bring a performance benefit since no &amp;#039;this&amp;#039; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." inconclusive="true" sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\TitleBarHelper.h" line="27" info=""/>
+            <location file="src\Calculator\Common\TitleBarHelper.cpp" line="60" info=""/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculationResult sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculationResult sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\CalculationResult.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculationResultAutomationPeer sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculationResultAutomationPeer sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\CalculationResultAutomationPeer.h" line="12"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorButton sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorButton sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\CalculatorButton.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class FlipButtons sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class FlipButtons sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\FlipButtons.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class OperandTextBox sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class OperandTextBox sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\OperandTextBox.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class OperatorTextBox sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class OperatorTextBox sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\OperatorTextBox.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class OverflowTextBlock sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class OverflowTextBlock sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\OverflowTextBlock.h" line="12"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class OverflowTextBlockAutomationPeer sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class OverflowTextBlockAutomationPeer sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\OverflowTextBlockAutomationPeer.h" line="12"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." verbose="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\OverflowTextBlockAutomationPeer.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class RadixButton sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class RadixButton sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\RadixButton.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryItemsControl sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryItemsControl sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\SupplementaryItemsControl.h" line="8"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryContentPresenter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryContentPresenter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\SupplementaryItemsControl.h" line="19"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryContentPresenterAP sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryContentPresenterAP sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\SupplementaryItemsControl.h" line="29"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." verbose="Syntax Error: AST broken, binary operator &amp;#039;&amp;gt;&amp;#039; doesn&amp;#039;t have two operands." sinceDate="4/10/2019">
+            <location file="src\Calculator\Controls\SupplementaryItemsControl.h" line="37"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class BitFlipAutomationNameConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class BitFlipAutomationNameConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\BitFlipAutomationNameConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class BooleanNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class BooleanNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\BooleanNegationConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class BooleanToVisibilityConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class BooleanToVisibilityConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\BooleanToVisibilityConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class BooleanToVisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class BooleanToVisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\BooleanToVisibilityConverter.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class ExpressionItemContainerStyle sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class ExpressionItemContainerStyle sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\ExpressionItemContainerStyle.h" line="11"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class ExpressionItemTemplateSelector sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class ExpressionItemTemplateSelector sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\ExpressionItemTemplateSelector.h" line="11"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class ItemSizeToVisibilityConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class ItemSizeToVisibilityConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\ItemSizeToVisibilityConverter.h" line="11"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class ItemSizeToVisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class ItemSizeToVisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\ItemSizeToVisibilityConverter.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class RadixToStringConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class RadixToStringConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\RadixToStringConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class VisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class VisibilityNegationConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Converters\VisibilityNegationConverter.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MemorySlot sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MemorySlot sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignStandardCalculatorViewModel.h" line="12"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class StandardCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class StandardCalculatorViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignStandardCalculatorViewModel.h" line="33"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CategoryViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CategoryViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="21"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class UnitViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class UnitViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="40"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class UnitConverterSupplementaryResultViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class UnitConverterSupplementaryResultViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="54"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class UnitConverterViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class UnitConverterViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignUnitConverterViewModel.h" line="69"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class AppViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class AppViewModel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\DesignData\DesignAppViewModel.h" line="24"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class Calculator sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class Calculator sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\Calculator.xaml.h" line="40"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorStandardOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorStandardOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorStandardOperators.xaml.h" line="17"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class Memory sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class Memory sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\Memory.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class HistoryList sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class HistoryList sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\HistoryList.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorProgrammerBitFlipPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorProgrammerBitFlipPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorProgrammerBitFlipPanel.xaml.h" line="21"/>
+        </error>
+        <error id="mismatchingContainers" severity="error" msg="Iterators of different containers are used together." verbose="Iterators of different containers are used together." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorProgrammerBitFlipPanel.xaml.cpp" line="200"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorProgrammerDisplayPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorProgrammerDisplayPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorProgrammerDisplayPanel.xaml.h" line="12"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorProgrammerOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorProgrammerOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorProgrammerOperators.xaml.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorProgrammerRadixOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorProgrammerRadixOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorProgrammerRadixOperators.xaml.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorScientificAngleButtons sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorScientificAngleButtons sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorScientificAngleButtons.xaml.h" line="17"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class CalculatorScientificOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class CalculatorScientificOperators sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\CalculatorScientificOperators.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class DateCalculator sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class DateCalculator sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\DateCalculator.xaml.h" line="25"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;memorySlot&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;memorySlot&amp;#039; is assigned a value that is never used." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\Memory.xaml.cpp" line="72"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MemoryListItem sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MemoryListItem sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\MemoryListItem.xaml.h" line="15"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class NumberPad sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class NumberPad sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\NumberPad.xaml.h" line="17"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class OperatorsPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class OperatorsPanel sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\OperatorsPanel.xaml.h" line="15"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class DelighterUnitToStyleConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class DelighterUnitToStyleConverter sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\SupplementaryResults.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryResultDataTemplateSelector sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryResultDataTemplateSelector sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\SupplementaryResults.xaml.h" line="37"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryResultNoOverflowStackPanel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryResultNoOverflowStackPanel sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\SupplementaryResults.xaml.h" line="62"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class SupplementaryResults sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class SupplementaryResults sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\SupplementaryResults.xaml.h" line="69"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class TitleBar sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class TitleBar sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\TitleBar.xaml.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class UnitConverter sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class UnitConverter sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\UnitConverter.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class AspectRatioTrigger sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class AspectRatioTrigger sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\Calculator\Views\StateTriggers\AspectRatioTrigger.h" line="22"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MockAsyncOperationWithProgress sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MockAsyncOperationWithProgress sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class App sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class App sealed {&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\CalcEngineTests.cpp" line="27"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\CalcInputTest.cpp" line="19"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\CalculatorManagerTest.cpp" line="167"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\CopyPasteManagerTest.cpp" line="42"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\CurrencyConverterUnitTests.cpp" line="191"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\DateCalculatorUnitTests.cpp" line="49"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\Module.cpp" line="19"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\MultiWindowUnitTests.cpp" line="60"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\NavCategoryUnitTests.cpp" line="356"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &amp;#039;=&amp;#039; doesn&amp;#039;t have two operands." verbose="Syntax Error: AST broken, binary operator &amp;#039;=&amp;#039; doesn&amp;#039;t have two operands." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\StandardViewModelUnitTests.cpp" line="844"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\UnitConverterTest.cpp" line="189"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &amp;#039;class MockActivatable sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." verbose="The code &amp;#039;class MockActivatable sealed :&amp;#039; is not handled. You can use -I or --include to add handling of this code." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\UnitConverterViewModelUnitTests.cpp" line="265"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\UnitConverterViewModelUnitTests.cpp" line="37"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\UtilsTests.cpp" line="19"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Delay&amp;#039; is never used." verbose="The function &amp;#039;Delay&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\AsyncHelper.cpp" line="36"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;RunOnUIThread&amp;#039; is never used." verbose="The function &amp;#039;RunOnUIThread&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalculatorUnitTests\AsyncHelper.cpp" line="26"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;IsValidViewState&amp;#039; is never used." verbose="The function &amp;#039;IsValidViewState&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\CalcViewModel\ViewState.cpp" line="14"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LaunchUIResponsive&amp;#039; is never used." verbose="The function &amp;#039;LaunchUIResponsive&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\AppLifecycleLogger.cpp" line="66"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LaunchVisibleComplete&amp;#039; is never used." verbose="The function &amp;#039;LaunchVisibleComplete&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\AppLifecycleLogger.cpp" line="75"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ResumeUIResponsive&amp;#039; is never used." verbose="The function &amp;#039;ResumeUIResponsive&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\AppLifecycleLogger.cpp" line="84"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ResumeVisibleComplete&amp;#039; is never used." verbose="The function &amp;#039;ResumeVisibleComplete&amp;#039; is never used." sinceDate="4/10/2019">
+            <location file="src\Calculator\Common\AppLifecycleLogger.cpp" line="93"/>
+        </error>
+    </errors>
+</results>

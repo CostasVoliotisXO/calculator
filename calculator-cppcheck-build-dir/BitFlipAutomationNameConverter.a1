@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2636386616">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class BitFlipAutomationNameConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class BitFlipAutomationNameConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\BitFlipAutomationNameConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\BitFlipAutomationNameConverter.h" line="14"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Data"/>
+    <functioncall functionName="GetDigitSymbolFromEnUsDigit"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="asm"/>
+    <functioncall functionName="bit"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="one"/>
+    <functioncall functionName="parameter"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="zero"/>
+  </FileInfo>
+</analyzerinfo>

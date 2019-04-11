@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;MemoryListItem.xaml.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="#"/>
+    <tok fileIndex="0" linenr="6" str="include"/>
+    <tok fileIndex="0" linenr="6" str="&quot;Controls/CalculatorButton.h&quot;"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Common"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Controls"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="ViewModel"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="12" str="using"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="Platform"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="13" str="using"/>
+    <tok fileIndex="0" linenr="13" str="namespace"/>
+    <tok fileIndex="0" linenr="13" str="Platform"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="Collections"/>
+    <tok fileIndex="0" linenr="13" str=";"/>
+    <tok fileIndex="0" linenr="14" str="using"/>
+    <tok fileIndex="0" linenr="14" str="namespace"/>
+    <tok fileIndex="0" linenr="14" str="Windows"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="ApplicationModel"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="Resources"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="15" str="using"/>
+    <tok fileIndex="0" linenr="15" str="namespace"/>
+    <tok fileIndex="0" linenr="15" str="Windows"/>
+    <tok fileIndex="0" linenr="15" str="::"/>
+    <tok fileIndex="0" linenr="15" str="Foundation"/>
+    <tok fileIndex="0" linenr="15" str=";"/>
+    <tok fileIndex="0" linenr="16" str="using"/>
+    <tok fileIndex="0" linenr="16" str="namespace"/>
+    <tok fileIndex="0" linenr="16" str="Windows"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Foundation"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="Collections"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="17" str="using"/>
+    <tok fileIndex="0" linenr="17" str="namespace"/>
+    <tok fileIndex="0" linenr="17" str="Windows"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="UI"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="Popups"/>
+    <tok fileIndex="0" linenr="17" str=";"/>
+    <tok fileIndex="0" linenr="18" str="using"/>
+    <tok fileIndex="0" linenr="18" str="namespace"/>
+    <tok fileIndex="0" linenr="18" str="Windows"/>
+    <tok fileIndex="0" linenr="18" str="::"/>
+    <tok fileIndex="0" linenr="18" str="UI"/>
+    <tok fileIndex="0" linenr="18" str="::"/>
+    <tok fileIndex="0" linenr="18" str="Xaml"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="19" str="using"/>
+    <tok fileIndex="0" linenr="19" str="namespace"/>
+    <tok fileIndex="0" linenr="19" str="Windows"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="UI"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="Xaml"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="Controls"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="using"/>
+    <tok fileIndex="0" linenr="20" str="namespace"/>
+    <tok fileIndex="0" linenr="20" str="Windows"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="UI"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="Xaml"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="Controls"/>
+    <tok fileIndex="0" linenr="20" str="::"/>
+    <tok fileIndex="0" linenr="20" str="Primitives"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="using"/>
+    <tok fileIndex="0" linenr="21" str="namespace"/>
+    <tok fileIndex="0" linenr="21" str="Windows"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="UI"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="Xaml"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="Data"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="using"/>
+    <tok fileIndex="0" linenr="22" str="namespace"/>
+    <tok fileIndex="0" linenr="22" str="Windows"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="UI"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="Xaml"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="Input"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="using"/>
+    <tok fileIndex="0" linenr="23" str="namespace"/>
+    <tok fileIndex="0" linenr="23" str="Windows"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="UI"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="Xaml"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="Media"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="using"/>
+    <tok fileIndex="0" linenr="24" str="namespace"/>
+    <tok fileIndex="0" linenr="24" str="Windows"/>
+    <tok fileIndex="0" linenr="24" str="::"/>
+    <tok fileIndex="0" linenr="24" str="UI"/>
+    <tok fileIndex="0" linenr="24" str="::"/>
+    <tok fileIndex="0" linenr="24" str="Xaml"/>
+    <tok fileIndex="0" linenr="24" str="::"/>
+    <tok fileIndex="0" linenr="24" str="Navigation"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="using"/>
+    <tok fileIndex="0" linenr="25" str="namespace"/>
+    <tok fileIndex="0" linenr="25" str="Windows"/>
+    <tok fileIndex="0" linenr="25" str="::"/>
+    <tok fileIndex="0" linenr="25" str="UI"/>
+    <tok fileIndex="0" linenr="25" str="::"/>
+    <tok fileIndex="0" linenr="25" str="ViewManagement"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="27" str="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="Model"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="27" str=";"/>
+    <tok fileIndex="0" linenr="29" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="29" str="::"/>
+    <tok fileIndex="0" linenr="29" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="30" str="{"/>
+    <tok fileIndex="0" linenr="31" str="InitializeComponent"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="32" str="}"/>
+    <tok fileIndex="0" linenr="34" str="void"/>
+    <tok fileIndex="0" linenr="34" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="OnPointerEntered"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="Windows"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="UI"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="Xaml"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="Input"/>
+    <tok fileIndex="0" linenr="34" str="::"/>
+    <tok fileIndex="0" linenr="34" str="PointerRoutedEventArgs"/>
+    <tok fileIndex="0" linenr="34" str="^"/>
+    <tok fileIndex="0" linenr="34" str="e"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="35" str="{"/>
+    <tok fileIndex="0" linenr="36" str="Control"/>
+    <tok fileIndex="0" linenr="36" str="::"/>
+    <tok fileIndex="0" linenr="36" str="OnPointerEntered"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="e"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="38" str="// Only show hover buttons when the user is using mouse or pen."/>
+    <tok fileIndex="0" linenr="39" str="if"/>
+    <tok fileIndex="0" linenr="39" str="("/>
+    <tok fileIndex="0" linenr="39" str="e"/>
+    <tok fileIndex="0" linenr="39" str="-&gt;"/>
+    <tok fileIndex="0" linenr="39" str="Pointer"/>
+    <tok fileIndex="0" linenr="39" str="-&gt;"/>
+    <tok fileIndex="0" linenr="39" str="PointerDeviceType"/>
+    <tok fileIndex="0" linenr="39" str="=="/>
+    <tok fileIndex="0" linenr="39" str="Windows"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Devices"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Input"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="PointerDeviceType"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Mouse"/>
+    <tok fileIndex="0" linenr="39" str="||"/>
+    <tok fileIndex="0" linenr="39" str="e"/>
+    <tok fileIndex="0" linenr="39" str="-&gt;"/>
+    <tok fileIndex="0" linenr="39" str="Pointer"/>
+    <tok fileIndex="0" linenr="39" str="-&gt;"/>
+    <tok fileIndex="0" linenr="39" str="PointerDeviceType"/>
+    <tok fileIndex="0" linenr="39" str="=="/>
+    <tok fileIndex="0" linenr="39" str="Windows"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Devices"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Input"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="PointerDeviceType"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Pen"/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="40" str="{"/>
+    <tok fileIndex="0" linenr="41" str="VisualStateManager"/>
+    <tok fileIndex="0" linenr="41" str="::"/>
+    <tok fileIndex="0" linenr="41" str="GoToState"/>
+    <tok fileIndex="0" linenr="41" str="("/>
+    <tok fileIndex="0" linenr="41" str="this"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="&quot;MemoryButtonsVisible&quot;"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="true"/>
+    <tok fileIndex="0" linenr="41" str=")"/>
+    <tok fileIndex="0" linenr="41" str=";"/>
+    <tok fileIndex="0" linenr="42" str="}"/>
+    <tok fileIndex="0" linenr="43" str="}"/>
+    <tok fileIndex="0" linenr="45" str="void"/>
+    <tok fileIndex="0" linenr="45" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="OnPointerExited"/>
+    <tok fileIndex="0" linenr="45" str="("/>
+    <tok fileIndex="0" linenr="45" str="Windows"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="UI"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="Xaml"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="Input"/>
+    <tok fileIndex="0" linenr="45" str="::"/>
+    <tok fileIndex="0" linenr="45" str="PointerRoutedEventArgs"/>
+    <tok fileIndex="0" linenr="45" str="^"/>
+    <tok fileIndex="0" linenr="45" str="e"/>
+    <tok fileIndex="0" linenr="45" str=")"/>
+    <tok fileIndex="0" linenr="46" str="{"/>
+    <tok fileIndex="0" linenr="47" str="Control"/>
+    <tok fileIndex="0" linenr="47" str="::"/>
+    <tok fileIndex="0" linenr="47" str="OnPointerExited"/>
+    <tok fileIndex="0" linenr="47" str="("/>
+    <tok fileIndex="0" linenr="47" str="e"/>
+    <tok fileIndex="0" linenr="47" str=")"/>
+    <tok fileIndex="0" linenr="47" str=";"/>
+    <tok fileIndex="0" linenr="49" str="VisualStateManager"/>
+    <tok fileIndex="0" linenr="49" str="::"/>
+    <tok fileIndex="0" linenr="49" str="GoToState"/>
+    <tok fileIndex="0" linenr="49" str="("/>
+    <tok fileIndex="0" linenr="49" str="this"/>
+    <tok fileIndex="0" linenr="49" str=","/>
+    <tok fileIndex="0" linenr="49" str="&quot;MemoryButtonsHidden&quot;"/>
+    <tok fileIndex="0" linenr="49" str=","/>
+    <tok fileIndex="0" linenr="49" str="true"/>
+    <tok fileIndex="0" linenr="49" str=")"/>
+    <tok fileIndex="0" linenr="49" str=";"/>
+    <tok fileIndex="0" linenr="50" str="}"/>
+    <tok fileIndex="0" linenr="52" str="void"/>
+    <tok fileIndex="0" linenr="52" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="52" str="::"/>
+    <tok fileIndex="0" linenr="52" str="OnClearButtonClicked"/>
+    <tok fileIndex="0" linenr="52" str="("/>
+    <tok fileIndex="0" linenr="52" str="_In_"/>
+    <tok fileIndex="0" linenr="52" str="Object"/>
+    <tok fileIndex="0" linenr="52" str="^"/>
+    <tok fileIndex="0" linenr="52" str="sender"/>
+    <tok fileIndex="0" linenr="52" str=","/>
+    <tok fileIndex="0" linenr="52" str="_In_"/>
+    <tok fileIndex="0" linenr="52" str="RoutedEventArgs"/>
+    <tok fileIndex="0" linenr="52" str="^"/>
+    <tok fileIndex="0" linenr="52" str="e"/>
+    <tok fileIndex="0" linenr="52" str=")"/>
+    <tok fileIndex="0" linenr="53" str="{"/>
+    <tok fileIndex="0" linenr="54" str="Model"/>
+    <tok fileIndex="0" linenr="54" str="-&gt;"/>
+    <tok fileIndex="0" linenr="54" str="Clear"/>
+    <tok fileIndex="0" linenr="54" str="("/>
+    <tok fileIndex="0" linenr="54" str=")"/>
+    <tok fileIndex="0" linenr="54" str=";"/>
+    <tok fileIndex="0" linenr="55" str="}"/>
+    <tok fileIndex="0" linenr="57" str="void"/>
+    <tok fileIndex="0" linenr="57" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="57" str="::"/>
+    <tok fileIndex="0" linenr="57" str="OnMemoryAddButtonClicked"/>
+    <tok fileIndex="0" linenr="57" str="("/>
+    <tok fileIndex="0" linenr="57" str="_In_"/>
+    <tok fileIndex="0" linenr="57" str="Object"/>
+    <tok fileIndex="0" linenr="57" str="^"/>
+    <tok fileIndex="0" linenr="57" str="sender"/>
+    <tok fileIndex="0" linenr="57" str=","/>
+    <tok fileIndex="0" linenr="57" str="_In_"/>
+    <tok fileIndex="0" linenr="57" str="RoutedEventArgs"/>
+    <tok fileIndex="0" linenr="57" str="^"/>
+    <tok fileIndex="0" linenr="57" str="e"/>
+    <tok fileIndex="0" linenr="57" str=")"/>
+    <tok fileIndex="0" linenr="58" str="{"/>
+    <tok fileIndex="0" linenr="59" str="Model"/>
+    <tok fileIndex="0" linenr="59" str="-&gt;"/>
+    <tok fileIndex="0" linenr="59" str="MemoryAdd"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="59" str=";"/>
+    <tok fileIndex="0" linenr="60" str="}"/>
+    <tok fileIndex="0" linenr="62" str="void"/>
+    <tok fileIndex="0" linenr="62" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="62" str="::"/>
+    <tok fileIndex="0" linenr="62" str="OnMemorySubtractButtonClicked"/>
+    <tok fileIndex="0" linenr="62" str="("/>
+    <tok fileIndex="0" linenr="62" str="_In_"/>
+    <tok fileIndex="0" linenr="62" str="Object"/>
+    <tok fileIndex="0" linenr="62" str="^"/>
+    <tok fileIndex="0" linenr="62" str="sender"/>
+    <tok fileIndex="0" linenr="62" str=","/>
+    <tok fileIndex="0" linenr="62" str="_In_"/>
+    <tok fileIndex="0" linenr="62" str="RoutedEventArgs"/>
+    <tok fileIndex="0" linenr="62" str="^"/>
+    <tok fileIndex="0" linenr="62" str="e"/>
+    <tok fileIndex="0" linenr="62" str=")"/>
+    <tok fileIndex="0" linenr="63" str="{"/>
+    <tok fileIndex="0" linenr="64" str="Model"/>
+    <tok fileIndex="0" linenr="64" str="-&gt;"/>
+    <tok fileIndex="0" linenr="64" str="MemorySubtract"/>
+    <tok fileIndex="0" linenr="64" str="("/>
+    <tok fileIndex="0" linenr="64" str=")"/>
+    <tok fileIndex="0" linenr="64" str=";"/>
+    <tok fileIndex="0" linenr="65" str="}"/>
+    <tok fileIndex="0" linenr="67" str="void"/>
+    <tok fileIndex="0" linenr="67" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="67" str="::"/>
+    <tok fileIndex="0" linenr="67" str="OnClearSwipeInvoked"/>
+    <tok fileIndex="0" linenr="67" str="("/>
+    <tok fileIndex="0" linenr="67" str="_In_"/>
+    <tok fileIndex="0" linenr="67" str="SwipeItem"/>
+    <tok fileIndex="0" linenr="67" str="^"/>
+    <tok fileIndex="0" linenr="67" str="sender"/>
+    <tok fileIndex="0" linenr="67" str=","/>
+    <tok fileIndex="0" linenr="67" str="SwipeItemInvokedEventArgs"/>
+    <tok fileIndex="0" linenr="67" str="^"/>
+    <tok fileIndex="0" linenr="67" str="e"/>
+    <tok fileIndex="0" linenr="67" str=")"/>
+    <tok fileIndex="0" linenr="68" str="{"/>
+    <tok fileIndex="0" linenr="69" str="Model"/>
+    <tok fileIndex="0" linenr="69" str="-&gt;"/>
+    <tok fileIndex="0" linenr="69" str="Clear"/>
+    <tok fileIndex="0" linenr="69" str="("/>
+    <tok fileIndex="0" linenr="69" str=")"/>
+    <tok fileIndex="0" linenr="69" str=";"/>
+    <tok fileIndex="0" linenr="70" str="}"/>
+    <tok fileIndex="0" linenr="72" str="void"/>
+    <tok fileIndex="0" linenr="72" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="72" str="::"/>
+    <tok fileIndex="0" linenr="72" str="OnMemoryAddSwipeInvoked"/>
+    <tok fileIndex="0" linenr="72" str="("/>
+    <tok fileIndex="0" linenr="72" str="_In_"/>
+    <tok fileIndex="0" linenr="72" str="SwipeItem"/>
+    <tok fileIndex="0" linenr="72" str="^"/>
+    <tok fileIndex="0" linenr="72" str="sender"/>
+    <tok fileIndex="0" linenr="72" str=","/>
+    <tok fileIndex="0" linenr="72" str="SwipeItemInvokedEventArgs"/>
+    <tok fileIndex="0" linenr="72" str="^"/>
+    <tok fileIndex="0" linenr="72" str="e"/>
+    <tok fileIndex="0" linenr="72" str=")"/>
+    <tok fileIndex="0" linenr="73" str="{"/>
+    <tok fileIndex="0" linenr="74" str="Model"/>
+    <tok fileIndex="0" linenr="74" str="-&gt;"/>
+    <tok fileIndex="0" linenr="74" str="MemoryAdd"/>
+    <tok fileIndex="0" linenr="74" str="("/>
+    <tok fileIndex="0" linenr="74" str=")"/>
+    <tok fileIndex="0" linenr="74" str=";"/>
+    <tok fileIndex="0" linenr="75" str="}"/>
+    <tok fileIndex="0" linenr="77" str="void"/>
+    <tok fileIndex="0" linenr="77" str="MemoryListItem"/>
+    <tok fileIndex="0" linenr="77" str="::"/>
+    <tok fileIndex="0" linenr="77" str="OnMemorySubtractSwipeInvoked"/>
+    <tok fileIndex="0" linenr="77" str="("/>
+    <tok fileIndex="0" linenr="77" str="_In_"/>
+    <tok fileIndex="0" linenr="77" str="SwipeItem"/>
+    <tok fileIndex="0" linenr="77" str="^"/>
+    <tok fileIndex="0" linenr="77" str="sender"/>
+    <tok fileIndex="0" linenr="77" str=","/>
+    <tok fileIndex="0" linenr="77" str="SwipeItemInvokedEventArgs"/>
+    <tok fileIndex="0" linenr="77" str="^"/>
+    <tok fileIndex="0" linenr="77" str="e"/>
+    <tok fileIndex="0" linenr="77" str=")"/>
+    <tok fileIndex="0" linenr="78" str="{"/>
+    <tok fileIndex="0" linenr="79" str="Model"/>
+    <tok fileIndex="0" linenr="79" str="-&gt;"/>
+    <tok fileIndex="0" linenr="79" str="MemorySubtract"/>
+    <tok fileIndex="0" linenr="79" str="("/>
+    <tok fileIndex="0" linenr="79" str=")"/>
+    <tok fileIndex="0" linenr="79" str=";"/>
+    <tok fileIndex="0" linenr="80" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="5" str="#include &quot;MemoryListItem.xaml.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="6" str="#include &quot;Controls/CalculatorButton.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="6" str="#include &quot;Views/MemoryListItem.g.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="7" str="#include &quot;CalcViewModel/MemoryItemViewModel.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0000013497565110" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="9" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497566430" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="9" str="CalculatorApp" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497566310" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="10" str="{" scope="00000134A68EE730" link="000001349756AC30"/>
+    <token id="0000013497565B30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="[" scope="00000134A68EE730" link="00000134975661F0"/>
+    <token id="0000013497565D10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497565F50"/>
+    <token id="0000013497565F50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="::" scope="00000134A68EE730" astParent="0000013497565C50" astOperand1="0000013497565D10" astOperand2="0000013497565EF0"/>
+    <token id="0000013497565EF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="Foundation" scope="00000134A68EE730" type="name" astParent="0000013497565F50"/>
+    <token id="0000013497565C50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="::" scope="00000134A68EE730" astParent="0000013497565410" astOperand1="0000013497565F50" astOperand2="00000134975651D0"/>
+    <token id="00000134975651D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="Metadata" scope="00000134A68EE730" type="name" astParent="0000013497565C50"/>
+    <token id="0000013497565410" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="::" scope="00000134A68EE730" astOperand1="0000013497565C50" astOperand2="0000013497565A70"/>
+    <token id="0000013497565A70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="WebHostHidden" scope="00000134A68EE730" type="name" astParent="0000013497565410"/>
+    <token id="00000134975661F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="14" str="]" scope="00000134A68EE730" link="0000013497565B30"/>
+    <token id="0000013497566370" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="15" str="public" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497565CB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="15" str="ref" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497565BF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="15" str="class" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497566790" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="15" str="MemoryListItem" scope="00000134A68EE730" type="name"/>
+    <token id="00000134975660D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="15" str="sealed" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497566550" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="16" str="{" scope="00000134A68EE730" link="0000013497569D90"/>
+    <token id="0000013497566670" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="17" str="public:" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497565D70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="18" str="MemoryListItem" scope="00000134A68EE730" type="name" function="00000134A2140340" astParent="0000013497565170"/>
+    <token id="0000013497565170" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="18" str="(" scope="00000134A68EE730" link="0000013497565DD0" astOperand1="0000013497565D70"/>
+    <token id="0000013497565DD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="18" str=")" scope="00000134A68EE730" link="0000013497565170"/>
+    <token id="00000134975666D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="18" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497566130" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="20" str="DEPENDENCY_PROPERTY_OWNER" scope="00000134A68EE730" type="name" astParent="0000013497566730"/>
+    <token id="0000013497566730" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="20" str="(" scope="00000134A68EE730" link="0000013497565E30" astOperand1="0000013497566130" astOperand2="0000013497565A10"/>
+    <token id="0000013497565A10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="20" str="MemoryListItem" scope="00000134A68EE730" type="name" astParent="0000013497566730"/>
+    <token id="0000013497565E30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="20" str=")" scope="00000134A68EE730" link="0000013497566730"/>
+    <token id="0000013497565710" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="20" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497565950" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="DEPENDENCY_PROPERTY" scope="00000134A68EE730" type="name" astParent="00000134975667F0"/>
+    <token id="00000134975663D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="(" scope="00000134A68EE730" link="0000013497566490" astOperand1="0000013497566250"/>
+    <token id="0000013497565770" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="CalculatorApp" scope="00000134A68EE730" type="name" astParent="0000013497566190"/>
+    <token id="0000013497566190" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="::" scope="00000134A68EE730" astParent="00000134975652F0" astOperand1="0000013497565770" astOperand2="0000013497565FB0"/>
+    <token id="0000013497565FB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="ViewModel" scope="00000134A68EE730" type="name" astParent="0000013497566190"/>
+    <token id="00000134975652F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="::" scope="00000134A68EE730" astParent="00000134975667F0" astOperand1="0000013497566190" astOperand2="0000013497566010"/>
+    <token id="0000013497566010" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="MemoryItemViewModel" scope="00000134A68EE730" type="name" astParent="00000134975652F0"/>
+    <token id="00000134975667F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="^" scope="00000134A68EE730" type="op" astParent="0000013497566250" astOperand1="0000013497565950" astOperand2="00000134975652F0"/>
+    <token id="0000013497566250" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="," scope="00000134A68EE730" astParent="00000134975663D0" astOperand1="00000134975667F0" astOperand2="00000134975657D0"/>
+    <token id="00000134975657D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str="Model" scope="00000134A68EE730" type="name" astParent="0000013497566250"/>
+    <token id="0000013497566490" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str=")" scope="00000134A68EE730" link="00000134975663D0"/>
+    <token id="00000134975662B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="21" str=";" scope="00000134A68EE730"/>
+    <token id="00000134975664F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="23" str="protected:" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497566850" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497565830" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="OnPointerEntered" scope="00000134A68EE730" type="name" function="00000134A213FFE0" astParent="00000134975668B0"/>
+    <token id="00000134975668B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="(" scope="00000134A68EE730" link="00000134975655F0" astOperand1="0000013497565830" astOperand2="00000134975654D0" valueType-type="void"/>
+    <token id="0000013497565890" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497566610"/>
+    <token id="0000013497566610" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="::" scope="00000134A68EE730" astParent="0000013497565290" astOperand1="0000013497565890" astOperand2="0000013497565230"/>
+    <token id="0000013497565230" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497566610"/>
+    <token id="0000013497565290" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="::" scope="00000134A68EE730" astParent="00000134975653B0" astOperand1="0000013497566610" astOperand2="0000013497565350"/>
+    <token id="0000013497565350" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497565290"/>
+    <token id="00000134975653B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="::" scope="00000134A68EE730" astParent="0000013497565530" astOperand1="0000013497565290" astOperand2="00000134975658F0"/>
+    <token id="00000134975658F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="Input" scope="00000134A68EE730" type="name" astParent="00000134975653B0"/>
+    <token id="0000013497565530" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="::" scope="00000134A68EE730" astParent="00000134975654D0" astOperand1="00000134975653B0" astOperand2="0000013497565470"/>
+    <token id="0000013497565470" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="PointerRoutedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497565530"/>
+    <token id="00000134975654D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="^" scope="00000134A68EE730" type="op" astParent="00000134975668B0" astOperand1="0000013497565530" astOperand2="0000013497565590"/>
+    <token id="0000013497565590" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="e" scope="00000134A68EE730" type="name" astParent="00000134975654D0"/>
+    <token id="00000134975655F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str=")" scope="00000134A68EE730" link="00000134975668B0"/>
+    <token id="0000013497567F90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str="override" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497567510" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="24" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497567E70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497567AB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="OnPointerExited" scope="00000134A68EE730" type="name" function="00000134A2141C00" astParent="0000013497567D50"/>
+    <token id="0000013497567D50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="(" scope="00000134A68EE730" link="00000134975675D0" astOperand1="0000013497567AB0" astOperand2="0000013497567810" valueType-type="void"/>
+    <token id="0000013497566D90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="Windows" scope="00000134A68EE730" type="name" astParent="00000134975669D0"/>
+    <token id="00000134975669D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="::" scope="00000134A68EE730" astParent="0000013497567A50" astOperand1="0000013497566D90" astOperand2="0000013497567690"/>
+    <token id="0000013497567690" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="UI" scope="00000134A68EE730" type="name" astParent="00000134975669D0"/>
+    <token id="0000013497567A50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="::" scope="00000134A68EE730" astParent="0000013497566C70" astOperand1="00000134975669D0" astOperand2="0000013497567DB0"/>
+    <token id="0000013497567DB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497567A50"/>
+    <token id="0000013497566C70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="::" scope="00000134A68EE730" astParent="0000013497566DF0" astOperand1="0000013497567A50" astOperand2="0000013497567150"/>
+    <token id="0000013497567150" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="Input" scope="00000134A68EE730" type="name" astParent="0000013497566C70"/>
+    <token id="0000013497566DF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="::" scope="00000134A68EE730" astParent="0000013497567810" astOperand1="0000013497566C70" astOperand2="0000013497567990"/>
+    <token id="0000013497567990" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="PointerRoutedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497566DF0"/>
+    <token id="0000013497567810" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="^" scope="00000134A68EE730" type="op" astParent="0000013497567D50" astOperand1="0000013497566DF0" astOperand2="00000134975680B0"/>
+    <token id="00000134975680B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="e" scope="00000134A68EE730" type="name" astParent="0000013497567810"/>
+    <token id="00000134975675D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str=")" scope="00000134A68EE730" link="0000013497567D50"/>
+    <token id="0000013497567CF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str="override" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497567090" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="25" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497567930" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="27" str="private:" scope="00000134A68EE730" type="name"/>
+    <token id="00000134975676F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497566B50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="OnClearButtonClicked" scope="00000134A68EE730" type="name" function="00000134A2140850" astParent="0000013497567E10"/>
+    <token id="0000013497567E10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="(" scope="00000134A68EE730" link="0000013497567F30" astOperand1="0000013497566B50" astOperand2="0000013497567270" valueType-type="void"/>
+    <token id="0000013497567630" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="Platform" scope="00000134A68EE730" type="name" astParent="0000013497566CD0"/>
+    <token id="0000013497566CD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="::" scope="00000134A68EE730" astParent="0000013497567FF0" astOperand1="0000013497567630" astOperand2="0000013497566970"/>
+    <token id="0000013497566970" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="Object" scope="00000134A68EE730" type="name" astParent="0000013497566CD0"/>
+    <token id="0000013497567FF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="^" scope="00000134A68EE730" type="op" astParent="0000013497567270" astOperand1="0000013497566CD0" astOperand2="0000013497568050"/>
+    <token id="0000013497568050" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="sender" scope="00000134A68EE730" type="name" astParent="0000013497567FF0"/>
+    <token id="0000013497567270" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="," scope="00000134A68EE730" astParent="0000013497567E10" astOperand1="0000013497567FF0" astOperand2="00000134975677B0"/>
+    <token id="0000013497566D30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497566F10"/>
+    <token id="0000013497566F10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="::" scope="00000134A68EE730" astParent="0000013497566E50" astOperand1="0000013497566D30" astOperand2="0000013497566F70"/>
+    <token id="0000013497566F70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497566F10"/>
+    <token id="0000013497566E50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="::" scope="00000134A68EE730" astParent="0000013497567330" astOperand1="0000013497566F10" astOperand2="0000013497567ED0"/>
+    <token id="0000013497567ED0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497566E50"/>
+    <token id="0000013497567330" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="::" scope="00000134A68EE730" astParent="00000134975677B0" astOperand1="0000013497566E50" astOperand2="0000013497567750"/>
+    <token id="0000013497567750" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="RoutedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497567330"/>
+    <token id="00000134975677B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="^" scope="00000134A68EE730" type="op" astParent="0000013497567270" astOperand1="0000013497567330" astOperand2="0000013497566910"/>
+    <token id="0000013497566910" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str="e" scope="00000134A68EE730" type="name" astParent="00000134975677B0"/>
+    <token id="0000013497567F30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str=")" scope="00000134A68EE730" link="0000013497567E10"/>
+    <token id="0000013497566A30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="28" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497566EB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497566A90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="OnMemoryAddButtonClicked" scope="00000134A68EE730" type="name" function="00000134A2141930" astParent="00000134975672D0"/>
+    <token id="00000134975672D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="(" scope="00000134A68EE730" link="00000134975673F0" astOperand1="0000013497566A90" astOperand2="0000013497567870" valueType-type="void"/>
+    <token id="0000013497567B70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="Platform" scope="00000134A68EE730" type="name" astParent="0000013497566AF0"/>
+    <token id="0000013497566AF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="::" scope="00000134A68EE730" astParent="0000013497566FD0" astOperand1="0000013497567B70" astOperand2="0000013497567BD0"/>
+    <token id="0000013497567BD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="Object" scope="00000134A68EE730" type="name" astParent="0000013497566AF0"/>
+    <token id="0000013497566FD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="^" scope="00000134A68EE730" type="op" astParent="0000013497567870" astOperand1="0000013497566AF0" astOperand2="0000013497567C30"/>
+    <token id="0000013497567C30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="sender" scope="00000134A68EE730" type="name" astParent="0000013497566FD0"/>
+    <token id="0000013497567870" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="," scope="00000134A68EE730" astParent="00000134975672D0" astOperand1="0000013497566FD0" astOperand2="00000134975670F0"/>
+    <token id="0000013497567C90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497567210"/>
+    <token id="0000013497567210" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="::" scope="00000134A68EE730" astParent="0000013497567570" astOperand1="0000013497567C90" astOperand2="0000013497566BB0"/>
+    <token id="0000013497566BB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497567210"/>
+    <token id="0000013497567570" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="::" scope="00000134A68EE730" astParent="00000134975671B0" astOperand1="0000013497567210" astOperand2="0000013497566C10"/>
+    <token id="0000013497566C10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497567570"/>
+    <token id="00000134975671B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="::" scope="00000134A68EE730" astParent="00000134975670F0" astOperand1="0000013497567570" astOperand2="0000013497567030"/>
+    <token id="0000013497567030" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="RoutedEventArgs" scope="00000134A68EE730" type="name" astParent="00000134975671B0"/>
+    <token id="00000134975670F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="^" scope="00000134A68EE730" type="op" astParent="0000013497567870" astOperand1="00000134975671B0" astOperand2="0000013497567390"/>
+    <token id="0000013497567390" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str="e" scope="00000134A68EE730" type="name" astParent="00000134975670F0"/>
+    <token id="00000134975673F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str=")" scope="00000134A68EE730" link="00000134975672D0"/>
+    <token id="0000013497567450" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="29" str=";" scope="00000134A68EE730"/>
+    <token id="00000134975674B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="00000134975678D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="OnMemorySubtractButtonClicked" scope="00000134A68EE730" type="name" function="00000134A213F9B0" astParent="00000134975679F0"/>
+    <token id="00000134975679F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="(" scope="00000134A68EE730" link="0000013497568410" astOperand1="00000134975678D0" astOperand2="00000134975694F0" valueType-type="void"/>
+    <token id="0000013497568E30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="Platform" scope="00000134A68EE730" type="name" astParent="0000013497568A70"/>
+    <token id="0000013497568A70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="::" scope="00000134A68EE730" astParent="0000013497568650" astOperand1="0000013497568E30" astOperand2="00000134975693D0"/>
+    <token id="00000134975693D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="Object" scope="00000134A68EE730" type="name" astParent="0000013497568A70"/>
+    <token id="0000013497568650" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="^" scope="00000134A68EE730" type="op" astParent="00000134975694F0" astOperand1="0000013497568A70" astOperand2="00000134975692B0"/>
+    <token id="00000134975692B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="sender" scope="00000134A68EE730" type="name" astParent="0000013497568650"/>
+    <token id="00000134975694F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="," scope="00000134A68EE730" astParent="00000134975679F0" astOperand1="0000013497568650" astOperand2="0000013497568170"/>
+    <token id="0000013497568830" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497569670"/>
+    <token id="0000013497569670" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="::" scope="00000134A68EE730" astParent="0000013497568530" astOperand1="0000013497568830" astOperand2="00000134975685F0"/>
+    <token id="00000134975685F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497569670"/>
+    <token id="0000013497568530" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="::" scope="00000134A68EE730" astParent="0000013497568710" astOperand1="0000013497569670" astOperand2="00000134975688F0"/>
+    <token id="00000134975688F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497568530"/>
+    <token id="0000013497568710" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="::" scope="00000134A68EE730" astParent="0000013497568170" astOperand1="0000013497568530" astOperand2="0000013497568110"/>
+    <token id="0000013497568110" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="RoutedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497568710"/>
+    <token id="0000013497568170" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="^" scope="00000134A68EE730" type="op" astParent="00000134975694F0" astOperand1="0000013497568710" astOperand2="00000134975696D0"/>
+    <token id="00000134975696D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str="e" scope="00000134A68EE730" type="name" astParent="0000013497568170"/>
+    <token id="0000013497568410" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str=")" scope="00000134A68EE730" link="00000134975679F0"/>
+    <token id="0000013497569370" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="30" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497569190" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="0000013497569010" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="OnClearSwipeInvoked" scope="00000134A68EE730" type="name" function="00000134A2140B20" astParent="00000134975686B0"/>
+    <token id="00000134975686B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="(" scope="00000134A68EE730" link="0000013497568AD0" astOperand1="0000013497569010" astOperand2="00000134975690D0" valueType-type="void"/>
+    <token id="0000013497568FB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497568770"/>
+    <token id="0000013497568770" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569250" astOperand1="0000013497568FB0" astOperand2="00000134975687D0"/>
+    <token id="00000134975687D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497568770"/>
+    <token id="0000013497569250" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569070" astOperand1="0000013497568770" astOperand2="0000013497568890"/>
+    <token id="0000013497568890" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497569250"/>
+    <token id="0000013497569070" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569310" astOperand1="0000013497569250" astOperand2="0000013497568350"/>
+    <token id="0000013497568350" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Controls" scope="00000134A68EE730" type="name" astParent="0000013497569070"/>
+    <token id="0000013497569310" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569610" astOperand1="0000013497569070" astOperand2="0000013497568D70"/>
+    <token id="0000013497568D70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="SwipeItem" scope="00000134A68EE730" type="name" astParent="0000013497569310"/>
+    <token id="0000013497569610" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="^" scope="00000134A68EE730" type="op" astParent="00000134975690D0" astOperand1="0000013497569310" astOperand2="0000013497568950"/>
+    <token id="0000013497568950" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="sender" scope="00000134A68EE730" type="name" astParent="0000013497569610"/>
+    <token id="00000134975690D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="," scope="00000134A68EE730" astParent="00000134975686B0" astOperand1="0000013497569610" astOperand2="0000013497568E90"/>
+    <token id="0000013497568A10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Windows" scope="00000134A68EE730" type="name" astParent="0000013497569130"/>
+    <token id="0000013497569130" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497568C50" astOperand1="0000013497568A10" astOperand2="0000013497568590"/>
+    <token id="0000013497568590" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="UI" scope="00000134A68EE730" type="name" astParent="0000013497569130"/>
+    <token id="0000013497568C50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569730" astOperand1="0000013497569130" astOperand2="00000134975689B0"/>
+    <token id="00000134975689B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497568C50"/>
+    <token id="0000013497569730" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497569790" astOperand1="0000013497568C50" astOperand2="0000013497568B30"/>
+    <token id="0000013497568B30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="Controls" scope="00000134A68EE730" type="name" astParent="0000013497569730"/>
+    <token id="0000013497569790" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="::" scope="00000134A68EE730" astParent="0000013497568E90" astOperand1="0000013497569730" astOperand2="0000013497568DD0"/>
+    <token id="0000013497568DD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="SwipeItemInvokedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497569790"/>
+    <token id="0000013497568E90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="^" scope="00000134A68EE730" type="op" astParent="00000134975690D0" astOperand1="0000013497569790" astOperand2="00000134975697F0"/>
+    <token id="00000134975697F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str="e" scope="00000134A68EE730" type="name" astParent="0000013497568E90"/>
+    <token id="0000013497568AD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str=")" scope="00000134A68EE730" link="00000134975686B0"/>
+    <token id="0000013497569430" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="31" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497569850" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="00000134975698B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="OnMemoryAddSwipeInvoked" scope="00000134A68EE730" type="name" function="00000134A21415D0" astParent="0000013497568B90"/>
+    <token id="0000013497568B90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="(" scope="00000134A68EE730" link="0000013497569D30" astOperand1="00000134975698B0" astOperand2="0000013497568290" valueType-type="void"/>
+    <token id="0000013497568BF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Windows" scope="00000134A68EE730" type="name" astParent="00000134975681D0"/>
+    <token id="00000134975681D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="0000013497569490" astOperand1="0000013497568BF0" astOperand2="00000134975691F0"/>
+    <token id="00000134975691F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="UI" scope="00000134A68EE730" type="name" astParent="00000134975681D0"/>
+    <token id="0000013497569490" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="0000013497569550" astOperand1="00000134975681D0" astOperand2="0000013497568EF0"/>
+    <token id="0000013497568EF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497569490"/>
+    <token id="0000013497569550" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="00000134975695B0" astOperand1="0000013497569490" astOperand2="0000013497568CB0"/>
+    <token id="0000013497568CB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Controls" scope="00000134A68EE730" type="name" astParent="0000013497569550"/>
+    <token id="00000134975695B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="0000013497568230" astOperand1="0000013497569550" astOperand2="0000013497568D10"/>
+    <token id="0000013497568D10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="SwipeItem" scope="00000134A68EE730" type="name" astParent="00000134975695B0"/>
+    <token id="0000013497568230" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="^" scope="00000134A68EE730" type="op" astParent="0000013497568290" astOperand1="00000134975695B0" astOperand2="0000013497568F50"/>
+    <token id="0000013497568F50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="sender" scope="00000134A68EE730" type="name" astParent="0000013497568230"/>
+    <token id="0000013497568290" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="," scope="00000134A68EE730" astParent="0000013497568B90" astOperand1="0000013497568230" astOperand2="000001349756A690"/>
+    <token id="00000134975682F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Windows" scope="00000134A68EE730" type="name" astParent="00000134975683B0"/>
+    <token id="00000134975683B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="00000134975684D0" astOperand1="00000134975682F0" astOperand2="0000013497568470"/>
+    <token id="0000013497568470" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="UI" scope="00000134A68EE730" type="name" astParent="00000134975683B0"/>
+    <token id="00000134975684D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="000001349756A7B0" astOperand1="00000134975683B0" astOperand2="0000013497569EB0"/>
+    <token id="0000013497569EB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Xaml" scope="00000134A68EE730" type="name" astParent="00000134975684D0"/>
+    <token id="000001349756A7B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="0000013497569F10" astOperand1="00000134975684D0" astOperand2="0000013497569E50"/>
+    <token id="0000013497569E50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="Controls" scope="00000134A68EE730" type="name" astParent="000001349756A7B0"/>
+    <token id="0000013497569F10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="::" scope="00000134A68EE730" astParent="000001349756A690" astOperand1="000001349756A7B0" astOperand2="0000013497569DF0"/>
+    <token id="0000013497569DF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="SwipeItemInvokedEventArgs" scope="00000134A68EE730" type="name" astParent="0000013497569F10"/>
+    <token id="000001349756A690" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="^" scope="00000134A68EE730" type="op" astParent="0000013497568290" astOperand1="0000013497569F10" astOperand2="000001349756A150"/>
+    <token id="000001349756A150" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str="e" scope="00000134A68EE730" type="name" astParent="000001349756A690"/>
+    <token id="0000013497569D30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str=")" scope="00000134A68EE730" link="0000013497568B90"/>
+    <token id="000001349756A330" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="32" str=";" scope="00000134A68EE730"/>
+    <token id="000001349756ABD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="void" scope="00000134A68EE730" type="name"/>
+    <token id="000001349756A0F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="OnMemorySubtractSwipeInvoked" scope="00000134A68EE730" type="name" function="00000134A213F890" astParent="000001349756AF90"/>
+    <token id="000001349756AF90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="(" scope="00000134A68EE730" link="000001349756A810" astOperand1="000001349756A0F0" astOperand2="000001349756AD50" valueType-type="void"/>
+    <token id="000001349756AFF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Windows" scope="00000134A68EE730" type="name" astParent="000001349756A270"/>
+    <token id="000001349756A270" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="0000013497569F70" astOperand1="000001349756AFF0" astOperand2="0000013497569C70"/>
+    <token id="0000013497569C70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="UI" scope="00000134A68EE730" type="name" astParent="000001349756A270"/>
+    <token id="0000013497569F70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="0000013497569CD0" astOperand1="000001349756A270" astOperand2="0000013497569FD0"/>
+    <token id="0000013497569FD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Xaml" scope="00000134A68EE730" type="name" astParent="0000013497569F70"/>
+    <token id="0000013497569CD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="000001349756A390" astOperand1="0000013497569F70" astOperand2="000001349756AE70"/>
+    <token id="000001349756AE70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Controls" scope="00000134A68EE730" type="name" astParent="0000013497569CD0"/>
+    <token id="000001349756A390" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="000001349756A6F0" astOperand1="0000013497569CD0" astOperand2="000001349756A5D0"/>
+    <token id="000001349756A5D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="SwipeItem" scope="00000134A68EE730" type="name" astParent="000001349756A390"/>
+    <token id="000001349756A6F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="^" scope="00000134A68EE730" type="op" astParent="000001349756AD50" astOperand1="000001349756A390" astOperand2="000001349756B0B0"/>
+    <token id="000001349756B0B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="sender" scope="00000134A68EE730" type="name" astParent="000001349756A6F0"/>
+    <token id="000001349756AD50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="," scope="00000134A68EE730" astParent="000001349756AF90" astOperand1="000001349756A6F0" astOperand2="0000013497569C10"/>
+    <token id="000001349756AED0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Windows" scope="00000134A68EE730" type="name" astParent="000001349756A030"/>
+    <token id="000001349756A030" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="000001349756A930" astOperand1="000001349756AED0" astOperand2="000001349756A090"/>
+    <token id="000001349756A090" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="UI" scope="00000134A68EE730" type="name" astParent="000001349756A030"/>
+    <token id="000001349756A930" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="000001349756A2D0" astOperand1="000001349756A030" astOperand2="000001349756A3F0"/>
+    <token id="000001349756A3F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Xaml" scope="00000134A68EE730" type="name" astParent="000001349756A930"/>
+    <token id="000001349756A2D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="000001349756A990" astOperand1="000001349756A930" astOperand2="000001349756AE10"/>
+    <token id="000001349756AE10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="Controls" scope="00000134A68EE730" type="name" astParent="000001349756A2D0"/>
+    <token id="000001349756A990" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="::" scope="00000134A68EE730" astParent="0000013497569C10" astOperand1="000001349756A2D0" astOperand2="000001349756AF30"/>
+    <token id="000001349756AF30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="SwipeItemInvokedEventArgs" scope="00000134A68EE730" type="name" astParent="000001349756A990"/>
+    <token id="0000013497569C10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="^" scope="00000134A68EE730" type="op" astParent="000001349756AD50" astOperand1="000001349756A990" astOperand2="000001349756AC90"/>
+    <token id="000001349756AC90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str="e" scope="00000134A68EE730" type="name" astParent="0000013497569C10"/>
+    <token id="000001349756A810" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str=")" scope="00000134A68EE730" link="000001349756AF90"/>
+    <token id="000001349756A1B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="33" str=";" scope="00000134A68EE730"/>
+    <token id="0000013497569D90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="35" str="}" scope="00000134A68EE730" link="0000013497566550"/>
+    <token id="000001349756A9F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="35" str=";" scope="00000134A68EE730"/>
+    <token id="000001349756AC30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.h" linenr="36" str="}" scope="00000134A68EE730" link="0000013497566310"/>
+    <token id="0000013497569910" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="8" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756A210" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="8" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756A450" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="8" str="CalculatorApp" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756AA50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="8" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756B050" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756AAB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756A4B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str="CalculatorApp" scope="00000134A68EFC70" type="name" astParent="000001349756AB70"/>
+    <token id="000001349756AB70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str="::" scope="00000134A68EFC70" astOperand1="000001349756A4B0" astOperand2="000001349756A870"/>
+    <token id="000001349756A870" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str="Common" scope="00000134A68EFC70" type="name" astParent="000001349756AB70"/>
+    <token id="000001349756AB10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="9" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756A510" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497569970" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756A570" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str="CalculatorApp" scope="00000134A68EFC70" type="name" astParent="0000013497569A90"/>
+    <token id="0000013497569A90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str="::" scope="00000134A68EFC70" astOperand1="000001349756A570" astOperand2="000001349756A630"/>
+    <token id="000001349756A630" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str="Controls" scope="00000134A68EFC70" type="name" astParent="0000013497569A90"/>
+    <token id="0000013497569A30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="10" str=";" scope="00000134A68EFC70"/>
+    <token id="0000013497569AF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497569B50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497569BB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str="CalculatorApp" scope="00000134A68EFC70" type="name" astParent="000001349756A750"/>
+    <token id="000001349756A750" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str="::" scope="00000134A68EFC70" astOperand1="0000013497569BB0" astOperand2="000001349756A8D0"/>
+    <token id="000001349756A8D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str="ViewModel" scope="00000134A68EFC70" type="name" astParent="000001349756A750"/>
+    <token id="000001349756ACF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="11" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756ADB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="12" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="00000134975699D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="12" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756C670" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="12" str="Platform" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756C6D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="12" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756C730" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B650" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B1D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str="Platform" scope="00000134A68EFC70" type="name" astParent="000001349756B950"/>
+    <token id="000001349756B950" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str="::" scope="00000134A68EFC70" astOperand1="000001349756B1D0" astOperand2="000001349756C0D0"/>
+    <token id="000001349756C0D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str="Collections" scope="00000134A68EFC70" type="name" astParent="000001349756B950"/>
+    <token id="000001349756BE30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="13" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756BB90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B290" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756BEF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756B230"/>
+    <token id="000001349756B230" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="::" scope="00000134A68EFC70" astParent="000001349756C790" astOperand1="000001349756BEF0" astOperand2="000001349756C550"/>
+    <token id="000001349756C550" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="ApplicationModel" scope="00000134A68EFC70" type="name" astParent="000001349756B230"/>
+    <token id="000001349756C790" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="::" scope="00000134A68EFC70" astOperand1="000001349756B230" astOperand2="000001349756B410"/>
+    <token id="000001349756B410" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str="Resources" scope="00000134A68EFC70" type="name" astParent="000001349756C790"/>
+    <token id="000001349756C370" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="14" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756C190" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B6B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B9B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756C1F0"/>
+    <token id="000001349756C1F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str="::" scope="00000134A68EFC70" astOperand1="000001349756B9B0" astOperand2="000001349756C7F0"/>
+    <token id="000001349756C7F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str="Foundation" scope="00000134A68EFC70" type="name" astParent="000001349756C1F0"/>
+    <token id="000001349756C850" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="15" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756C8B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B710" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B2F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756BA10"/>
+    <token id="000001349756BA10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="::" scope="00000134A68EFC70" astParent="000001349756BE90" astOperand1="000001349756B2F0" astOperand2="000001349756C130"/>
+    <token id="000001349756C130" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="Foundation" scope="00000134A68EFC70" type="name" astParent="000001349756BA10"/>
+    <token id="000001349756BE90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="::" scope="00000134A68EFC70" astOperand1="000001349756BA10" astOperand2="000001349756BBF0"/>
+    <token id="000001349756BBF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str="Collections" scope="00000134A68EFC70" type="name" astParent="000001349756BE90"/>
+    <token id="000001349756B350" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="16" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756BF50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B3B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756BC50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756C430"/>
+    <token id="000001349756C430" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="::" scope="00000134A68EFC70" astParent="000001349756BDD0" astOperand1="000001349756BC50" astOperand2="000001349756B470"/>
+    <token id="000001349756B470" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756C430"/>
+    <token id="000001349756BDD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="::" scope="00000134A68EFC70" astOperand1="000001349756C430" astOperand2="000001349756BD70"/>
+    <token id="000001349756BD70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str="Popups" scope="00000134A68EFC70" type="name" astParent="000001349756BDD0"/>
+    <token id="000001349756C5B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="17" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756C010" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B110" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756BFB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756C4F0"/>
+    <token id="000001349756C4F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="::" scope="00000134A68EFC70" astParent="000001349756C250" astOperand1="000001349756BFB0" astOperand2="000001349756B890"/>
+    <token id="000001349756B890" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756C4F0"/>
+    <token id="000001349756C250" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="::" scope="00000134A68EFC70" astOperand1="000001349756C4F0" astOperand2="000001349756C2B0"/>
+    <token id="000001349756C2B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756C250"/>
+    <token id="000001349756C070" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="18" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756BA70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756B530" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756BB30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756C3D0"/>
+    <token id="000001349756C3D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="::" scope="00000134A68EFC70" astParent="000001349756BAD0" astOperand1="000001349756BB30" astOperand2="000001349756B170"/>
+    <token id="000001349756B170" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756C3D0"/>
+    <token id="000001349756BAD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="::" scope="00000134A68EFC70" astParent="000001349756B4D0" astOperand1="000001349756C3D0" astOperand2="000001349756B830"/>
+    <token id="000001349756B830" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756BAD0"/>
+    <token id="000001349756B4D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="::" scope="00000134A68EFC70" astOperand1="000001349756BAD0" astOperand2="000001349756B590"/>
+    <token id="000001349756B590" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str="Controls" scope="00000134A68EFC70" type="name" astParent="000001349756B4D0"/>
+    <token id="000001349756C310" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="19" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756BCB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756C490" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756C610" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756BD10"/>
+    <token id="000001349756BD10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="::" scope="00000134A68EFC70" astParent="000001349756B7D0" astOperand1="000001349756C610" astOperand2="000001349756B770"/>
+    <token id="000001349756B770" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756BD10"/>
+    <token id="000001349756B7D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="::" scope="00000134A68EFC70" astParent="000001349756DED0" astOperand1="000001349756BD10" astOperand2="000001349756B8F0"/>
+    <token id="000001349756B8F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756B7D0"/>
+    <token id="000001349756DED0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="::" scope="00000134A68EFC70" astParent="000001349756DAB0" astOperand1="000001349756B7D0" astOperand2="000001349756CE50"/>
+    <token id="000001349756CE50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="Controls" scope="00000134A68EFC70" type="name" astParent="000001349756DED0"/>
+    <token id="000001349756DAB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="::" scope="00000134A68EFC70" astOperand1="000001349756DED0" astOperand2="000001349756DF90"/>
+    <token id="000001349756DF90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str="Primitives" scope="00000134A68EFC70" type="name" astParent="000001349756DAB0"/>
+    <token id="000001349756DFF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="20" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756DC30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756DA50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756DB10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756CFD0"/>
+    <token id="000001349756CFD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="::" scope="00000134A68EFC70" astParent="000001349756DF30" astOperand1="000001349756DB10" astOperand2="000001349756C9D0"/>
+    <token id="000001349756C9D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756CFD0"/>
+    <token id="000001349756DF30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="::" scope="00000134A68EFC70" astParent="000001349756D210" astOperand1="000001349756CFD0" astOperand2="000001349756D1B0"/>
+    <token id="000001349756D1B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756DF30"/>
+    <token id="000001349756D210" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="::" scope="00000134A68EFC70" astOperand1="000001349756DF30" astOperand2="000001349756CF10"/>
+    <token id="000001349756CF10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str="Data" scope="00000134A68EFC70" type="name" astParent="000001349756D210"/>
+    <token id="000001349756C910" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="21" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756DC90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756DB70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756D2D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756D510"/>
+    <token id="000001349756D510" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="::" scope="00000134A68EFC70" astParent="000001349756D6F0" astOperand1="000001349756D2D0" astOperand2="000001349756D750"/>
+    <token id="000001349756D750" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756D510"/>
+    <token id="000001349756D6F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="::" scope="00000134A68EFC70" astParent="000001349756CA30" astOperand1="000001349756D510" astOperand2="000001349756D450"/>
+    <token id="000001349756D450" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756D6F0"/>
+    <token id="000001349756CA30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="::" scope="00000134A68EFC70" astOperand1="000001349756D6F0" astOperand2="000001349756CC10"/>
+    <token id="000001349756CC10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str="Input" scope="00000134A68EFC70" type="name" astParent="000001349756CA30"/>
+    <token id="000001349756D270" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="22" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756D9F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756DBD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756D4B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756D330"/>
+    <token id="000001349756D330" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="::" scope="00000134A68EFC70" astParent="000001349756D8D0" astOperand1="000001349756D4B0" astOperand2="000001349756E050"/>
+    <token id="000001349756E050" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756D330"/>
+    <token id="000001349756D8D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="::" scope="00000134A68EFC70" astParent="000001349756DE70" astOperand1="000001349756D330" astOperand2="000001349756DD50"/>
+    <token id="000001349756DD50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756D8D0"/>
+    <token id="000001349756DE70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="::" scope="00000134A68EFC70" astOperand1="000001349756D8D0" astOperand2="000001349756CEB0"/>
+    <token id="000001349756CEB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str="Media" scope="00000134A68EFC70" type="name" astParent="000001349756DE70"/>
+    <token id="000001349756D390" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="23" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756C970" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756D3F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756E0B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756CA90"/>
+    <token id="000001349756CA90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="::" scope="00000134A68EFC70" astParent="000001349756D570" astOperand1="000001349756E0B0" astOperand2="000001349756D030"/>
+    <token id="000001349756D030" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756CA90"/>
+    <token id="000001349756D570" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="::" scope="00000134A68EFC70" astParent="000001349756D0F0" astOperand1="000001349756CA90" astOperand2="000001349756DE10"/>
+    <token id="000001349756DE10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756D570"/>
+    <token id="000001349756D0F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="::" scope="00000134A68EFC70" astOperand1="000001349756D570" astOperand2="000001349756D810"/>
+    <token id="000001349756D810" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str="Navigation" scope="00000134A68EFC70" type="name" astParent="000001349756D0F0"/>
+    <token id="000001349756D5D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="24" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756D930" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="using" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756CD90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="namespace" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756D630" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756CDF0"/>
+    <token id="000001349756CDF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="::" scope="00000134A68EFC70" astParent="000001349756D690" astOperand1="000001349756D630" astOperand2="000001349756CAF0"/>
+    <token id="000001349756CAF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756CDF0"/>
+    <token id="000001349756D690" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="::" scope="00000134A68EFC70" astOperand1="000001349756CDF0" astOperand2="000001349756CB50"/>
+    <token id="000001349756CB50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str="ViewManagement" scope="00000134A68EFC70" type="name" astParent="000001349756D690"/>
+    <token id="000001349756D7B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="25" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756D870" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str="DEPENDENCY_PROPERTY_INITIALIZATION" scope="00000134A68EFC70" type="name" astParent="000001349756CBB0"/>
+    <token id="000001349756CBB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str="(" scope="00000134A68EFC70" link="000001349756CCD0" astOperand1="000001349756D870" astOperand2="000001349756DCF0"/>
+    <token id="000001349756CF70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="000001349756DCF0"/>
+    <token id="000001349756DCF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str="," scope="00000134A68EFC70" astParent="000001349756CBB0" astOperand1="000001349756CF70" astOperand2="000001349756CC70"/>
+    <token id="000001349756CC70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str="Model" scope="00000134A68EFC70" type="name" astParent="000001349756DCF0"/>
+    <token id="000001349756CCD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str=")" scope="00000134A68EFC70" link="000001349756CBB0"/>
+    <token id="000001349756DDB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="27" str=";" scope="00000134A68EFC70"/>
+    <token id="000001349756CD30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="29" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="000001349756D090"/>
+    <token id="000001349756D090" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="29" str="::" scope="00000134A68EFC70" astParent="000001349756D990" astOperand1="000001349756CD30" astOperand2="000001349756D150"/>
+    <token id="000001349756D150" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="29" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="000001349756D090"/>
+    <token id="000001349756D990" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="29" str="(" scope="00000134A68EFC70" link="000001349756F730" astOperand1="000001349756D090"/>
+    <token id="000001349756F730" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="29" str=")" scope="00000134A68EFC70" link="000001349756D990"/>
+    <token id="000001349756E9B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="30" str="{" scope="00000134A68EF610" link="000001349756E710"/>
+    <token id="000001349756F490" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="31" str="InitializeComponent" scope="00000134A68EF610" type="name" astParent="000001349756F190"/>
+    <token id="000001349756F190" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="31" str="(" scope="00000134A68EF610" link="000001349756E8F0" astOperand1="000001349756F490"/>
+    <token id="000001349756E8F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="31" str=")" scope="00000134A68EF610" link="000001349756F190"/>
+    <token id="000001349756F3D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="31" str=";" scope="00000134A68EF610"/>
+    <token id="000001349756E710" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="32" str="}" scope="00000134A68EF610" link="000001349756E9B0"/>
+    <token id="000001349756F1F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756EA10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="000001349756E2F0"/>
+    <token id="000001349756E2F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="::" scope="00000134A68EFC70" astParent="000001349756F6D0" astOperand1="000001349756EA10" astOperand2="000001349756EC50"/>
+    <token id="000001349756EC50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="OnPointerEntered" scope="00000134A68EFC70" type="name" astParent="000001349756E2F0"/>
+    <token id="000001349756F6D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="(" scope="00000134A68EFC70" link="000001349756E110" astOperand1="000001349756E2F0" astOperand2="000001349756E6B0"/>
+    <token id="000001349756F250" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756E7D0"/>
+    <token id="000001349756E7D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="::" scope="00000134A68EFC70" astParent="000001349756EFB0" astOperand1="000001349756F250" astOperand2="000001349756F370"/>
+    <token id="000001349756F370" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756E7D0"/>
+    <token id="000001349756EFB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="::" scope="00000134A68EFC70" astParent="000001349756EA70" astOperand1="000001349756E7D0" astOperand2="000001349756F310"/>
+    <token id="000001349756F310" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="Xaml" scope="00000134A68EFC70" type="name" astParent="000001349756EFB0"/>
+    <token id="000001349756EA70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="::" scope="00000134A68EFC70" astParent="000001349756ED10" astOperand1="000001349756EFB0" astOperand2="000001349756F790"/>
+    <token id="000001349756F790" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="Input" scope="00000134A68EFC70" type="name" astParent="000001349756EA70"/>
+    <token id="000001349756ED10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="::" scope="00000134A68EFC70" astParent="000001349756E6B0" astOperand1="000001349756EA70" astOperand2="000001349756E230"/>
+    <token id="000001349756E230" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="PointerRoutedEventArgs" scope="00000134A68EFC70" type="name" astParent="000001349756ED10"/>
+    <token id="000001349756E6B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="^" scope="00000134A68EFC70" type="op" astParent="000001349756F6D0" astOperand1="000001349756ED10" astOperand2="000001349756EB90"/>
+    <token id="000001349756EB90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str="e" scope="00000134A68EFC70" type="name" astParent="000001349756E6B0"/>
+    <token id="000001349756E110" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="34" str=")" scope="00000134A68EFC70" link="000001349756F6D0"/>
+    <token id="000001349756EAD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="35" str="{" scope="00000134A68EE840" link="000001349756FD30"/>
+    <token id="000001349756F7F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str="Control" scope="00000134A68EE840" type="name" astParent="000001349756E1D0"/>
+    <token id="000001349756E1D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str="::" scope="00000134A68EE840" astParent="000001349756F610" astOperand1="000001349756F7F0" astOperand2="000001349756E5F0"/>
+    <token id="000001349756E5F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str="OnPointerEntered" scope="00000134A68EE840" type="name" astParent="000001349756E1D0"/>
+    <token id="000001349756F610" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str="(" scope="00000134A68EE840" link="000001349756F850" astOperand1="000001349756E1D0" astOperand2="000001349756F070"/>
+    <token id="000001349756F070" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str="e" scope="00000134A68EE840" type="name" astParent="000001349756F610"/>
+    <token id="000001349756F850" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str=")" scope="00000134A68EE840" link="000001349756F610"/>
+    <token id="000001349756F8B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="36" str=";" scope="00000134A68EE840"/>
+    <token id="000001349756E590" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="if" scope="00000134A68EE840" type="name" astParent="000001349756E170"/>
+    <token id="000001349756E170" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="(" scope="00000134A68EE840" link="0000013497570810" astOperand1="000001349756E590" astOperand2="000001349756EB30"/>
+    <token id="000001349756ED70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="e" scope="00000134A68EE840" type="name" astParent="000001349756F670"/>
+    <token id="000001349756F670" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="." scope="00000134A68EE840" astParent="000001349756F550" astOperand1="000001349756ED70" astOperand2="000001349756F2B0" originalName="->"/>
+    <token id="000001349756F2B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Pointer" scope="00000134A68EE840" type="name" astParent="000001349756F670"/>
+    <token id="000001349756F550" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="." scope="00000134A68EE840" astParent="000001349756EEF0" astOperand1="000001349756F670" astOperand2="000001349756E530" originalName="->"/>
+    <token id="000001349756E530" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="PointerDeviceType" scope="00000134A68EE840" type="name" astParent="000001349756F550"/>
+    <token id="000001349756EEF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="==" scope="00000134A68EE840" type="op" isComparisonOp="True" astParent="000001349756EB30" astOperand1="000001349756F550" astOperand2="000001349756E3B0" valueType-type="bool"/>
+    <token id="000001349756E290" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Windows" scope="00000134A68EE840" type="name" astParent="000001349756ECB0"/>
+    <token id="000001349756ECB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756E350" astOperand1="000001349756E290" astOperand2="000001349756F430"/>
+    <token id="000001349756F430" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Devices" scope="00000134A68EE840" type="name" astParent="000001349756ECB0"/>
+    <token id="000001349756E350" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756EE30" astOperand1="000001349756ECB0" astOperand2="000001349756EDD0"/>
+    <token id="000001349756EDD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Input" scope="00000134A68EE840" type="name" astParent="000001349756E350"/>
+    <token id="000001349756EE30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756E3B0" astOperand1="000001349756E350" astOperand2="000001349756F4F0"/>
+    <token id="000001349756F4F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="PointerDeviceType" scope="00000134A68EE840" type="name" astParent="000001349756EE30"/>
+    <token id="000001349756E3B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756EEF0" astOperand1="000001349756EE30" astOperand2="000001349756F5B0"/>
+    <token id="000001349756F5B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Mouse" scope="00000134A68EE840" type="name" astParent="000001349756E3B0"/>
+    <token id="000001349756EB30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="||" scope="00000134A68EE840" type="op" isLogicalOp="True" astParent="000001349756E170" astOperand1="000001349756EEF0" astOperand2="000001349756E4D0" valueType-type="bool"/>
+    <token id="000001349756EBF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="e" scope="00000134A68EE840" type="name" astParent="000001349756E410"/>
+    <token id="000001349756E410" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="." scope="00000134A68EE840" astParent="000001349756E470" astOperand1="000001349756EBF0" astOperand2="000001349756E650" originalName="->"/>
+    <token id="000001349756E650" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Pointer" scope="00000134A68EE840" type="name" astParent="000001349756E410"/>
+    <token id="000001349756E470" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="." scope="00000134A68EE840" astParent="000001349756E4D0" astOperand1="000001349756E410" astOperand2="000001349756E950" originalName="->"/>
+    <token id="000001349756E950" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="PointerDeviceType" scope="00000134A68EE840" type="name" astParent="000001349756E470"/>
+    <token id="000001349756E4D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="==" scope="00000134A68EE840" type="op" isComparisonOp="True" astParent="000001349756EB30" astOperand1="000001349756E470" astOperand2="000001349756F0D0" valueType-type="bool"/>
+    <token id="000001349756E770" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Windows" scope="00000134A68EE840" type="name" astParent="000001349756F130"/>
+    <token id="000001349756F130" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756EF50" astOperand1="000001349756E770" astOperand2="000001349756EE90"/>
+    <token id="000001349756EE90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Devices" scope="00000134A68EE840" type="name" astParent="000001349756F130"/>
+    <token id="000001349756EF50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756E890" astOperand1="000001349756F130" astOperand2="000001349756E830"/>
+    <token id="000001349756E830" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Input" scope="00000134A68EE840" type="name" astParent="000001349756EF50"/>
+    <token id="000001349756E890" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756F0D0" astOperand1="000001349756EF50" astOperand2="000001349756F010"/>
+    <token id="000001349756F010" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="PointerDeviceType" scope="00000134A68EE840" type="name" astParent="000001349756E890"/>
+    <token id="000001349756F0D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="::" scope="00000134A68EE840" astParent="000001349756E4D0" astOperand1="000001349756E890" astOperand2="0000013497570C90"/>
+    <token id="0000013497570C90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str="Pen" scope="00000134A68EE840" type="name" astParent="000001349756F0D0"/>
+    <token id="0000013497570810" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="39" str=")" scope="00000134A68EE840" link="000001349756E170"/>
+    <token id="0000013497570150" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="40" str="{" scope="00000134A68EE0D0" link="0000013497570F30"/>
+    <token id="0000013497570BD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="VisualStateManager" scope="00000134A68EE0D0" type="name" astParent="00000134975702D0"/>
+    <token id="00000134975702D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="::" scope="00000134A68EE0D0" astParent="0000013497570750" astOperand1="0000013497570BD0" astOperand2="0000013497570510"/>
+    <token id="0000013497570510" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="GoToState" scope="00000134A68EE0D0" type="name" astParent="00000134975702D0"/>
+    <token id="0000013497570750" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="(" scope="00000134A68EE0D0" link="0000013497570390" astOperand1="00000134975702D0" astOperand2="0000013497570030"/>
+    <token id="00000134975706F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="this" scope="00000134A68EE0D0" type="name" astParent="0000013497570450"/>
+    <token id="0000013497570450" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="," scope="00000134A68EE0D0" astParent="0000013497570030" astOperand1="00000134975706F0" astOperand2="0000013497570ED0"/>
+    <token id="0000013497570ED0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="&quot;MemoryButtonsVisible&quot;" scope="00000134A68EE0D0" type="string" strlen="20" values="00000134A8C003D0" astParent="0000013497570450" valueType-type="char" valueType-pointer="1" valueType-constness="1"/>
+    <token id="0000013497570030" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="," scope="00000134A68EE0D0" astParent="0000013497570750" astOperand1="0000013497570450" astOperand2="000001349756FCD0"/>
+    <token id="000001349756FCD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str="true" scope="00000134A68EE0D0" type="name" values="00000134A8C003B0" astParent="0000013497570030"/>
+    <token id="0000013497570390" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str=")" scope="00000134A68EE0D0" link="0000013497570750"/>
+    <token id="000001349756FEB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="41" str=";" scope="00000134A68EE0D0"/>
+    <token id="0000013497570F30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="42" str="}" scope="00000134A68EE0D0" link="0000013497570150"/>
+    <token id="000001349756FD30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="43" str="}" scope="00000134A68EE840" link="000001349756EAD0"/>
+    <token id="0000013497570090" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="000001349756FFD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="000001349756FA30"/>
+    <token id="000001349756FA30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="::" scope="00000134A68EFC70" astParent="0000013497570330" astOperand1="000001349756FFD0" astOperand2="000001349756FBB0"/>
+    <token id="000001349756FBB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="OnPointerExited" scope="00000134A68EFC70" type="name" astParent="000001349756FA30"/>
+    <token id="0000013497570330" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="(" scope="00000134A68EFC70" link="000001349756F9D0" astOperand1="000001349756FA30" astOperand2="0000013497570F90"/>
+    <token id="00000134975700F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="Windows" scope="00000134A68EFC70" type="name" astParent="000001349756F910"/>
+    <token id="000001349756F910" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="::" scope="00000134A68EFC70" astParent="00000134975701B0" astOperand1="00000134975700F0" astOperand2="000001349756FDF0"/>
+    <token id="000001349756FDF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="UI" scope="00000134A68EFC70" type="name" astParent="000001349756F910"/>
+    <token id="00000134975701B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="::" scope="00000134A68EFC70" astParent="0000013497570CF0" astOperand1="000001349756F910" astOperand2="0000013497570AB0"/>
+    <token id="0000013497570AB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="Xaml" scope="00000134A68EFC70" type="name" astParent="00000134975701B0"/>
+    <token id="0000013497570CF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="::" scope="00000134A68EFC70" astParent="0000013497570870" astOperand1="00000134975701B0" astOperand2="0000013497570E10"/>
+    <token id="0000013497570E10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="Input" scope="00000134A68EFC70" type="name" astParent="0000013497570CF0"/>
+    <token id="0000013497570870" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="::" scope="00000134A68EFC70" astParent="0000013497570F90" astOperand1="0000013497570CF0" astOperand2="0000013497570270"/>
+    <token id="0000013497570270" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="PointerRoutedEventArgs" scope="00000134A68EFC70" type="name" astParent="0000013497570870"/>
+    <token id="0000013497570F90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497570330" astOperand1="0000013497570870" astOperand2="000001349756FE50"/>
+    <token id="000001349756FE50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str="e" scope="00000134A68EFC70" type="name" astParent="0000013497570F90"/>
+    <token id="000001349756F9D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="45" str=")" scope="00000134A68EFC70" link="0000013497570330"/>
+    <token id="0000013497570210" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="46" str="{" scope="00000134A68EF500" link="00000134975709F0"/>
+    <token id="00000134975708D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str="Control" scope="00000134A68EF500" type="name" astParent="0000013497570630"/>
+    <token id="0000013497570630" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str="::" scope="00000134A68EF500" astParent="000001349756FA90" astOperand1="00000134975708D0" astOperand2="00000134975703F0"/>
+    <token id="00000134975703F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str="OnPointerExited" scope="00000134A68EF500" type="name" astParent="0000013497570630"/>
+    <token id="000001349756FA90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str="(" scope="00000134A68EF500" link="000001349756FAF0" astOperand1="0000013497570630" astOperand2="00000134975707B0"/>
+    <token id="00000134975707B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str="e" scope="00000134A68EF500" type="name" astParent="000001349756FA90"/>
+    <token id="000001349756FAF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str=")" scope="00000134A68EF500" link="000001349756FA90"/>
+    <token id="00000134975704B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="47" str=";" scope="00000134A68EF500"/>
+    <token id="000001349756FC70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="VisualStateManager" scope="00000134A68EF500" type="name" astParent="000001349756FC10"/>
+    <token id="000001349756FC10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="::" scope="00000134A68EF500" astParent="0000013497570990" astOperand1="000001349756FC70" astOperand2="0000013497570B70"/>
+    <token id="0000013497570B70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="GoToState" scope="00000134A68EF500" type="name" astParent="000001349756FC10"/>
+    <token id="0000013497570990" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="(" scope="00000134A68EF500" link="0000013497570A50" astOperand1="000001349756FC10" astOperand2="000001349756FF10"/>
+    <token id="0000013497570930" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="this" scope="00000134A68EF500" type="name" astParent="0000013497570E70"/>
+    <token id="0000013497570E70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="," scope="00000134A68EF500" astParent="000001349756FF10" astOperand1="0000013497570930" astOperand2="00000134975705D0"/>
+    <token id="00000134975705D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="&quot;MemoryButtonsHidden&quot;" scope="00000134A68EF500" type="string" strlen="19" values="00000134A8C00310" astParent="0000013497570E70" valueType-type="char" valueType-pointer="1" valueType-constness="1"/>
+    <token id="000001349756FF10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="," scope="00000134A68EF500" astParent="0000013497570990" astOperand1="0000013497570E70" astOperand2="000001349756FF70"/>
+    <token id="000001349756FF70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str="true" scope="00000134A68EF500" type="name" values="00000134A8C00250" astParent="000001349756FF10"/>
+    <token id="0000013497570A50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str=")" scope="00000134A68EF500" link="0000013497570990"/>
+    <token id="0000013497570570" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="49" str=";" scope="00000134A68EF500"/>
+    <token id="00000134975709F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="50" str="}" scope="00000134A68EF500" link="0000013497570210"/>
+    <token id="000001349756FB50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497570B10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="0000013497570690"/>
+    <token id="0000013497570690" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="::" scope="00000134A68EFC70" astParent="0000013497570C30" astOperand1="0000013497570B10" astOperand2="000001349756FD90"/>
+    <token id="000001349756FD90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="OnClearButtonClicked" scope="00000134A68EFC70" type="name" astParent="0000013497570690"/>
+    <token id="0000013497570C30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="(" scope="00000134A68EFC70" link="00000134975719B0" astOperand1="0000013497570690" astOperand2="0000013497571050"/>
+    <token id="0000013497570D50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="Object" scope="00000134A68EFC70" type="name" astParent="0000013497570FF0"/>
+    <token id="0000013497570FF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571050" astOperand1="0000013497570D50" astOperand2="0000013497570DB0"/>
+    <token id="0000013497570DB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497570FF0"/>
+    <token id="0000013497571050" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="," scope="00000134A68EFC70" astParent="0000013497570C30" astOperand1="0000013497570FF0" astOperand2="000001349756F970"/>
+    <token id="00000134975710B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="RoutedEventArgs" scope="00000134A68EFC70" type="name" astParent="000001349756F970"/>
+    <token id="000001349756F970" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571050" astOperand1="00000134975710B0" astOperand2="00000134975724F0"/>
+    <token id="00000134975724F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str="e" scope="00000134A68EFC70" type="name" astParent="000001349756F970"/>
+    <token id="00000134975719B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="52" str=")" scope="00000134A68EFC70" link="0000013497570C30"/>
+    <token id="00000134975712F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="53" str="{" scope="00000134A68EF830" link="0000013497571950"/>
+    <token id="00000134975720D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str="Model" scope="00000134A68EF830" type="name" astParent="0000013497571E90"/>
+    <token id="0000013497571E90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str="." scope="00000134A68EF830" astParent="0000013497571650" astOperand1="00000134975720D0" astOperand2="00000134975726D0" originalName="->"/>
+    <token id="00000134975726D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str="Clear" scope="00000134A68EF830" type="name" astParent="0000013497571E90"/>
+    <token id="0000013497571650" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str="(" scope="00000134A68EF830" link="00000134975722B0" astOperand1="0000013497571E90"/>
+    <token id="00000134975722B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str=")" scope="00000134A68EF830" link="0000013497571650"/>
+    <token id="0000013497571EF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="54" str=";" scope="00000134A68EF830"/>
+    <token id="0000013497571950" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="55" str="}" scope="00000134A68EF830" link="00000134975712F0"/>
+    <token id="0000013497571530" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497571B30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="00000134975723D0"/>
+    <token id="00000134975723D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="::" scope="00000134A68EFC70" astParent="0000013497572790" astOperand1="0000013497571B30" astOperand2="00000134975718F0"/>
+    <token id="00000134975718F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="OnMemoryAddButtonClicked" scope="00000134A68EFC70" type="name" astParent="00000134975723D0"/>
+    <token id="0000013497572790" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="(" scope="00000134A68EFC70" link="0000013497571B90" astOperand1="00000134975723D0" astOperand2="0000013497571710"/>
+    <token id="00000134975727F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="Object" scope="00000134A68EFC70" type="name" astParent="0000013497571A70"/>
+    <token id="0000013497571A70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571710" astOperand1="00000134975727F0" astOperand2="0000013497571470"/>
+    <token id="0000013497571470" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497571A70"/>
+    <token id="0000013497571710" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="," scope="00000134A68EFC70" astParent="0000013497572790" astOperand1="0000013497571A70" astOperand2="00000134975714D0"/>
+    <token id="0000013497571770" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="RoutedEventArgs" scope="00000134A68EFC70" type="name" astParent="00000134975714D0"/>
+    <token id="00000134975714D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571710" astOperand1="0000013497571770" astOperand2="0000013497572670"/>
+    <token id="0000013497572670" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str="e" scope="00000134A68EFC70" type="name" astParent="00000134975714D0"/>
+    <token id="0000013497571B90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="57" str=")" scope="00000134A68EFC70" link="0000013497572790"/>
+    <token id="0000013497571DD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="58" str="{" scope="00000134A68EEB70" link="0000013497572130"/>
+    <token id="0000013497571F50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str="Model" scope="00000134A68EEB70" type="name" astParent="00000134975728B0"/>
+    <token id="00000134975728B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str="." scope="00000134A68EEB70" astParent="0000013497572730" astOperand1="0000013497571F50" astOperand2="0000013497572550" originalName="->"/>
+    <token id="0000013497572550" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str="MemoryAdd" scope="00000134A68EEB70" type="name" astParent="00000134975728B0"/>
+    <token id="0000013497572730" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str="(" scope="00000134A68EEB70" link="00000134975715F0" astOperand1="00000134975728B0"/>
+    <token id="00000134975715F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str=")" scope="00000134A68EEB70" link="0000013497572730"/>
+    <token id="00000134975717D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="59" str=";" scope="00000134A68EEB70"/>
+    <token id="0000013497572130" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="60" str="}" scope="00000134A68EEB70" link="0000013497571DD0"/>
+    <token id="0000013497571BF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497571AD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="0000013497572610"/>
+    <token id="0000013497572610" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="::" scope="00000134A68EFC70" astParent="0000013497571830" astOperand1="0000013497571AD0" astOperand2="00000134975711D0"/>
+    <token id="00000134975711D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="OnMemorySubtractButtonClicked" scope="00000134A68EFC70" type="name" astParent="0000013497572610"/>
+    <token id="0000013497571830" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="(" scope="00000134A68EFC70" link="0000013497571110" astOperand1="0000013497572610" astOperand2="0000013497571A10"/>
+    <token id="0000013497571410" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="Object" scope="00000134A68EFC70" type="name" astParent="0000013497572490"/>
+    <token id="0000013497572490" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571A10" astOperand1="0000013497571410" astOperand2="0000013497572010"/>
+    <token id="0000013497572010" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497572490"/>
+    <token id="0000013497571A10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="," scope="00000134A68EFC70" astParent="0000013497571830" astOperand1="0000013497572490" astOperand2="00000134975721F0"/>
+    <token id="0000013497571590" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="RoutedEventArgs" scope="00000134A68EFC70" type="name" astParent="00000134975721F0"/>
+    <token id="00000134975721F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497571A10" astOperand1="0000013497571590" astOperand2="0000013497572430"/>
+    <token id="0000013497572430" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str="e" scope="00000134A68EFC70" type="name" astParent="00000134975721F0"/>
+    <token id="0000013497571110" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="62" str=")" scope="00000134A68EFC70" link="0000013497571830"/>
+    <token id="0000013497571C50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="63" str="{" scope="00000134A68EF1D0" link="0000013497571FB0"/>
+    <token id="0000013497571890" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str="Model" scope="00000134A68EF1D0" type="name" astParent="0000013497572250"/>
+    <token id="0000013497572250" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str="." scope="00000134A68EF1D0" astParent="0000013497572310" astOperand1="0000013497571890" astOperand2="0000013497572850" originalName="->"/>
+    <token id="0000013497572850" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str="MemorySubtract" scope="00000134A68EF1D0" type="name" astParent="0000013497572250"/>
+    <token id="0000013497572310" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str="(" scope="00000134A68EF1D0" link="0000013497571CB0" astOperand1="0000013497572250"/>
+    <token id="0000013497571CB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str=")" scope="00000134A68EF1D0" link="0000013497572310"/>
+    <token id="0000013497572370" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="64" str=";" scope="00000134A68EF1D0"/>
+    <token id="0000013497571FB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="65" str="}" scope="00000134A68EF1D0" link="0000013497571C50"/>
+    <token id="00000134975725B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497571D10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="0000013497571170"/>
+    <token id="0000013497571170" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="::" scope="00000134A68EFC70" astParent="0000013497571230" astOperand1="0000013497571D10" astOperand2="0000013497571D70"/>
+    <token id="0000013497571D70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="OnClearSwipeInvoked" scope="00000134A68EFC70" type="name" astParent="0000013497571170"/>
+    <token id="0000013497571230" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="(" scope="00000134A68EFC70" link="0000013497573E10" astOperand1="0000013497571170" astOperand2="0000013497572070"/>
+    <token id="00000134975716B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="SwipeItem" scope="00000134A68EFC70" type="name" astParent="0000013497571E30"/>
+    <token id="0000013497571E30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497572070" astOperand1="00000134975716B0" astOperand2="0000013497571290"/>
+    <token id="0000013497571290" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497571E30"/>
+    <token id="0000013497572070" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="," scope="00000134A68EFC70" astParent="0000013497571230" astOperand1="0000013497571E30" astOperand2="0000013497571350"/>
+    <token id="0000013497572190" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="SwipeItemInvokedEventArgs" scope="00000134A68EFC70" type="name" astParent="0000013497571350"/>
+    <token id="0000013497571350" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497572070" astOperand1="0000013497572190" astOperand2="00000134975713B0"/>
+    <token id="00000134975713B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str="e" scope="00000134A68EFC70" type="name" astParent="0000013497571350"/>
+    <token id="0000013497573E10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="67" str=")" scope="00000134A68EFC70" link="0000013497571230"/>
+    <token id="0000013497573870" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="68" str="{" scope="00000134A68EF940" link="0000013497573AB0"/>
+    <token id="0000013497574050" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str="Model" scope="00000134A68EF940" type="name" astParent="00000134975740B0"/>
+    <token id="00000134975740B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str="." scope="00000134A68EF940" astParent="0000013497573F90" astOperand1="0000013497574050" astOperand2="0000013497572D90" originalName="->"/>
+    <token id="0000013497572D90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str="Clear" scope="00000134A68EF940" type="name" astParent="00000134975740B0"/>
+    <token id="0000013497573F90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str="(" scope="00000134A68EF940" link="0000013497573510" astOperand1="00000134975740B0"/>
+    <token id="0000013497573510" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str=")" scope="00000134A68EF940" link="0000013497573F90"/>
+    <token id="0000013497573E70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="69" str=";" scope="00000134A68EF940"/>
+    <token id="0000013497573AB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="70" str="}" scope="00000134A68EF940" link="0000013497573870"/>
+    <token id="0000013497573D50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="0000013497572DF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="00000134975729D0"/>
+    <token id="00000134975729D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="::" scope="00000134A68EFC70" astParent="0000013497573450" astOperand1="0000013497572DF0" astOperand2="0000013497572F10"/>
+    <token id="0000013497572F10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="OnMemoryAddSwipeInvoked" scope="00000134A68EFC70" type="name" astParent="00000134975729D0"/>
+    <token id="0000013497573450" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="(" scope="00000134A68EFC70" link="0000013497573210" astOperand1="00000134975729D0" astOperand2="0000013497573570"/>
+    <token id="0000013497573C30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="SwipeItem" scope="00000134A68EFC70" type="name" astParent="0000013497572A90"/>
+    <token id="0000013497572A90" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497573570" astOperand1="0000013497573C30" astOperand2="00000134975735D0"/>
+    <token id="00000134975735D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497572A90"/>
+    <token id="0000013497573570" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="," scope="00000134A68EFC70" astParent="0000013497573450" astOperand1="0000013497572A90" astOperand2="0000013497573ED0"/>
+    <token id="00000134975739F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="SwipeItemInvokedEventArgs" scope="00000134A68EFC70" type="name" astParent="0000013497573ED0"/>
+    <token id="0000013497573ED0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497573570" astOperand1="00000134975739F0" astOperand2="0000013497573B10"/>
+    <token id="0000013497573B10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str="e" scope="00000134A68EFC70" type="name" astParent="0000013497573ED0"/>
+    <token id="0000013497573210" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="72" str=")" scope="00000134A68EFC70" link="0000013497573450"/>
+    <token id="0000013497573390" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="73" str="{" scope="00000134A68EFA50" link="00000134975738D0"/>
+    <token id="0000013497572910" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str="Model" scope="00000134A68EFA50" type="name" astParent="0000013497572E50"/>
+    <token id="0000013497572E50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str="." scope="00000134A68EFA50" astParent="0000013497572EB0" astOperand1="0000013497572910" astOperand2="0000013497573990" originalName="->"/>
+    <token id="0000013497573990" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str="MemoryAdd" scope="00000134A68EFA50" type="name" astParent="0000013497572E50"/>
+    <token id="0000013497572EB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str="(" scope="00000134A68EFA50" link="0000013497572A30" astOperand1="0000013497572E50"/>
+    <token id="0000013497572A30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str=")" scope="00000134A68EFA50" link="0000013497572EB0"/>
+    <token id="0000013497573150" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="74" str=";" scope="00000134A68EFA50"/>
+    <token id="00000134975738D0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="75" str="}" scope="00000134A68EFA50" link="0000013497573390"/>
+    <token id="0000013497573630" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="void" scope="00000134A68EFC70" type="name"/>
+    <token id="00000134975733F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="MemoryListItem" scope="00000134A68EFC70" type="name" astParent="0000013497572AF0"/>
+    <token id="0000013497572AF0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="::" scope="00000134A68EFC70" astParent="0000013497572970" astOperand1="00000134975733F0" astOperand2="0000013497573690"/>
+    <token id="0000013497573690" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="OnMemorySubtractSwipeInvoked" scope="00000134A68EFC70" type="name" astParent="0000013497572AF0"/>
+    <token id="0000013497572970" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="(" scope="00000134A68EFC70" link="00000134975737B0" astOperand1="0000013497572AF0" astOperand2="0000013497573B70"/>
+    <token id="0000013497572B50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="SwipeItem" scope="00000134A68EFC70" type="name" astParent="0000013497573F30"/>
+    <token id="0000013497573F30" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497573B70" astOperand1="0000013497572B50" astOperand2="0000013497572C10"/>
+    <token id="0000013497572C10" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="sender" scope="00000134A68EFC70" type="name" astParent="0000013497573F30"/>
+    <token id="0000013497573B70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="," scope="00000134A68EFC70" astParent="0000013497572970" astOperand1="0000013497573F30" astOperand2="0000013497572C70"/>
+    <token id="0000013497573DB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="SwipeItemInvokedEventArgs" scope="00000134A68EFC70" type="name" astParent="0000013497572C70"/>
+    <token id="0000013497572C70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="^" scope="00000134A68EFC70" type="op" astParent="0000013497573B70" astOperand1="0000013497573DB0" astOperand2="0000013497572F70"/>
+    <token id="0000013497572F70" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str="e" scope="00000134A68EFC70" type="name" astParent="0000013497572C70"/>
+    <token id="00000134975737B0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="77" str=")" scope="00000134A68EFC70" link="0000013497572970"/>
+    <token id="0000013497572FD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="78" str="{" scope="000001349138FB50" link="00000134975736F0"/>
+    <token id="0000013497573030" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str="Model" scope="000001349138FB50" type="name" astParent="0000013497573A50"/>
+    <token id="0000013497573A50" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str="." scope="000001349138FB50" astParent="0000013497573930" astOperand1="0000013497573030" astOperand2="0000013497573090" originalName="->"/>
+    <token id="0000013497573090" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str="MemorySubtract" scope="000001349138FB50" type="name" astParent="0000013497573A50"/>
+    <token id="0000013497573930" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str="(" scope="000001349138FB50" link="0000013497572BB0" astOperand1="0000013497573A50"/>
+    <token id="0000013497572BB0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str=")" scope="000001349138FB50" link="0000013497573930"/>
+    <token id="0000013497573BD0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="79" str=";" scope="000001349138FB50"/>
+    <token id="00000134975736F0" file="C:/sample repositories/calculator-master/src/Calculator/Views/MemoryListItem.xaml.cpp" linenr="80" str="}" scope="000001349138FB50" link="0000013497572FD0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A68EFC70" type="Global"/>
+    <scope id="00000134A68EE730" type="Namespace" className="CalculatorApp" bodyStart="0000013497566310" bodyEnd="000001349756AC30" nestedIn="00000134A68EFC70">
+      <functionList>
+        <function id="00000134A2140340" tokenDef="0000013497565D70" name="MemoryListItem" type="Function"/>
+        <function id="00000134A213FFE0" tokenDef="0000013497565830" name="OnPointerEntered" type="Function">
+          <arg nr="1" variable="00000134A85AA760"/>
+        </function>
+        <function id="00000134A2141C00" tokenDef="0000013497567AB0" name="OnPointerExited" type="Function">
+          <arg nr="1" variable="00000134A85AB2C0"/>
+        </function>
+        <function id="00000134A2140850" tokenDef="0000013497566B50" name="OnClearButtonClicked" type="Function">
+          <arg nr="1" variable="00000134A85AA840"/>
+          <arg nr="2" variable="00000134A85AB100"/>
+        </function>
+        <function id="00000134A2141930" tokenDef="0000013497566A90" name="OnMemoryAddButtonClicked" type="Function">
+          <arg nr="1" variable="00000134A85AB170"/>
+          <arg nr="2" variable="00000134A85AA140"/>
+        </function>
+        <function id="00000134A213F9B0" tokenDef="00000134975678D0" name="OnMemorySubtractButtonClicked" type="Function">
+          <arg nr="1" variable="00000134A85AB640"/>
+          <arg nr="2" variable="00000134A85AB6B0"/>
+        </function>
+        <function id="00000134A2140B20" tokenDef="0000013497569010" name="OnClearSwipeInvoked" type="Function">
+          <arg nr="1" variable="00000134A85AB790"/>
+          <arg nr="2" variable="00000134A85AB870"/>
+        </function>
+        <function id="00000134A21415D0" tokenDef="00000134975698B0" name="OnMemoryAddSwipeInvoked" type="Function">
+          <arg nr="1" variable="00000134A85AB8E0"/>
+          <arg nr="2" variable="00000134A85AB9C0"/>
+        </function>
+        <function id="00000134A213F890" tokenDef="000001349756A0F0" name="OnMemorySubtractSwipeInvoked" type="Function">
+          <arg nr="1" variable="00000134A85AC050"/>
+          <arg nr="2" variable="00000134A85AC3D0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="00000134A68EF610" type="Function" className="MemoryListItem" bodyStart="000001349756E9B0" bodyEnd="000001349756E710" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EE840" type="Function" className="OnPointerEntered" bodyStart="000001349756EAD0" bodyEnd="000001349756FD30" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EE0D0" type="If" bodyStart="0000013497570150" bodyEnd="0000013497570F30" nestedIn="00000134A68EE840"/>
+    <scope id="00000134A68EF500" type="Function" className="OnPointerExited" bodyStart="0000013497570210" bodyEnd="00000134975709F0" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EF830" type="Function" className="OnClearButtonClicked" bodyStart="00000134975712F0" bodyEnd="0000013497571950" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EEB70" type="Function" className="OnMemoryAddButtonClicked" bodyStart="0000013497571DD0" bodyEnd="0000013497572130" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EF1D0" type="Function" className="OnMemorySubtractButtonClicked" bodyStart="0000013497571C50" bodyEnd="0000013497571FB0" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EF940" type="Function" className="OnClearSwipeInvoked" bodyStart="0000013497573870" bodyEnd="0000013497573AB0" nestedIn="00000134A68EFC70"/>
+    <scope id="00000134A68EFA50" type="Function" className="OnMemoryAddSwipeInvoked" bodyStart="0000013497573390" bodyEnd="00000134975738D0" nestedIn="00000134A68EFC70"/>
+    <scope id="000001349138FB50" type="Function" className="OnMemorySubtractSwipeInvoked" bodyStart="0000013497572FD0" bodyEnd="00000134975736F0" nestedIn="00000134A68EFC70"/>
+  </scopes>
+  <variables>
+    <var id="00000134A85AA140" nameToken="0000013497567390" typeStartToken="0000013497567C90" typeEndToken="00000134975670F0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AA760" nameToken="0000013497565590" typeStartToken="0000013497565890" typeEndToken="00000134975654D0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AA840" nameToken="0000013497568050" typeStartToken="0000013497567630" typeEndToken="0000013497567FF0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB100" nameToken="0000013497566910" typeStartToken="0000013497566D30" typeEndToken="00000134975677B0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB170" nameToken="0000013497567C30" typeStartToken="0000013497567B70" typeEndToken="0000013497566FD0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB2C0" nameToken="00000134975680B0" typeStartToken="0000013497566D90" typeEndToken="0000013497567810" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB640" nameToken="00000134975692B0" typeStartToken="0000013497568E30" typeEndToken="0000013497568650" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB6B0" nameToken="00000134975696D0" typeStartToken="0000013497568830" typeEndToken="0000013497568170" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB790" nameToken="0000013497568950" typeStartToken="0000013497568FB0" typeEndToken="0000013497569610" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB870" nameToken="00000134975697F0" typeStartToken="0000013497568A10" typeEndToken="0000013497568E90" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB8E0" nameToken="0000013497568F50" typeStartToken="0000013497568BF0" typeEndToken="0000013497568230" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AB9C0" nameToken="000001349756A150" typeStartToken="00000134975682F0" typeEndToken="000001349756A690" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AC050" nameToken="000001349756B0B0" typeStartToken="000001349756AFF0" typeEndToken="000001349756A6F0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85AC3D0" nameToken="000001349756AC90" typeStartToken="000001349756AED0" typeEndToken="0000013497569C10" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A8C003D0">
+      <value tokvalue="0000013497570ED0" known="true"/>
+    </values>
+    <values id="00000134A8C003B0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C00310">
+      <value tokvalue="00000134975705D0" known="true"/>
+    </values>
+    <values id="00000134A8C00250">
+      <value intvalue="1" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

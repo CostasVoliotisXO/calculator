@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="222159739">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class Memory sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class Memory sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\Memory.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\Memory.xaml.h" line="20"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;memorySlot&apos; is assigned a value that is never used." verbose="Variable &apos;memorySlot&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\Memory.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\Memory.xaml.cpp" line="72"/>
+            <symbol>memorySlot</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Clear"/>
+    <functioncall functionName="ClickedItem"/>
+    <functioncall functionName="CreateTitleBarHelperIfNotDocked"/>
+    <functioncall functionName="CustomTitleBar"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="GetFlowDirection"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetMemoryItemForCurrentFlyout"/>
+    <functioncall functionName="GetParent"/>
+    <functioncall functionName="GoToState"/>
+    <functioncall functionName="GridLength"/>
+    <functioncall functionName="Hide"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="ItemFromContainer"/>
+    <functioncall functionName="Lookup"/>
+    <functioncall functionName="Memory"/>
+    <functioncall functionName="MemoryAdd"/>
+    <functioncall functionName="MemorySubtract"/>
+    <functioncall functionName="OnMemoryItemPressed"/>
+    <functioncall functionName="OriginalSource"/>
+    <functioncall functionName="Position"/>
+    <functioncall functionName="RowHeight"/>
+    <functioncall functionName="ShowAt"/>
+    <functioncall functionName="Target"/>
+    <functioncall functionName="TryGetPosition"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="listViewItem"/>
+    <functioncall functionName="m_isErrorVisualState"/>
+    <functioncall functionName="newState"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="point"/>
+    <functioncall functionName="requestedElement"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

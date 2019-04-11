@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2364797616">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\App.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\App.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\App.xaml.h" line="25"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MainPage sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MainPage sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\App.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\MainPage.xaml.h" line="23"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\App.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\MainPage.xaml.h" line="39"/>
+        </error>
+</analyzerinfo>

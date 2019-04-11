@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="690596961">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class TitleBar sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class TitleBar sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\TitleBar.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\TitleBar.xaml.h" line="10"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="GetCurrentView"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="Height"/>
+    <functioncall functionName="Initialize"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="IsVisible"/>
+    <functioncall functionName="LayoutRoot"/>
+    <functioncall functionName="OnLoaded"/>
+    <functioncall functionName="OnUnloaded"/>
+    <functioncall functionName="RegisterForLayoutChanged"/>
+    <functioncall functionName="RegisterForVisibilityChanged"/>
+    <functioncall functionName="RoutedEventHandler"/>
+    <functioncall functionName="SetTitleBar"/>
+    <functioncall functionName="SetTitleBarHeight"/>
+    <functioncall functionName="SetTitleBarPadding"/>
+    <functioncall functionName="SetTitleBarText"/>
+    <functioncall functionName="SetTitleBarVisibility"/>
+    <functioncall functionName="SystemOverlayLeftInset"/>
+    <functioncall functionName="SystemOverlayRightInset"/>
+    <functioncall functionName="Thickness"/>
+    <functioncall functionName="TitleBar"/>
+    <functioncall functionName="TypedEventHandler"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="leftAddition"/>
+    <functioncall functionName="m_coreTitleBar"/>
+    <functioncall functionName="padding"/>
+    <functioncall functionName="rightAddition"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

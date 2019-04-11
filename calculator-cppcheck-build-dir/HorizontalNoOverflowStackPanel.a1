@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2354662449">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="ShouldPrioritizeLastItem" lineNumber="29"/>
+    <functioncall functionName="Arrange"/>
+    <functioncall functionName="Children"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="Height"/>
+    <functioncall functionName="HorizontalNoOverflowStackPanel"/>
+    <functioncall functionName="Measure"/>
+    <functioncall functionName="Rect"/>
+    <functioncall functionName="ShouldPrioritizeLastItem"/>
+    <functioncall functionName="Size"/>
+    <functioncall functionName="Width"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="infinity"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="itemWidth"/>
+    <functioncall functionName="max"/>
+    <functioncall functionName="maxHeight"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="posX"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="widthAvailable"/>
+  </FileInfo>
+</analyzerinfo>

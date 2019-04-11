@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h"/>
+    <file index="3" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;LiveRegionHost.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Common"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Automation"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="UI"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Xaml"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Automation"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Windows"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="UI"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Xaml"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Automation"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Peers"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="UI"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Xaml"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Controls"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="12" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="12" str="("/>
+    <tok fileIndex="0" linenr="12" str=")"/>
+    <tok fileIndex="0" linenr="12" str=":"/>
+    <tok fileIndex="0" linenr="13" str="m_host"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="nullptr"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="14" str="}"/>
+    <tok fileIndex="0" linenr="16" str="bool"/>
+    <tok fileIndex="0" linenr="16" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="IsHostAvailable"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="// LiveRegion is always available."/>
+    <tok fileIndex="0" linenr="19" str="return"/>
+    <tok fileIndex="0" linenr="19" str="true"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="}"/>
+    <tok fileIndex="0" linenr="22" str="INarratorAnnouncementHost"/>
+    <tok fileIndex="0" linenr="22" str="^"/>
+    <tok fileIndex="0" linenr="22" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="MakeHost"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="23" str="{"/>
+    <tok fileIndex="0" linenr="24" str="return"/>
+    <tok fileIndex="0" linenr="24" str="ref"/>
+    <tok fileIndex="0" linenr="24" str="new"/>
+    <tok fileIndex="0" linenr="24" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+    <tok fileIndex="0" linenr="27" str="void"/>
+    <tok fileIndex="0" linenr="27" str="LiveRegionHost"/>
+    <tok fileIndex="0" linenr="27" str="::"/>
+    <tok fileIndex="0" linenr="27" str="Announce"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="NarratorAnnouncement"/>
+    <tok fileIndex="0" linenr="27" str="^"/>
+    <tok fileIndex="0" linenr="27" str="announcement"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="28" str="{"/>
+    <tok fileIndex="0" linenr="29" str="if"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str="m_host"/>
+    <tok fileIndex="0" linenr="29" str="=="/>
+    <tok fileIndex="0" linenr="29" str="nullptr"/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="30" str="{"/>
+    <tok fileIndex="0" linenr="31" str="m_host"/>
+    <tok fileIndex="0" linenr="31" str="="/>
+    <tok fileIndex="0" linenr="31" str="ref"/>
+    <tok fileIndex="0" linenr="31" str="new"/>
+    <tok fileIndex="0" linenr="31" str="TextBlock"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="32" str="AutomationProperties"/>
+    <tok fileIndex="0" linenr="32" str="::"/>
+    <tok fileIndex="0" linenr="32" str="SetLiveSetting"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str="m_host"/>
+    <tok fileIndex="0" linenr="32" str=","/>
+    <tok fileIndex="0" linenr="32" str="AutomationLiveSetting"/>
+    <tok fileIndex="0" linenr="32" str="::"/>
+    <tok fileIndex="0" linenr="32" str="Assertive"/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="32" str=";"/>
+    <tok fileIndex="0" linenr="33" str="}"/>
+    <tok fileIndex="0" linenr="35" str="AutomationProperties"/>
+    <tok fileIndex="0" linenr="35" str="::"/>
+    <tok fileIndex="0" linenr="35" str="SetName"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str="m_host"/>
+    <tok fileIndex="0" linenr="35" str=","/>
+    <tok fileIndex="0" linenr="35" str="announcement"/>
+    <tok fileIndex="0" linenr="35" str="-&gt;"/>
+    <tok fileIndex="0" linenr="35" str="Announcement"/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="35" str=";"/>
+    <tok fileIndex="0" linenr="36" str="AutomationPeer"/>
+    <tok fileIndex="0" linenr="36" str="^"/>
+    <tok fileIndex="0" linenr="36" str="peer"/>
+    <tok fileIndex="0" linenr="36" str="="/>
+    <tok fileIndex="0" linenr="36" str="FrameworkElementAutomationPeer"/>
+    <tok fileIndex="0" linenr="36" str="::"/>
+    <tok fileIndex="0" linenr="36" str="FromElement"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="m_host"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="if"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="peer"/>
+    <tok fileIndex="0" linenr="37" str="!="/>
+    <tok fileIndex="0" linenr="37" str="nullptr"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="38" str="{"/>
+    <tok fileIndex="0" linenr="39" str="peer"/>
+    <tok fileIndex="0" linenr="39" str="-&gt;"/>
+    <tok fileIndex="0" linenr="39" str="RaiseAutomationEvent"/>
+    <tok fileIndex="0" linenr="39" str="("/>
+    <tok fileIndex="0" linenr="39" str="AutomationEvents"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="LiveRegionChanged"/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="39" str=";"/>
+    <tok fileIndex="0" linenr="40" str="}"/>
+    <tok fileIndex="0" linenr="41" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="5" str="#include &quot;LiveRegionHost.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="5" str="#include &quot;NarratorAnnouncement.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="5" str="#include &quot;INarratorAnnouncementHost.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A347C750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A347CCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="CalculatorApp" scope="000001349124C180" type="name" astParent="00000134A347CED0"/>
+    <token id="00000134A347CED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="{" scope="000001349124C180" link="00000134A3468AD0" astOperand1="00000134A347CCF0" astOperand2="00000134A347C150"/>
+    <token id="00000134A3468890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A347C090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="Common" scope="000001349124C180" type="name" astParent="00000134A347C150"/>
+    <token id="00000134A347C150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="{" scope="000001349124C180" link="00000134A3469130" astParent="00000134A347CED0" astOperand1="00000134A347C090" astOperand2="00000134A347CAB0"/>
+    <token id="00000134A3469790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A347BD90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="6" str="Automation" scope="000001349124C180" type="name" astParent="00000134A347CAB0"/>
+    <token id="00000134A347CAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="7" str="{" scope="000001349124C180" link="00000134A34627D0" astParent="00000134A347C150" astOperand1="00000134A347BD90" astOperand2="00000134A347C3F0"/>
+    <token id="00000134A347C8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="14" str="public" scope="000001349124C180" type="name"/>
+    <token id="00000134A347CB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="14" str="enum" scope="000001349124C180" type="name"/>
+    <token id="00000134A347CE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="14" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A347C3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="14" str="AutomationNotificationKind" scope="000001349124C180" type="name" astParent="00000134A347CAB0"/>
+    <token id="00000134A347C690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="15" str="{" scope="0000013491213160" link="00000134A347CFF0"/>
+    <token id="00000134A347C0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="16" str="ItemAdded" scope="0000013491213160" type="name" values="00000134A91FE0A0" astParent="00000134A347BEB0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347BEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="16" str="=" scope="0000013491213160" type="op" isAssignmentOp="True" astParent="00000134A347CE70" astOperand1="00000134A347C0F0" astOperand2="00000134A347B970" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347B970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="16" str="0" scope="0000013491213160" type="number" isInt="True" values="00000134A91FDFC0" astParent="00000134A347BEB0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347CE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="16" str="," scope="0000013491213160" astParent="00000134A347BDF0" astOperand1="00000134A347BEB0" astOperand2="00000134A347C1B0"/>
+    <token id="00000134A347B9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="17" str="ItemRemoved" scope="0000013491213160" type="name" values="00000134A91FDB40" astParent="00000134A347C1B0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347C1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="17" str="=" scope="0000013491213160" type="op" isAssignmentOp="True" astParent="00000134A347CE70" astOperand1="00000134A347B9D0" astOperand2="00000134A347CA50" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347CA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="17" str="1" scope="0000013491213160" type="number" isInt="True" values="00000134A91FDA20" astParent="00000134A347C1B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347BDF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="17" str="," scope="0000013491213160" astParent="00000134A347C210" astOperand1="00000134A347CE70" astOperand2="00000134A347CBD0"/>
+    <token id="00000134A347C510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="18" str="ActionCompleted" scope="0000013491213160" type="name" values="00000134A91FE0C0" astParent="00000134A347CBD0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347CBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="18" str="=" scope="0000013491213160" type="op" isAssignmentOp="True" astParent="00000134A347BDF0" astOperand1="00000134A347C510" astOperand2="00000134A347CD50" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347CD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="18" str="2" scope="0000013491213160" type="number" isInt="True" values="00000134A91FE0E0" astParent="00000134A347CBD0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="18" str="," scope="0000013491213160" astParent="00000134A347C9F0" astOperand1="00000134A347BDF0" astOperand2="00000134A347BA30"/>
+    <token id="00000134A347C270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="19" str="ActionAborted" scope="0000013491213160" type="name" values="00000134A91FE100" astParent="00000134A347BA30" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347BA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="19" str="=" scope="0000013491213160" type="op" isAssignmentOp="True" astParent="00000134A347C210" astOperand1="00000134A347C270" astOperand2="00000134A347C2D0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347C2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="19" str="3" scope="0000013491213160" type="number" isInt="True" values="00000134A91FE160" astParent="00000134A347BA30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C9F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="19" str="," scope="0000013491213160" astOperand1="00000134A347C210" astOperand2="00000134A347CF30"/>
+    <token id="00000134A347CF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="20" str="Other" scope="0000013491213160" type="name" values="00000134A91FDC80" astParent="00000134A347CF30" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347CF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="20" str="=" scope="0000013491213160" type="op" isAssignmentOp="True" astParent="00000134A347C9F0" astOperand1="00000134A347CF90" astOperand2="00000134A347BF70" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213160"/>
+    <token id="00000134A347BF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="20" str="4" scope="0000013491213160" type="number" isInt="True" values="00000134A91FDC00" astParent="00000134A347CF30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347CFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="21" str="}" scope="0000013491213160" link="00000134A347C690"/>
+    <token id="00000134A347D050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="21" str=";" scope="000001349124C180"/>
+    <token id="00000134A347C330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="23" str="public" scope="000001349124C180" type="name"/>
+    <token id="00000134A347BCD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="23" str="enum" scope="000001349124C180" type="name"/>
+    <token id="00000134A347BA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="23" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A347BF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="23" str="AutomationNotificationProcessing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D0B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="24" str="{" scope="0000013491213270" link="00000134A347D8F0"/>
+    <token id="00000134A347BAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="25" str="ImportantAll" scope="0000013491213270" type="name" values="00000134A91FE140" astParent="00000134A347C390" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="25" str="=" scope="0000013491213270" type="op" isAssignmentOp="True" astParent="00000134A347C630" astOperand1="00000134A347BAF0" astOperand2="00000134A347BBB0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347BBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="25" str="0" scope="0000013491213270" type="number" isInt="True" values="00000134A91FDCA0" astParent="00000134A347C390" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="25" str="," scope="0000013491213270" astParent="00000134A347C990" astOperand1="00000134A347C390" astOperand2="00000134A347C450"/>
+    <token id="00000134A347BC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="26" str="ImportantMostRecent" scope="0000013491213270" type="name" values="00000134A91FE180" astParent="00000134A347C450" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="26" str="=" scope="0000013491213270" type="op" isAssignmentOp="True" astParent="00000134A347C630" astOperand1="00000134A347BC10" astOperand2="00000134A347BC70" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347BC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="26" str="1" scope="0000013491213270" type="number" isInt="True" values="00000134A91FDCC0" astParent="00000134A347C450" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="26" str="," scope="0000013491213270" astParent="00000134A347C810" astOperand1="00000134A347C630" astOperand2="00000134A347C5D0"/>
+    <token id="00000134A347CB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="27" str="All" scope="0000013491213270" type="name" values="00000134A91FDBA0" astParent="00000134A347C5D0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="27" str="=" scope="0000013491213270" type="op" isAssignmentOp="True" astParent="00000134A347C990" astOperand1="00000134A347CB10" astOperand2="00000134A347C4B0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="27" str="2" scope="0000013491213270" type="number" isInt="True" values="00000134A91FD9C0" astParent="00000134A347C5D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="27" str="," scope="0000013491213270" astParent="00000134A347C6F0" astOperand1="00000134A347C990" astOperand2="00000134A347BFD0"/>
+    <token id="00000134A347C570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="28" str="MostRecent" scope="0000013491213270" type="name" values="00000134A91FDCE0" astParent="00000134A347BFD0" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347BFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="28" str="=" scope="0000013491213270" type="op" isAssignmentOp="True" astParent="00000134A347C810" astOperand1="00000134A347C570" astOperand2="00000134A347C030" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="28" str="3" scope="0000013491213270" type="number" isInt="True" values="00000134A91FDD00" astParent="00000134A347BFD0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347C6F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="28" str="," scope="0000013491213270" astOperand1="00000134A347C810" astOperand2="00000134A347C870"/>
+    <token id="00000134A347C7B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="29" str="CurrentThenMostRecent" scope="0000013491213270" type="name" values="00000134A91FDA80" astParent="00000134A347C870" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347C870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="29" str="=" scope="0000013491213270" type="op" isAssignmentOp="True" astParent="00000134A347C6F0" astOperand1="00000134A347C7B0" astOperand2="00000134A347CC30" valueType-type="int" valueType-sign="signed" valueType-typeScope="0000013491213270"/>
+    <token id="00000134A347CC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="29" str="4" scope="0000013491213270" type="number" isInt="True" values="00000134A91FD9E0" astParent="00000134A347C870" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347D8F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="30" str="}" scope="0000013491213270" link="00000134A347D0B0"/>
+    <token id="00000134A347DEF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="30" str=";" scope="000001349124C180"/>
+    <token id="00000134A347E6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="32" str="public" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="32" str="ref" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="32" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="32" str="NarratorAnnouncement" scope="000001349124C180" type="name"/>
+    <token id="00000134A347DC50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="32" str="sealed" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D4D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="33" str="{" scope="000001349124C180" link="00000134A347F9F0"/>
+    <token id="00000134A347E250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="34" str="public:" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D9B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="property" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D1D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347E190"/>
+    <token id="00000134A347E190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="::" scope="000001349124C180" astParent="00000134A347D6B0" astOperand1="00000134A347D1D0" astOperand2="00000134A347D3B0"/>
+    <token id="00000134A347D3B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="String" scope="000001349124C180" type="name" astParent="00000134A347E190"/>
+    <token id="00000134A347D6B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="^" scope="000001349124C180" type="op" astOperand1="00000134A347E190" astOperand2="00000134A347DE90"/>
+    <token id="00000134A347E430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="35" str="Announcement" scope="000001349124C180" type="name" astParent="00000134A347DE90"/>
+    <token id="00000134A347DE90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="36" str="{" scope="000001349124C180" link="00000134A347D410" astParent="00000134A347D6B0" astOperand1="00000134A347E430" astOperand2="00000134A347D770"/>
+    <token id="00000134A347E3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347E010"/>
+    <token id="00000134A347E010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="::" scope="000001349124C180" astParent="00000134A347D770" astOperand1="00000134A347E3D0" astOperand2="00000134A347E070"/>
+    <token id="00000134A347E070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="String" scope="000001349124C180" type="name" astParent="00000134A347E010"/>
+    <token id="00000134A347D770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="^" scope="000001349124C180" type="op" astParent="00000134A347DE90" astOperand1="00000134A347E010" astOperand2="00000134A347DA70"/>
+    <token id="00000134A347DDD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="get" scope="000001349124C180" type="name" astParent="00000134A347DA70"/>
+    <token id="00000134A347DA70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str="(" scope="000001349124C180" link="00000134A347D7D0" astParent="00000134A347D770" astOperand1="00000134A347DDD0"/>
+    <token id="00000134A347D7D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str=")" scope="000001349124C180" link="00000134A347DA70"/>
+    <token id="00000134A347DE30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="37" str=";" scope="000001349124C180"/>
+    <token id="00000134A347D410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="38" str="}" scope="000001349124C180" link="00000134A347DE90"/>
+    <token id="00000134A347E2B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="property" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E5B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347D590"/>
+    <token id="00000134A347D590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="::" scope="000001349124C180" astParent="00000134A347D890" astOperand1="00000134A347E5B0" astOperand2="00000134A347E310"/>
+    <token id="00000134A347E310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="String" scope="000001349124C180" type="name" astParent="00000134A347D590"/>
+    <token id="00000134A347D890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="^" scope="000001349124C180" type="op" astOperand1="00000134A347D590" astOperand2="00000134A347D830"/>
+    <token id="00000134A347DBF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="40" str="ActivityId" scope="000001349124C180" type="name" astParent="00000134A347D830"/>
+    <token id="00000134A347D830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="41" str="{" scope="000001349124C180" link="00000134A347DD10" astParent="00000134A347D890" astOperand1="00000134A347DBF0" astOperand2="00000134A347DA10"/>
+    <token id="00000134A347D950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347DAD0"/>
+    <token id="00000134A347DAD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="::" scope="000001349124C180" astParent="00000134A347DA10" astOperand1="00000134A347D950" astOperand2="00000134A347E730"/>
+    <token id="00000134A347E730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="String" scope="000001349124C180" type="name" astParent="00000134A347DAD0"/>
+    <token id="00000134A347DA10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="^" scope="000001349124C180" type="op" astParent="00000134A347D830" astOperand1="00000134A347DAD0" astOperand2="00000134A347DFB0"/>
+    <token id="00000134A347DB30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="get" scope="000001349124C180" type="name" astParent="00000134A347DFB0"/>
+    <token id="00000134A347DFB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str="(" scope="000001349124C180" link="00000134A347DB90" astParent="00000134A347DA10" astOperand1="00000134A347DB30"/>
+    <token id="00000134A347DB90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str=")" scope="000001349124C180" link="00000134A347DFB0"/>
+    <token id="00000134A347D470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="42" str=";" scope="000001349124C180"/>
+    <token id="00000134A347DD10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="43" str="}" scope="000001349124C180" link="00000134A347D830"/>
+    <token id="00000134A347DCB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="45" str="property" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="45" str="AutomationNotificationKind" scope="000001349124C180" type="name"/>
+    <token id="00000134A347DD70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="45" str="Kind" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="46" str="{" scope="000001349124C180" link="00000134A347E7F0"/>
+    <token id="00000134A347DF50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="47" str="AutomationNotificationKind" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="47" str="get" scope="000001349124C180" type="name" function="00000134A213C290" astParent="00000134A347E790"/>
+    <token id="00000134A347E790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="47" str="(" scope="000001349124C180" link="00000134A347E550" astOperand1="00000134A347E370"/>
+    <token id="00000134A347E550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="47" str=")" scope="000001349124C180" link="00000134A347E790"/>
+    <token id="00000134A347E0D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="47" str=";" scope="000001349124C180"/>
+    <token id="00000134A347E7F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="48" str="}" scope="000001349124C180" link="00000134A347E1F0"/>
+    <token id="00000134A347E490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="50" str="property" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="50" str="AutomationNotificationProcessing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="50" str="Processing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="51" str="{" scope="000001349124C180" link="00000134A347D350"/>
+    <token id="00000134A347E670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="52" str="AutomationNotificationProcessing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="52" str="get" scope="000001349124C180" type="name" astParent="00000134A347E8B0"/>
+    <token id="00000134A347E8B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="52" str="(" scope="000001349124C180" link="00000134A347D290" astOperand1="00000134A347E850"/>
+    <token id="00000134A347D290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="52" str=")" scope="000001349124C180" link="00000134A347E8B0"/>
+    <token id="00000134A347D2F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="52" str=";" scope="000001349124C180"/>
+    <token id="00000134A347D350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="53" str="}" scope="000001349124C180" link="00000134A347E610"/>
+    <token id="00000134A347D530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="static" scope="000001349124C180" type="name"/>
+    <token id="00000134A347D5F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="bool" scope="000001349124C180" type="name"/>
+    <token id="00000134A347FF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="IsValid" scope="000001349124C180" type="name" function="00000134A213BA20" astParent="00000134A347F990"/>
+    <token id="00000134A347F990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="(" scope="000001349124C180" link="00000134A347FF30" astOperand1="00000134A347FF90" astOperand2="00000134A347ED30" valueType-type="bool"/>
+    <token id="00000134A3480050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="NarratorAnnouncement" scope="000001349124C180" type="name" astParent="00000134A347ED30"/>
+    <token id="00000134A347ED30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="^" scope="000001349124C180" type="op" astParent="00000134A347F990" astOperand1="00000134A3480050" astOperand2="00000134A347EFD0"/>
+    <token id="00000134A347EFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str="announcement" scope="000001349124C180" type="name" astParent="00000134A347ED30"/>
+    <token id="00000134A347FF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str=")" scope="000001349124C180" link="00000134A347F990"/>
+    <token id="00000134A347FED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="55" str=";" scope="000001349124C180"/>
+    <token id="00000134A347EA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="57" str="private:" scope="000001349124C180" type="name"/>
+    <token id="00000134A347FC90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="60" str="friend" scope="000001349124C180" type="name"/>
+    <token id="00000134A347FC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="60" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A347F7B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="60" str="CalculatorAnnouncement" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="60" str=";" scope="000001349124C180"/>
+    <token id="00000134A347F6F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="62" str="NarratorAnnouncement" scope="000001349124C180" type="name" astParent="00000134A347FE10"/>
+    <token id="00000134A347FE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="62" str="(" scope="000001349124C180" link="00000134A347FE70" astOperand1="00000134A347F6F0" astOperand2="00000134A347FCF0"/>
+    <token id="00000134A347F510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347F4B0"/>
+    <token id="00000134A347F4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="::" scope="000001349124C180" astParent="00000134A347EA30" astOperand1="00000134A347F510" astOperand2="00000134A347E9D0"/>
+    <token id="00000134A347E9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="String" scope="000001349124C180" type="name" astParent="00000134A347F4B0"/>
+    <token id="00000134A347EA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="^" scope="000001349124C180" type="op" astParent="00000134A347FA50" astOperand1="00000134A347F4B0" astOperand2="00000134A347FDB0"/>
+    <token id="00000134A347FDB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="announcement" scope="000001349124C180" type="name" astParent="00000134A347EA30"/>
+    <token id="00000134A347FA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="63" str="," scope="000001349124C180" astParent="00000134A347EBB0" astOperand1="00000134A347EA30" astOperand2="00000134A347F0F0"/>
+    <token id="00000134A347EEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347FFF0"/>
+    <token id="00000134A347FFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="::" scope="000001349124C180" astParent="00000134A347F0F0" astOperand1="00000134A347EEB0" astOperand2="00000134A347EF10"/>
+    <token id="00000134A347EF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="String" scope="000001349124C180" type="name" astParent="00000134A347FFF0"/>
+    <token id="00000134A347F0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="^" scope="000001349124C180" type="op" astParent="00000134A347FA50" astOperand1="00000134A347FFF0" astOperand2="00000134A347F210"/>
+    <token id="00000134A347F210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="activityId" scope="000001349124C180" type="name" astParent="00000134A347F0F0"/>
+    <token id="00000134A347EBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="64" str="," scope="000001349124C180" astParent="00000134A347FCF0" astOperand1="00000134A347FA50" astOperand2="00000134A347F8D0"/>
+    <token id="00000134A347F5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="65" str="AutomationNotificationKind" scope="000001349124C180" type="name"/>
+    <token id="00000134A347F8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="65" str="kind" scope="000001349124C180" type="name" varId="1" astParent="00000134A347EBB0"/>
+    <token id="00000134A347FCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="65" str="," scope="000001349124C180" astParent="00000134A347FE10" astOperand1="00000134A347EBB0" astOperand2="00000134A347FAB0"/>
+    <token id="00000134A347F150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="66" str="AutomationNotificationProcessing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347FAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="66" str="processing" scope="000001349124C180" type="name" varId="2" astParent="00000134A347FCF0"/>
+    <token id="00000134A347FE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="66" str=")" scope="000001349124C180" link="00000134A347FE10"/>
+    <token id="00000134A347ED90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="66" str=";" scope="000001349124C180"/>
+    <token id="00000134A347FB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347F090"/>
+    <token id="00000134A347F090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str="::" scope="000001349124C180" astParent="00000134A347EE50" astOperand1="00000134A347FB10" astOperand2="00000134A347F3F0"/>
+    <token id="00000134A347F3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str="String" scope="000001349124C180" type="name" astParent="00000134A347F090"/>
+    <token id="00000134A347EE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str="^" scope="000001349124C180" type="op" astOperand1="00000134A347F090" astOperand2="00000134A347F030"/>
+    <token id="00000134A347F030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str="m_announcement" scope="000001349124C180" type="name" astParent="00000134A347EE50"/>
+    <token id="00000134A347F2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="68" str=";" scope="000001349124C180"/>
+    <token id="00000134A34800B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str="Platform" scope="000001349124C180" type="name" astParent="00000134A347EF70"/>
+    <token id="00000134A347EF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str="::" scope="000001349124C180" astParent="00000134A347F810" astOperand1="00000134A34800B0" astOperand2="00000134A347F1B0"/>
+    <token id="00000134A347F1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str="String" scope="000001349124C180" type="name" astParent="00000134A347EF70"/>
+    <token id="00000134A347F810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str="^" scope="000001349124C180" type="op" astOperand1="00000134A347EF70" astOperand2="00000134A347F270"/>
+    <token id="00000134A347F270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str="m_activityId" scope="000001349124C180" type="name" astParent="00000134A347F810"/>
+    <token id="00000134A347EC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="69" str=";" scope="000001349124C180"/>
+    <token id="00000134A347F570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="70" str="AutomationNotificationKind" scope="000001349124C180" type="name"/>
+    <token id="00000134A347F330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="70" str="m_kind" scope="000001349124C180" type="name" varId="3"/>
+    <token id="00000134A347EAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="70" str=";" scope="000001349124C180"/>
+    <token id="00000134A347EB50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="71" str="AutomationNotificationProcessing" scope="000001349124C180" type="name"/>
+    <token id="00000134A347E910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="71" str="m_processing" scope="000001349124C180" type="name" varId="4"/>
+    <token id="00000134A347F390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="71" str=";" scope="000001349124C180"/>
+    <token id="00000134A347F9F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="72" str="}" scope="000001349124C180" link="00000134A347D4D0"/>
+    <token id="00000134A347EC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="72" str=";" scope="000001349124C180"/>
+    <token id="00000134A347FD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="76" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A347FB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="76" str="CalculatorAnnouncement" scope="000001349124C180" type="name"/>
+    <token id="00000134A347F450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="77" str="{" scope="0000013491213490" link="00000134A3462BF0"/>
+    <token id="00000134A347F690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="78" str="public:" scope="0000013491213490" type="name"/>
+    <token id="00000134A347F870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A347ECD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A347F750"/>
+    <token id="00000134A347F750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="^" scope="0000013491213490" type="op" astOperand1="00000134A347ECD0" astOperand2="00000134A347FBD0"/>
+    <token id="00000134A347EDF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="GetDisplayUpdatedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A347FBD0"/>
+    <token id="00000134A347FBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="(" scope="0000013491213490" link="00000134A3480830" astParent="00000134A347F750" astOperand1="00000134A347EDF0" astOperand2="00000134A3481790"/>
+    <token id="00000134A34818B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3480AD0"/>
+    <token id="00000134A3480AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="::" scope="0000013491213490" astParent="00000134A3481790" astOperand1="00000134A34818B0" astOperand2="00000134A3480110"/>
+    <token id="00000134A3480110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="String" scope="0000013491213490" type="name" astParent="00000134A3480AD0"/>
+    <token id="00000134A3481790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="^" scope="0000013491213490" type="op" astParent="00000134A347FBD0" astOperand1="00000134A3480AD0" astOperand2="00000134A3480170"/>
+    <token id="00000134A3480170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3481790"/>
+    <token id="00000134A3480830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str=")" scope="0000013491213490" link="00000134A347FBD0"/>
+    <token id="00000134A3480650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="79" str=";" scope="0000013491213490"/>
+    <token id="00000134A3480C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3480BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A34817F0"/>
+    <token id="00000134A34817F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3480BF0" astOperand2="00000134A3480590"/>
+    <token id="00000134A34816D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="GetMaxDigitsReachedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3480590"/>
+    <token id="00000134A3480590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="(" scope="0000013491213490" link="00000134A3481850" astParent="00000134A34817F0" astOperand1="00000134A34816D0" astOperand2="00000134A3480FB0"/>
+    <token id="00000134A3480E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3480410"/>
+    <token id="00000134A3480410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="::" scope="0000013491213490" astParent="00000134A3480FB0" astOperand1="00000134A3480E30" astOperand2="00000134A34807D0"/>
+    <token id="00000134A34807D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="String" scope="0000013491213490" type="name" astParent="00000134A3480410"/>
+    <token id="00000134A3480FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="^" scope="0000013491213490" type="op" astParent="00000134A3480590" astOperand1="00000134A3480410" astOperand2="00000134A34810D0"/>
+    <token id="00000134A34810D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3480FB0"/>
+    <token id="00000134A3481850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str=")" scope="0000013491213490" link="00000134A3480590"/>
+    <token id="00000134A34815B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="80" str=";" scope="0000013491213490"/>
+    <token id="00000134A3481610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3480230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3480A10"/>
+    <token id="00000134A3480A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3480230" astOperand2="00000134A3480470"/>
+    <token id="00000134A34801D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="GetMemoryClearedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3480470"/>
+    <token id="00000134A3480470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="(" scope="0000013491213490" link="00000134A3480350" astParent="00000134A3480A10" astOperand1="00000134A34801D0" astOperand2="00000134A34802F0"/>
+    <token id="00000134A34814F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3480290"/>
+    <token id="00000134A3480290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="::" scope="0000013491213490" astParent="00000134A34802F0" astOperand1="00000134A34814F0" astOperand2="00000134A3481010"/>
+    <token id="00000134A3481010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="String" scope="0000013491213490" type="name" astParent="00000134A3480290"/>
+    <token id="00000134A34802F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="^" scope="0000013491213490" type="op" astParent="00000134A3480470" astOperand1="00000134A3480290" astOperand2="00000134A3481430"/>
+    <token id="00000134A3481430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str="announcement" scope="0000013491213490" type="name" astParent="00000134A34802F0"/>
+    <token id="00000134A3480350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str=")" scope="0000013491213490" link="00000134A3480470"/>
+    <token id="00000134A3480710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="82" str=";" scope="0000013491213490"/>
+    <token id="00000134A3480950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3481190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3480D70"/>
+    <token id="00000134A3480D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3481190" astOperand2="00000134A3481670"/>
+    <token id="00000134A3481070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="GetMemoryItemChangedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481670"/>
+    <token id="00000134A3481670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="(" scope="0000013491213490" link="00000134A3481130" astParent="00000134A3480D70" astOperand1="00000134A3481070" astOperand2="00000134A3480DD0"/>
+    <token id="00000134A34803B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3480D10"/>
+    <token id="00000134A3480D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="::" scope="0000013491213490" astParent="00000134A3480DD0" astOperand1="00000134A34803B0" astOperand2="00000134A3480770"/>
+    <token id="00000134A3480770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="String" scope="0000013491213490" type="name" astParent="00000134A3480D10"/>
+    <token id="00000134A3480DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="^" scope="0000013491213490" type="op" astParent="00000134A3481670" astOperand1="00000134A3480D10" astOperand2="00000134A34804D0"/>
+    <token id="00000134A34804D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3480DD0"/>
+    <token id="00000134A3481130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str=")" scope="0000013491213490" link="00000134A3481670"/>
+    <token id="00000134A3480E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="83" str=";" scope="0000013491213490"/>
+    <token id="00000134A3480F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A34806B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A34805F0"/>
+    <token id="00000134A34805F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="^" scope="0000013491213490" type="op" astOperand1="00000134A34806B0" astOperand2="00000134A3480890"/>
+    <token id="00000134A3480530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="GetMemoryItemAddedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3480890"/>
+    <token id="00000134A3480890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="(" scope="0000013491213490" link="00000134A3480B90" astParent="00000134A34805F0" astOperand1="00000134A3480530" astOperand2="00000134A3480A70"/>
+    <token id="00000134A3480EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="Platform" scope="0000013491213490" type="name" astParent="00000134A34808F0"/>
+    <token id="00000134A34808F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="::" scope="0000013491213490" astParent="00000134A3480A70" astOperand1="00000134A3480EF0" astOperand2="00000134A34809B0"/>
+    <token id="00000134A34809B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="String" scope="0000013491213490" type="name" astParent="00000134A34808F0"/>
+    <token id="00000134A3480A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="^" scope="0000013491213490" type="op" astParent="00000134A3480890" astOperand1="00000134A34808F0" astOperand2="00000134A3480B30"/>
+    <token id="00000134A3480B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3480A70"/>
+    <token id="00000134A3480B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str=")" scope="0000013491213490" link="00000134A3480890"/>
+    <token id="00000134A34811F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="84" str=";" scope="0000013491213490"/>
+    <token id="00000134A3480CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3481730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481250"/>
+    <token id="00000134A3481250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3481730" astOperand2="00000134A3481310"/>
+    <token id="00000134A34812B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="GetHistoryClearedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481310"/>
+    <token id="00000134A3481310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="(" scope="0000013491213490" link="00000134A3482F90" astParent="00000134A3481250" astOperand1="00000134A34812B0" astOperand2="00000134A3481550"/>
+    <token id="00000134A3481370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="Platform" scope="0000013491213490" type="name" astParent="00000134A34813D0"/>
+    <token id="00000134A34813D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="::" scope="0000013491213490" astParent="00000134A3481550" astOperand1="00000134A3481370" astOperand2="00000134A3481490"/>
+    <token id="00000134A3481490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="String" scope="0000013491213490" type="name" astParent="00000134A34813D0"/>
+    <token id="00000134A3481550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="^" scope="0000013491213490" type="op" astParent="00000134A3481310" astOperand1="00000134A34813D0" astOperand2="00000134A3481F70"/>
+    <token id="00000134A3481F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3481550"/>
+    <token id="00000134A3482F90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str=")" scope="0000013491213490" link="00000134A3481310"/>
+    <token id="00000134A3482270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="86" str=";" scope="0000013491213490"/>
+    <token id="00000134A3481910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3482210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481C70"/>
+    <token id="00000134A3481C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3482210" astOperand2="00000134A3482570"/>
+    <token id="00000134A3481E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="GetCategoryNameChangedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3482570"/>
+    <token id="00000134A3482570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="(" scope="0000013491213490" link="00000134A34825D0" astParent="00000134A3481C70" astOperand1="00000134A3481E50" astOperand2="00000134A3481D90"/>
+    <token id="00000134A3482390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="Platform" scope="0000013491213490" type="name" astParent="00000134A34827B0"/>
+    <token id="00000134A34827B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="::" scope="0000013491213490" astParent="00000134A3481D90" astOperand1="00000134A3482390" astOperand2="00000134A34823F0"/>
+    <token id="00000134A34823F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="String" scope="0000013491213490" type="name" astParent="00000134A34827B0"/>
+    <token id="00000134A3481D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="^" scope="0000013491213490" type="op" astParent="00000134A3482570" astOperand1="00000134A34827B0" astOperand2="00000134A3481DF0"/>
+    <token id="00000134A3481DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3481D90"/>
+    <token id="00000134A34825D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str=")" scope="0000013491213490" link="00000134A3482570"/>
+    <token id="00000134A3481CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="88" str=";" scope="0000013491213490"/>
+    <token id="00000134A3481FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3482630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A34820F0"/>
+    <token id="00000134A34820F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3482630" astOperand2="00000134A3481A90"/>
+    <token id="00000134A3482CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="GetUpdateCurrencyRatesAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481A90"/>
+    <token id="00000134A3481A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="(" scope="0000013491213490" link="00000134A3482C30" astParent="00000134A34820F0" astOperand1="00000134A3482CF0" astOperand2="00000134A3481D30"/>
+    <token id="00000134A3481A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3482510"/>
+    <token id="00000134A3482510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="::" scope="0000013491213490" astParent="00000134A3481D30" astOperand1="00000134A3481A30" astOperand2="00000134A3482870"/>
+    <token id="00000134A3482870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="String" scope="0000013491213490" type="name" astParent="00000134A3482510"/>
+    <token id="00000134A3481D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="^" scope="0000013491213490" type="op" astParent="00000134A3481A90" astOperand1="00000134A3482510" astOperand2="00000134A3481EB0"/>
+    <token id="00000134A3481EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3481D30"/>
+    <token id="00000134A3482C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str=")" scope="0000013491213490" link="00000134A3481A90"/>
+    <token id="00000134A3481970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="90" str=";" scope="0000013491213490"/>
+    <token id="00000134A3482810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3481F10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A34822D0"/>
+    <token id="00000134A34822D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3481F10" astOperand2="00000134A3481AF0"/>
+    <token id="00000134A3482030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="GetDisplayCopiedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3481AF0"/>
+    <token id="00000134A3481AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="(" scope="0000013491213490" link="00000134A3482B70" astParent="00000134A34822D0" astOperand1="00000134A3482030" astOperand2="00000134A3482BD0"/>
+    <token id="00000134A3482990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3482090"/>
+    <token id="00000134A3482090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="::" scope="0000013491213490" astParent="00000134A3482BD0" astOperand1="00000134A3482990" astOperand2="00000134A3482150"/>
+    <token id="00000134A3482150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="String" scope="0000013491213490" type="name" astParent="00000134A3482090"/>
+    <token id="00000134A3482BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="^" scope="0000013491213490" type="op" astParent="00000134A3481AF0" astOperand1="00000134A3482090" astOperand2="00000134A3482690"/>
+    <token id="00000134A3482690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3482BD0"/>
+    <token id="00000134A3482B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str=")" scope="0000013491213490" link="00000134A3481AF0"/>
+    <token id="00000134A34828D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="92" str=";" scope="0000013491213490"/>
+    <token id="00000134A3482930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A34821B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3482C90"/>
+    <token id="00000134A3482C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="^" scope="0000013491213490" type="op" astOperand1="00000134A34821B0" astOperand2="00000134A34824B0"/>
+    <token id="00000134A3482330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="GetOpenParenthesisCountChangedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A34824B0"/>
+    <token id="00000134A34824B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="(" scope="0000013491213490" link="00000134A3482ED0" astParent="00000134A3482C90" astOperand1="00000134A3482330" astOperand2="00000134A3482750"/>
+    <token id="00000134A34826F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3481B50"/>
+    <token id="00000134A3481B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="::" scope="0000013491213490" astParent="00000134A3482750" astOperand1="00000134A34826F0" astOperand2="00000134A3482450"/>
+    <token id="00000134A3482450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="String" scope="0000013491213490" type="name" astParent="00000134A3481B50"/>
+    <token id="00000134A3482750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="^" scope="0000013491213490" type="op" astParent="00000134A34824B0" astOperand1="00000134A3481B50" astOperand2="00000134A34829F0"/>
+    <token id="00000134A34829F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3482750"/>
+    <token id="00000134A3482ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str=")" scope="0000013491213490" link="00000134A34824B0"/>
+    <token id="00000134A3482A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="94" str=";" scope="0000013491213490"/>
+    <token id="00000134A3482AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="static" scope="0000013491213490" type="name"/>
+    <token id="00000134A3482B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="NarratorAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3482D50"/>
+    <token id="00000134A3482D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="^" scope="0000013491213490" type="op" astOperand1="00000134A3482B10" astOperand2="00000134A3482E10"/>
+    <token id="00000134A3482DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="GetNoRightParenthesisAddedAnnouncement" scope="0000013491213490" type="name" astParent="00000134A3482E10"/>
+    <token id="00000134A3482E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="(" scope="0000013491213490" link="00000134A3463310" astParent="00000134A3482D50" astOperand1="00000134A3482DB0" astOperand2="00000134A3481BB0"/>
+    <token id="00000134A3482E70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="Platform" scope="0000013491213490" type="name" astParent="00000134A3482F30"/>
+    <token id="00000134A3482F30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="::" scope="0000013491213490" astParent="00000134A3481BB0" astOperand1="00000134A3482E70" astOperand2="00000134A34819D0"/>
+    <token id="00000134A34819D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="String" scope="0000013491213490" type="name" astParent="00000134A3482F30"/>
+    <token id="00000134A3481BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="^" scope="0000013491213490" type="op" astParent="00000134A3482E10" astOperand1="00000134A3482F30" astOperand2="00000134A3481C10"/>
+    <token id="00000134A3481C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str="announcement" scope="0000013491213490" type="name" astParent="00000134A3481BB0"/>
+    <token id="00000134A3463310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str=")" scope="0000013491213490" link="00000134A3482E10"/>
+    <token id="00000134A3462890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="95" str=";" scope="0000013491213490"/>
+    <token id="00000134A3462BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="96" str="}" scope="0000013491213490" link="00000134A347F450"/>
+    <token id="00000134A3462650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="96" str=";" scope="000001349124C180"/>
+    <token id="00000134A34627D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="97" str="}" scope="000001349124C180" link="00000134A347CAB0"/>
+    <token id="00000134A3469130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="97" str="}" scope="000001349124C180" link="00000134A347C150"/>
+    <token id="00000134A3468AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/NarratorAnnouncement.h" linenr="97" str="}" scope="000001349124C180" link="00000134A347CED0"/>
+    <token id="00000134A3462AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A34636D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="CalculatorApp" scope="000001349124C180" type="name"/>
+    <token id="00000134A34626B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="{" scope="000001349124C180" link="00000134A3468D70"/>
+    <token id="00000134A3468110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="Common" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="{" scope="000001349124C180" link="00000134A34696D0"/>
+    <token id="00000134A3469010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="12" str="Automation" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="13" str="{" scope="000001349124C180" link="00000134A34622F0"/>
+    <token id="00000134A3462D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="14" str="public" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="14" str="interface" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="14" str="class" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="14" str="INarratorAnnouncementHost" scope="000001349124C180" type="name"/>
+    <token id="00000134A34631F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="15" str="{" scope="00000134912135A0" link="00000134A3463850"/>
+    <token id="00000134A3462350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="16" str="public:" scope="00000134912135A0" type="name"/>
+    <token id="00000134A34629B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="18" str="bool" scope="00000134912135A0" type="name"/>
+    <token id="00000134A3462110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="18" str="IsHostAvailable" scope="00000134912135A0" type="name" function="00000134A213C8C0" astParent="00000134A3462830"/>
+    <token id="00000134A3462830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="18" str="(" scope="00000134912135A0" link="00000134A3463190" astOperand1="00000134A3462110" valueType-type="bool"/>
+    <token id="00000134A3463190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="18" str=")" scope="00000134912135A0" link="00000134A3462830"/>
+    <token id="00000134A34633D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="18" str=";" scope="00000134912135A0"/>
+    <token id="00000134A3462E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str="INarratorAnnouncementHost" scope="00000134912135A0" type="name" type-scope="00000134912135A0" astParent="00000134A34624D0"/>
+    <token id="00000134A34624D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str="^" scope="00000134912135A0" type="op" astOperand1="00000134A3462E90" astOperand2="00000134A3462530"/>
+    <token id="00000134A34621D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str="MakeHost" scope="00000134912135A0" type="name" astParent="00000134A3462530"/>
+    <token id="00000134A3462530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str="(" scope="00000134912135A0" link="00000134A3462950" astParent="00000134A34624D0" astOperand1="00000134A34621D0"/>
+    <token id="00000134A3462950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str=")" scope="00000134912135A0" link="00000134A3462530"/>
+    <token id="00000134A3462CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="21" str=";" scope="00000134912135A0"/>
+    <token id="00000134A3462A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="void" scope="00000134912135A0" type="name"/>
+    <token id="00000134A3462B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="Announce" scope="00000134912135A0" type="name" function="00000134A213B6C0" astParent="00000134A34638B0"/>
+    <token id="00000134A34638B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="(" scope="00000134912135A0" link="00000134A3462470" astOperand1="00000134A3462B30" astOperand2="00000134A3462B90" valueType-type="void"/>
+    <token id="00000134A3463490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="NarratorAnnouncement" scope="00000134912135A0" type="name" astParent="00000134A3462B90"/>
+    <token id="00000134A3462B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="^" scope="00000134912135A0" type="op" astParent="00000134A34638B0" astOperand1="00000134A3463490" astOperand2="00000134A3463730"/>
+    <token id="00000134A3463730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str="announcement" scope="00000134912135A0" type="name" astParent="00000134A3462B90"/>
+    <token id="00000134A3462470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str=")" scope="00000134912135A0" link="00000134A34638B0"/>
+    <token id="00000134A3462EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="24" str=";" scope="00000134912135A0"/>
+    <token id="00000134A3463850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="25" str="}" scope="00000134912135A0" link="00000134A34631F0"/>
+    <token id="00000134A3462290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="25" str=";" scope="000001349124C180"/>
+    <token id="00000134A34622F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="26" str="}" scope="000001349124C180" link="00000134A3462410"/>
+    <token id="00000134A34696D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="26" str="}" scope="000001349124C180" link="00000134A3462FB0"/>
+    <token id="00000134A3468D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/INarratorAnnouncementHost.h" linenr="26" str="}" scope="000001349124C180" link="00000134A34626B0"/>
+    <token id="00000134A34637F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="CalculatorApp" scope="000001349124C180" type="name"/>
+    <token id="00000134A3462DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="{" scope="0000013491541DA0" link="00000134A3468590"/>
+    <token id="00000134A34682F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="namespace" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A3462E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="Common" scope="0000013491541DA0" type="name"/>
+    <token id="00000134A3463610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="{" scope="0000013491213380" link="00000134A3468350"/>
+    <token id="00000134A3468470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="namespace" scope="0000013491213380" type="name"/>
+    <token id="00000134A3462F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="12" str="Automation" scope="0000013491213380" type="name"/>
+    <token id="00000134A34630D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="13" str="{" scope="00000134912139E0" link="00000134A3464270"/>
+    <token id="00000134A3463010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="public" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3462170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="ref" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3462590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="class" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3463070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="LiveRegionHost" scope="00000134912139E0" type="name"/>
+    <token id="00000134A34623B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="sealed" scope="00000134912139E0" type="name"/>
+    <token id="00000134A34625F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str=":" scope="00000134912139E0"/>
+    <token id="00000134A3463130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="public" scope="00000134912139E0" type="name"/>
+    <token id="00000134A34634F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="19" str="INarratorAnnouncementHost" scope="00000134912139E0" type="name" type-scope="00000134912135A0"/>
+    <token id="00000134A34635B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="20" str="{" scope="00000134912139E0" link="00000134A3464330"/>
+    <token id="00000134A3463250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="21" str="public:" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3463370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="22" str="LiveRegionHost" scope="00000134912139E0" type="name" function="00000134A213BAB0" astParent="00000134A3463790"/>
+    <token id="00000134A3463790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="22" str="(" scope="00000134912139E0" link="00000134A3463430" astOperand1="00000134A3463370"/>
+    <token id="00000134A3463430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="22" str=")" scope="00000134912139E0" link="00000134A3463790"/>
+    <token id="00000134A3463550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="22" str=";" scope="00000134912139E0"/>
+    <token id="00000134A3463670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str="virtual" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3463910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str="bool" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3464810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str="IsHostAvailable" scope="00000134912139E0" type="name" function="00000134A213B7E0" astParent="00000134A3464ED0"/>
+    <token id="00000134A3464ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str="(" scope="00000134912139E0" link="00000134A3464450" astOperand1="00000134A3464810" valueType-type="bool"/>
+    <token id="00000134A3464450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str=")" scope="00000134912139E0" link="00000134A3464ED0"/>
+    <token id="00000134A34644B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="24" str=";" scope="00000134912139E0"/>
+    <token id="00000134A3463A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str="virtual" scope="00000134912139E0" type="name"/>
+    <token id="00000134A34648D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str="INarratorAnnouncementHost" scope="00000134912139E0" type="name" type-scope="00000134912135A0" astParent="00000134A3464B10"/>
+    <token id="00000134A3464B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str="^" scope="00000134912139E0" type="op" astOperand1="00000134A34648D0" astOperand2="00000134A34643F0"/>
+    <token id="00000134A3464090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str="MakeHost" scope="00000134912139E0" type="name" astParent="00000134A34643F0"/>
+    <token id="00000134A34643F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str="(" scope="00000134912139E0" link="00000134A3463E50" astParent="00000134A3464B10" astOperand1="00000134A3464090"/>
+    <token id="00000134A3463E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str=")" scope="00000134912139E0" link="00000134A34643F0"/>
+    <token id="00000134A3463FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="25" str=";" scope="00000134912139E0"/>
+    <token id="00000134A34642D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="virtual" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3464F30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="void" scope="00000134912139E0" type="name"/>
+    <token id="00000134A3463EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="Announce" scope="00000134912139E0" type="name" function="00000134A213BB40" astParent="00000134A3463F10"/>
+    <token id="00000134A3463F10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="(" scope="00000134912139E0" link="00000134A3463B50" astOperand1="00000134A3463EB0" astOperand2="00000134A3465050" valueType-type="void"/>
+    <token id="00000134A34640F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="NarratorAnnouncement" scope="00000134912139E0" type="name" astParent="00000134A3465050"/>
+    <token id="00000134A3465050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="^" scope="00000134912139E0" type="op" astParent="00000134A3463F10" astOperand1="00000134A34640F0" astOperand2="00000134A3464FF0"/>
+    <token id="00000134A3464FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str="announcement" scope="00000134912139E0" type="name" astParent="00000134A3465050"/>
+    <token id="00000134A3463B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str=")" scope="00000134912139E0" link="00000134A3463F10"/>
+    <token id="00000134A3463F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="27" str=";" scope="00000134912139E0"/>
+    <token id="00000134A3463AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="29" str="private:" scope="00000134912139E0" type="name"/>
+    <token id="00000134A34649F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="Windows" scope="00000134912139E0" type="name" astParent="00000134A3463BB0"/>
+    <token id="00000134A3463BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="::" scope="00000134912139E0" astParent="00000134A34641B0" astOperand1="00000134A34649F0" astOperand2="00000134A3464150"/>
+    <token id="00000134A3464150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="UI" scope="00000134912139E0" type="name" astParent="00000134A3463BB0"/>
+    <token id="00000134A34641B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="::" scope="00000134912139E0" astParent="00000134A3464210" astOperand1="00000134A3463BB0" astOperand2="00000134A3463970"/>
+    <token id="00000134A3463970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="Xaml" scope="00000134912139E0" type="name" astParent="00000134A34641B0"/>
+    <token id="00000134A3464210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="::" scope="00000134912139E0" astParent="00000134A3464BD0" astOperand1="00000134A34641B0" astOperand2="00000134A3464990"/>
+    <token id="00000134A3464990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="UIElement" scope="00000134912139E0" type="name" astParent="00000134A3464210"/>
+    <token id="00000134A3464BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="^" scope="00000134912139E0" type="op" astOperand1="00000134A3464210" astOperand2="00000134A3464E10"/>
+    <token id="00000134A3464E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str="m_host" scope="00000134912139E0" type="name" astParent="00000134A3464BD0"/>
+    <token id="00000134A3463A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="30" str=";" scope="00000134912139E0"/>
+    <token id="00000134A3464330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="31" str="}" scope="00000134912139E0" link="00000134A34635B0"/>
+    <token id="00000134A3464630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="31" str=";" scope="00000134912139E0"/>
+    <token id="00000134A3464270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="32" str="}" scope="00000134912139E0" link="00000134A34630D0"/>
+    <token id="00000134A3468350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="32" str="}" scope="0000013491213380" link="00000134A3463610"/>
+    <token id="00000134A3468590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.h" linenr="32" str="}" scope="0000013491541DA0" link="00000134A3462DD0"/>
+    <token id="00000134A3464390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="using" scope="000001349124C180" type="name"/>
+    <token id="00000134A34647B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3464570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="CalculatorApp" scope="000001349124C180" type="name" astParent="00000134A34650B0"/>
+    <token id="00000134A34650B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="::" scope="000001349124C180" astParent="00000134A3464C90" astOperand1="00000134A3464570" astOperand2="00000134A34639D0"/>
+    <token id="00000134A34639D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="Common" scope="000001349124C180" type="name" astParent="00000134A34650B0"/>
+    <token id="00000134A3464C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="::" scope="000001349124C180" astOperand1="00000134A34650B0" astOperand2="00000134A34645D0"/>
+    <token id="00000134A34645D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str="Automation" scope="000001349124C180" type="name" astParent="00000134A3464C90"/>
+    <token id="00000134A3464690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="7" str=";" scope="000001349124C180"/>
+    <token id="00000134A3463C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="using" scope="000001349124C180" type="name"/>
+    <token id="00000134A3464A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3464AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="Windows" scope="000001349124C180" type="name" astParent="00000134A34646F0"/>
+    <token id="00000134A34646F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="::" scope="000001349124C180" astParent="00000134A3464870" astOperand1="00000134A3464AB0" astOperand2="00000134A3464750"/>
+    <token id="00000134A3464750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="UI" scope="000001349124C180" type="name" astParent="00000134A34646F0"/>
+    <token id="00000134A3464870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="::" scope="000001349124C180" astParent="00000134A3463D90" astOperand1="00000134A34646F0" astOperand2="00000134A3464930"/>
+    <token id="00000134A3464930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="Xaml" scope="000001349124C180" type="name" astParent="00000134A3464870"/>
+    <token id="00000134A3463D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="::" scope="000001349124C180" astOperand1="00000134A3464870" astOperand2="00000134A3463DF0"/>
+    <token id="00000134A3463DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str="Automation" scope="000001349124C180" type="name" astParent="00000134A3463D90"/>
+    <token id="00000134A3464B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="8" str=";" scope="000001349124C180"/>
+    <token id="00000134A3463C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="using" scope="000001349124C180" type="name"/>
+    <token id="00000134A3464C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3464CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="Windows" scope="000001349124C180" type="name" astParent="00000134A3464D50"/>
+    <token id="00000134A3464D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="::" scope="000001349124C180" astParent="00000134A3464DB0" astOperand1="00000134A3464CF0" astOperand2="00000134A3463CD0"/>
+    <token id="00000134A3463CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="UI" scope="000001349124C180" type="name" astParent="00000134A3464D50"/>
+    <token id="00000134A3464DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="::" scope="000001349124C180" astParent="00000134A3463D30" astOperand1="00000134A3464D50" astOperand2="00000134A3464E70"/>
+    <token id="00000134A3464E70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="Xaml" scope="000001349124C180" type="name" astParent="00000134A3464DB0"/>
+    <token id="00000134A3463D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="::" scope="000001349124C180" astParent="00000134A3465170" astOperand1="00000134A3464DB0" astOperand2="00000134A3465CB0"/>
+    <token id="00000134A3465CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="Automation" scope="000001349124C180" type="name" astParent="00000134A3463D30"/>
+    <token id="00000134A3465170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="::" scope="000001349124C180" astOperand1="00000134A3463D30" astOperand2="00000134A34651D0"/>
+    <token id="00000134A34651D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str="Peers" scope="000001349124C180" type="name" astParent="00000134A3465170"/>
+    <token id="00000134A34665B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="9" str=";" scope="000001349124C180"/>
+    <token id="00000134A3466250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="using" scope="000001349124C180" type="name"/>
+    <token id="00000134A34656B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="namespace" scope="000001349124C180" type="name"/>
+    <token id="00000134A3465890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="Windows" scope="000001349124C180" type="name" astParent="00000134A3466790"/>
+    <token id="00000134A3466790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="::" scope="000001349124C180" astParent="00000134A3465AD0" astOperand1="00000134A3465890" astOperand2="00000134A3466130"/>
+    <token id="00000134A3466130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="UI" scope="000001349124C180" type="name" astParent="00000134A3466790"/>
+    <token id="00000134A3465AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="::" scope="000001349124C180" astParent="00000134A3465110" astOperand1="00000134A3466790" astOperand2="00000134A3465650"/>
+    <token id="00000134A3465650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="Xaml" scope="000001349124C180" type="name" astParent="00000134A3465AD0"/>
+    <token id="00000134A3465110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="::" scope="000001349124C180" astOperand1="00000134A3465AD0" astOperand2="00000134A3466010"/>
+    <token id="00000134A3466010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str="Controls" scope="000001349124C180" type="name" astParent="00000134A3465110"/>
+    <token id="00000134A34666D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="10" str=";" scope="000001349124C180"/>
+    <token id="00000134A3465D70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str="LiveRegionHost" scope="000001349124C180" type="name" astParent="00000134A3465DD0"/>
+    <token id="00000134A3465DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str="::" scope="000001349124C180" astParent="00000134A3465470" astOperand1="00000134A3465D70" astOperand2="00000134A34652F0"/>
+    <token id="00000134A34652F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str="LiveRegionHost" scope="000001349124C180" type="name" astParent="00000134A3465DD0"/>
+    <token id="00000134A3465470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str="(" scope="000001349124C180" link="00000134A3465350" astParent="00000134A3465590" astOperand1="00000134A3465DD0"/>
+    <token id="00000134A3465350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str=")" scope="000001349124C180" link="00000134A3465470"/>
+    <token id="00000134A3465590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="12" str=":" scope="000001349124C180" astOperand1="00000134A3465470" astOperand2="00000134A34654D0"/>
+    <token id="00000134A3466610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="13" str="m_host" scope="000001349124C180" type="name" astParent="00000134A34654D0"/>
+    <token id="00000134A34654D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="13" str="(" scope="000001349124C180" link="00000134A34660D0" astParent="00000134A3465590" astOperand1="00000134A3466610" astOperand2="00000134A3466670"/>
+    <token id="00000134A3466670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="13" str="nullptr" scope="000001349124C180" type="name" values="00000134A91FDD20" astParent="00000134A34654D0"/>
+    <token id="00000134A34660D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="13" str=")" scope="000001349124C180" link="00000134A34654D0"/>
+    <token id="00000134A34664F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="14" str="{" scope="0000013491213C00" link="00000134A3465E90"/>
+    <token id="00000134A3465E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="14" str="}" scope="0000013491213C00" link="00000134A34664F0"/>
+    <token id="00000134A3465C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str="bool" scope="000001349124C180" type="name"/>
+    <token id="00000134A3466850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str="LiveRegionHost" scope="000001349124C180" type="name" astParent="00000134A3465710"/>
+    <token id="00000134A3465710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str="::" scope="000001349124C180" astParent="00000134A3465D10" astOperand1="00000134A3466850" astOperand2="00000134A3465EF0"/>
+    <token id="00000134A3465EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str="IsHostAvailable" scope="000001349124C180" type="name" astParent="00000134A3465710"/>
+    <token id="00000134A3465D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str="(" scope="000001349124C180" link="00000134A3466070" astOperand1="00000134A3465710"/>
+    <token id="00000134A3466070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="16" str=")" scope="000001349124C180" link="00000134A3465D10"/>
+    <token id="00000134A3465A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="17" str="{" scope="0000013491212F40" link="00000134A3465B90"/>
+    <token id="00000134A3465F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="19" str="return" scope="0000013491212F40" type="name" astOperand1="00000134A3466730"/>
+    <token id="00000134A3466730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="19" str="true" scope="0000013491212F40" type="name" values="00000134A91FDAC0" astParent="00000134A3465F50"/>
+    <token id="00000134A34653B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="19" str=";" scope="0000013491212F40"/>
+    <token id="00000134A3465B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="20" str="}" scope="0000013491212F40" link="00000134A3465A10"/>
+    <token id="00000134A34668B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="INarratorAnnouncementHost" scope="000001349124C180" type="name" astParent="00000134A3466490"/>
+    <token id="00000134A3466490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="^" scope="000001349124C180" type="op" astOperand1="00000134A34668B0" astOperand2="00000134A3466190"/>
+    <token id="00000134A3465770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="LiveRegionHost" scope="000001349124C180" type="name" astParent="00000134A3465A70"/>
+    <token id="00000134A3465A70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="::" scope="000001349124C180" astParent="00000134A3466190" astOperand1="00000134A3465770" astOperand2="00000134A34667F0"/>
+    <token id="00000134A34667F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="MakeHost" scope="000001349124C180" type="name" astParent="00000134A3465A70"/>
+    <token id="00000134A3466190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str="(" scope="000001349124C180" link="00000134A34661F0" astParent="00000134A3466490" astOperand1="00000134A3465A70"/>
+    <token id="00000134A34661F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="22" str=")" scope="000001349124C180" link="00000134A3466190"/>
+    <token id="00000134A3465E30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="23" str="{" scope="000001349124C180" link="00000134A3465830"/>
+    <token id="00000134A3465BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str="return" scope="000001349124C180" type="name" astOperand1="00000134A34657D0"/>
+    <token id="00000134A34662B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str="ref" scope="000001349124C180" type="name"/>
+    <token id="00000134A3465FB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str="new" scope="000001349124C180" type="name"/>
+    <token id="00000134A34655F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str="LiveRegionHost" scope="000001349124C180" type="name" function="00000134A213B2D0" astParent="00000134A34657D0"/>
+    <token id="00000134A34657D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str="(" scope="000001349124C180" link="00000134A3466310" astParent="00000134A3465BF0" astOperand1="00000134A34655F0"/>
+    <token id="00000134A3466310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str=")" scope="000001349124C180" link="00000134A34657D0"/>
+    <token id="00000134A3465410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="24" str=";" scope="000001349124C180"/>
+    <token id="00000134A3465830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="25" str="}" scope="000001349124C180" link="00000134A3465E30"/>
+    <token id="00000134A3466370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="void" scope="000001349124C180" type="name"/>
+    <token id="00000134A3466430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="LiveRegionHost" scope="000001349124C180" type="name" astParent="00000134A3465230"/>
+    <token id="00000134A3465230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="::" scope="000001349124C180" astParent="00000134A3465530" astOperand1="00000134A3466430" astOperand2="00000134A3465290"/>
+    <token id="00000134A3465290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="Announce" scope="000001349124C180" type="name" astParent="00000134A3465230"/>
+    <token id="00000134A3465530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="(" scope="000001349124C180" link="00000134A3465950" astOperand1="00000134A3465230" astOperand2="00000134A3465B30"/>
+    <token id="00000134A34658F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="NarratorAnnouncement" scope="000001349124C180" type="name" astParent="00000134A3465B30"/>
+    <token id="00000134A3465B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="^" scope="000001349124C180" type="op" astParent="00000134A3465530" astOperand1="00000134A34658F0" astOperand2="00000134A3466550"/>
+    <token id="00000134A3466550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str="announcement" scope="000001349124C180" type="name" astParent="00000134A3465B30"/>
+    <token id="00000134A3465950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="27" str=")" scope="000001349124C180" link="00000134A3465530"/>
+    <token id="00000134A34659B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="28" str="{" scope="00000134912136B0" link="00000134A3468170"/>
+    <token id="00000134A3466F70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str="if" scope="00000134912136B0" type="name" astParent="00000134A3466A30"/>
+    <token id="00000134A3466A30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str="(" scope="00000134912136B0" link="00000134A3466E50" astOperand1="00000134A3466F70" astOperand2="00000134A3466CD0"/>
+    <token id="00000134A3467450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str="m_host" scope="00000134912136B0" type="name" astParent="00000134A3466CD0"/>
+    <token id="00000134A3466CD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str="==" scope="00000134912136B0" type="op" isComparisonOp="True" astParent="00000134A3466A30" astOperand1="00000134A3467450" astOperand2="00000134A3467A50" valueType-type="bool"/>
+    <token id="00000134A3467A50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str="nullptr" scope="00000134912136B0" type="name" values="00000134A91FDD40" astParent="00000134A3466CD0"/>
+    <token id="00000134A3466E50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="29" str=")" scope="00000134912136B0" link="00000134A3466A30"/>
+    <token id="00000134A34671B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="30" str="{" scope="00000134912137C0" link="00000134A3467B10"/>
+    <token id="00000134A34669D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="m_host" scope="00000134912137C0" type="name" astParent="00000134A3467990"/>
+    <token id="00000134A3467990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="=" scope="00000134912137C0" type="op" isAssignmentOp="True" astOperand1="00000134A34669D0" astOperand2="00000134A3467690"/>
+    <token id="00000134A3466BB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="ref" scope="00000134912137C0" type="name"/>
+    <token id="00000134A3466EB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="new" scope="00000134912137C0" type="name"/>
+    <token id="00000134A3467C30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="TextBlock" scope="00000134912137C0" type="name" astParent="00000134A3467690"/>
+    <token id="00000134A3467690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str="(" scope="00000134912137C0" link="00000134A3467BD0" astParent="00000134A3467990" astOperand1="00000134A3467C30"/>
+    <token id="00000134A3467BD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str=")" scope="00000134912137C0" link="00000134A3467690"/>
+    <token id="00000134A3467810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="31" str=";" scope="00000134912137C0"/>
+    <token id="00000134A3467DB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="AutomationProperties" scope="00000134912137C0" type="name" astParent="00000134A3467750"/>
+    <token id="00000134A3467750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="::" scope="00000134912137C0" astParent="00000134A3467ED0" astOperand1="00000134A3467DB0" astOperand2="00000134A3467C90"/>
+    <token id="00000134A3467C90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="SetLiveSetting" scope="00000134912137C0" type="name" astParent="00000134A3467750"/>
+    <token id="00000134A3467ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="(" scope="00000134912137C0" link="00000134A3466A90" astOperand1="00000134A3467750" astOperand2="00000134A3467150"/>
+    <token id="00000134A3467090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="m_host" scope="00000134912137C0" type="name" astParent="00000134A3467150"/>
+    <token id="00000134A3467150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="," scope="00000134912137C0" astParent="00000134A3467ED0" astOperand1="00000134A3467090" astOperand2="00000134A34670F0"/>
+    <token id="00000134A3467AB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="AutomationLiveSetting" scope="00000134912137C0" type="name" astParent="00000134A34670F0"/>
+    <token id="00000134A34670F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="::" scope="00000134912137C0" astParent="00000134A3467150" astOperand1="00000134A3467AB0" astOperand2="00000134A3467870"/>
+    <token id="00000134A3467870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str="Assertive" scope="00000134912137C0" type="name" astParent="00000134A34670F0"/>
+    <token id="00000134A3466A90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str=")" scope="00000134912137C0" link="00000134A3467ED0"/>
+    <token id="00000134A3467CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="32" str=";" scope="00000134912137C0"/>
+    <token id="00000134A3467B10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="33" str="}" scope="00000134912137C0" link="00000134A34671B0"/>
+    <token id="00000134A3466FD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="AutomationProperties" scope="00000134912136B0" type="name" astParent="00000134A34672D0"/>
+    <token id="00000134A34672D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="::" scope="00000134912136B0" astParent="00000134A3466F10" astOperand1="00000134A3466FD0" astOperand2="00000134A3467F30"/>
+    <token id="00000134A3467F30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="SetName" scope="00000134912136B0" type="name" astParent="00000134A34672D0"/>
+    <token id="00000134A3466F10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="(" scope="00000134912136B0" link="00000134A34673F0" astOperand1="00000134A34672D0" astOperand2="00000134A34677B0"/>
+    <token id="00000134A3467030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="m_host" scope="00000134912136B0" type="name" astParent="00000134A34677B0"/>
+    <token id="00000134A34677B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="," scope="00000134912136B0" astParent="00000134A3466F10" astOperand1="00000134A3467030" astOperand2="00000134A3466C10"/>
+    <token id="00000134A3467210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="announcement" scope="00000134912136B0" type="name" astParent="00000134A3466C10"/>
+    <token id="00000134A3466C10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="." scope="00000134912136B0" astParent="00000134A34677B0" astOperand1="00000134A3467210" astOperand2="00000134A3467510" originalName="->"/>
+    <token id="00000134A3467510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str="Announcement" scope="00000134912136B0" type="name" astParent="00000134A3466C10"/>
+    <token id="00000134A34673F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str=")" scope="00000134912136B0" link="00000134A3466F10"/>
+    <token id="00000134A3466AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="35" str=";" scope="00000134912136B0"/>
+    <token id="00000134A34676F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="AutomationPeer" scope="00000134912136B0" type="name" astParent="00000134A3466B50"/>
+    <token id="00000134A3466B50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="^" scope="00000134912136B0" type="op" astParent="00000134A3467330" astOperand1="00000134A34676F0" astOperand2="00000134A3467270"/>
+    <token id="00000134A3467270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="peer" scope="00000134912136B0" type="name" astParent="00000134A3466B50"/>
+    <token id="00000134A3467330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="=" scope="00000134912136B0" type="op" isAssignmentOp="True" astOperand1="00000134A3466B50" astOperand2="00000134A3467390"/>
+    <token id="00000134A34679F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="FrameworkElementAutomationPeer" scope="00000134912136B0" type="name" astParent="00000134A3466910"/>
+    <token id="00000134A3466910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="::" scope="00000134912136B0" astParent="00000134A3467390" astOperand1="00000134A34679F0" astOperand2="00000134A34678D0"/>
+    <token id="00000134A34678D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="FromElement" scope="00000134912136B0" type="name" astParent="00000134A3466910"/>
+    <token id="00000134A3467390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="(" scope="00000134912136B0" link="00000134A3467E70" astParent="00000134A3467330" astOperand1="00000134A3466910" astOperand2="00000134A3467930"/>
+    <token id="00000134A3467930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str="m_host" scope="00000134912136B0" type="name" astParent="00000134A3467390"/>
+    <token id="00000134A3467E70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str=")" scope="00000134912136B0" link="00000134A3467390"/>
+    <token id="00000134A3466C70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="36" str=";" scope="00000134912136B0"/>
+    <token id="00000134A34674B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str="if" scope="00000134912136B0" type="name" astParent="00000134A3467E10"/>
+    <token id="00000134A3467E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str="(" scope="00000134912136B0" link="00000134A3467F90" astOperand1="00000134A34674B0" astOperand2="00000134A34680B0"/>
+    <token id="00000134A3467630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str="peer" scope="00000134912136B0" type="name" astParent="00000134A34680B0"/>
+    <token id="00000134A34680B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str="!=" scope="00000134912136B0" type="op" isComparisonOp="True" astParent="00000134A3467E10" astOperand1="00000134A3467630" astOperand2="00000134A3467570" valueType-type="bool"/>
+    <token id="00000134A3467570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str="nullptr" scope="00000134912136B0" type="name" values="00000134A91FDA60" astParent="00000134A34680B0"/>
+    <token id="00000134A3467F90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="37" str=")" scope="00000134912136B0" link="00000134A3467E10"/>
+    <token id="00000134A3466D30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="38" str="{" scope="0000013491213050" link="00000134A3468E90"/>
+    <token id="00000134A3467B70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="peer" scope="0000013491213050" type="name" astParent="00000134A3468050"/>
+    <token id="00000134A3468050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="." scope="0000013491213050" astParent="00000134A3467D50" astOperand1="00000134A3467B70" astOperand2="00000134A3466D90" originalName="->"/>
+    <token id="00000134A3466D90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="RaiseAutomationEvent" scope="0000013491213050" type="name" astParent="00000134A3468050"/>
+    <token id="00000134A3467D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="(" scope="0000013491213050" link="00000134A3466970" astOperand1="00000134A3468050" astOperand2="00000134A3466DF0"/>
+    <token id="00000134A34675D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="AutomationEvents" scope="0000013491213050" type="name" astParent="00000134A3466DF0"/>
+    <token id="00000134A3466DF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="::" scope="0000013491213050" astParent="00000134A3467D50" astOperand1="00000134A34675D0" astOperand2="00000134A3467FF0"/>
+    <token id="00000134A3467FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str="LiveRegionChanged" scope="0000013491213050" type="name" astParent="00000134A3466DF0"/>
+    <token id="00000134A3466970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str=")" scope="0000013491213050" link="00000134A3467D50"/>
+    <token id="00000134A34690D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="39" str=";" scope="0000013491213050"/>
+    <token id="00000134A3468E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="40" str="}" scope="0000013491213050" link="00000134A3466D30"/>
+    <token id="00000134A3468170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/Automation/LiveRegionHost.cpp" linenr="41" str="}" scope="00000134912136B0" link="00000134A34659B0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349124C180" type="Global">
+      <functionList>
+        <function id="00000134A213B2D0" tokenDef="00000134A34655F0" name="LiveRegionHost" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="0000013491541DA0" type="Namespace" className="CalculatorApp" bodyStart="00000134A3462DD0" bodyEnd="00000134A3468590" nestedIn="000001349124C180"/>
+    <scope id="0000013491213380" type="Namespace" className="Common" bodyStart="00000134A3463610" bodyEnd="00000134A3468350" nestedIn="0000013491541DA0"/>
+    <scope id="00000134912139E0" type="Namespace" className="Automation" bodyStart="00000134A34630D0" bodyEnd="00000134A3464270" nestedIn="0000013491213380">
+      <functionList>
+        <function id="00000134A213C290" tokenDef="00000134A347E370" name="get" type="Function"/>
+        <function id="00000134A213BA20" tokenDef="00000134A347FF90" name="IsValid" type="Function">
+          <arg nr="1" variable="000001349DA44BE0"/>
+        </function>
+        <function id="00000134A213BAB0" tokenDef="00000134A3463370" name="LiveRegionHost" type="Function"/>
+        <function id="00000134A213B7E0" tokenDef="00000134A3464810" name="IsHostAvailable" type="Function" isVirtual="true"/>
+        <function id="00000134A213BB40" tokenDef="00000134A3463EB0" name="Announce" type="Function" isVirtual="true">
+          <arg nr="1" variable="000001349DA44C50"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013491213160" type="Enum" className="AutomationNotificationKind" bodyStart="00000134A347C690" bodyEnd="00000134A347CFF0" nestedIn="00000134912139E0"/>
+    <scope id="0000013491213270" type="Enum" className="AutomationNotificationProcessing" bodyStart="00000134A347D0B0" bodyEnd="00000134A347D8F0" nestedIn="00000134912139E0"/>
+    <scope id="0000013491213490" type="Class" className="CalculatorAnnouncement" bodyStart="00000134A347F450" bodyEnd="00000134A3462BF0" nestedIn="00000134912139E0"/>
+    <scope id="00000134912135A0" type="Class" className="INarratorAnnouncementHost" bodyStart="00000134A34631F0" bodyEnd="00000134A3463850" nestedIn="00000134912139E0">
+      <functionList>
+        <function id="00000134A213C8C0" tokenDef="00000134A3462110" name="IsHostAvailable" type="Function"/>
+        <function id="00000134A213B6C0" tokenDef="00000134A3462B30" name="Announce" type="Function">
+          <arg nr="1" variable="000001349DA45740"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013491213C00" type="Function" className="LiveRegionHost" bodyStart="00000134A34664F0" bodyEnd="00000134A3465E90" nestedIn="000001349124C180"/>
+    <scope id="0000013491212F40" type="Function" className="IsHostAvailable" bodyStart="00000134A3465A10" bodyEnd="00000134A3465B90" nestedIn="000001349124C180"/>
+    <scope id="00000134912136B0" type="Function" className="Announce" bodyStart="00000134A34659B0" bodyEnd="00000134A3468170" nestedIn="000001349124C180"/>
+    <scope id="00000134912137C0" type="If" bodyStart="00000134A34671B0" bodyEnd="00000134A3467B10" nestedIn="00000134912136B0"/>
+    <scope id="0000013491213050" type="If" bodyStart="00000134A3466D30" bodyEnd="00000134A3468E90" nestedIn="00000134912136B0"/>
+  </scopes>
+  <variables>
+    <var id="000001349DA44BE0" nameToken="00000134A347EFD0" typeStartToken="00000134A3480050" typeEndToken="00000134A347ED30" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA44C50" nameToken="00000134A3464FF0" typeStartToken="00000134A34640F0" typeEndToken="00000134A3465050" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA45740" nameToken="00000134A3463730" typeStartToken="00000134A3463490" typeEndToken="00000134A3462B90" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A91FE0A0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDFC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDB40">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDA20">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FE0C0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FE0E0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FE100">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="00000134A91FE160">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="00000134A91FDC80">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A91FDC00">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A91FE140">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDCA0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FE180">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDCC0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDBA0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FD9C0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A91FDCE0">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="00000134A91FDD00">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="00000134A91FDA80">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A91FD9E0">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A91FDD20">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDAC0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A91FDD40">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FDA60">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

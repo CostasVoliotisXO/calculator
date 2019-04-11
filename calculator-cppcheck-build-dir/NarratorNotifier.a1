@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1213079839">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorNotifier.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorNotifier sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorNotifier sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorNotifier.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorNotifier.h" line="11"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Announce"/>
+    <functioncall functionName="GetValue"/>
+    <functioncall functionName="IsValid"/>
+    <functioncall functionName="MakeHost"/>
+    <functioncall functionName="NarratorAnnouncement"/>
+    <functioncall functionName="NarratorNotifier"/>
+    <functioncall functionName="NewValue"/>
+    <functioncall functionName="OnAnnouncementChanged"/>
+    <functioncall functionName="PropertyChangedCallback"/>
+    <functioncall functionName="PropertyMetadata"/>
+    <functioncall functionName="Register"/>
+    <functioncall functionName="SetAnnouncement"/>
+    <functioncall functionName="SetValue"/>
+    <functioncall functionName="announcement"/>
+    <functioncall functionName="dependencyObject"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="s_announcementProperty"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="typeid"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

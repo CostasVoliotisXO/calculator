@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2592133211">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\HistoryTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\HistoryTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Initialize" lineNumber="45"/>
+    <functiondecl functionName="Cleanup" lineNumber="53"/>
+    <functiondecl functionName="IsHistoryContainerEmpty" lineNumber="62"/>
+    <functiondecl functionName="MockOnHistoryItemClicked" lineNumber="74"/>
+    <functiondecl functionName="AddSingleHistoryItem" lineNumber="82"/>
+    <functiondecl functionName="AddMaxHistoryItems" lineNumber="100"/>
+    <functiondecl functionName="ReloadHistory" lineNumber="135"/>
+    <functiondecl functionName="ClearHistory" lineNumber="192"/>
+    <functiondecl functionName="SerializeDeSerializeHistoryItem" lineNumber="212"/>
+    <functiondecl functionName="SaveAndReloadHistory" lineNumber="228"/>
+    <functiondecl functionName="HistoryItemWithPrettyExpressions" lineNumber="263"/>
+    <functiondecl functionName="HistoryItemWithPrettyExpressionsMixedRadix" lineNumber="295"/>
+    <functiondecl functionName="HistoryItemClicked" lineNumber="326"/>
+    <functiondecl functionName="HistoryItemLoadAndContinueCalculation" lineNumber="353"/>
+    <functiondecl functionName="DisplayValueAutomationNames" lineNumber="390"/>
+    <functiondecl functionName="RadixAutomationName" lineNumber="419"/>
+    <functiondecl functionName="HistoryEmpty" lineNumber="440"/>
+    <functiondecl functionName="HistoryClearCommandWithEmptyHistory" lineNumber="449"/>
+    <functioncall functionName="AddMaxHistoryItems"/>
+    <functioncall functionName="AddSingleHistoryItem"/>
+    <functioncall functionName="App"/>
+    <functioncall functionName="BinaryDisplayValue"/>
+    <functioncall functionName="CM_SCI"/>
+    <functioncall functionName="CM_STD"/>
+    <functioncall functionName="CalculationResultAutomationName"/>
+    <functioncall functionName="Cleanup"/>
+    <functioncall functionName="ClearHistory"/>
+    <functioncall functionName="Command"/>
+    <functioncall functionName="Command1"/>
+    <functioncall functionName="Command2"/>
+    <functioncall functionName="Command3"/>
+    <functioncall functionName="Command5"/>
+    <functioncall functionName="Command6"/>
+    <functioncall functionName="Command7"/>
+    <functioncall functionName="Command8"/>
+    <functioncall functionName="CommandACOS"/>
+    <functioncall functionName="CommandADD"/>
+    <functioncall functionName="CommandASIN"/>
+    <functioncall functionName="CommandATAN"/>
+    <functioncall functionName="CommandCOS"/>
+    <functioncall functionName="CommandDEG"/>
+    <functioncall functionName="CommandEQU"/>
+    <functioncall functionName="CommandGRAD"/>
+    <functioncall functionName="CommandRAD"/>
+    <functioncall functionName="CommandSIN"/>
+    <functioncall functionName="CommandTAN"/>
+    <functioncall functionName="Data"/>
+    <functioncall functionName="DisplayValue"/>
+    <functioncall functionName="DisplayValueAutomationNames"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetCommands"/>
+    <functioncall functionName="GetForViewIndependentUse"/>
+    <functioncall functionName="GetHistoryContainerKeyHelper"/>
+    <functioncall functionName="GetHistoryItem"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="GetStringValue"/>
+    <functioncall functionName="GetTokens"/>
+    <functioncall functionName="HasKey"/>
+    <functioncall functionName="HexDisplayValue"/>
+    <functioncall functionName="HistoryClearCommandWithEmptyHistory"/>
+    <functioncall functionName="HistoryEmpty"/>
+    <functioncall functionName="HistoryItemClicked"/>
+    <functioncall functionName="HistoryItemLoadAndContinueCalculation"/>
+    <functioncall functionName="HistoryItemViewModel"/>
+    <functioncall functionName="HistoryItemWithPrettyExpressions"/>
+    <functioncall functionName="HistoryItemWithPrettyExpressionsMixedRadix"/>
+    <functioncall functionName="HistoryTests"/>
+    <functioncall functionName="HistoryViewModel"/>
+    <functioncall functionName="HttpProgress"/>
+    <functioncall functionName="Initialize"/>
+    <functioncall functionName="IsHistoryContainerEmpty"/>
+    <functioncall functionName="IsTrue"/>
+    <functioncall functionName="ItemSize"/>
+    <functioncall functionName="LocalSettings"/>
+    <functioncall functionName="MaxHistorySize"/>
+    <functioncall functionName="MockOnHistoryItemClicked"/>
+    <functioncall functionName="ModeBasic"/>
+    <functioncall functionName="ModeProgrammer"/>
+    <functioncall functionName="ModeScientific"/>
+    <functioncall functionName="OctalDisplayValue"/>
+    <functioncall functionName="OnClearCommand"/>
+    <functioncall functionName="PDF"/>
+    <functioncall functionName="RadixAutomationName"/>
+    <functioncall functionName="ReloadHistory"/>
+    <functioncall functionName="Reset"/>
+    <functioncall functionName="SaveAndReloadHistory"/>
+    <functioncall functionName="SaveHistory"/>
+    <functioncall functionName="Scientific"/>
+    <functioncall functionName="SendCommand"/>
+    <functioncall functionName="SerializeDeSerializeHistoryItem"/>
+    <functioncall functionName="SetCalculatorDisplay"/>
+    <functioncall functionName="SetExpressionDisplay"/>
+    <functioncall functionName="SetHistoryExpressionDisplay"/>
+    <functioncall functionName="SetPrimaryDisplay"/>
+    <functioncall functionName="Standard"/>
+    <functioncall functionName="StandardCalculatorViewModel"/>
+    <functioncall functionName="StringReference"/>
+    <functioncall functionName="TEST_CLASS"/>
+    <functioncall functionName="TEST_METHOD"/>
+    <functioncall functionName="TestDisplayValueAutomationNames"/>
+    <functioncall functionName="TestHistoryClearCommand"/>
+    <functioncall functionName="TestHistoryClearCommandWithEmptyHistory"/>
+    <functioncall functionName="TestHistoryEmpty"/>
+    <functioncall functionName="TestHistoryItemAddMaxItems"/>
+    <functioncall functionName="TestHistoryItemAddSingleItem"/>
+    <functioncall functionName="TestHistoryItemClicked"/>
+    <functioncall functionName="TestHistoryItemLoadAndContinueCalculation"/>
+    <functioncall functionName="TestHistoryItemWithPrettyExpressions"/>
+    <functioncall functionName="TestHistoryItemWithPrettyExpressionsMixedRadix"/>
+    <functioncall functionName="TestRadixAutomationName"/>
+    <functioncall functionName="TestReLoadHistory"/>
+    <functioncall functionName="TestSaveAndReloadHistory"/>
+    <functioncall functionName="TestSerializeDeSerializeHistoryItem"/>
+    <functioncall functionName="ToString"/>
+    <functioncall functionName="Token"/>
+    <functioncall functionName="cMode"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="command"/>
+    <functioncall functionName="commands"/>
+    <functioncall functionName="expression"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="historyContainerKey"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="itemIndex"/>
+    <functioncall functionName="long"/>
+    <functioncall functionName="m_calculatorDisplay"/>
+    <functioncall functionName="m_standardCalculatorManager"/>
+    <functioncall functionName="mode"/>
+    <functioncall functionName="nextCommand"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="spCommands"/>
+    <functioncall functionName="spTokens"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="wstring"/>
+  </FileInfo>
+</analyzerinfo>

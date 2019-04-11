@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4289095287">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class BooleanNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class BooleanNegationConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Converters\BooleanNegationConverter.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Converters\BooleanNegationConverter.h" line="14"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Value"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="boolValue"/>
+    <functioncall functionName="language"/>
+    <functioncall functionName="parameter"/>
+    <functioncall functionName="targetType"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="void"/>
+  </FileInfo>
+</analyzerinfo>

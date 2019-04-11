@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2277295202">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetInstance" lineNumber="48"/>
+    <functiondecl functionName="GetTraceLoggingProviderEnabled" lineNumber="54"/>
+    <functiondecl functionName="LaunchUIResponsive" lineNumber="66"/>
+    <functiondecl functionName="LaunchVisibleComplete" lineNumber="75"/>
+    <functiondecl functionName="ResumeUIResponsive" lineNumber="84"/>
+    <functiondecl functionName="ResumeVisibleComplete" lineNumber="93"/>
+    <functiondecl functionName="ResizeUIResponsive" lineNumber="102"/>
+    <functiondecl functionName="ResizeUIResponsive" lineNumber="107"/>
+    <functiondecl functionName="ResizeVisibleComplete" lineNumber="117"/>
+    <functiondecl functionName="ResizeVisibleComplete" lineNumber="122"/>
+    <functiondecl functionName="GetInstance" lineNumber="48"/>
+    <functiondecl functionName="GetTraceLoggingProviderEnabled" lineNumber="54"/>
+    <functiondecl functionName="LaunchUIResponsive" lineNumber="66"/>
+    <functiondecl functionName="LaunchVisibleComplete" lineNumber="75"/>
+    <functiondecl functionName="ResumeUIResponsive" lineNumber="84"/>
+    <functiondecl functionName="ResumeVisibleComplete" lineNumber="93"/>
+    <functiondecl functionName="ResizeUIResponsive" lineNumber="102"/>
+    <functiondecl functionName="ResizeUIResponsive" lineNumber="107"/>
+    <functiondecl functionName="ResizeVisibleComplete" lineNumber="117"/>
+    <functiondecl functionName="ResizeVisibleComplete" lineNumber="122"/>
+    <functioncall functionName="AddInt32"/>
+    <functioncall functionName="AddString"/>
+    <functioncall functionName="AppLifecycleLogger"/>
+    <functioncall functionName="Current"/>
+    <functioncall functionName="Enabled"/>
+    <functioncall functionName="FamilyName"/>
+    <functioncall functionName="FullName"/>
+    <functioncall functionName="GetForCurrentView"/>
+    <functioncall functionName="GetTraceLoggingProviderEnabled"/>
+    <functioncall functionName="Id"/>
+    <functioncall functionName="Information"/>
+    <functioncall functionName="LogAppLifecycleEvent"/>
+    <functioncall functionName="LogEvent"/>
+    <functioncall functionName="LoggingChannelOptions"/>
+    <functioncall functionName="LoggingOptions"/>
+    <functioncall functionName="PopulateAppInfo"/>
+    <functioncall functionName="ResizeUIResponsive"/>
+    <functioncall functionName="ResizeVisibleComplete"/>
+    <functioncall functionName="WINEVENT_KEYWORD_RESPONSE_TIME"/>
+    <functioncall functionName="appId"/>
+    <functioncall functionName="aumId"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="eventName"/>
+    <functioncall functionName="fields"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_appLifecycleProvider"/>
+    <functioncall functionName="packageFullName"/>
+    <functioncall functionName="psmKey"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="viewId"/>
+  </FileInfo>
+</analyzerinfo>

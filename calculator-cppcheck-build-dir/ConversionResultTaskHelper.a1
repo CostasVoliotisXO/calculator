@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="470218507">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="CompleteAfter" lineNumber="36"/>
+    <functioncall functionName="CompleteAfter"/>
+    <functioncall functionName="ConversionResultTaskHelper"/>
+    <functioncall functionName="cancel"/>
+    <functioncall functionName="delay"/>
+    <functioncall functionName="duration"/>
+    <functioncall functionName="functionToRun"/>
+    <functioncall functionName="get_token"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="is_canceled"/>
+    <functioncall functionName="m_storedFunction"/>
+    <functioncall functionName="milli"/>
+    <functioncall functionName="resume_after"/>
+    <functioncall functionName="then"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="timeout"/>
+    <functioncall functionName="token"/>
+    <functioncall functionName="use_current"/>
+  </FileInfo>
+</analyzerinfo>

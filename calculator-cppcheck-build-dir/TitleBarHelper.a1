@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="380871694">
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.h" line="26"/>
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" line="55"/>
+            <symbol>CalculatorApp::Common::TitleBarHelper::SetTitleBarHeight</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.h" line="27"/>
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Common\TitleBarHelper.cpp" line="60"/>
+            <symbol>CalculatorApp::Common::TitleBarHelper::SetTitleBarVisibility</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SetTitleBarHeight" lineNumber="55"/>
+    <functiondecl functionName="SetTitleBarVisibility" lineNumber="60"/>
+    <functiondecl functionName="RegisterForLayoutChanged" lineNumber="65"/>
+    <functiondecl functionName="RegisterForVisibilityChanged" lineNumber="76"/>
+    <functiondecl functionName="SetCustomTitleBar" lineNumber="87"/>
+    <functioncall functionName="Convert"/>
+    <functioncall functionName="CreateTitleBarHelper"/>
+    <functioncall functionName="GetAppViewState"/>
+    <functioncall functionName="GetCurrentView"/>
+    <functioncall functionName="Height"/>
+    <functioncall functionName="IsVisible"/>
+    <functioncall functionName="RegisterForLayoutChanged"/>
+    <functioncall functionName="RegisterForVisibilityChanged"/>
+    <functioncall functionName="SetCustomTitleBar"/>
+    <functioncall functionName="SetTitleBar"/>
+    <functioncall functionName="SetTitleBarHeight"/>
+    <functioncall functionName="SetTitleBarVisibility"/>
+    <functioncall functionName="TitleBar"/>
+    <functioncall functionName="TitleBarHelper"/>
+    <functioncall functionName="TypedEventHandler"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="coreTitleBar"/>
+    <functioncall functionName="customTitleBar"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isVisible"/>
+    <functioncall functionName="m_coreTitleBar"/>
+    <functioncall functionName="m_customTitleBar"/>
+    <functioncall functionName="make_unique"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1025027395">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.cpp" file="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.cpp" file="C:\sample repositories\calculator-master\src\Calculator\App.xaml.h" line="25"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Close"/>
+    <functioncall functionName="Content"/>
+    <functioncall functionName="DispatchedHandler"/>
+    <functioncall functionName="Dispatcher"/>
+    <functioncall functionName="Get"/>
+    <functioncall functionName="GetApplicationViewIdForWindow"/>
+    <functioncall functionName="GetCurrentView"/>
+    <functioncall functionName="GetForCurrentThread"/>
+    <functioncall functionName="GetForCurrentView"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetViewId"/>
+    <functioncall functionName="InitializeFrameService"/>
+    <functioncall functionName="InvalidArgumentException"/>
+    <functioncall functionName="InvokeWindowClosingHandlers"/>
+    <functioncall functionName="IsMain"/>
+    <functioncall functionName="LogCoreWindowWasNull"/>
+    <functioncall functionName="LogOnViewClosed"/>
+    <functioncall functionName="LogViewClosingTelemetry"/>
+    <functioncall functionName="Low"/>
+    <functioncall functionName="Name"/>
+    <functioncall functionName="OnClosed"/>
+    <functioncall functionName="OnConsolidated"/>
+    <functioncall functionName="OnWindowClosed"/>
+    <functioncall functionName="RemoveSecondaryWindow"/>
+    <functioncall functionName="RemoveWindow"/>
+    <functioncall functionName="RemoveWindowFromMap"/>
+    <functioncall functionName="Resolve"/>
+    <functioncall functionName="RunAsync"/>
+    <functioncall functionName="StopProcessEvents"/>
+    <functioncall functionName="TryResolveRuntimeWindowService"/>
+    <functioncall functionName="TypedEventHandler"/>
+    <functioncall functionName="WindowFrameService"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="closingHandlersCompletedEvent"/>
+    <functioncall functionName="coreWindow"/>
+    <functioncall functionName="create_task"/>
+    <functioncall functionName="createdByUs"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="frame"/>
+    <functioncall functionName="frameService"/>
+    <functioncall functionName="handler"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="m_coreDispatcher"/>
+    <functioncall functionName="m_currentWindow"/>
+    <functioncall functionName="m_frame"/>
+    <functioncall functionName="m_frameOpenedInWindow"/>
+    <functioncall functionName="m_frameService"/>
+    <functioncall functionName="m_onWindowClosingHandlers"/>
+    <functioncall functionName="m_parent"/>
+    <functioncall functionName="m_viewId"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="onWindowClosingHandler"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="sender"/>
+    <functioncall functionName="service"/>
+    <functioncall functionName="serviceId"/>
+    <functioncall functionName="set"/>
+    <functioncall functionName="success"/>
+    <functioncall functionName="that"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="viewFrame"/>
+  </FileInfo>
+</analyzerinfo>

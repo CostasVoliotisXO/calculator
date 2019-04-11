@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2021045192">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorScientificAngleButtons sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorScientificAngleButtons sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorScientificAngleButtons.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\CalculatorScientificAngleButtons.xaml.h" line="17"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ButtonPressed"/>
+    <functioncall functionName="COMMAND_FOR_METHOD"/>
+    <functioncall functionName="CalculatorScientificAngleButtons"/>
+    <functioncall functionName="Collapsed"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="Degree"/>
+    <functioncall functionName="Focus"/>
+    <functioncall functionName="FtoEButtonToggled"/>
+    <functioncall functionName="GetApplicationViewIdForWindow"/>
+    <functioncall functionName="GetForCurrentThread"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GoToState"/>
+    <functioncall functionName="Grads"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="LogAngleButtonUsed"/>
+    <functioncall functionName="LogHypButtonUsed"/>
+    <functioncall functionName="OnAngleButtonPressed"/>
+    <functioncall functionName="Programmatic"/>
+    <functioncall functionName="Radians"/>
+    <functioncall functionName="SwitchAngleType"/>
+    <functioncall functionName="Visible"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="commandParameter"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_isErrorVisualState"/>
+    <functioncall functionName="newState"/>
+    <functioncall functionName="safe_cast"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1868828454">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="DisplayError"/>
+    <functioncall functionName="Integer"/>
+    <functioncall functionName="Pow"/>
+    <functioncall functionName="Root"/>
+    <functioncall functionName="ToUInt64_t"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="dwErrCode"/>
+    <functioncall functionName="fMsb"/>
+    <functioncall functionName="iNumeratorSign"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="lhs"/>
+    <functioncall functionName="m_fIntegerMode"/>
+    <functioncall functionName="m_numwidth"/>
+    <functioncall functionName="operation"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="rhs"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="tempRat"/>
+  </FileInfo>
+</analyzerinfo>

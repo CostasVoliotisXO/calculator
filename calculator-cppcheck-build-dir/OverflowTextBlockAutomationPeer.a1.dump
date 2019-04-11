@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Controls/OverflowTextBlockAutomationPeer.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Controls/OverflowTextBlockAutomationPeer.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;Controls/OverflowTextBlock.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="#"/>
+    <tok fileIndex="0" linenr="6" str="include"/>
+    <tok fileIndex="0" linenr="6" str="&quot;OverflowTextBlockAutomationPeer.h&quot;"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="UI"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Xaml"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Automation"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Peers"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Windows"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Foundation"/>
+    <tok fileIndex="0" linenr="9" str="::"/>
+    <tok fileIndex="0" linenr="9" str="Collections"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Controls"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="13" str="OverflowTextBlockAutomationPeer"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="OverflowTextBlockAutomationPeer"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="OverflowTextBlock"/>
+    <tok fileIndex="0" linenr="13" str="^"/>
+    <tok fileIndex="0" linenr="13" str="owner"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="13" str=":"/>
+    <tok fileIndex="0" linenr="14" str="FrameworkElementAutomationPeer"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="owner"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="15" str="}"/>
+    <tok fileIndex="0" linenr="17" str="AutomationControlType"/>
+    <tok fileIndex="0" linenr="17" str="OverflowTextBlockAutomationPeer"/>
+    <tok fileIndex="0" linenr="17" str="::"/>
+    <tok fileIndex="0" linenr="17" str="GetAutomationControlTypeCore"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="18" str="{"/>
+    <tok fileIndex="0" linenr="19" str="return"/>
+    <tok fileIndex="0" linenr="19" str="AutomationControlType"/>
+    <tok fileIndex="0" linenr="19" str="::"/>
+    <tok fileIndex="0" linenr="19" str="Text"/>
+    <tok fileIndex="0" linenr="19" str=";"/>
+    <tok fileIndex="0" linenr="20" str="}"/>
+    <tok fileIndex="0" linenr="22" str="IVector"/>
+    <tok fileIndex="0" linenr="22" str="&lt;"/>
+    <tok fileIndex="0" linenr="22" str="AutomationPeer"/>
+    <tok fileIndex="0" linenr="22" str="^"/>
+    <tok fileIndex="0" linenr="22" str="&gt;"/>
+    <tok fileIndex="0" linenr="22" str="^"/>
+    <tok fileIndex="0" linenr="22" str="OverflowTextBlockAutomationPeer"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="GetChildrenCore"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="23" str="{"/>
+    <tok fileIndex="0" linenr="24" str="return"/>
+    <tok fileIndex="0" linenr="24" str="nullptr"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="}"/>
+    <tok fileIndex="0" linenr="26" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+</dumps>

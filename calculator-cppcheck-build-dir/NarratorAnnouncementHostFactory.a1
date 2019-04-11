@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="428295932">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NotificationHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NotificationHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NotificationHost.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class LiveRegionHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class LiveRegionHost sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\LiveRegionHost.h" line="19"/>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;NarratorAnnouncementHostFactory::Initialize&apos;" verbose="Unused private function: &apos;NarratorAnnouncementHostFactory::Initialize&apos;" cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncementHostFactory.h" line="22"/>
+            <symbol>NarratorAnnouncementHostFactory::Initialize</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Initialize" lineNumber="17"/>
+    <functiondecl functionName="RegisterHosts" lineNumber="31"/>
+    <functioncall functionName="GetHostProducer"/>
+    <functioncall functionName="Initialize"/>
+    <functioncall functionName="IsHostAvailable"/>
+    <functioncall functionName="LiveRegionHost"/>
+    <functioncall functionName="MakeHost"/>
+    <functioncall functionName="NarratorAnnouncement"/>
+    <functioncall functionName="NotificationHost"/>
+    <functioncall functionName="RegisterHosts"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="s_hosts"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3898496052">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetInstance" lineNumber="17"/>
+    <functioncall functionName="AppResourceProvider"/>
+    <functioncall functionName="GetForViewIndependentUse"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="key"/>
+  </FileInfo>
+</analyzerinfo>

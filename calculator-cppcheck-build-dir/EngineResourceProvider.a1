@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="976401454">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetCEngineString" lineNumber="20"/>
+    <functioncall functionName="Begin"/>
+    <functioncall functionName="EngineResourceProvider"/>
+    <functioncall functionName="GetDecimalSeparatorStr"/>
+    <functioncall functionName="GetForViewIndependentUse"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetNumberGroupingSeparatorStr"/>
+    <functioncall functionName="GetNumberGroupingStr"/>
+    <functioncall functionName="GetString"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="compare"/>
+    <functioncall functionName="idRef"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="override"/>
+  </FileInfo>
+</analyzerinfo>

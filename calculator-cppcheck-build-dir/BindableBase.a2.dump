@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;BindableBase.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Common"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Platform"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="UI"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Xaml"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Data"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="12" str="/// &lt;summary&gt;"/>
+    <tok fileIndex="0" linenr="13" str="/// Notifies listeners that a property value has changed."/>
+    <tok fileIndex="0" linenr="14" str="/// &lt;/summary&gt;"/>
+    <tok fileIndex="0" linenr="15" str="/// &lt;param name=&quot;propertyName&quot;&gt;Name of the property used to notify listeners.&lt;/param&gt;"/>
+    <tok fileIndex="0" linenr="16" str="void"/>
+    <tok fileIndex="0" linenr="16" str="BindableBase"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="OnPropertyChanged"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="String"/>
+    <tok fileIndex="0" linenr="16" str="^"/>
+    <tok fileIndex="0" linenr="16" str="propertyName"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="PropertyChanged"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="this"/>
+    <tok fileIndex="0" linenr="18" str=","/>
+    <tok fileIndex="0" linenr="18" str="ref"/>
+    <tok fileIndex="0" linenr="18" str="new"/>
+    <tok fileIndex="0" linenr="18" str="PropertyChangedEventArgs"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="propertyName"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="19" str="}"/>
+    <tok fileIndex="0" linenr="21" str="Windows"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="UI"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="Xaml"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="Data"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="ICustomProperty"/>
+    <tok fileIndex="0" linenr="21" str="^"/>
+    <tok fileIndex="0" linenr="21" str="BindableBase"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="GetCustomProperty"/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str="Platform"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="String"/>
+    <tok fileIndex="0" linenr="21" str="^"/>
+    <tok fileIndex="0" linenr="21" str="name"/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="22" str="{"/>
+    <tok fileIndex="0" linenr="23" str="return"/>
+    <tok fileIndex="0" linenr="23" str="nullptr"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="}"/>
+    <tok fileIndex="0" linenr="26" str="Windows"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="UI"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="Xaml"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="Data"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="ICustomProperty"/>
+    <tok fileIndex="0" linenr="26" str="^"/>
+    <tok fileIndex="0" linenr="26" str="BindableBase"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="GetIndexedProperty"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="Platform"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="String"/>
+    <tok fileIndex="0" linenr="26" str="^"/>
+    <tok fileIndex="0" linenr="26" str="name"/>
+    <tok fileIndex="0" linenr="26" str=","/>
+    <tok fileIndex="0" linenr="26" str="Windows"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="UI"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="Xaml"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="Interop"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="TypeName"/>
+    <tok fileIndex="0" linenr="26" str="type"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="27" str="{"/>
+    <tok fileIndex="0" linenr="28" str="return"/>
+    <tok fileIndex="0" linenr="28" str="nullptr"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="29" str="}"/>
+    <tok fileIndex="0" linenr="31" str="Platform"/>
+    <tok fileIndex="0" linenr="31" str="::"/>
+    <tok fileIndex="0" linenr="31" str="String"/>
+    <tok fileIndex="0" linenr="31" str="^"/>
+    <tok fileIndex="0" linenr="31" str="BindableBase"/>
+    <tok fileIndex="0" linenr="31" str="::"/>
+    <tok fileIndex="0" linenr="31" str="GetStringRepresentation"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="32" str="{"/>
+    <tok fileIndex="0" linenr="33" str="return"/>
+    <tok fileIndex="0" linenr="33" str="this"/>
+    <tok fileIndex="0" linenr="33" str="-&gt;"/>
+    <tok fileIndex="0" linenr="33" str="ToString"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="34" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="5" str="#include &quot;BindableBase.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B15F500" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="6" str="namespace" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B15ECC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="6" str="CalculatorApp" scope="0000013496CA92B0" type="name" astParent="000001349B15E780"/>
+    <token id="000001349B15E780" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="7" str="{" scope="0000013496CA94D0" link="000001349B1626E0" astOperand1="000001349B15ECC0" astOperand2="000001349B15E240"/>
+    <token id="000001349B15ED20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="8" str="namespace" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B15E240" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="8" str="Common" scope="0000013496CA94D0" type="name" astParent="000001349B15E780"/>
+    <token id="000001349B15F560" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="9" str="{" scope="0000013496CA8B40" link="000001349B162680"/>
+    <token id="000001349B15E360" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="[" scope="0000013496CA8B40" link="000001349B15F620"/>
+    <token id="000001349B15F6E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="Windows" scope="0000013496CA8B40" type="name" astParent="000001349B15EAE0"/>
+    <token id="000001349B15EAE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="::" scope="0000013496CA8B40" astParent="000001349B15F140" astOperand1="000001349B15F6E0" astOperand2="000001349B15E3C0"/>
+    <token id="000001349B15E3C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="Foundation" scope="0000013496CA8B40" type="name" astParent="000001349B15EAE0"/>
+    <token id="000001349B15F140" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="::" scope="0000013496CA8B40" astParent="000001349B15EF60" astOperand1="000001349B15EAE0" astOperand2="000001349B15F8C0"/>
+    <token id="000001349B15F8C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="Metadata" scope="0000013496CA8B40" type="name" astParent="000001349B15F140"/>
+    <token id="000001349B15EF60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="::" scope="0000013496CA8B40" astOperand1="000001349B15F140" astOperand2="000001349B15F860"/>
+    <token id="000001349B15F860" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="WebHostHidden" scope="0000013496CA8B40" type="name" astParent="000001349B15EF60"/>
+    <token id="000001349B15F620" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="13" str="]" scope="0000013496CA8B40" link="000001349B15E360"/>
+    <token id="000001349B15E960" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="public" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B15E1E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="ref" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B15E8A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="class" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B15F1A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="BindableBase" scope="0000013496CA8B40" type="name" type-scope="0000013496CA8700"/>
+    <token id="000001349B15E120" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str=":" scope="0000013496CA8B40"/>
+    <token id="000001349B15EEA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Windows" scope="0000013496CA8B40" type="name" astParent="000001349B15F4A0"/>
+    <token id="000001349B15F4A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E9C0" astOperand1="000001349B15EEA0" astOperand2="000001349B15EA20"/>
+    <token id="000001349B15EA20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="UI" scope="0000013496CA8B40" type="name" astParent="000001349B15F4A0"/>
+    <token id="000001349B15E9C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15EF00" astOperand1="000001349B15F4A0" astOperand2="000001349B15E420"/>
+    <token id="000001349B15E420" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Xaml" scope="0000013496CA8B40" type="name" astParent="000001349B15E9C0"/>
+    <token id="000001349B15EF00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E180" astOperand1="000001349B15E9C0" astOperand2="000001349B15E4E0"/>
+    <token id="000001349B15E4E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="DependencyObject" scope="0000013496CA8B40" type="name" astParent="000001349B15EF00"/>
+    <token id="000001349B15E180" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="," scope="0000013496CA8B40" astParent="000001349B15F320" astOperand1="000001349B15EF00" astOperand2="000001349B15EFC0"/>
+    <token id="000001349B15EC00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Windows" scope="0000013496CA8B40" type="name" astParent="000001349B15F080"/>
+    <token id="000001349B15F080" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E480" astOperand1="000001349B15EC00" astOperand2="000001349B15E2A0"/>
+    <token id="000001349B15E2A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="UI" scope="0000013496CA8B40" type="name" astParent="000001349B15F080"/>
+    <token id="000001349B15E480" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15F020" astOperand1="000001349B15F080" astOperand2="000001349B15EE40"/>
+    <token id="000001349B15EE40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Xaml" scope="0000013496CA8B40" type="name" astParent="000001349B15E480"/>
+    <token id="000001349B15F020" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15EFC0" astOperand1="000001349B15E480" astOperand2="000001349B15E600"/>
+    <token id="000001349B15E600" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Data" scope="0000013496CA8B40" type="name" astParent="000001349B15F020"/>
+    <token id="000001349B15EFC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E180" astOperand1="000001349B15F020" astOperand2="000001349B15E540"/>
+    <token id="000001349B15E540" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="INotifyPropertyChanged" scope="0000013496CA8B40" type="name" astParent="000001349B15EFC0"/>
+    <token id="000001349B15F320" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="," scope="0000013496CA8B40" astOperand1="000001349B15E180" astOperand2="000001349B15EBA0"/>
+    <token id="000001349B15E6C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Windows" scope="0000013496CA8B40" type="name" astParent="000001349B15E720"/>
+    <token id="000001349B15E720" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E7E0" astOperand1="000001349B15E6C0" astOperand2="000001349B15EA80"/>
+    <token id="000001349B15EA80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="UI" scope="0000013496CA8B40" type="name" astParent="000001349B15E720"/>
+    <token id="000001349B15E7E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15E900" astOperand1="000001349B15E720" astOperand2="000001349B15E840"/>
+    <token id="000001349B15E840" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Xaml" scope="0000013496CA8B40" type="name" astParent="000001349B15E7E0"/>
+    <token id="000001349B15E900" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15F680" astOperand1="000001349B15E7E0" astOperand2="000001349B15EB40"/>
+    <token id="000001349B15EB40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="Data" scope="0000013496CA8B40" type="name" astParent="000001349B15E900"/>
+    <token id="000001349B15F680" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="::" scope="0000013496CA8B40" astParent="000001349B15EBA0" astOperand1="000001349B15E900" astOperand2="000001349B15F200"/>
+    <token id="000001349B15F200" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="14" str="ICustomPropertyProvider" scope="0000013496CA8B40" type="name" astParent="000001349B15F680"/>
+    <token id="000001349B15EBA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="15" str="{" scope="0000013496CA8700" link="000001349B1622C0" astParent="000001349B15F320" astOperand1="000001349B15F680" astOperand2="000001349B15FB00"/>
+    <token id="000001349B15EC60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="16" str="public:" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B15EDE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B15F260" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="event" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B15F2C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B15F380"/>
+    <token id="000001349B15F380" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="::" scope="0000013496CA8700" astParent="000001349B15F440" astOperand1="000001349B15F2C0" astOperand2="000001349B15F3E0"/>
+    <token id="000001349B15F3E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B15F380"/>
+    <token id="000001349B15F440" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="::" scope="0000013496CA8700" astParent="000001349B15F7A0" astOperand1="000001349B15F380" astOperand2="000001349B15F740"/>
+    <token id="000001349B15F740" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B15F440"/>
+    <token id="000001349B15F7A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="::" scope="0000013496CA8700" astParent="000001349B15FF20" astOperand1="000001349B15F440" astOperand2="000001349B15F800"/>
+    <token id="000001349B15F800" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="Data" scope="0000013496CA8700" type="name" astParent="000001349B15F7A0"/>
+    <token id="000001349B15FF20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="::" scope="0000013496CA8700" astParent="000001349B15FB00" astOperand1="000001349B15F7A0" astOperand2="000001349B161000"/>
+    <token id="000001349B161000" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="PropertyChangedEventHandler" scope="0000013496CA8700" type="name" astParent="000001349B15FF20"/>
+    <token id="000001349B15FB00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="^" scope="0000013496CA8700" type="op" astParent="000001349B15EBA0" astOperand1="000001349B15FF20" astOperand2="000001349B160520"/>
+    <token id="000001349B160520" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str="PropertyChanged" scope="0000013496CA8700" type="name" astParent="000001349B15FB00"/>
+    <token id="000001349B1610C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="17" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B15FE00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="19" str="public:" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B160880" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B1600A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B160580"/>
+    <token id="000001349B160580" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="::" scope="0000013496CA8700" astParent="000001349B160100" astOperand1="000001349B1600A0" astOperand2="000001349B15FF80"/>
+    <token id="000001349B15FF80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B160580"/>
+    <token id="000001349B160100" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="::" scope="0000013496CA8700" astParent="000001349B15FD40" astOperand1="000001349B160580" astOperand2="000001349B15FEC0"/>
+    <token id="000001349B15FEC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B160100"/>
+    <token id="000001349B15FD40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="::" scope="0000013496CA8700" astParent="000001349B15FA40" astOperand1="000001349B160100" astOperand2="000001349B15FE60"/>
+    <token id="000001349B15FE60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="Data" scope="0000013496CA8700" type="name" astParent="000001349B15FD40"/>
+    <token id="000001349B15FA40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="::" scope="0000013496CA8700" astParent="000001349B15F920" astOperand1="000001349B15FD40" astOperand2="000001349B160D00"/>
+    <token id="000001349B160D00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="ICustomProperty" scope="0000013496CA8700" type="name" astParent="000001349B15FA40"/>
+    <token id="000001349B15F920" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="^" scope="0000013496CA8700" type="op" astOperand1="000001349B15FA40" astOperand2="000001349B15FB60"/>
+    <token id="000001349B15FDA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="GetCustomProperty" scope="0000013496CA8700" type="name" astParent="000001349B15FB60"/>
+    <token id="000001349B15FB60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="(" scope="0000013496CA8700" link="000001349B160CA0" astParent="000001349B15F920" astOperand1="000001349B15FDA0" astOperand2="000001349B160460"/>
+    <token id="000001349B1603A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="Platform" scope="0000013496CA8700" type="name" astParent="000001349B160C40"/>
+    <token id="000001349B160C40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="::" scope="0000013496CA8700" astParent="000001349B160460" astOperand1="000001349B1603A0" astOperand2="000001349B1601C0"/>
+    <token id="000001349B1601C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="String" scope="0000013496CA8700" type="name" astParent="000001349B160C40"/>
+    <token id="000001349B160460" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="^" scope="0000013496CA8700" type="op" astParent="000001349B15FB60" astOperand1="000001349B160C40" astOperand2="000001349B160280"/>
+    <token id="000001349B160280" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str="name" scope="0000013496CA8700" type="name" astParent="000001349B160460"/>
+    <token id="000001349B160CA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str=")" scope="0000013496CA8700" link="000001349B15FB60"/>
+    <token id="000001349B160B80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="21" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B15FFE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B15FBC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B1607C0"/>
+    <token id="000001349B1607C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B1604C0" astOperand1="000001349B15FBC0" astOperand2="000001349B160400"/>
+    <token id="000001349B160400" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B1607C0"/>
+    <token id="000001349B1604C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160040" astOperand1="000001349B1607C0" astOperand2="000001349B160220"/>
+    <token id="000001349B160220" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B1604C0"/>
+    <token id="000001349B160040" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160D60" astOperand1="000001349B1604C0" astOperand2="000001349B1609A0"/>
+    <token id="000001349B1609A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Data" scope="0000013496CA8700" type="name" astParent="000001349B160040"/>
+    <token id="000001349B160D60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B1605E0" astOperand1="000001349B160040" astOperand2="000001349B1602E0"/>
+    <token id="000001349B1602E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="ICustomProperty" scope="0000013496CA8700" type="name" astParent="000001349B160D60"/>
+    <token id="000001349B1605E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="^" scope="0000013496CA8700" type="op" astOperand1="000001349B160D60" astOperand2="000001349B160340"/>
+    <token id="000001349B160DC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="GetIndexedProperty" scope="0000013496CA8700" type="name" astParent="000001349B160340"/>
+    <token id="000001349B160340" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="(" scope="0000013496CA8700" link="000001349B161720" astParent="000001349B1605E0" astOperand1="000001349B160DC0" astOperand2="000001349B160760"/>
+    <token id="000001349B160820" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Platform" scope="0000013496CA8700" type="name" astParent="000001349B160E80"/>
+    <token id="000001349B160E80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160640" astOperand1="000001349B160820" astOperand2="000001349B160EE0"/>
+    <token id="000001349B160EE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="String" scope="0000013496CA8700" type="name" astParent="000001349B160E80"/>
+    <token id="000001349B160640" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="^" scope="0000013496CA8700" type="op" astParent="000001349B160760" astOperand1="000001349B160E80" astOperand2="000001349B1606A0"/>
+    <token id="000001349B1606A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="name" scope="0000013496CA8700" type="name" astParent="000001349B160640"/>
+    <token id="000001349B160760" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="," scope="0000013496CA8700" astParent="000001349B160340" astOperand1="000001349B160640" astOperand2="000001349B160B20"/>
+    <token id="000001349B1608E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B160940"/>
+    <token id="000001349B160940" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160A60" astOperand1="000001349B1608E0" astOperand2="000001349B160F40"/>
+    <token id="000001349B160F40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B160940"/>
+    <token id="000001349B160A60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160AC0" astOperand1="000001349B160940" astOperand2="000001349B15F980"/>
+    <token id="000001349B15F980" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B160A60"/>
+    <token id="000001349B160AC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160B20" astOperand1="000001349B160A60" astOperand2="000001349B15FAA0"/>
+    <token id="000001349B15FAA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="Interop" scope="0000013496CA8700" type="name" astParent="000001349B160AC0"/>
+    <token id="000001349B160B20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="::" scope="0000013496CA8700" astParent="000001349B160760" astOperand1="000001349B160AC0" astOperand2="000001349B15FC80"/>
+    <token id="000001349B160BE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="TypeName" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B15FC80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str="type" scope="0000013496CA8700" type="name" varId="1" astParent="000001349B160B20"/>
+    <token id="000001349B161720" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str=")" scope="0000013496CA8700" link="000001349B160340"/>
+    <token id="000001349B161A20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="22" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B1616C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161C00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="Platform" scope="0000013496CA8700" type="name" astParent="000001349B161A80"/>
+    <token id="000001349B161A80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="::" scope="0000013496CA8700" astParent="000001349B161780" astOperand1="000001349B161C00" astOperand2="000001349B161F00"/>
+    <token id="000001349B161F00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="String" scope="0000013496CA8700" type="name" astParent="000001349B161A80"/>
+    <token id="000001349B161780" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="^" scope="0000013496CA8700" type="op" astOperand1="000001349B161A80" astOperand2="000001349B161C60"/>
+    <token id="000001349B161240" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="GetStringRepresentation" scope="0000013496CA8700" type="name" astParent="000001349B161C60"/>
+    <token id="000001349B161C60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str="(" scope="0000013496CA8700" link="000001349B1628C0" astParent="000001349B161780" astOperand1="000001349B161240"/>
+    <token id="000001349B1628C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str=")" scope="0000013496CA8700" link="000001349B161C60"/>
+    <token id="000001349B1621A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="23" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B1617E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="property" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161840" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B161AE0"/>
+    <token id="000001349B161AE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="::" scope="0000013496CA8700" astParent="000001349B162140" astOperand1="000001349B161840" astOperand2="000001349B1611E0"/>
+    <token id="000001349B1611E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B161AE0"/>
+    <token id="000001349B162140" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="::" scope="0000013496CA8700" astParent="000001349B1614E0" astOperand1="000001349B161AE0" astOperand2="000001349B161180"/>
+    <token id="000001349B161180" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B162140"/>
+    <token id="000001349B1614E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="::" scope="0000013496CA8700" astParent="000001349B161540" astOperand1="000001349B162140" astOperand2="000001349B1623E0"/>
+    <token id="000001349B1623E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="Interop" scope="0000013496CA8700" type="name" astParent="000001349B1614E0"/>
+    <token id="000001349B161540" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="::" scope="0000013496CA8700" astParent="000001349B1627A0" astOperand1="000001349B1614E0" astOperand2="000001349B161D20"/>
+    <token id="000001349B161300" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="TypeName" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161D20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="25" str="Type" scope="0000013496CA8700" type="name" astParent="000001349B161540"/>
+    <token id="000001349B1627A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="26" str="{" scope="0000013496CA8700" link="000001349B1625C0" astOperand1="000001349B161540" astOperand2="000001349B162500"/>
+    <token id="000001349B161600" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B1615A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="Windows" scope="0000013496CA8700" type="name" astParent="000001349B162080"/>
+    <token id="000001349B162080" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="::" scope="0000013496CA8700" astParent="000001349B161D80" astOperand1="000001349B1615A0" astOperand2="000001349B1618A0"/>
+    <token id="000001349B1618A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="UI" scope="0000013496CA8700" type="name" astParent="000001349B162080"/>
+    <token id="000001349B161D80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="::" scope="0000013496CA8700" astParent="000001349B161960" astOperand1="000001349B162080" astOperand2="000001349B161900"/>
+    <token id="000001349B161900" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="Xaml" scope="0000013496CA8700" type="name" astParent="000001349B161D80"/>
+    <token id="000001349B161960" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="::" scope="0000013496CA8700" astParent="000001349B161660" astOperand1="000001349B161D80" astOperand2="000001349B1619C0"/>
+    <token id="000001349B1619C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="Interop" scope="0000013496CA8700" type="name" astParent="000001349B161960"/>
+    <token id="000001349B161660" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="::" scope="0000013496CA8700" astParent="000001349B162500" astOperand1="000001349B161960" astOperand2="000001349B1612A0"/>
+    <token id="000001349B161B40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="TypeName" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B1612A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="get" scope="0000013496CA8700" type="name" function="000001349138AFC0" astParent="000001349B161660"/>
+    <token id="000001349B162500" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="(" scope="0000013496CA8700" link="000001349B162800" astParent="000001349B1627A0" astOperand1="000001349B161660"/>
+    <token id="000001349B162800" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str=")" scope="0000013496CA8700" link="000001349B162500"/>
+    <token id="000001349B162380" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="{" scope="0000013496CA8C50" link="000001349B161120"/>
+    <token id="000001349B161CC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="return" scope="0000013496CA8C50" type="name" astOperand1="000001349B161BA0"/>
+    <token id="000001349B1624A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="this" scope="0000013496CA8C50" type="name" astParent="000001349B162320"/>
+    <token id="000001349B162320" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="." scope="0000013496CA8C50" astParent="000001349B161BA0" astOperand1="000001349B1624A0" astOperand2="000001349B162440" originalName="->"/>
+    <token id="000001349B162440" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="GetType" scope="0000013496CA8C50" type="name" astParent="000001349B162320"/>
+    <token id="000001349B161BA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="(" scope="0000013496CA8C50" link="000001349B161F60" astParent="000001349B161CC0" astOperand1="000001349B162320"/>
+    <token id="000001349B161F60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str=")" scope="0000013496CA8C50" link="000001349B161BA0"/>
+    <token id="000001349B162860" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str=";" scope="0000013496CA8C50"/>
+    <token id="000001349B161120" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="27" str="}" scope="0000013496CA8C50" link="000001349B162380"/>
+    <token id="000001349B1625C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="28" str="}" scope="0000013496CA8700" link="000001349B1627A0"/>
+    <token id="000001349B161DE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="31" str="protected:" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161E40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="virtual" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161EA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="void" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B161360" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="OnPropertyChanged" scope="0000013496CA8700" type="name" function="000001349138BC20" astParent="000001349B1620E0"/>
+    <token id="000001349B1620E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="(" scope="0000013496CA8700" link="000001349B161480" astOperand1="000001349B161360" astOperand2="000001349B162620" valueType-type="void"/>
+    <token id="000001349B1613C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="Platform" scope="0000013496CA8700" type="name" astParent="000001349B161FC0"/>
+    <token id="000001349B161FC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="::" scope="0000013496CA8700" astParent="000001349B162620" astOperand1="000001349B1613C0" astOperand2="000001349B161420"/>
+    <token id="000001349B161420" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="String" scope="0000013496CA8700" type="name" astParent="000001349B161FC0"/>
+    <token id="000001349B162620" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="^" scope="0000013496CA8700" type="op" astParent="000001349B1620E0" astOperand1="000001349B161FC0" astOperand2="000001349B162200"/>
+    <token id="000001349B162200" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str="propertyName" scope="0000013496CA8700" type="name" astParent="000001349B162620"/>
+    <token id="000001349B161480" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str=")" scope="0000013496CA8700" link="000001349B1620E0"/>
+    <token id="000001349B162260" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="32" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B1622C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="33" str="}" scope="0000013496CA8700" link="000001349B15EBA0"/>
+    <token id="000001349B162560" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="33" str=";" scope="0000013496CA8B40"/>
+    <token id="000001349B162680" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="34" str="}" scope="0000013496CA8B40" link="000001349B15F560"/>
+    <token id="000001349B1626E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.h" linenr="35" str="}" scope="0000013496CA94D0" link="000001349B15E780"/>
+    <token id="000001349B162740" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str="using" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B163520" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str="namespace" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B1635E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str="CalculatorApp" scope="0000013496CA92B0" type="name" astParent="000001349B163460"/>
+    <token id="000001349B163460" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str="::" scope="0000013496CA92B0" astOperand1="000001349B1635E0" astOperand2="000001349B1640C0"/>
+    <token id="000001349B1640C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str="Common" scope="0000013496CA92B0" type="name" astParent="000001349B163460"/>
+    <token id="000001349B1639A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="7" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B162EC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="9" str="using" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B162F20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="9" str="namespace" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B1632E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="9" str="Platform" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B1629E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="9" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B163940" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="using" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B162980" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="namespace" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B162CE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="Windows" scope="0000013496CA92B0" type="name" astParent="000001349B163BE0"/>
+    <token id="000001349B163BE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="::" scope="0000013496CA92B0" astParent="000001349B162B00" astOperand1="000001349B162CE0" astOperand2="000001349B162D40"/>
+    <token id="000001349B162D40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="UI" scope="0000013496CA92B0" type="name" astParent="000001349B163BE0"/>
+    <token id="000001349B162B00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="::" scope="0000013496CA92B0" astParent="000001349B163FA0" astOperand1="000001349B163BE0" astOperand2="000001349B163580"/>
+    <token id="000001349B163580" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="Xaml" scope="0000013496CA92B0" type="name" astParent="000001349B162B00"/>
+    <token id="000001349B163FA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="::" scope="0000013496CA92B0" astOperand1="000001349B162B00" astOperand2="000001349B162E00"/>
+    <token id="000001349B162E00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str="Data" scope="0000013496CA92B0" type="name" astParent="000001349B163FA0"/>
+    <token id="000001349B162DA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="10" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B163880" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="void" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B1630A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="BindableBase" scope="0000013496CA92B0" type="name" astParent="000001349B163640"/>
+    <token id="000001349B163640" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="::" scope="0000013496CA92B0" astParent="000001349B1631C0" astOperand1="000001349B1630A0" astOperand2="000001349B163C40"/>
+    <token id="000001349B163C40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="OnPropertyChanged" scope="0000013496CA92B0" type="name" astParent="000001349B163640"/>
+    <token id="000001349B1631C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="(" scope="0000013496CA92B0" link="000001349B162F80" astOperand1="000001349B163640" astOperand2="000001349B164000"/>
+    <token id="000001349B163340" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="String" scope="0000013496CA92B0" type="name" astParent="000001349B164000"/>
+    <token id="000001349B164000" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="^" scope="0000013496CA92B0" type="op" astParent="000001349B1631C0" astOperand1="000001349B163340" astOperand2="000001349B163D60"/>
+    <token id="000001349B163D60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str="propertyName" scope="0000013496CA92B0" type="name" astParent="000001349B164000"/>
+    <token id="000001349B162F80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="16" str=")" scope="0000013496CA92B0" link="000001349B1631C0"/>
+    <token id="000001349B164060" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="17" str="{" scope="0000013496CA91A0" link="000001349B163820"/>
+    <token id="000001349B1636A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="PropertyChanged" scope="0000013496CA91A0" type="name" astParent="000001349B162C20"/>
+    <token id="000001349B162C20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="(" scope="0000013496CA91A0" link="000001349B162E60" astOperand1="000001349B1636A0" astOperand2="000001349B1633A0"/>
+    <token id="000001349B162B60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="this" scope="0000013496CA91A0" type="name" astParent="000001349B1633A0"/>
+    <token id="000001349B1633A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="," scope="0000013496CA91A0" astParent="000001349B162C20" astOperand1="000001349B162B60" astOperand2="000001349B162FE0"/>
+    <token id="000001349B163CA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="ref" scope="0000013496CA91A0" type="name"/>
+    <token id="000001349B163160" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="new" scope="0000013496CA91A0" type="name"/>
+    <token id="000001349B163760" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="PropertyChangedEventArgs" scope="0000013496CA91A0" type="name" astParent="000001349B162FE0"/>
+    <token id="000001349B162FE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="(" scope="0000013496CA91A0" link="000001349B1637C0" astParent="000001349B1633A0" astOperand1="000001349B163760" astOperand2="000001349B162A40"/>
+    <token id="000001349B162A40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str="propertyName" scope="0000013496CA91A0" type="name" astParent="000001349B162FE0"/>
+    <token id="000001349B1637C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str=")" scope="0000013496CA91A0" link="000001349B162FE0"/>
+    <token id="000001349B162E60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str=")" scope="0000013496CA91A0" link="000001349B162C20"/>
+    <token id="000001349B162AA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="18" str=";" scope="0000013496CA91A0"/>
+    <token id="000001349B163820" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="19" str="}" scope="0000013496CA91A0" link="000001349B164060"/>
+    <token id="000001349B163A00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="Windows" scope="0000013496CA92B0" type="name" astParent="000001349B162BC0"/>
+    <token id="000001349B162BC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B163D00" astOperand1="000001349B163A00" astOperand2="000001349B163220"/>
+    <token id="000001349B163220" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="UI" scope="0000013496CA92B0" type="name" astParent="000001349B162BC0"/>
+    <token id="000001349B163D00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B163040" astOperand1="000001349B162BC0" astOperand2="000001349B1634C0"/>
+    <token id="000001349B1634C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="Xaml" scope="0000013496CA92B0" type="name" astParent="000001349B163D00"/>
+    <token id="000001349B163040" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B162C80" astOperand1="000001349B163D00" astOperand2="000001349B163700"/>
+    <token id="000001349B163700" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="Data" scope="0000013496CA92B0" type="name" astParent="000001349B163040"/>
+    <token id="000001349B162C80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B163100" astOperand1="000001349B163040" astOperand2="000001349B163DC0"/>
+    <token id="000001349B163DC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="ICustomProperty" scope="0000013496CA92B0" type="name" astParent="000001349B162C80"/>
+    <token id="000001349B163100" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="^" scope="0000013496CA92B0" type="op" astOperand1="000001349B162C80" astOperand2="000001349B163E20"/>
+    <token id="000001349B163400" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="BindableBase" scope="0000013496CA92B0" type="name" astParent="000001349B162920"/>
+    <token id="000001349B162920" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B163E20" astOperand1="000001349B163400" astOperand2="000001349B1638E0"/>
+    <token id="000001349B1638E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="GetCustomProperty" scope="0000013496CA92B0" type="name" astParent="000001349B162920"/>
+    <token id="000001349B163E20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="(" scope="0000013496CA92B0" link="000001349B163E80" astParent="000001349B163100" astOperand1="000001349B162920" astOperand2="000001349B163B20"/>
+    <token id="000001349B163280" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="Platform" scope="0000013496CA92B0" type="name" astParent="000001349B163A60"/>
+    <token id="000001349B163A60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="::" scope="0000013496CA92B0" astParent="000001349B163B20" astOperand1="000001349B163280" astOperand2="000001349B163AC0"/>
+    <token id="000001349B163AC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="String" scope="0000013496CA92B0" type="name" astParent="000001349B163A60"/>
+    <token id="000001349B163B20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="^" scope="0000013496CA92B0" type="op" astParent="000001349B163E20" astOperand1="000001349B163A60" astOperand2="000001349B163B80"/>
+    <token id="000001349B163B80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str="name" scope="0000013496CA92B0" type="name" astParent="000001349B163B20"/>
+    <token id="000001349B163E80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="21" str=")" scope="0000013496CA92B0" link="000001349B163E20"/>
+    <token id="000001349B163EE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="22" str="{" scope="0000013496CA92B0" link="000001349B165320"/>
+    <token id="000001349B163F40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="23" str="return" scope="0000013496CA92B0" type="name" astOperand1="000001349B165020"/>
+    <token id="000001349B165020" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="23" str="nullptr" scope="0000013496CA92B0" type="name" values="00000134A920B420" astParent="000001349B163F40"/>
+    <token id="000001349B1656E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="23" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B165320" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="24" str="}" scope="0000013496CA92B0" link="000001349B163EE0"/>
+    <token id="000001349B164CC0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Windows" scope="0000013496CA92B0" type="name" astParent="000001349B164900"/>
+    <token id="000001349B164900" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B164480" astOperand1="000001349B164CC0" astOperand2="000001349B1655C0"/>
+    <token id="000001349B1655C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="UI" scope="0000013496CA92B0" type="name" astParent="000001349B164900"/>
+    <token id="000001349B164480" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B165380" astOperand1="000001349B164900" astOperand2="000001349B165680"/>
+    <token id="000001349B165680" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Xaml" scope="0000013496CA92B0" type="name" astParent="000001349B164480"/>
+    <token id="000001349B165380" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B164240" astOperand1="000001349B164480" astOperand2="000001349B1643C0"/>
+    <token id="000001349B1643C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Data" scope="0000013496CA92B0" type="name" astParent="000001349B165380"/>
+    <token id="000001349B164240" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B164420" astOperand1="000001349B165380" astOperand2="000001349B164960"/>
+    <token id="000001349B164960" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="ICustomProperty" scope="0000013496CA92B0" type="name" astParent="000001349B164240"/>
+    <token id="000001349B164420" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="^" scope="0000013496CA92B0" type="op" astOperand1="000001349B164240" astOperand2="000001349B164540"/>
+    <token id="000001349B164DE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="BindableBase" scope="0000013496CA92B0" type="name" astParent="000001349B1653E0"/>
+    <token id="000001349B1653E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B164540" astOperand1="000001349B164DE0" astOperand2="000001349B1649C0"/>
+    <token id="000001349B1649C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="GetIndexedProperty" scope="0000013496CA92B0" type="name" astParent="000001349B1653E0"/>
+    <token id="000001349B164540" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="(" scope="0000013496CA92B0" link="000001349B164AE0" astParent="000001349B164420" astOperand1="000001349B1653E0" astOperand2="000001349B164C00"/>
+    <token id="000001349B164600" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Platform" scope="0000013496CA92B0" type="name" astParent="000001349B1642A0"/>
+    <token id="000001349B1642A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B165800" astOperand1="000001349B164600" astOperand2="000001349B165500"/>
+    <token id="000001349B165500" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="String" scope="0000013496CA92B0" type="name" astParent="000001349B1642A0"/>
+    <token id="000001349B165800" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="^" scope="0000013496CA92B0" type="op" astParent="000001349B164C00" astOperand1="000001349B1642A0" astOperand2="000001349B165440"/>
+    <token id="000001349B165440" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="name" scope="0000013496CA92B0" type="name" astParent="000001349B165800"/>
+    <token id="000001349B164C00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="," scope="0000013496CA92B0" astParent="000001349B164540" astOperand1="000001349B165800" astOperand2="000001349B165740"/>
+    <token id="000001349B1654A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Windows" scope="0000013496CA92B0" type="name" astParent="000001349B165560"/>
+    <token id="000001349B165560" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B1645A0" astOperand1="000001349B1654A0" astOperand2="000001349B165620"/>
+    <token id="000001349B165620" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="UI" scope="0000013496CA92B0" type="name" astParent="000001349B165560"/>
+    <token id="000001349B1645A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B165860" astOperand1="000001349B165560" astOperand2="000001349B164F60"/>
+    <token id="000001349B164F60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Xaml" scope="0000013496CA92B0" type="name" astParent="000001349B1645A0"/>
+    <token id="000001349B165860" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B165740" astOperand1="000001349B1645A0" astOperand2="000001349B1658C0"/>
+    <token id="000001349B1658C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="Interop" scope="0000013496CA92B0" type="name" astParent="000001349B165860"/>
+    <token id="000001349B165740" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="::" scope="0000013496CA92B0" astParent="000001349B164C00" astOperand1="000001349B165860" astOperand2="000001349B165080"/>
+    <token id="000001349B1646C0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="TypeName" scope="0000013496CA92B0" type="name"/>
+    <token id="000001349B165080" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str="type" scope="0000013496CA92B0" type="name" varId="2" astParent="000001349B165740"/>
+    <token id="000001349B164AE0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="26" str=")" scope="0000013496CA92B0" link="000001349B164540"/>
+    <token id="000001349B164E40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="27" str="{" scope="0000013496CA92B0" link="000001349B1657A0"/>
+    <token id="000001349B1651A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="28" str="return" scope="0000013496CA92B0" type="name" astOperand1="000001349B164660"/>
+    <token id="000001349B164660" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="28" str="nullptr" scope="0000013496CA92B0" type="name" values="00000134A920B2A0" astParent="000001349B1651A0"/>
+    <token id="000001349B164720" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="28" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B1657A0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="29" str="}" scope="0000013496CA92B0" link="000001349B164E40"/>
+    <token id="000001349B165200" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="Platform" scope="0000013496CA92B0" type="name" astParent="000001349B164A20"/>
+    <token id="000001349B164A20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="::" scope="0000013496CA92B0" astParent="000001349B164A80" astOperand1="000001349B165200" astOperand2="000001349B164120"/>
+    <token id="000001349B164120" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="String" scope="0000013496CA92B0" type="name" astParent="000001349B164A20"/>
+    <token id="000001349B164A80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="^" scope="0000013496CA92B0" type="op" astOperand1="000001349B164A20" astOperand2="000001349B164EA0"/>
+    <token id="000001349B164BA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="BindableBase" scope="0000013496CA92B0" type="name" astParent="000001349B164C60"/>
+    <token id="000001349B164C60" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="::" scope="0000013496CA92B0" astParent="000001349B164EA0" astOperand1="000001349B164BA0" astOperand2="000001349B164180"/>
+    <token id="000001349B164180" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="GetStringRepresentation" scope="0000013496CA92B0" type="name" astParent="000001349B164C60"/>
+    <token id="000001349B164EA0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str="(" scope="0000013496CA92B0" link="000001349B1641E0" astParent="000001349B164A80" astOperand1="000001349B164C60"/>
+    <token id="000001349B1641E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="31" str=")" scope="0000013496CA92B0" link="000001349B164EA0"/>
+    <token id="000001349B164B40" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="32" str="{" scope="0000013496CA92B0" link="000001349B164D80"/>
+    <token id="000001349B164D20" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str="return" scope="0000013496CA92B0" type="name" astOperand1="000001349B1650E0"/>
+    <token id="000001349B164360" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str="this" scope="0000013496CA92B0" type="name" astParent="000001349B164F00"/>
+    <token id="000001349B164F00" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str="." scope="0000013496CA92B0" astParent="000001349B1650E0" astOperand1="000001349B164360" astOperand2="000001349B164780" originalName="->"/>
+    <token id="000001349B164780" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str="ToString" scope="0000013496CA92B0" type="name" astParent="000001349B164F00"/>
+    <token id="000001349B1650E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str="(" scope="0000013496CA92B0" link="000001349B164300" astParent="000001349B164D20" astOperand1="000001349B164F00"/>
+    <token id="000001349B164300" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str=")" scope="0000013496CA92B0" link="000001349B1650E0"/>
+    <token id="000001349B1644E0" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="33" str=";" scope="0000013496CA92B0"/>
+    <token id="000001349B164D80" file="C:/sample repositories/calculator-master/src/Calculator/Common/BindableBase.cpp" linenr="34" str="}" scope="0000013496CA92B0" link="000001349B164B40"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013496CA92B0" type="Global"/>
+    <scope id="0000013496CA94D0" type="Namespace" className="CalculatorApp" bodyStart="000001349B15E780" bodyEnd="000001349B1626E0" nestedIn="0000013496CA92B0"/>
+    <scope id="0000013496CA8B40" type="Namespace" className="Common" bodyStart="000001349B15F560" bodyEnd="000001349B162680" nestedIn="0000013496CA94D0"/>
+    <scope id="0000013496CA8700" type="Class" className="BindableBase" bodyStart="000001349B15EBA0" bodyEnd="000001349B1622C0" nestedIn="0000013496CA8B40">
+      <functionList>
+        <function id="000001349138AFC0" tokenDef="000001349B1612A0" name="get" type="Function" isVirtual="true"/>
+        <function id="000001349138BC20" tokenDef="000001349B161360" name="OnPropertyChanged" type="Function" isVirtual="true">
+          <arg nr="1" variable="0000013496E9EA60"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013496CA8C50" type="Function" className="get" bodyStart="000001349B162380" bodyEnd="000001349B161120" nestedIn="0000013496CA8700" function="000001349138AFC0"/>
+    <scope id="0000013496CA91A0" type="Function" className="OnPropertyChanged" bodyStart="000001349B164060" bodyEnd="000001349B163820" nestedIn="0000013496CA92B0"/>
+  </scopes>
+  <variables>
+    <var id="0000013496E9EA60" nameToken="000001349B162200" typeStartToken="000001349B1613C0" typeEndToken="000001349B162620" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920B420">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A920B2A0">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="718119212">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NarratorAnnouncement sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\Automation\NarratorAnnouncement.h" line="32"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class DisplayExpressionToken sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class DisplayExpressionToken sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DisplayExpressionToken.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NavCategory sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NavCategory sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\NavCategory.h" line="101"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class NavCategoryGroup sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class NavCategoryGroup sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\NavCategory.h" line="210"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class HistoryItemViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class HistoryItemViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\HistoryItemViewModel.h" line="14"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class HistoryViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class HistoryViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\HistoryViewModel.h" line="22"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MemoryItemViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MemoryItemViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\MemoryItemViewModel.h" line="18"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class StandardCalculatorViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class StandardCalculatorViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.h" line="36"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorButtonPressedEventArgs sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorButtonPressedEventArgs sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.h" line="13"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class LocalizationService sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class LocalizationService sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\LocalizationService.h" line="21"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\StandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DelegateCommand.h" line="42"/>
+        </error>
+</analyzerinfo>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1628651057">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculationResultAutomationPeer sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculationResultAutomationPeer sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\CalculationResultAutomationPeer.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\CalculationResultAutomationPeer.h" line="12"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="CalculationResultAutomationPeer"/>
+    <functioncall functionName="FrameworkElementAutomationPeer"/>
+    <functioncall functionName="Owner"/>
+    <functioncall functionName="ProgrammaticSelect"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="owner"/>
+    <functioncall functionName="pattern"/>
+    <functioncall functionName="static_cast"/>
+  </FileInfo>
+</analyzerinfo>

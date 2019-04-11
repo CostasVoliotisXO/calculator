@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2153429145">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class OverflowTextBlockAutomationPeer sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class OverflowTextBlockAutomationPeer sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\OverflowTextBlockAutomationPeer.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\OverflowTextBlockAutomationPeer.h" line="12"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\OverflowTextBlockAutomationPeer.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\OverflowTextBlockAutomationPeer.h" line="18"/>
+        </error>
+</analyzerinfo>

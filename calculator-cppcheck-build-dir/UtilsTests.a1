@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="288294856">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MockAsyncOperationWithProgress sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UtilsTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\Mocks\CurrencyHttpClient.h" line="29"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UtilsTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UnitTestApp.xaml.h" line="22"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file0="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UtilsTests.cpp" file="C:\sample repositories\calculator-master\src\CalculatorUnitTests\UtilsTests.cpp" line="19"/>
+        </error>
+</analyzerinfo>

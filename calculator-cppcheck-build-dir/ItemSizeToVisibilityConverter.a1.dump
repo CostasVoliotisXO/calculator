@@ -1,0 +1,1019 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;ItemSizeToVisibilityConverter.h&quot;"/>
+    <tok fileIndex="0" linenr="6" str="#"/>
+    <tok fileIndex="0" linenr="6" str="include"/>
+    <tok fileIndex="0" linenr="6" str="&quot;BooleanToVisibilityConverter.h&quot;"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Converters"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Platform"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Foundation"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="Windows"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="UI"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Xaml"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="12" str="using"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="Windows"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="UI"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="Xaml"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="Interop"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="14" str="Object"/>
+    <tok fileIndex="0" linenr="14" str="^"/>
+    <tok fileIndex="0" linenr="14" str="ItemSizeToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="Convert"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="Object"/>
+    <tok fileIndex="0" linenr="14" str="^"/>
+    <tok fileIndex="0" linenr="14" str="value"/>
+    <tok fileIndex="0" linenr="14" str=","/>
+    <tok fileIndex="0" linenr="14" str="TypeName"/>
+    <tok fileIndex="0" linenr="14" str="targetType"/>
+    <tok fileIndex="0" linenr="14" str=","/>
+    <tok fileIndex="0" linenr="14" str="Object"/>
+    <tok fileIndex="0" linenr="14" str="^"/>
+    <tok fileIndex="0" linenr="14" str="parameter"/>
+    <tok fileIndex="0" linenr="14" str=","/>
+    <tok fileIndex="0" linenr="14" str="String"/>
+    <tok fileIndex="0" linenr="14" str="^"/>
+    <tok fileIndex="0" linenr="14" str="language"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="void"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str="targetType"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="16" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str="void"/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str="parameter"/>
+    <tok fileIndex="0" linenr="17" str=";"/>
+    <tok fileIndex="0" linenr="17" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="void"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str="language"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="18" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="20" str="auto"/>
+    <tok fileIndex="0" linenr="20" str="items"/>
+    <tok fileIndex="0" linenr="20" str="="/>
+    <tok fileIndex="0" linenr="20" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="20" str="&lt;"/>
+    <tok fileIndex="0" linenr="20" str="Box"/>
+    <tok fileIndex="0" linenr="20" str="&lt;"/>
+    <tok fileIndex="0" linenr="20" str="int"/>
+    <tok fileIndex="0" linenr="20" str="&gt;"/>
+    <tok fileIndex="0" linenr="20" str="^"/>
+    <tok fileIndex="0" linenr="20" str="&gt;"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="value"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="auto"/>
+    <tok fileIndex="0" linenr="21" str="boolValue"/>
+    <tok fileIndex="0" linenr="21" str="="/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str="items"/>
+    <tok fileIndex="0" linenr="21" str="!="/>
+    <tok fileIndex="0" linenr="21" str="nullptr"/>
+    <tok fileIndex="0" linenr="21" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str="items"/>
+    <tok fileIndex="0" linenr="21" str="-&gt;"/>
+    <tok fileIndex="0" linenr="21" str="Value"/>
+    <tok fileIndex="0" linenr="21" str="=="/>
+    <tok fileIndex="0" linenr="21" str="0"/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="return"/>
+    <tok fileIndex="0" linenr="22" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="22" str="::"/>
+    <tok fileIndex="0" linenr="22" str="Convert"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="boolValue"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="}"/>
+    <tok fileIndex="0" linenr="25" str="Object"/>
+    <tok fileIndex="0" linenr="25" str="^"/>
+    <tok fileIndex="0" linenr="25" str="ItemSizeToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="25" str="::"/>
+    <tok fileIndex="0" linenr="25" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="Object"/>
+    <tok fileIndex="0" linenr="25" str="^"/>
+    <tok fileIndex="0" linenr="25" str="value"/>
+    <tok fileIndex="0" linenr="25" str=","/>
+    <tok fileIndex="0" linenr="25" str="TypeName"/>
+    <tok fileIndex="0" linenr="25" str="targetType"/>
+    <tok fileIndex="0" linenr="25" str=","/>
+    <tok fileIndex="0" linenr="25" str="Object"/>
+    <tok fileIndex="0" linenr="25" str="^"/>
+    <tok fileIndex="0" linenr="25" str="parameter"/>
+    <tok fileIndex="0" linenr="25" str=","/>
+    <tok fileIndex="0" linenr="25" str="String"/>
+    <tok fileIndex="0" linenr="25" str="^"/>
+    <tok fileIndex="0" linenr="25" str="language"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="26" str="{"/>
+    <tok fileIndex="0" linenr="27" str="throw"/>
+    <tok fileIndex="0" linenr="27" str="ref"/>
+    <tok fileIndex="0" linenr="27" str="new"/>
+    <tok fileIndex="0" linenr="27" str="NotImplementedException"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="27" str=";"/>
+    <tok fileIndex="0" linenr="28" str="}"/>
+    <tok fileIndex="0" linenr="30" str="Object"/>
+    <tok fileIndex="0" linenr="30" str="^"/>
+    <tok fileIndex="0" linenr="30" str="ItemSizeToVisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="30" str="::"/>
+    <tok fileIndex="0" linenr="30" str="Convert"/>
+    <tok fileIndex="0" linenr="30" str="("/>
+    <tok fileIndex="0" linenr="30" str="Object"/>
+    <tok fileIndex="0" linenr="30" str="^"/>
+    <tok fileIndex="0" linenr="30" str="value"/>
+    <tok fileIndex="0" linenr="30" str=","/>
+    <tok fileIndex="0" linenr="30" str="TypeName"/>
+    <tok fileIndex="0" linenr="30" str="targetType"/>
+    <tok fileIndex="0" linenr="30" str=","/>
+    <tok fileIndex="0" linenr="30" str="Object"/>
+    <tok fileIndex="0" linenr="30" str="^"/>
+    <tok fileIndex="0" linenr="30" str="parameter"/>
+    <tok fileIndex="0" linenr="30" str=","/>
+    <tok fileIndex="0" linenr="30" str="String"/>
+    <tok fileIndex="0" linenr="30" str="^"/>
+    <tok fileIndex="0" linenr="30" str="language"/>
+    <tok fileIndex="0" linenr="30" str=")"/>
+    <tok fileIndex="0" linenr="31" str="{"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str="void"/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="32" str="targetType"/>
+    <tok fileIndex="0" linenr="32" str=";"/>
+    <tok fileIndex="0" linenr="32" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str="void"/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str="parameter"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="33" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="void"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str="language"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="34" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="36" str="auto"/>
+    <tok fileIndex="0" linenr="36" str="items"/>
+    <tok fileIndex="0" linenr="36" str="="/>
+    <tok fileIndex="0" linenr="36" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="36" str="&lt;"/>
+    <tok fileIndex="0" linenr="36" str="Box"/>
+    <tok fileIndex="0" linenr="36" str="&lt;"/>
+    <tok fileIndex="0" linenr="36" str="int"/>
+    <tok fileIndex="0" linenr="36" str="&gt;"/>
+    <tok fileIndex="0" linenr="36" str="^"/>
+    <tok fileIndex="0" linenr="36" str="&gt;"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="value"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="auto"/>
+    <tok fileIndex="0" linenr="37" str="boolValue"/>
+    <tok fileIndex="0" linenr="37" str="="/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="items"/>
+    <tok fileIndex="0" linenr="37" str="!="/>
+    <tok fileIndex="0" linenr="37" str="nullptr"/>
+    <tok fileIndex="0" linenr="37" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="items"/>
+    <tok fileIndex="0" linenr="37" str="-&gt;"/>
+    <tok fileIndex="0" linenr="37" str="Value"/>
+    <tok fileIndex="0" linenr="37" str="&gt;"/>
+    <tok fileIndex="0" linenr="37" str="0"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str=";"/>
+    <tok fileIndex="0" linenr="38" str="return"/>
+    <tok fileIndex="0" linenr="38" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="38" str="::"/>
+    <tok fileIndex="0" linenr="38" str="Convert"/>
+    <tok fileIndex="0" linenr="38" str="("/>
+    <tok fileIndex="0" linenr="38" str="boolValue"/>
+    <tok fileIndex="0" linenr="38" str=")"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="39" str="}"/>
+    <tok fileIndex="0" linenr="41" str="Object"/>
+    <tok fileIndex="0" linenr="41" str="^"/>
+    <tok fileIndex="0" linenr="41" str="ItemSizeToVisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="41" str="::"/>
+    <tok fileIndex="0" linenr="41" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="41" str="("/>
+    <tok fileIndex="0" linenr="41" str="Object"/>
+    <tok fileIndex="0" linenr="41" str="^"/>
+    <tok fileIndex="0" linenr="41" str="value"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="TypeName"/>
+    <tok fileIndex="0" linenr="41" str="targetType"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="Object"/>
+    <tok fileIndex="0" linenr="41" str="^"/>
+    <tok fileIndex="0" linenr="41" str="parameter"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="String"/>
+    <tok fileIndex="0" linenr="41" str="^"/>
+    <tok fileIndex="0" linenr="41" str="language"/>
+    <tok fileIndex="0" linenr="41" str=")"/>
+    <tok fileIndex="0" linenr="42" str="{"/>
+    <tok fileIndex="0" linenr="43" str="throw"/>
+    <tok fileIndex="0" linenr="43" str="ref"/>
+    <tok fileIndex="0" linenr="43" str="new"/>
+    <tok fileIndex="0" linenr="43" str="NotImplementedException"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="44" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="5" str="#include &quot;ItemSizeToVisibilityConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="6" str="#include &quot;BooleanToVisibilityConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A346EEF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="6" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346F670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="6" str="CalculatorApp" scope="000001349138FA40" type="name" astParent="00000134A346E5F0"/>
+    <token id="00000134A346E5F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="7" str="{" scope="000001349138FA40" link="00000134A3473ED0" astOperand1="00000134A346F670" astOperand2="00000134A346E110"/>
+    <token id="00000134A346F490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="8" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346E110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="8" str="Converters" scope="000001349138FA40" type="name" astParent="00000134A346E5F0"/>
+    <token id="00000134A346F010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="9" str="{" scope="000001349138FA40" link="00000134A3473E10"/>
+    <token id="00000134A346E3B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="[" scope="000001349138FA40" link="00000134A346ED70"/>
+    <token id="00000134A346F070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A346F730"/>
+    <token id="00000134A346F730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="::" scope="000001349138FA40" astParent="00000134A346E650" astOperand1="00000134A346F070" astOperand2="00000134A346E2F0"/>
+    <token id="00000134A346E2F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="Foundation" scope="000001349138FA40" type="name" astParent="00000134A346F730"/>
+    <token id="00000134A346E650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="::" scope="000001349138FA40" astParent="00000134A346EB30" astOperand1="00000134A346F730" astOperand2="00000134A346ECB0"/>
+    <token id="00000134A346ECB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="Metadata" scope="000001349138FA40" type="name" astParent="00000134A346E650"/>
+    <token id="00000134A346EB30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="::" scope="000001349138FA40" astOperand1="00000134A346E650" astOperand2="00000134A346F0D0"/>
+    <token id="00000134A346F0D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="WebHostHidden" scope="000001349138FA40" type="name" astParent="00000134A346EB30"/>
+    <token id="00000134A346ED70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="10" str="]" scope="000001349138FA40" link="00000134A346E3B0"/>
+    <token id="00000134A346F790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="public" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346E6B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="ref" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346EE90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="class" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346EAD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="ItemSizeToVisibilityConverter" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346E530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="sealed" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346E230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str=":" scope="000001349138FA40"/>
+    <token id="00000134A346E290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A346F610"/>
+    <token id="00000134A346F610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="::" scope="000001349138FA40" astParent="00000134A346E350" astOperand1="00000134A346E290" astOperand2="00000134A346F1F0"/>
+    <token id="00000134A346F1F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="UI" scope="000001349138FA40" type="name" astParent="00000134A346F610"/>
+    <token id="00000134A346E350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="::" scope="000001349138FA40" astParent="00000134A346E710" astOperand1="00000134A346F610" astOperand2="00000134A346E410"/>
+    <token id="00000134A346E410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A346E350"/>
+    <token id="00000134A346E710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="::" scope="000001349138FA40" astParent="00000134A346E470" astOperand1="00000134A346E350" astOperand2="00000134A346E170"/>
+    <token id="00000134A346E170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="Data" scope="000001349138FA40" type="name" astParent="00000134A346E710"/>
+    <token id="00000134A346E470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="::" scope="000001349138FA40" astOperand1="00000134A346E710" astOperand2="00000134A346E890"/>
+    <token id="00000134A346E890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="11" str="IValueConverter" scope="000001349138FA40" type="name" astParent="00000134A346E470"/>
+    <token id="00000134A346EDD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="12" str="{" scope="000001349138FA40" link="00000134A3470150"/>
+    <token id="00000134A346F7F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="13" str="public:" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346F6D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="virtual" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346EB90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A346F130"/>
+    <token id="00000134A346F130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346EBF0" astOperand1="00000134A346EB90" astOperand2="00000134A346F250"/>
+    <token id="00000134A346F250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A346F130"/>
+    <token id="00000134A346EBF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A346F130" astOperand2="00000134A346ED10"/>
+    <token id="00000134A346EC50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A346ED10"/>
+    <token id="00000134A346ED10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="(" scope="000001349138FA40" link="00000134A346FFD0" astParent="00000134A346EBF0" astOperand1="00000134A346EC50" astOperand2="00000134A346F550"/>
+    <token id="00000134A346E4D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A346E7D0"/>
+    <token id="00000134A346E7D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346EF50" astOperand1="00000134A346E4D0" astOperand2="00000134A346F3D0"/>
+    <token id="00000134A346F3D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A346E7D0"/>
+    <token id="00000134A346EF50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A346E590" astOperand1="00000134A346E7D0" astOperand2="00000134A346EFB0"/>
+    <token id="00000134A346EFB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="value" scope="000001349138FA40" type="name" astParent="00000134A346EF50"/>
+    <token id="00000134A346E590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="," scope="000001349138FA40" astParent="00000134A346EE30" astOperand1="00000134A346EF50" astOperand2="00000134A346EA10"/>
+    <token id="00000134A346E770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A346E830"/>
+    <token id="00000134A346E830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346F8B0" astOperand1="00000134A346E770" astOperand2="00000134A346E8F0"/>
+    <token id="00000134A346E8F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="UI" scope="000001349138FA40" type="name" astParent="00000134A346E830"/>
+    <token id="00000134A346F8B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346E950" astOperand1="00000134A346E830" astOperand2="00000134A346F2B0"/>
+    <token id="00000134A346F2B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A346F8B0"/>
+    <token id="00000134A346E950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346EA10" astOperand1="00000134A346F8B0" astOperand2="00000134A346E9B0"/>
+    <token id="00000134A346E9B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Interop" scope="000001349138FA40" type="name" astParent="00000134A346E950"/>
+    <token id="00000134A346EA10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346E590" astOperand1="00000134A346E950" astOperand2="00000134A346EA70"/>
+    <token id="00000134A346E1D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346EA70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="targetType" scope="000001349138FA40" type="name" varId="1" astParent="00000134A346EA10"/>
+    <token id="00000134A346EE30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="," scope="000001349138FA40" astParent="00000134A346F550" astOperand1="00000134A346E590" astOperand2="00000134A346F430"/>
+    <token id="00000134A346F190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A346F310"/>
+    <token id="00000134A346F310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A346F430" astOperand1="00000134A346F190" astOperand2="00000134A346F370"/>
+    <token id="00000134A346F370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A346F310"/>
+    <token id="00000134A346F430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A346EE30" astOperand1="00000134A346F310" astOperand2="00000134A346F4F0"/>
+    <token id="00000134A346F4F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A346F430"/>
+    <token id="00000134A346F550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="," scope="000001349138FA40" astParent="00000134A346ED10" astOperand1="00000134A346EE30" astOperand2="00000134A34704B0"/>
+    <token id="00000134A346F5B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3470390"/>
+    <token id="00000134A3470390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A34704B0" astOperand1="00000134A346F5B0" astOperand2="00000134A34702D0"/>
+    <token id="00000134A34702D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="String" scope="000001349138FA40" type="name" astParent="00000134A3470390"/>
+    <token id="00000134A34704B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A346F550" astOperand1="00000134A3470390" astOperand2="00000134A346FBB0"/>
+    <token id="00000134A346FBB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str="language" scope="000001349138FA40" type="name" astParent="00000134A34704B0"/>
+    <token id="00000134A346FFD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str=")" scope="000001349138FA40" link="00000134A346ED10"/>
+    <token id="00000134A3470BD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="14" str=";" scope="000001349138FA40"/>
+    <token id="00000134A34706F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="virtual" scope="000001349138FA40" type="name"/>
+    <token id="00000134A34707B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A34700F0"/>
+    <token id="00000134A34700F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A3470B10" astOperand1="00000134A34707B0" astOperand2="00000134A3470690"/>
+    <token id="00000134A3470690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Object" scope="000001349138FA40" type="name" astParent="00000134A34700F0"/>
+    <token id="00000134A3470B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A34700F0" astOperand2="00000134A3470E10"/>
+    <token id="00000134A3470F30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="ConvertBack" scope="000001349138FA40" type="name" astParent="00000134A3470E10"/>
+    <token id="00000134A3470E10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="(" scope="000001349138FA40" link="00000134A3470750" astParent="00000134A3470B10" astOperand1="00000134A3470F30" astOperand2="00000134A3470030"/>
+    <token id="00000134A34701B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3470450"/>
+    <token id="00000134A3470450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A3470570" astOperand1="00000134A34701B0" astOperand2="00000134A3470990"/>
+    <token id="00000134A3470990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3470450"/>
+    <token id="00000134A3470570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="^" scope="000001349138FA40" type="op" astParent="00000134A3470CF0" astOperand1="00000134A3470450" astOperand2="00000134A34709F0"/>
+    <token id="00000134A34709F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="value" scope="000001349138FA40" type="name" astParent="00000134A3470570"/>
+    <token id="00000134A3470CF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="," scope="000001349138FA40" astParent="00000134A346F910" astOperand1="00000134A3470570" astOperand2="00000134A346FCD0"/>
+    <token id="00000134A346FA30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A3470B70"/>
+    <token id="00000134A3470B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A346FE50" astOperand1="00000134A346FA30" astOperand2="00000134A3470FF0"/>
+    <token id="00000134A3470FF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="UI" scope="000001349138FA40" type="name" astParent="00000134A3470B70"/>
+    <token id="00000134A346FE50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A3470210" astOperand1="00000134A3470B70" astOperand2="00000134A3470330"/>
+    <token id="00000134A3470330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A346FE50"/>
+    <token id="00000134A3470210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A346FCD0" astOperand1="00000134A346FE50" astOperand2="00000134A34703F0"/>
+    <token id="00000134A34703F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Interop" scope="000001349138FA40" type="name" astParent="00000134A3470210"/>
+    <token id="00000134A346FCD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A3470CF0" astOperand1="00000134A3470210" astOperand2="00000134A3470C30"/>
+    <token id="00000134A3470F90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3470C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="targetType" scope="000001349138FA40" type="name" varId="2" astParent="00000134A346FCD0"/>
+    <token id="00000134A346F910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="," scope="000001349138FA40" astParent="00000134A3470030" astOperand1="00000134A3470CF0" astOperand2="00000134A3470ED0"/>
+    <token id="00000134A3470A50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3470E70"/>
+    <token id="00000134A3470E70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A3470ED0" astOperand1="00000134A3470A50" astOperand2="00000134A346FC10"/>
+    <token id="00000134A346FC10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3470E70"/>
+    <token id="00000134A3470ED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="^" scope="000001349138FA40" type="op" astParent="00000134A346F910" astOperand1="00000134A3470E70" astOperand2="00000134A3471050"/>
+    <token id="00000134A3471050" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A3470ED0"/>
+    <token id="00000134A3470030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="," scope="000001349138FA40" astParent="00000134A3470E10" astOperand1="00000134A346F910" astOperand2="00000134A34705D0"/>
+    <token id="00000134A34710B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3470510"/>
+    <token id="00000134A3470510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="::" scope="000001349138FA40" astParent="00000134A34705D0" astOperand1="00000134A34710B0" astOperand2="00000134A346FAF0"/>
+    <token id="00000134A346FAF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="String" scope="000001349138FA40" type="name" astParent="00000134A3470510"/>
+    <token id="00000134A34705D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="^" scope="000001349138FA40" type="op" astParent="00000134A3470030" astOperand1="00000134A3470510" astOperand2="00000134A346F970"/>
+    <token id="00000134A346F970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str="language" scope="000001349138FA40" type="name" astParent="00000134A34705D0"/>
+    <token id="00000134A3470750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str=")" scope="000001349138FA40" link="00000134A3470E10"/>
+    <token id="00000134A3470D50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="15" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3470150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="16" str="}" scope="000001349138FA40" link="00000134A346EDD0"/>
+    <token id="00000134A3470DB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="16" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3470810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="public" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3470C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="ref" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3470930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="class" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346F9D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="ItemSizeToVisibilityNegationConverter" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346FDF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="sealed" scope="000001349138FA40" type="name"/>
+    <token id="00000134A346FA90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str=":" scope="000001349138FA40"/>
+    <token id="00000134A346FB50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A3470870"/>
+    <token id="00000134A3470870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="::" scope="000001349138FA40" astParent="00000134A34708D0" astOperand1="00000134A346FB50" astOperand2="00000134A346FC70"/>
+    <token id="00000134A346FC70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="UI" scope="000001349138FA40" type="name" astParent="00000134A3470870"/>
+    <token id="00000134A34708D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="::" scope="000001349138FA40" astParent="00000134A346FD90" astOperand1="00000134A3470870" astOperand2="00000134A346FD30"/>
+    <token id="00000134A346FD30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A34708D0"/>
+    <token id="00000134A346FD90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="::" scope="000001349138FA40" astParent="00000134A3470630" astOperand1="00000134A34708D0" astOperand2="00000134A346FEB0"/>
+    <token id="00000134A346FEB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="Data" scope="000001349138FA40" type="name" astParent="00000134A346FD90"/>
+    <token id="00000134A3470630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="::" scope="000001349138FA40" astOperand1="00000134A346FD90" astOperand2="00000134A3470AB0"/>
+    <token id="00000134A3470AB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="18" str="IValueConverter" scope="000001349138FA40" type="name" astParent="00000134A3470630"/>
+    <token id="00000134A346FF10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="19" str="{" scope="000001349138FA40" link="00000134A3473E70"/>
+    <token id="00000134A346FF70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="20" str="public:" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3470270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="virtual" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3471E90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3472010"/>
+    <token id="00000134A3472010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3471D10" astOperand1="00000134A3471E90" astOperand2="00000134A34720D0"/>
+    <token id="00000134A34720D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3472010"/>
+    <token id="00000134A3471D10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A3472010" astOperand2="00000134A3472310"/>
+    <token id="00000134A3471110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A3472310"/>
+    <token id="00000134A3472310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="(" scope="000001349138FA40" link="00000134A3471950" astParent="00000134A3471D10" astOperand1="00000134A3471110" astOperand2="00000134A34721F0"/>
+    <token id="00000134A34728B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A34727F0"/>
+    <token id="00000134A34727F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3472130" astOperand1="00000134A34728B0" astOperand2="00000134A3472790"/>
+    <token id="00000134A3472790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Object" scope="000001349138FA40" type="name" astParent="00000134A34727F0"/>
+    <token id="00000134A3472130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="^" scope="000001349138FA40" type="op" astParent="00000134A34717D0" astOperand1="00000134A34727F0" astOperand2="00000134A3471890"/>
+    <token id="00000134A3471890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="value" scope="000001349138FA40" type="name" astParent="00000134A3472130"/>
+    <token id="00000134A34717D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="," scope="000001349138FA40" astParent="00000134A34714D0" astOperand1="00000134A3472130" astOperand2="00000134A3471D70"/>
+    <token id="00000134A3472190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A3471B90"/>
+    <token id="00000134A3471B90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A34718F0" astOperand1="00000134A3472190" astOperand2="00000134A34713B0"/>
+    <token id="00000134A34713B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="UI" scope="000001349138FA40" type="name" astParent="00000134A3471B90"/>
+    <token id="00000134A34718F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3471FB0" astOperand1="00000134A3471B90" astOperand2="00000134A3472070"/>
+    <token id="00000134A3472070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A34718F0"/>
+    <token id="00000134A3471FB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3471D70" astOperand1="00000134A34718F0" astOperand2="00000134A3472370"/>
+    <token id="00000134A3472370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Interop" scope="000001349138FA40" type="name" astParent="00000134A3471FB0"/>
+    <token id="00000134A3471D70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A34717D0" astOperand1="00000134A3471FB0" astOperand2="00000134A3471CB0"/>
+    <token id="00000134A3471590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3471CB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="targetType" scope="000001349138FA40" type="name" varId="3" astParent="00000134A3471D70"/>
+    <token id="00000134A34714D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="," scope="000001349138FA40" astParent="00000134A34721F0" astOperand1="00000134A34717D0" astOperand2="00000134A3471290"/>
+    <token id="00000134A34715F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3471530"/>
+    <token id="00000134A3471530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3471290" astOperand1="00000134A34715F0" astOperand2="00000134A3471230"/>
+    <token id="00000134A3471230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3471530"/>
+    <token id="00000134A3471290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="^" scope="000001349138FA40" type="op" astParent="00000134A34714D0" astOperand1="00000134A3471530" astOperand2="00000134A3472610"/>
+    <token id="00000134A3472610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A3471290"/>
+    <token id="00000134A34721F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="," scope="000001349138FA40" astParent="00000134A3472310" astOperand1="00000134A34714D0" astOperand2="00000134A3471170"/>
+    <token id="00000134A3471350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3471410"/>
+    <token id="00000134A3471410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="::" scope="000001349138FA40" astParent="00000134A3471170" astOperand1="00000134A3471350" astOperand2="00000134A3471650"/>
+    <token id="00000134A3471650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="String" scope="000001349138FA40" type="name" astParent="00000134A3471410"/>
+    <token id="00000134A3471170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="^" scope="000001349138FA40" type="op" astParent="00000134A34721F0" astOperand1="00000134A3471410" astOperand2="00000134A34712F0"/>
+    <token id="00000134A34712F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str="language" scope="000001349138FA40" type="name" astParent="00000134A3471170"/>
+    <token id="00000134A3471950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str=")" scope="000001349138FA40" link="00000134A3472310"/>
+    <token id="00000134A3471DD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="21" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3472850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="virtual" scope="000001349138FA40" type="name"/>
+    <token id="00000134A34711D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3472670"/>
+    <token id="00000134A3472670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3472250" astOperand1="00000134A34711D0" astOperand2="00000134A3471AD0"/>
+    <token id="00000134A3471AD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3472670"/>
+    <token id="00000134A3472250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A3472670" astOperand2="00000134A3471BF0"/>
+    <token id="00000134A34722B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="ConvertBack" scope="000001349138FA40" type="name" astParent="00000134A3471BF0"/>
+    <token id="00000134A3471BF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="(" scope="000001349138FA40" link="00000134A3472910" astParent="00000134A3472250" astOperand1="00000134A34722B0" astOperand2="00000134A34732D0"/>
+    <token id="00000134A3471B30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3471E30"/>
+    <token id="00000134A3471E30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3471830" astOperand1="00000134A3471B30" astOperand2="00000134A3471470"/>
+    <token id="00000134A3471470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3471E30"/>
+    <token id="00000134A3471830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="^" scope="000001349138FA40" type="op" astParent="00000134A3471EF0" astOperand1="00000134A3471E30" astOperand2="00000134A34723D0"/>
+    <token id="00000134A34723D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="value" scope="000001349138FA40" type="name" astParent="00000134A3471830"/>
+    <token id="00000134A3471EF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="," scope="000001349138FA40" astParent="00000134A34725B0" astOperand1="00000134A3471830" astOperand2="00000134A3471C50"/>
+    <token id="00000134A3472430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A34719B0"/>
+    <token id="00000134A34719B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3472490" astOperand1="00000134A3472430" astOperand2="00000134A3471F50"/>
+    <token id="00000134A3471F50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="UI" scope="000001349138FA40" type="name" astParent="00000134A34719B0"/>
+    <token id="00000134A3472490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A34726D0" astOperand1="00000134A34719B0" astOperand2="00000134A3472730"/>
+    <token id="00000134A3472730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A3472490"/>
+    <token id="00000134A34726D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3471C50" astOperand1="00000134A3472490" astOperand2="00000134A3471A10"/>
+    <token id="00000134A3471A10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Interop" scope="000001349138FA40" type="name" astParent="00000134A34726D0"/>
+    <token id="00000134A3471C50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3471EF0" astOperand1="00000134A34726D0" astOperand2="00000134A3472550"/>
+    <token id="00000134A34724F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3472550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="targetType" scope="000001349138FA40" type="name" varId="4" astParent="00000134A3471C50"/>
+    <token id="00000134A34725B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="," scope="000001349138FA40" astParent="00000134A34732D0" astOperand1="00000134A3471EF0" astOperand2="00000134A3471A70"/>
+    <token id="00000134A34716B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3471710"/>
+    <token id="00000134A3471710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3471A70" astOperand1="00000134A34716B0" astOperand2="00000134A3471770"/>
+    <token id="00000134A3471770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3471710"/>
+    <token id="00000134A3471A70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="^" scope="000001349138FA40" type="op" astParent="00000134A34725B0" astOperand1="00000134A3471710" astOperand2="00000134A3472E50"/>
+    <token id="00000134A3472E50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A3471A70"/>
+    <token id="00000134A34732D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="," scope="000001349138FA40" astParent="00000134A3471BF0" astOperand1="00000134A34725B0" astOperand2="00000134A3473F30"/>
+    <token id="00000134A3473210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="Platform" scope="000001349138FA40" type="name" astParent="00000134A3473330"/>
+    <token id="00000134A3473330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A3473F30" astOperand1="00000134A3473210" astOperand2="00000134A3472CD0"/>
+    <token id="00000134A3472CD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="String" scope="000001349138FA40" type="name" astParent="00000134A3473330"/>
+    <token id="00000134A3473F30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="^" scope="000001349138FA40" type="op" astParent="00000134A34732D0" astOperand1="00000134A3473330" astOperand2="00000134A3473B10"/>
+    <token id="00000134A3473B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str="language" scope="000001349138FA40" type="name" astParent="00000134A3473F30"/>
+    <token id="00000134A3472910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str=")" scope="000001349138FA40" link="00000134A3471BF0"/>
+    <token id="00000134A3473990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="22" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3473E70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="23" str="}" scope="000001349138FA40" link="00000134A346FF10"/>
+    <token id="00000134A3472BB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="23" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3473E10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="24" str="}" scope="000001349138FA40" link="00000134A346F010"/>
+    <token id="00000134A3473ED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.h" linenr="25" str="}" scope="000001349138FA40" link="00000134A346E5F0"/>
+    <token id="00000134A3472FD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="6" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3473F90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="6" str="CalculatorApp" scope="000001349138FA40" type="name"/>
+    <token id="00000134A34733F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="7" str="{" scope="000001349138FB50" link="00000134A3478DF0"/>
+    <token id="00000134A3472AF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="8" str="namespace" scope="000001349138FB50" type="name"/>
+    <token id="00000134A3473450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="8" str="Converters" scope="000001349138FB50" type="name"/>
+    <token id="00000134A3473FF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="9" str="{" scope="00000134913902C0" link="00000134A34794B0"/>
+    <token id="00000134A3473690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="public" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3473D50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="ref" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34730F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="class" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34734B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="BooleanToVisibilityConverter" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3473810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="sealed" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3472D30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str=":" scope="00000134913902C0"/>
+    <token id="00000134A3473510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A3472D90"/>
+    <token id="00000134A3472D90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913902C0" astParent="00000134A3472EB0" astOperand1="00000134A3473510" astOperand2="00000134A34736F0"/>
+    <token id="00000134A34736F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="UI" scope="00000134913902C0" type="name" astParent="00000134A3472D90"/>
+    <token id="00000134A3472EB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913902C0" astParent="00000134A34735D0" astOperand1="00000134A3472D90" astOperand2="00000134A34740B0"/>
+    <token id="00000134A34740B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3472EB0"/>
+    <token id="00000134A34735D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913902C0" astParent="00000134A3472F70" astOperand1="00000134A3472EB0" astOperand2="00000134A3473B70"/>
+    <token id="00000134A3473B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Data" scope="00000134913902C0" type="name" astParent="00000134A34735D0"/>
+    <token id="00000134A3472F70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913902C0" astOperand1="00000134A34735D0" astOperand2="00000134A3473030"/>
+    <token id="00000134A3473030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="IValueConverter" scope="00000134913902C0" type="name" astParent="00000134A3472F70"/>
+    <token id="00000134A3472C10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="15" str="{" scope="00000134913902C0" link="00000134A3476B10"/>
+    <token id="00000134A3472DF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="16" str="public:" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3472F10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="static" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34737B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="const" scope="00000134913902C0" type="name" originalName="constexpr"/>
+    <token id="00000134A3473C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A3473090"/>
+    <token id="00000134A3473090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913902C0" astParent="00000134A3472A90" astOperand1="00000134A3473C30" astOperand2="00000134A3472C70"/>
+    <token id="00000134A3472C70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="UI" scope="00000134913902C0" type="name" astParent="00000134A3473090"/>
+    <token id="00000134A3472A90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913902C0" astParent="00000134A3473270" astOperand1="00000134A3473090" astOperand2="00000134A3473750"/>
+    <token id="00000134A3473750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3472A90"/>
+    <token id="00000134A3473270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913902C0" astParent="00000134A3473390" astOperand1="00000134A3472A90" astOperand2="00000134A34731B0"/>
+    <token id="00000134A3473150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Visibility" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34731B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Convert" scope="00000134913902C0" type="name" function="00000134A21408E0" astParent="00000134A3473270"/>
+    <token id="00000134A3473390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="(" scope="00000134913902C0" link="00000134A3473DB0" astOperand1="00000134A3473270" astOperand2="00000134A3473BD0"/>
+    <token id="00000134A3473570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="bool" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3473BD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="visibility" scope="00000134913902C0" type="name" varId="5" variable="000001349165FA70" astParent="00000134A3473390" valueType-type="bool"/>
+    <token id="00000134A3473DB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str=")" scope="00000134913902C0" link="00000134A3473390"/>
+    <token id="00000134A3473630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="18" str="{" scope="000001349138EFA0" link="00000134A3474E90"/>
+    <token id="00000134A3473870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="19" str="return" scope="000001349138EFA0" type="name" astOperand1="00000134A3472970"/>
+    <token id="00000134A34738D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="19" str="visibility" scope="000001349138EFA0" type="name" varId="5" variable="000001349165FA70" values="00000134A91FB420" astParent="00000134A3472970" valueType-type="bool"/>
+    <token id="00000134A3472970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="?" scope="000001349138EFA0" astParent="00000134A3473870" astOperand1="00000134A34738D0" astOperand2="00000134A3474EF0"/>
+    <token id="00000134A3472B50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Windows" scope="000001349138EFA0" type="name" astParent="00000134A3473930"/>
+    <token id="00000134A3473930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EFA0" astParent="00000134A34729D0" astOperand1="00000134A3472B50" astOperand2="00000134A34739F0"/>
+    <token id="00000134A34739F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="UI" scope="000001349138EFA0" type="name" astParent="00000134A3473930"/>
+    <token id="00000134A34729D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EFA0" astParent="00000134A3473A50" astOperand1="00000134A3473930" astOperand2="00000134A3472A30"/>
+    <token id="00000134A3472A30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Xaml" scope="000001349138EFA0" type="name" astParent="00000134A34729D0"/>
+    <token id="00000134A3473A50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EFA0" astParent="00000134A3473AB0" astOperand1="00000134A34729D0" astOperand2="00000134A3473C90"/>
+    <token id="00000134A3473C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Visibility" scope="000001349138EFA0" type="name" astParent="00000134A3473A50"/>
+    <token id="00000134A3473AB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EFA0" astParent="00000134A3474EF0" astOperand1="00000134A3473A50" astOperand2="00000134A3473CF0"/>
+    <token id="00000134A3473CF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Visible" scope="000001349138EFA0" type="name" astParent="00000134A3473AB0"/>
+    <token id="00000134A3474EF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str=":" scope="000001349138EFA0" astParent="00000134A3472970" astOperand1="00000134A3473AB0" astOperand2="00000134A34744D0"/>
+    <token id="00000134A3475550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Windows" scope="000001349138EFA0" type="name" astParent="00000134A3474410"/>
+    <token id="00000134A3474410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EFA0" astParent="00000134A3475730" astOperand1="00000134A3475550" astOperand2="00000134A3474A70"/>
+    <token id="00000134A3474A70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="UI" scope="000001349138EFA0" type="name" astParent="00000134A3474410"/>
+    <token id="00000134A3475730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EFA0" astParent="00000134A3474B30" astOperand1="00000134A3474410" astOperand2="00000134A3474470"/>
+    <token id="00000134A3474470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Xaml" scope="000001349138EFA0" type="name" astParent="00000134A3475730"/>
+    <token id="00000134A3474B30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EFA0" astParent="00000134A34744D0" astOperand1="00000134A3475730" astOperand2="00000134A3475790"/>
+    <token id="00000134A3475790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Visibility" scope="000001349138EFA0" type="name" astParent="00000134A3474B30"/>
+    <token id="00000134A34744D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EFA0" astParent="00000134A3474EF0" astOperand1="00000134A3474B30" astOperand2="00000134A34757F0"/>
+    <token id="00000134A34757F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Collapsed" scope="000001349138EFA0" type="name" astParent="00000134A34744D0"/>
+    <token id="00000134A3475850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str=";" scope="000001349138EFA0"/>
+    <token id="00000134A3474E90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="22" str="}" scope="000001349138EFA0" link="00000134A3473630"/>
+    <token id="00000134A3474530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="virtual" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3474290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A34743B0"/>
+    <token id="00000134A34743B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A3474AD0" astOperand1="00000134A3474290" astOperand2="00000134A3475070"/>
+    <token id="00000134A3475070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913902C0" type="name" astParent="00000134A34743B0"/>
+    <token id="00000134A3474AD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913902C0" type="op" astOperand1="00000134A34743B0" astOperand2="00000134A34741D0"/>
+    <token id="00000134A34758B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Convert" scope="00000134913902C0" type="name" astParent="00000134A34741D0"/>
+    <token id="00000134A34741D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="(" scope="00000134913902C0" link="00000134A34751F0" astParent="00000134A3474AD0" astOperand1="00000134A34758B0" astOperand2="00000134A3474DD0"/>
+    <token id="00000134A3474770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3474590"/>
+    <token id="00000134A3474590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A3474CB0" astOperand1="00000134A3474770" astOperand2="00000134A3474B90"/>
+    <token id="00000134A3474B90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3474590"/>
+    <token id="00000134A3474CB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913902C0" type="op" astParent="00000134A34750D0" astOperand1="00000134A3474590" astOperand2="00000134A3474D10"/>
+    <token id="00000134A3474D10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="value" scope="00000134913902C0" type="name" astParent="00000134A3474CB0"/>
+    <token id="00000134A34750D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913902C0" astParent="00000134A3474BF0" astOperand1="00000134A3474CB0" astOperand2="00000134A3474890"/>
+    <token id="00000134A3474D70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A3474110"/>
+    <token id="00000134A3474110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A3474170" astOperand1="00000134A3474D70" astOperand2="00000134A3475310"/>
+    <token id="00000134A3475310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="UI" scope="00000134913902C0" type="name" astParent="00000134A3474110"/>
+    <token id="00000134A3474170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A34742F0" astOperand1="00000134A3474110" astOperand2="00000134A3474230"/>
+    <token id="00000134A3474230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3474170"/>
+    <token id="00000134A34742F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A3474890" astOperand1="00000134A3474170" astOperand2="00000134A3475130"/>
+    <token id="00000134A3475130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Interop" scope="00000134913902C0" type="name" astParent="00000134A34742F0"/>
+    <token id="00000134A3474890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A34750D0" astOperand1="00000134A34742F0" astOperand2="00000134A3475190"/>
+    <token id="00000134A34747D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="TypeName" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3475190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="targetType" scope="00000134913902C0" type="name" varId="6" astParent="00000134A3474890"/>
+    <token id="00000134A3474BF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913902C0" astParent="00000134A3474DD0" astOperand1="00000134A34750D0" astOperand2="00000134A3474FB0"/>
+    <token id="00000134A34745F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A34748F0"/>
+    <token id="00000134A34748F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A3474FB0" astOperand1="00000134A34745F0" astOperand2="00000134A3475010"/>
+    <token id="00000134A3475010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913902C0" type="name" astParent="00000134A34748F0"/>
+    <token id="00000134A3474FB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913902C0" type="op" astParent="00000134A3474BF0" astOperand1="00000134A34748F0" astOperand2="00000134A3475370"/>
+    <token id="00000134A3475370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="parameter" scope="00000134913902C0" type="name" astParent="00000134A3474FB0"/>
+    <token id="00000134A3474DD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913902C0" astParent="00000134A34741D0" astOperand1="00000134A3474BF0" astOperand2="00000134A34749B0"/>
+    <token id="00000134A3474650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3474E30"/>
+    <token id="00000134A3474E30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913902C0" astParent="00000134A34749B0" astOperand1="00000134A3474650" astOperand2="00000134A3475610"/>
+    <token id="00000134A3475610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="String" scope="00000134913902C0" type="name" astParent="00000134A3474E30"/>
+    <token id="00000134A34749B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913902C0" type="op" astParent="00000134A3474DD0" astOperand1="00000134A3474E30" astOperand2="00000134A3474C50"/>
+    <token id="00000134A3474C50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="language" scope="00000134913902C0" type="name" astParent="00000134A34749B0"/>
+    <token id="00000134A34751F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str=")" scope="00000134913902C0" link="00000134A34741D0"/>
+    <token id="00000134A3474F50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str=";" scope="00000134913902C0"/>
+    <token id="00000134A3475250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="virtual" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34754F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3474350"/>
+    <token id="00000134A3474350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A34746B0" astOperand1="00000134A34754F0" astOperand2="00000134A34753D0"/>
+    <token id="00000134A34753D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3474350"/>
+    <token id="00000134A34746B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913902C0" type="op" astOperand1="00000134A3474350" astOperand2="00000134A34752B0"/>
+    <token id="00000134A3474710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="ConvertBack" scope="00000134913902C0" type="name" astParent="00000134A34752B0"/>
+    <token id="00000134A34752B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="(" scope="00000134913902C0" link="00000134A34764B0" astParent="00000134A34746B0" astOperand1="00000134A3474710" astOperand2="00000134A3476B70"/>
+    <token id="00000134A3474A10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3475430"/>
+    <token id="00000134A3475430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A3474950" astOperand1="00000134A3474A10" astOperand2="00000134A3474830"/>
+    <token id="00000134A3474830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3475430"/>
+    <token id="00000134A3474950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913902C0" type="op" astParent="00000134A34755B0" astOperand1="00000134A3475430" astOperand2="00000134A3475490"/>
+    <token id="00000134A3475490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="value" scope="00000134913902C0" type="name" astParent="00000134A3474950"/>
+    <token id="00000134A34755B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913902C0" astParent="00000134A3476F90" astOperand1="00000134A3474950" astOperand2="00000134A34763F0"/>
+    <token id="00000134A3475670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A34756D0"/>
+    <token id="00000134A34756D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A3476E10" astOperand1="00000134A3475670" astOperand2="00000134A3475BB0"/>
+    <token id="00000134A3475BB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="UI" scope="00000134913902C0" type="name" astParent="00000134A34756D0"/>
+    <token id="00000134A3476E10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A3475FD0" astOperand1="00000134A34756D0" astOperand2="00000134A3476E70"/>
+    <token id="00000134A3476E70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3476E10"/>
+    <token id="00000134A3475FD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A34763F0" astOperand1="00000134A3476E10" astOperand2="00000134A3476F30"/>
+    <token id="00000134A3476F30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Interop" scope="00000134913902C0" type="name" astParent="00000134A3475FD0"/>
+    <token id="00000134A34763F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A34755B0" astOperand1="00000134A3475FD0" astOperand2="00000134A3476450"/>
+    <token id="00000134A3475AF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="TypeName" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="targetType" scope="00000134913902C0" type="name" varId="7" astParent="00000134A34763F0"/>
+    <token id="00000134A3476F90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913902C0" astParent="00000134A3476B70" astOperand1="00000134A34755B0" astOperand2="00000134A3476DB0"/>
+    <token id="00000134A3476690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3476D50"/>
+    <token id="00000134A3476D50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A3476DB0" astOperand1="00000134A3476690" astOperand2="00000134A34760F0"/>
+    <token id="00000134A34760F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3476D50"/>
+    <token id="00000134A3476DB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913902C0" type="op" astParent="00000134A3476F90" astOperand1="00000134A3476D50" astOperand2="00000134A34766F0"/>
+    <token id="00000134A34766F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="parameter" scope="00000134913902C0" type="name" astParent="00000134A3476DB0"/>
+    <token id="00000134A3476B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913902C0" astParent="00000134A34752B0" astOperand1="00000134A3476F90" astOperand2="00000134A3476750"/>
+    <token id="00000134A3476930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3476630"/>
+    <token id="00000134A3476630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913902C0" astParent="00000134A3476750" astOperand1="00000134A3476930" astOperand2="00000134A3476FF0"/>
+    <token id="00000134A3476FF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="String" scope="00000134913902C0" type="name" astParent="00000134A3476630"/>
+    <token id="00000134A3476750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913902C0" type="op" astParent="00000134A3476B70" astOperand1="00000134A3476630" astOperand2="00000134A3477050"/>
+    <token id="00000134A3477050" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="language" scope="00000134913902C0" type="name" astParent="00000134A3476750"/>
+    <token id="00000134A34764B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str=")" scope="00000134913902C0" link="00000134A34752B0"/>
+    <token id="00000134A3475F70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str=";" scope="00000134913902C0"/>
+    <token id="00000134A3476B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="26" str="}" scope="00000134913902C0" link="00000134A3472C10"/>
+    <token id="00000134A34768D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="26" str=";" scope="00000134913902C0"/>
+    <token id="00000134A3475C70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="public" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476ED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="ref" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3475DF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="class" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="BooleanToVisibilityNegationConverter" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="sealed" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str=":" scope="00000134913902C0"/>
+    <token id="00000134A34770B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A3475E50"/>
+    <token id="00000134A3475E50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913902C0" astParent="00000134A3476990" astOperand1="00000134A34770B0" astOperand2="00000134A34767B0"/>
+    <token id="00000134A34767B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="UI" scope="00000134913902C0" type="name" astParent="00000134A3475E50"/>
+    <token id="00000134A3476990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913902C0" astParent="00000134A3476510" astOperand1="00000134A3475E50" astOperand2="00000134A3475D30"/>
+    <token id="00000134A3475D30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3476990"/>
+    <token id="00000134A3476510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913902C0" astParent="00000134A34769F0" astOperand1="00000134A3476990" astOperand2="00000134A3475CD0"/>
+    <token id="00000134A3475CD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Data" scope="00000134913902C0" type="name" astParent="00000134A3476510"/>
+    <token id="00000134A34769F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913902C0" astOperand1="00000134A3476510" astOperand2="00000134A3475EB0"/>
+    <token id="00000134A3475EB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="IValueConverter" scope="00000134913902C0" type="name" astParent="00000134A34769F0"/>
+    <token id="00000134A3475910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="33" str="{" scope="00000134913902C0" link="00000134A3479510"/>
+    <token id="00000134A34765D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="34" str="public:" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="virtual" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3476090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3475C10"/>
+    <token id="00000134A3475C10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3475970" astOperand1="00000134A3476090" astOperand2="00000134A3475D90"/>
+    <token id="00000134A3475D90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3475C10"/>
+    <token id="00000134A3475970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913902C0" type="op" astOperand1="00000134A3475C10" astOperand2="00000134A3476A50"/>
+    <token id="00000134A3475F10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Convert" scope="00000134913902C0" type="name" astParent="00000134A3476A50"/>
+    <token id="00000134A3476A50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="(" scope="00000134913902C0" link="00000134A34774D0" astParent="00000134A3475970" astOperand1="00000134A3475F10" astOperand2="00000134A3477A70"/>
+    <token id="00000134A3476C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3476150"/>
+    <token id="00000134A3476150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3475A90" astOperand1="00000134A3476C30" astOperand2="00000134A34761B0"/>
+    <token id="00000134A34761B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3476150"/>
+    <token id="00000134A3475A90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913902C0" type="op" astParent="00000134A3476270" astOperand1="00000134A3476150" astOperand2="00000134A3476AB0"/>
+    <token id="00000134A3476AB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="value" scope="00000134913902C0" type="name" astParent="00000134A3475A90"/>
+    <token id="00000134A3476270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913902C0" astParent="00000134A3478850" astOperand1="00000134A3475A90" astOperand2="00000134A3475A30"/>
+    <token id="00000134A3476210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A34762D0"/>
+    <token id="00000134A34762D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3476C90" astOperand1="00000134A3476210" astOperand2="00000134A3476330"/>
+    <token id="00000134A3476330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="UI" scope="00000134913902C0" type="name" astParent="00000134A34762D0"/>
+    <token id="00000134A3476C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A34759D0" astOperand1="00000134A34762D0" astOperand2="00000134A3476CF0"/>
+    <token id="00000134A3476CF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A3476C90"/>
+    <token id="00000134A34759D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3475A30" astOperand1="00000134A3476C90" astOperand2="00000134A3476390"/>
+    <token id="00000134A3476390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Interop" scope="00000134913902C0" type="name" astParent="00000134A34759D0"/>
+    <token id="00000134A3475A30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3476270" astOperand1="00000134A34759D0" astOperand2="00000134A34787F0"/>
+    <token id="00000134A3475B50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="TypeName" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34787F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="targetType" scope="00000134913902C0" type="name" varId="8" astParent="00000134A3475A30"/>
+    <token id="00000134A3478850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913902C0" astParent="00000134A3477A70" astOperand1="00000134A3476270" astOperand2="00000134A34788B0"/>
+    <token id="00000134A3477350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3477BF0"/>
+    <token id="00000134A3477BF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A34788B0" astOperand1="00000134A3477350" astOperand2="00000134A3477D70"/>
+    <token id="00000134A3477D70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3477BF0"/>
+    <token id="00000134A34788B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913902C0" type="op" astParent="00000134A3478850" astOperand1="00000134A3477BF0" astOperand2="00000134A3477170"/>
+    <token id="00000134A3477170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="parameter" scope="00000134913902C0" type="name" astParent="00000134A34788B0"/>
+    <token id="00000134A3477A70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913902C0" astParent="00000134A3476A50" astOperand1="00000134A3478850" astOperand2="00000134A3477F50"/>
+    <token id="00000134A3478370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3477B30"/>
+    <token id="00000134A3477B30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913902C0" astParent="00000134A3477F50" astOperand1="00000134A3478370" astOperand2="00000134A34778F0"/>
+    <token id="00000134A34778F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="String" scope="00000134913902C0" type="name" astParent="00000134A3477B30"/>
+    <token id="00000134A3477F50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913902C0" type="op" astParent="00000134A3477A70" astOperand1="00000134A3477B30" astOperand2="00000134A3478550"/>
+    <token id="00000134A3478550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="language" scope="00000134913902C0" type="name" astParent="00000134A3477F50"/>
+    <token id="00000134A34774D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str=")" scope="00000134913902C0" link="00000134A3476A50"/>
+    <token id="00000134A3477DD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str=";" scope="00000134913902C0"/>
+    <token id="00000134A3477110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="virtual" scope="00000134913902C0" type="name"/>
+    <token id="00000134A3477530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3477E90"/>
+    <token id="00000134A3477E90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A3477590" astOperand1="00000134A3477530" astOperand2="00000134A3477230"/>
+    <token id="00000134A3477230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3477E90"/>
+    <token id="00000134A3477590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913902C0" type="op" astOperand1="00000134A3477E90" astOperand2="00000134A34772F0"/>
+    <token id="00000134A3477290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="ConvertBack" scope="00000134913902C0" type="name" astParent="00000134A34772F0"/>
+    <token id="00000134A34772F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="(" scope="00000134913902C0" link="00000134A3479C90" astParent="00000134A3477590" astOperand1="00000134A3477290" astOperand2="00000134A34791B0"/>
+    <token id="00000134A3477FB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A34775F0"/>
+    <token id="00000134A34775F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A3477650" astOperand1="00000134A3477FB0" astOperand2="00000134A34773B0"/>
+    <token id="00000134A34773B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913902C0" type="name" astParent="00000134A34775F0"/>
+    <token id="00000134A3477650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913902C0" type="op" astParent="00000134A34780D0" astOperand1="00000134A34775F0" astOperand2="00000134A3478070"/>
+    <token id="00000134A3478070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="value" scope="00000134913902C0" type="name" astParent="00000134A3477650"/>
+    <token id="00000134A34780D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913902C0" astParent="00000134A3479B10" astOperand1="00000134A3477650" astOperand2="00000134A3478430"/>
+    <token id="00000134A34776B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Windows" scope="00000134913902C0" type="name" astParent="00000134A3477710"/>
+    <token id="00000134A3477710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A34779B0" astOperand1="00000134A34776B0" astOperand2="00000134A3477770"/>
+    <token id="00000134A3477770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="UI" scope="00000134913902C0" type="name" astParent="00000134A3477710"/>
+    <token id="00000134A34779B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A34782B0" astOperand1="00000134A3477710" astOperand2="00000134A3478190"/>
+    <token id="00000134A3478190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Xaml" scope="00000134913902C0" type="name" astParent="00000134A34779B0"/>
+    <token id="00000134A34782B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A3478430" astOperand1="00000134A34779B0" astOperand2="00000134A34783D0"/>
+    <token id="00000134A34783D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Interop" scope="00000134913902C0" type="name" astParent="00000134A34782B0"/>
+    <token id="00000134A3478430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A34780D0" astOperand1="00000134A34782B0" astOperand2="00000134A34785B0"/>
+    <token id="00000134A34784F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="TypeName" scope="00000134913902C0" type="name"/>
+    <token id="00000134A34785B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="targetType" scope="00000134913902C0" type="name" varId="9" astParent="00000134A3478430"/>
+    <token id="00000134A3479B10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913902C0" astParent="00000134A34791B0" astOperand1="00000134A34780D0" astOperand2="00000134A3479930"/>
+    <token id="00000134A34789D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3478A90"/>
+    <token id="00000134A3478A90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A3479930" astOperand1="00000134A34789D0" astOperand2="00000134A3478B50"/>
+    <token id="00000134A3478B50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913902C0" type="name" astParent="00000134A3478A90"/>
+    <token id="00000134A3479930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913902C0" type="op" astParent="00000134A3479B10" astOperand1="00000134A3478A90" astOperand2="00000134A34790F0"/>
+    <token id="00000134A34790F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="parameter" scope="00000134913902C0" type="name" astParent="00000134A3479930"/>
+    <token id="00000134A34791B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913902C0" astParent="00000134A34772F0" astOperand1="00000134A3479B10" astOperand2="00000134A34793F0"/>
+    <token id="00000134A3479B70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913902C0" type="name" astParent="00000134A3479390"/>
+    <token id="00000134A3479390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913902C0" astParent="00000134A34793F0" astOperand1="00000134A3479B70" astOperand2="00000134A3478BB0"/>
+    <token id="00000134A3478BB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="String" scope="00000134913902C0" type="name" astParent="00000134A3479390"/>
+    <token id="00000134A34793F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913902C0" type="op" astParent="00000134A34791B0" astOperand1="00000134A3479390" astOperand2="00000134A3479C30"/>
+    <token id="00000134A3479C30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="language" scope="00000134913902C0" type="name" astParent="00000134A34793F0"/>
+    <token id="00000134A3479C90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str=")" scope="00000134913902C0" link="00000134A34772F0"/>
+    <token id="00000134A3478C10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str=";" scope="00000134913902C0"/>
+    <token id="00000134A3479510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="37" str="}" scope="00000134913902C0" link="00000134A3475910"/>
+    <token id="00000134A3478D90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="37" str=";" scope="00000134913902C0"/>
+    <token id="00000134A34794B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="39" str="}" scope="00000134913902C0" link="00000134A3473FF0"/>
+    <token id="00000134A3478DF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="40" str="}" scope="000001349138FB50" link="00000134A34733F0"/>
+    <token id="00000134A3478E50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str="using" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3479450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A3478C70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str="CalculatorApp" scope="000001349138FA40" type="name" astParent="00000134A3479570"/>
+    <token id="00000134A3479570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str="::" scope="000001349138FA40" astOperand1="00000134A3478C70" astOperand2="00000134A3479630"/>
+    <token id="00000134A3479630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str="Converters" scope="000001349138FA40" type="name" astParent="00000134A3479570"/>
+    <token id="00000134A3479690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="8" str=";" scope="000001349138FA40"/>
+    <token id="00000134A34796F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="9" str="using" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347A410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="9" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347A650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="9" str="Platform" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347A170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="9" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347A230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str="using" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347A890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347AD70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A347B790"/>
+    <token id="00000134A347B790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str="::" scope="000001349138FA40" astOperand1="00000134A347AD70" astOperand2="00000134A347B850"/>
+    <token id="00000134A347B850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str="Foundation" scope="000001349138FA40" type="name" astParent="00000134A347B790"/>
+    <token id="00000134A347B610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="10" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347AAD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="using" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347B070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347B250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A347AB90"/>
+    <token id="00000134A347AB90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="::" scope="000001349138FA40" astParent="00000134A347ACB0" astOperand1="00000134A347B250" astOperand2="00000134A347AB30"/>
+    <token id="00000134A347AB30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="UI" scope="000001349138FA40" type="name" astParent="00000134A347AB90"/>
+    <token id="00000134A347ACB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="::" scope="000001349138FA40" astOperand1="00000134A347AB90" astOperand2="00000134A347A3B0"/>
+    <token id="00000134A347A3B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A347ACB0"/>
+    <token id="00000134A347A7D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="11" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347B3D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="using" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347AEF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347AFB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="Windows" scope="000001349138FA40" type="name" astParent="00000134A347A8F0"/>
+    <token id="00000134A347A8F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="::" scope="000001349138FA40" astParent="00000134A347B310" astOperand1="00000134A347AFB0" astOperand2="00000134A347AE90"/>
+    <token id="00000134A347AE90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="UI" scope="000001349138FA40" type="name" astParent="00000134A347A8F0"/>
+    <token id="00000134A347B310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="::" scope="000001349138FA40" astParent="00000134A347A350" astOperand1="00000134A347A8F0" astOperand2="00000134A347B1F0"/>
+    <token id="00000134A347B1F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="Xaml" scope="000001349138FA40" type="name" astParent="00000134A347B310"/>
+    <token id="00000134A347A350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="::" scope="000001349138FA40" astOperand1="00000134A347B310" astOperand2="00000134A347A470"/>
+    <token id="00000134A347A470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str="Interop" scope="000001349138FA40" type="name" astParent="00000134A347A350"/>
+    <token id="00000134A347A6B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="12" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347A1D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347A290"/>
+    <token id="00000134A347A290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A347A1D0" astOperand2="00000134A347AF50"/>
+    <token id="00000134A347A590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="ItemSizeToVisibilityConverter" scope="000001349138FA40" type="name" astParent="00000134A347A5F0"/>
+    <token id="00000134A347A5F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="::" scope="000001349138FA40" astParent="00000134A347AF50" astOperand1="00000134A347A590" astOperand2="00000134A347B0D0"/>
+    <token id="00000134A347B0D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A347A5F0"/>
+    <token id="00000134A347AF50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="(" scope="000001349138FA40" link="00000134A347AD10" astParent="00000134A347A290" astOperand1="00000134A347A5F0" astOperand2="00000134A347B6D0"/>
+    <token id="00000134A347B8B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347B010"/>
+    <token id="00000134A347B010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A347B490" astOperand1="00000134A347B8B0" astOperand2="00000134A347ABF0"/>
+    <token id="00000134A347ABF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="value" scope="000001349138FA40" type="name" astParent="00000134A347B010"/>
+    <token id="00000134A347B490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="," scope="000001349138FA40" astParent="00000134A347A710" astOperand1="00000134A347B010" astOperand2="00000134A347B130"/>
+    <token id="00000134A347B7F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347B130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="targetType" scope="000001349138FA40" type="name" varId="10" astParent="00000134A347B490"/>
+    <token id="00000134A347A710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="," scope="000001349138FA40" astParent="00000134A347B6D0" astOperand1="00000134A347B490" astOperand2="00000134A347AC50"/>
+    <token id="00000134A347B670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347AC50"/>
+    <token id="00000134A347AC50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A347A710" astOperand1="00000134A347B670" astOperand2="00000134A347A4D0"/>
+    <token id="00000134A347A4D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347AC50"/>
+    <token id="00000134A347B6D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="," scope="000001349138FA40" astParent="00000134A347AF50" astOperand1="00000134A347A710" astOperand2="00000134A347A110"/>
+    <token id="00000134A347B2B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="String" scope="000001349138FA40" type="name" astParent="00000134A347A110"/>
+    <token id="00000134A347A110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="^" scope="000001349138FA40" type="op" astParent="00000134A347B6D0" astOperand1="00000134A347B2B0" astOperand2="00000134A347A770"/>
+    <token id="00000134A347A770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str="language" scope="000001349138FA40" type="name" astParent="00000134A347A110"/>
+    <token id="00000134A347AD10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="14" str=")" scope="000001349138FA40" link="00000134A347AF50"/>
+    <token id="00000134A347ADD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="15" str="{" scope="000001349138FA40" link="00000134A347BA30"/>
+    <token id="00000134A347B4F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="16" str="(" scope="000001349138FA40" link="00000134A347A830" astOperand1="00000134A347A950" valueType-type="void"/>
+    <token id="00000134A347A530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="16" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347A830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="16" str=")" scope="000001349138FA40" link="00000134A347B4F0"/>
+    <token id="00000134A347A950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="16" str="targetType" scope="000001349138FA40" type="name" varId="10" astParent="00000134A347B4F0"/>
+    <token id="00000134A347A2F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="16" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347B370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="17" str="(" scope="000001349138FA40" link="00000134A347AA10" astOperand1="00000134A347AA70" valueType-type="void"/>
+    <token id="00000134A347A9B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="17" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347AA10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="17" str=")" scope="000001349138FA40" link="00000134A347B370"/>
+    <token id="00000134A347AA70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="17" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347B370"/>
+    <token id="00000134A347AE30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="17" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347B190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="18" str="(" scope="000001349138FA40" link="00000134A347B550" astOperand1="00000134A347B5B0" valueType-type="void"/>
+    <token id="00000134A347B430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="18" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347B550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="18" str=")" scope="000001349138FA40" link="00000134A347B190"/>
+    <token id="00000134A347B5B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="18" str="language" scope="000001349138FA40" type="name" astParent="00000134A347B190"/>
+    <token id="00000134A347B730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="18" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347C4B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="auto" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347BD90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="items" scope="000001349138FA40" type="name" varId="11"/>
+    <token id="00000134A347C870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str=";" scope="000001349138FA40"/>
+    <token id="00000134A3476BD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="items" scope="000001349138FA40" type="name" varId="11" astParent="00000134A347F030"/>
+    <token id="00000134A347F030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="=" scope="000001349138FA40" type="op" isAssignmentOp="True" astOperand1="00000134A3476BD0" astOperand2="00000134A347BC10"/>
+    <token id="00000134A347C8D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="dynamic_cast" scope="000001349138FA40" type="name" function="00000134A2140340" astParent="00000134A347BC10"/>
+    <token id="00000134A347C3F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="&lt;" scope="000001349138FA40" link="00000134A347B910"/>
+    <token id="00000134A347C6F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="Box" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347C450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="&lt;" scope="000001349138FA40" link="00000134A347CB10"/>
+    <token id="00000134A347BA90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="int" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347CB10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="&gt;" scope="000001349138FA40" link="00000134A347C450"/>
+    <token id="00000134A347BDF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="^" scope="000001349138FA40" type="op"/>
+    <token id="00000134A347B910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="&gt;" scope="000001349138FA40" link="00000134A347C3F0"/>
+    <token id="00000134A347BC10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="(" scope="000001349138FA40" link="00000134A347B9D0" astParent="00000134A347F030" astOperand1="00000134A347C8D0" astOperand2="00000134A347CB70"/>
+    <token id="00000134A347CB70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str="value" scope="000001349138FA40" type="name" astParent="00000134A347BC10"/>
+    <token id="00000134A347B9D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str=")" scope="000001349138FA40" link="00000134A347BC10"/>
+    <token id="00000134A347C510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="20" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347C930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="auto" scope="000001349138FA40" type="name" valueType-type="bool"/>
+    <token id="00000134A347C750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="boolValue" scope="000001349138FA40" type="name" varId="12" valueType-type="bool"/>
+    <token id="00000134A347C7B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347FD50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="boolValue" scope="000001349138FA40" type="name" varId="12" astParent="00000134A347F150" valueType-type="bool"/>
+    <token id="00000134A347F150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="=" scope="000001349138FA40" type="op" isAssignmentOp="True" astOperand1="00000134A347FD50" astOperand2="00000134A347BE50" valueType-type="bool"/>
+    <token id="00000134A347BAF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="items" scope="000001349138FA40" type="name" varId="11" astParent="00000134A347C810"/>
+    <token id="00000134A347C810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="!=" scope="000001349138FA40" type="op" isComparisonOp="True" astParent="00000134A347BE50" astOperand1="00000134A347BAF0" astOperand2="00000134A347CE70" valueType-type="bool"/>
+    <token id="00000134A347CE70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="nullptr" scope="000001349138FA40" type="name" values="00000134A91FB400" astParent="00000134A347C810"/>
+    <token id="00000134A347BE50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="&amp;&amp;" scope="000001349138FA40" type="op" isLogicalOp="True" astParent="00000134A347F150" astOperand1="00000134A347C810" astOperand2="00000134A347C9F0" valueType-type="bool"/>
+    <token id="00000134A347CC90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="(" scope="000001349138FA40" link="00000134A347BB50"/>
+    <token id="00000134A347B970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="items" scope="000001349138FA40" type="name" varId="11" astParent="00000134A347C990"/>
+    <token id="00000134A347C990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="." scope="000001349138FA40" astParent="00000134A347C9F0" astOperand1="00000134A347B970" astOperand2="00000134A347BBB0" originalName="->"/>
+    <token id="00000134A347BBB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="Value" scope="000001349138FA40" type="name" varId="13" astParent="00000134A347C990"/>
+    <token id="00000134A347C9F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="==" scope="000001349138FA40" type="op" isComparisonOp="True" astParent="00000134A347BE50" astOperand1="00000134A347C990" astOperand2="00000134A347CF30" valueType-type="bool"/>
+    <token id="00000134A347CF30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str="0" scope="000001349138FA40" type="number" isInt="True" values="00000134A91FB5C0" astParent="00000134A347C9F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347BB50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str=")" scope="000001349138FA40" link="00000134A347CC90"/>
+    <token id="00000134A347BEB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="21" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347C330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="return" scope="000001349138FA40" type="name" astOperand1="00000134A347C630"/>
+    <token id="00000134A347BC70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="BooleanToVisibilityConverter" scope="000001349138FA40" type="name" astParent="00000134A347C5D0"/>
+    <token id="00000134A347C5D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="::" scope="000001349138FA40" astParent="00000134A347C630" astOperand1="00000134A347BC70" astOperand2="00000134A347BF10"/>
+    <token id="00000134A347BF10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A347C5D0"/>
+    <token id="00000134A347C630" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="(" scope="000001349138FA40" link="00000134A347BF70" astParent="00000134A347C330" astOperand1="00000134A347C5D0" astOperand2="00000134A347BCD0"/>
+    <token id="00000134A347BCD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str="boolValue" scope="000001349138FA40" type="name" varId="12" astParent="00000134A347C630"/>
+    <token id="00000134A347BF70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str=")" scope="000001349138FA40" link="00000134A347C630"/>
+    <token id="00000134A347BD30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="22" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347BA30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="23" str="}" scope="000001349138FA40" link="00000134A347ADD0"/>
+    <token id="00000134A347BFD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347CE10"/>
+    <token id="00000134A347CE10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A347BFD0" astOperand2="00000134A347C0F0"/>
+    <token id="00000134A347CBD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="ItemSizeToVisibilityConverter" scope="000001349138FA40" type="name" astParent="00000134A347C690"/>
+    <token id="00000134A347C690" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="::" scope="000001349138FA40" astParent="00000134A347C0F0" astOperand1="00000134A347CBD0" astOperand2="00000134A347CD50"/>
+    <token id="00000134A347CD50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="ConvertBack" scope="000001349138FA40" type="name" astParent="00000134A347C690"/>
+    <token id="00000134A347C0F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="(" scope="000001349138FA40" link="00000134A347C270" astParent="00000134A347CE10" astOperand1="00000134A347C690" astOperand2="00000134A347C090"/>
+    <token id="00000134A347CDB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347CA50"/>
+    <token id="00000134A347CA50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="^" scope="000001349138FA40" type="op" astParent="00000134A347CAB0" astOperand1="00000134A347CDB0" astOperand2="00000134A347CC30"/>
+    <token id="00000134A347CC30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="value" scope="000001349138FA40" type="name" astParent="00000134A347CA50"/>
+    <token id="00000134A347CAB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="," scope="000001349138FA40" astParent="00000134A347CED0" astOperand1="00000134A347CA50" astOperand2="00000134A347CF90"/>
+    <token id="00000134A347CCF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347CF90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="targetType" scope="000001349138FA40" type="name" varId="14" astParent="00000134A347CAB0"/>
+    <token id="00000134A347CED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="," scope="000001349138FA40" astParent="00000134A347C090" astOperand1="00000134A347CAB0" astOperand2="00000134A347CFF0"/>
+    <token id="00000134A347D0B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347CFF0"/>
+    <token id="00000134A347CFF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="^" scope="000001349138FA40" type="op" astParent="00000134A347CED0" astOperand1="00000134A347D0B0" astOperand2="00000134A347C030"/>
+    <token id="00000134A347C030" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347CFF0"/>
+    <token id="00000134A347C090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="," scope="000001349138FA40" astParent="00000134A347C0F0" astOperand1="00000134A347CED0" astOperand2="00000134A347C1B0"/>
+    <token id="00000134A347C150" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="String" scope="000001349138FA40" type="name" astParent="00000134A347C1B0"/>
+    <token id="00000134A347C1B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="^" scope="000001349138FA40" type="op" astParent="00000134A347C090" astOperand1="00000134A347C150" astOperand2="00000134A347C210"/>
+    <token id="00000134A347C210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str="language" scope="000001349138FA40" type="name" astParent="00000134A347C1B0"/>
+    <token id="00000134A347C270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="25" str=")" scope="000001349138FA40" link="00000134A347C0F0"/>
+    <token id="00000134A347C2D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="26" str="{" scope="000001349138FA40" link="00000134A347DC50"/>
+    <token id="00000134A347C390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str="throw" scope="000001349138FA40" type="name" astOperand1="00000134A347DE90"/>
+    <token id="00000134A347D350" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str="ref" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347E550" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str="new" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347D590" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str="NotImplementedException" scope="000001349138FA40" type="name" function="00000134A213FC80" astParent="00000134A347DE90"/>
+    <token id="00000134A347DE90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str="(" scope="000001349138FA40" link="00000134A347E010" astParent="00000134A347C390" astOperand1="00000134A347D590"/>
+    <token id="00000134A347E010" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str=")" scope="000001349138FA40" link="00000134A347DE90"/>
+    <token id="00000134A347D530" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="27" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347DC50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="28" str="}" scope="000001349138FA40" link="00000134A347C2D0"/>
+    <token id="00000134A347D4D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347DEF0"/>
+    <token id="00000134A347DEF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A347D4D0" astOperand2="00000134A347D650"/>
+    <token id="00000134A347E430" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="ItemSizeToVisibilityNegationConverter" scope="000001349138FA40" type="name" astParent="00000134A347D3B0"/>
+    <token id="00000134A347D3B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="::" scope="000001349138FA40" astParent="00000134A347D650" astOperand1="00000134A347E430" astOperand2="00000134A347D410"/>
+    <token id="00000134A347D410" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A347D3B0"/>
+    <token id="00000134A347D650" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="(" scope="000001349138FA40" link="00000134A347D7D0" astParent="00000134A347DEF0" astOperand1="00000134A347D3B0" astOperand2="00000134A347DB90"/>
+    <token id="00000134A347D170" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347D230"/>
+    <token id="00000134A347D230" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="^" scope="000001349138FA40" type="op" astParent="00000134A347DD70" astOperand1="00000134A347D170" astOperand2="00000134A347D890"/>
+    <token id="00000134A347D890" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="value" scope="000001349138FA40" type="name" astParent="00000134A347D230"/>
+    <token id="00000134A347DD70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="," scope="000001349138FA40" astParent="00000134A347E610" astOperand1="00000134A347D230" astOperand2="00000134A347E850"/>
+    <token id="00000134A347E790" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347E850" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="targetType" scope="000001349138FA40" type="name" varId="15" astParent="00000134A347DD70"/>
+    <token id="00000134A347E610" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="," scope="000001349138FA40" astParent="00000134A347DB90" astOperand1="00000134A347DD70" astOperand2="00000134A347E070"/>
+    <token id="00000134A347DAD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347E070"/>
+    <token id="00000134A347E070" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="^" scope="000001349138FA40" type="op" astParent="00000134A347E610" astOperand1="00000134A347DAD0" astOperand2="00000134A347E250"/>
+    <token id="00000134A347E250" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347E070"/>
+    <token id="00000134A347DB90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="," scope="000001349138FA40" astParent="00000134A347D650" astOperand1="00000134A347E610" astOperand2="00000134A347DCB0"/>
+    <token id="00000134A347DB30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="String" scope="000001349138FA40" type="name" astParent="00000134A347DCB0"/>
+    <token id="00000134A347DCB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="^" scope="000001349138FA40" type="op" astParent="00000134A347DB90" astOperand1="00000134A347DB30" astOperand2="00000134A347D470"/>
+    <token id="00000134A347D470" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str="language" scope="000001349138FA40" type="name" astParent="00000134A347DCB0"/>
+    <token id="00000134A347D7D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="30" str=")" scope="000001349138FA40" link="00000134A347D650"/>
+    <token id="00000134A347E3D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="31" str="{" scope="000001349138FA40" link="00000134A347F870"/>
+    <token id="00000134A347DF50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="32" str="(" scope="000001349138FA40" link="00000134A347D8F0" astOperand1="00000134A347E0D0" valueType-type="void"/>
+    <token id="00000134A347DFB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="32" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347D8F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="32" str=")" scope="000001349138FA40" link="00000134A347DF50"/>
+    <token id="00000134A347E0D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="32" str="targetType" scope="000001349138FA40" type="name" varId="15" astParent="00000134A347DF50"/>
+    <token id="00000134A347E310" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="32" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347E730" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="33" str="(" scope="000001349138FA40" link="00000134A347D9B0" astOperand1="00000134A347DD10" valueType-type="void"/>
+    <token id="00000134A347E670" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="33" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347D9B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="33" str=")" scope="000001349138FA40" link="00000134A347E730"/>
+    <token id="00000134A347DD10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="33" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347E730"/>
+    <token id="00000134A347E190" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="33" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347DDD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="34" str="(" scope="000001349138FA40" link="00000134A347E4F0" astOperand1="00000134A347D290" valueType-type="void"/>
+    <token id="00000134A347E1F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="34" str="void" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347E4F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="34" str=")" scope="000001349138FA40" link="00000134A347DDD0"/>
+    <token id="00000134A347D290" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="34" str="language" scope="000001349138FA40" type="name" astParent="00000134A347DDD0"/>
+    <token id="00000134A347E370" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="34" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347E7F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="auto" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347D6B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="items" scope="000001349138FA40" type="name" varId="16"/>
+    <token id="00000134A347DBF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347FA50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="items" scope="000001349138FA40" type="name" varId="16" astParent="00000134A347F570"/>
+    <token id="00000134A347F570" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="=" scope="000001349138FA40" type="op" isAssignmentOp="True" astOperand1="00000134A347FA50" astOperand2="00000134A347D710"/>
+    <token id="00000134A347DA10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="dynamic_cast" scope="000001349138FA40" type="name" astParent="00000134A347D710"/>
+    <token id="00000134A347DE30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="&lt;" scope="000001349138FA40" link="00000134A347E6D0"/>
+    <token id="00000134A347D5F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="Box" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347E8B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="&lt;" scope="000001349138FA40" link="00000134A347D110"/>
+    <token id="00000134A347E490" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="int" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347D110" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="&gt;" scope="000001349138FA40" link="00000134A347E8B0"/>
+    <token id="00000134A347E2B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="^" scope="000001349138FA40" type="op"/>
+    <token id="00000134A347E6D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="&gt;" scope="000001349138FA40" link="00000134A347DE30"/>
+    <token id="00000134A347D710" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="(" scope="000001349138FA40" link="00000134A347D2F0" astParent="00000134A347F570" astOperand1="00000134A347DA10" astOperand2="00000134A347D1D0"/>
+    <token id="00000134A347D1D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str="value" scope="000001349138FA40" type="name" astParent="00000134A347D710"/>
+    <token id="00000134A347D2F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str=")" scope="000001349138FA40" link="00000134A347D710"/>
+    <token id="00000134A347D830" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="36" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347D770" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="auto" scope="000001349138FA40" type="name" valueType-type="bool"/>
+    <token id="00000134A347E130" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="boolValue" scope="000001349138FA40" type="name" varId="17" valueType-type="bool"/>
+    <token id="00000134A347D950" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347F270" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="boolValue" scope="000001349138FA40" type="name" varId="17" astParent="00000134A347FDB0" valueType-type="bool"/>
+    <token id="00000134A347FDB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="=" scope="000001349138FA40" type="op" isAssignmentOp="True" astOperand1="00000134A347F270" astOperand2="00000134A347F210" valueType-type="bool"/>
+    <token id="00000134A347E5B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="items" scope="000001349138FA40" type="name" varId="16" astParent="00000134A347EE50"/>
+    <token id="00000134A347EE50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="!=" scope="000001349138FA40" type="op" isComparisonOp="True" astParent="00000134A347F210" astOperand1="00000134A347E5B0" astOperand2="00000134A347F2D0" valueType-type="bool"/>
+    <token id="00000134A347F2D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="nullptr" scope="000001349138FA40" type="name" values="00000134A91FB860" astParent="00000134A347EE50"/>
+    <token id="00000134A347F210" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="&amp;&amp;" scope="000001349138FA40" type="op" isLogicalOp="True" astParent="00000134A347FDB0" astOperand1="00000134A347EE50" astOperand2="00000134A347E910" valueType-type="bool"/>
+    <token id="00000134A347F330" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="(" scope="000001349138FA40" link="00000134A347FE70"/>
+    <token id="00000134A347ECD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="items" scope="000001349138FA40" type="name" varId="16" astParent="00000134A347FF30"/>
+    <token id="00000134A347FF30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="." scope="000001349138FA40" astParent="00000134A347E910" astOperand1="00000134A347ECD0" astOperand2="00000134A347FB10" originalName="->"/>
+    <token id="00000134A347FB10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="Value" scope="000001349138FA40" type="name" varId="18" astParent="00000134A347FF30"/>
+    <token id="00000134A347E910" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="&gt;" scope="000001349138FA40" type="op" isComparisonOp="True" astParent="00000134A347F210" astOperand1="00000134A347FF30" astOperand2="00000134A347F990" valueType-type="bool"/>
+    <token id="00000134A347F990" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str="0" scope="000001349138FA40" type="number" isInt="True" values="00000134A91FB300" astParent="00000134A347E910" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A347FE70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str=")" scope="000001349138FA40" link="00000134A347F330"/>
+    <token id="00000134A347EBB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="37" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347FED0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="return" scope="000001349138FA40" type="name" astOperand1="00000134A347EC70"/>
+    <token id="00000134A347EC10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="BooleanToVisibilityConverter" scope="000001349138FA40" type="name" astParent="00000134A347ED90"/>
+    <token id="00000134A347ED90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="::" scope="000001349138FA40" astParent="00000134A347EC70" astOperand1="00000134A347EC10" astOperand2="00000134A347E970"/>
+    <token id="00000134A347E970" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="Convert" scope="000001349138FA40" type="name" astParent="00000134A347ED90"/>
+    <token id="00000134A347EC70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="(" scope="000001349138FA40" link="00000134A347E9D0" astParent="00000134A347FED0" astOperand1="00000134A347ED90" astOperand2="00000134A347FB70"/>
+    <token id="00000134A347FB70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str="boolValue" scope="000001349138FA40" type="name" varId="17" astParent="00000134A347EC70"/>
+    <token id="00000134A347E9D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str=")" scope="000001349138FA40" link="00000134A347EC70"/>
+    <token id="00000134A347F450" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="38" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347F870" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="39" str="}" scope="000001349138FA40" link="00000134A347E3D0"/>
+    <token id="00000134A347F750" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347F7B0"/>
+    <token id="00000134A347F7B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="^" scope="000001349138FA40" type="op" astOperand1="00000134A347F750" astOperand2="00000134A34800B0"/>
+    <token id="00000134A347FBD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="ItemSizeToVisibilityNegationConverter" scope="000001349138FA40" type="name" astParent="00000134A347EA30"/>
+    <token id="00000134A347EA30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="::" scope="000001349138FA40" astParent="00000134A34800B0" astOperand1="00000134A347FBD0" astOperand2="00000134A347FC30"/>
+    <token id="00000134A347FC30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="ConvertBack" scope="000001349138FA40" type="name" astParent="00000134A347EA30"/>
+    <token id="00000134A34800B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="(" scope="000001349138FA40" link="00000134A347F4B0" astParent="00000134A347F7B0" astOperand1="00000134A347EA30" astOperand2="00000134A347F8D0"/>
+    <token id="00000134A347FFF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="Object" scope="000001349138FA40" type="name" astParent="00000134A3480050"/>
+    <token id="00000134A3480050" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="^" scope="000001349138FA40" type="op" astParent="00000134A347F090" astOperand1="00000134A347FFF0" astOperand2="00000134A347F930"/>
+    <token id="00000134A347F930" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="value" scope="000001349138FA40" type="name" astParent="00000134A3480050"/>
+    <token id="00000134A347F090" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="," scope="000001349138FA40" astParent="00000134A347F390" astOperand1="00000134A3480050" astOperand2="00000134A347F9F0"/>
+    <token id="00000134A347EFD0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="TypeName" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347F9F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="targetType" scope="000001349138FA40" type="name" varId="19" astParent="00000134A347F090"/>
+    <token id="00000134A347F390" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="," scope="000001349138FA40" astParent="00000134A347F8D0" astOperand1="00000134A347F090" astOperand2="00000134A347F0F0"/>
+    <token id="00000134A347ED30" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="Object" scope="000001349138FA40" type="name" astParent="00000134A347F0F0"/>
+    <token id="00000134A347F0F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="^" scope="000001349138FA40" type="op" astParent="00000134A347F390" astOperand1="00000134A347ED30" astOperand2="00000134A347F810"/>
+    <token id="00000134A347F810" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="parameter" scope="000001349138FA40" type="name" astParent="00000134A347F0F0"/>
+    <token id="00000134A347F8D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="," scope="000001349138FA40" astParent="00000134A34800B0" astOperand1="00000134A347F390" astOperand2="00000134A347F510"/>
+    <token id="00000134A347FC90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="String" scope="000001349138FA40" type="name" astParent="00000134A347F510"/>
+    <token id="00000134A347F510" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="^" scope="000001349138FA40" type="op" astParent="00000134A347F8D0" astOperand1="00000134A347FC90" astOperand2="00000134A347EDF0"/>
+    <token id="00000134A347EDF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str="language" scope="000001349138FA40" type="name" astParent="00000134A347F510"/>
+    <token id="00000134A347F4B0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="41" str=")" scope="000001349138FA40" link="00000134A34800B0"/>
+    <token id="00000134A347EEB0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="42" str="{" scope="000001349138FA40" link="00000134A347EB50"/>
+    <token id="00000134A347EF10" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str="throw" scope="000001349138FA40" type="name" astOperand1="00000134A347FCF0"/>
+    <token id="00000134A347EF70" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str="ref" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347EA90" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str="new" scope="000001349138FA40" type="name"/>
+    <token id="00000134A347F6F0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str="NotImplementedException" scope="000001349138FA40" type="name" function="00000134A213FC80" astParent="00000134A347FCF0"/>
+    <token id="00000134A347FCF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str="(" scope="000001349138FA40" link="00000134A347EAF0" astParent="00000134A347EF10" astOperand1="00000134A347F6F0"/>
+    <token id="00000134A347EAF0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str=")" scope="000001349138FA40" link="00000134A347FCF0"/>
+    <token id="00000134A347F5D0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="43" str=";" scope="000001349138FA40"/>
+    <token id="00000134A347EB50" file="C:/sample repositories/calculator-master/src/Calculator/Converters/ItemSizeToVisibilityConverter.cpp" linenr="44" str="}" scope="000001349138FA40" link="00000134A347EEB0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349138FA40" type="Global">
+      <functionList>
+        <function id="00000134A2140340" tokenDef="00000134A347C8D0" name="dynamic_cast" type="Function">
+          <arg nr="1" variable="000001349165FBC0"/>
+        </function>
+        <function id="00000134A213FC80" tokenDef="00000134A347D590" name="NotImplementedException" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="000001349138FB50" type="Namespace" className="CalculatorApp" bodyStart="00000134A34733F0" bodyEnd="00000134A3478DF0" nestedIn="000001349138FA40"/>
+    <scope id="00000134913902C0" type="Namespace" className="Converters" bodyStart="00000134A3473FF0" bodyEnd="00000134A34794B0" nestedIn="000001349138FB50">
+      <functionList>
+        <function id="00000134A21408E0" tokenDef="00000134A34731B0" name="Convert" type="Function">
+          <arg nr="1" variable="000001349165FA70"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="000001349138EFA0" type="Function" className="Convert" bodyStart="00000134A3473630" bodyEnd="00000134A3474E90" nestedIn="00000134913902C0" function="00000134A21408E0"/>
+  </scopes>
+  <variables>
+    <var id="000001349165FA70" nameToken="00000134A3473BD0" typeStartToken="00000134A3473570" typeEndToken="00000134A3473570" access="Argument" scope="000001349138EFA0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165FBC0" nameToken="0000000000000000" typeStartToken="00000134A347CB70" typeEndToken="00000134A347CB70" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A91FB420">
+      <value intvalue="0" condition-line="20" possible="true"/>
+    </values>
+    <values id="00000134A91FB400">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB5C0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB860">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB300">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

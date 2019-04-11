@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4257768700">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class FlipButtons sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class FlipButtons sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Controls\FlipButtons.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Controls\FlipButtons.h" line="13"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="ButtonId"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_CALLBACK"/>
+    <functioncall functionName="FlipButtons"/>
+    <functioncall functionName="HoverBackground"/>
+    <functioncall functionName="HoverForeground"/>
+    <functioncall functionName="NumbersAndOperatorsEnum"/>
+    <functioncall functionName="OnKeyDown"/>
+    <functioncall functionName="OnKeyUp"/>
+    <functioncall functionName="PressBackground"/>
+    <functioncall functionName="PressForeground"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="newValue"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="return"/>
+  </FileInfo>
+</analyzerinfo>

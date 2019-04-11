@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3628247606">
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;SetPrimaryDisplay&apos; argument 1 names different: declaration &apos;displayString&apos; definition &apos;displayStringValue&apos;." verbose="Function &apos;SetPrimaryDisplay&apos; argument 1 names different: declaration &apos;displayString&apos; definition &apos;displayStringValue&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" line="28"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.h" line="19"/>
+            <symbol>SetPrimaryDisplay</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;SetMemorizedNumbers&apos; argument 1 names different: declaration &apos;memorizedNumbers&apos; definition &apos;newMemorizedNumbers&apos;." verbose="Function &apos;SetMemorizedNumbers&apos; argument 1 names different: declaration &apos;memorizedNumbers&apos; definition &apos;newMemorizedNumbers&apos;." cwe="628" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" line="83"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorDisplay.h" line="22"/>
+            <symbol>SetMemorizedNumbers</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SetCallback" lineNumber="18"/>
+    <functiondecl functionName="SetHistoryCallback" lineNumber="23"/>
+    <functiondecl functionName="SetPrimaryDisplay" lineNumber="28"/>
+    <functiondecl functionName="SetParenDisplayText" lineNumber="39"/>
+    <functiondecl functionName="OnNoRightParenAdded" lineNumber="50"/>
+    <functiondecl functionName="SetIsInError" lineNumber="61"/>
+    <functiondecl functionName="SetExpressionDisplay" lineNumber="72"/>
+    <functiondecl functionName="SetMemorizedNumbers" lineNumber="83"/>
+    <functiondecl functionName="OnHistoryItemAdded" lineNumber="94"/>
+    <functiondecl functionName="MaxDigitsReached" lineNumber="105"/>
+    <functiondecl functionName="BinaryOperatorReceived" lineNumber="116"/>
+    <functiondecl functionName="MemoryItemChanged" lineNumber="127"/>
+    <functioncall functionName="CalculatorDisplay"/>
+    <functioncall functionName="OnBinaryOperatorReceived"/>
+    <functioncall functionName="OnHistoryItemAdded"/>
+    <functioncall functionName="OnMaxDigitsReached"/>
+    <functioncall functionName="OnMemoryItemChanged"/>
+    <functioncall functionName="OnNoRightParenAdded"/>
+    <functioncall functionName="Resolve"/>
+    <functioncall functionName="SetExpressionDisplay"/>
+    <functioncall functionName="SetMemorizedNumbers"/>
+    <functioncall functionName="SetParenthesisCount"/>
+    <functioncall functionName="SetPrimaryDisplay"/>
+    <functioncall functionName="addedItemIndex"/>
+    <functioncall functionName="callbackReference"/>
+    <functioncall functionName="commands"/>
+    <functioncall functionName="displayStringValue"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="indexOfMemory"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="isError"/>
+    <functioncall functionName="m_callbackReference"/>
+    <functioncall functionName="newMemorizedNumbers"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parenthesisCount"/>
+    <functioncall functionName="tokens"/>
+  </FileInfo>
+</analyzerinfo>

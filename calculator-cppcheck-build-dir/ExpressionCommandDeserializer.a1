@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3100758195">
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cmdVector&apos; is assigned a value that is never used." verbose="Variable &apos;cmdVector&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="68"/>
+            <symbol>cmdVector</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorApp::Common::CommandDeserializer::DeserializeParentheses&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorApp::Common::CommandDeserializer::DeserializeParentheses&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="21"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="59"/>
+            <symbol>CalculatorApp::Common::CommandDeserializer::DeserializeParentheses</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;CalculatorApp::Common::CommandDeserializer::DeserializeBinary&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;CalculatorApp::Common::CommandDeserializer::DeserializeBinary&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to a unnamed namespace." cwe="398" inconclusive="true">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="23"/>
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" line="83"/>
+            <symbol>CalculatorApp::Common::CommandDeserializer::DeserializeBinary</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CommandDeserializer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CommandDeserializer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\ExpressionCommandDeserializer.h" line="15"/>
+            <symbol>CommandDeserializer</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Deserialize" lineNumber="12"/>
+    <functiondecl functionName="DeserializeOperand" lineNumber="41"/>
+    <functiondecl functionName="DeserializeParentheses" lineNumber="59"/>
+    <functiondecl functionName="DeserializeUnary" lineNumber="65"/>
+    <functiondecl functionName="DeserializeBinary" lineNumber="83"/>
+    <functioncall functionName="Append"/>
+    <functioncall functionName="CBinaryCommand"/>
+    <functioncall functionName="COpndCommand"/>
+    <functioncall functionName="CParentheses"/>
+    <functioncall functionName="CUnaryCommand"/>
+    <functioncall functionName="CommandDeserializer"/>
+    <functioncall functionName="DeserializeBinary"/>
+    <functioncall functionName="DeserializeOperand"/>
+    <functioncall functionName="DeserializeParentheses"/>
+    <functioncall functionName="DeserializeUnary"/>
+    <functioncall functionName="Exception"/>
+    <functioncall functionName="ReadBoolean"/>
+    <functioncall functionName="ReadInt32"/>
+    <functioncall functionName="ReadUInt32"/>
+    <functioncall functionName="String"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="cmd"/>
+    <functioncall functionName="cmdType"/>
+    <functioncall functionName="cmdVector"/>
+    <functioncall functionName="dataReader"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="eachOpndcmd"/>
+    <functioncall functionName="eachOpndcmd1"/>
+    <functioncall functionName="eachOpndcmd2"/>
+    <functioncall functionName="fDecimal"/>
+    <functioncall functionName="fNegative"/>
+    <functioncall functionName="fSciFmt"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_dataReader"/>
+    <functioncall functionName="make_shared"/>
+    <functioncall functionName="parenthesisCmd"/>
+    <functioncall functionName="switch"/>
+  </FileInfo>
+</analyzerinfo>

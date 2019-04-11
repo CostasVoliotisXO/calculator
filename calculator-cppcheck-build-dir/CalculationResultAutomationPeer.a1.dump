@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;CalculationResultAutomationPeer.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="Windows"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="UI"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Xaml"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="UI"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Xaml"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Automation"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Peers"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Controls"/>
+    <tok fileIndex="0" linenr="11" str="{"/>
+    <tok fileIndex="0" linenr="12" str="CalculationResultAutomationPeer"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="CalculationResultAutomationPeer"/>
+    <tok fileIndex="0" linenr="12" str="("/>
+    <tok fileIndex="0" linenr="12" str="FrameworkElement"/>
+    <tok fileIndex="0" linenr="12" str="^"/>
+    <tok fileIndex="0" linenr="12" str="owner"/>
+    <tok fileIndex="0" linenr="12" str=")"/>
+    <tok fileIndex="0" linenr="12" str=":"/>
+    <tok fileIndex="0" linenr="13" str="FrameworkElementAutomationPeer"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="owner"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="14" str="}"/>
+    <tok fileIndex="0" linenr="16" str="AutomationControlType"/>
+    <tok fileIndex="0" linenr="16" str="CalculationResultAutomationPeer"/>
+    <tok fileIndex="0" linenr="16" str="::"/>
+    <tok fileIndex="0" linenr="16" str="GetAutomationControlTypeCore"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="return"/>
+    <tok fileIndex="0" linenr="18" str="AutomationControlType"/>
+    <tok fileIndex="0" linenr="18" str="::"/>
+    <tok fileIndex="0" linenr="18" str="Text"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="19" str="}"/>
+    <tok fileIndex="0" linenr="21" str="Platform"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="Object"/>
+    <tok fileIndex="0" linenr="21" str="^"/>
+    <tok fileIndex="0" linenr="21" str="CalculationResultAutomationPeer"/>
+    <tok fileIndex="0" linenr="21" str="::"/>
+    <tok fileIndex="0" linenr="21" str="GetPatternCore"/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str="PatternInterface"/>
+    <tok fileIndex="0" linenr="21" str="pattern"/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="22" str="{"/>
+    <tok fileIndex="0" linenr="23" str="if"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="pattern"/>
+    <tok fileIndex="0" linenr="23" str="=="/>
+    <tok fileIndex="0" linenr="23" str="PatternInterface"/>
+    <tok fileIndex="0" linenr="23" str="::"/>
+    <tok fileIndex="0" linenr="23" str="Invoke"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="24" str="{"/>
+    <tok fileIndex="0" linenr="25" str="return"/>
+    <tok fileIndex="0" linenr="25" str="this"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="}"/>
+    <tok fileIndex="0" linenr="28" str="return"/>
+    <tok fileIndex="0" linenr="28" str="FrameworkElementAutomationPeer"/>
+    <tok fileIndex="0" linenr="28" str="::"/>
+    <tok fileIndex="0" linenr="28" str="GetPatternCore"/>
+    <tok fileIndex="0" linenr="28" str="("/>
+    <tok fileIndex="0" linenr="28" str="pattern"/>
+    <tok fileIndex="0" linenr="28" str=")"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="29" str="}"/>
+    <tok fileIndex="0" linenr="31" str="void"/>
+    <tok fileIndex="0" linenr="31" str="CalculationResultAutomationPeer"/>
+    <tok fileIndex="0" linenr="31" str="::"/>
+    <tok fileIndex="0" linenr="31" str="Invoke"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="32" str="{"/>
+    <tok fileIndex="0" linenr="33" str="auto"/>
+    <tok fileIndex="0" linenr="33" str="owner"/>
+    <tok fileIndex="0" linenr="33" str="="/>
+    <tok fileIndex="0" linenr="33" str="static_cast"/>
+    <tok fileIndex="0" linenr="33" str="&lt;"/>
+    <tok fileIndex="0" linenr="33" str="CalculationResult"/>
+    <tok fileIndex="0" linenr="33" str="^"/>
+    <tok fileIndex="0" linenr="33" str="&gt;"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str="this"/>
+    <tok fileIndex="0" linenr="33" str="-&gt;"/>
+    <tok fileIndex="0" linenr="33" str="Owner"/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="34" str="owner"/>
+    <tok fileIndex="0" linenr="34" str="-&gt;"/>
+    <tok fileIndex="0" linenr="34" str="ProgrammaticSelect"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="35" str="}"/>
+    <tok fileIndex="0" linenr="36" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="5" str="#include &quot;CalculationResultAutomationPeer.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="6" str="#include &quot;Controls/CalculationResult.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A346D390" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="8" str="namespace" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346CD90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="8" str="CalculatorApp" scope="0000013496CA8E70" type="name" astParent="00000134A346DED0"/>
+    <token id="00000134A346DED0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="9" str="{" scope="0000013496CA8E70" link="00000134A346EE30" astOperand1="00000134A346CD90" astOperand2="00000134A346D150"/>
+    <token id="00000134A346D810" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="10" str="namespace" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346E0B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="10" str="Controls" scope="0000013496CA8E70" type="name" astParent="00000134A346D150"/>
+    <token id="00000134A346D150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="11" str="{" scope="0000013496CA8E70" link="00000134A346EB30" astParent="00000134A346DED0" astOperand1="00000134A346E0B0" astOperand2="00000134A346DA50"/>
+    <token id="00000134A346CF70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="public" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346D870" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="ref" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346CFD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="class" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346CE50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="CalculationResultAutomationPeer" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346CA30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="sealed" scope="0000013496CA8E70" type="name" astParent="00000134A346DE10"/>
+    <token id="00000134A346DE10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str=":" scope="0000013496CA8E70" astParent="00000134A346DA50" astOperand1="00000134A346CA30" astOperand2="00000134A346D9F0"/>
+    <token id="00000134A346D6F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346D0F0"/>
+    <token id="00000134A346D0F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="::" scope="0000013496CA8E70" astParent="00000134A346D8D0" astOperand1="00000134A346D6F0" astOperand2="00000134A346CF10"/>
+    <token id="00000134A346CF10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346D0F0"/>
+    <token id="00000134A346D8D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="::" scope="0000013496CA8E70" astParent="00000134A346D330" astOperand1="00000134A346D0F0" astOperand2="00000134A346D930"/>
+    <token id="00000134A346D930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346D8D0"/>
+    <token id="00000134A346D330" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="::" scope="0000013496CA8E70" astParent="00000134A346CC70" astOperand1="00000134A346D8D0" astOperand2="00000134A346D3F0"/>
+    <token id="00000134A346D3F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="Automation" scope="0000013496CA8E70" type="name" astParent="00000134A346D330"/>
+    <token id="00000134A346CC70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="::" scope="0000013496CA8E70" astParent="00000134A346D9F0" astOperand1="00000134A346D330" astOperand2="00000134A346D450"/>
+    <token id="00000134A346D450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="Peers" scope="0000013496CA8E70" type="name" astParent="00000134A346CC70"/>
+    <token id="00000134A346D9F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="::" scope="0000013496CA8E70" astParent="00000134A346DE10" astOperand1="00000134A346CC70" astOperand2="00000134A346D750"/>
+    <token id="00000134A346D750" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="FrameworkElementAutomationPeer" scope="0000013496CA8E70" type="name" astParent="00000134A346D9F0"/>
+    <token id="00000134A346DA50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="12" str="," scope="0000013496CA8E70" astParent="00000134A346D150" astOperand1="00000134A346DE10" astOperand2="00000134A346DB70"/>
+    <token id="00000134A346DB10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346D1B0"/>
+    <token id="00000134A346D1B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="::" scope="0000013496CA8E70" astParent="00000134A346CA90" astOperand1="00000134A346DB10" astOperand2="00000134A346D4B0"/>
+    <token id="00000134A346D4B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346D1B0"/>
+    <token id="00000134A346CA90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="::" scope="0000013496CA8E70" astParent="00000134A346D690" astOperand1="00000134A346D1B0" astOperand2="00000134A346C910"/>
+    <token id="00000134A346C910" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346CA90"/>
+    <token id="00000134A346D690" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="::" scope="0000013496CA8E70" astParent="00000134A346CAF0" astOperand1="00000134A346CA90" astOperand2="00000134A346CEB0"/>
+    <token id="00000134A346CEB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="Automation" scope="0000013496CA8E70" type="name" astParent="00000134A346D690"/>
+    <token id="00000134A346CAF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="::" scope="0000013496CA8E70" astParent="00000134A346DAB0" astOperand1="00000134A346D690" astOperand2="00000134A346DE70"/>
+    <token id="00000134A346DE70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="Provider" scope="0000013496CA8E70" type="name" astParent="00000134A346CAF0"/>
+    <token id="00000134A346DAB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="::" scope="0000013496CA8E70" astParent="00000134A346DB70" astOperand1="00000134A346CAF0" astOperand2="00000134A346DCF0"/>
+    <token id="00000134A346DCF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="13" str="IInvokeProvider" scope="0000013496CA8E70" type="name" astParent="00000134A346DAB0"/>
+    <token id="00000134A346DB70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="14" str="{" scope="0000013496CA8E70" link="00000134A346F250" astParent="00000134A346DA50" astOperand1="00000134A346DAB0" astOperand2="00000134A346D510"/>
+    <token id="00000134A346DF90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="15" str="public:" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346DFF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="CalculationResultAutomationPeer" scope="0000013496CA8E70" type="name" function="00000134A21414B0" astParent="00000134A346D510"/>
+    <token id="00000134A346D510" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="(" scope="0000013496CA8E70" link="00000134A346DD50" astParent="00000134A346DB70" astOperand1="00000134A346DFF0" astOperand2="00000134A346DC30"/>
+    <token id="00000134A346D090" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346C970"/>
+    <token id="00000134A346C970" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="::" scope="0000013496CA8E70" astParent="00000134A346DBD0" astOperand1="00000134A346D090" astOperand2="00000134A346CDF0"/>
+    <token id="00000134A346CDF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346C970"/>
+    <token id="00000134A346DBD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="::" scope="0000013496CA8E70" astParent="00000134A346D5D0" astOperand1="00000134A346C970" astOperand2="00000134A346D210"/>
+    <token id="00000134A346D210" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346DBD0"/>
+    <token id="00000134A346D5D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="::" scope="0000013496CA8E70" astParent="00000134A346DC30" astOperand1="00000134A346DBD0" astOperand2="00000134A346D570"/>
+    <token id="00000134A346D570" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="FrameworkElement" scope="0000013496CA8E70" type="name" astParent="00000134A346D5D0"/>
+    <token id="00000134A346DC30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="^" scope="0000013496CA8E70" type="op" astParent="00000134A346D510" astOperand1="00000134A346D5D0" astOperand2="00000134A346DC90"/>
+    <token id="00000134A346DC90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str="owner" scope="0000013496CA8E70" type="name" astParent="00000134A346DC30"/>
+    <token id="00000134A346DD50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str=")" scope="0000013496CA8E70" link="00000134A346D510"/>
+    <token id="00000134A346E050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="16" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346C9D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="virtual" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346CB50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346CBB0"/>
+    <token id="00000134A346CBB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="::" scope="0000013496CA8E70" astParent="00000134A346CCD0" astOperand1="00000134A346CB50" astOperand2="00000134A346CC10"/>
+    <token id="00000134A346CC10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346CBB0"/>
+    <token id="00000134A346CCD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="::" scope="0000013496CA8E70" astParent="00000134A346EF50" astOperand1="00000134A346CBB0" astOperand2="00000134A346CD30"/>
+    <token id="00000134A346CD30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346CCD0"/>
+    <token id="00000134A346EF50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="::" scope="0000013496CA8E70" astParent="00000134A346E9B0" astOperand1="00000134A346CCD0" astOperand2="00000134A346EFB0"/>
+    <token id="00000134A346EFB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="Automation" scope="0000013496CA8E70" type="name" astParent="00000134A346EF50"/>
+    <token id="00000134A346E9B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="::" scope="0000013496CA8E70" astParent="00000134A346E110" astOperand1="00000134A346EF50" astOperand2="00000134A346E470"/>
+    <token id="00000134A346E470" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="Peers" scope="0000013496CA8E70" type="name" astParent="00000134A346E9B0"/>
+    <token id="00000134A346E110" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="::" scope="0000013496CA8E70" astParent="00000134A346E770" astOperand1="00000134A346E9B0" astOperand2="00000134A346F550"/>
+    <token id="00000134A346E5F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="AutomationControlType" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F550" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="GetAutomationControlTypeCore" scope="0000013496CA8E70" type="name" function="00000134A2140D60" astParent="00000134A346E110"/>
+    <token id="00000134A346E770" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="(" scope="0000013496CA8E70" link="00000134A346F7F0" astOperand1="00000134A346E110"/>
+    <token id="00000134A346F7F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str=")" scope="0000013496CA8E70" link="00000134A346E770"/>
+    <token id="00000134A346E830" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str="override" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F4F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="18" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346F610" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="virtual" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346EA10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Platform" scope="0000013496CA8E70" type="name" astParent="00000134A346EDD0"/>
+    <token id="00000134A346EDD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346F370" astOperand1="00000134A346EA10" astOperand2="00000134A346F790"/>
+    <token id="00000134A346F790" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Object" scope="0000013496CA8E70" type="name" astParent="00000134A346EDD0"/>
+    <token id="00000134A346F370" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="^" scope="0000013496CA8E70" type="op" astOperand1="00000134A346EDD0" astOperand2="00000134A346F310"/>
+    <token id="00000134A346F0D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="GetPatternCore" scope="0000013496CA8E70" type="name" astParent="00000134A346F310"/>
+    <token id="00000134A346F310" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="(" scope="0000013496CA8E70" link="00000134A346EEF0" astParent="00000134A346F370" astOperand1="00000134A346F0D0" astOperand2="00000134A346F3D0"/>
+    <token id="00000134A346EB90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346E590"/>
+    <token id="00000134A346E590" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346F010" astOperand1="00000134A346EB90" astOperand2="00000134A346F6D0"/>
+    <token id="00000134A346F6D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346E590"/>
+    <token id="00000134A346F010" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346E950" astOperand1="00000134A346E590" astOperand2="00000134A346F8B0"/>
+    <token id="00000134A346F8B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346F010"/>
+    <token id="00000134A346E950" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346F070" astOperand1="00000134A346F010" astOperand2="00000134A346E7D0"/>
+    <token id="00000134A346E7D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Automation" scope="0000013496CA8E70" type="name" astParent="00000134A346E950"/>
+    <token id="00000134A346F070" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346F3D0" astOperand1="00000134A346E950" astOperand2="00000134A346E890"/>
+    <token id="00000134A346E890" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="Peers" scope="0000013496CA8E70" type="name" astParent="00000134A346F070"/>
+    <token id="00000134A346F3D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="::" scope="0000013496CA8E70" astParent="00000134A346F310" astOperand1="00000134A346F070" astOperand2="00000134A346F5B0"/>
+    <token id="00000134A346F130" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="PatternInterface" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F5B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="pattern" scope="0000013496CA8E70" type="name" varId="1" astParent="00000134A346F3D0"/>
+    <token id="00000134A346EEF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str=")" scope="0000013496CA8E70" link="00000134A346F310"/>
+    <token id="00000134A346E8F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str="override" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346E710" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="19" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346F190" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str="virtual" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F1F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str="void" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346EA70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str="Invoke" scope="0000013496CA8E70" type="name" function="00000134A2141AE0" astParent="00000134A346EAD0"/>
+    <token id="00000134A346EAD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str="(" scope="0000013496CA8E70" link="00000134A346E4D0" astOperand1="00000134A346EA70" valueType-type="void"/>
+    <token id="00000134A346E4D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str=")" scope="0000013496CA8E70" link="00000134A346EAD0"/>
+    <token id="00000134A346EC50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="20" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346F250" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="21" str="}" scope="0000013496CA8E70" link="00000134A346DB70"/>
+    <token id="00000134A346F670" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="21" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346EB30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="22" str="}" scope="0000013496CA8E70" link="00000134A346D150"/>
+    <token id="00000134A346EE30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.h" linenr="23" str="}" scope="0000013496CA8E70" link="00000134A346DED0"/>
+    <token id="00000134A346F430" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="using" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346EBF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="namespace" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F490" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346E530"/>
+    <token id="00000134A346E530" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="::" scope="0000013496CA8E70" astParent="00000134A346ECB0" astOperand1="00000134A346F490" astOperand2="00000134A346E2F0"/>
+    <token id="00000134A346E2F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346E530"/>
+    <token id="00000134A346ECB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="::" scope="0000013496CA8E70" astOperand1="00000134A346E530" astOperand2="00000134A346E650"/>
+    <token id="00000134A346E650" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346ECB0"/>
+    <token id="00000134A346E6B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="7" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346ED10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="using" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346F730" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="namespace" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A346ED70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="Windows" scope="0000013496CA8E70" type="name" astParent="00000134A346E410"/>
+    <token id="00000134A346E410" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="::" scope="0000013496CA8E70" astParent="00000134A346F2B0" astOperand1="00000134A346ED70" astOperand2="00000134A346EE90"/>
+    <token id="00000134A346EE90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="UI" scope="0000013496CA8E70" type="name" astParent="00000134A346E410"/>
+    <token id="00000134A346F2B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="::" scope="0000013496CA8E70" astParent="00000134A346E170" astOperand1="00000134A346E410" astOperand2="00000134A346F850"/>
+    <token id="00000134A346F850" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="Xaml" scope="0000013496CA8E70" type="name" astParent="00000134A346F2B0"/>
+    <token id="00000134A346E170" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="::" scope="0000013496CA8E70" astParent="00000134A346E230" astOperand1="00000134A346F2B0" astOperand2="00000134A346E1D0"/>
+    <token id="00000134A346E1D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="Automation" scope="0000013496CA8E70" type="name" astParent="00000134A346E170"/>
+    <token id="00000134A346E230" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="::" scope="0000013496CA8E70" astOperand1="00000134A346E170" astOperand2="00000134A346E290"/>
+    <token id="00000134A346E290" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str="Peers" scope="0000013496CA8E70" type="name" astParent="00000134A346E230"/>
+    <token id="00000134A346E350" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="8" str=";" scope="0000013496CA8E70"/>
+    <token id="00000134A346E3B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="10" str="namespace" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A3470810" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="10" str="CalculatorApp" scope="0000013496CA8E70" type="name"/>
+    <token id="00000134A34709F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="10" str="{" scope="0000013496CA8700" link="00000134A3471350"/>
+    <token id="00000134A3471650" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="10" str="namespace" scope="0000013496CA8700" type="name"/>
+    <token id="00000134A346FD90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="10" str="Controls" scope="0000013496CA8700" type="name"/>
+    <token id="00000134A346FEB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="11" str="{" scope="0000013491268A80" link="00000134A3471B90"/>
+    <token id="00000134A3470630" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="CalculationResultAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A346FE50"/>
+    <token id="00000134A346FE50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="::" scope="0000013491268A80" astParent="00000134A346FDF0" astOperand1="00000134A3470630" astOperand2="00000134A3470C90"/>
+    <token id="00000134A3470C90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="CalculationResultAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A346FE50"/>
+    <token id="00000134A346FDF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="(" scope="0000013491268A80" link="00000134A3470270" astParent="00000134A3470A50" astOperand1="00000134A346FE50" astOperand2="00000134A346FC70"/>
+    <token id="00000134A346FF10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="FrameworkElement" scope="0000013491268A80" type="name" astParent="00000134A346FC70"/>
+    <token id="00000134A346FC70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="^" scope="0000013491268A80" type="op" astParent="00000134A346FDF0" astOperand1="00000134A346FF10" astOperand2="00000134A3470690"/>
+    <token id="00000134A3470690" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str="owner" scope="0000013491268A80" type="name" astParent="00000134A346FC70"/>
+    <token id="00000134A3470270" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str=")" scope="0000013491268A80" link="00000134A346FDF0"/>
+    <token id="00000134A3470A50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="12" str=":" scope="0000013491268A80" astOperand1="00000134A346FDF0" astOperand2="00000134A346FCD0"/>
+    <token id="00000134A346F970" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="13" str="FrameworkElementAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A346FCD0"/>
+    <token id="00000134A346FCD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="13" str="(" scope="0000013491268A80" link="00000134A34710B0" astParent="00000134A3470A50" astOperand1="00000134A346F970" astOperand2="00000134A346FF70"/>
+    <token id="00000134A346FF70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="13" str="owner" scope="0000013491268A80" type="name" astParent="00000134A346FCD0"/>
+    <token id="00000134A34710B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="13" str=")" scope="0000013491268A80" link="00000134A346FCD0"/>
+    <token id="00000134A3470870" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="14" str="{" scope="0000013491268CA0" link="00000134A3470090"/>
+    <token id="00000134A3470090" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="14" str="}" scope="0000013491268CA0" link="00000134A3470870"/>
+    <token id="00000134A346F9D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str="AutomationControlType" scope="0000013491268A80" type="name"/>
+    <token id="00000134A3470210" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str="CalculationResultAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A34707B0"/>
+    <token id="00000134A34707B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str="::" scope="0000013491268A80" astParent="00000134A346FFD0" astOperand1="00000134A3470210" astOperand2="00000134A3470930"/>
+    <token id="00000134A3470930" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str="GetAutomationControlTypeCore" scope="0000013491268A80" type="name" astParent="00000134A34707B0"/>
+    <token id="00000134A346FFD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str="(" scope="0000013491268A80" link="00000134A3470030" astOperand1="00000134A34707B0"/>
+    <token id="00000134A3470030" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="16" str=")" scope="0000013491268A80" link="00000134A346FFD0"/>
+    <token id="00000134A34700F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="17" str="{" scope="0000013491268DB0" link="00000134A3471050"/>
+    <token id="00000134A3470750" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="18" str="return" scope="0000013491268DB0" type="name" astOperand1="00000134A3470B70"/>
+    <token id="00000134A346F910" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="18" str="AutomationControlType" scope="0000013491268DB0" type="name" astParent="00000134A3470B70"/>
+    <token id="00000134A3470B70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="18" str="::" scope="0000013491268DB0" astParent="00000134A3470750" astOperand1="00000134A346F910" astOperand2="00000134A3470D50"/>
+    <token id="00000134A3470D50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="18" str="Text" scope="0000013491268DB0" type="name" astParent="00000134A3470B70"/>
+    <token id="00000134A34706F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="18" str=";" scope="0000013491268DB0"/>
+    <token id="00000134A3471050" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="19" str="}" scope="0000013491268DB0" link="00000134A34700F0"/>
+    <token id="00000134A3470ED0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="Platform" scope="0000013491268A80" type="name" astParent="00000134A346FBB0"/>
+    <token id="00000134A346FBB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="::" scope="0000013491268A80" astParent="00000134A34702D0" astOperand1="00000134A3470ED0" astOperand2="00000134A346FA90"/>
+    <token id="00000134A346FA90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="Object" scope="0000013491268A80" type="name" astParent="00000134A346FBB0"/>
+    <token id="00000134A34702D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="^" scope="0000013491268A80" type="op" astOperand1="00000134A346FBB0" astOperand2="00000134A3470DB0"/>
+    <token id="00000134A34705D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="CalculationResultAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A3470150"/>
+    <token id="00000134A3470150" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="::" scope="0000013491268A80" astParent="00000134A3470DB0" astOperand1="00000134A34705D0" astOperand2="00000134A3470330"/>
+    <token id="00000134A3470330" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="GetPatternCore" scope="0000013491268A80" type="name" astParent="00000134A3470150"/>
+    <token id="00000134A3470DB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="(" scope="0000013491268A80" link="00000134A3470F30" astParent="00000134A34702D0" astOperand1="00000134A3470150" astOperand2="00000134A3470390"/>
+    <token id="00000134A34701B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="PatternInterface" scope="0000013491268A80" type="name"/>
+    <token id="00000134A3470390" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str="pattern" scope="0000013491268A80" type="name" varId="2" astParent="00000134A3470DB0"/>
+    <token id="00000134A3470F30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="21" str=")" scope="0000013491268A80" link="00000134A3470DB0"/>
+    <token id="00000134A34708D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="22" str="{" scope="0000013491268A80" link="00000134A34719B0"/>
+    <token id="00000134A346FA30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="if" scope="0000013491268A80" type="name" astParent="00000134A34703F0"/>
+    <token id="00000134A34703F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="(" scope="0000013491268A80" link="00000134A3470E10" astOperand1="00000134A346FA30" astOperand2="00000134A3470990"/>
+    <token id="00000134A3470450" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="pattern" scope="0000013491268A80" type="name" varId="2" astParent="00000134A3470990"/>
+    <token id="00000134A3470990" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="==" scope="0000013491268A80" type="op" isComparisonOp="True" astParent="00000134A34703F0" astOperand1="00000134A3470450" astOperand2="00000134A3470510" valueType-type="bool"/>
+    <token id="00000134A34704B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="PatternInterface" scope="0000013491268A80" type="name" astParent="00000134A3470510"/>
+    <token id="00000134A3470510" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="::" scope="0000013491268A80" astParent="00000134A3470990" astOperand1="00000134A34704B0" astOperand2="00000134A346FAF0"/>
+    <token id="00000134A346FAF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str="Invoke" scope="0000013491268A80" type="name" astParent="00000134A3470510"/>
+    <token id="00000134A3470E10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="23" str=")" scope="0000013491268A80" link="00000134A34703F0"/>
+    <token id="00000134A3470AB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="24" str="{" scope="0000013491268A80" link="00000134A3470C30"/>
+    <token id="00000134A3470570" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="25" str="return" scope="0000013491268A80" type="name" astOperand1="00000134A3470B10"/>
+    <token id="00000134A3470B10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="25" str="this" scope="0000013491268A80" type="name" astParent="00000134A3470570"/>
+    <token id="00000134A3470BD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="25" str=";" scope="0000013491268A80"/>
+    <token id="00000134A3470C30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="26" str="}" scope="0000013491268A80" link="00000134A3470AB0"/>
+    <token id="00000134A3470CF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="return" scope="0000013491268A80" type="name" astOperand1="00000134A346FB50"/>
+    <token id="00000134A3470E70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="FrameworkElementAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A3470F90"/>
+    <token id="00000134A3470F90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="::" scope="0000013491268A80" astParent="00000134A346FB50" astOperand1="00000134A3470E70" astOperand2="00000134A3470FF0"/>
+    <token id="00000134A3470FF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="GetPatternCore" scope="0000013491268A80" type="name" astParent="00000134A3470F90"/>
+    <token id="00000134A346FB50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="(" scope="0000013491268A80" link="00000134A346FD30" astParent="00000134A3470CF0" astOperand1="00000134A3470F90" astOperand2="00000134A346FC10"/>
+    <token id="00000134A346FC10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str="pattern" scope="0000013491268A80" type="name" varId="2" astParent="00000134A346FB50"/>
+    <token id="00000134A346FD30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str=")" scope="0000013491268A80" link="00000134A346FB50"/>
+    <token id="00000134A3472310" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="28" str=";" scope="0000013491268A80"/>
+    <token id="00000134A34719B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="29" str="}" scope="0000013491268A80" link="00000134A34708D0"/>
+    <token id="00000134A3471CB0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str="void" scope="0000013491268A80" type="name"/>
+    <token id="00000134A34714D0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str="CalculationResultAutomationPeer" scope="0000013491268A80" type="name" astParent="00000134A3471410"/>
+    <token id="00000134A3471410" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str="::" scope="0000013491268A80" astParent="00000134A3472370" astOperand1="00000134A34714D0" astOperand2="00000134A3471DD0"/>
+    <token id="00000134A3471DD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str="Invoke" scope="0000013491268A80" type="name" astParent="00000134A3471410"/>
+    <token id="00000134A3472370" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str="(" scope="0000013491268A80" link="00000134A3471830" astOperand1="00000134A3471410"/>
+    <token id="00000134A3471830" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="31" str=")" scope="0000013491268A80" link="00000134A3472370"/>
+    <token id="00000134A3471110" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="32" str="{" scope="00000134912680F0" link="00000134A34712F0"/>
+    <token id="00000134A34718F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="auto" scope="00000134912680F0" type="name"/>
+    <token id="00000134A3471950" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="owner" scope="00000134912680F0" type="name" varId="3" variable="000001349165B1D0"/>
+    <token id="00000134A3471C50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str=";" scope="00000134912680F0"/>
+    <token id="00000134A346D030" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="owner" scope="00000134912680F0" type="name" varId="3" variable="000001349165B1D0" astParent="00000134A3471770"/>
+    <token id="00000134A3471770" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="=" scope="00000134912680F0" type="op" isAssignmentOp="True" astOperand1="00000134A346D030" astOperand2="00000134A3472610"/>
+    <token id="00000134A3471F50" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="static_cast" scope="00000134912680F0" type="name" astParent="00000134A3472610"/>
+    <token id="00000134A34715F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="&lt;" scope="00000134912680F0" link="00000134A3471290"/>
+    <token id="00000134A3471710" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="CalculationResult" scope="00000134912680F0" type="name"/>
+    <token id="00000134A3471A70" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="^" scope="00000134912680F0" type="op"/>
+    <token id="00000134A3471290" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="&gt;" scope="00000134912680F0" link="00000134A34715F0"/>
+    <token id="00000134A3472610" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="(" scope="00000134912680F0" link="00000134A3471230" astParent="00000134A3471770" astOperand1="00000134A3471F50" astOperand2="00000134A3471A10"/>
+    <token id="00000134A3472670" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="this" scope="00000134912680F0" type="name" astParent="00000134A3471A10"/>
+    <token id="00000134A3471A10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="." scope="00000134912680F0" astParent="00000134A3472610" astOperand1="00000134A3472670" astOperand2="00000134A3471AD0" originalName="->"/>
+    <token id="00000134A3471AD0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str="Owner" scope="00000134912680F0" type="name" astParent="00000134A3471A10"/>
+    <token id="00000134A3471230" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str=")" scope="00000134912680F0" link="00000134A3472610"/>
+    <token id="00000134A34725B0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="33" str=";" scope="00000134912680F0"/>
+    <token id="00000134A3471EF0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str="owner" scope="00000134912680F0" type="name" varId="3" variable="000001349165B1D0" astParent="00000134A3471B30"/>
+    <token id="00000134A3471B30" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str="." scope="00000134912680F0" astParent="00000134A3472490" astOperand1="00000134A3471EF0" astOperand2="00000134A3471D10" originalName="->"/>
+    <token id="00000134A3471D10" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str="ProgrammaticSelect" scope="00000134912680F0" type="name" astParent="00000134A3471B30"/>
+    <token id="00000134A3472490" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str="(" scope="00000134912680F0" link="00000134A3472130" astOperand1="00000134A3471B30"/>
+    <token id="00000134A3472130" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str=")" scope="00000134912680F0" link="00000134A3472490"/>
+    <token id="00000134A3471470" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="34" str=";" scope="00000134912680F0"/>
+    <token id="00000134A34712F0" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="35" str="}" scope="00000134912680F0" link="00000134A3471110"/>
+    <token id="00000134A3471B90" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="36" str="}" scope="0000013491268A80" link="00000134A346FEB0"/>
+    <token id="00000134A3471350" file="C:/sample repositories/calculator-master/src/Calculator/Controls/CalculationResultAutomationPeer.cpp" linenr="36" str="}" scope="0000013496CA8700" link="00000134A34709F0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013496CA8E70" type="Global"/>
+    <scope id="0000013496CA8700" type="Namespace" className="CalculatorApp" bodyStart="00000134A34709F0" bodyEnd="00000134A3471350" nestedIn="0000013496CA8E70"/>
+    <scope id="0000013491268A80" type="Namespace" className="Controls" bodyStart="00000134A346FEB0" bodyEnd="00000134A3471B90" nestedIn="0000013496CA8700">
+      <functionList>
+        <function id="00000134A21414B0" tokenDef="00000134A346DFF0" name="CalculationResultAutomationPeer" type="Function">
+          <arg nr="1" variable="0000013491659CD0"/>
+        </function>
+        <function id="00000134A2140D60" tokenDef="00000134A346F550" name="GetAutomationControlTypeCore" type="Function" isVirtual="true"/>
+        <function id="00000134A2141AE0" tokenDef="00000134A346EA70" name="Invoke" type="Function" isVirtual="true"/>
+      </functionList>
+    </scope>
+    <scope id="0000013491268CA0" type="Function" className="CalculationResultAutomationPeer" bodyStart="00000134A3470870" bodyEnd="00000134A3470090" nestedIn="0000013491268A80"/>
+    <scope id="0000013491268DB0" type="Function" className="GetAutomationControlTypeCore" bodyStart="00000134A34700F0" bodyEnd="00000134A3471050" nestedIn="0000013491268A80"/>
+    <scope id="00000134912680F0" type="Function" className="Invoke" bodyStart="00000134A3471110" bodyEnd="00000134A34712F0" nestedIn="0000013491268A80">
+      <varlist>
+        <var id="000001349165B1D0"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="0000013491659CD0" nameToken="00000134A346DC90" typeStartToken="00000134A346D090" typeEndToken="00000134A346DC30" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349165B1D0" nameToken="00000134A3471950" typeStartToken="00000134A34718F0" typeEndToken="00000134A34718F0" access="Local" scope="00000134912680F0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>

@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/pch.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/pch.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h"/>
+    <file index="3" name="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="//"/>
+    <tok fileIndex="0" linenr="5" str="// pch.cpp"/>
+    <tok fileIndex="0" linenr="6" str="// Include the standard header and generate the precompiled header."/>
+    <tok fileIndex="0" linenr="7" str="//"/>
+    <tok fileIndex="0" linenr="9" str="#"/>
+    <tok fileIndex="0" linenr="9" str="include"/>
+    <tok fileIndex="0" linenr="9" str="&quot;pch.h&quot;"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.cpp" linenr="9" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="9" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="11" str="#include &quot;App.g.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="12" str="#include &quot;WindowFrameService.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="9" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="13" str="#define NOMINMAX"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="15" str="#include &lt;collection.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="16" str="#include &lt;unordered_map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="17" str="#include &lt;map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="18" str="#include &lt;ppltasks.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="19" str="#include &lt;pplawait.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="20" str="#include &lt;memory&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="21" str="#include &lt;mutex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="22" str="#include &lt;cassert&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="23" str="#include &lt;locale&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="24" str="#include &lt;sal.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="25" str="#include &lt;sstream&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="26" str="#include &lt;concrt.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="27" str="#include &lt;regex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="28" str="#include &lt;string&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="31" str="#include &quot;winrt/base.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="32" str="#include &quot;winrt/Windows.ApplicationModel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="33" str="#include &quot;winrt/Windows.ApplicationModel.Core.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="34" str="#include &quot;winrt/Windows.Foundation.Diagnostics.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="35" str="#include &quot;winrt/Windows.Globalization.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="36" str="#include &quot;winrt/Windows.Globalization.DateTimeFormatting.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="37" str="#include &quot;winrt/Windows.System.UserProfile.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="38" str="#include &quot;winrt/Windows.UI.ViewManagement.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="39" str="#include &quot;winrt/Windows.UI.Xaml.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="51" str="#include &quot;App.xaml.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B15E1E0" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="namespace" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15EC60" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="CalculatorApp" scope="0000013496CA93C0" type="name" astParent="000001349B15F620"/>
+    <token id="000001349B15F620" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="{" scope="0000013496CA93C0" link="000001349B171F80" astOperand1="000001349B15EC60" astOperand2="000001349B15EBA0"/>
+    <token id="000001349B1719E0" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="namespace" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15EF60" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="Common" scope="0000013496CA93C0" type="name" astParent="000001349B15EBA0"/>
+    <token id="000001349B15EBA0" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="{" scope="0000013496CA8E70" link="000001349B1725E0" astParent="000001349B15F620" astOperand1="000001349B15EF60"/>
+    <token id="000001349B1725E0" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="}" scope="0000013496CA8E70" link="000001349B15EBA0"/>
+    <token id="000001349B171F80" file="C:/sample repositories/calculator-master/src/Calculator/pch.h" linenr="47" str="}" scope="0000013496CA93C0" link="000001349B15F620"/>
+    <token id="000001349B15EF00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="7" str="namespace" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15F440" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="7" str="CalculatorApp" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15F6E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="8" str="{" scope="0000013496CA93C0" link="000001349B169F40"/>
+    <token id="000001349B15F1A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="10" str="public" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15F080" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="10" str="ref" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15F4A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="10" str="class" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15EFC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="10" str="WindowFrameService" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15EAE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="10" str="sealed" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15F7A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="11" str="{" scope="0000013496CA93C0" link="000001349B169460"/>
+    <token id="000001349B15F020" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="12" str="public:" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15E5A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B15F800"/>
+    <token id="000001349B15F800" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="::" scope="0000013496CA93C0" astParent="000001349B15E180" astOperand1="000001349B15E5A0" astOperand2="000001349B15F8C0"/>
+    <token id="000001349B15F8C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B15F800"/>
+    <token id="000001349B15E180" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="::" scope="0000013496CA93C0" astParent="000001349B15E2A0" astOperand1="000001349B15F800" astOperand2="000001349B15EB40"/>
+    <token id="000001349B15EB40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B15E180"/>
+    <token id="000001349B15E2A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="::" scope="0000013496CA93C0" astParent="000001349B15E360" astOperand1="000001349B15E180" astOperand2="000001349B15E480"/>
+    <token id="000001349B15E480" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B15E2A0"/>
+    <token id="000001349B15E360" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="::" scope="0000013496CA93C0" astParent="000001349B15ED20" astOperand1="000001349B15E2A0" astOperand2="000001349B15EC00"/>
+    <token id="000001349B15EC00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="Page" scope="0000013496CA93C0" type="name" astParent="000001349B15E360"/>
+    <token id="000001349B15ED20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B15E360" astOperand2="000001349B15E4E0"/>
+    <token id="000001349B15E7E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="GetCurrentPage" scope="0000013496CA93C0" type="name" astParent="000001349B15E4E0"/>
+    <token id="000001349B15E4E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str="(" scope="0000013496CA93C0" link="000001349B15E900" astParent="000001349B15ED20" astOperand1="000001349B15E7E0"/>
+    <token id="000001349B15E900" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str=")" scope="0000013496CA93C0" link="000001349B15E4E0"/>
+    <token id="000001349B15E540" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="13" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B15E660" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15E840" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="SetNewFrame" scope="0000013496CA93C0" type="name" function="000001349138B7A0" astParent="000001349B15E8A0"/>
+    <token id="000001349B15E8A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="(" scope="0000013496CA93C0" link="000001349B160E80" astOperand1="000001349B15E840" astOperand2="000001349B15FF80" valueType-type="void"/>
+    <token id="000001349B15E960" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B160EE0"/>
+    <token id="000001349B160EE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="::" scope="0000013496CA93C0" astParent="000001349B1610C0" astOperand1="000001349B15E960" astOperand2="000001349B160760"/>
+    <token id="000001349B160760" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B160EE0"/>
+    <token id="000001349B1610C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="::" scope="0000013496CA93C0" astParent="000001349B160340" astOperand1="000001349B160EE0" astOperand2="000001349B1603A0"/>
+    <token id="000001349B1603A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B1610C0"/>
+    <token id="000001349B160340" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="::" scope="0000013496CA93C0" astParent="000001349B160CA0" astOperand1="000001349B1610C0" astOperand2="000001349B160DC0"/>
+    <token id="000001349B160DC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B160340"/>
+    <token id="000001349B160CA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="::" scope="0000013496CA93C0" astParent="000001349B15FF80" astOperand1="000001349B160340" astOperand2="000001349B160BE0"/>
+    <token id="000001349B160BE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="Frame" scope="0000013496CA93C0" type="name" astParent="000001349B160CA0"/>
+    <token id="000001349B15FF80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B15E8A0" astOperand1="000001349B160CA0" astOperand2="000001349B15F920"/>
+    <token id="000001349B15F920" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str="frame" scope="0000013496CA93C0" type="name" astParent="000001349B15FF80"/>
+    <token id="000001349B160E80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str=")" scope="0000013496CA93C0" link="000001349B15E8A0"/>
+    <token id="000001349B160400" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="14" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B160940" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="16" str="internal" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B160880" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="16" str=":" scope="0000013496CA93C0"/>
+    <token id="000001349B160640" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="static" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B160B80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="WindowFrameService" scope="0000013496CA93C0" type="name" astParent="000001349B160F40"/>
+    <token id="000001349B160F40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B160B80" astOperand2="000001349B160D00"/>
+    <token id="000001349B1602E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="CreateNewWindowFrameService" scope="0000013496CA93C0" type="name" astParent="000001349B160D00"/>
+    <token id="000001349B160D00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="(" scope="0000013496CA93C0" link="000001349B15F980" astParent="000001349B160F40" astOperand1="000001349B1602E0" astOperand2="000001349B15FEC0"/>
+    <token id="000001349B1609A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B1608E0"/>
+    <token id="000001349B1608E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="::" scope="0000013496CA93C0" astParent="000001349B160C40" astOperand1="000001349B1609A0" astOperand2="000001349B160A60"/>
+    <token id="000001349B160A60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B1608E0"/>
+    <token id="000001349B160C40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="::" scope="0000013496CA93C0" astParent="000001349B15FFE0" astOperand1="000001349B1608E0" astOperand2="000001349B1604C0"/>
+    <token id="000001349B1604C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B160C40"/>
+    <token id="000001349B15FFE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="::" scope="0000013496CA93C0" astParent="000001349B160460" astOperand1="000001349B160C40" astOperand2="000001349B15FF20"/>
+    <token id="000001349B15FF20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B15FFE0"/>
+    <token id="000001349B160460" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="::" scope="0000013496CA93C0" astParent="000001349B160520" astOperand1="000001349B15FFE0" astOperand2="000001349B160AC0"/>
+    <token id="000001349B160AC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="Frame" scope="0000013496CA93C0" type="name" astParent="000001349B160460"/>
+    <token id="000001349B160520" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B1607C0" astOperand1="000001349B160460" astOperand2="000001349B160B20"/>
+    <token id="000001349B160B20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="viewFrame" scope="0000013496CA93C0" type="name" astParent="000001349B160520"/>
+    <token id="000001349B1607C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="19" str="," scope="0000013496CA93C0" astParent="000001349B15FEC0" astOperand1="000001349B160520" astOperand2="000001349B160580"/>
+    <token id="000001349B160220" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="20" str="bool" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B160580" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="20" str="createdByUs" scope="0000013496CA93C0" type="name" varId="1" astParent="000001349B1607C0"/>
+    <token id="000001349B15FEC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="20" str="," scope="0000013496CA93C0" astParent="000001349B160D00" astOperand1="000001349B1607C0" astOperand2="000001349B15FC80"/>
+    <token id="000001349B161000" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B15FC80"/>
+    <token id="000001349B15FC80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str="::" scope="0000013496CA93C0" astParent="000001349B15FEC0" astOperand1="000001349B161000" astOperand2="000001349B15FE00"/>
+    <token id="000001349B160040" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str="WeakReference" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15FE00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str="parent" scope="0000013496CA93C0" type="name" varId="2" astParent="000001349B15FC80"/>
+    <token id="000001349B15F980" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str=")" scope="0000013496CA93C0" link="000001349B160D00"/>
+    <token id="000001349B1605E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="21" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1600A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B160D60"/>
+    <token id="000001349B160D60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="::" scope="0000013496CA93C0" astParent="000001349B15FAA0" astOperand1="000001349B1600A0" astOperand2="000001349B15FA40"/>
+    <token id="000001349B15FA40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B160D60"/>
+    <token id="000001349B15FAA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="::" scope="0000013496CA93C0" astParent="000001349B15FB60" astOperand1="000001349B160D60" astOperand2="000001349B15FB00"/>
+    <token id="000001349B15FB00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="Core" scope="0000013496CA93C0" type="name" astParent="000001349B15FAA0"/>
+    <token id="000001349B15FB60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="::" scope="0000013496CA93C0" astParent="000001349B15FBC0" astOperand1="000001349B15FAA0" astOperand2="000001349B160100"/>
+    <token id="000001349B160100" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="CoreDispatcher" scope="0000013496CA93C0" type="name" astParent="000001349B15FB60"/>
+    <token id="000001349B15FBC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B15FB60" astOperand2="000001349B1601C0"/>
+    <token id="000001349B15FCE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="GetCoreDispatcher" scope="0000013496CA93C0" type="name" astParent="000001349B1601C0"/>
+    <token id="000001349B1601C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str="(" scope="0000013496CA93C0" link="000001349B160280" astParent="000001349B15FBC0" astOperand1="000001349B15FCE0"/>
+    <token id="000001349B160280" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str=")" scope="0000013496CA93C0" link="000001349B1601C0"/>
+    <token id="000001349B15FD40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="23" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B15FE60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="24" str="int" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B15FDA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="24" str="GetViewId" scope="0000013496CA93C0" type="name" function="000001349138C640" astParent="000001349B1606A0"/>
+    <token id="000001349B1606A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="24" str="(" scope="0000013496CA93C0" link="000001349B160820" astOperand1="000001349B15FDA0" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B160820" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="24" str=")" scope="0000013496CA93C0" link="000001349B1606A0"/>
+    <token id="000001349B1622C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="24" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B161780" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B162500" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="RegisterOnWindowClosingHandler" scope="0000013496CA93C0" type="name" function="000001349138C0A0" astParent="000001349B1623E0"/>
+    <token id="000001349B1623E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="(" scope="0000013496CA93C0" link="000001349B161A80" astOperand1="000001349B162500" astOperand2="000001349B162680" valueType-type="void"/>
+    <token id="000001349B161EA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="std" scope="0000013496CA93C0" type="name" astParent="000001349B162680"/>
+    <token id="000001349B162680" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="::" scope="0000013496CA93C0" astParent="000001349B1623E0" astOperand1="000001349B161EA0" astOperand2="000001349B162560"/>
+    <token id="000001349B162560" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="function" scope="0000013496CA93C0" type="name" astParent="000001349B162680"/>
+    <token id="000001349B1624A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="&lt;" scope="0000013496CA93C0" link="000001349B161F60"/>
+    <token id="000001349B161BA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B162200" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="(" scope="0000013496CA93C0" link="000001349B1626E0" valueType-type="void"/>
+    <token id="000001349B1626E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str=")" scope="0000013496CA93C0" link="000001349B162200"/>
+    <token id="000001349B161F60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="&gt;" scope="0000013496CA93C0" link="000001349B1624A0"/>
+    <token id="000001349B162620" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str="onWindowClosingHandler" scope="0000013496CA93C0" type="name" varId="3" variable="0000013496E9EDE0"/>
+    <token id="000001349B161A80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str=")" scope="0000013496CA93C0" link="000001349B1623E0"/>
+    <token id="000001349B161240" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="26" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B161B40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="concurrency" scope="0000013496CA93C0" type="name" astParent="000001349B161900"/>
+    <token id="000001349B161900" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="::" scope="0000013496CA93C0" astOperand1="000001349B161B40" astOperand2="000001349B1627A0"/>
+    <token id="000001349B1627A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="task" scope="0000013496CA93C0" type="name" astParent="000001349B161900"/>
+    <token id="000001349B162260" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="&lt;" scope="0000013496CA93C0" link="000001349B162740"/>
+    <token id="000001349B162440" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B162740" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="&gt;" scope="0000013496CA93C0" link="000001349B162260"/>
+    <token id="000001349B162140" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="HandleViewRelease" scope="0000013496CA93C0" type="name" function="000001349138B440" astParent="000001349B1616C0"/>
+    <token id="000001349B1616C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str="(" scope="0000013496CA93C0" link="000001349B162320" astOperand1="000001349B162140"/>
+    <token id="000001349B162320" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str=")" scope="0000013496CA93C0" link="000001349B1616C0"/>
+    <token id="000001349B162380" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="27" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1625C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B161480" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="RegisterRuntimeWindowService" scope="0000013496CA93C0" type="name" function="000001349138CD00" astParent="000001349B161FC0"/>
+    <token id="000001349B161FC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="(" scope="0000013496CA93C0" link="000001349B161300" astOperand1="000001349B161480" astOperand2="000001349B1621A0" valueType-type="void"/>
+    <token id="000001349B162800" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B162860"/>
+    <token id="000001349B162860" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="::" scope="0000013496CA93C0" astParent="000001349B161C60" astOperand1="000001349B162800" astOperand2="000001349B161F00"/>
+    <token id="000001349B161F00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B162860"/>
+    <token id="000001349B161C60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="::" scope="0000013496CA93C0" astParent="000001349B161CC0" astOperand1="000001349B162860" astOperand2="000001349B162020"/>
+    <token id="000001349B162020" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B161C60"/>
+    <token id="000001349B161CC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="::" scope="0000013496CA93C0" astParent="000001349B161DE0" astOperand1="000001349B161C60" astOperand2="000001349B1628C0"/>
+    <token id="000001349B1628C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="Interop" scope="0000013496CA93C0" type="name" astParent="000001349B161CC0"/>
+    <token id="000001349B161DE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="::" scope="0000013496CA93C0" astParent="000001349B1621A0" astOperand1="000001349B161CC0" astOperand2="000001349B162080"/>
+    <token id="000001349B161AE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="TypeName" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B162080" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="serviceId" scope="0000013496CA93C0" type="name" varId="4" variable="0000013496E9EE50" astParent="000001349B161DE0"/>
+    <token id="000001349B1621A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="," scope="0000013496CA93C0" astParent="000001349B161FC0" astOperand1="000001349B161DE0" astOperand2="000001349B1611E0"/>
+    <token id="000001349B161120" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B161C00"/>
+    <token id="000001349B161C00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="::" scope="0000013496CA93C0" astParent="000001349B1611E0" astOperand1="000001349B161120" astOperand2="000001349B161180"/>
+    <token id="000001349B161180" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="Object" scope="0000013496CA93C0" type="name" astParent="000001349B161C00"/>
+    <token id="000001349B1611E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B1621A0" astOperand1="000001349B161C00" astOperand2="000001349B1612A0"/>
+    <token id="000001349B1612A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str="service" scope="0000013496CA93C0" type="name" astParent="000001349B1611E0"/>
+    <token id="000001349B161300" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str=")" scope="0000013496CA93C0" link="000001349B161FC0"/>
+    <token id="000001349B161360" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="30" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B161D20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="bool" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1613C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="RemoveRuntimeWindowService" scope="0000013496CA93C0" type="name" function="000001349138CD90" astParent="000001349B161420"/>
+    <token id="000001349B161420" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="(" scope="0000013496CA93C0" link="000001349B161660" astOperand1="000001349B1613C0" astOperand2="000001349B1615A0" valueType-type="bool"/>
+    <token id="000001349B1620E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B1617E0"/>
+    <token id="000001349B1617E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="::" scope="0000013496CA93C0" astParent="000001349B161540" astOperand1="000001349B1620E0" astOperand2="000001349B1614E0"/>
+    <token id="000001349B1614E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B1617E0"/>
+    <token id="000001349B161540" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="::" scope="0000013496CA93C0" astParent="000001349B1618A0" astOperand1="000001349B1617E0" astOperand2="000001349B161840"/>
+    <token id="000001349B161840" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B161540"/>
+    <token id="000001349B1618A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="::" scope="0000013496CA93C0" astParent="000001349B1615A0" astOperand1="000001349B161540" astOperand2="000001349B161D80"/>
+    <token id="000001349B161D80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="Interop" scope="0000013496CA93C0" type="name" astParent="000001349B1618A0"/>
+    <token id="000001349B1615A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="::" scope="0000013496CA93C0" astParent="000001349B161420" astOperand1="000001349B1618A0" astOperand2="000001349B161960"/>
+    <token id="000001349B161600" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="TypeName" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B161960" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str="serviceId" scope="0000013496CA93C0" type="name" varId="5" variable="0000013496E9D870" astParent="000001349B1615A0"/>
+    <token id="000001349B161660" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str=")" scope="0000013496CA93C0" link="000001349B161420"/>
+    <token id="000001349B161720" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="33" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B161E40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B1619C0"/>
+    <token id="000001349B1619C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="::" scope="0000013496CA93C0" astParent="000001349B163B80" astOperand1="000001349B161E40" astOperand2="000001349B161A20"/>
+    <token id="000001349B161A20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="Object" scope="0000013496CA93C0" type="name" astParent="000001349B1619C0"/>
+    <token id="000001349B163B80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B1619C0" astOperand2="000001349B163F40"/>
+    <token id="000001349B163AC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="ResolveRuntimeWindowService" scope="0000013496CA93C0" type="name" astParent="000001349B163F40"/>
+    <token id="000001349B163F40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="(" scope="0000013496CA93C0" link="000001349B163DC0" astParent="000001349B163B80" astOperand1="000001349B163AC0" astOperand2="000001349B162DA0"/>
+    <token id="000001349B163D00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B163160"/>
+    <token id="000001349B163160" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="::" scope="0000013496CA93C0" astParent="000001349B163220" astOperand1="000001349B163D00" astOperand2="000001349B163400"/>
+    <token id="000001349B163400" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B163160"/>
+    <token id="000001349B163220" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="::" scope="0000013496CA93C0" astParent="000001349B163700" astOperand1="000001349B163160" astOperand2="000001349B163D60"/>
+    <token id="000001349B163D60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B163220"/>
+    <token id="000001349B163700" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="::" scope="0000013496CA93C0" astParent="000001349B162DA0" astOperand1="000001349B163220" astOperand2="000001349B1635E0"/>
+    <token id="000001349B1635E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="Interop" scope="0000013496CA93C0" type="name" astParent="000001349B163700"/>
+    <token id="000001349B162DA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="::" scope="0000013496CA93C0" astParent="000001349B163F40" astOperand1="000001349B163700" astOperand2="000001349B163BE0"/>
+    <token id="000001349B1639A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="TypeName" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B163BE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str="serviceId" scope="0000013496CA93C0" type="name" varId="6" astParent="000001349B162DA0"/>
+    <token id="000001349B163DC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str=")" scope="0000013496CA93C0" link="000001349B163F40"/>
+    <token id="000001349B163280" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="36" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B163B20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B162BC0"/>
+    <token id="000001349B162BC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="::" scope="0000013496CA93C0" astParent="000001349B163340" astOperand1="000001349B163B20" astOperand2="000001349B163940"/>
+    <token id="000001349B163940" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="Object" scope="0000013496CA93C0" type="name" astParent="000001349B162BC0"/>
+    <token id="000001349B163340" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B162BC0" astOperand2="000001349B164060"/>
+    <token id="000001349B162B00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="TryResolveRuntimeWindowService" scope="0000013496CA93C0" type="name" astParent="000001349B164060"/>
+    <token id="000001349B164060" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="(" scope="0000013496CA93C0" link="000001349B162FE0" astParent="000001349B163340" astOperand1="000001349B162B00" astOperand2="000001349B163760"/>
+    <token id="000001349B162EC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B162F80"/>
+    <token id="000001349B162F80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="::" scope="0000013496CA93C0" astParent="000001349B1633A0" astOperand1="000001349B162EC0" astOperand2="000001349B162F20"/>
+    <token id="000001349B162F20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B162F80"/>
+    <token id="000001349B1633A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="::" scope="0000013496CA93C0" astParent="000001349B1632E0" astOperand1="000001349B162F80" astOperand2="000001349B163C40"/>
+    <token id="000001349B163C40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B1633A0"/>
+    <token id="000001349B1632E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="::" scope="0000013496CA93C0" astParent="000001349B163760" astOperand1="000001349B1633A0" astOperand2="000001349B163CA0"/>
+    <token id="000001349B163CA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="Interop" scope="0000013496CA93C0" type="name" astParent="000001349B1632E0"/>
+    <token id="000001349B163760" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="::" scope="0000013496CA93C0" astParent="000001349B164060" astOperand1="000001349B1632E0" astOperand2="000001349B1634C0"/>
+    <token id="000001349B163460" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="TypeName" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1634C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str="serviceId" scope="0000013496CA93C0" type="name" varId="7" astParent="000001349B163760"/>
+    <token id="000001349B162FE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str=")" scope="0000013496CA93C0" link="000001349B164060"/>
+    <token id="000001349B164000" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="39" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B162C20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B163040"/>
+    <token id="000001349B163040" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="::" scope="0000013496CA93C0" astParent="000001349B162980" astOperand1="000001349B162C20" astOperand2="000001349B162E00"/>
+    <token id="000001349B162E00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B163040"/>
+    <token id="000001349B162980" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="::" scope="0000013496CA93C0" astParent="000001349B1630A0" astOperand1="000001349B163040" astOperand2="000001349B163520"/>
+    <token id="000001349B163520" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B162980"/>
+    <token id="000001349B1630A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="::" scope="0000013496CA93C0" astParent="000001349B163E80" astOperand1="000001349B162980" astOperand2="000001349B163E20"/>
+    <token id="000001349B163E20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B1630A0"/>
+    <token id="000001349B163E80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="::" scope="0000013496CA93C0" astParent="000001349B162920" astOperand1="000001349B1630A0" astOperand2="000001349B163880"/>
+    <token id="000001349B163880" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="Frame" scope="0000013496CA93C0" type="name" astParent="000001349B163E80"/>
+    <token id="000001349B162920" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B163E80" astOperand2="000001349B163100"/>
+    <token id="000001349B163EE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="GetFrame" scope="0000013496CA93C0" type="name" astParent="000001349B163100"/>
+    <token id="000001349B163100" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str="(" scope="0000013496CA93C0" link="000001349B162A40" astParent="000001349B162920" astOperand1="000001349B163EE0"/>
+    <token id="000001349B162A40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str=")" scope="0000013496CA93C0" link="000001349B163100"/>
+    <token id="000001349B163580" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="41" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B163640" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="42" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1640C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="42" str="InvokeWindowClosingHandlers" scope="0000013496CA93C0" type="name" function="000001349138D060" astParent="000001349B163FA0"/>
+    <token id="000001349B163FA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="42" str="(" scope="0000013496CA93C0" link="000001349B162E60" astOperand1="000001349B1640C0" valueType-type="void"/>
+    <token id="000001349B162E60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="42" str=")" scope="0000013496CA93C0" link="000001349B163FA0"/>
+    <token id="000001349B1638E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="42" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1629E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="43" str="private:" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B162B60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="WindowFrameService" scope="0000013496CA93C0" type="name" function="000001349138C130" astParent="000001349B1636A0"/>
+    <token id="000001349B1636A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="(" scope="0000013496CA93C0" link="000001349B164300" astOperand1="000001349B162B60" astOperand2="000001349B164CC0"/>
+    <token id="000001349B162C80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B162CE0"/>
+    <token id="000001349B162CE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="::" scope="0000013496CA93C0" astParent="000001349B162D40" astOperand1="000001349B162C80" astOperand2="000001349B1637C0"/>
+    <token id="000001349B1637C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B162CE0"/>
+    <token id="000001349B162D40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="::" scope="0000013496CA93C0" astParent="000001349B163820" astOperand1="000001349B162CE0" astOperand2="000001349B1631C0"/>
+    <token id="000001349B1631C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B162D40"/>
+    <token id="000001349B163820" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="::" scope="0000013496CA93C0" astParent="000001349B163A60" astOperand1="000001349B162D40" astOperand2="000001349B163A00"/>
+    <token id="000001349B163A00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B163820"/>
+    <token id="000001349B163A60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="::" scope="0000013496CA93C0" astParent="000001349B1641E0" astOperand1="000001349B163820" astOperand2="000001349B1655C0"/>
+    <token id="000001349B1655C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="Frame" scope="0000013496CA93C0" type="name" astParent="000001349B163A60"/>
+    <token id="000001349B1641E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B164CC0" astOperand1="000001349B163A60" astOperand2="000001349B164600"/>
+    <token id="000001349B164600" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="viewFrame" scope="0000013496CA93C0" type="name" astParent="000001349B1641E0"/>
+    <token id="000001349B164CC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="," scope="0000013496CA93C0" astParent="000001349B1636A0" astOperand1="000001349B1641E0" astOperand2="000001349B1643C0"/>
+    <token id="000001349B164240" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B1643C0"/>
+    <token id="000001349B1643C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="::" scope="0000013496CA93C0" astParent="000001349B164CC0" astOperand1="000001349B164240" astOperand2="000001349B165860"/>
+    <token id="000001349B1650E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="WeakReference" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B165860" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str="parent" scope="0000013496CA93C0" type="name" varId="8" variable="0000013496E9D410" astParent="000001349B1643C0"/>
+    <token id="000001349B164300" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str=")" scope="0000013496CA93C0" link="000001349B1636A0"/>
+    <token id="000001349B164D80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="44" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B164780" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1652C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str="InitializeFrameService" scope="0000013496CA93C0" type="name" function="000001349138CAC0" astParent="000001349B165500"/>
+    <token id="000001349B165500" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str="(" scope="0000013496CA93C0" link="000001349B165200" astOperand1="000001349B1652C0" astOperand2="000001349B164BA0" valueType-type="void"/>
+    <token id="000001349B1654A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str="bool" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B164BA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str="createdByUs" scope="0000013496CA93C0" type="name" varId="9" variable="0000013496E9D480" astParent="000001349B165500" valueType-type="bool"/>
+    <token id="000001349B165200" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str=")" scope="0000013496CA93C0" link="000001349B165500"/>
+    <token id="000001349B1656E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="45" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B164F60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1658C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="OnConsolidated" scope="0000013496CA93C0" type="name" function="000001349138D180" astParent="000001349B164C00"/>
+    <token id="000001349B164C00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="(" scope="0000013496CA93C0" link="000001349B164F00" astOperand1="000001349B1658C0" astOperand2="000001349B165080" valueType-type="void"/>
+    <token id="000001349B164B40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B165620"/>
+    <token id="000001349B165620" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B1653E0" astOperand1="000001349B164B40" astOperand2="000001349B165560"/>
+    <token id="000001349B165560" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B165620"/>
+    <token id="000001349B1653E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B164120" astOperand1="000001349B165620" astOperand2="000001349B1647E0"/>
+    <token id="000001349B1647E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="ViewManagement" scope="0000013496CA93C0" type="name" astParent="000001349B1653E0"/>
+    <token id="000001349B164120" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B164C60" astOperand1="000001349B1653E0" astOperand2="000001349B165680"/>
+    <token id="000001349B165680" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="ApplicationView" scope="0000013496CA93C0" type="name" astParent="000001349B164120"/>
+    <token id="000001349B164C60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B165080" astOperand1="000001349B164120" astOperand2="000001349B165140"/>
+    <token id="000001349B165140" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="sender" scope="0000013496CA93C0" type="name" astParent="000001349B164C60"/>
+    <token id="000001349B165080" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="," scope="0000013496CA93C0" astParent="000001349B164C00" astOperand1="000001349B164C60" astOperand2="000001349B1657A0"/>
+    <token id="000001349B164E40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B164D20"/>
+    <token id="000001349B164D20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B165740" astOperand1="000001349B164E40" astOperand2="000001349B164DE0"/>
+    <token id="000001349B164DE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B164D20"/>
+    <token id="000001349B165740" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B164FC0" astOperand1="000001349B164D20" astOperand2="000001349B164AE0"/>
+    <token id="000001349B164AE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="ViewManagement" scope="0000013496CA93C0" type="name" astParent="000001349B165740"/>
+    <token id="000001349B164FC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="::" scope="0000013496CA93C0" astParent="000001349B1657A0" astOperand1="000001349B165740" astOperand2="000001349B1651A0"/>
+    <token id="000001349B1651A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="ApplicationViewConsolidatedEventArgs" scope="0000013496CA93C0" type="name" astParent="000001349B164FC0"/>
+    <token id="000001349B1657A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B165080" astOperand1="000001349B164FC0" astOperand2="000001349B165800"/>
+    <token id="000001349B165800" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str="e" scope="0000013496CA93C0" type="name" astParent="000001349B1657A0"/>
+    <token id="000001349B164F00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str=")" scope="0000013496CA93C0" link="000001349B164C00"/>
+    <token id="000001349B164EA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="47" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B164A20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B165320" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="OnClosed" scope="0000013496CA93C0" type="name" function="000001349138C6D0" astParent="000001349B164420"/>
+    <token id="000001349B164420" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="(" scope="0000013496CA93C0" link="000001349B164A80" astOperand1="000001349B165320" astOperand2="000001349B164480" valueType-type="void"/>
+    <token id="000001349B165260" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B165020"/>
+    <token id="000001349B165020" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B1646C0" astOperand1="000001349B165260" astOperand2="000001349B165380"/>
+    <token id="000001349B165380" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B165020"/>
+    <token id="000001349B1646C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B164900" astOperand1="000001349B165020" astOperand2="000001349B165440"/>
+    <token id="000001349B165440" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="Core" scope="0000013496CA93C0" type="name" astParent="000001349B1646C0"/>
+    <token id="000001349B164900" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B1642A0" astOperand1="000001349B1646C0" astOperand2="000001349B164180"/>
+    <token id="000001349B164180" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="CoreWindow" scope="0000013496CA93C0" type="name" astParent="000001349B164900"/>
+    <token id="000001349B1642A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B164480" astOperand1="000001349B164900" astOperand2="000001349B164360"/>
+    <token id="000001349B164360" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="sender" scope="0000013496CA93C0" type="name" astParent="000001349B1642A0"/>
+    <token id="000001349B164480" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="," scope="0000013496CA93C0" astParent="000001349B164420" astOperand1="000001349B1642A0" astOperand2="000001349B164960"/>
+    <token id="000001349B1644E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B164540"/>
+    <token id="000001349B164540" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B164660" astOperand1="000001349B1644E0" astOperand2="000001349B1645A0"/>
+    <token id="000001349B1645A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B164540"/>
+    <token id="000001349B164660" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B164840" astOperand1="000001349B164540" astOperand2="000001349B164720"/>
+    <token id="000001349B164720" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="Core" scope="0000013496CA93C0" type="name" astParent="000001349B164660"/>
+    <token id="000001349B164840" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="::" scope="0000013496CA93C0" astParent="000001349B164960" astOperand1="000001349B164660" astOperand2="000001349B1648A0"/>
+    <token id="000001349B1648A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="CoreWindowEventArgs" scope="0000013496CA93C0" type="name" astParent="000001349B164840"/>
+    <token id="000001349B164960" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B164480" astOperand1="000001349B164840" astOperand2="000001349B1649C0"/>
+    <token id="000001349B1649C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str="args" scope="0000013496CA93C0" type="name" astParent="000001349B164960"/>
+    <token id="000001349B164A80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str=")" scope="0000013496CA93C0" link="000001349B164420"/>
+    <token id="000001349B166D00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="48" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B166E80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B166EE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="LogOnViewClosed" scope="0000013496CA93C0" type="name" function="000001349138CA30" astParent="000001349B166220"/>
+    <token id="000001349B166220" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="(" scope="0000013496CA93C0" link="000001349B1670C0" astOperand1="000001349B166EE0" astOperand2="000001349B1666A0" valueType-type="void"/>
+    <token id="000001349B166340" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B166AC0"/>
+    <token id="000001349B166AC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="::" scope="0000013496CA93C0" astParent="000001349B166F40" astOperand1="000001349B166340" astOperand2="000001349B165BC0"/>
+    <token id="000001349B165BC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B166AC0"/>
+    <token id="000001349B166F40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="::" scope="0000013496CA93C0" astParent="000001349B166BE0" astOperand1="000001349B166AC0" astOperand2="000001349B165CE0"/>
+    <token id="000001349B165CE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="Core" scope="0000013496CA93C0" type="name" astParent="000001349B166F40"/>
+    <token id="000001349B166BE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="::" scope="0000013496CA93C0" astParent="000001349B1666A0" astOperand1="000001349B166F40" astOperand2="000001349B166FA0"/>
+    <token id="000001349B166FA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="CoreWindow" scope="0000013496CA93C0" type="name" astParent="000001349B166BE0"/>
+    <token id="000001349B1666A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="^" scope="0000013496CA93C0" type="op" astParent="000001349B166220" astOperand1="000001349B166BE0" astOperand2="000001349B167060"/>
+    <token id="000001349B167060" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str="coreWindow" scope="0000013496CA93C0" type="name" astParent="000001349B1666A0"/>
+    <token id="000001349B1670C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str=")" scope="0000013496CA93C0" link="000001349B166220"/>
+    <token id="000001349B166820" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="50" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1659E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="52" str="private:" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B165E00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B165EC0"/>
+    <token id="000001349B165EC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="::" scope="0000013496CA93C0" astOperand1="000001349B165E00" astOperand2="000001349B165F20"/>
+    <token id="000001349B165F20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="Agile" scope="0000013496CA93C0" type="name" astParent="000001349B165EC0"/>
+    <token id="000001349B165F80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="&lt;" scope="0000013496CA93C0" link="000001349B167FC0"/>
+    <token id="000001349B166100" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="Windows" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B166160" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B167120" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="UI" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167960" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B167DE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="Core" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167780" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B1677E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="CoreWindow" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167660" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="^" scope="0000013496CA93C0" type="op"/>
+    <token id="000001349B167FC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="&gt;" scope="0000013496CA93C0" link="000001349B165F80"/>
+    <token id="000001349B167840" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str="m_currentWindow" scope="0000013496CA93C0" type="name" varId="10"/>
+    <token id="000001349B168200" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="53" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B168020" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B1678A0"/>
+    <token id="000001349B1678A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="::" scope="0000013496CA93C0" astOperand1="000001349B168020" astOperand2="000001349B168320"/>
+    <token id="000001349B168320" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="Agile" scope="0000013496CA93C0" type="name" astParent="000001349B1678A0"/>
+    <token id="000001349B1672A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="&lt;" scope="0000013496CA93C0" link="000001349B167E40"/>
+    <token id="000001349B167900" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="Windows" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1679C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B167BA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="UI" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167420" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B1685C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="Core" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167A20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B1688C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="CoreDispatcher" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B168380" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="^" scope="0000013496CA93C0" type="op"/>
+    <token id="000001349B167E40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="&gt;" scope="0000013496CA93C0" link="000001349B1672A0"/>
+    <token id="000001349B168080" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str="m_coreDispatcher" scope="0000013496CA93C0" type="name" varId="11"/>
+    <token id="000001349B168680" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="54" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B167480" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="Windows" scope="0000013496CA93C0" type="name" astParent="000001349B168620"/>
+    <token id="000001349B168620" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="::" scope="0000013496CA93C0" astParent="000001349B168500" astOperand1="000001349B167480" astOperand2="000001349B168740"/>
+    <token id="000001349B168740" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="UI" scope="0000013496CA93C0" type="name" astParent="000001349B168620"/>
+    <token id="000001349B168500" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="::" scope="0000013496CA93C0" astParent="000001349B167C00" astOperand1="000001349B168620" astOperand2="000001349B167A80"/>
+    <token id="000001349B167A80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="Xaml" scope="0000013496CA93C0" type="name" astParent="000001349B168500"/>
+    <token id="000001349B167C00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="::" scope="0000013496CA93C0" astParent="000001349B168560" astOperand1="000001349B168500" astOperand2="000001349B167AE0"/>
+    <token id="000001349B167AE0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="Controls" scope="0000013496CA93C0" type="name" astParent="000001349B167C00"/>
+    <token id="000001349B168560" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="::" scope="0000013496CA93C0" astParent="000001349B167EA0" astOperand1="000001349B167C00" astOperand2="000001349B167F00"/>
+    <token id="000001349B167F00" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="Frame" scope="0000013496CA93C0" type="name" astParent="000001349B168560"/>
+    <token id="000001349B167EA0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="^" scope="0000013496CA93C0" type="op" astOperand1="000001349B168560" astOperand2="000001349B1675A0"/>
+    <token id="000001349B1675A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str="m_frame" scope="0000013496CA93C0" type="name" astParent="000001349B167EA0"/>
+    <token id="000001349B1681A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="55" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1683E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="56" str="int" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1686E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="56" str="m_viewId" scope="0000013496CA93C0" type="name" varId="12"/>
+    <token id="000001349B1687A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="56" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1671E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="57" str="Platform" scope="0000013496CA93C0" type="name" astParent="000001349B167600"/>
+    <token id="000001349B167600" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="57" str="::" scope="0000013496CA93C0" astOperand1="000001349B1671E0" astOperand2="000001349B167240"/>
+    <token id="000001349B167CC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="57" str="WeakReference" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167240" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="57" str="m_parent" scope="0000013496CA93C0" type="name" varId="13" astParent="000001349B167600"/>
+    <token id="000001349B1673C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="57" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1680E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="std" scope="0000013496CA93C0" type="name" astParent="000001349B168860"/>
+    <token id="000001349B168860" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="::" scope="0000013496CA93C0" astOperand1="000001349B1680E0" astOperand2="000001349B167300"/>
+    <token id="000001349B167300" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="unordered_map" scope="0000013496CA93C0" type="name" astParent="000001349B168860"/>
+    <token id="000001349B167D80" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="&lt;" scope="0000013496CA93C0" link="000001349B167360"/>
+    <token id="000001349B167B40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="Platform" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B168440" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B168800" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="String" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167F60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="^" scope="0000013496CA93C0" type="op"/>
+    <token id="000001349B167C60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="," scope="0000013496CA93C0"/>
+    <token id="000001349B1674E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="Platform" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1682C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B167180" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="Object" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B167D20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="^" scope="0000013496CA93C0" type="op"/>
+    <token id="000001349B167360" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="&gt;" scope="0000013496CA93C0" link="000001349B167D80"/>
+    <token id="000001349B168140" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str="m_runtimeServicesMap" scope="0000013496CA93C0" type="name" varId="14"/>
+    <token id="000001349B167540" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="59" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B1684A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="std" scope="0000013496CA93C0" type="name" astParent="000001349B1676C0"/>
+    <token id="000001349B1676C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="::" scope="0000013496CA93C0" astOperand1="000001349B1684A0" astOperand2="000001349B168260"/>
+    <token id="000001349B168260" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="vector" scope="0000013496CA93C0" type="name" astParent="000001349B1676C0"/>
+    <token id="000001349B167720" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="&lt;" scope="0000013496CA93C0" link="000001349B1723A0"/>
+    <token id="000001349B169DC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="std" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B169400" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="::" scope="0000013496CA93C0"/>
+    <token id="000001349B169940" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="function" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B169880" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="&lt;" scope="0000013496CA93C0" link="000001349B169D60"/>
+    <token id="000001349B169640" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="void" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B1694C0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="(" scope="0000013496CA93C0" link="000001349B169520" valueType-type="void"/>
+    <token id="000001349B169520" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str=")" scope="0000013496CA93C0" link="000001349B1694C0"/>
+    <token id="000001349B169D60" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="&gt;" scope="0000013496CA93C0" link="000001349B169880"/>
+    <token id="000001349B1723A0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="&gt;" scope="0000013496CA93C0" link="000001349B167720"/>
+    <token id="000001349B169AC0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str="m_onWindowClosingHandlers" scope="0000013496CA93C0" type="name" varId="15"/>
+    <token id="000001349B1698E0" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="60" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B169460" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="61" str="}" scope="0000013496CA93C0" link="000001349B15F7A0"/>
+    <token id="000001349B169E20" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="61" str=";" scope="0000013496CA93C0"/>
+    <token id="000001349B169F40" file="C:/sample repositories/calculator-master/src/Calculator/WindowFrameService.h" linenr="62" str="}" scope="0000013496CA93C0" link="000001349B15F6E0"/>
+    <token id="000001349B169700" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="14" str="namespace" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B169580" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="14" str="CalculatorApp" scope="0000013496CA93C0" type="name"/>
+    <token id="000001349B168920" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="15" str="{" scope="0000013496CA94D0" link="000001349B171C80"/>
+    <token id="000001349B16A060" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="16" str="namespace" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B1692E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="16" str="ApplicationResourceKeys" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B169340" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="17" str="{" scope="0000013496CA8B40" link="000001349B169B80"/>
+    <token id="000001349B169B20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str="extern" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B169760" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str="Platform" scope="0000013496CA8B40" type="name" astParent="000001349B169220"/>
+    <token id="000001349B169220" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str="::" scope="0000013496CA8B40" astOperand1="000001349B169760" astOperand2="000001349B1695E0"/>
+    <token id="000001349B1693A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str="StringReference" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B1695E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str="AppMinWindowHeight" scope="0000013496CA8B40" type="name" varId="16" variable="0000013496E9DE20" astParent="000001349B169220"/>
+    <token id="000001349B169A60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="18" str=";" scope="0000013496CA8B40"/>
+    <token id="000001349B168AA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str="extern" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B1696A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str="Platform" scope="0000013496CA8B40" type="name" astParent="000001349B1697C0"/>
+    <token id="000001349B1697C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str="::" scope="0000013496CA8B40" astOperand1="000001349B1696A0" astOperand2="000001349B169040"/>
+    <token id="000001349B169100" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str="StringReference" scope="0000013496CA8B40" type="name"/>
+    <token id="000001349B169040" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str="AppMinWindowWidth" scope="0000013496CA8B40" type="name" varId="17" variable="0000013496E9EC20" astParent="000001349B1697C0"/>
+    <token id="000001349B168F80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="19" str=";" scope="0000013496CA8B40"/>
+    <token id="000001349B169B80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="20" str="}" scope="0000013496CA8B40" link="000001349B169340"/>
+    <token id="000001349B168B00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="25" str="ref" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B1690A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="25" str="class" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168FE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="25" str="App" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B169820" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="25" str="sealed" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168C20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="26" str="{" scope="0000013496CA94D0" link="000001349B171EC0"/>
+    <token id="000001349B169E80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="27" str="public:" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A0C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="28" str="App" scope="0000013496CA94D0" type="name" function="000001349138B170" astParent="000001349B169BE0"/>
+    <token id="000001349B169BE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="28" str="(" scope="0000013496CA94D0" link="000001349B1699A0" astOperand1="000001349B16A0C0"/>
+    <token id="000001349B1699A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="28" str=")" scope="0000013496CA94D0" link="000001349B169BE0"/>
+    <token id="000001349B168C80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="28" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B168980" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="virtual" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B169C40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168E00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="OnLaunched" scope="0000013496CA94D0" type="name" function="000001349138B680" astParent="000001349B169EE0"/>
+    <token id="000001349B169EE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="(" scope="0000013496CA94D0" link="000001349B16A000" astOperand1="000001349B168E00" astOperand2="000001349B1689E0" valueType-type="void"/>
+    <token id="000001349B169A00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B168B60"/>
+    <token id="000001349B168B60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="::" scope="0000013496CA94D0" astParent="000001349B169280" astOperand1="000001349B169A00" astOperand2="000001349B168D40"/>
+    <token id="000001349B168D40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="ApplicationModel" scope="0000013496CA94D0" type="name" astParent="000001349B168B60"/>
+    <token id="000001349B169280" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="::" scope="0000013496CA94D0" astParent="000001349B169CA0" astOperand1="000001349B168B60" astOperand2="000001349B169D00"/>
+    <token id="000001349B169D00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="Activation" scope="0000013496CA94D0" type="name" astParent="000001349B169280"/>
+    <token id="000001349B169CA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="::" scope="0000013496CA94D0" astParent="000001349B1689E0" astOperand1="000001349B169280" astOperand2="000001349B1691C0"/>
+    <token id="000001349B1691C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="LaunchActivatedEventArgs" scope="0000013496CA94D0" type="name" astParent="000001349B169CA0"/>
+    <token id="000001349B1689E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B169EE0" astOperand1="000001349B169CA0" astOperand2="000001349B169FA0"/>
+    <token id="000001349B169FA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="args" scope="0000013496CA94D0" type="name" astParent="000001349B1689E0"/>
+    <token id="000001349B16A000" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str=")" scope="0000013496CA94D0" link="000001349B169EE0"/>
+    <token id="000001349B168A40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str="override" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168BC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="29" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B168CE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="virtual" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168E60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B168DA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="OnActivated" scope="0000013496CA94D0" type="name" function="000001349138B950" astParent="000001349B168EC0"/>
+    <token id="000001349B168EC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="(" scope="0000013496CA94D0" link="000001349B16B500" astOperand1="000001349B168DA0" astOperand2="000001349B16AF00" valueType-type="void"/>
+    <token id="000001349B168F20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16AEA0"/>
+    <token id="000001349B16AEA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="::" scope="0000013496CA94D0" astParent="000001349B16B2C0" astOperand1="000001349B168F20" astOperand2="000001349B16B380"/>
+    <token id="000001349B16B380" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="ApplicationModel" scope="0000013496CA94D0" type="name" astParent="000001349B16AEA0"/>
+    <token id="000001349B16B2C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="::" scope="0000013496CA94D0" astParent="000001349B16B1A0" astOperand1="000001349B16AEA0" astOperand2="000001349B16A780"/>
+    <token id="000001349B16A780" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="Activation" scope="0000013496CA94D0" type="name" astParent="000001349B16B2C0"/>
+    <token id="000001349B16B1A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="::" scope="0000013496CA94D0" astParent="000001349B16AF00" astOperand1="000001349B16B2C0" astOperand2="000001349B16A960"/>
+    <token id="000001349B16A960" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="IActivatedEventArgs" scope="0000013496CA94D0" type="name" astParent="000001349B16B1A0"/>
+    <token id="000001349B16AF00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B168EC0" astOperand1="000001349B16B1A0" astOperand2="000001349B16B560"/>
+    <token id="000001349B16B560" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="args" scope="0000013496CA94D0" type="name" astParent="000001349B16AF00"/>
+    <token id="000001349B16B500" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str=")" scope="0000013496CA94D0" link="000001349B168EC0"/>
+    <token id="000001349B16B440" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str="override" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A7E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="30" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16AA80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="32" str="internal" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16B5C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="32" str=":" scope="0000013496CA94D0"/>
+    <token id="000001349B16A1E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A600" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str="bool" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16AA20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str="IsAnimationEnabled" scope="0000013496CA94D0" type="name" astParent="000001349B16A3C0"/>
+    <token id="000001349B16A3C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str="(" scope="0000013496CA94D0" link="000001349B16B140" astOperand1="000001349B16AA20"/>
+    <token id="000001349B16B140" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str=")" scope="0000013496CA94D0" link="000001349B16A3C0"/>
+    <token id="000001349B16AB40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="33" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16ACC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A6C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="Platform" scope="0000013496CA94D0" type="name" astParent="000001349B16AFC0"/>
+    <token id="000001349B16AFC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="::" scope="0000013496CA94D0" astParent="000001349B16B680" astOperand1="000001349B16A6C0" astOperand2="000001349B16A900"/>
+    <token id="000001349B16A900" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="String" scope="0000013496CA94D0" type="name" astParent="000001349B16AFC0"/>
+    <token id="000001349B16B680" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="^" scope="0000013496CA94D0" type="op" astOperand1="000001349B16AFC0" astOperand2="000001349B16B4A0"/>
+    <token id="000001349B16B620" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="GetAppViewState" scope="0000013496CA94D0" type="name" astParent="000001349B16B4A0"/>
+    <token id="000001349B16B4A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str="(" scope="0000013496CA94D0" link="000001349B16ABA0" astParent="000001349B16B680" astOperand1="000001349B16B620"/>
+    <token id="000001349B16ABA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str=")" scope="0000013496CA94D0" link="000001349B16B4A0"/>
+    <token id="000001349B16B200" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="34" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16B6E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16AF60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str="float" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16B740" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str="GetAppWindowHeight" scope="0000013496CA94D0" type="name" function="000001349138BD40" astParent="000001349B16AAE0"/>
+    <token id="000001349B16AAE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str="(" scope="0000013496CA94D0" link="000001349B16A240" astOperand1="000001349B16B740" valueType-type="float"/>
+    <token id="000001349B16A240" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str=")" scope="0000013496CA94D0" link="000001349B16AAE0"/>
+    <token id="000001349B16AC00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="35" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16A9C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16B7A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="RemoveWindow" scope="0000013496CA94D0" type="name" function="000001349138B9E0" astParent="000001349B16B260"/>
+    <token id="000001349B16B260" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="(" scope="0000013496CA94D0" link="000001349B16A840" astOperand1="000001349B16B7A0" astOperand2="000001349B16A720" valueType-type="void"/>
+    <token id="000001349B16B800" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="WindowFrameService" scope="0000013496CA94D0" type="name" astParent="000001349B16A720"/>
+    <token id="000001349B16A720" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16B260" astOperand1="000001349B16B800" astOperand2="000001349B16AE40"/>
+    <token id="000001349B16AE40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str="frameService" scope="0000013496CA94D0" type="name" astParent="000001349B16A720"/>
+    <token id="000001349B16A840" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str=")" scope="0000013496CA94D0" link="000001349B16B260"/>
+    <token id="000001349B16B320" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="36" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16B3E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16B860" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="RemoveSecondaryWindow" scope="0000013496CA94D0" type="name" function="000001349138C9A0" astParent="000001349B16AC60"/>
+    <token id="000001349B16AC60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="(" scope="0000013496CA94D0" link="000001349B16A180" astOperand1="000001349B16B860" astOperand2="000001349B16AD20" valueType-type="void"/>
+    <token id="000001349B16B8C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="WindowFrameService" scope="0000013496CA94D0" type="name" astParent="000001349B16AD20"/>
+    <token id="000001349B16AD20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16AC60" astOperand1="000001349B16B8C0" astOperand2="000001349B16A120"/>
+    <token id="000001349B16A120" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str="frameService" scope="0000013496CA94D0" type="name" astParent="000001349B16AD20"/>
+    <token id="000001349B16A180" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str=")" scope="0000013496CA94D0" link="000001349B16AC60"/>
+    <token id="000001349B16B020" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="37" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16AD80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="39" str="private:" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A300" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16A360" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16A660"/>
+    <token id="000001349B16A660" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="::" scope="0000013496CA94D0" astParent="000001349B16ADE0" astOperand1="000001349B16A360" astOperand2="000001349B16A420"/>
+    <token id="000001349B16A420" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="UI" scope="0000013496CA94D0" type="name" astParent="000001349B16A660"/>
+    <token id="000001349B16ADE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="::" scope="0000013496CA94D0" astParent="000001349B16A4E0" astOperand1="000001349B16A660" astOperand2="000001349B16A480"/>
+    <token id="000001349B16A480" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="Xaml" scope="0000013496CA94D0" type="name" astParent="000001349B16ADE0"/>
+    <token id="000001349B16A4E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="::" scope="0000013496CA94D0" astParent="000001349B16B0E0" astOperand1="000001349B16ADE0" astOperand2="000001349B16B080"/>
+    <token id="000001349B16B080" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="Controls" scope="0000013496CA94D0" type="name" astParent="000001349B16A4E0"/>
+    <token id="000001349B16B0E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="::" scope="0000013496CA94D0" astParent="000001349B16A540" astOperand1="000001349B16A4E0" astOperand2="000001349B16A8A0"/>
+    <token id="000001349B16A8A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="Frame" scope="0000013496CA94D0" type="name" astParent="000001349B16B0E0"/>
+    <token id="000001349B16A540" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="^" scope="0000013496CA94D0" type="op" astOperand1="000001349B16B0E0" astOperand2="000001349B16C7C0"/>
+    <token id="000001349B16A5A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="CreateFrame" scope="0000013496CA94D0" type="name" astParent="000001349B16C7C0"/>
+    <token id="000001349B16C7C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str="(" scope="0000013496CA94D0" link="000001349B16BF80" astParent="000001349B16A540" astOperand1="000001349B16A5A0"/>
+    <token id="000001349B16BF80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str=")" scope="0000013496CA94D0" link="000001349B16C7C0"/>
+    <token id="000001349B16CA00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="40" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16C820" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16BFE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16CAC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="SetMinWindowSizeAndActivate" scope="0000013496CA94D0" type="name" function="000001349138BA70" astParent="000001349B16CA60"/>
+    <token id="000001349B16CA60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="(" scope="0000013496CA94D0" link="000001349B16C340" astOperand1="000001349B16CAC0" astOperand2="000001349B16CB80" valueType-type="void"/>
+    <token id="000001349B16C880" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16C040"/>
+    <token id="000001349B16C040" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16BAA0" astOperand1="000001349B16C880" astOperand2="000001349B16CB20"/>
+    <token id="000001349B16CB20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="UI" scope="0000013496CA94D0" type="name" astParent="000001349B16C040"/>
+    <token id="000001349B16BAA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16C100" astOperand1="000001349B16C040" astOperand2="000001349B16C0A0"/>
+    <token id="000001349B16C0A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Xaml" scope="0000013496CA94D0" type="name" astParent="000001349B16BAA0"/>
+    <token id="000001349B16C100" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16BC20" astOperand1="000001349B16BAA0" astOperand2="000001349B16C3A0"/>
+    <token id="000001349B16C3A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Controls" scope="0000013496CA94D0" type="name" astParent="000001349B16C100"/>
+    <token id="000001349B16BC20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16C160" astOperand1="000001349B16C100" astOperand2="000001349B16CDC0"/>
+    <token id="000001349B16CDC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Frame" scope="0000013496CA94D0" type="name" astParent="000001349B16BC20"/>
+    <token id="000001349B16C160" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16CB80" astOperand1="000001349B16BC20" astOperand2="000001349B16D0C0"/>
+    <token id="000001349B16D0C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="rootFrame" scope="0000013496CA94D0" type="name" astParent="000001349B16C160"/>
+    <token id="000001349B16CB80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="," scope="0000013496CA94D0" astParent="000001349B16CA60" astOperand1="000001349B16C160" astOperand2="000001349B16CBE0"/>
+    <token id="000001349B16C5E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16BC80"/>
+    <token id="000001349B16BC80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16CBE0" astOperand1="000001349B16C5E0" astOperand2="000001349B16D060"/>
+    <token id="000001349B16D060" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Foundation" scope="0000013496CA94D0" type="name" astParent="000001349B16BC80"/>
+    <token id="000001349B16CBE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="::" scope="0000013496CA94D0" astParent="000001349B16CB80" astOperand1="000001349B16BC80" astOperand2="000001349B16CE20"/>
+    <token id="000001349B16BE00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="Size" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16CE20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str="minWindowSize" scope="0000013496CA94D0" type="name" varId="18" variable="0000013496EA0660" astParent="000001349B16CBE0"/>
+    <token id="000001349B16C340" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str=")" scope="0000013496CA94D0" link="000001349B16CA60"/>
+    <token id="000001349B16BB00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="41" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16CC40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16C6A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="OnAppLaunch" scope="0000013496CA94D0" type="name" function="000001349138BB00" astParent="000001349B16CD60"/>
+    <token id="000001349B16CD60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="(" scope="0000013496CA94D0" link="000001349B16B980" astOperand1="000001349B16C6A0" astOperand2="000001349B16BEC0" valueType-type="void"/>
+    <token id="000001349B16CD00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16CCA0"/>
+    <token id="000001349B16CCA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="::" scope="0000013496CA94D0" astParent="000001349B16C9A0" astOperand1="000001349B16CD00" astOperand2="000001349B16C400"/>
+    <token id="000001349B16C400" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="ApplicationModel" scope="0000013496CA94D0" type="name" astParent="000001349B16CCA0"/>
+    <token id="000001349B16C9A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="::" scope="0000013496CA94D0" astParent="000001349B16CEE0" astOperand1="000001349B16CCA0" astOperand2="000001349B16CE80"/>
+    <token id="000001349B16CE80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="Activation" scope="0000013496CA94D0" type="name" astParent="000001349B16C9A0"/>
+    <token id="000001349B16CEE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="::" scope="0000013496CA94D0" astParent="000001349B16CF40" astOperand1="000001349B16C9A0" astOperand2="000001349B16C4C0"/>
+    <token id="000001349B16C4C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="IActivatedEventArgs" scope="0000013496CA94D0" type="name" astParent="000001349B16CEE0"/>
+    <token id="000001349B16CF40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16BEC0" astOperand1="000001349B16CEE0" astOperand2="000001349B16BD40"/>
+    <token id="000001349B16BD40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="args" scope="0000013496CA94D0" type="name" astParent="000001349B16CF40"/>
+    <token id="000001349B16BEC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="," scope="0000013496CA94D0" astParent="000001349B16CD60" astOperand1="000001349B16CF40" astOperand2="000001349B16BF20"/>
+    <token id="000001349B16CFA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="Platform" scope="0000013496CA94D0" type="name" astParent="000001349B16C1C0"/>
+    <token id="000001349B16C1C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="::" scope="0000013496CA94D0" astParent="000001349B16BF20" astOperand1="000001349B16CFA0" astOperand2="000001349B16B920"/>
+    <token id="000001349B16B920" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="String" scope="0000013496CA94D0" type="name" astParent="000001349B16C1C0"/>
+    <token id="000001349B16BF20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16BEC0" astOperand1="000001349B16C1C0" astOperand2="000001349B16D000"/>
+    <token id="000001349B16D000" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str="argument" scope="0000013496CA94D0" type="name" astParent="000001349B16BF20"/>
+    <token id="000001349B16B980" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str=")" scope="0000013496CA94D0" link="000001349B16CD60"/>
+    <token id="000001349B16BA40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="43" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16B9E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16BB60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="DismissedEventHandler" scope="0000013496CA94D0" type="name" function="000001349138B3B0" astParent="000001349B16BBC0"/>
+    <token id="000001349B16BBC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="(" scope="0000013496CA94D0" link="000001349B16E560" astOperand1="000001349B16BB60" astOperand2="000001349B16C640" valueType-type="void"/>
+    <token id="000001349B16C460" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B16BCE0"/>
+    <token id="000001349B16BCE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="::" scope="0000013496CA94D0" astParent="000001349B16BDA0" astOperand1="000001349B16C460" astOperand2="000001349B16C280"/>
+    <token id="000001349B16C280" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="ApplicationModel" scope="0000013496CA94D0" type="name" astParent="000001349B16BCE0"/>
+    <token id="000001349B16BDA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="::" scope="0000013496CA94D0" astParent="000001349B16C220" astOperand1="000001349B16BCE0" astOperand2="000001349B16BE60"/>
+    <token id="000001349B16BE60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="Activation" scope="0000013496CA94D0" type="name" astParent="000001349B16BDA0"/>
+    <token id="000001349B16C220" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="::" scope="0000013496CA94D0" astParent="000001349B16C520" astOperand1="000001349B16BDA0" astOperand2="000001349B16C2E0"/>
+    <token id="000001349B16C2E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="SplashScreen" scope="0000013496CA94D0" type="name" astParent="000001349B16C220"/>
+    <token id="000001349B16C520" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16C640" astOperand1="000001349B16C220" astOperand2="000001349B16C580"/>
+    <token id="000001349B16C580" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="sender" scope="0000013496CA94D0" type="name" astParent="000001349B16C520"/>
+    <token id="000001349B16C640" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="," scope="0000013496CA94D0" astParent="000001349B16BBC0" astOperand1="000001349B16C520" astOperand2="000001349B16C760"/>
+    <token id="000001349B16C940" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="Platform" scope="0000013496CA94D0" type="name" astParent="000001349B16C8E0"/>
+    <token id="000001349B16C8E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="::" scope="0000013496CA94D0" astParent="000001349B16C760" astOperand1="000001349B16C940" astOperand2="000001349B16C700"/>
+    <token id="000001349B16C700" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="Object" scope="0000013496CA94D0" type="name" astParent="000001349B16C8E0"/>
+    <token id="000001349B16C760" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16C640" astOperand1="000001349B16C8E0" astOperand2="000001349B16DCC0"/>
+    <token id="000001349B16DCC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str="e" scope="0000013496CA94D0" type="name" astParent="000001349B16C760"/>
+    <token id="000001349B16E560" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str=")" scope="0000013496CA94D0" link="000001349B16BBC0"/>
+    <token id="000001349B16DAE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="44" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16DFC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="45" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16E1A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="45" str="RegisterDependencyProperties" scope="0000013496CA94D0" type="name" function="000001349138BF80" astParent="000001349B16E5C0"/>
+    <token id="000001349B16E5C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="45" str="(" scope="0000013496CA94D0" link="000001349B16E740" astOperand1="000001349B16E1A0" valueType-type="void"/>
+    <token id="000001349B16E740" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="45" str=")" scope="0000013496CA94D0" link="000001349B16E5C0"/>
+    <token id="000001349B16DF00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="45" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16DD80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="47" str="class" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16E380" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="47" str="SafeFrameWindowCreation" scope="0000013496CA94D0" type="name" type-scope="0000013496CA8700"/>
+    <token id="000001349B16E2C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="48" str="{" scope="0000013496CA8700" link="000001349B16F520"/>
+    <token id="000001349B16DB40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="49" str="public:" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B16E3E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="SafeFrameWindowCreation" scope="0000013496CA8700" type="name" function="000001349138CF40" astParent="000001349B16E140"/>
+    <token id="000001349B16E140" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="(" scope="0000013496CA8700" link="000001349B16E080" astParent="000001349B16E200" astOperand1="000001349B16E3E0" astOperand2="000001349B16D660"/>
+    <token id="000001349B16D6C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="WindowFrameService" scope="0000013496CA8700" type="name" astParent="000001349B16D780"/>
+    <token id="000001349B16D780" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="^" scope="0000013496CA8700" type="op" astParent="000001349B16D660" astOperand1="000001349B16D6C0" astOperand2="000001349B16D7E0"/>
+    <token id="000001349B16D7E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="frameService" scope="0000013496CA8700" type="name" astParent="000001349B16D780"/>
+    <token id="000001349B16D660" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="," scope="0000013496CA8700" astParent="000001349B16E140" astOperand1="000001349B16D780" astOperand2="000001349B16D840"/>
+    <token id="000001349B16E020" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="App" scope="0000013496CA8700" type="name" astParent="000001349B16D840"/>
+    <token id="000001349B16D840" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="^" scope="0000013496CA8700" type="op" astParent="000001349B16D660" astOperand1="000001349B16E020" astOperand2="000001349B16DC00"/>
+    <token id="000001349B16DC00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str="parent" scope="0000013496CA8700" type="name" astParent="000001349B16D840"/>
+    <token id="000001349B16E080" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="50" str=")" scope="0000013496CA8700" link="000001349B16E140"/>
+    <token id="000001349B16E200" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="51" str=":" scope="0000013496CA8700" astParent="000001349B16E800" astOperand1="000001349B16E140" astOperand2="000001349B16DC60"/>
+    <token id="000001349B16E260" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="51" str="m_frameService" scope="0000013496CA8700" type="name" astParent="000001349B16DC60"/>
+    <token id="000001349B16DC60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="51" str="(" scope="0000013496CA8700" link="000001349B16E860" astParent="000001349B16E200" astOperand1="000001349B16E260" astOperand2="000001349B16E440"/>
+    <token id="000001349B16E440" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="51" str="frameService" scope="0000013496CA8700" type="name" astParent="000001349B16DC60"/>
+    <token id="000001349B16E860" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="51" str=")" scope="0000013496CA8700" link="000001349B16DC60"/>
+    <token id="000001349B16E800" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="52" str="," scope="0000013496CA8700" astParent="000001349B16E4A0" astOperand1="000001349B16E200" astOperand2="000001349B16D720"/>
+    <token id="000001349B16D420" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="52" str="m_frameOpenedInWindow" scope="0000013496CA8700" type="name" varId="20" variable="0000013496E9EC90" astParent="000001349B16D720" valueType-type="bool"/>
+    <token id="000001349B16D720" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="52" str="(" scope="0000013496CA8700" link="000001349B16D8A0" astParent="000001349B16E800" astOperand1="000001349B16D420" astOperand2="000001349B16E0E0"/>
+    <token id="000001349B16E0E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="52" str="false" scope="0000013496CA8700" type="name" values="00000134A920B660" astParent="000001349B16D720"/>
+    <token id="000001349B16D8A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="52" str=")" scope="0000013496CA8700" link="000001349B16D720"/>
+    <token id="000001349B16E4A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="53" str="," scope="0000013496CA8700" astOperand1="000001349B16E800" astOperand2="000001349B16D900"/>
+    <token id="000001349B16E500" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="53" str="m_parent" scope="0000013496CA8700" type="name" astParent="000001349B16D900"/>
+    <token id="000001349B16D900" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="53" str="(" scope="0000013496CA8700" link="000001349B16D2A0" astParent="000001349B16E4A0" astOperand1="000001349B16E500" astOperand2="000001349B16E620"/>
+    <token id="000001349B16E620" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="53" str="parent" scope="0000013496CA8700" type="name" astParent="000001349B16D900"/>
+    <token id="000001349B16D2A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="53" str=")" scope="0000013496CA8700" link="000001349B16D900"/>
+    <token id="000001349B16D960" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="54" str="{" scope="0000013496CA9090" link="000001349B16D9C0"/>
+    <token id="000001349B16D9C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="55" str="}" scope="0000013496CA9090" link="000001349B16D960"/>
+    <token id="000001349B16DD20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str="void" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B16DF60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str="SetOperationSuccess" scope="0000013496CA8700" type="name" function="000001349138C490" astParent="000001349B16DDE0"/>
+    <token id="000001349B16DDE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str="(" scope="0000013496CA8700" link="000001349B16DE40" astOperand1="000001349B16DF60" astOperand2="000001349B16D4E0" valueType-type="void"/>
+    <token id="000001349B16DA20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str="bool" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B16D4E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str="success" scope="0000013496CA8700" type="name" varId="19" variable="0000013496EA03C0" astParent="000001349B16DDE0" valueType-type="bool"/>
+    <token id="000001349B16DE40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="57" str=")" scope="0000013496CA8700" link="000001349B16DDE0"/>
+    <token id="000001349B16E680" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="58" str="{" scope="0000013496CA91A0" link="000001349B16D120"/>
+    <token id="000001349B16E8C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="59" str="m_frameOpenedInWindow" scope="0000013496CA91A0" type="name" varId="20" variable="0000013496E9EC90" astParent="000001349B16E6E0" valueType-type="bool"/>
+    <token id="000001349B16E6E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="59" str="=" scope="0000013496CA91A0" type="op" isAssignmentOp="True" astOperand1="000001349B16E8C0" astOperand2="000001349B16E7A0" valueType-type="bool"/>
+    <token id="000001349B16E7A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="59" str="success" scope="0000013496CA91A0" type="name" varId="19" variable="0000013496EA03C0" astParent="000001349B16E6E0" valueType-type="bool"/>
+    <token id="000001349B16DA80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="59" str=";" scope="0000013496CA91A0"/>
+    <token id="000001349B16D120" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="60" str="}" scope="0000013496CA91A0" link="000001349B16E680"/>
+    <token id="000001349B16D180" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="62" str="~" scope="0000013496CA8700" type="op" astOperand1="000001349B16D1E0"/>
+    <token id="000001349B16DEA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="62" str="SafeFrameWindowCreation" scope="0000013496CA8700" type="name" function="000001349138CBE0" astParent="000001349B16D1E0"/>
+    <token id="000001349B16D1E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="62" str="(" scope="0000013496CA8700" link="000001349B16D240" astParent="000001349B16D180" astOperand1="000001349B16DEA0"/>
+    <token id="000001349B16D240" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="62" str=")" scope="0000013496CA8700" link="000001349B16D1E0"/>
+    <token id="000001349B16D300" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="63" str="{" scope="0000013496CA92B0" link="000001349B16EAA0"/>
+    <token id="000001349B16D360" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="64" str="if" scope="0000013496CA92B0" type="name" astParent="000001349B16D3C0"/>
+    <token id="000001349B16D3C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="64" str="(" scope="0000013496CA92B0" link="000001349B16D5A0" astOperand1="000001349B16D360" astOperand2="000001349B16D480"/>
+    <token id="000001349B16D480" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="64" str="!" scope="0000013496CA92B0" type="op" isLogicalOp="True" astParent="000001349B16D3C0" astOperand1="000001349B16D540" valueType-type="bool"/>
+    <token id="000001349B16D540" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="64" str="m_frameOpenedInWindow" scope="0000013496CA92B0" type="name" varId="20" variable="0000013496E9EC90" astParent="000001349B16D480" valueType-type="bool"/>
+    <token id="000001349B16D5A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="64" str=")" scope="0000013496CA92B0" link="000001349B16D3C0"/>
+    <token id="000001349B16D600" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="65" str="{" scope="0000013496CA8920" link="000001349B16EE60"/>
+    <token id="000001349B16EBC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="m_parent" scope="0000013496CA8920" type="name" astParent="000001349B16F940"/>
+    <token id="000001349B16F940" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="." scope="0000013496CA8920" astParent="000001349B16F100" astOperand1="000001349B16EBC0" astOperand2="000001349B170060" originalName="->"/>
+    <token id="000001349B170060" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="RemoveWindowFromMap" scope="0000013496CA8920" type="name" astParent="000001349B16F940"/>
+    <token id="000001349B16F100" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="(" scope="0000013496CA8920" link="000001349B16F9A0" astOperand1="000001349B16F940" astOperand2="000001349B16E920"/>
+    <token id="000001349B1700C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="m_frameService" scope="0000013496CA8920" type="name" astParent="000001349B16EEC0"/>
+    <token id="000001349B16EEC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="." scope="0000013496CA8920" astParent="000001349B16E920" astOperand1="000001349B1700C0" astOperand2="000001349B16FAC0" originalName="->"/>
+    <token id="000001349B16FAC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="GetViewId" scope="0000013496CA8920" type="name" astParent="000001349B16EEC0"/>
+    <token id="000001349B16E920" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str="(" scope="0000013496CA8920" link="000001349B16EA40" astParent="000001349B16F100" astOperand1="000001349B16EEC0"/>
+    <token id="000001349B16EA40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str=")" scope="0000013496CA8920" link="000001349B16E920"/>
+    <token id="000001349B16F9A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str=")" scope="0000013496CA8920" link="000001349B16F100"/>
+    <token id="000001349B16EC80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="68" str=";" scope="0000013496CA8920"/>
+    <token id="000001349B16EE60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="69" str="}" scope="0000013496CA8920" link="000001349B16D600"/>
+    <token id="000001349B16EAA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="70" str="}" scope="0000013496CA92B0" link="000001349B16D300"/>
+    <token id="000001349B16FFA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="72" str="private:" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B16F340" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="73" str="WindowFrameService" scope="0000013496CA8700" type="name" astParent="000001349B16E9E0"/>
+    <token id="000001349B16E9E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="73" str="^" scope="0000013496CA8700" type="op" astOperand1="000001349B16F340" astOperand2="000001349B16FA00"/>
+    <token id="000001349B16FA00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="73" str="m_frameService" scope="0000013496CA8700" type="name" astParent="000001349B16E9E0"/>
+    <token id="000001349B16F220" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="73" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B16FF40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="74" str="bool" scope="0000013496CA8700" type="name"/>
+    <token id="000001349B16FC40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="74" str="m_frameOpenedInWindow" scope="0000013496CA8700" type="name" varId="20" variable="0000013496E9EC90" valueType-type="bool"/>
+    <token id="000001349B16F400" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="74" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B16FA60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="75" str="App" scope="0000013496CA8700" type="name" astParent="000001349B16F880"/>
+    <token id="000001349B16F880" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="75" str="^" scope="0000013496CA8700" type="op" astOperand1="000001349B16FA60" astOperand2="000001349B16F640"/>
+    <token id="000001349B16F640" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="75" str="m_parent" scope="0000013496CA8700" type="name" astParent="000001349B16F880"/>
+    <token id="000001349B16F4C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="75" str=";" scope="0000013496CA8700"/>
+    <token id="000001349B16F520" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="76" str="}" scope="0000013496CA8700" link="000001349B16E2C0"/>
+    <token id="000001349B16FD60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="76" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16F2E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="78" str="private:" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16FE20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="79" str="concurrency" scope="0000013496CA94D0" type="name" astParent="000001349B16FDC0"/>
+    <token id="000001349B16FDC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="79" str="::" scope="0000013496CA94D0" astOperand1="000001349B16FE20" astOperand2="000001349B16F820"/>
+    <token id="000001349B16FB20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="79" str="reader_writer_lock" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16F820" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="79" str="m_windowsMapLock" scope="0000013496CA94D0" type="name" varId="21" astParent="000001349B16FDC0"/>
+    <token id="000001349B16EF80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="79" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16EF20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="std" scope="0000013496CA94D0" type="name" astParent="000001349B16F3A0"/>
+    <token id="000001349B16F3A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="::" scope="0000013496CA94D0" astOperand1="000001349B16EF20" astOperand2="000001349B16EFE0"/>
+    <token id="000001349B16EFE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="unordered_map" scope="0000013496CA94D0" type="name" astParent="000001349B16F3A0"/>
+    <token id="000001349B16F8E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="&lt;" scope="0000013496CA94D0" link="000001349B16FBE0"/>
+    <token id="000001349B16F040" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="int" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16FB80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="," scope="0000013496CA94D0"/>
+    <token id="000001349B16F700" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="WindowFrameService" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16FCA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="^" scope="0000013496CA94D0" type="op"/>
+    <token id="000001349B16FBE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="&gt;" scope="0000013496CA94D0" link="000001349B16F8E0"/>
+    <token id="000001349B16F0A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str="m_secondaryWindows" scope="0000013496CA94D0" type="name" varId="22"/>
+    <token id="000001349B16FD00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="80" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16E980" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="concurrency" scope="0000013496CA94D0" type="name" astParent="000001349B16F760"/>
+    <token id="000001349B16F760" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="::" scope="0000013496CA94D0" astOperand1="000001349B16E980" astOperand2="000001349B16F5E0"/>
+    <token id="000001349B16F5E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="task" scope="0000013496CA94D0" type="name" astParent="000001349B16F760"/>
+    <token id="000001349B16F160" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="&lt;" scope="0000013496CA94D0" link="000001349B16FE80"/>
+    <token id="000001349B16F1C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16FE80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="&gt;" scope="0000013496CA94D0" link="000001349B16F160"/>
+    <token id="000001349B16F280" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="SetupJumpList" scope="0000013496CA94D0" type="name" function="000001349138D2A0" astParent="000001349B16FEE0"/>
+    <token id="000001349B16FEE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str="(" scope="0000013496CA94D0" link="000001349B170000" astOperand1="000001349B16F280"/>
+    <token id="000001349B170000" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str=")" scope="0000013496CA94D0" link="000001349B16FEE0"/>
+    <token id="000001349B16EB00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="82" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B16EB60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="concurrency" scope="0000013496CA94D0" type="name" astParent="000001349B16F460"/>
+    <token id="000001349B16F460" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="::" scope="0000013496CA94D0" astOperand1="000001349B16EB60" astOperand2="000001349B16EC20"/>
+    <token id="000001349B16EC20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="task" scope="0000013496CA94D0" type="name" astParent="000001349B16F460"/>
+    <token id="000001349B16ECE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="&lt;" scope="0000013496CA94D0" link="000001349B16F580"/>
+    <token id="000001349B16ED40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B16F580" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="&gt;" scope="0000013496CA94D0" link="000001349B16ECE0"/>
+    <token id="000001349B16EDA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="HandleViewReleaseAndRemoveWindowFromMap" scope="0000013496CA94D0" type="name" function="000001349138C760" astParent="000001349B16F6A0"/>
+    <token id="000001349B16F6A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="(" scope="0000013496CA94D0" link="000001349B171500" astOperand1="000001349B16EDA0" astOperand2="000001349B1711A0"/>
+    <token id="000001349B170BA0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="WindowFrameService" scope="0000013496CA94D0" type="name" astParent="000001349B1711A0"/>
+    <token id="000001349B1711A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B16F6A0" astOperand1="000001349B170BA0" astOperand2="000001349B1713E0"/>
+    <token id="000001349B1713E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str="frameService" scope="0000013496CA94D0" type="name" astParent="000001349B1711A0"/>
+    <token id="000001349B171500" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str=")" scope="0000013496CA94D0" link="000001349B16F6A0"/>
+    <token id="000001349B170A20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="83" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B171320" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B1703C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="AddWindowToMap" scope="0000013496CA94D0" type="name" function="000001349138CFD0" astParent="000001349B171140"/>
+    <token id="000001349B171140" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="(" scope="0000013496CA94D0" link="000001349B1706C0" astOperand1="000001349B1703C0" astOperand2="000001349B170900" valueType-type="void"/>
+    <token id="000001349B170180" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="WindowFrameService" scope="0000013496CA94D0" type="name" astParent="000001349B170900"/>
+    <token id="000001349B170900" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="^" scope="0000013496CA94D0" type="op" astParent="000001349B171140" astOperand1="000001349B170180" astOperand2="000001349B170240"/>
+    <token id="000001349B170240" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str="frameService" scope="0000013496CA94D0" type="name" astParent="000001349B170900"/>
+    <token id="000001349B1706C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str=")" scope="0000013496CA94D0" link="000001349B171140"/>
+    <token id="000001349B1712C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="84" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B1702A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="WindowFrameService" scope="0000013496CA94D0" type="name" astParent="000001349B1709C0"/>
+    <token id="000001349B1709C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="^" scope="0000013496CA94D0" type="op" astOperand1="000001349B1702A0" astOperand2="000001349B1704E0"/>
+    <token id="000001349B170480" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="GetWindowFromMap" scope="0000013496CA94D0" type="name" astParent="000001349B1704E0"/>
+    <token id="000001349B1704E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="(" scope="0000013496CA94D0" link="000001349B170C00" astParent="000001349B1709C0" astOperand1="000001349B170480" astOperand2="000001349B170540"/>
+    <token id="000001349B171020" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="int" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B170540" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str="viewId" scope="0000013496CA94D0" type="name" varId="23" astParent="000001349B1704E0"/>
+    <token id="000001349B170C00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str=")" scope="0000013496CA94D0" link="000001349B1704E0"/>
+    <token id="000001349B170B40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="85" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B1705A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str="void" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B171200" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str="RemoveWindowFromMap" scope="0000013496CA94D0" type="name" function="000001349138B830" astParent="000001349B170600"/>
+    <token id="000001349B170600" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str="(" scope="0000013496CA94D0" link="000001349B170660" astOperand1="000001349B171200" astOperand2="000001349B171440" valueType-type="void"/>
+    <token id="000001349B171260" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str="int" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B171440" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str="viewId" scope="0000013496CA94D0" type="name" varId="24" variable="0000013496E9FFD0" astParent="000001349B170600" valueType-type="int" valueType-sign="signed"/>
+    <token id="000001349B170660" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str=")" scope="0000013496CA94D0" link="000001349B170600"/>
+    <token id="000001349B1714A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="86" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B170A80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="87" str="int" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B170AE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="87" str="m_mainViewId" scope="0000013496CA94D0" type="name" varId="25"/>
+    <token id="000001349B171380" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="87" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B170720" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="88" str="bool" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B170780" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="88" str="m_preLaunched" scope="0000013496CA94D0" type="name" varId="26"/>
+    <token id="000001349B1707E0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="88" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B170840" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="Windows" scope="0000013496CA94D0" type="name" astParent="000001349B1708A0"/>
+    <token id="000001349B1708A0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="::" scope="0000013496CA94D0" astParent="000001349B170960" astOperand1="000001349B170840" astOperand2="000001349B170C60"/>
+    <token id="000001349B170C60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="UI" scope="0000013496CA94D0" type="name" astParent="000001349B1708A0"/>
+    <token id="000001349B170960" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="::" scope="0000013496CA94D0" astParent="000001349B170F00" astOperand1="000001349B1708A0" astOperand2="000001349B170CC0"/>
+    <token id="000001349B170CC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="Xaml" scope="0000013496CA94D0" type="name" astParent="000001349B170960"/>
+    <token id="000001349B170F00" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="::" scope="0000013496CA94D0" astParent="000001349B170D20" astOperand1="000001349B170960" astOperand2="000001349B170E40"/>
+    <token id="000001349B170E40" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="Controls" scope="0000013496CA94D0" type="name" astParent="000001349B170F00"/>
+    <token id="000001349B170D20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="::" scope="0000013496CA94D0" astParent="000001349B173000" astOperand1="000001349B170F00" astOperand2="000001349B173060"/>
+    <token id="000001349B173060" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="Primitives" scope="0000013496CA94D0" type="name" astParent="000001349B170D20"/>
+    <token id="000001349B173000" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="::" scope="0000013496CA94D0" astParent="000001349B172EE0" astOperand1="000001349B170D20" astOperand2="000001349B171E60"/>
+    <token id="000001349B171E60" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="Popup" scope="0000013496CA94D0" type="name" astParent="000001349B173000"/>
+    <token id="000001349B172EE0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="^" scope="0000013496CA94D0" type="op" astOperand1="000001349B173000" astOperand2="000001349B172460"/>
+    <token id="000001349B172460" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str="m_aboutPopup" scope="0000013496CA94D0" type="name" astParent="000001349B172EE0"/>
+    <token id="000001349B172B80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="90" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B171920" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="92" str="static" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B172160" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="92" str="bool" scope="0000013496CA94D0" type="name"/>
+    <token id="000001349B1730C0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="92" str="m_isAnimationEnabled" scope="0000013496CA94D0" type="name" varId="27"/>
+    <token id="000001349B171C20" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="92" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B171EC0" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="93" str="}" scope="0000013496CA94D0" link="000001349B168C20"/>
+    <token id="000001349B171980" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="93" str=";" scope="0000013496CA94D0"/>
+    <token id="000001349B171C80" file="C:/sample repositories/calculator-master/src/Calculator/App.xaml.h" linenr="94" str="}" scope="0000013496CA94D0" link="000001349B168920"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0000013496CA93C0" type="Global"/>
+    <scope id="0000013496CA94D0" type="Namespace" className="CalculatorApp" bodyStart="000001349B168920" bodyEnd="000001349B171C80" nestedIn="0000013496CA93C0">
+      <functionList>
+        <function id="000001349138B7A0" tokenDef="000001349B15E840" name="SetNewFrame" type="Function">
+          <arg nr="1" variable="0000013496E9ED70"/>
+        </function>
+        <function id="000001349138C640" tokenDef="000001349B15FDA0" name="GetViewId" type="Function"/>
+        <function id="000001349138C0A0" tokenDef="000001349B162500" name="RegisterOnWindowClosingHandler" type="Function">
+          <arg nr="1" variable="0000013496E9EDE0"/>
+        </function>
+        <function id="000001349138B440" tokenDef="000001349B162140" name="HandleViewRelease" type="Function"/>
+        <function id="000001349138CD00" tokenDef="000001349B161480" name="RegisterRuntimeWindowService" type="Function">
+          <arg nr="1" variable="0000013496E9EE50"/>
+          <arg nr="2" variable="0000013496E9EEC0"/>
+        </function>
+        <function id="000001349138CD90" tokenDef="000001349B1613C0" name="RemoveRuntimeWindowService" type="Function">
+          <arg nr="1" variable="0000013496E9D870"/>
+        </function>
+        <function id="000001349138D060" tokenDef="000001349B1640C0" name="InvokeWindowClosingHandlers" type="Function"/>
+        <function id="000001349138C130" tokenDef="000001349B162B60" name="WindowFrameService" type="Function">
+          <arg nr="1" variable="0000013496E9D330"/>
+          <arg nr="2" variable="0000013496E9D410"/>
+        </function>
+        <function id="000001349138CAC0" tokenDef="000001349B1652C0" name="InitializeFrameService" type="Function">
+          <arg nr="1" variable="0000013496E9D480"/>
+        </function>
+        <function id="000001349138D180" tokenDef="000001349B1658C0" name="OnConsolidated" type="Function">
+          <arg nr="1" variable="0000013496E9D4F0"/>
+          <arg nr="2" variable="0000013496E9D560"/>
+        </function>
+        <function id="000001349138C6D0" tokenDef="000001349B165320" name="OnClosed" type="Function">
+          <arg nr="1" variable="0000013496E9D950"/>
+          <arg nr="2" variable="0000013496E9D5D0"/>
+        </function>
+        <function id="000001349138CA30" tokenDef="000001349B166EE0" name="LogOnViewClosed" type="Function">
+          <arg nr="1" variable="0000013496E9D6B0"/>
+        </function>
+        <function id="000001349138B170" tokenDef="000001349B16A0C0" name="App" type="Function"/>
+        <function id="000001349138B680" tokenDef="000001349B168E00" name="OnLaunched" type="Function" isVirtual="true">
+          <arg nr="1" variable="0000013496E9D720"/>
+        </function>
+        <function id="000001349138B950" tokenDef="000001349B168DA0" name="OnActivated" type="Function" isVirtual="true">
+          <arg nr="1" variable="0000013496E9D790"/>
+        </function>
+        <function id="000001349138BD40" tokenDef="000001349B16B740" name="GetAppWindowHeight" type="Function"/>
+        <function id="000001349138B9E0" tokenDef="000001349B16B7A0" name="RemoveWindow" type="Function">
+          <arg nr="1" variable="0000013496E9D8E0"/>
+        </function>
+        <function id="000001349138C9A0" tokenDef="000001349B16B860" name="RemoveSecondaryWindow" type="Function">
+          <arg nr="1" variable="0000013496EA0430"/>
+        </function>
+        <function id="000001349138BA70" tokenDef="000001349B16CAC0" name="SetMinWindowSizeAndActivate" type="Function">
+          <arg nr="1" variable="0000013496EA0820"/>
+          <arg nr="2" variable="0000013496EA0660"/>
+        </function>
+        <function id="000001349138BB00" tokenDef="000001349B16C6A0" name="OnAppLaunch" type="Function">
+          <arg nr="1" variable="0000013496EA0350"/>
+          <arg nr="2" variable="0000013496E9FE10"/>
+        </function>
+        <function id="000001349138B3B0" tokenDef="000001349B16BB60" name="DismissedEventHandler" type="Function">
+          <arg nr="1" variable="0000013496EA07B0"/>
+          <arg nr="2" variable="0000013496E9FE80"/>
+        </function>
+        <function id="000001349138BF80" tokenDef="000001349B16E1A0" name="RegisterDependencyProperties" type="Function"/>
+        <function id="000001349138D2A0" tokenDef="000001349B16F280" name="SetupJumpList" type="Function"/>
+        <function id="000001349138C760" tokenDef="000001349B16EDA0" name="HandleViewReleaseAndRemoveWindowFromMap" type="Function">
+          <arg nr="1" variable="0000013496E9FF60"/>
+        </function>
+        <function id="000001349138CFD0" tokenDef="000001349B1703C0" name="AddWindowToMap" type="Function">
+          <arg nr="1" variable="0000013496EA00B0"/>
+        </function>
+        <function id="000001349138B830" tokenDef="000001349B171200" name="RemoveWindowFromMap" type="Function">
+          <arg nr="1" variable="0000013496E9FFD0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="0000013496CA8E70" type="Namespace" className="Common" bodyStart="000001349B15EBA0" bodyEnd="000001349B1725E0" nestedIn="0000013496CA94D0"/>
+    <scope id="0000013496CA8B40" type="Namespace" className="ApplicationResourceKeys" bodyStart="000001349B169340" bodyEnd="000001349B169B80" nestedIn="0000013496CA94D0">
+      <varlist>
+        <var id="0000013496E9DE20"/>
+        <var id="0000013496E9EC20"/>
+      </varlist>
+    </scope>
+    <scope id="0000013496CA8700" type="Class" className="SafeFrameWindowCreation" bodyStart="000001349B16E2C0" bodyEnd="000001349B16F520" nestedIn="0000013496CA94D0">
+      <functionList>
+        <function id="000001349138CF40" tokenDef="000001349B16E3E0" name="SafeFrameWindowCreation" type="Constructor">
+          <arg nr="1" variable="0000013496E9F550"/>
+          <arg nr="2" variable="0000013496E9FA20"/>
+        </function>
+        <function id="000001349138C490" tokenDef="000001349B16DF60" name="SetOperationSuccess" type="Function">
+          <arg nr="1" variable="0000013496EA03C0"/>
+        </function>
+        <function id="000001349138CBE0" tokenDef="000001349B16DEA0" name="SafeFrameWindowCreation" type="Destructor"/>
+      </functionList>
+      <varlist>
+        <var id="0000013496E9EC90"/>
+      </varlist>
+    </scope>
+    <scope id="0000013496CA9090" type="Function" className="SafeFrameWindowCreation" bodyStart="000001349B16D960" bodyEnd="000001349B16D9C0" nestedIn="0000013496CA8700" function="000001349138CF40"/>
+    <scope id="0000013496CA91A0" type="Function" className="SetOperationSuccess" bodyStart="000001349B16E680" bodyEnd="000001349B16D120" nestedIn="0000013496CA8700" function="000001349138C490"/>
+    <scope id="0000013496CA92B0" type="Function" className="SafeFrameWindowCreation" bodyStart="000001349B16D300" bodyEnd="000001349B16EAA0" nestedIn="0000013496CA8700" function="000001349138CBE0"/>
+    <scope id="0000013496CA8920" type="If" bodyStart="000001349B16D600" bodyEnd="000001349B16EE60" nestedIn="0000013496CA92B0"/>
+  </scopes>
+  <variables>
+    <var id="0000013496E9D330" nameToken="000001349B164600" typeStartToken="000001349B162C80" typeEndToken="000001349B1641E0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D410" nameToken="000001349B165860" typeStartToken="000001349B164240" typeEndToken="000001349B1650E0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D480" nameToken="000001349B164BA0" typeStartToken="000001349B1654A0" typeEndToken="000001349B1654A0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D4F0" nameToken="000001349B165140" typeStartToken="000001349B164B40" typeEndToken="000001349B164C60" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D560" nameToken="000001349B165800" typeStartToken="000001349B164E40" typeEndToken="000001349B1657A0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D5D0" nameToken="000001349B1649C0" typeStartToken="000001349B1644E0" typeEndToken="000001349B164960" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D6B0" nameToken="000001349B167060" typeStartToken="000001349B166340" typeEndToken="000001349B1666A0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D720" nameToken="000001349B169FA0" typeStartToken="000001349B169A00" typeEndToken="000001349B1689E0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D790" nameToken="000001349B16B560" typeStartToken="000001349B168F20" typeEndToken="000001349B16AF00" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D870" nameToken="000001349B161960" typeStartToken="000001349B1620E0" typeEndToken="000001349B161600" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D8E0" nameToken="000001349B16AE40" typeStartToken="000001349B16B800" typeEndToken="000001349B16A720" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9D950" nameToken="000001349B164360" typeStartToken="000001349B165260" typeEndToken="000001349B1642A0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9DE20" nameToken="000001349B1695E0" typeStartToken="000001349B169760" typeEndToken="000001349B1693A0" access="Namespace" scope="0000013496CA8B40" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="true" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9EC20" nameToken="000001349B169040" typeStartToken="000001349B1696A0" typeEndToken="000001349B169100" access="Namespace" scope="0000013496CA8B40" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="true" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9EC90" nameToken="000001349B16FC40" typeStartToken="000001349B16FF40" typeEndToken="000001349B16FF40" access="Private" scope="0000013496CA8700" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9ED70" nameToken="000001349B15F920" typeStartToken="000001349B15E960" typeEndToken="000001349B15FF80" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9EDE0" nameToken="000001349B162620" typeStartToken="000001349B161EA0" typeEndToken="000001349B161F60" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9EE50" nameToken="000001349B162080" typeStartToken="000001349B162800" typeEndToken="000001349B161AE0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9EEC0" nameToken="000001349B1612A0" typeStartToken="000001349B161120" typeEndToken="000001349B1611E0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9F550" nameToken="000001349B16D7E0" typeStartToken="000001349B16D6C0" typeEndToken="000001349B16D780" access="Argument" scope="0000013496CA9090" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9FA20" nameToken="000001349B16DC00" typeStartToken="000001349B16E020" typeEndToken="000001349B16D840" access="Argument" scope="0000013496CA9090" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9FE10" nameToken="000001349B16D000" typeStartToken="000001349B16CFA0" typeEndToken="000001349B16BF20" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9FE80" nameToken="000001349B16DCC0" typeStartToken="000001349B16C940" typeEndToken="000001349B16C760" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9FF60" nameToken="000001349B1713E0" typeStartToken="000001349B170BA0" typeEndToken="000001349B1711A0" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496E9FFD0" nameToken="000001349B171440" typeStartToken="000001349B171260" typeEndToken="000001349B171260" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA00B0" nameToken="000001349B170240" typeStartToken="000001349B170180" typeEndToken="000001349B170900" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA0350" nameToken="000001349B16BD40" typeStartToken="000001349B16CD00" typeEndToken="000001349B16CF40" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA03C0" nameToken="000001349B16D4E0" typeStartToken="000001349B16DA20" typeEndToken="000001349B16DA20" access="Argument" scope="0000013496CA91A0" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA0430" nameToken="000001349B16A120" typeStartToken="000001349B16B8C0" typeEndToken="000001349B16AD20" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA0660" nameToken="000001349B16CE20" typeStartToken="000001349B16C5E0" typeEndToken="000001349B16BE00" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA07B0" nameToken="000001349B16C580" typeStartToken="000001349B16C460" typeEndToken="000001349B16C520" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="0000013496EA0820" nameToken="000001349B16D0C0" typeStartToken="000001349B16C880" typeEndToken="000001349B16C160" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A920B660">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

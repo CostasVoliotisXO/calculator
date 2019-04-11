@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;Header Files/CalcEngine.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="RationalMath"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="10" str="// Routines to perform standard operations &amp;|^~&lt;&lt;&gt;&gt;+-/*% and pwr."/>
+    <tok fileIndex="0" linenr="11" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Rational"/>
+    <tok fileIndex="0" linenr="11" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="DoOperation"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str="int"/>
+    <tok fileIndex="0" linenr="11" str="operation"/>
+    <tok fileIndex="0" linenr="11" str=","/>
+    <tok fileIndex="0" linenr="11" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Rational"/>
+    <tok fileIndex="0" linenr="11" str="const"/>
+    <tok fileIndex="0" linenr="11" str="&amp;"/>
+    <tok fileIndex="0" linenr="11" str="lhs"/>
+    <tok fileIndex="0" linenr="11" str=","/>
+    <tok fileIndex="0" linenr="11" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Rational"/>
+    <tok fileIndex="0" linenr="11" str="const"/>
+    <tok fileIndex="0" linenr="11" str="&amp;"/>
+    <tok fileIndex="0" linenr="11" str="rhs"/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="12" str="{"/>
+    <tok fileIndex="0" linenr="13" str="// Remove any variance in how 0 could be represented in rat e.g. -0, 0/n, etc."/>
+    <tok fileIndex="0" linenr="14" str="auto"/>
+    <tok fileIndex="0" linenr="14" str="result"/>
+    <tok fileIndex="0" linenr="14" str="="/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="lhs"/>
+    <tok fileIndex="0" linenr="14" str="!="/>
+    <tok fileIndex="0" linenr="14" str="0"/>
+    <tok fileIndex="0" linenr="14" str="?"/>
+    <tok fileIndex="0" linenr="14" str="lhs"/>
+    <tok fileIndex="0" linenr="14" str=":"/>
+    <tok fileIndex="0" linenr="14" str="0"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="14" str=";"/>
+    <tok fileIndex="0" linenr="16" str="try"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="switch"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="operation"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="19" str="{"/>
+    <tok fileIndex="0" linenr="20" str="case"/>
+    <tok fileIndex="0" linenr="20" str="IDC_AND"/>
+    <tok fileIndex="0" linenr="20" str=":"/>
+    <tok fileIndex="0" linenr="21" str="result"/>
+    <tok fileIndex="0" linenr="21" str="&amp;="/>
+    <tok fileIndex="0" linenr="21" str="rhs"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="break"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="24" str="case"/>
+    <tok fileIndex="0" linenr="24" str="IDC_OR"/>
+    <tok fileIndex="0" linenr="24" str=":"/>
+    <tok fileIndex="0" linenr="25" str="result"/>
+    <tok fileIndex="0" linenr="25" str="|="/>
+    <tok fileIndex="0" linenr="25" str="rhs"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="break"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="28" str="case"/>
+    <tok fileIndex="0" linenr="28" str="IDC_XOR"/>
+    <tok fileIndex="0" linenr="28" str=":"/>
+    <tok fileIndex="0" linenr="29" str="result"/>
+    <tok fileIndex="0" linenr="29" str="^="/>
+    <tok fileIndex="0" linenr="29" str="rhs"/>
+    <tok fileIndex="0" linenr="29" str=";"/>
+    <tok fileIndex="0" linenr="30" str="break"/>
+    <tok fileIndex="0" linenr="30" str=";"/>
+    <tok fileIndex="0" linenr="32" str="case"/>
+    <tok fileIndex="0" linenr="32" str="IDC_RSHF"/>
+    <tok fileIndex="0" linenr="32" str=":"/>
+    <tok fileIndex="0" linenr="33" str="{"/>
+    <tok fileIndex="0" linenr="34" str="if"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="34" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="34" str="result"/>
+    <tok fileIndex="0" linenr="34" str="&gt;="/>
+    <tok fileIndex="0" linenr="34" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str="// Lsh/Rsh &gt;= than current word size is always 0"/>
+    <tok fileIndex="0" linenr="35" str="{"/>
+    <tok fileIndex="0" linenr="36" str="throw"/>
+    <tok fileIndex="0" linenr="36" str="CALC_E_NORESULT"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="}"/>
+    <tok fileIndex="0" linenr="39" str="uint64_t"/>
+    <tok fileIndex="0" linenr="39" str="w64Bits"/>
+    <tok fileIndex="0" linenr="39" str="="/>
+    <tok fileIndex="0" linenr="39" str="rhs"/>
+    <tok fileIndex="0" linenr="39" str="."/>
+    <tok fileIndex="0" linenr="39" str="ToUInt64_t"/>
+    <tok fileIndex="0" linenr="39" str="("/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="39" str=";"/>
+    <tok fileIndex="0" linenr="40" str="bool"/>
+    <tok fileIndex="0" linenr="40" str="fMsb"/>
+    <tok fileIndex="0" linenr="40" str="="/>
+    <tok fileIndex="0" linenr="40" str="("/>
+    <tok fileIndex="0" linenr="40" str="w64Bits"/>
+    <tok fileIndex="0" linenr="40" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="40" str="("/>
+    <tok fileIndex="0" linenr="40" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="40" str="-"/>
+    <tok fileIndex="0" linenr="40" str="1"/>
+    <tok fileIndex="0" linenr="40" str=")"/>
+    <tok fileIndex="0" linenr="40" str=")"/>
+    <tok fileIndex="0" linenr="40" str="&amp;"/>
+    <tok fileIndex="0" linenr="40" str="1"/>
+    <tok fileIndex="0" linenr="40" str=";"/>
+    <tok fileIndex="0" linenr="42" str="Rational"/>
+    <tok fileIndex="0" linenr="42" str="holdVal"/>
+    <tok fileIndex="0" linenr="42" str="="/>
+    <tok fileIndex="0" linenr="42" str="result"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="result"/>
+    <tok fileIndex="0" linenr="43" str="="/>
+    <tok fileIndex="0" linenr="43" str="rhs"/>
+    <tok fileIndex="0" linenr="43" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="43" str="holdVal"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="45" str="if"/>
+    <tok fileIndex="0" linenr="45" str="("/>
+    <tok fileIndex="0" linenr="45" str="fMsb"/>
+    <tok fileIndex="0" linenr="45" str=")"/>
+    <tok fileIndex="0" linenr="46" str="{"/>
+    <tok fileIndex="0" linenr="47" str="result"/>
+    <tok fileIndex="0" linenr="47" str="="/>
+    <tok fileIndex="0" linenr="47" str="Integer"/>
+    <tok fileIndex="0" linenr="47" str="("/>
+    <tok fileIndex="0" linenr="47" str="result"/>
+    <tok fileIndex="0" linenr="47" str=")"/>
+    <tok fileIndex="0" linenr="47" str=";"/>
+    <tok fileIndex="0" linenr="49" str="auto"/>
+    <tok fileIndex="0" linenr="49" str="tempRat"/>
+    <tok fileIndex="0" linenr="49" str="="/>
+    <tok fileIndex="0" linenr="49" str="m_chopNumbers"/>
+    <tok fileIndex="0" linenr="49" str="["/>
+    <tok fileIndex="0" linenr="49" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="49" str="]"/>
+    <tok fileIndex="0" linenr="49" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="49" str="holdVal"/>
+    <tok fileIndex="0" linenr="49" str=";"/>
+    <tok fileIndex="0" linenr="50" str="tempRat"/>
+    <tok fileIndex="0" linenr="50" str="="/>
+    <tok fileIndex="0" linenr="50" str="Integer"/>
+    <tok fileIndex="0" linenr="50" str="("/>
+    <tok fileIndex="0" linenr="50" str="tempRat"/>
+    <tok fileIndex="0" linenr="50" str=")"/>
+    <tok fileIndex="0" linenr="50" str=";"/>
+    <tok fileIndex="0" linenr="52" str="result"/>
+    <tok fileIndex="0" linenr="52" str="|="/>
+    <tok fileIndex="0" linenr="52" str="tempRat"/>
+    <tok fileIndex="0" linenr="52" str="^"/>
+    <tok fileIndex="0" linenr="52" str="m_chopNumbers"/>
+    <tok fileIndex="0" linenr="52" str="["/>
+    <tok fileIndex="0" linenr="52" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="52" str="]"/>
+    <tok fileIndex="0" linenr="52" str=";"/>
+    <tok fileIndex="0" linenr="53" str="}"/>
+    <tok fileIndex="0" linenr="54" str="break"/>
+    <tok fileIndex="0" linenr="54" str=";"/>
+    <tok fileIndex="0" linenr="55" str="}"/>
+    <tok fileIndex="0" linenr="57" str="case"/>
+    <tok fileIndex="0" linenr="57" str="IDC_LSHF"/>
+    <tok fileIndex="0" linenr="57" str=":"/>
+    <tok fileIndex="0" linenr="58" str="if"/>
+    <tok fileIndex="0" linenr="58" str="("/>
+    <tok fileIndex="0" linenr="58" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="58" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="58" str="result"/>
+    <tok fileIndex="0" linenr="58" str="&gt;="/>
+    <tok fileIndex="0" linenr="58" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="58" str=")"/>
+    <tok fileIndex="0" linenr="58" str="// Lsh/Rsh &gt;= than current word size is always 0"/>
+    <tok fileIndex="0" linenr="59" str="{"/>
+    <tok fileIndex="0" linenr="60" str="throw"/>
+    <tok fileIndex="0" linenr="60" str="CALC_E_NORESULT"/>
+    <tok fileIndex="0" linenr="60" str=";"/>
+    <tok fileIndex="0" linenr="61" str="}"/>
+    <tok fileIndex="0" linenr="63" str="result"/>
+    <tok fileIndex="0" linenr="63" str="="/>
+    <tok fileIndex="0" linenr="63" str="rhs"/>
+    <tok fileIndex="0" linenr="63" str="&lt;&lt;"/>
+    <tok fileIndex="0" linenr="63" str="result"/>
+    <tok fileIndex="0" linenr="63" str=";"/>
+    <tok fileIndex="0" linenr="64" str="break"/>
+    <tok fileIndex="0" linenr="64" str=";"/>
+    <tok fileIndex="0" linenr="66" str="case"/>
+    <tok fileIndex="0" linenr="66" str="IDC_ADD"/>
+    <tok fileIndex="0" linenr="66" str=":"/>
+    <tok fileIndex="0" linenr="67" str="result"/>
+    <tok fileIndex="0" linenr="67" str="+="/>
+    <tok fileIndex="0" linenr="67" str="rhs"/>
+    <tok fileIndex="0" linenr="67" str=";"/>
+    <tok fileIndex="0" linenr="68" str="break"/>
+    <tok fileIndex="0" linenr="68" str=";"/>
+    <tok fileIndex="0" linenr="70" str="case"/>
+    <tok fileIndex="0" linenr="70" str="IDC_SUB"/>
+    <tok fileIndex="0" linenr="70" str=":"/>
+    <tok fileIndex="0" linenr="71" str="result"/>
+    <tok fileIndex="0" linenr="71" str="="/>
+    <tok fileIndex="0" linenr="71" str="rhs"/>
+    <tok fileIndex="0" linenr="71" str="-"/>
+    <tok fileIndex="0" linenr="71" str="result"/>
+    <tok fileIndex="0" linenr="71" str=";"/>
+    <tok fileIndex="0" linenr="72" str="break"/>
+    <tok fileIndex="0" linenr="72" str=";"/>
+    <tok fileIndex="0" linenr="74" str="case"/>
+    <tok fileIndex="0" linenr="74" str="IDC_MUL"/>
+    <tok fileIndex="0" linenr="74" str=":"/>
+    <tok fileIndex="0" linenr="75" str="result"/>
+    <tok fileIndex="0" linenr="75" str="*="/>
+    <tok fileIndex="0" linenr="75" str="rhs"/>
+    <tok fileIndex="0" linenr="75" str=";"/>
+    <tok fileIndex="0" linenr="76" str="break"/>
+    <tok fileIndex="0" linenr="76" str=";"/>
+    <tok fileIndex="0" linenr="78" str="case"/>
+    <tok fileIndex="0" linenr="78" str="IDC_DIV"/>
+    <tok fileIndex="0" linenr="78" str=":"/>
+    <tok fileIndex="0" linenr="79" str="case"/>
+    <tok fileIndex="0" linenr="79" str="IDC_MOD"/>
+    <tok fileIndex="0" linenr="79" str=":"/>
+    <tok fileIndex="0" linenr="80" str="{"/>
+    <tok fileIndex="0" linenr="81" str="int"/>
+    <tok fileIndex="0" linenr="81" str="iNumeratorSign"/>
+    <tok fileIndex="0" linenr="81" str="="/>
+    <tok fileIndex="0" linenr="81" str="1"/>
+    <tok fileIndex="0" linenr="81" str=","/>
+    <tok fileIndex="0" linenr="81" str="iDenominatorSign"/>
+    <tok fileIndex="0" linenr="81" str="="/>
+    <tok fileIndex="0" linenr="81" str="1"/>
+    <tok fileIndex="0" linenr="81" str=","/>
+    <tok fileIndex="0" linenr="81" str="iFinalSign"/>
+    <tok fileIndex="0" linenr="81" str="="/>
+    <tok fileIndex="0" linenr="81" str="1"/>
+    <tok fileIndex="0" linenr="81" str=";"/>
+    <tok fileIndex="0" linenr="82" str="auto"/>
+    <tok fileIndex="0" linenr="82" str="temp"/>
+    <tok fileIndex="0" linenr="82" str="="/>
+    <tok fileIndex="0" linenr="82" str="result"/>
+    <tok fileIndex="0" linenr="82" str=";"/>
+    <tok fileIndex="0" linenr="83" str="result"/>
+    <tok fileIndex="0" linenr="83" str="="/>
+    <tok fileIndex="0" linenr="83" str="rhs"/>
+    <tok fileIndex="0" linenr="83" str=";"/>
+    <tok fileIndex="0" linenr="85" str="if"/>
+    <tok fileIndex="0" linenr="85" str="("/>
+    <tok fileIndex="0" linenr="85" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="85" str=")"/>
+    <tok fileIndex="0" linenr="86" str="{"/>
+    <tok fileIndex="0" linenr="87" str="uint64_t"/>
+    <tok fileIndex="0" linenr="87" str="w64Bits"/>
+    <tok fileIndex="0" linenr="87" str="="/>
+    <tok fileIndex="0" linenr="87" str="rhs"/>
+    <tok fileIndex="0" linenr="87" str="."/>
+    <tok fileIndex="0" linenr="87" str="ToUInt64_t"/>
+    <tok fileIndex="0" linenr="87" str="("/>
+    <tok fileIndex="0" linenr="87" str=")"/>
+    <tok fileIndex="0" linenr="87" str=";"/>
+    <tok fileIndex="0" linenr="88" str="bool"/>
+    <tok fileIndex="0" linenr="88" str="fMsb"/>
+    <tok fileIndex="0" linenr="88" str="="/>
+    <tok fileIndex="0" linenr="88" str="("/>
+    <tok fileIndex="0" linenr="88" str="w64Bits"/>
+    <tok fileIndex="0" linenr="88" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="88" str="("/>
+    <tok fileIndex="0" linenr="88" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="88" str="-"/>
+    <tok fileIndex="0" linenr="88" str="1"/>
+    <tok fileIndex="0" linenr="88" str=")"/>
+    <tok fileIndex="0" linenr="88" str=")"/>
+    <tok fileIndex="0" linenr="88" str="&amp;"/>
+    <tok fileIndex="0" linenr="88" str="1"/>
+    <tok fileIndex="0" linenr="88" str=";"/>
+    <tok fileIndex="0" linenr="90" str="if"/>
+    <tok fileIndex="0" linenr="90" str="("/>
+    <tok fileIndex="0" linenr="90" str="fMsb"/>
+    <tok fileIndex="0" linenr="90" str=")"/>
+    <tok fileIndex="0" linenr="91" str="{"/>
+    <tok fileIndex="0" linenr="92" str="result"/>
+    <tok fileIndex="0" linenr="92" str="="/>
+    <tok fileIndex="0" linenr="92" str="("/>
+    <tok fileIndex="0" linenr="92" str="rhs"/>
+    <tok fileIndex="0" linenr="92" str="^"/>
+    <tok fileIndex="0" linenr="92" str="m_chopNumbers"/>
+    <tok fileIndex="0" linenr="92" str="["/>
+    <tok fileIndex="0" linenr="92" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="92" str="]"/>
+    <tok fileIndex="0" linenr="92" str=")"/>
+    <tok fileIndex="0" linenr="92" str="+"/>
+    <tok fileIndex="0" linenr="92" str="1"/>
+    <tok fileIndex="0" linenr="92" str=";"/>
+    <tok fileIndex="0" linenr="94" str="iNumeratorSign"/>
+    <tok fileIndex="0" linenr="94" str="="/>
+    <tok fileIndex="0" linenr="94" str="-"/>
+    <tok fileIndex="0" linenr="94" str="1"/>
+    <tok fileIndex="0" linenr="94" str=";"/>
+    <tok fileIndex="0" linenr="95" str="}"/>
+    <tok fileIndex="0" linenr="97" str="w64Bits"/>
+    <tok fileIndex="0" linenr="97" str="="/>
+    <tok fileIndex="0" linenr="97" str="temp"/>
+    <tok fileIndex="0" linenr="97" str="."/>
+    <tok fileIndex="0" linenr="97" str="ToUInt64_t"/>
+    <tok fileIndex="0" linenr="97" str="("/>
+    <tok fileIndex="0" linenr="97" str=")"/>
+    <tok fileIndex="0" linenr="97" str=";"/>
+    <tok fileIndex="0" linenr="98" str="fMsb"/>
+    <tok fileIndex="0" linenr="98" str="="/>
+    <tok fileIndex="0" linenr="98" str="("/>
+    <tok fileIndex="0" linenr="98" str="w64Bits"/>
+    <tok fileIndex="0" linenr="98" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="98" str="("/>
+    <tok fileIndex="0" linenr="98" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="98" str="-"/>
+    <tok fileIndex="0" linenr="98" str="1"/>
+    <tok fileIndex="0" linenr="98" str=")"/>
+    <tok fileIndex="0" linenr="98" str=")"/>
+    <tok fileIndex="0" linenr="98" str="&amp;"/>
+    <tok fileIndex="0" linenr="98" str="1"/>
+    <tok fileIndex="0" linenr="98" str=";"/>
+    <tok fileIndex="0" linenr="100" str="if"/>
+    <tok fileIndex="0" linenr="100" str="("/>
+    <tok fileIndex="0" linenr="100" str="fMsb"/>
+    <tok fileIndex="0" linenr="100" str=")"/>
+    <tok fileIndex="0" linenr="101" str="{"/>
+    <tok fileIndex="0" linenr="102" str="temp"/>
+    <tok fileIndex="0" linenr="102" str="="/>
+    <tok fileIndex="0" linenr="102" str="("/>
+    <tok fileIndex="0" linenr="102" str="temp"/>
+    <tok fileIndex="0" linenr="102" str="^"/>
+    <tok fileIndex="0" linenr="102" str="m_chopNumbers"/>
+    <tok fileIndex="0" linenr="102" str="["/>
+    <tok fileIndex="0" linenr="102" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="102" str="]"/>
+    <tok fileIndex="0" linenr="102" str=")"/>
+    <tok fileIndex="0" linenr="102" str="+"/>
+    <tok fileIndex="0" linenr="102" str="1"/>
+    <tok fileIndex="0" linenr="102" str=";"/>
+    <tok fileIndex="0" linenr="104" str="iDenominatorSign"/>
+    <tok fileIndex="0" linenr="104" str="="/>
+    <tok fileIndex="0" linenr="104" str="-"/>
+    <tok fileIndex="0" linenr="104" str="1"/>
+    <tok fileIndex="0" linenr="104" str=";"/>
+    <tok fileIndex="0" linenr="105" str="}"/>
+    <tok fileIndex="0" linenr="106" str="}"/>
+    <tok fileIndex="0" linenr="108" str="if"/>
+    <tok fileIndex="0" linenr="108" str="("/>
+    <tok fileIndex="0" linenr="108" str="operation"/>
+    <tok fileIndex="0" linenr="108" str="=="/>
+    <tok fileIndex="0" linenr="108" str="IDC_DIV"/>
+    <tok fileIndex="0" linenr="108" str=")"/>
+    <tok fileIndex="0" linenr="109" str="{"/>
+    <tok fileIndex="0" linenr="110" str="iFinalSign"/>
+    <tok fileIndex="0" linenr="110" str="="/>
+    <tok fileIndex="0" linenr="110" str="iNumeratorSign"/>
+    <tok fileIndex="0" linenr="110" str="*"/>
+    <tok fileIndex="0" linenr="110" str="iDenominatorSign"/>
+    <tok fileIndex="0" linenr="110" str=";"/>
+    <tok fileIndex="0" linenr="111" str="result"/>
+    <tok fileIndex="0" linenr="111" str="/="/>
+    <tok fileIndex="0" linenr="111" str="temp"/>
+    <tok fileIndex="0" linenr="111" str=";"/>
+    <tok fileIndex="0" linenr="112" str="}"/>
+    <tok fileIndex="0" linenr="113" str="else"/>
+    <tok fileIndex="0" linenr="114" str="{"/>
+    <tok fileIndex="0" linenr="115" str="iFinalSign"/>
+    <tok fileIndex="0" linenr="115" str="="/>
+    <tok fileIndex="0" linenr="115" str="iNumeratorSign"/>
+    <tok fileIndex="0" linenr="115" str=";"/>
+    <tok fileIndex="0" linenr="116" str="result"/>
+    <tok fileIndex="0" linenr="116" str="%="/>
+    <tok fileIndex="0" linenr="116" str="temp"/>
+    <tok fileIndex="0" linenr="116" str=";"/>
+    <tok fileIndex="0" linenr="117" str="}"/>
+    <tok fileIndex="0" linenr="119" str="if"/>
+    <tok fileIndex="0" linenr="119" str="("/>
+    <tok fileIndex="0" linenr="119" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="119" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="119" str="iFinalSign"/>
+    <tok fileIndex="0" linenr="119" str="=="/>
+    <tok fileIndex="0" linenr="119" str="-"/>
+    <tok fileIndex="0" linenr="119" str="1"/>
+    <tok fileIndex="0" linenr="119" str=")"/>
+    <tok fileIndex="0" linenr="120" str="{"/>
+    <tok fileIndex="0" linenr="121" str="result"/>
+    <tok fileIndex="0" linenr="121" str="="/>
+    <tok fileIndex="0" linenr="121" str="-"/>
+    <tok fileIndex="0" linenr="121" str="("/>
+    <tok fileIndex="0" linenr="121" str="Integer"/>
+    <tok fileIndex="0" linenr="121" str="("/>
+    <tok fileIndex="0" linenr="121" str="result"/>
+    <tok fileIndex="0" linenr="121" str=")"/>
+    <tok fileIndex="0" linenr="121" str=")"/>
+    <tok fileIndex="0" linenr="121" str=";"/>
+    <tok fileIndex="0" linenr="122" str="}"/>
+    <tok fileIndex="0" linenr="124" str="break"/>
+    <tok fileIndex="0" linenr="124" str=";"/>
+    <tok fileIndex="0" linenr="125" str="}"/>
+    <tok fileIndex="0" linenr="127" str="case"/>
+    <tok fileIndex="0" linenr="127" str="IDC_PWR"/>
+    <tok fileIndex="0" linenr="127" str=":"/>
+    <tok fileIndex="0" linenr="127" str="// Calculates rhs to the result(th) power."/>
+    <tok fileIndex="0" linenr="128" str="result"/>
+    <tok fileIndex="0" linenr="128" str="="/>
+    <tok fileIndex="0" linenr="128" str="Pow"/>
+    <tok fileIndex="0" linenr="128" str="("/>
+    <tok fileIndex="0" linenr="128" str="rhs"/>
+    <tok fileIndex="0" linenr="128" str=","/>
+    <tok fileIndex="0" linenr="128" str="result"/>
+    <tok fileIndex="0" linenr="128" str=")"/>
+    <tok fileIndex="0" linenr="128" str=";"/>
+    <tok fileIndex="0" linenr="129" str="break"/>
+    <tok fileIndex="0" linenr="129" str=";"/>
+    <tok fileIndex="0" linenr="131" str="case"/>
+    <tok fileIndex="0" linenr="131" str="IDC_ROOT"/>
+    <tok fileIndex="0" linenr="131" str=":"/>
+    <tok fileIndex="0" linenr="131" str="// Calculates rhs to the result(th) root."/>
+    <tok fileIndex="0" linenr="132" str="result"/>
+    <tok fileIndex="0" linenr="132" str="="/>
+    <tok fileIndex="0" linenr="132" str="Root"/>
+    <tok fileIndex="0" linenr="132" str="("/>
+    <tok fileIndex="0" linenr="132" str="rhs"/>
+    <tok fileIndex="0" linenr="132" str=","/>
+    <tok fileIndex="0" linenr="132" str="result"/>
+    <tok fileIndex="0" linenr="132" str=")"/>
+    <tok fileIndex="0" linenr="132" str=";"/>
+    <tok fileIndex="0" linenr="133" str="break"/>
+    <tok fileIndex="0" linenr="133" str=";"/>
+    <tok fileIndex="0" linenr="134" str="}"/>
+    <tok fileIndex="0" linenr="135" str="}"/>
+    <tok fileIndex="0" linenr="136" str="catch"/>
+    <tok fileIndex="0" linenr="136" str="("/>
+    <tok fileIndex="0" linenr="136" str="uint32_t"/>
+    <tok fileIndex="0" linenr="136" str="dwErrCode"/>
+    <tok fileIndex="0" linenr="136" str=")"/>
+    <tok fileIndex="0" linenr="137" str="{"/>
+    <tok fileIndex="0" linenr="138" str="DisplayError"/>
+    <tok fileIndex="0" linenr="138" str="("/>
+    <tok fileIndex="0" linenr="138" str="dwErrCode"/>
+    <tok fileIndex="0" linenr="138" str=")"/>
+    <tok fileIndex="0" linenr="138" str=";"/>
+    <tok fileIndex="0" linenr="140" str="// On error, return the original value"/>
+    <tok fileIndex="0" linenr="141" str="result"/>
+    <tok fileIndex="0" linenr="141" str="="/>
+    <tok fileIndex="0" linenr="141" str="lhs"/>
+    <tok fileIndex="0" linenr="141" str=";"/>
+    <tok fileIndex="0" linenr="142" str="}"/>
+    <tok fileIndex="0" linenr="144" str="return"/>
+    <tok fileIndex="0" linenr="144" str="result"/>
+    <tok fileIndex="0" linenr="144" str=";"/>
+    <tok fileIndex="0" linenr="145" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="5" str="#include &quot;Header Files/CalcEngine.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134977C0190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="7" str="using" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BF8F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="7" str="namespace" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BFCB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="7" str="CalcEngine" scope="000001349147AA40" type="name"/>
+    <token id="00000134977C01F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="7" str=";" scope="000001349147AA40"/>
+    <token id="00000134977BF5F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str="using" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BF830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str="namespace" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BF950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str="CalcEngine" scope="000001349147AA40" type="name" astParent="00000134977C0610"/>
+    <token id="00000134977C0610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str="::" scope="000001349147AA40" astOperand1="00000134977BF950" astOperand2="00000134977BFAD0"/>
+    <token id="00000134977BFAD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str="RationalMath" scope="000001349147AA40" type="name" astParent="00000134977C0610"/>
+    <token id="00000134977C0250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="8" str=";" scope="000001349147AA40"/>
+    <token id="00000134977C0670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="CalcEngine" scope="000001349147AA40" type="name" astParent="00000134977BFA70"/>
+    <token id="00000134977BFA70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="::" scope="000001349147AA40" astParent="00000134977BF110" astOperand1="00000134977C0670" astOperand2="00000134977BF4D0"/>
+    <token id="00000134977BFA10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="Rational" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BF4D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="CCalcEngine" scope="000001349147AA40" type="name" astParent="00000134977BFA70"/>
+    <token id="00000134977BF110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="::" scope="000001349147AA40" astParent="00000134977BF650" astOperand1="00000134977BFA70" astOperand2="00000134977BF1D0"/>
+    <token id="00000134977BF1D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="DoOperation" scope="000001349147AA40" type="name" astParent="00000134977BF110"/>
+    <token id="00000134977BF650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="(" scope="000001349147AA40" link="00000134977BF290" astOperand1="00000134977BF110" astOperand2="00000134977BF890"/>
+    <token id="00000134977C06D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="int" scope="000001349147AA40" type="name"/>
+    <token id="00000134977C00D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="operation" scope="000001349147AA40" type="name" varId="1" astParent="00000134977BF530"/>
+    <token id="00000134977BF530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="," scope="000001349147AA40" astParent="00000134977BF890" astOperand1="00000134977C00D0" astOperand2="00000134977BFF50"/>
+    <token id="00000134977C0130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="const" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BFB30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="CalcEngine" scope="000001349147AA40" type="name" astParent="00000134977BF410"/>
+    <token id="00000134977BF410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="::" scope="000001349147AA40" astParent="00000134977BFF50" astOperand1="00000134977BFB30" astOperand2="00000134977BF170"/>
+    <token id="00000134977BF170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="Rational" scope="000001349147AA40" type="name" astParent="00000134977BF410"/>
+    <token id="00000134977BFF50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="&amp;" scope="000001349147AA40" type="op" astParent="00000134977BF530" astOperand1="00000134977BF410" astOperand2="00000134977BF6B0"/>
+    <token id="00000134977BF6B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="lhs" scope="000001349147AA40" type="name" varId="2" astParent="00000134977BFF50"/>
+    <token id="00000134977BF890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="," scope="000001349147AA40" astParent="00000134977BF650" astOperand1="00000134977BF530" astOperand2="00000134977C02B0"/>
+    <token id="00000134977BFEF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="const" scope="000001349147AA40" type="name"/>
+    <token id="00000134977BF470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="CalcEngine" scope="000001349147AA40" type="name" astParent="00000134977BF230"/>
+    <token id="00000134977BF230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="::" scope="000001349147AA40" astParent="00000134977C02B0" astOperand1="00000134977BF470" astOperand2="00000134977C0490"/>
+    <token id="00000134977C0490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="Rational" scope="000001349147AA40" type="name" astParent="00000134977BF230"/>
+    <token id="00000134977C02B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="&amp;" scope="000001349147AA40" type="op" astParent="00000134977BF890" astOperand1="00000134977BF230" astOperand2="00000134977BFC50"/>
+    <token id="00000134977BFC50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str="rhs" scope="000001349147AA40" type="name" varId="3" astParent="00000134977C02B0"/>
+    <token id="00000134977BF290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="11" str=")" scope="000001349147AA40" link="00000134977BF650"/>
+    <token id="00000134977BFBF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="12" str="{" scope="000001349147A600" link="00000134977B7E50"/>
+    <token id="00000134977BFE90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="auto" scope="000001349147A600" type="name"/>
+    <token id="00000134977BFD70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="result" scope="000001349147A600" type="name" varId="4" variable="000001349B19D620"/>
+    <token id="00000134977BF590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str=";" scope="000001349147A600"/>
+    <token id="00000134977B9D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="result" scope="000001349147A600" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B9B30"/>
+    <token id="00000134977B9B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="=" scope="000001349147A600" type="op" isAssignmentOp="True" astOperand1="00000134977B9D10" astOperand2="00000134977C0370"/>
+    <token id="00000134977C0310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="lhs" scope="000001349147A600" type="name" varId="2" astParent="00000134977C04F0"/>
+    <token id="00000134977C04F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="!=" scope="000001349147A600" type="op" isComparisonOp="True" astParent="00000134977C0370" astOperand1="00000134977C0310" astOperand2="00000134977C0730" valueType-type="bool"/>
+    <token id="00000134977C0730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="0" scope="000001349147A600" type="number" isInt="True" values="00000134A8C04770" astParent="00000134977C04F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977C0370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="?" scope="000001349147A600" values="00000134A8C048D0" astParent="00000134977B9B30" astOperand1="00000134977C04F0" astOperand2="00000134977C03D0"/>
+    <token id="00000134977C0550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="lhs" scope="000001349147A600" type="name" varId="2" astParent="00000134977C03D0"/>
+    <token id="00000134977C03D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str=":" scope="000001349147A600" values="00000134A8C048B0" astParent="00000134977C0370" astOperand1="00000134977C0550" astOperand2="00000134977BF710"/>
+    <token id="00000134977BF710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str="0" scope="000001349147A600" type="number" isInt="True" values="00000134A8C04570" astParent="00000134977C03D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977C0430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="14" str=";" scope="000001349147A600"/>
+    <token id="00000134977BF770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="16" str="try" scope="000001349147A600" type="name"/>
+    <token id="00000134977BFB90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="17" str="{" scope="000001349147A710" link="00000134977B8B10"/>
+    <token id="00000134977C05B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="18" str="switch" scope="000001349147A710" type="name" astParent="00000134977BFDD0"/>
+    <token id="00000134977BFDD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="18" str="(" scope="000001349147A710" link="00000134977BFD10" astOperand1="00000134977C05B0" astOperand2="00000134977BF3B0"/>
+    <token id="00000134977BF3B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="18" str="operation" scope="000001349147A710" type="name" varId="1" astParent="00000134977BFDD0"/>
+    <token id="00000134977BFD10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="18" str=")" scope="000001349147A710" link="00000134977BFDD0"/>
+    <token id="00000134977BF7D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="19" str="{" scope="000001349147A930" link="00000134977B8150"/>
+    <token id="00000134977BFE30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="20" str="case" scope="000001349147A930" type="name" astOperand1="00000134977C0010"/>
+    <token id="00000134977C0010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="20" str="IDC_AND" scope="000001349147A930" type="name" astParent="00000134977BFE30"/>
+    <token id="00000134977C0070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="20" str=":" scope="000001349147A930"/>
+    <token id="00000134977B7130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="20" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="21" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977C07F0"/>
+    <token id="00000134977C07F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="21" str="&amp;=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977C0790" astOperand2="00000134977C0850"/>
+    <token id="00000134977C0850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="21" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977C07F0"/>
+    <token id="00000134977BF0B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="21" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="22" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977C0F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="22" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="24" str="case" scope="000001349147A930" type="name" astOperand1="00000134977C0A30"/>
+    <token id="00000134977C0A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="24" str="IDC_OR" scope="000001349147A930" type="name" astParent="00000134977C0E50"/>
+    <token id="00000134977C08B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="24" str=":" scope="000001349147A930"/>
+    <token id="00000134977B6650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="24" str=";" scope="000001349147A930"/>
+    <token id="00000134977C09D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="25" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977C0A90"/>
+    <token id="00000134977C0A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="25" str="|=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977C09D0" astOperand2="00000134977C0AF0"/>
+    <token id="00000134977C0AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="25" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977C0A90"/>
+    <token id="00000134977C0B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="25" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="26" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977C0C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="26" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="28" str="case" scope="000001349147A930" type="name" astOperand1="00000134977C0CD0"/>
+    <token id="00000134977C0CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="28" str="IDC_XOR" scope="000001349147A930" type="name" astParent="00000134977C0C70"/>
+    <token id="00000134977C0910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="28" str=":" scope="000001349147A930"/>
+    <token id="00000134977B7EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="28" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="29" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977C0F70"/>
+    <token id="00000134977C0F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="29" str="^=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977C0D30" astOperand2="00000134977C0DF0"/>
+    <token id="00000134977C0DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="29" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977C0F70"/>
+    <token id="00000134977C0EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="29" str=";" scope="000001349147A930"/>
+    <token id="00000134977C0970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="30" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B0530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="30" str=";" scope="000001349147A930"/>
+    <token id="00000134977B0170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="32" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B11F0"/>
+    <token id="00000134977B11F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="32" str="IDC_RSHF" scope="000001349147A930" type="name" astParent="00000134977B0170"/>
+    <token id="00000134977B0590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="32" str=":" scope="000001349147A930"/>
+    <token id="00000134977B7F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="32" str=";" scope="000001349147A930"/>
+    <token id="00000134977B1070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="33" str="{" scope="000001349147AB50" link="00000134977B2F30"/>
+    <token id="00000134977B0830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="if" scope="000001349147AB50" type="name" astParent="00000134977B07D0"/>
+    <token id="00000134977B07D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="(" scope="000001349147AB50" link="00000134977B01D0" astOperand1="00000134977B0830" astOperand2="00000134977B0110"/>
+    <token id="00000134977B0B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="m_fIntegerMode" scope="000001349147AB50" type="name" astParent="00000134977B0110"/>
+    <token id="00000134977B0110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="&amp;&amp;" scope="000001349147AB50" type="op" isLogicalOp="True" astParent="00000134977B07D0" astOperand1="00000134977B0B90" astOperand2="00000134977B0A10" valueType-type="bool"/>
+    <token id="00000134977B1430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="result" scope="000001349147AB50" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B0A10"/>
+    <token id="00000134977B0A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="&gt;=" scope="000001349147AB50" type="op" isComparisonOp="True" astParent="00000134977B0110" astOperand1="00000134977B1430" astOperand2="00000134977B1490" valueType-type="bool"/>
+    <token id="00000134977B1490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str="m_dwWordBitWidth" scope="000001349147AB50" type="name" astParent="00000134977B0A10"/>
+    <token id="00000134977B01D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="34" str=")" scope="000001349147AB50" link="00000134977B07D0"/>
+    <token id="00000134977B14F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="35" str="{" scope="000001349147A820" link="00000134977B1010"/>
+    <token id="00000134977B0890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="36" str="throw" scope="000001349147A820" type="name" astOperand1="00000134977B0B30"/>
+    <token id="00000134977B0B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="36" str="CALC_E_NORESULT" scope="000001349147A820" type="name" astParent="00000134977B0890"/>
+    <token id="00000134977B0470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="36" str=";" scope="000001349147A820"/>
+    <token id="00000134977B1010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="37" str="}" scope="000001349147A820" link="00000134977B14F0"/>
+    <token id="00000134977B0650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="uint64_t" scope="000001349147AB50" type="name"/>
+    <token id="00000134977B08F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="w64Bits" scope="000001349147AB50" type="name" varId="5" variable="000001349B19D3F0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B0230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B9B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="w64Bits" scope="000001349147AB50" type="name" varId="5" variable="000001349B19D3F0" astParent="00000134977BA5B0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977BA5B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="=" scope="000001349147AB50" type="op" isAssignmentOp="True" astOperand1="00000134977B9B90" astOperand2="00000134977B0EF0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B1370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="rhs" scope="000001349147AB50" type="name" varId="3" astParent="00000134977B1610"/>
+    <token id="00000134977B1610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="." scope="000001349147AB50" astParent="00000134977B0EF0" astOperand1="00000134977B1370" astOperand2="00000134977B04D0"/>
+    <token id="00000134977B04D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="ToUInt64_t" scope="000001349147AB50" type="name" astParent="00000134977B1610"/>
+    <token id="00000134977B0EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str="(" scope="000001349147AB50" link="00000134977B10D0" astParent="00000134977BA5B0" astOperand1="00000134977B1610"/>
+    <token id="00000134977B10D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str=")" scope="000001349147AB50" link="00000134977B0EF0"/>
+    <token id="00000134977B0410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="39" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B0BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="bool" scope="000001349147AB50" type="name"/>
+    <token id="00000134977B12B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="fMsb" scope="000001349147AB50" type="name" varId="6" variable="000001349B19D7E0" valueType-type="bool"/>
+    <token id="00000134977B0950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B9830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="fMsb" scope="000001349147AB50" type="name" varId="6" variable="000001349B19D7E0" astParent="00000134977B96B0" valueType-type="bool"/>
+    <token id="00000134977B96B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="=" scope="000001349147AB50" type="op" isAssignmentOp="True" astOperand1="00000134977B9830" astOperand2="00000134977B1250" valueType-type="bool"/>
+    <token id="00000134977B06B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="(" scope="000001349147AB50" link="00000134977B0D10"/>
+    <token id="00000134977B1130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="w64Bits" scope="000001349147AB50" type="name" varId="5" variable="000001349B19D3F0" astParent="00000134977B0F50" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B0F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="&gt;&gt;" scope="000001349147AB50" type="op" isArithmeticalOp="True" astParent="00000134977B1250" astOperand1="00000134977B1130" astOperand2="00000134977B09B0"/>
+    <token id="00000134977B0FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="(" scope="000001349147AB50" link="00000134977B0C50"/>
+    <token id="00000134977B02F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="m_dwWordBitWidth" scope="000001349147AB50" type="name" astParent="00000134977B09B0"/>
+    <token id="00000134977B09B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="-" scope="000001349147AB50" type="op" isArithmeticalOp="True" astParent="00000134977B0F50" astOperand1="00000134977B02F0" astOperand2="00000134977B1190"/>
+    <token id="00000134977B1190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="1" scope="000001349147AB50" type="number" isInt="True" values="00000134A8C048F0" astParent="00000134977B09B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B0C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str=")" scope="000001349147AB50" link="00000134977B0FB0"/>
+    <token id="00000134977B0D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str=")" scope="000001349147AB50" link="00000134977B06B0"/>
+    <token id="00000134977B1250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="&amp;" scope="000001349147AB50" type="op" values="00000134A8C04650" astParent="00000134977B96B0" astOperand1="00000134977B0F50" astOperand2="00000134977B16D0"/>
+    <token id="00000134977B16D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str="1" scope="000001349147AB50" type="number" isInt="True" values="00000134A8C045B0" astParent="00000134977B1250" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B0A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="40" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B0AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str="Rational" scope="000001349147AB50" type="name"/>
+    <token id="00000134977B0CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str="holdVal" scope="000001349147AB50" type="name" varId="7" variable="000001349B19C4A0"/>
+    <token id="00000134977B1550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str=";" scope="000001349147AB50"/>
+    <token id="00000134977BA3D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str="holdVal" scope="000001349147AB50" type="name" varId="7" variable="000001349B19C4A0" astParent="00000134977B9770"/>
+    <token id="00000134977B9770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str="=" scope="000001349147AB50" type="op" isAssignmentOp="True" astOperand1="00000134977BA3D0" astOperand2="00000134977B03B0"/>
+    <token id="00000134977B03B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str="result" scope="000001349147AB50" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B9770"/>
+    <token id="00000134977B1670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="42" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B0290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str="result" scope="000001349147AB50" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B0770"/>
+    <token id="00000134977B0770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str="=" scope="000001349147AB50" type="op" isAssignmentOp="True" astOperand1="00000134977B0290" astOperand2="00000134977B0DD0"/>
+    <token id="00000134977B0D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str="rhs" scope="000001349147AB50" type="name" varId="3" astParent="00000134977B0DD0"/>
+    <token id="00000134977B0DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str="&gt;&gt;" scope="000001349147AB50" type="op" isArithmeticalOp="True" astParent="00000134977B0770" astOperand1="00000134977B0D70" astOperand2="00000134977B0350"/>
+    <token id="00000134977B0350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str="holdVal" scope="000001349147AB50" type="name" varId="7" variable="000001349B19C4A0" astParent="00000134977B0DD0"/>
+    <token id="00000134977B0E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="43" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B0E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="45" str="if" scope="000001349147AB50" type="name" astParent="00000134977B1310"/>
+    <token id="00000134977B1310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="45" str="(" scope="000001349147AB50" link="00000134977B13D0" astOperand1="00000134977B0E90" astOperand2="00000134977B05F0"/>
+    <token id="00000134977B05F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="45" str="fMsb" scope="000001349147AB50" type="name" varId="6" variable="000001349B19D7E0" values="00000134A8C04D90" astParent="00000134977B1310" valueType-type="bool"/>
+    <token id="00000134977B13D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="45" str=")" scope="000001349147AB50" link="00000134977B1310"/>
+    <token id="00000134977B15B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="46" str="{" scope="00000134A68FE4E0" link="00000134977B2570"/>
+    <token id="00000134977B1730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str="result" scope="00000134A68FE4E0" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B1790"/>
+    <token id="00000134977B1790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str="=" scope="00000134A68FE4E0" type="op" isAssignmentOp="True" astOperand1="00000134977B1730" astOperand2="00000134977B1850"/>
+    <token id="00000134977B17F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str="Integer" scope="00000134A68FE4E0" type="name" astParent="00000134977B1850"/>
+    <token id="00000134977B1850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str="(" scope="00000134A68FE4E0" link="00000134977B0710" astParent="00000134977B1790" astOperand1="00000134977B17F0" astOperand2="00000134977B00B0"/>
+    <token id="00000134977B00B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str="result" scope="00000134A68FE4E0" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B1850"/>
+    <token id="00000134977B0710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str=")" scope="00000134A68FE4E0" link="00000134977B1850"/>
+    <token id="00000134977B2AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="47" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977B1F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="auto" scope="00000134A68FE4E0" type="name"/>
+    <token id="00000134977B2030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="tempRat" scope="00000134A68FE4E0" type="name" varId="8" variable="000001349B19CC80"/>
+    <token id="00000134977B2390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977BA370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="tempRat" scope="00000134A68FE4E0" type="name" varId="8" variable="000001349B19CC80" astParent="00000134977BA6D0"/>
+    <token id="00000134977BA6D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="=" scope="00000134A68FE4E0" type="op" isAssignmentOp="True" astOperand1="00000134977BA370" astOperand2="00000134977B2E10"/>
+    <token id="00000134977B18B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="m_chopNumbers" scope="00000134A68FE4E0" type="name" astParent="00000134977B2B10"/>
+    <token id="00000134977B2B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="[" scope="00000134A68FE4E0" link="00000134977B2810" astParent="00000134977B2E10" astOperand1="00000134977B18B0" astOperand2="00000134977B1EB0"/>
+    <token id="00000134977B1EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="m_numwidth" scope="00000134A68FE4E0" type="name" astParent="00000134977B2B10"/>
+    <token id="00000134977B2810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="]" scope="00000134A68FE4E0" link="00000134977B2B10"/>
+    <token id="00000134977B2E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="&gt;&gt;" scope="00000134A68FE4E0" type="op" isArithmeticalOp="True" astParent="00000134977BA6D0" astOperand1="00000134977B2B10" astOperand2="00000134977B2B70"/>
+    <token id="00000134977B2B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str="holdVal" scope="00000134A68FE4E0" type="name" varId="7" variable="000001349B19C4A0" astParent="00000134977B2E10"/>
+    <token id="00000134977B2330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="49" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977B2DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str="tempRat" scope="00000134A68FE4E0" type="name" varId="8" variable="000001349B19CC80" astParent="00000134977B2450"/>
+    <token id="00000134977B2450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str="=" scope="00000134A68FE4E0" type="op" isAssignmentOp="True" astOperand1="00000134977B2DB0" astOperand2="00000134977B23F0"/>
+    <token id="00000134977B2BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str="Integer" scope="00000134A68FE4E0" type="name" astParent="00000134977B23F0"/>
+    <token id="00000134977B23F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str="(" scope="00000134A68FE4E0" link="00000134977B1910" astParent="00000134977B2450" astOperand1="00000134977B2BD0" astOperand2="00000134977B2930"/>
+    <token id="00000134977B2930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str="tempRat" scope="00000134A68FE4E0" type="name" varId="8" variable="000001349B19CC80" astParent="00000134977B23F0"/>
+    <token id="00000134977B1910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str=")" scope="00000134A68FE4E0" link="00000134977B23F0"/>
+    <token id="00000134977B2C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="50" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977B2E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="result" scope="00000134A68FE4E0" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B1FD0"/>
+    <token id="00000134977B1FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="|=" scope="00000134A68FE4E0" type="op" isAssignmentOp="True" astOperand1="00000134977B2E70" astOperand2="00000134977B24B0"/>
+    <token id="00000134977B2990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="tempRat" scope="00000134A68FE4E0" type="name" varId="8" variable="000001349B19CC80" astParent="00000134977B24B0"/>
+    <token id="00000134977B24B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="^" scope="00000134A68FE4E0" type="op" astParent="00000134977B1FD0" astOperand1="00000134977B2990" astOperand2="00000134977B29F0"/>
+    <token id="00000134977B2510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="m_chopNumbers" scope="00000134A68FE4E0" type="name" astParent="00000134977B29F0"/>
+    <token id="00000134977B29F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="[" scope="00000134A68FE4E0" link="00000134977B21B0" astParent="00000134977B24B0" astOperand1="00000134977B2510" astOperand2="00000134977B2ED0"/>
+    <token id="00000134977B2ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="m_numwidth" scope="00000134A68FE4E0" type="name" astParent="00000134977B29F0"/>
+    <token id="00000134977B21B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str="]" scope="00000134A68FE4E0" link="00000134977B29F0"/>
+    <token id="00000134977B2210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="52" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977B2570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="53" str="}" scope="00000134A68FE4E0" link="00000134977B15B0"/>
+    <token id="00000134977B2CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="54" str="break" scope="000001349147AB50" type="name"/>
+    <token id="00000134977B1BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="54" str=";" scope="000001349147AB50"/>
+    <token id="00000134977B2F30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="55" str="}" scope="000001349147AB50" link="00000134977B1070"/>
+    <token id="00000134977B1A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="57" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B1F70"/>
+    <token id="00000134977B1F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="57" str="IDC_LSHF" scope="000001349147A930" type="name" astParent="00000134977B1A90"/>
+    <token id="00000134977B2090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="57" str=":" scope="000001349147A930"/>
+    <token id="00000134977B7FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="57" str=";" scope="000001349147A930"/>
+    <token id="00000134977B19D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="if" scope="000001349147A930" type="name" astParent="00000134977B1DF0"/>
+    <token id="00000134977B1DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="(" scope="000001349147A930" link="00000134977B2690" astOperand1="00000134977B19D0" astOperand2="00000134977B2A50"/>
+    <token id="00000134977B22D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="m_fIntegerMode" scope="000001349147A930" type="name" astParent="00000134977B2A50"/>
+    <token id="00000134977B2A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="&amp;&amp;" scope="000001349147A930" type="op" isLogicalOp="True" astParent="00000134977B1DF0" astOperand1="00000134977B22D0" astOperand2="00000134977B1B50" valueType-type="bool"/>
+    <token id="00000134977B25D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B1B50"/>
+    <token id="00000134977B1B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="&gt;=" scope="000001349147A930" type="op" isComparisonOp="True" astParent="00000134977B2A50" astOperand1="00000134977B25D0" astOperand2="00000134977B20F0" valueType-type="bool"/>
+    <token id="00000134977B20F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str="m_dwWordBitWidth" scope="000001349147A930" type="name" astParent="00000134977B1B50"/>
+    <token id="00000134977B2690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="58" str=")" scope="000001349147A930" link="00000134977B1DF0"/>
+    <token id="00000134977B2270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="59" str="{" scope="00000134A68FEB40" link="00000134977B2750"/>
+    <token id="00000134977B2630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="60" str="throw" scope="00000134A68FEB40" type="name" astOperand1="00000134977B2150"/>
+    <token id="00000134977B2150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="60" str="CALC_E_NORESULT" scope="00000134A68FEB40" type="name" astParent="00000134977B2630"/>
+    <token id="00000134977B26F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="60" str=";" scope="00000134A68FEB40"/>
+    <token id="00000134977B2750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="61" str="}" scope="00000134A68FEB40" link="00000134977B2270"/>
+    <token id="00000134977B27B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B2870"/>
+    <token id="00000134977B2870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str="=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B27B0" astOperand2="00000134977B2D50"/>
+    <token id="00000134977B28D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B2D50"/>
+    <token id="00000134977B2D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str="&lt;&lt;" scope="000001349147A930" type="op" isArithmeticalOp="True" astParent="00000134977B2870" astOperand1="00000134977B28D0" astOperand2="00000134977B2F90"/>
+    <token id="00000134977B2F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B2D50"/>
+    <token id="00000134977B2FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="63" str=";" scope="000001349147A930"/>
+    <token id="00000134977B3050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="64" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B1970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="64" str=";" scope="000001349147A930"/>
+    <token id="00000134977B1A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="66" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B1AF0"/>
+    <token id="00000134977B1AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="66" str="IDC_ADD" scope="000001349147A930" type="name" astParent="00000134977B1A30"/>
+    <token id="00000134977B1C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="66" str=":" scope="000001349147A930"/>
+    <token id="00000134977BA670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="66" str=";" scope="000001349147A930"/>
+    <token id="00000134977B1D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="67" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B1C70"/>
+    <token id="00000134977B1C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="67" str="+=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B1D30" astOperand2="00000134977B1E50"/>
+    <token id="00000134977B1E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="67" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B1C70"/>
+    <token id="00000134977B1CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="67" str=";" scope="000001349147A930"/>
+    <token id="00000134977B1D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="68" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B3890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="68" str=";" scope="000001349147A930"/>
+    <token id="00000134977B32F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="70" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B3290"/>
+    <token id="00000134977B3290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="70" str="IDC_SUB" scope="000001349147A930" type="name" astParent="00000134977B32F0"/>
+    <token id="00000134977B4190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="70" str=":" scope="000001349147A930"/>
+    <token id="00000134977BA1F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="70" str=";" scope="000001349147A930"/>
+    <token id="00000134977B41F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B3A10"/>
+    <token id="00000134977B3A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str="=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B41F0" astOperand2="00000134977B3B90"/>
+    <token id="00000134977B3D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B3B90"/>
+    <token id="00000134977B3B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str="-" scope="000001349147A930" type="op" isArithmeticalOp="True" astParent="00000134977B3A10" astOperand1="00000134977B3D70" astOperand2="00000134977B45B0"/>
+    <token id="00000134977B45B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B3B90"/>
+    <token id="00000134977B39B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="71" str=";" scope="000001349147A930"/>
+    <token id="00000134977B4790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="72" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B3650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="72" str=";" scope="000001349147A930"/>
+    <token id="00000134977B3EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="74" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B4250"/>
+    <token id="00000134977B4250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="74" str="IDC_MUL" scope="000001349147A930" type="name" astParent="00000134977B3EF0"/>
+    <token id="00000134977B3A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="74" str=":" scope="000001349147A930"/>
+    <token id="00000134977BA550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="74" str=";" scope="000001349147A930"/>
+    <token id="00000134977B42B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="75" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B38F0"/>
+    <token id="00000134977B38F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="75" str="*=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B42B0" astOperand2="00000134977B3CB0"/>
+    <token id="00000134977B3CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="75" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B38F0"/>
+    <token id="00000134977B4310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="75" str=";" scope="000001349147A930"/>
+    <token id="00000134977B35F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="76" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B3830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="76" str=";" scope="000001349147A930"/>
+    <token id="00000134977B3950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="78" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B4610"/>
+    <token id="00000134977B4610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="78" str="IDC_DIV" scope="000001349147A930" type="name" astParent="00000134977B3950"/>
+    <token id="00000134977B3AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="78" str=":" scope="000001349147A930"/>
+    <token id="00000134977B4370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="79" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B4670"/>
+    <token id="00000134977B4670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="79" str="IDC_MOD" scope="000001349147A930" type="name" astParent="00000134977B4370"/>
+    <token id="00000134977B3B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="79" str=":" scope="000001349147A930"/>
+    <token id="00000134977BA310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="79" str=";" scope="000001349147A930"/>
+    <token id="00000134977B3BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="80" str="{" scope="00000134A68FE920" link="00000134977B7F70"/>
+    <token id="00000134977B34D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="int" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B3110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iNumeratorSign" scope="00000134A68FE920" type="name" varId="9" variable="000001349B19D310" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B31D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B9C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iNumeratorSign" scope="00000134A68FE920" type="name" varId="9" variable="000001349B19D310" astParent="00000134977B9F50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B9F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977B9C50" astOperand2="00000134977B36B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B36B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="1" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04790" astParent="00000134977B9F50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B46D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B9EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="int" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B3230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iDenominatorSign" scope="00000134A68FE920" type="name" varId="10" variable="000001349B19D460" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977BA190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iDenominatorSign" scope="00000134A68FE920" type="name" varId="10" variable="000001349B19D460" astParent="00000134977B92F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B92F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977BA190" astOperand2="00000134977B3350" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="1" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C046F0" astParent="00000134977B92F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977BA010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="int" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B47F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iFinalSign" scope="00000134A68FE920" type="name" varId="11" variable="000001349B19D850" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B9BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="iFinalSign" scope="00000134A68FE920" type="name" varId="11" variable="000001349B19D850" astParent="00000134977BA4F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977BA4F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977B9BF0" astOperand2="00000134977B4730" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B4730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str="1" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04270" astParent="00000134977BA4F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="81" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B33B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str="auto" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B3710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str="temp" scope="00000134A68FE920" type="name" varId="12" variable="000001349B19BCC0"/>
+    <token id="00000134977B3530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B9290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str="temp" scope="00000134A68FE920" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977BA430"/>
+    <token id="00000134977BA430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977B9290" astOperand2="00000134977B3170"/>
+    <token id="00000134977B3170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str="result" scope="00000134A68FE920" type="name" varId="4" variable="000001349B19D620" astParent="00000134977BA430"/>
+    <token id="00000134977B43D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="82" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B3590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="83" str="result" scope="00000134A68FE920" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B4070"/>
+    <token id="00000134977B4070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="83" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977B3590" astOperand2="00000134977B3E30"/>
+    <token id="00000134977B3E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="83" str="rhs" scope="00000134A68FE920" type="name" varId="3" astParent="00000134977B4070"/>
+    <token id="00000134977B37D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="83" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B3E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="85" str="if" scope="00000134A68FE920" type="name" astParent="00000134977B3470"/>
+    <token id="00000134977B3470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="85" str="(" scope="00000134A68FE920" link="00000134977B3F50" astOperand1="00000134977B3E90" astOperand2="00000134977B4430"/>
+    <token id="00000134977B4430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="85" str="m_fIntegerMode" scope="00000134A68FE920" type="name" astParent="00000134977B3470"/>
+    <token id="00000134977B3F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="85" str=")" scope="00000134A68FE920" link="00000134977B3470"/>
+    <token id="00000134977B3FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="86" str="{" scope="00000134A68FE5F0" link="00000134977B7190"/>
+    <token id="00000134977B3770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="uint64_t" scope="00000134A68FE5F0" type="name"/>
+    <token id="00000134977B4010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="w64Bits" scope="00000134A68FE5F0" type="name" varId="13" variable="000001349B19BD30" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B4850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B9D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="w64Bits" scope="00000134A68FE5F0" type="name" varId="13" variable="000001349B19BD30" astParent="00000134977B9170" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B9170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="=" scope="00000134A68FE5F0" type="op" isAssignmentOp="True" astOperand1="00000134977B9D70" astOperand2="00000134977B44F0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B4490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="rhs" scope="00000134A68FE5F0" type="name" varId="3" astParent="00000134977B40D0"/>
+    <token id="00000134977B40D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="." scope="00000134A68FE5F0" astParent="00000134977B44F0" astOperand1="00000134977B4490" astOperand2="00000134977B4130"/>
+    <token id="00000134977B4130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="ToUInt64_t" scope="00000134A68FE5F0" type="name" astParent="00000134977B40D0"/>
+    <token id="00000134977B44F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str="(" scope="00000134A68FE5F0" link="00000134977B4550" astParent="00000134977B9170" astOperand1="00000134977B40D0"/>
+    <token id="00000134977B4550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str=")" scope="00000134A68FE5F0" link="00000134977B44F0"/>
+    <token id="00000134977B30B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="87" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B4F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="bool" scope="00000134A68FE5F0" type="name"/>
+    <token id="00000134977B5E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="fMsb" scope="00000134A68FE5F0" type="name" varId="14" variable="000001349B19BDA0" valueType-type="bool"/>
+    <token id="00000134977B5570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B91D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="fMsb" scope="00000134A68FE5F0" type="name" varId="14" variable="000001349B19BDA0" astParent="00000134977B95F0" valueType-type="bool"/>
+    <token id="00000134977B95F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="=" scope="00000134A68FE5F0" type="op" isAssignmentOp="True" astOperand1="00000134977B91D0" astOperand2="00000134977B57B0" valueType-type="bool"/>
+    <token id="00000134977B5450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="(" scope="00000134A68FE5F0" link="00000134977B5750"/>
+    <token id="00000134977B5510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="w64Bits" scope="00000134A68FE5F0" type="name" varId="13" variable="000001349B19BD30" astParent="00000134977B5330" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B5330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="&gt;&gt;" scope="00000134A68FE5F0" type="op" isArithmeticalOp="True" astParent="00000134977B57B0" astOperand1="00000134977B5510" astOperand2="00000134977B5090"/>
+    <token id="00000134977B5030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="(" scope="00000134A68FE5F0" link="00000134977B58D0"/>
+    <token id="00000134977B5DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="m_dwWordBitWidth" scope="00000134A68FE5F0" type="name" astParent="00000134977B5090"/>
+    <token id="00000134977B5090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="-" scope="00000134A68FE5F0" type="op" isArithmeticalOp="True" astParent="00000134977B5330" astOperand1="00000134977B5DB0" astOperand2="00000134977B4EB0"/>
+    <token id="00000134977B4EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="1" scope="00000134A68FE5F0" type="number" isInt="True" values="00000134A8C043B0" astParent="00000134977B5090" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B58D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str=")" scope="00000134A68FE5F0" link="00000134977B5030"/>
+    <token id="00000134977B5750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str=")" scope="00000134A68FE5F0" link="00000134977B5450"/>
+    <token id="00000134977B57B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="&amp;" scope="00000134A68FE5F0" type="op" values="00000134A8C043D0" astParent="00000134977B95F0" astOperand1="00000134977B5330" astOperand2="00000134977B4F70"/>
+    <token id="00000134977B4F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str="1" scope="00000134A68FE5F0" type="number" isInt="True" values="00000134A8C047B0" astParent="00000134977B57B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="88" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B54B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="90" str="if" scope="00000134A68FE5F0" type="name" astParent="00000134977B5810"/>
+    <token id="00000134977B5810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="90" str="(" scope="00000134A68FE5F0" link="00000134977B4AF0" astOperand1="00000134977B54B0" astOperand2="00000134977B5C90"/>
+    <token id="00000134977B5C90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="90" str="fMsb" scope="00000134A68FE5F0" type="name" varId="14" variable="000001349B19BDA0" values="00000134A8C04BD0" astParent="00000134977B5810" valueType-type="bool"/>
+    <token id="00000134977B4AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="90" str=")" scope="00000134A68FE5F0" link="00000134977B5810"/>
+    <token id="00000134977B4970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="91" str="{" scope="00000134A68FDE80" link="00000134977B4C70"/>
+    <token id="00000134977B4B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="result" scope="00000134A68FDE80" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B5210"/>
+    <token id="00000134977B5210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="=" scope="00000134A68FDE80" type="op" isAssignmentOp="True" astOperand1="00000134977B4B50" astOperand2="00000134977B5CF0"/>
+    <token id="00000134977B4FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="(" scope="00000134A68FDE80" link="00000134977B49D0"/>
+    <token id="00000134977B5B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="rhs" scope="00000134A68FDE80" type="name" varId="3" astParent="00000134977B50F0"/>
+    <token id="00000134977B50F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="^" scope="00000134A68FDE80" type="op" astParent="00000134977B5CF0" astOperand1="00000134977B5B70" astOperand2="00000134977B5C30"/>
+    <token id="00000134977B4A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="m_chopNumbers" scope="00000134A68FDE80" type="name" astParent="00000134977B5C30"/>
+    <token id="00000134977B5C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="[" scope="00000134A68FDE80" link="00000134977B4C10" astParent="00000134977B50F0" astOperand1="00000134977B4A90" astOperand2="00000134977B5150"/>
+    <token id="00000134977B5150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="m_numwidth" scope="00000134A68FDE80" type="name" astParent="00000134977B5C30"/>
+    <token id="00000134977B4C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="]" scope="00000134A68FDE80" link="00000134977B5C30"/>
+    <token id="00000134977B49D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str=")" scope="00000134A68FDE80" link="00000134977B4FD0"/>
+    <token id="00000134977B5CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="+" scope="00000134A68FDE80" type="op" isArithmeticalOp="True" astParent="00000134977B5210" astOperand1="00000134977B50F0" astOperand2="00000134977B56F0"/>
+    <token id="00000134977B56F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str="1" scope="00000134A68FDE80" type="number" isInt="True" values="00000134A8C04630" astParent="00000134977B5CF0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="92" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977B55D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="94" str="iNumeratorSign" scope="00000134A68FDE80" type="name" varId="9" variable="000001349B19D310" astParent="00000134977B4A30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B4A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="94" str="=" scope="00000134A68FDE80" type="op" isAssignmentOp="True" astOperand1="00000134977B55D0" astOperand2="00000134977B5690" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="94" str="-1" scope="00000134A68FDE80" type="number" isInt="True" values="00000134A8C046B0" astParent="00000134977B4A30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="94" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977B4C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="95" str="}" scope="00000134A68FDE80" link="00000134977B4970"/>
+    <token id="00000134977B59F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="w64Bits" scope="00000134A68FE5F0" type="name" varId="13" variable="000001349B19BD30" astParent="00000134977B5870" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B5870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="=" scope="00000134A68FE5F0" type="op" isAssignmentOp="True" astOperand1="00000134977B59F0" astOperand2="00000134977B5ED0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B5D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="temp" scope="00000134A68FE5F0" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977B5E70"/>
+    <token id="00000134977B5E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="." scope="00000134A68FE5F0" astParent="00000134977B5ED0" astOperand1="00000134977B5D50" astOperand2="00000134977B5A50"/>
+    <token id="00000134977B5A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="ToUInt64_t" scope="00000134A68FE5F0" type="name" astParent="00000134977B5E70"/>
+    <token id="00000134977B5ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str="(" scope="00000134A68FE5F0" link="00000134977B5B10" astParent="00000134977B5870" astOperand1="00000134977B5E70"/>
+    <token id="00000134977B5B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str=")" scope="00000134A68FE5F0" link="00000134977B5ED0"/>
+    <token id="00000134977B4CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="97" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B5AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="fMsb" scope="00000134A68FE5F0" type="name" varId="14" variable="000001349B19BDA0" astParent="00000134977B51B0" valueType-type="bool"/>
+    <token id="00000134977B51B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="=" scope="00000134A68FE5F0" type="op" isAssignmentOp="True" astOperand1="00000134977B5AB0" astOperand2="00000134977B6050" valueType-type="bool"/>
+    <token id="00000134977B5270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="(" scope="00000134A68FE5F0" link="00000134977B5FF0"/>
+    <token id="00000134977B5390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="w64Bits" scope="00000134A68FE5F0" type="name" varId="13" variable="000001349B19BD30" astParent="00000134977B48B0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977B48B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="&gt;&gt;" scope="00000134A68FE5F0" type="op" isArithmeticalOp="True" astParent="00000134977B6050" astOperand1="00000134977B5390" astOperand2="00000134977B5F30"/>
+    <token id="00000134977B5BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="(" scope="00000134A68FE5F0" link="00000134977B52D0"/>
+    <token id="00000134977B4D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="m_dwWordBitWidth" scope="00000134A68FE5F0" type="name" astParent="00000134977B5F30"/>
+    <token id="00000134977B5F30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="-" scope="00000134A68FE5F0" type="op" isArithmeticalOp="True" astParent="00000134977B48B0" astOperand1="00000134977B4D30" astOperand2="00000134977B5F90"/>
+    <token id="00000134977B5F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="1" scope="00000134A68FE5F0" type="number" isInt="True" values="00000134A8C04950" astParent="00000134977B5F30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B52D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str=")" scope="00000134A68FE5F0" link="00000134977B5BD0"/>
+    <token id="00000134977B5FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str=")" scope="00000134A68FE5F0" link="00000134977B5270"/>
+    <token id="00000134977B6050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="&amp;" scope="00000134A68FE5F0" type="op" values="00000134A8C04670" astParent="00000134977B51B0" astOperand1="00000134977B48B0" astOperand2="00000134977B4BB0"/>
+    <token id="00000134977B4BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str="1" scope="00000134A68FE5F0" type="number" isInt="True" values="00000134A8C04350" astParent="00000134977B6050" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B4910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="98" str=";" scope="00000134A68FE5F0"/>
+    <token id="00000134977B4D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="100" str="if" scope="00000134A68FE5F0" type="name" astParent="00000134977B4DF0"/>
+    <token id="00000134977B4DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="100" str="(" scope="00000134A68FE5F0" link="00000134977B62F0" astOperand1="00000134977B4D90" astOperand2="00000134977B4E50"/>
+    <token id="00000134977B4E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="100" str="fMsb" scope="00000134A68FE5F0" type="name" varId="14" variable="000001349B19BDA0" values="00000134A8C04D10" astParent="00000134977B4DF0" valueType-type="bool"/>
+    <token id="00000134977B62F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="100" str=")" scope="00000134A68FE5F0" link="00000134977B4DF0"/>
+    <token id="00000134977B71F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="101" str="{" scope="00000134A68FE2C0" link="00000134977B69B0"/>
+    <token id="00000134977B6350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="temp" scope="00000134A68FE2C0" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977B74F0"/>
+    <token id="00000134977B74F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="=" scope="00000134A68FE2C0" type="op" isAssignmentOp="True" astOperand1="00000134977B6350" astOperand2="00000134977B6CB0"/>
+    <token id="00000134977B6EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="(" scope="00000134A68FE2C0" link="00000134977B6D10"/>
+    <token id="00000134977B7730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="temp" scope="00000134A68FE2C0" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977B7010"/>
+    <token id="00000134977B7010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="^" scope="00000134A68FE2C0" type="op" astParent="00000134977B6CB0" astOperand1="00000134977B7730" astOperand2="00000134977B7070"/>
+    <token id="00000134977B6AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="m_chopNumbers" scope="00000134A68FE2C0" type="name" astParent="00000134977B7070"/>
+    <token id="00000134977B7070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="[" scope="00000134A68FE2C0" link="00000134977B76D0" astParent="00000134977B7010" astOperand1="00000134977B6AD0" astOperand2="00000134977B6FB0"/>
+    <token id="00000134977B6FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="m_numwidth" scope="00000134A68FE2C0" type="name" astParent="00000134977B7070"/>
+    <token id="00000134977B76D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="]" scope="00000134A68FE2C0" link="00000134977B7070"/>
+    <token id="00000134977B6D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str=")" scope="00000134A68FE2C0" link="00000134977B6EF0"/>
+    <token id="00000134977B6CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="+" scope="00000134A68FE2C0" type="op" isArithmeticalOp="True" astParent="00000134977B74F0" astOperand1="00000134977B7010" astOperand2="00000134977B64D0"/>
+    <token id="00000134977B64D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str="1" scope="00000134A68FE2C0" type="number" isInt="True" values="00000134A8C045D0" astParent="00000134977B6CB0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="102" str=";" scope="00000134A68FE2C0"/>
+    <token id="00000134977B6890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="104" str="iDenominatorSign" scope="00000134A68FE2C0" type="name" varId="10" variable="000001349B19D460" astParent="00000134977B7790" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="104" str="=" scope="00000134A68FE2C0" type="op" isAssignmentOp="True" astOperand1="00000134977B6890" astOperand2="00000134977B6F50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="104" str="-1" scope="00000134A68FE2C0" type="number" isInt="True" values="00000134A8C04390" astParent="00000134977B7790" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="104" str=";" scope="00000134A68FE2C0"/>
+    <token id="00000134977B69B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="105" str="}" scope="00000134A68FE2C0" link="00000134977B71F0"/>
+    <token id="00000134977B7190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="106" str="}" scope="00000134A68FE5F0" link="00000134977B3FB0"/>
+    <token id="00000134977B68F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str="if" scope="00000134A68FE920" type="name" astParent="00000134977B6DD0"/>
+    <token id="00000134977B6DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str="(" scope="00000134A68FE920" link="00000134977B6950" astOperand1="00000134977B68F0" astOperand2="00000134977B65F0"/>
+    <token id="00000134977B72B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str="operation" scope="00000134A68FE920" type="name" varId="1" astParent="00000134977B65F0"/>
+    <token id="00000134977B65F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str="==" scope="00000134A68FE920" type="op" isComparisonOp="True" astParent="00000134977B6DD0" astOperand1="00000134977B72B0" astOperand2="00000134977B6830" valueType-type="bool"/>
+    <token id="00000134977B6830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str="IDC_DIV" scope="00000134A68FE920" type="name" astParent="00000134977B65F0"/>
+    <token id="00000134977B6950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="108" str=")" scope="00000134A68FE920" link="00000134977B6DD0"/>
+    <token id="00000134977B7610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="109" str="{" scope="00000134A68FDF90" link="00000134977B63B0"/>
+    <token id="00000134977B6B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str="iFinalSign" scope="00000134A68FDF90" type="name" varId="11" variable="000001349B19D850" astParent="00000134977B7310" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str="=" scope="00000134A68FDF90" type="op" isAssignmentOp="True" astOperand1="00000134977B6B30" astOperand2="00000134977B6A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str="iNumeratorSign" scope="00000134A68FDF90" type="name" varId="9" variable="000001349B19D310" astParent="00000134977B6A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str="*" scope="00000134A68FDF90" type="op" isArithmeticalOp="True" astParent="00000134977B7310" astOperand1="00000134977B7670" astOperand2="00000134977B6B90" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str="iDenominatorSign" scope="00000134A68FDF90" type="name" varId="10" variable="000001349B19D460" astParent="00000134977B6A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B60B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="110" str=";" scope="00000134A68FDF90"/>
+    <token id="00000134977B6410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="111" str="result" scope="00000134A68FDF90" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B6470"/>
+    <token id="00000134977B6470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="111" str="/=" scope="00000134A68FDF90" type="op" isAssignmentOp="True" astOperand1="00000134977B6410" astOperand2="00000134977B66B0"/>
+    <token id="00000134977B66B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="111" str="temp" scope="00000134A68FDF90" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977B6470"/>
+    <token id="00000134977B6710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="111" str=";" scope="00000134A68FDF90"/>
+    <token id="00000134977B63B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="112" str="}" scope="00000134A68FDF90" link="00000134977B7610"/>
+    <token id="00000134977B6530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="113" str="else" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B6590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="114" str="{" scope="00000134A68FEA30" link="00000134977B7430"/>
+    <token id="00000134977B6BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="115" str="iFinalSign" scope="00000134A68FEA30" type="name" varId="11" variable="000001349B19D850" astParent="00000134977B77F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B77F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="115" str="=" scope="00000134A68FEA30" type="op" isAssignmentOp="True" astOperand1="00000134977B6BF0" astOperand2="00000134977B6C50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="115" str="iNumeratorSign" scope="00000134A68FEA30" type="name" varId="9" variable="000001349B19D310" astParent="00000134977B77F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="115" str=";" scope="00000134A68FEA30"/>
+    <token id="00000134977B6E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="116" str="result" scope="00000134A68FEA30" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B67D0"/>
+    <token id="00000134977B67D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="116" str="%=" scope="00000134A68FEA30" type="op" isAssignmentOp="True" astOperand1="00000134977B6E30" astOperand2="00000134977B6E90"/>
+    <token id="00000134977B6E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="116" str="temp" scope="00000134A68FEA30" type="name" varId="12" variable="000001349B19BCC0" astParent="00000134977B67D0"/>
+    <token id="00000134977B6110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="116" str=";" scope="00000134A68FEA30"/>
+    <token id="00000134977B7430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="117" str="}" scope="00000134A68FEA30" link="00000134977B6590"/>
+    <token id="00000134977B6A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="if" scope="00000134A68FE920" type="name" astParent="00000134977B70D0"/>
+    <token id="00000134977B70D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="(" scope="00000134A68FE920" link="00000134977B73D0" astOperand1="00000134977B6A10" astOperand2="00000134977B6170"/>
+    <token id="00000134977B6770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="m_fIntegerMode" scope="00000134A68FE920" type="name" astParent="00000134977B6170"/>
+    <token id="00000134977B6170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="&amp;&amp;" scope="00000134A68FE920" type="op" isLogicalOp="True" astParent="00000134977B70D0" astOperand1="00000134977B6770" astOperand2="00000134977B7490" valueType-type="bool"/>
+    <token id="00000134977B61D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="iFinalSign" scope="00000134A68FE920" type="name" varId="11" variable="000001349B19D850" values="00000134A8C043F0" astParent="00000134977B7490" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="==" scope="00000134A68FE920" type="op" isComparisonOp="True" values="00000134A8C04690" astParent="00000134977B6170" astOperand1="00000134977B61D0" astOperand2="00000134977B7370" valueType-type="bool"/>
+    <token id="00000134977B7370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str="-1" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C047F0" astParent="00000134977B7490" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B73D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="119" str=")" scope="00000134A68FE920" link="00000134977B70D0"/>
+    <token id="00000134977B7550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="120" str="{" scope="00000134A68FE810" link="00000134977B7A30"/>
+    <token id="00000134977B75B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="result" scope="00000134A68FE810" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B6230"/>
+    <token id="00000134977B6230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="=" scope="00000134A68FE810" type="op" isAssignmentOp="True" astOperand1="00000134977B75B0" astOperand2="00000134977B6290"/>
+    <token id="00000134977B6290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="-" scope="00000134A68FE810" type="op" isArithmeticalOp="True" astParent="00000134977B6230" astOperand1="00000134977B8510"/>
+    <token id="00000134977B8570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="(" scope="00000134A68FE810" link="00000134977B8930"/>
+    <token id="00000134977B8450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="Integer" scope="00000134A68FE810" type="name" astParent="00000134977B8510"/>
+    <token id="00000134977B8510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="(" scope="00000134A68FE810" link="00000134977B8030" astParent="00000134977B6290" astOperand1="00000134977B8450" astOperand2="00000134977B8330"/>
+    <token id="00000134977B8330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str="result" scope="00000134A68FE810" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B8510"/>
+    <token id="00000134977B8030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str=")" scope="00000134A68FE810" link="00000134977B8510"/>
+    <token id="00000134977B8930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str=")" scope="00000134A68FE810" link="00000134977B8570"/>
+    <token id="00000134977B84B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="121" str=";" scope="00000134A68FE810"/>
+    <token id="00000134977B7A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="122" str="}" scope="00000134A68FE810" link="00000134977B7550"/>
+    <token id="00000134977B8690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="124" str="break" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B8BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="124" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B7F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="125" str="}" scope="00000134A68FE920" link="00000134977B3BF0"/>
+    <token id="00000134977B8090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="127" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B7AF0"/>
+    <token id="00000134977B7AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="127" str="IDC_PWR" scope="000001349147A930" type="name" astParent="00000134977B8090"/>
+    <token id="00000134977B89F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="127" str=":" scope="000001349147A930"/>
+    <token id="00000134977B9470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="127" str=";" scope="000001349147A930"/>
+    <token id="00000134977B7B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B8CF0"/>
+    <token id="00000134977B8CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B7B50" astOperand2="00000134977B8F30"/>
+    <token id="00000134977B86F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="Pow" scope="000001349147A930" type="name" astParent="00000134977B8F30"/>
+    <token id="00000134977B8F30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="(" scope="000001349147A930" link="00000134977B87B0" astParent="00000134977B8CF0" astOperand1="00000134977B86F0" astOperand2="00000134977B82D0"/>
+    <token id="00000134977B8810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B82D0"/>
+    <token id="00000134977B82D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="," scope="000001349147A930" astParent="00000134977B8F30" astOperand1="00000134977B8810" astOperand2="00000134977B8870"/>
+    <token id="00000134977B8870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B82D0"/>
+    <token id="00000134977B87B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str=")" scope="000001349147A930" link="00000134977B8F30"/>
+    <token id="00000134977B8ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="128" str=";" scope="000001349147A930"/>
+    <token id="00000134977B85D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="129" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B8630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="129" str=";" scope="000001349147A930"/>
+    <token id="00000134977B7CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="131" str="case" scope="000001349147A930" type="name" astOperand1="00000134977B8750"/>
+    <token id="00000134977B8750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="131" str="IDC_ROOT" scope="000001349147A930" type="name" astParent="00000134977B7CD0"/>
+    <token id="00000134977B7970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="131" str=":" scope="000001349147A930"/>
+    <token id="00000134977BA2B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="131" str=";" scope="000001349147A930"/>
+    <token id="00000134977B8390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B88D0"/>
+    <token id="00000134977B88D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="=" scope="000001349147A930" type="op" isAssignmentOp="True" astOperand1="00000134977B8390" astOperand2="00000134977B8C90"/>
+    <token id="00000134977B8DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="Root" scope="000001349147A930" type="name" astParent="00000134977B8C90"/>
+    <token id="00000134977B8C90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="(" scope="000001349147A930" link="00000134977B80F0" astParent="00000134977B88D0" astOperand1="00000134977B8DB0" astOperand2="00000134977B7D30"/>
+    <token id="00000134977B78B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="rhs" scope="000001349147A930" type="name" varId="3" astParent="00000134977B7D30"/>
+    <token id="00000134977B7D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="," scope="000001349147A930" astParent="00000134977B8C90" astOperand1="00000134977B78B0" astOperand2="00000134977B8990"/>
+    <token id="00000134977B8990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str="result" scope="000001349147A930" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B7D30"/>
+    <token id="00000134977B80F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str=")" scope="000001349147A930" link="00000134977B8C90"/>
+    <token id="00000134977B8A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="132" str=";" scope="000001349147A930"/>
+    <token id="00000134977B81B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="133" str="break" scope="000001349147A930" type="name"/>
+    <token id="00000134977B8AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="133" str=";" scope="000001349147A930"/>
+    <token id="00000134977B8150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="134" str="}" scope="000001349147A930" link="00000134977BF7D0"/>
+    <token id="00000134977B8B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="135" str="}" scope="000001349147A710" link="00000134977BFB90"/>
+    <token id="00000134977B8210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="136" str="catch" scope="000001349147A600" type="name" astParent="00000134977B8270"/>
+    <token id="00000134977B8270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="136" str="(" scope="000001349147A600" link="00000134977B8D50" astOperand1="00000134977B8210" astOperand2="00000134977B8C30"/>
+    <token id="00000134977B8B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="136" str="uint32_t" scope="000001349147A600" type="name"/>
+    <token id="00000134977B8C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="136" str="dwErrCode" scope="000001349147A600" type="name" varId="15" variable="000001349B19D150" astParent="00000134977B8270" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B8D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="136" str=")" scope="000001349147A600" link="00000134977B8270"/>
+    <token id="00000134977B83F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="137" str="{" scope="00000134A68FEC50" link="00000134977B9050"/>
+    <token id="00000134977B8F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="138" str="DisplayError" scope="00000134A68FEC50" type="name" astParent="00000134977B8E10"/>
+    <token id="00000134977B8E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="138" str="(" scope="00000134A68FEC50" link="00000134977B8FF0" astOperand1="00000134977B8F90" astOperand2="00000134977B8E70"/>
+    <token id="00000134977B8E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="138" str="dwErrCode" scope="00000134A68FEC50" type="name" varId="15" variable="000001349B19D150" astParent="00000134977B8E10" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B8FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="138" str=")" scope="00000134A68FEC50" link="00000134977B8E10"/>
+    <token id="00000134977B7A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="138" str=";" scope="00000134A68FEC50"/>
+    <token id="00000134977B7BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="141" str="result" scope="00000134A68FEC50" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B7D90"/>
+    <token id="00000134977B7D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="141" str="=" scope="00000134A68FEC50" type="op" isAssignmentOp="True" astOperand1="00000134977B7BB0" astOperand2="00000134977B7910"/>
+    <token id="00000134977B7910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="141" str="lhs" scope="00000134A68FEC50" type="name" varId="2" astParent="00000134977B7D90"/>
+    <token id="00000134977B7DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="141" str=";" scope="00000134A68FEC50"/>
+    <token id="00000134977B9050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="142" str="}" scope="00000134A68FEC50" link="00000134977B83F0"/>
+    <token id="00000134977B79D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="144" str="return" scope="000001349147A600" type="name" astOperand1="00000134977B7C10"/>
+    <token id="00000134977B7C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="144" str="result" scope="000001349147A600" type="name" varId="4" variable="000001349B19D620" astParent="00000134977B79D0"/>
+    <token id="00000134977B7C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="144" str=";" scope="000001349147A600"/>
+    <token id="00000134977B7E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/scioper.cpp" linenr="145" str="}" scope="000001349147A600" link="00000134977BFBF0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349147AA40" type="Global"/>
+    <scope id="000001349147A600" type="Function" className="DoOperation" bodyStart="00000134977BFBF0" bodyEnd="00000134977B7E50" nestedIn="000001349147AA40">
+      <varlist>
+        <var id="000001349B19D620"/>
+      </varlist>
+    </scope>
+    <scope id="000001349147A710" type="Try" bodyStart="00000134977BFB90" bodyEnd="00000134977B8B10" nestedIn="000001349147A600"/>
+    <scope id="000001349147A930" type="Switch" bodyStart="00000134977BF7D0" bodyEnd="00000134977B8150" nestedIn="000001349147A710"/>
+    <scope id="000001349147AB50" type="Unconditional" bodyStart="00000134977B1070" bodyEnd="00000134977B2F30" nestedIn="000001349147A930">
+      <varlist>
+        <var id="000001349B19D3F0"/>
+        <var id="000001349B19D7E0"/>
+        <var id="000001349B19C4A0"/>
+      </varlist>
+    </scope>
+    <scope id="000001349147A820" type="If" bodyStart="00000134977B14F0" bodyEnd="00000134977B1010" nestedIn="000001349147AB50"/>
+    <scope id="00000134A68FE4E0" type="If" bodyStart="00000134977B15B0" bodyEnd="00000134977B2570" nestedIn="000001349147AB50">
+      <varlist>
+        <var id="000001349B19CC80"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FEB40" type="If" bodyStart="00000134977B2270" bodyEnd="00000134977B2750" nestedIn="000001349147A930"/>
+    <scope id="00000134A68FE920" type="Unconditional" bodyStart="00000134977B3BF0" bodyEnd="00000134977B7F70" nestedIn="000001349147A930">
+      <varlist>
+        <var id="000001349B19D310"/>
+        <var id="000001349B19D460"/>
+        <var id="000001349B19D850"/>
+        <var id="000001349B19BCC0"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FE5F0" type="If" bodyStart="00000134977B3FB0" bodyEnd="00000134977B7190" nestedIn="00000134A68FE920">
+      <varlist>
+        <var id="000001349B19BD30"/>
+        <var id="000001349B19BDA0"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FDE80" type="If" bodyStart="00000134977B4970" bodyEnd="00000134977B4C70" nestedIn="00000134A68FE5F0"/>
+    <scope id="00000134A68FE2C0" type="If" bodyStart="00000134977B71F0" bodyEnd="00000134977B69B0" nestedIn="00000134A68FE5F0"/>
+    <scope id="00000134A68FDF90" type="If" bodyStart="00000134977B7610" bodyEnd="00000134977B63B0" nestedIn="00000134A68FE920"/>
+    <scope id="00000134A68FEA30" type="Else" bodyStart="00000134977B6590" bodyEnd="00000134977B7430" nestedIn="00000134A68FE920"/>
+    <scope id="00000134A68FE810" type="If" bodyStart="00000134977B7550" bodyEnd="00000134977B7A30" nestedIn="00000134A68FE920"/>
+    <scope id="00000134A68FEC50" type="Catch" bodyStart="00000134977B83F0" bodyEnd="00000134977B9050" nestedIn="000001349147A600">
+      <varlist>
+        <var id="000001349B19D150"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="000001349B19BCC0" nameToken="00000134977B3710" typeStartToken="00000134977B33B0" typeEndToken="00000134977B33B0" access="Local" scope="00000134A68FE920" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19BD30" nameToken="00000134977B4010" typeStartToken="00000134977B3770" typeEndToken="00000134977B3770" access="Local" scope="00000134A68FE5F0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19BDA0" nameToken="00000134977B5E10" typeStartToken="00000134977B4F10" typeEndToken="00000134977B4F10" access="Local" scope="00000134A68FE5F0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19C4A0" nameToken="00000134977B0CB0" typeStartToken="00000134977B0AD0" typeEndToken="00000134977B0AD0" access="Local" scope="000001349147AB50" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19CC80" nameToken="00000134977B2030" typeStartToken="00000134977B1F10" typeEndToken="00000134977B1F10" access="Local" scope="00000134A68FE4E0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D150" nameToken="00000134977B8C30" typeStartToken="00000134977B8B70" typeEndToken="00000134977B8B70" access="Throw" scope="00000134A68FEC50" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D310" nameToken="00000134977B3110" typeStartToken="00000134977B34D0" typeEndToken="00000134977B34D0" access="Local" scope="00000134A68FE920" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D3F0" nameToken="00000134977B08F0" typeStartToken="00000134977B0650" typeEndToken="00000134977B0650" access="Local" scope="000001349147AB50" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D460" nameToken="00000134977B3230" typeStartToken="00000134977B9EF0" typeEndToken="00000134977B9EF0" access="Local" scope="00000134A68FE920" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D620" nameToken="00000134977BFD70" typeStartToken="00000134977BFE90" typeEndToken="00000134977BFE90" access="Local" scope="000001349147A600" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D7E0" nameToken="00000134977B12B0" typeStartToken="00000134977B0BF0" typeEndToken="00000134977B0BF0" access="Local" scope="000001349147AB50" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19D850" nameToken="00000134977B47F0" typeStartToken="00000134977BA010" typeEndToken="00000134977BA010" access="Local" scope="00000134A68FE920" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A8C04770">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C048D0">
+      <value intvalue="0" possible="true"/>
+    </values>
+    <values id="00000134A8C048B0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04570">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C048F0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04650">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C045B0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04D90">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04790">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C046F0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04270">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C043B0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C043D0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C047B0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04BD0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04630">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C046B0">
+      <value intvalue="-1" known="true"/>
+    </values>
+    <values id="00000134A8C04950">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04670">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04350">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04D10">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C045D0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04390">
+      <value intvalue="-1" known="true"/>
+    </values>
+    <values id="00000134A8C043F0">
+      <value intvalue="-1" condition-line="119" possible="true"/>
+    </values>
+    <values id="00000134A8C04690">
+      <value intvalue="1" condition-line="119" possible="true"/>
+    </values>
+    <values id="00000134A8C047F0">
+      <value intvalue="-1" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

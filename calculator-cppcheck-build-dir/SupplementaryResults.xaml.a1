@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2160740677">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class DelighterUnitToStyleConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class DelighterUnitToStyleConverter sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.h" line="20"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryResultDataTemplateSelector sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryResultDataTemplateSelector sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.h" line="37"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryResultNoOverflowStackPanel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryResultNoOverflowStackPanel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.h" line="62"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class SupplementaryResults sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class SupplementaryResults sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\Views\SupplementaryResults.xaml.h" line="69"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Convert"/>
+    <functioncall functionName="ConvertBack"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_INITIALIZATION"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_OWNER"/>
+    <functioncall functionName="DEPENDENCY_PROPERTY_WITH_DEFAULT"/>
+    <functioncall functionName="DataContext"/>
+    <functioncall functionName="GetAt"/>
+    <functioncall functionName="GetModelUnit"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="IsWhimsical"/>
+    <functioncall functionName="Lookup"/>
+    <functioncall functionName="ResourceDictionary"/>
+    <functioncall functionName="Results"/>
+    <functioncall functionName="SupplementaryResults"/>
+    <functioncall functionName="TypeName"/>
+    <functioncall functionName="Uri"/>
+    <functioncall functionName="WebHostHidden"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="isWhimsical"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="to_wstring"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

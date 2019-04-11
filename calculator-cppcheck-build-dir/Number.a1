@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3135683323">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Exp"/>
+    <functioncall functionName="Mantissa"/>
+    <functioncall functionName="Number"/>
+    <functioncall functionName="Sign"/>
+    <functioncall functionName="_createnum"/>
+    <functioncall functionName="all_of"/>
+    <functioncall functionName="back_inserter"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="cdigit"/>
+    <functioncall functionName="copy"/>
+    <functioncall functionName="digit"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="m_mantissa"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="mantissa"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="reserve"/>
+    <functioncall functionName="sign"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;Common/ExpressionCommandSerializer.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Common"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="Windows"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Storage"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="Streams"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="10" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str="_In_"/>
+    <tok fileIndex="0" linenr="10" str="DataWriter"/>
+    <tok fileIndex="0" linenr="10" str="^"/>
+    <tok fileIndex="0" linenr="10" str="dataWriter"/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="10" str=":"/>
+    <tok fileIndex="0" linenr="10" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="10" str="("/>
+    <tok fileIndex="0" linenr="10" str="dataWriter"/>
+    <tok fileIndex="0" linenr="10" str=")"/>
+    <tok fileIndex="0" linenr="11" str="{"/>
+    <tok fileIndex="0" linenr="12" str="}"/>
+    <tok fileIndex="0" linenr="14" str="void"/>
+    <tok fileIndex="0" linenr="14" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="14" str="::"/>
+    <tok fileIndex="0" linenr="14" str="Visit"/>
+    <tok fileIndex="0" linenr="14" str="("/>
+    <tok fileIndex="0" linenr="14" str="_In_"/>
+    <tok fileIndex="0" linenr="14" str="COpndCommand"/>
+    <tok fileIndex="0" linenr="14" str="&amp;"/>
+    <tok fileIndex="0" linenr="14" str="opndCmd"/>
+    <tok fileIndex="0" linenr="14" str=")"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="16" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="16" str="-&gt;"/>
+    <tok fileIndex="0" linenr="16" str="WriteBoolean"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str="opndCmd"/>
+    <tok fileIndex="0" linenr="16" str="."/>
+    <tok fileIndex="0" linenr="16" str="IsNegative"/>
+    <tok fileIndex="0" linenr="16" str="("/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str=")"/>
+    <tok fileIndex="0" linenr="16" str=";"/>
+    <tok fileIndex="0" linenr="17" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="17" str="-&gt;"/>
+    <tok fileIndex="0" linenr="17" str="WriteBoolean"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str="opndCmd"/>
+    <tok fileIndex="0" linenr="17" str="."/>
+    <tok fileIndex="0" linenr="17" str="IsDecimalPresent"/>
+    <tok fileIndex="0" linenr="17" str="("/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str=")"/>
+    <tok fileIndex="0" linenr="17" str=";"/>
+    <tok fileIndex="0" linenr="18" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="18" str="-&gt;"/>
+    <tok fileIndex="0" linenr="18" str="WriteBoolean"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="opndCmd"/>
+    <tok fileIndex="0" linenr="18" str="."/>
+    <tok fileIndex="0" linenr="18" str="IsSciFmt"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="18" str=";"/>
+    <tok fileIndex="0" linenr="20" str="auto"/>
+    <tok fileIndex="0" linenr="20" str="opndCmds"/>
+    <tok fileIndex="0" linenr="20" str="="/>
+    <tok fileIndex="0" linenr="20" str="opndCmd"/>
+    <tok fileIndex="0" linenr="20" str="."/>
+    <tok fileIndex="0" linenr="20" str="GetCommands"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="21" str="unsigned"/>
+    <tok fileIndex="0" linenr="21" str="int"/>
+    <tok fileIndex="0" linenr="21" str="opndCmdSize"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="22" str="opndCmds"/>
+    <tok fileIndex="0" linenr="22" str="-&gt;"/>
+    <tok fileIndex="0" linenr="22" str="GetSize"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="&amp;"/>
+    <tok fileIndex="0" linenr="22" str="opndCmdSize"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="23" str="-&gt;"/>
+    <tok fileIndex="0" linenr="23" str="WriteUInt32"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="opndCmdSize"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="24" str="for"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str="unsigned"/>
+    <tok fileIndex="0" linenr="24" str="int"/>
+    <tok fileIndex="0" linenr="24" str="j"/>
+    <tok fileIndex="0" linenr="24" str="="/>
+    <tok fileIndex="0" linenr="24" str="0"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="24" str="j"/>
+    <tok fileIndex="0" linenr="24" str="&lt;"/>
+    <tok fileIndex="0" linenr="24" str="opndCmdSize"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="24" str="++"/>
+    <tok fileIndex="0" linenr="24" str="j"/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="25" str="{"/>
+    <tok fileIndex="0" linenr="26" str="int"/>
+    <tok fileIndex="0" linenr="26" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="27" str="opndCmds"/>
+    <tok fileIndex="0" linenr="27" str="-&gt;"/>
+    <tok fileIndex="0" linenr="27" str="GetAt"/>
+    <tok fileIndex="0" linenr="27" str="("/>
+    <tok fileIndex="0" linenr="27" str="j"/>
+    <tok fileIndex="0" linenr="27" str=","/>
+    <tok fileIndex="0" linenr="27" str="&amp;"/>
+    <tok fileIndex="0" linenr="27" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="27" str=")"/>
+    <tok fileIndex="0" linenr="27" str=";"/>
+    <tok fileIndex="0" linenr="28" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="28" str="-&gt;"/>
+    <tok fileIndex="0" linenr="28" str="WriteInt32"/>
+    <tok fileIndex="0" linenr="28" str="("/>
+    <tok fileIndex="0" linenr="28" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="28" str=")"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="29" str="}"/>
+    <tok fileIndex="0" linenr="30" str="}"/>
+    <tok fileIndex="0" linenr="32" str="void"/>
+    <tok fileIndex="0" linenr="32" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="32" str="::"/>
+    <tok fileIndex="0" linenr="32" str="Visit"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str="_In_"/>
+    <tok fileIndex="0" linenr="32" str="CUnaryCommand"/>
+    <tok fileIndex="0" linenr="32" str="&amp;"/>
+    <tok fileIndex="0" linenr="32" str="unaryCmd"/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="33" str="{"/>
+    <tok fileIndex="0" linenr="34" str="auto"/>
+    <tok fileIndex="0" linenr="34" str="cmds"/>
+    <tok fileIndex="0" linenr="34" str="="/>
+    <tok fileIndex="0" linenr="34" str="unaryCmd"/>
+    <tok fileIndex="0" linenr="34" str="."/>
+    <tok fileIndex="0" linenr="34" str="GetCommands"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="34" str=";"/>
+    <tok fileIndex="0" linenr="35" str="unsigned"/>
+    <tok fileIndex="0" linenr="35" str="int"/>
+    <tok fileIndex="0" linenr="35" str="cmdSize"/>
+    <tok fileIndex="0" linenr="35" str=";"/>
+    <tok fileIndex="0" linenr="36" str="cmds"/>
+    <tok fileIndex="0" linenr="36" str="-&gt;"/>
+    <tok fileIndex="0" linenr="36" str="GetSize"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="&amp;"/>
+    <tok fileIndex="0" linenr="36" str="cmdSize"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="37" str="-&gt;"/>
+    <tok fileIndex="0" linenr="37" str="WriteUInt32"/>
+    <tok fileIndex="0" linenr="37" str="("/>
+    <tok fileIndex="0" linenr="37" str="cmdSize"/>
+    <tok fileIndex="0" linenr="37" str=")"/>
+    <tok fileIndex="0" linenr="37" str=";"/>
+    <tok fileIndex="0" linenr="38" str="for"/>
+    <tok fileIndex="0" linenr="38" str="("/>
+    <tok fileIndex="0" linenr="38" str="unsigned"/>
+    <tok fileIndex="0" linenr="38" str="int"/>
+    <tok fileIndex="0" linenr="38" str="j"/>
+    <tok fileIndex="0" linenr="38" str="="/>
+    <tok fileIndex="0" linenr="38" str="0"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="38" str="j"/>
+    <tok fileIndex="0" linenr="38" str="&lt;"/>
+    <tok fileIndex="0" linenr="38" str="cmdSize"/>
+    <tok fileIndex="0" linenr="38" str=";"/>
+    <tok fileIndex="0" linenr="38" str="++"/>
+    <tok fileIndex="0" linenr="38" str="j"/>
+    <tok fileIndex="0" linenr="38" str=")"/>
+    <tok fileIndex="0" linenr="39" str="{"/>
+    <tok fileIndex="0" linenr="40" str="int"/>
+    <tok fileIndex="0" linenr="40" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="40" str=";"/>
+    <tok fileIndex="0" linenr="41" str="cmds"/>
+    <tok fileIndex="0" linenr="41" str="-&gt;"/>
+    <tok fileIndex="0" linenr="41" str="GetAt"/>
+    <tok fileIndex="0" linenr="41" str="("/>
+    <tok fileIndex="0" linenr="41" str="j"/>
+    <tok fileIndex="0" linenr="41" str=","/>
+    <tok fileIndex="0" linenr="41" str="&amp;"/>
+    <tok fileIndex="0" linenr="41" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="41" str=")"/>
+    <tok fileIndex="0" linenr="41" str=";"/>
+    <tok fileIndex="0" linenr="42" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="42" str="-&gt;"/>
+    <tok fileIndex="0" linenr="42" str="WriteInt32"/>
+    <tok fileIndex="0" linenr="42" str="("/>
+    <tok fileIndex="0" linenr="42" str="eachOpndcmd"/>
+    <tok fileIndex="0" linenr="42" str=")"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="}"/>
+    <tok fileIndex="0" linenr="44" str="}"/>
+    <tok fileIndex="0" linenr="46" str="void"/>
+    <tok fileIndex="0" linenr="46" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="46" str="::"/>
+    <tok fileIndex="0" linenr="46" str="Visit"/>
+    <tok fileIndex="0" linenr="46" str="("/>
+    <tok fileIndex="0" linenr="46" str="_In_"/>
+    <tok fileIndex="0" linenr="46" str="CBinaryCommand"/>
+    <tok fileIndex="0" linenr="46" str="&amp;"/>
+    <tok fileIndex="0" linenr="46" str="binaryCmd"/>
+    <tok fileIndex="0" linenr="46" str=")"/>
+    <tok fileIndex="0" linenr="47" str="{"/>
+    <tok fileIndex="0" linenr="48" str="int"/>
+    <tok fileIndex="0" linenr="48" str="cmd"/>
+    <tok fileIndex="0" linenr="48" str="="/>
+    <tok fileIndex="0" linenr="48" str="binaryCmd"/>
+    <tok fileIndex="0" linenr="48" str="."/>
+    <tok fileIndex="0" linenr="48" str="GetCommand"/>
+    <tok fileIndex="0" linenr="48" str="("/>
+    <tok fileIndex="0" linenr="48" str=")"/>
+    <tok fileIndex="0" linenr="48" str=";"/>
+    <tok fileIndex="0" linenr="49" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="49" str="-&gt;"/>
+    <tok fileIndex="0" linenr="49" str="WriteInt32"/>
+    <tok fileIndex="0" linenr="49" str="("/>
+    <tok fileIndex="0" linenr="49" str="cmd"/>
+    <tok fileIndex="0" linenr="49" str=")"/>
+    <tok fileIndex="0" linenr="49" str=";"/>
+    <tok fileIndex="0" linenr="50" str="}"/>
+    <tok fileIndex="0" linenr="52" str="void"/>
+    <tok fileIndex="0" linenr="52" str="SerializeCommandVisitor"/>
+    <tok fileIndex="0" linenr="52" str="::"/>
+    <tok fileIndex="0" linenr="52" str="Visit"/>
+    <tok fileIndex="0" linenr="52" str="("/>
+    <tok fileIndex="0" linenr="52" str="_In_"/>
+    <tok fileIndex="0" linenr="52" str="CParentheses"/>
+    <tok fileIndex="0" linenr="52" str="&amp;"/>
+    <tok fileIndex="0" linenr="52" str="paraCmd"/>
+    <tok fileIndex="0" linenr="52" str=")"/>
+    <tok fileIndex="0" linenr="53" str="{"/>
+    <tok fileIndex="0" linenr="54" str="int"/>
+    <tok fileIndex="0" linenr="54" str="parenthesisCmd"/>
+    <tok fileIndex="0" linenr="54" str="="/>
+    <tok fileIndex="0" linenr="54" str="paraCmd"/>
+    <tok fileIndex="0" linenr="54" str="."/>
+    <tok fileIndex="0" linenr="54" str="GetCommand"/>
+    <tok fileIndex="0" linenr="54" str="("/>
+    <tok fileIndex="0" linenr="54" str=")"/>
+    <tok fileIndex="0" linenr="54" str=";"/>
+    <tok fileIndex="0" linenr="55" str="m_dataWriter"/>
+    <tok fileIndex="0" linenr="55" str="-&gt;"/>
+    <tok fileIndex="0" linenr="55" str="WriteInt32"/>
+    <tok fileIndex="0" linenr="55" str="("/>
+    <tok fileIndex="0" linenr="55" str="parenthesisCmd"/>
+    <tok fileIndex="0" linenr="55" str=")"/>
+    <tok fileIndex="0" linenr="55" str=";"/>
+    <tok fileIndex="0" linenr="56" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="5" str="#include &quot;Common/ExpressionCommandSerializer.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0000013496C3A0D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str="using" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C3A670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str="namespace" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C39650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str="CalculatorApp" scope="00000134A957D180" type="name" astParent="0000013496C3A010"/>
+    <token id="0000013496C3A010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str="::" scope="00000134A957D180" astOperand1="0000013496C39650" astOperand2="0000013496C391D0"/>
+    <token id="0000013496C391D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str="Common" scope="00000134A957D180" type="name" astParent="0000013496C3A010"/>
+    <token id="0000013496C39C50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="7" str=";" scope="00000134A957D180"/>
+    <token id="0000013496C3A3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="using" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C3A790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="namespace" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C3A7F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="Windows" scope="00000134A957D180" type="name" astParent="0000013496C3A250"/>
+    <token id="0000013496C3A250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="::" scope="00000134A957D180" astParent="0000013496C3A310" astOperand1="0000013496C3A7F0" astOperand2="0000013496C3A850"/>
+    <token id="0000013496C3A850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="Storage" scope="00000134A957D180" type="name" astParent="0000013496C3A250"/>
+    <token id="0000013496C3A310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="::" scope="00000134A957D180" astOperand1="0000013496C3A250" astOperand2="0000013496C39AD0"/>
+    <token id="0000013496C39AD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str="Streams" scope="00000134A957D180" type="name" astParent="0000013496C3A310"/>
+    <token id="0000013496C39BF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="8" str=";" scope="00000134A957D180"/>
+    <token id="0000013496C39CB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C3A8B0"/>
+    <token id="0000013496C3A8B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="::" scope="00000134A957D180" astParent="0000013496C39830" astOperand1="0000013496C39CB0" astOperand2="0000013496C3A490"/>
+    <token id="0000013496C3A490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C3A8B0"/>
+    <token id="0000013496C39830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="(" scope="00000134A957D180" link="0000013496C3A370" astParent="0000013496C3A6D0" astOperand1="0000013496C3A8B0" astOperand2="0000013496C397D0"/>
+    <token id="0000013496C394D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="DataWriter" scope="00000134A957D180" type="name" astParent="0000013496C397D0"/>
+    <token id="0000013496C397D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="^" scope="00000134A957D180" type="op" astParent="0000013496C39830" astOperand1="0000013496C394D0" astOperand2="0000013496C39890"/>
+    <token id="0000013496C39890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="dataWriter" scope="00000134A957D180" type="name" astParent="0000013496C397D0"/>
+    <token id="0000013496C3A370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str=")" scope="00000134A957D180" link="0000013496C39830"/>
+    <token id="0000013496C3A6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str=":" scope="00000134A957D180" astOperand1="0000013496C39830" astOperand2="0000013496C39170"/>
+    <token id="0000013496C39EF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="m_dataWriter" scope="00000134A957D180" type="name" astParent="0000013496C39170"/>
+    <token id="0000013496C39170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="(" scope="00000134A957D180" link="0000013496C39530" astParent="0000013496C3A6D0" astOperand1="0000013496C39EF0" astOperand2="0000013496C39770"/>
+    <token id="0000013496C39770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str="dataWriter" scope="00000134A957D180" type="name" astParent="0000013496C39170"/>
+    <token id="0000013496C39530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="10" str=")" scope="00000134A957D180" link="0000013496C39170"/>
+    <token id="0000013496C399B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="11" str="{" scope="00000134A957D8F0" link="0000013496C3A430"/>
+    <token id="0000013496C3A430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="12" str="}" scope="00000134A957D8F0" link="0000013496C399B0"/>
+    <token id="0000013496C39A10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="void" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C3A550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C3A4F0"/>
+    <token id="0000013496C3A4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="::" scope="00000134A957D180" astParent="0000013496C393B0" astOperand1="0000013496C3A550" astOperand2="0000013496C3A070"/>
+    <token id="0000013496C3A070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="Visit" scope="00000134A957D180" type="name" astParent="0000013496C3A4F0"/>
+    <token id="0000013496C393B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="(" scope="00000134A957D180" link="0000013496C3A610" astOperand1="0000013496C3A4F0" astOperand2="0000013496C39290"/>
+    <token id="0000013496C3A5B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="COpndCommand" scope="00000134A957D180" type="name" astParent="0000013496C39290"/>
+    <token id="0000013496C39290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="&amp;" scope="00000134A957D180" type="op" astParent="0000013496C393B0" astOperand1="0000013496C3A5B0" astOperand2="0000013496C39F50"/>
+    <token id="0000013496C39F50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str="opndCmd" scope="00000134A957D180" type="name" varId="1" astParent="0000013496C39290"/>
+    <token id="0000013496C3A610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="14" str=")" scope="00000134A957D180" link="0000013496C393B0"/>
+    <token id="0000013496C3A730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="15" str="{" scope="00000134A957D290" link="0000013496C2C0F0"/>
+    <token id="0000013496C3A130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="m_dataWriter" scope="00000134A957D290" type="name" astParent="0000013496C392F0"/>
+    <token id="0000013496C392F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="." scope="00000134A957D290" astParent="0000013496C3A190" astOperand1="0000013496C3A130" astOperand2="0000013496C39110" originalName="->"/>
+    <token id="0000013496C39110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="WriteBoolean" scope="00000134A957D290" type="name" astParent="0000013496C392F0"/>
+    <token id="0000013496C3A190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="(" scope="00000134A957D290" link="0000013496C39950" astOperand1="0000013496C392F0" astOperand2="0000013496C39D10"/>
+    <token id="0000013496C396B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="opndCmd" scope="00000134A957D290" type="name" varId="1" astParent="0000013496C3A1F0"/>
+    <token id="0000013496C3A1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="." scope="00000134A957D290" astParent="0000013496C39D10" astOperand1="0000013496C396B0" astOperand2="0000013496C39230"/>
+    <token id="0000013496C39230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="IsNegative" scope="00000134A957D290" type="name" astParent="0000013496C3A1F0"/>
+    <token id="0000013496C39D10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str="(" scope="00000134A957D290" link="0000013496C39DD0" astParent="0000013496C3A190" astOperand1="0000013496C3A1F0"/>
+    <token id="0000013496C39DD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str=")" scope="00000134A957D290" link="0000013496C39D10"/>
+    <token id="0000013496C39950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str=")" scope="00000134A957D290" link="0000013496C3A190"/>
+    <token id="0000013496C39410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="16" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C39710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="m_dataWriter" scope="00000134A957D290" type="name" astParent="0000013496C3A2B0"/>
+    <token id="0000013496C3A2B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="." scope="00000134A957D290" astParent="0000013496C398F0" astOperand1="0000013496C39710" astOperand2="0000013496C39470" originalName="->"/>
+    <token id="0000013496C39470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="WriteBoolean" scope="00000134A957D290" type="name" astParent="0000013496C3A2B0"/>
+    <token id="0000013496C398F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="(" scope="00000134A957D290" link="0000013496C3ABB0" astOperand1="0000013496C3A2B0" astOperand2="0000013496C395F0"/>
+    <token id="0000013496C39E90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="opndCmd" scope="00000134A957D290" type="name" varId="1" astParent="0000013496C39B30"/>
+    <token id="0000013496C39B30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="." scope="00000134A957D290" astParent="0000013496C395F0" astOperand1="0000013496C39E90" astOperand2="0000013496C39590"/>
+    <token id="0000013496C39590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="IsDecimalPresent" scope="00000134A957D290" type="name" astParent="0000013496C39B30"/>
+    <token id="0000013496C395F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str="(" scope="00000134A957D290" link="0000013496C39B90" astParent="0000013496C398F0" astOperand1="0000013496C39B30"/>
+    <token id="0000013496C39B90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str=")" scope="00000134A957D290" link="0000013496C395F0"/>
+    <token id="0000013496C3ABB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str=")" scope="00000134A957D290" link="0000013496C398F0"/>
+    <token id="0000013496C3AE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="17" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C3AF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="m_dataWriter" scope="00000134A957D290" type="name" astParent="0000013496C2AFB0"/>
+    <token id="0000013496C2AFB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="." scope="00000134A957D290" astParent="0000013496C2B1F0" astOperand1="0000013496C3AF10" astOperand2="0000013496C2B790" originalName="->"/>
+    <token id="0000013496C2B790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="WriteBoolean" scope="00000134A957D290" type="name" astParent="0000013496C2AFB0"/>
+    <token id="0000013496C2B1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="(" scope="00000134A957D290" link="0000013496C2B670" astOperand1="0000013496C2AFB0" astOperand2="0000013496C2A7D0"/>
+    <token id="0000013496C2B5B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="opndCmd" scope="00000134A957D290" type="name" varId="1" astParent="0000013496C2B010"/>
+    <token id="0000013496C2B010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="." scope="00000134A957D290" astParent="0000013496C2A7D0" astOperand1="0000013496C2B5B0" astOperand2="0000013496C2A590"/>
+    <token id="0000013496C2A590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="IsSciFmt" scope="00000134A957D290" type="name" astParent="0000013496C2B010"/>
+    <token id="0000013496C2A7D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str="(" scope="00000134A957D290" link="0000013496C2A2F0" astParent="0000013496C2B1F0" astOperand1="0000013496C2B010"/>
+    <token id="0000013496C2A2F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str=")" scope="00000134A957D290" link="0000013496C2A7D0"/>
+    <token id="0000013496C2B670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str=")" scope="00000134A957D290" link="0000013496C2B1F0"/>
+    <token id="0000013496C2AB90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="18" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2A830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="auto" scope="00000134A957D290" type="name"/>
+    <token id="0000013496C2A890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="opndCmds" scope="00000134A957D290" type="name" varId="2" variable="000001349DA51B40"/>
+    <token id="0000013496C2A950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2F090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="opndCmds" scope="00000134A957D290" type="name" varId="2" variable="000001349DA51B40" astParent="0000013496C2F0F0"/>
+    <token id="0000013496C2F0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="=" scope="00000134A957D290" type="op" isAssignmentOp="True" astOperand1="0000013496C2F090" astOperand2="0000013496C2AF50"/>
+    <token id="0000013496C2AE30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="opndCmd" scope="00000134A957D290" type="name" varId="1" astParent="0000013496C2A9B0"/>
+    <token id="0000013496C2A9B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="." scope="00000134A957D290" astParent="0000013496C2AF50" astOperand1="0000013496C2AE30" astOperand2="0000013496C2A410"/>
+    <token id="0000013496C2A410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="GetCommands" scope="00000134A957D290" type="name" astParent="0000013496C2A9B0"/>
+    <token id="0000013496C2AF50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str="(" scope="00000134A957D290" link="0000013496C2AAD0" astParent="0000013496C2F0F0" astOperand1="0000013496C2A9B0"/>
+    <token id="0000013496C2AAD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str=")" scope="00000134A957D290" link="0000013496C2AF50"/>
+    <token id="0000013496C2B850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="20" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2B070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="21" str="int" scope="00000134A957D290" type="name" isUnsigned="true"/>
+    <token id="0000013496C2B310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="21" str="opndCmdSize" scope="00000134A957D290" type="name" varId="3" variable="000001349DA42560" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2B370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="21" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2B3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="opndCmds" scope="00000134A957D290" type="name" varId="2" variable="000001349DA51B40" astParent="0000013496C2B490"/>
+    <token id="0000013496C2B490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="." scope="00000134A957D290" astParent="0000013496C2B610" astOperand1="0000013496C2B3D0" astOperand2="0000013496C2B4F0" originalName="->"/>
+    <token id="0000013496C2B4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="GetSize" scope="00000134A957D290" type="name" astParent="0000013496C2B490"/>
+    <token id="0000013496C2B610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="(" scope="00000134A957D290" link="0000013496C2CD50" astOperand1="0000013496C2B490" astOperand2="0000013496C2B6D0"/>
+    <token id="0000013496C2B6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="&amp;" scope="00000134A957D290" type="op" values="00000134A91FD660" astParent="0000013496C2B610" astOperand1="0000013496C2A350" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="0000013496C2A350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str="opndCmdSize" scope="00000134A957D290" type="name" varId="3" variable="000001349DA42560" values="00000134A91FD780" astParent="0000013496C2B6D0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str=")" scope="00000134A957D290" link="0000013496C2B610"/>
+    <token id="0000013496C2C150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="22" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2C5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str="m_dataWriter" scope="00000134A957D290" type="name" astParent="0000013496C2CC90"/>
+    <token id="0000013496C2CC90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str="." scope="00000134A957D290" astParent="0000013496C2BE50" astOperand1="0000013496C2C5D0" astOperand2="0000013496C2C9F0" originalName="->"/>
+    <token id="0000013496C2C9F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str="WriteUInt32" scope="00000134A957D290" type="name" astParent="0000013496C2CC90"/>
+    <token id="0000013496C2BE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str="(" scope="00000134A957D290" link="0000013496C2CA50" astOperand1="0000013496C2CC90" astOperand2="0000013496C2BEB0"/>
+    <token id="0000013496C2BEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str="opndCmdSize" scope="00000134A957D290" type="name" varId="3" variable="000001349DA42560" astParent="0000013496C2BE50" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str=")" scope="00000134A957D290" link="0000013496C2BE50"/>
+    <token id="0000013496C2CF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="23" str=";" scope="00000134A957D290"/>
+    <token id="0000013496C2C630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="for" scope="00000134A957D290" type="name" astParent="0000013496C2D050"/>
+    <token id="0000013496C2D050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="(" scope="00000134A957D290" link="0000013496C2CBD0" astOperand1="0000013496C2C630" astOperand2="0000013496C2BA90"/>
+    <token id="0000013496C2BD90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="int" scope="00000134A957D290" type="name" isUnsigned="true"/>
+    <token id="0000013496C2C930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="j" scope="00000134A957D290" type="name" varId="4" variable="000001349DA51050" astParent="0000013496C2BBB0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2BBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="=" scope="00000134A957D290" type="op" isAssignmentOp="True" astParent="0000013496C2BA90" astOperand1="0000013496C2C930" astOperand2="0000013496C2CB10" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="0" scope="00000134A957D290" type="number" isInt="True" values="00000134A91FD880" astParent="0000013496C2BBB0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2BA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str=";" scope="00000134A957D290" astParent="0000013496C2D050" astOperand1="0000013496C2BBB0" astOperand2="0000013496C2B910"/>
+    <token id="0000013496C2BF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="j" scope="00000134A957D290" type="name" varId="4" variable="000001349DA51050" astParent="0000013496C2CB70" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="&lt;" scope="00000134A957D290" type="op" isComparisonOp="True" astParent="0000013496C2B910" astOperand1="0000013496C2BF10" astOperand2="0000013496C2C570" valueType-type="bool"/>
+    <token id="0000013496C2C570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="opndCmdSize" scope="00000134A957D290" type="name" varId="3" variable="000001349DA42560" astParent="0000013496C2CB70" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2B910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str=";" scope="00000134A957D290" astParent="0000013496C2BA90" astOperand1="0000013496C2CB70" astOperand2="0000013496C2BDF0"/>
+    <token id="0000013496C2BDF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="++" scope="00000134A957D290" type="op" astParent="0000013496C2B910" astOperand1="0000013496C2CAB0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str="j" scope="00000134A957D290" type="name" varId="4" variable="000001349DA51050" astParent="0000013496C2BDF0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="24" str=")" scope="00000134A957D290" link="0000013496C2D050"/>
+    <token id="0000013496C2BC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="25" str="{" scope="00000134A957DA00" link="0000013496C2C330"/>
+    <token id="0000013496C2CCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="26" str="int" scope="00000134A957DA00" type="name"/>
+    <token id="0000013496C2BC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="26" str="eachOpndcmd" scope="00000134A957DA00" type="name" varId="5" variable="000001349DA41D10" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2BB50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="26" str=";" scope="00000134A957DA00"/>
+    <token id="0000013496C2BCD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="opndCmds" scope="00000134A957DA00" type="name" varId="2" variable="000001349DA51B40" astParent="0000013496C2C510"/>
+    <token id="0000013496C2C510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="." scope="00000134A957DA00" astParent="0000013496C2CE10" astOperand1="0000013496C2BCD0" astOperand2="0000013496C2CC30" originalName="->"/>
+    <token id="0000013496C2CC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="GetAt" scope="00000134A957DA00" type="name" astParent="0000013496C2C510"/>
+    <token id="0000013496C2CE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="(" scope="00000134A957DA00" link="0000013496C2C090" astOperand1="0000013496C2C510" astOperand2="0000013496C2CE70"/>
+    <token id="0000013496C2CDB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="j" scope="00000134A957DA00" type="name" varId="4" variable="000001349DA51050" astParent="0000013496C2CE70" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2CE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="," scope="00000134A957DA00" astParent="0000013496C2CE10" astOperand1="0000013496C2CDB0" astOperand2="0000013496C2CED0"/>
+    <token id="0000013496C2CED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="&amp;" scope="00000134A957DA00" type="op" values="00000134A91FD8A0" astParent="0000013496C2CE70" astOperand1="0000013496C2BF70" valueType-type="int" valueType-sign="signed" valueType-pointer="1"/>
+    <token id="0000013496C2BF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str="eachOpndcmd" scope="00000134A957DA00" type="name" varId="5" variable="000001349DA41D10" values="00000134A91FD360" astParent="0000013496C2CED0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2C090" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str=")" scope="00000134A957DA00" link="0000013496C2CE10"/>
+    <token id="0000013496C2D0B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="27" str=";" scope="00000134A957DA00"/>
+    <token id="0000013496C2BAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str="m_dataWriter" scope="00000134A957DA00" type="name" astParent="0000013496C2BFD0"/>
+    <token id="0000013496C2BFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str="." scope="00000134A957DA00" astParent="0000013496C2BD30" astOperand1="0000013496C2BAF0" astOperand2="0000013496C2B970" originalName="->"/>
+    <token id="0000013496C2B970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str="WriteInt32" scope="00000134A957DA00" type="name" astParent="0000013496C2BFD0"/>
+    <token id="0000013496C2BD30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str="(" scope="00000134A957DA00" link="0000013496C2C690" astOperand1="0000013496C2BFD0" astOperand2="0000013496C2C4B0"/>
+    <token id="0000013496C2C4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str="eachOpndcmd" scope="00000134A957DA00" type="name" varId="5" variable="000001349DA41D10" astParent="0000013496C2BD30" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2C690" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str=")" scope="00000134A957DA00" link="0000013496C2BD30"/>
+    <token id="0000013496C2C030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="28" str=";" scope="00000134A957DA00"/>
+    <token id="0000013496C2C330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="29" str="}" scope="00000134A957DA00" link="0000013496C2BC10"/>
+    <token id="0000013496C2C0F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="30" str="}" scope="00000134A957D290" link="0000013496C3A730"/>
+    <token id="0000013496C2C1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="void" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C2C390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C2CF30"/>
+    <token id="0000013496C2CF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="::" scope="00000134A957D180" astParent="0000013496C2C8D0" astOperand1="0000013496C2C390" astOperand2="0000013496C2C750"/>
+    <token id="0000013496C2C750" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="Visit" scope="00000134A957D180" type="name" astParent="0000013496C2CF30"/>
+    <token id="0000013496C2C8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="(" scope="00000134A957D180" link="0000013496C2B9D0" astOperand1="0000013496C2CF30" astOperand2="0000013496C2C210"/>
+    <token id="0000013496C2CFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="CUnaryCommand" scope="00000134A957D180" type="name" astParent="0000013496C2C210"/>
+    <token id="0000013496C2C210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="&amp;" scope="00000134A957D180" type="op" astParent="0000013496C2C8D0" astOperand1="0000013496C2CFF0" astOperand2="0000013496C2C810"/>
+    <token id="0000013496C2C810" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str="unaryCmd" scope="00000134A957D180" type="name" varId="6" astParent="0000013496C2C210"/>
+    <token id="0000013496C2B9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="32" str=")" scope="00000134A957D180" link="0000013496C2C8D0"/>
+    <token id="0000013496C2C450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="33" str="{" scope="00000134A957D3A0" link="0000013496C2D9B0"/>
+    <token id="0000013496C2BA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="auto" scope="00000134A957D3A0" type="name"/>
+    <token id="0000013496C2C270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="cmds" scope="00000134A957D3A0" type="name" varId="7" variable="000001349DA41DF0"/>
+    <token id="0000013496C2C2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str=";" scope="00000134A957D3A0"/>
+    <token id="0000013496C2F1B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="cmds" scope="00000134A957D3A0" type="name" varId="7" variable="000001349DA41DF0" astParent="0000013496C2F3F0"/>
+    <token id="0000013496C2F3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="=" scope="00000134A957D3A0" type="op" isAssignmentOp="True" astOperand1="0000013496C2F1B0" astOperand2="0000013496C2C990"/>
+    <token id="0000013496C2C3F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="unaryCmd" scope="00000134A957D3A0" type="name" varId="6" astParent="0000013496C2C7B0"/>
+    <token id="0000013496C2C7B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="." scope="00000134A957D3A0" astParent="0000013496C2C990" astOperand1="0000013496C2C3F0" astOperand2="0000013496C2C870"/>
+    <token id="0000013496C2C870" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="GetCommands" scope="00000134A957D3A0" type="name" astParent="0000013496C2C7B0"/>
+    <token id="0000013496C2C990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str="(" scope="00000134A957D3A0" link="0000013496C2DBF0" astParent="0000013496C2F3F0" astOperand1="0000013496C2C7B0"/>
+    <token id="0000013496C2DBF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str=")" scope="00000134A957D3A0" link="0000013496C2C990"/>
+    <token id="0000013496C2D4D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="34" str=";" scope="00000134A957D3A0"/>
+    <token id="0000013496C2E550" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="35" str="int" scope="00000134A957D3A0" type="name" isUnsigned="true"/>
+    <token id="0000013496C2D6B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="35" str="cmdSize" scope="00000134A957D3A0" type="name" varId="8" variable="000001349DA41D80" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D5F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="35" str=";" scope="00000134A957D3A0"/>
+    <token id="0000013496C2E490" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="cmds" scope="00000134A957D3A0" type="name" varId="7" variable="000001349DA41DF0" astParent="0000013496C2E0D0"/>
+    <token id="0000013496C2E0D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="." scope="00000134A957D3A0" astParent="0000013496C2E370" astOperand1="0000013496C2E490" astOperand2="0000013496C2E8B0" originalName="->"/>
+    <token id="0000013496C2E8B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="GetSize" scope="00000134A957D3A0" type="name" astParent="0000013496C2E0D0"/>
+    <token id="0000013496C2E370" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="(" scope="00000134A957D3A0" link="0000013496C2E130" astOperand1="0000013496C2E0D0" astOperand2="0000013496C2DA70"/>
+    <token id="0000013496C2DA70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="&amp;" scope="00000134A957D3A0" type="op" values="00000134A91FD3E0" astParent="0000013496C2E370" astOperand1="0000013496C2D110" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="0000013496C2D110" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str="cmdSize" scope="00000134A957D3A0" type="name" varId="8" variable="000001349DA41D80" values="00000134A91FD720" astParent="0000013496C2DA70" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2E130" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str=")" scope="00000134A957D3A0" link="0000013496C2E370"/>
+    <token id="0000013496C2D170" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="36" str=";" scope="00000134A957D3A0"/>
+    <token id="0000013496C2E310" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str="m_dataWriter" scope="00000134A957D3A0" type="name" astParent="0000013496C2E3D0"/>
+    <token id="0000013496C2E3D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str="." scope="00000134A957D3A0" astParent="0000013496C2D590" astOperand1="0000013496C2E310" astOperand2="0000013496C2DB90" originalName="->"/>
+    <token id="0000013496C2DB90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str="WriteUInt32" scope="00000134A957D3A0" type="name" astParent="0000013496C2E3D0"/>
+    <token id="0000013496C2D590" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str="(" scope="00000134A957D3A0" link="0000013496C2D950" astOperand1="0000013496C2E3D0" astOperand2="0000013496C2E430"/>
+    <token id="0000013496C2E430" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str="cmdSize" scope="00000134A957D3A0" type="name" varId="8" variable="000001349DA41D80" astParent="0000013496C2D590" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D950" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str=")" scope="00000134A957D3A0" link="0000013496C2D590"/>
+    <token id="0000013496C2D1D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="37" str=";" scope="00000134A957D3A0"/>
+    <token id="0000013496C2D2F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="for" scope="00000134A957D3A0" type="name" astParent="0000013496C2DA10"/>
+    <token id="0000013496C2DA10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="(" scope="00000134A957D3A0" link="0000013496C2D890" astOperand1="0000013496C2D2F0" astOperand2="0000013496C2DD10"/>
+    <token id="0000013496C2E670" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="int" scope="00000134A957D3A0" type="name" isUnsigned="true"/>
+    <token id="0000013496C2D290" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="j" scope="00000134A957D3A0" type="name" varId="9" variable="000001349DA51590" astParent="0000013496C2DC50" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2DC50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="=" scope="00000134A957D3A0" type="op" isAssignmentOp="True" astParent="0000013496C2DD10" astOperand1="0000013496C2D290" astOperand2="0000013496C2D470" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D470" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="0" scope="00000134A957D3A0" type="number" isInt="True" values="00000134A91FD2E0" astParent="0000013496C2DC50" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2DD10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str=";" scope="00000134A957D3A0" astParent="0000013496C2DA10" astOperand1="0000013496C2DC50" astOperand2="0000013496C2E250"/>
+    <token id="0000013496C2E4F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="j" scope="00000134A957D3A0" type="name" varId="9" variable="000001349DA51590" astParent="0000013496C2E610" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2E610" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="&lt;" scope="00000134A957D3A0" type="op" isComparisonOp="True" astParent="0000013496C2E250" astOperand1="0000013496C2E4F0" astOperand2="0000013496C2E6D0" valueType-type="bool"/>
+    <token id="0000013496C2E6D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="cmdSize" scope="00000134A957D3A0" type="name" varId="8" variable="000001349DA41D80" astParent="0000013496C2E610" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2E250" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str=";" scope="00000134A957D3A0" astParent="0000013496C2DD10" astOperand1="0000013496C2E610" astOperand2="0000013496C2E730"/>
+    <token id="0000013496C2E730" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="++" scope="00000134A957D3A0" type="op" astParent="0000013496C2E250" astOperand1="0000013496C2D650" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D650" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str="j" scope="00000134A957D3A0" type="name" varId="9" variable="000001349DA51590" astParent="0000013496C2E730" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D890" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="38" str=")" scope="00000134A957D3A0" link="0000013496C2DA10"/>
+    <token id="0000013496C2E850" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="39" str="{" scope="00000134A957D6D0" link="0000013496C2D8F0"/>
+    <token id="0000013496C2D350" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="40" str="int" scope="00000134A957D6D0" type="name"/>
+    <token id="0000013496C2D710" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="40" str="eachOpndcmd" scope="00000134A957D6D0" type="name" varId="10" variable="000001349DA429C0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2D230" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="40" str=";" scope="00000134A957D6D0"/>
+    <token id="0000013496C2D3B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="cmds" scope="00000134A957D6D0" type="name" varId="7" variable="000001349DA41DF0" astParent="0000013496C2DCB0"/>
+    <token id="0000013496C2DCB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="." scope="00000134A957D6D0" astParent="0000013496C2D530" astOperand1="0000013496C2D3B0" astOperand2="0000013496C2DDD0" originalName="->"/>
+    <token id="0000013496C2DDD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="GetAt" scope="00000134A957D6D0" type="name" astParent="0000013496C2DCB0"/>
+    <token id="0000013496C2D530" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="(" scope="00000134A957D6D0" link="0000013496C2D7D0" astOperand1="0000013496C2DCB0" astOperand2="0000013496C2D770"/>
+    <token id="0000013496C2DB30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="j" scope="00000134A957D6D0" type="name" varId="9" variable="000001349DA51590" astParent="0000013496C2D770" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="0000013496C2D770" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="," scope="00000134A957D6D0" astParent="0000013496C2D530" astOperand1="0000013496C2DB30" astOperand2="0000013496C2D410"/>
+    <token id="0000013496C2D410" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="&amp;" scope="00000134A957D6D0" type="op" values="00000134A91FD200" astParent="0000013496C2D770" astOperand1="0000013496C2E790" valueType-type="int" valueType-sign="signed" valueType-pointer="1"/>
+    <token id="0000013496C2E790" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str="eachOpndcmd" scope="00000134A957D6D0" type="name" varId="10" variable="000001349DA429C0" values="00000134A91FD380" astParent="0000013496C2D410" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2D7D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str=")" scope="00000134A957D6D0" link="0000013496C2D530"/>
+    <token id="0000013496C2E2B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="41" str=";" scope="00000134A957D6D0"/>
+    <token id="0000013496C2E7F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str="m_dataWriter" scope="00000134A957D6D0" type="name" astParent="0000013496C2DD70"/>
+    <token id="0000013496C2DD70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str="." scope="00000134A957D6D0" astParent="0000013496C2DE30" astOperand1="0000013496C2E7F0" astOperand2="0000013496C2E190" originalName="->"/>
+    <token id="0000013496C2E190" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str="WriteInt32" scope="00000134A957D6D0" type="name" astParent="0000013496C2DD70"/>
+    <token id="0000013496C2DE30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str="(" scope="00000134A957D6D0" link="0000013496C2D830" astOperand1="0000013496C2DD70" astOperand2="0000013496C2E1F0"/>
+    <token id="0000013496C2E1F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str="eachOpndcmd" scope="00000134A957D6D0" type="name" varId="10" variable="000001349DA429C0" astParent="0000013496C2DE30" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2D830" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str=")" scope="00000134A957D6D0" link="0000013496C2DE30"/>
+    <token id="0000013496C2DE90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="42" str=";" scope="00000134A957D6D0"/>
+    <token id="0000013496C2D8F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="43" str="}" scope="00000134A957D6D0" link="0000013496C2E850"/>
+    <token id="0000013496C2D9B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="44" str="}" scope="00000134A957D3A0" link="0000013496C2C450"/>
+    <token id="0000013496C2DEF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="void" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C2DF50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C2DFB0"/>
+    <token id="0000013496C2DFB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="::" scope="00000134A957D180" astParent="0000013496C2E070" astOperand1="0000013496C2DF50" astOperand2="0000013496C2E010"/>
+    <token id="0000013496C2E010" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="Visit" scope="00000134A957D180" type="name" astParent="0000013496C2DFB0"/>
+    <token id="0000013496C2E070" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="(" scope="00000134A957D180" link="0000013496C2EEB0" astOperand1="0000013496C2DFB0" astOperand2="0000013496C2FD50"/>
+    <token id="0000013496C2ECD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="CBinaryCommand" scope="00000134A957D180" type="name" astParent="0000013496C2FD50"/>
+    <token id="0000013496C2FD50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="&amp;" scope="00000134A957D180" type="op" astParent="0000013496C2E070" astOperand1="0000013496C2ECD0" astOperand2="0000013496C2FDB0"/>
+    <token id="0000013496C2FDB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str="binaryCmd" scope="00000134A957D180" type="name" varId="11" astParent="0000013496C2FD50"/>
+    <token id="0000013496C2EEB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="46" str=")" scope="00000134A957D180" link="0000013496C2E070"/>
+    <token id="0000013496C2EE50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="47" str="{" scope="00000134A957DB10" link="0000013496C2F210"/>
+    <token id="0000013496C2FC90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="int" scope="00000134A957DB10" type="name"/>
+    <token id="0000013496C2F8D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="cmd" scope="00000134A957DB10" type="name" varId="12" variable="000001349DA42A30" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C300B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str=";" scope="00000134A957DB10"/>
+    <token id="0000013496C2F450" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="cmd" scope="00000134A957DB10" type="name" varId="12" variable="000001349DA42A30" astParent="0000013496C2F4B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2F4B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="=" scope="00000134A957DB10" type="op" isAssignmentOp="True" astOperand1="0000013496C2F450" astOperand2="0000013496C2F930" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2FB70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="binaryCmd" scope="00000134A957DB10" type="name" varId="11" astParent="0000013496C2F270"/>
+    <token id="0000013496C2F270" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="." scope="00000134A957DB10" astParent="0000013496C2F930" astOperand1="0000013496C2FB70" astOperand2="0000013496C2E910"/>
+    <token id="0000013496C2E910" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="GetCommand" scope="00000134A957DB10" type="name" astParent="0000013496C2F270"/>
+    <token id="0000013496C2F930" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str="(" scope="00000134A957DB10" link="0000013496C2E970" astParent="0000013496C2F4B0" astOperand1="0000013496C2F270"/>
+    <token id="0000013496C2E970" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str=")" scope="00000134A957DB10" link="0000013496C2F930"/>
+    <token id="0000013496C2FB10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="48" str=";" scope="00000134A957DB10"/>
+    <token id="0000013496C2FBD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str="m_dataWriter" scope="00000134A957DB10" type="name" astParent="0000013496C2F390"/>
+    <token id="0000013496C2F390" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str="." scope="00000134A957DB10" astParent="0000013496C2FC30" astOperand1="0000013496C2FBD0" astOperand2="0000013496C2ED90" originalName="->"/>
+    <token id="0000013496C2ED90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str="WriteInt32" scope="00000134A957DB10" type="name" astParent="0000013496C2F390"/>
+    <token id="0000013496C2FC30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str="(" scope="00000134A957DB10" link="0000013496C2E9D0" astOperand1="0000013496C2F390" astOperand2="0000013496C2F150"/>
+    <token id="0000013496C2F150" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str="cmd" scope="00000134A957DB10" type="name" varId="12" variable="000001349DA42A30" astParent="0000013496C2FC30" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2E9D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str=")" scope="00000134A957DB10" link="0000013496C2FC30"/>
+    <token id="0000013496C2EAF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="49" str=";" scope="00000134A957DB10"/>
+    <token id="0000013496C2F210" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="50" str="}" scope="00000134A957DB10" link="0000013496C2EE50"/>
+    <token id="0000013496C2FE70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="void" scope="00000134A957D180" type="name"/>
+    <token id="0000013496C2F2D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="SerializeCommandVisitor" scope="00000134A957D180" type="name" astParent="0000013496C2F330"/>
+    <token id="0000013496C2F330" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="::" scope="00000134A957D180" astParent="0000013496C2FA50" astOperand1="0000013496C2F2D0" astOperand2="0000013496C2FCF0"/>
+    <token id="0000013496C2FCF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="Visit" scope="00000134A957D180" type="name" astParent="0000013496C2F330"/>
+    <token id="0000013496C2FA50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="(" scope="00000134A957D180" link="0000013496C2EF10" astOperand1="0000013496C2F330" astOperand2="0000013496C2F5D0"/>
+    <token id="0000013496C2FF90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="CParentheses" scope="00000134A957D180" type="name" astParent="0000013496C2F5D0"/>
+    <token id="0000013496C2F5D0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="&amp;" scope="00000134A957D180" type="op" astParent="0000013496C2FA50" astOperand1="0000013496C2FF90" astOperand2="0000013496C30050"/>
+    <token id="0000013496C30050" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str="paraCmd" scope="00000134A957D180" type="name" varId="13" astParent="0000013496C2F5D0"/>
+    <token id="0000013496C2EF10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="52" str=")" scope="00000134A957D180" link="0000013496C2FA50"/>
+    <token id="0000013496C2F6F0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="53" str="{" scope="00000134A957D7E0" link="0000013496C2F030"/>
+    <token id="0000013496C2F990" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="int" scope="00000134A957D7E0" type="name"/>
+    <token id="0000013496C2EBB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="parenthesisCmd" scope="00000134A957D7E0" type="name" varId="14" variable="000001349DA41530" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2FE10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str=";" scope="00000134A957D7E0"/>
+    <token id="0000013496C2F510" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="parenthesisCmd" scope="00000134A957D7E0" type="name" varId="14" variable="000001349DA41530" astParent="0000013496C2F630" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2F630" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="=" scope="00000134A957D7E0" type="op" isAssignmentOp="True" astOperand1="0000013496C2F510" astOperand2="0000013496C2F570" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2EA90" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="paraCmd" scope="00000134A957D7E0" type="name" varId="13" astParent="0000013496C2EF70"/>
+    <token id="0000013496C2EF70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="." scope="00000134A957D7E0" astParent="0000013496C2F570" astOperand1="0000013496C2EA90" astOperand2="0000013496C2FED0"/>
+    <token id="0000013496C2FED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="GetCommand" scope="00000134A957D7E0" type="name" astParent="0000013496C2EF70"/>
+    <token id="0000013496C2F570" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str="(" scope="00000134A957D7E0" link="0000013496C2EA30" astParent="0000013496C2F630" astOperand1="0000013496C2EF70"/>
+    <token id="0000013496C2EA30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str=")" scope="00000134A957D7E0" link="0000013496C2F570"/>
+    <token id="0000013496C2EFD0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="54" str=";" scope="00000134A957D7E0"/>
+    <token id="0000013496C2FAB0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str="m_dataWriter" scope="00000134A957D7E0" type="name" astParent="0000013496C2FF30"/>
+    <token id="0000013496C2FF30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str="." scope="00000134A957D7E0" astParent="0000013496C2FFF0" astOperand1="0000013496C2FAB0" astOperand2="0000013496C2EC10" originalName="->"/>
+    <token id="0000013496C2EC10" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str="WriteInt32" scope="00000134A957D7E0" type="name" astParent="0000013496C2FF30"/>
+    <token id="0000013496C2FFF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str="(" scope="00000134A957D7E0" link="0000013496C2EB50" astOperand1="0000013496C2FF30" astOperand2="0000013496C2EC70"/>
+    <token id="0000013496C2EC70" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str="parenthesisCmd" scope="00000134A957D7E0" type="name" varId="14" variable="000001349DA41530" astParent="0000013496C2FFF0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0000013496C2EB50" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str=")" scope="00000134A957D7E0" link="0000013496C2FFF0"/>
+    <token id="0000013496C2ED30" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="55" str=";" scope="00000134A957D7E0"/>
+    <token id="0000013496C2F030" file="C:/sample repositories/calculator-master/src/CalcViewModel/Common/ExpressionCommandSerializer.cpp" linenr="56" str="}" scope="00000134A957D7E0" link="0000013496C2F6F0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134A957D180" type="Global"/>
+    <scope id="00000134A957D8F0" type="Function" className="SerializeCommandVisitor" bodyStart="0000013496C399B0" bodyEnd="0000013496C3A430" nestedIn="00000134A957D180"/>
+    <scope id="00000134A957D290" type="Function" className="Visit" bodyStart="0000013496C3A730" bodyEnd="0000013496C2C0F0" nestedIn="00000134A957D180">
+      <varlist>
+        <var id="000001349DA51B40"/>
+        <var id="000001349DA42560"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A957DA00" type="For" bodyStart="0000013496C2BC10" bodyEnd="0000013496C2C330" nestedIn="00000134A957D290">
+      <varlist>
+        <var id="000001349DA51050"/>
+        <var id="000001349DA41D10"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A957D3A0" type="Function" className="Visit" bodyStart="0000013496C2C450" bodyEnd="0000013496C2D9B0" nestedIn="00000134A957D180">
+      <varlist>
+        <var id="000001349DA41DF0"/>
+        <var id="000001349DA41D80"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A957D6D0" type="For" bodyStart="0000013496C2E850" bodyEnd="0000013496C2D8F0" nestedIn="00000134A957D3A0">
+      <varlist>
+        <var id="000001349DA51590"/>
+        <var id="000001349DA429C0"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A957DB10" type="Function" className="Visit" bodyStart="0000013496C2EE50" bodyEnd="0000013496C2F210" nestedIn="00000134A957D180">
+      <varlist>
+        <var id="000001349DA42A30"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A957D7E0" type="Function" className="Visit" bodyStart="0000013496C2F6F0" bodyEnd="0000013496C2F030" nestedIn="00000134A957D180">
+      <varlist>
+        <var id="000001349DA41530"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="000001349DA41530" nameToken="0000013496C2EBB0" typeStartToken="0000013496C2F990" typeEndToken="0000013496C2F990" access="Local" scope="00000134A957D7E0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA41D10" nameToken="0000013496C2BC70" typeStartToken="0000013496C2CCF0" typeEndToken="0000013496C2CCF0" access="Local" scope="00000134A957DA00" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA41D80" nameToken="0000013496C2D6B0" typeStartToken="0000013496C2E550" typeEndToken="0000013496C2E550" access="Local" scope="00000134A957D3A0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA41DF0" nameToken="0000013496C2C270" typeStartToken="0000013496C2BA30" typeEndToken="0000013496C2BA30" access="Local" scope="00000134A957D3A0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42560" nameToken="0000013496C2B310" typeStartToken="0000013496C2B070" typeEndToken="0000013496C2B070" access="Local" scope="00000134A957D290" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA429C0" nameToken="0000013496C2D710" typeStartToken="0000013496C2D350" typeEndToken="0000013496C2D350" access="Local" scope="00000134A957D6D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA42A30" nameToken="0000013496C2F8D0" typeStartToken="0000013496C2FC90" typeEndToken="0000013496C2FC90" access="Local" scope="00000134A957DB10" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA51050" nameToken="0000013496C2C930" typeStartToken="0000013496C2BD90" typeEndToken="0000013496C2BD90" access="Local" scope="00000134A957DA00" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA51590" nameToken="0000013496C2D290" typeStartToken="0000013496C2E670" typeEndToken="0000013496C2E670" access="Local" scope="00000134A957D6D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349DA51B40" nameToken="0000013496C2A890" typeStartToken="0000013496C2A830" typeEndToken="0000013496C2A830" access="Local" scope="00000134A957D290" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A91FD660">
+      <value lifetime="0000013496C2B310" possible="true"/>
+    </values>
+    <values id="00000134A91FD780">
+      <value uninit="1" known="true"/>
+    </values>
+    <values id="00000134A91FD880">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FD8A0">
+      <value lifetime="0000013496C2BC70" possible="true"/>
+    </values>
+    <values id="00000134A91FD360">
+      <value uninit="1" known="true"/>
+    </values>
+    <values id="00000134A91FD3E0">
+      <value lifetime="0000013496C2D6B0" possible="true"/>
+    </values>
+    <values id="00000134A91FD720">
+      <value uninit="1" known="true"/>
+    </values>
+    <values id="00000134A91FD2E0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FD200">
+      <value lifetime="0000013496C2D710" possible="true"/>
+    </values>
+    <values id="00000134A91FD380">
+      <value uninit="1" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2764403849">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class WindowFrameService sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\AboutFlyout.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\WindowFrameService.h" line="10"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class App sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\AboutFlyout.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\App.xaml.h" line="25"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class AboutFlyout sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class AboutFlyout sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\AboutFlyout.xaml.cpp" file="C:\sample repositories\calculator-master\src\Calculator\AboutFlyout.xaml.h" line="10"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="AboutFlyout"/>
+    <functioncall functionName="Data"/>
+    <functioncall functionName="Focus"/>
+    <functioncall functionName="GetInstance"/>
+    <functioncall functionName="GetLanguage"/>
+    <functioncall functionName="GetLocalizedString"/>
+    <functioncall functionName="GetResourceString"/>
+    <functioncall functionName="GetViewId"/>
+    <functioncall functionName="InitializeComponent"/>
+    <functioncall functionName="LaunchUriAsync"/>
+    <functioncall functionName="LogAboutFlyoutOpened"/>
+    <functioncall functionName="Programmatic"/>
+    <functioncall functionName="RemoveWindowFromMap"/>
+    <functioncall functionName="Revision"/>
+    <functioncall functionName="SetVersionString"/>
+    <functioncall functionName="String"/>
+    <functioncall functionName="Uri"/>
+    <functioncall functionName="Version"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="frameService"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="internal"/>
+    <functioncall functionName="m_frameOpenedInWindow"/>
+    <functioncall functionName="m_frameService"/>
+    <functioncall functionName="m_parent"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="success"/>
+    <functioncall functionName="to_wstring"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="846171174">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class MemorySlot sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class MemorySlot sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignStandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignStandardCalculatorViewModel.h" line="12"/>
+        </error>
+        <error id="class_X_Y" severity="information" msg="The code &apos;class StandardCalculatorViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class StandardCalculatorViewModel sealed :&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignStandardCalculatorViewModel.cpp" file="C:\sample repositories\calculator-master\src\Calculator\DesignData\DesignStandardCalculatorViewModel.h" line="33"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="Append"/>
+    <functioncall functionName="ButtonPressed"/>
+    <functioncall functionName="COMMAND_FOR_METHOD"/>
+    <functioncall functionName="DegreeButtonContent"/>
+    <functioncall functionName="DisplayStringExpression"/>
+    <functioncall functionName="DisplayValue"/>
+    <functioncall functionName="IsMemoryEmpty"/>
+    <functioncall functionName="MemorizedNumbers"/>
+    <functioncall functionName="MemorySlot"/>
+    <functioncall functionName="OBSERVABLE_OBJECT"/>
+    <functioncall functionName="OBSERVABLE_PROPERTY_RW"/>
+    <functioncall functionName="OnButtonPressed"/>
+    <functioncall functionName="PressedButtons"/>
+    <functioncall functionName="SlotPosition"/>
+    <functioncall functionName="SlotValue"/>
+    <functioncall functionName="String"/>
+    <functioncall functionName="Vector"/>
+    <functioncall functionName="_itow_s"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="m_DegreeButtonContent"/>
+    <functioncall functionName="m_DisplayStringExpression"/>
+    <functioncall functionName="m_DisplayValue"/>
+    <functioncall functionName="m_IsMemoryEmpty"/>
+    <functioncall functionName="m_SlotPosition"/>
+    <functioncall functionName="m_SlotValue"/>
+    <functioncall functionName="slotPosition"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="wzi"/>
+  </FileInfo>
+</analyzerinfo>

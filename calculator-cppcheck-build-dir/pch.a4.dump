@@ -1,0 +1,763 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h"/>
+    <file index="3" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h"/>
+    <file index="4" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="//"/>
+    <tok fileIndex="0" linenr="5" str="// pch.cpp"/>
+    <tok fileIndex="0" linenr="6" str="// Include the standard header and generate the precompiled header."/>
+    <tok fileIndex="0" linenr="7" str="//"/>
+    <tok fileIndex="0" linenr="9" str="#"/>
+    <tok fileIndex="0" linenr="9" str="include"/>
+    <tok fileIndex="0" linenr="9" str="&quot;pch.h&quot;"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.cpp" linenr="9" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="6" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="7" str="#include &quot;CalcViewModel/Common/CalculatorButtonUser.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="11" str="#define StandardModePrecision 16"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="12" str="#define ScientificModePrecision 32"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="13" str="#define ProgrammerModePrecision 64"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="30" str="#define VERIFY_THROWS_EXPECTEDEXCEPTION(__operation, __exception) { bool __exceptionHit = false; try { __operation; } catch(__exception) { __exceptionHit = true; } if (!__exceptionHit) { Assert::Fail(L&quot;Expected exception was not caught&quot;); } }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="48" str="#define VERIFY_IS_NULL(__operation, ...) { Assert::IsTrue(nullptr == __operation, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="53" str="#define VERIFY_IS_NOT_NULL(__operation, ...) { Assert::IsTrue(nullptr != __operation, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="58" str="#define VERIFY_IS_LESS_THAN(__expectedLess, __expectedGreater, ...) { Assert::IsTrue(__expectedLess &lt; __expectedGreater, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="63" str="#define VERIFY_IS_GREATER_THAN(__expectedGreater, __expectedLess, ...) { Assert::IsTrue(__expectedGreater &gt; __expectedLess, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="68" str="#define VERIFY_ARE_EQUAL(__f1, __f2, ...) { Assert::IsTrue(__f1 == __f2, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="73" str="#define VERIFY_ARE_NOT_EQUAL(__f1, __f2, ...) { Assert::IsTrue(__f1 != __f2, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="78" str="#define VERIFY_IS_TRUE(__operation, ...) { Assert::IsTrue(__operation, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="83" str="#define VERIFY_IS_FALSE(__operation, ...) { Assert::IsFalse(__operation, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="88" str="#define VERIFY_IS_LESS_THAN_OR_EQUAL(__expectedLess, __expectedGreater, ...) { Assert::IsTrue(__expectedLess &lt;= __expectedGreater, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="93" str="#define VERIFY_IS_GREATER_THAN_OR_EQUAL(__expectedGreater, __expectedLess, ...) { Assert::IsTrue(__expectedGreater &gt;= __expectedLess, __VA_ARGS__); }"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="6" str="#include &quot;CalcViewModel/DataLoaders/ICurrencyHttpClient.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="9" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="11" str="#include &quot;UnitTestApp.g.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="12" str="#include &quot;CalcViewModel/DateCalculatorViewModel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="13" str="#include &quot;CalcViewModel/StandardCalculatorViewModel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="14" str="#include &quot;CalcViewModel/UnitConverterViewModel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="15" str="#include &quot;CalcViewModel/MemoryItemViewModel.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="9" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="11" str="#ifndef WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="12" str="#define WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="13" str="#endif"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="17" str="#define NOMINMAX"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="19" str="#define UNIT_TESTS"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="21" str="#include &lt;windows.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="22" str="#include &lt;collection.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="23" str="#include &lt;ppltasks.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="24" str="#include &lt;assert.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="25" str="#include &lt;concrt.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="26" str="#include &lt;string&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="27" str="#include &lt;bitset&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="28" str="#include &lt;memory&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="29" str="#include &lt;vector&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="30" str="#include &lt;map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="31" str="#include &lt;list&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="32" str="#include &lt;stack&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="33" str="#include &lt;deque&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="34" str="#include &lt;regex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="35" str="#include &lt;concurrent_vector.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="36" str="#include &lt;experimental/resumable&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="37" str="#include &lt;pplawait.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="38" str="#include &lt;unordered_map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="39" str="#include &lt;mutex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="40" str="#include &lt;locale&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="41" str="#include &lt;sal.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="42" str="#include &lt;sstream&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="45" str="#include &quot;winrt/base.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="46" str="#include &quot;winrt/Windows.Foundation.Diagnostics.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="47" str="#include &quot;winrt/Windows.Globalization.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="48" str="#include &quot;winrt/Windows.Globalization.DateTimeFormatting.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="49" str="#include &quot;winrt/Windows.System.UserProfile.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="81" str="#include &quot;CalcManager/CalculatorVector.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="82" str="#include &quot;CalcManager/ExpressionCommand.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="83" str="#include &quot;CalcManager/CalculatorResource.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="84" str="#include &quot;CalcManager/CalculatorManager.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="85" str="#include &quot;CalcManager/UnitConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="88" str="#include &quot;CalcViewModel/Common/DelegateCommand.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="89" str="#include &quot;CalcViewModel/Common/Utils.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="90" str="#include &quot;CalcViewModel/Common/MyVirtualKey.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="91" str="#include &quot;CalcViewModel/Common/NavCategory.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="92" str="#include &quot;CalcViewModel/Common/CalculatorButtonUser.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="93" str="#include &quot;CalcViewModel/Common/NetworkManager.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="95" str="#include &quot;Mocks/CurrencyHttpClient.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="96" str="#include &quot;Helpers.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="98" str="#include &quot;UnitTestApp.xaml.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A13441D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1327970" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="CalculatorApp" scope="000001349177E3A0" type="name" astParent="00000134A13281B0"/>
+    <token id="00000134A13281B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="{" scope="000001349177E3A0" link="00000134A1336070" astOperand1="00000134A1327970" astOperand2="00000134A1328E10"/>
+    <token id="00000134A13363D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1328210" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="Common" scope="000001349177E3A0" type="name" astParent="00000134A1328E10"/>
+    <token id="00000134A1328E10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="{" scope="000001349177D6E0" link="00000134A1335EF0" astParent="00000134A13281B0" astOperand1="00000134A1328210"/>
+    <token id="00000134A1335EF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="}" scope="000001349177D6E0" link="00000134A1328E10"/>
+    <token id="00000134A1336070" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h" linenr="77" str="}" scope="000001349177E3A0" link="00000134A13281B0"/>
+    <token id="00000134A13289F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="8" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1329050" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="8" str="CalculatorApp" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1328270" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="9" str="{" scope="000001349177E290" link="00000134A1332770"/>
+    <token id="00000134A13282D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="10" str="namespace" scope="000001349177E290" type="name"/>
+    <token id="00000134A13280F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="10" str="DataLoaders" scope="000001349177E290" type="name"/>
+    <token id="00000134A1327F10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="11" str="{" scope="000001349177CA20" link="00000134A1332410"/>
+    <token id="00000134A1328E70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="12" str="class" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1327C10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="12" str="CurrencyHttpClient" scope="000001349177CA20" type="name" type-scope="000001349177E4B0"/>
+    <token id="00000134A1328ED0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="12" str=":" scope="000001349177CA20"/>
+    <token id="00000134A1328390" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="12" str="public" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1327C70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="12" str="ICurrencyHttpClient" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1328A50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="13" str="{" scope="000001349177E4B0" link="00000134A132B2D0"/>
+    <token id="00000134A1328C90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="14" str="public:" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A1327CD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="15" str="CurrencyHttpClient" scope="000001349177E4B0" type="name" function="00000134A213E4E0" astParent="00000134A13290B0"/>
+    <token id="00000134A13290B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="15" str="(" scope="000001349177E4B0" link="00000134A1327B50" astOperand1="00000134A1327CD0"/>
+    <token id="00000134A1327B50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="15" str=")" scope="000001349177E4B0" link="00000134A13290B0"/>
+    <token id="00000134A1327910" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="15" str=";" scope="000001349177E4B0"/>
+    <token id="00000134A1327D90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="static" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A1327E50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A13283F0"/>
+    <token id="00000134A13283F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="::" scope="000001349177E4B0" astParent="00000134A13284B0" astOperand1="00000134A1327E50" astOperand2="00000134A1328090"/>
+    <token id="00000134A1328090" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="String" scope="000001349177E4B0" type="name" astParent="00000134A13283F0"/>
+    <token id="00000134A13284B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="^" scope="000001349177E4B0" type="op" astOperand1="00000134A13283F0" astOperand2="00000134A1327F70"/>
+    <token id="00000134A1327EB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="GetRawStaticDataResponse" scope="000001349177E4B0" type="name" astParent="00000134A1327F70"/>
+    <token id="00000134A1327F70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str="(" scope="000001349177E4B0" link="00000134A1327FD0" astParent="00000134A13284B0" astOperand1="00000134A1327EB0"/>
+    <token id="00000134A1327FD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str=")" scope="000001349177E4B0" link="00000134A1327F70"/>
+    <token id="00000134A1328150" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="17" str=";" scope="000001349177E4B0"/>
+    <token id="00000134A1328510" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="static" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A1329650" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A1329350"/>
+    <token id="00000134A1329350" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="::" scope="000001349177E4B0" astParent="00000134A1329290" astOperand1="00000134A1329650" astOperand2="00000134A132A850"/>
+    <token id="00000134A132A850" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="String" scope="000001349177E4B0" type="name" astParent="00000134A1329350"/>
+    <token id="00000134A1329290" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="^" scope="000001349177E4B0" type="op" astOperand1="00000134A1329350" astOperand2="00000134A132A610"/>
+    <token id="00000134A1329A70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="GetRawAllRatiosDataResponse" scope="000001349177E4B0" type="name" astParent="00000134A132A610"/>
+    <token id="00000134A132A610" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str="(" scope="000001349177E4B0" link="00000134A13299B0" astParent="00000134A1329290" astOperand1="00000134A1329A70"/>
+    <token id="00000134A13299B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str=")" scope="000001349177E4B0" link="00000134A132A610"/>
+    <token id="00000134A13297D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="18" str=";" scope="000001349177E4B0"/>
+    <token id="00000134A1329470" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="void" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A1329830" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="SetSourceCurrencyCode" scope="000001349177E4B0" type="name" function="00000134A213D6D0" astParent="00000134A13293B0"/>
+    <token id="00000134A13293B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="(" scope="000001349177E4B0" link="00000134A1329FB0" astOperand1="00000134A1329830" astOperand2="00000134A132A2B0" valueType-type="void"/>
+    <token id="00000134A1329950" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A132A7F0"/>
+    <token id="00000134A132A7F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="::" scope="000001349177E4B0" astParent="00000134A132A2B0" astOperand1="00000134A1329950" astOperand2="00000134A1329D10"/>
+    <token id="00000134A1329D10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="String" scope="000001349177E4B0" type="name" astParent="00000134A132A7F0"/>
+    <token id="00000134A132A2B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="^" scope="000001349177E4B0" type="op" astParent="00000134A13293B0" astOperand1="00000134A132A7F0" astOperand2="00000134A1329170"/>
+    <token id="00000134A1329170" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="sourceCurrencyCode" scope="000001349177E4B0" type="name" astParent="00000134A132A2B0"/>
+    <token id="00000134A1329FB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str=")" scope="000001349177E4B0" link="00000134A13293B0"/>
+    <token id="00000134A13295F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="override" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A13292F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="{" scope="000001349177D080" link="00000134A1329530"/>
+    <token id="00000134A1329530" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="21" str="}" scope="000001349177D080" link="00000134A13292F0"/>
+    <token id="00000134A132A310" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="void" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A1329410" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="SetResponseLanguage" scope="000001349177E4B0" type="name" function="00000134A213E180" astParent="00000134A1329590"/>
+    <token id="00000134A1329590" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="(" scope="000001349177E4B0" link="00000134A132A190" astOperand1="00000134A1329410" astOperand2="00000134A13294D0" valueType-type="void"/>
+    <token id="00000134A132A010" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A1329A10"/>
+    <token id="00000134A1329A10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="::" scope="000001349177E4B0" astParent="00000134A13294D0" astOperand1="00000134A132A010" astOperand2="00000134A1329D70"/>
+    <token id="00000134A1329D70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="String" scope="000001349177E4B0" type="name" astParent="00000134A1329A10"/>
+    <token id="00000134A13294D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="^" scope="000001349177E4B0" type="op" astParent="00000134A1329590" astOperand1="00000134A1329A10" astOperand2="00000134A132A670"/>
+    <token id="00000134A132A670" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="responseLanguage" scope="000001349177E4B0" type="name" astParent="00000134A13294D0"/>
+    <token id="00000134A132A190" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str=")" scope="000001349177E4B0" link="00000134A1329590"/>
+    <token id="00000134A132A0D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="override" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A132A3D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="{" scope="000001349177D5D0" link="00000134A1329890"/>
+    <token id="00000134A1329890" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="22" str="}" scope="000001349177D5D0" link="00000134A132A3D0"/>
+    <token id="00000134A1329EF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="virtual" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A132A070" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Windows" scope="000001349177E4B0" type="name" astParent="00000134A1329110"/>
+    <token id="00000134A1329110" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A132A370" astOperand1="00000134A132A070" astOperand2="00000134A1329CB0"/>
+    <token id="00000134A1329CB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Foundation" scope="000001349177E4B0" type="name" astParent="00000134A1329110"/>
+    <token id="00000134A132A370" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A1329DD0" astOperand1="00000134A1329110" astOperand2="00000134A1329B30"/>
+    <token id="00000134A1329B30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="IAsyncOperationWithProgress" scope="000001349177E4B0" type="name" astParent="00000134A132A370"/>
+    <token id="00000134A1329DD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="&lt;" scope="000001349177E4B0" type="op" isComparisonOp="True" astParent="00000134A1329B90" astOperand1="00000134A132A370" astOperand2="00000134A132A790" valueType-type="bool"/>
+    <token id="00000134A1329E30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A132A790"/>
+    <token id="00000134A132A790" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A1329DD0" astOperand1="00000134A1329E30" astOperand2="00000134A1329AD0"/>
+    <token id="00000134A1329AD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="String" scope="000001349177E4B0" type="name" astParent="00000134A132A790"/>
+    <token id="00000134A1329B90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="^" scope="000001349177E4B0" type="op" astParent="00000134A1329BF0" astOperand2="00000134A1329DD0"/>
+    <token id="00000134A13298F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="," scope="000001349177E4B0" astOperand2="00000134A1329C50"/>
+    <token id="00000134A1329710" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Windows" scope="000001349177E4B0" type="name" astParent="00000134A132A6D0"/>
+    <token id="00000134A132A6D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A13296B0" astOperand1="00000134A1329710" astOperand2="00000134A1329E90"/>
+    <token id="00000134A1329E90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Web" scope="000001349177E4B0" type="name" astParent="00000134A132A6D0"/>
+    <token id="00000134A13296B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A1329F50" astOperand1="00000134A132A6D0" astOperand2="00000134A132A430"/>
+    <token id="00000134A132A430" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="Http" scope="000001349177E4B0" type="name" astParent="00000134A13296B0"/>
+    <token id="00000134A1329F50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="::" scope="000001349177E4B0" astParent="00000134A1329BF0" astOperand1="00000134A13296B0" astOperand2="00000134A1329770"/>
+    <token id="00000134A1329770" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="HttpProgress" scope="000001349177E4B0" type="name" astParent="00000134A1329F50"/>
+    <token id="00000134A1329BF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="&gt;" scope="000001349177E4B0" type="op" isComparisonOp="True" astParent="00000134A1329C50" astOperand1="00000134A1329B90" astOperand2="00000134A1329F50" valueType-type="bool"/>
+    <token id="00000134A1329C50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="^" scope="000001349177E4B0" type="op" astParent="00000134A13298F0" astOperand1="00000134A1329BF0" astOperand2="00000134A132A130"/>
+    <token id="00000134A132A1F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="GetCurrencyMetadata" scope="000001349177E4B0" type="name" astParent="00000134A132A130"/>
+    <token id="00000134A132A130" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="(" scope="000001349177E4B0" link="00000134A132A250" astParent="00000134A1329C50" astOperand1="00000134A132A1F0"/>
+    <token id="00000134A132A250" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str=")" scope="000001349177E4B0" link="00000134A132A130"/>
+    <token id="00000134A132A490" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str="override" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A132A4F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="24" str=";" scope="000001349177E4B0"/>
+    <token id="00000134A13291D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="virtual" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A132A5B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Windows" scope="000001349177E4B0" type="name" astParent="00000134A132A550"/>
+    <token id="00000134A132A550" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132A8B0" astOperand1="00000134A132A5B0" astOperand2="00000134A132A730"/>
+    <token id="00000134A132A730" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Foundation" scope="000001349177E4B0" type="name" astParent="00000134A132A550"/>
+    <token id="00000134A132A8B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132AD30" astOperand1="00000134A132A550" astOperand2="00000134A1329230"/>
+    <token id="00000134A1329230" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="IAsyncOperationWithProgress" scope="000001349177E4B0" type="name" astParent="00000134A132A8B0"/>
+    <token id="00000134A132AD30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="&lt;" scope="000001349177E4B0" type="op" isComparisonOp="True" astParent="00000134A132ACD0" astOperand1="00000134A132A8B0" astOperand2="00000134A132B0F0" valueType-type="bool"/>
+    <token id="00000134A132ADF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Platform" scope="000001349177E4B0" type="name" astParent="00000134A132B0F0"/>
+    <token id="00000134A132B0F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132AD30" astOperand1="00000134A132ADF0" astOperand2="00000134A132AA90"/>
+    <token id="00000134A132AA90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="String" scope="000001349177E4B0" type="name" astParent="00000134A132B0F0"/>
+    <token id="00000134A132ACD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="^" scope="000001349177E4B0" type="op" astParent="00000134A132AC70" astOperand2="00000134A132AD30"/>
+    <token id="00000134A132B390" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="," scope="000001349177E4B0" astOperand2="00000134A132B150"/>
+    <token id="00000134A132AAF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Windows" scope="000001349177E4B0" type="name" astParent="00000134A132B750"/>
+    <token id="00000134A132B750" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132B210" astOperand1="00000134A132AAF0" astOperand2="00000134A132B870"/>
+    <token id="00000134A132B870" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Web" scope="000001349177E4B0" type="name" astParent="00000134A132B750"/>
+    <token id="00000134A132B210" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132B7B0" astOperand1="00000134A132B750" astOperand2="00000134A132AE50"/>
+    <token id="00000134A132AE50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="Http" scope="000001349177E4B0" type="name" astParent="00000134A132B210"/>
+    <token id="00000134A132B7B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="::" scope="000001349177E4B0" astParent="00000134A132AC70" astOperand1="00000134A132B210" astOperand2="00000134A132C0B0"/>
+    <token id="00000134A132C0B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="HttpProgress" scope="000001349177E4B0" type="name" astParent="00000134A132B7B0"/>
+    <token id="00000134A132AC70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="&gt;" scope="000001349177E4B0" type="op" isComparisonOp="True" astParent="00000134A132B150" astOperand1="00000134A132ACD0" astOperand2="00000134A132B7B0" valueType-type="bool"/>
+    <token id="00000134A132B150" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="^" scope="000001349177E4B0" type="op" astParent="00000134A132B390" astOperand1="00000134A132AC70" astOperand2="00000134A132B270"/>
+    <token id="00000134A132B1B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="GetCurrencyRatios" scope="000001349177E4B0" type="name" astParent="00000134A132B270"/>
+    <token id="00000134A132B270" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="(" scope="000001349177E4B0" link="00000134A132BCF0" astParent="00000134A132B150" astOperand1="00000134A132B1B0"/>
+    <token id="00000134A132BCF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str=")" scope="000001349177E4B0" link="00000134A132B270"/>
+    <token id="00000134A132B930" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str="override" scope="000001349177E4B0" type="name"/>
+    <token id="00000134A132BD50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="25" str=";" scope="000001349177E4B0"/>
+    <token id="00000134A132B2D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="27" str="}" scope="000001349177E4B0" link="00000134A1328A50"/>
+    <token id="00000134A132BDB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="27" str=";" scope="000001349177CA20"/>
+    <token id="00000134A132A970" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str="public" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132AB50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str="ref" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B330" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str="class" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132ABB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str="MockAsyncOperationWithProgress" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B6F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str="sealed" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132BC30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="29" str=":" scope="000001349177CA20"/>
+    <token id="00000134A132AC10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="public" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B810" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132AEB0"/>
+    <token id="00000134A132AEB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20" astParent="00000134A132AF10" astOperand1="00000134A132B810" astOperand2="00000134A132AD90"/>
+    <token id="00000134A132AD90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132AEB0"/>
+    <token id="00000134A132AF10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20" astOperand1="00000134A132AEB0" astOperand2="00000134A132B4B0"/>
+    <token id="00000134A132B4B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="IAsyncOperationWithProgress" scope="000001349177CA20" type="name" astParent="00000134A132AF10"/>
+    <token id="00000134A132AF70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="&lt;" scope="000001349177CA20" link="00000134A132B510"/>
+    <token id="00000134A132AFD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Platform" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B8D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132B3F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="String" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B570" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="^" scope="000001349177CA20" type="op"/>
+    <token id="00000134A132B030" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="," scope="000001349177CA20"/>
+    <token id="00000134A132B990" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Windows" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B090" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132BE10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Web" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B9F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132BB10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="Http" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132A910" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132B450" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="HttpProgress" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132B510" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="30" str="&gt;" scope="000001349177CA20" link="00000134A132AF70"/>
+    <token id="00000134A132B5D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="31" str="{" scope="000001349177CA20" link="00000134A13329B0"/>
+    <token id="00000134A132B630" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="32" str="public:" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132BA50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="MockAsyncOperationWithProgress" scope="000001349177CA20" type="name" function="00000134A213ED50" astParent="00000134A132BAB0"/>
+    <token id="00000134A132BAB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="(" scope="000001349177CA20" link="00000134A132BF30" astOperand1="00000134A132BA50" astOperand2="00000134A132BE70"/>
+    <token id="00000134A132BB70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A132BBD0"/>
+    <token id="00000134A132BBD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="::" scope="000001349177CA20" astParent="00000134A132BE70" astOperand1="00000134A132BB70" astOperand2="00000134A132BC90"/>
+    <token id="00000134A132BC90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="String" scope="000001349177CA20" type="name" astParent="00000134A132BBD0"/>
+    <token id="00000134A132BE70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="^" scope="000001349177CA20" type="op" astParent="00000134A132BAB0" astOperand1="00000134A132BBD0" astOperand2="00000134A132BED0"/>
+    <token id="00000134A132BED0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str="result" scope="000001349177CA20" type="name" astParent="00000134A132BE70"/>
+    <token id="00000134A132BF30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str=")" scope="000001349177CA20" link="00000134A132BAB0"/>
+    <token id="00000134A132BF90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="33" str=";" scope="000001349177CA20"/>
+    <token id="00000134A132BFF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132C050" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="property" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132A9D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132AA30"/>
+    <token id="00000134A132AA30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="::" scope="000001349177CA20" astParent="00000134A132D190" astOperand1="00000134A132A9D0" astOperand2="00000134A132C4D0"/>
+    <token id="00000134A132C4D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132AA30"/>
+    <token id="00000134A132D190" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="::" scope="000001349177CA20" astParent="00000134A132C7D0" astOperand1="00000134A132AA30" astOperand2="00000134A132D1F0"/>
+    <token id="00000134A132D070" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="HResult" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D1F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="36" str="ErrorCode" scope="000001349177CA20" type="name" astParent="00000134A132D190"/>
+    <token id="00000134A132C7D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="37" str="{" scope="000001349177CA20" link="00000134A132C350" astOperand1="00000134A132D190" astOperand2="00000134A132C770"/>
+    <token id="00000134A132D610" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132CC50"/>
+    <token id="00000134A132CC50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="::" scope="000001349177CA20" astParent="00000134A132D430" astOperand1="00000134A132D610" astOperand2="00000134A132CEF0"/>
+    <token id="00000134A132CEF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132CC50"/>
+    <token id="00000134A132D430" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="::" scope="000001349177CA20" astParent="00000134A132C770" astOperand1="00000134A132CC50" astOperand2="00000134A132CF50"/>
+    <token id="00000134A132C1D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="HResult" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132CF50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="get" scope="000001349177CA20" type="name" function="00000134A213DAC0" astParent="00000134A132D430"/>
+    <token id="00000134A132C770" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str="(" scope="000001349177CA20" link="00000134A132C410" astParent="00000134A132C7D0" astOperand1="00000134A132D430"/>
+    <token id="00000134A132C410" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str=")" scope="000001349177CA20" link="00000134A132C770"/>
+    <token id="00000134A132D670" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="38" str=";" scope="000001349177CA20"/>
+    <token id="00000134A132C350" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="39" str="}" scope="000001349177CA20" link="00000134A132C7D0"/>
+    <token id="00000134A132C530" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="41" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132C5F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="41" str="property" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132C8F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="41" str="int" scope="000001349177CA20" type="name" isUnsigned="true"/>
+    <token id="00000134A132C590" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="41" str="Id" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132CB90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="42" str="{" scope="000001349177CA20" link="00000134A132D490"/>
+    <token id="00000134A132C2F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="int" scope="000001349177CA20" type="name" isUnsigned="true"/>
+    <token id="00000134A132D0D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="get" scope="000001349177CA20" type="name" function="00000134A213DAC0" astParent="00000134A132CA10"/>
+    <token id="00000134A132CA10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="(" scope="000001349177CA20" link="00000134A132C650" values="00000134A9203BE0" astOperand1="00000134A132D0D0"/>
+    <token id="00000134A132C650" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str=")" scope="000001349177CA20" link="00000134A132CA10"/>
+    <token id="00000134A132D010" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="{" scope="000001349177E5C0" link="00000134A132D130"/>
+    <token id="00000134A132D8B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="return" scope="000001349177E5C0" type="name" astOperand1="00000134A132C470"/>
+    <token id="00000134A132C470" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="128u" scope="000001349177E5C0" type="number" isInt="True" values="00000134A9203A40" astParent="00000134A132D8B0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134A132C950" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str=";" scope="000001349177E5C0"/>
+    <token id="00000134A132D130" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="43" str="}" scope="000001349177E5C0" link="00000134A132D010"/>
+    <token id="00000134A132D490" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="44" str="}" scope="000001349177CA20" link="00000134A132CB90"/>
+    <token id="00000134A132D250" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D850" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="property" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132C3B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132C230"/>
+    <token id="00000134A132C230" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="::" scope="000001349177CA20" astParent="00000134A132C830" astOperand1="00000134A132C3B0" astOperand2="00000134A132C170"/>
+    <token id="00000134A132C170" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132C230"/>
+    <token id="00000134A132C830" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="::" scope="000001349177CA20" astParent="00000134A132D2B0" astOperand1="00000134A132C230" astOperand2="00000134A132D6D0"/>
+    <token id="00000134A132CE90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="AsyncStatus" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D6D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="46" str="Status" scope="000001349177CA20" type="name" astParent="00000134A132C830"/>
+    <token id="00000134A132D2B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="47" str="{" scope="000001349177CA20" link="00000134A132D5B0" astOperand1="00000134A132C830" astOperand2="00000134A132CD70"/>
+    <token id="00000134A132CBF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132C9B0"/>
+    <token id="00000134A132C9B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="::" scope="000001349177CA20" astParent="00000134A132C710" astOperand1="00000134A132CBF0" astOperand2="00000134A132C6B0"/>
+    <token id="00000134A132C6B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132C9B0"/>
+    <token id="00000134A132C710" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="::" scope="000001349177CA20" astParent="00000134A132CD70" astOperand1="00000134A132C9B0" astOperand2="00000134A132CA70"/>
+    <token id="00000134A132D310" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="AsyncStatus" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132CA70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="get" scope="000001349177CA20" type="name" function="00000134A213E450" astParent="00000134A132C710"/>
+    <token id="00000134A132CD70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="(" scope="000001349177CA20" link="00000134A132C890" astParent="00000134A132D2B0" astOperand1="00000134A132C710"/>
+    <token id="00000134A132C890" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str=")" scope="000001349177CA20" link="00000134A132CD70"/>
+    <token id="00000134A132D370" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="{" scope="000001349177D190" link="00000134A132CE30"/>
+    <token id="00000134A132CAD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="return" scope="000001349177D190" type="name" astOperand1="00000134A132CCB0"/>
+    <token id="00000134A132D550" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="Windows" scope="000001349177D190" type="name" astParent="00000134A132D3D0"/>
+    <token id="00000134A132D3D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="::" scope="000001349177D190" astParent="00000134A132C110" astOperand1="00000134A132D550" astOperand2="00000134A132D4F0"/>
+    <token id="00000134A132D4F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="Foundation" scope="000001349177D190" type="name" astParent="00000134A132D3D0"/>
+    <token id="00000134A132C110" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="::" scope="000001349177D190" astParent="00000134A132CCB0" astOperand1="00000134A132D3D0" astOperand2="00000134A132CB30"/>
+    <token id="00000134A132CB30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="AsyncStatus" scope="000001349177D190" type="name" astParent="00000134A132C110"/>
+    <token id="00000134A132CCB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="::" scope="000001349177D190" astParent="00000134A132CAD0" astOperand1="00000134A132C110" astOperand2="00000134A132CD10"/>
+    <token id="00000134A132CD10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="Completed" scope="000001349177D190" type="name" astParent="00000134A132CCB0"/>
+    <token id="00000134A132CDD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str=";" scope="000001349177D190"/>
+    <token id="00000134A132CE30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="48" str="}" scope="000001349177D190" link="00000134A132D370"/>
+    <token id="00000134A132D5B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="49" str="}" scope="000001349177CA20" link="00000134A132D2B0"/>
+    <token id="00000134A132D730" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D790" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="void" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D7F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="Cancel" scope="000001349177CA20" type="name" function="00000134A213E210" astParent="00000134A132D9D0"/>
+    <token id="00000134A132D9D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="(" scope="000001349177CA20" link="00000134A132E510" astOperand1="00000134A132D7F0" valueType-type="void"/>
+    <token id="00000134A132E510" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str=")" scope="000001349177CA20" link="00000134A132D9D0"/>
+    <token id="00000134A132E330" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="{" scope="000001349177CB30" link="00000134A132DA30"/>
+    <token id="00000134A132DA30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="51" str="}" scope="000001349177CB30" link="00000134A132E330"/>
+    <token id="00000134A132DBB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132E5D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="void" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132DA90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="Close" scope="000001349177CA20" type="name" function="00000134A213F020" astParent="00000134A132ED50"/>
+    <token id="00000134A132ED50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="(" scope="000001349177CA20" link="00000134A132E210" astOperand1="00000134A132DA90" valueType-type="void"/>
+    <token id="00000134A132E210" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str=")" scope="000001349177CA20" link="00000134A132ED50"/>
+    <token id="00000134A132ECF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="{" scope="000001349177DD40" link="00000134A132E030"/>
+    <token id="00000134A132E030" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="52" str="}" scope="000001349177DD40" link="00000134A132ECF0"/>
+    <token id="00000134A132E570" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132D970" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="property" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132EED0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132DCD0"/>
+    <token id="00000134A132DCD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132E9F0" astOperand1="00000134A132EED0" astOperand2="00000134A132E1B0"/>
+    <token id="00000134A132E1B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132DCD0"/>
+    <token id="00000134A132E9F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132DAF0" astOperand1="00000134A132DCD0" astOperand2="00000134A132E630"/>
+    <token id="00000134A132E630" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="AsyncOperationProgressHandler" scope="000001349177CA20" type="name" astParent="00000134A132E9F0"/>
+    <token id="00000134A132DAF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="&lt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A132EE10" astOperand1="00000134A132E9F0" astOperand2="00000134A132DF70" valueType-type="bool"/>
+    <token id="00000134A132E750" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A132DF70"/>
+    <token id="00000134A132DF70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132DAF0" astOperand1="00000134A132E750" astOperand2="00000134A132DC10"/>
+    <token id="00000134A132DC10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="String" scope="000001349177CA20" type="name" astParent="00000134A132DF70"/>
+    <token id="00000134A132EE10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="^" scope="000001349177CA20" type="op" astParent="00000134A132E7B0" astOperand2="00000134A132DAF0"/>
+    <token id="00000134A132DB50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="," scope="000001349177CA20" astOperand2="00000134A132E870"/>
+    <token id="00000134A132DD30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132DDF0"/>
+    <token id="00000134A132DDF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132DC70" astOperand1="00000134A132DD30" astOperand2="00000134A132E0F0"/>
+    <token id="00000134A132E0F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Web" scope="000001349177CA20" type="name" astParent="00000134A132DDF0"/>
+    <token id="00000134A132DC70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132E390" astOperand1="00000134A132DDF0" astOperand2="00000134A132DD90"/>
+    <token id="00000134A132DD90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Http" scope="000001349177CA20" type="name" astParent="00000134A132DC70"/>
+    <token id="00000134A132E390" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="::" scope="000001349177CA20" astParent="00000134A132E7B0" astOperand1="00000134A132DC70" astOperand2="00000134A132DE50"/>
+    <token id="00000134A132DE50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="HttpProgress" scope="000001349177CA20" type="name" astParent="00000134A132E390"/>
+    <token id="00000134A132E7B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="&gt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A132EF30" astOperand1="00000134A132EE10" astOperand2="00000134A132E390" valueType-type="bool"/>
+    <token id="00000134A132E870" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="^" scope="000001349177CA20" type="op" astParent="00000134A132DB50" astOperand2="00000134A132DEB0"/>
+    <token id="00000134A132E270" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="56" str="Progress" scope="000001349177CA20" type="name" astParent="00000134A132E8D0"/>
+    <token id="00000134A132DEB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="57" str="{" scope="000001349177CA20" link="00000134A132F3B0" astParent="00000134A132E870" astOperand2="00000134A132EF30"/>
+    <token id="00000134A132E810" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132F0B0"/>
+    <token id="00000134A132F0B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132E150" astOperand1="00000134A132E810" astOperand2="00000134A132DF10"/>
+    <token id="00000134A132DF10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132F0B0"/>
+    <token id="00000134A132E150" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132E3F0" astOperand1="00000134A132F0B0" astOperand2="00000134A132E2D0"/>
+    <token id="00000134A132E2D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="AsyncOperationProgressHandler" scope="000001349177CA20" type="name" astParent="00000134A132E150"/>
+    <token id="00000134A132E3F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="&lt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A132E8D0" astOperand1="00000134A132E150" astOperand2="00000134A132E450" valueType-type="bool"/>
+    <token id="00000134A132DFD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A132E450"/>
+    <token id="00000134A132E450" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132E3F0" astOperand1="00000134A132DFD0" astOperand2="00000134A132E930"/>
+    <token id="00000134A132E930" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="String" scope="000001349177CA20" type="name" astParent="00000134A132E450"/>
+    <token id="00000134A132E8D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="^" scope="000001349177CA20" type="op" astParent="00000134A132EAB0" astOperand1="00000134A132E270" astOperand2="00000134A132E3F0"/>
+    <token id="00000134A132EF30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="," scope="000001349177CA20" astParent="00000134A132DEB0" astOperand1="00000134A132E7B0" astOperand2="00000134A132EB10"/>
+    <token id="00000134A132E690" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132E090"/>
+    <token id="00000134A132E090" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132E990" astOperand1="00000134A132E690" astOperand2="00000134A132E6F0"/>
+    <token id="00000134A132E6F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Web" scope="000001349177CA20" type="name" astParent="00000134A132E090"/>
+    <token id="00000134A132E990" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132EDB0" astOperand1="00000134A132E090" astOperand2="00000134A132EA50"/>
+    <token id="00000134A132EA50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="Http" scope="000001349177CA20" type="name" astParent="00000134A132E990"/>
+    <token id="00000134A132EDB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="::" scope="000001349177CA20" astParent="00000134A132EAB0" astOperand1="00000134A132E990" astOperand2="00000134A132EF90"/>
+    <token id="00000134A132EF90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="HttpProgress" scope="000001349177CA20" type="name" astParent="00000134A132EDB0"/>
+    <token id="00000134A132EAB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="&gt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A132EB10" astOperand1="00000134A132E8D0" astOperand2="00000134A132EDB0" valueType-type="bool"/>
+    <token id="00000134A132EB10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="^" scope="000001349177CA20" type="op" astParent="00000134A132EF30" astOperand1="00000134A132EAB0" astOperand2="00000134A132F050"/>
+    <token id="00000134A132EFF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="get" scope="000001349177CA20" type="name" function="00000134A213DAC0" astParent="00000134A132F050"/>
+    <token id="00000134A132F050" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="(" scope="000001349177CA20" link="00000134A132D910" values="00000134A9203CA0" astParent="00000134A132EB10" astOperand1="00000134A132EFF0"/>
+    <token id="00000134A132D910" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str=")" scope="000001349177CA20" link="00000134A132F050"/>
+    <token id="00000134A132FD10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="{" scope="000001349177CA20" link="00000134A132F470"/>
+    <token id="00000134A1330130" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="return" scope="000001349177CA20" type="name" astOperand1="00000134A132F950"/>
+    <token id="00000134A132F950" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="nullptr" scope="000001349177CA20" type="name" values="00000134A9203FA0" astParent="00000134A1330130"/>
+    <token id="00000134A132F830" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str=";" scope="000001349177CA20"/>
+    <token id="00000134A132F470" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="58" str="}" scope="000001349177CA20" link="00000134A132FD10"/>
+    <token id="00000134A132F770" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="void" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132FE90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="set" scope="000001349177CA20" type="name" function="00000134A213E330" astParent="00000134A132FEF0"/>
+    <token id="00000134A1330190" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="(" scope="000001349177CA20" link="00000134A1330670" astOperand1="00000134A132FA10" valueType-type="void"/>
+    <token id="00000134A132F4D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A13301F0"/>
+    <token id="00000134A13301F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A1330310" astOperand1="00000134A132F4D0" astOperand2="00000134A1330250"/>
+    <token id="00000134A1330250" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A13301F0"/>
+    <token id="00000134A1330310" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A13306D0" astOperand1="00000134A13301F0" astOperand2="00000134A132F530"/>
+    <token id="00000134A132F530" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="AsyncOperationProgressHandler" scope="000001349177CA20" type="name" astParent="00000134A1330310"/>
+    <token id="00000134A13306D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="&lt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A132FEF0" astOperand1="00000134A1330310" astOperand2="00000134A132FD70" valueType-type="bool"/>
+    <token id="00000134A132F290" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A132FD70"/>
+    <token id="00000134A132FD70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A13306D0" astOperand1="00000134A132F290" astOperand2="00000134A1330370"/>
+    <token id="00000134A1330370" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="String" scope="000001349177CA20" type="name" astParent="00000134A132FD70"/>
+    <token id="00000134A132FEF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="^" scope="000001349177CA20" type="op" astParent="00000134A132F710" astOperand1="00000134A132FE90" astOperand2="00000134A13306D0"/>
+    <token id="00000134A132FA10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="," scope="000001349177CA20" astParent="00000134A1330190" astOperand2="00000134A1330550"/>
+    <token id="00000134A132F890" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132FA70"/>
+    <token id="00000134A132FA70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A1330430" astOperand1="00000134A132F890" astOperand2="00000134A13303D0"/>
+    <token id="00000134A13303D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Web" scope="000001349177CA20" type="name" astParent="00000134A132FA70"/>
+    <token id="00000134A1330430" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A13307F0" astOperand1="00000134A132FA70" astOperand2="00000134A1330730"/>
+    <token id="00000134A1330730" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="Http" scope="000001349177CA20" type="name" astParent="00000134A1330430"/>
+    <token id="00000134A13307F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="::" scope="000001349177CA20" astParent="00000134A132F710" astOperand1="00000134A1330430" astOperand2="00000134A13304F0"/>
+    <token id="00000134A13304F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="HttpProgress" scope="000001349177CA20" type="name" astParent="00000134A13307F0"/>
+    <token id="00000134A132F710" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="&gt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A1330550" astOperand1="00000134A132FEF0" astOperand2="00000134A13307F0" valueType-type="bool"/>
+    <token id="00000134A1330550" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="^" scope="000001349177CA20" type="op" astParent="00000134A132FA10" astOperand1="00000134A132F710" astOperand2="00000134A1330610"/>
+    <token id="00000134A1330610" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="handler" scope="000001349177CA20" type="name" astParent="00000134A1330550"/>
+    <token id="00000134A1330670" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str=")" scope="000001349177CA20" link="00000134A1330190"/>
+    <token id="00000134A132FF50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="{" scope="000001349177CC40" link="00000134A132FFB0"/>
+    <token id="00000134A132FFB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="59" str="}" scope="000001349177CC40" link="00000134A132FF50"/>
+    <token id="00000134A132F3B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="60" str="}" scope="000001349177CA20" link="00000134A132DEB0"/>
+    <token id="00000134A132F590" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132F5F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="property" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1330850" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A132F8F0"/>
+    <token id="00000134A132F8F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20" astParent="00000134A132FAD0" astOperand1="00000134A1330850" astOperand2="00000134A132F650"/>
+    <token id="00000134A132F650" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A132F8F0"/>
+    <token id="00000134A132FAD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20" astParent="00000134A1331E10" astOperand1="00000134A132F8F0" astOperand2="00000134A13308B0"/>
+    <token id="00000134A13308B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="AsyncOperationWithProgressCompletedHandler" scope="000001349177CA20" type="name" astParent="00000134A132FAD0"/>
+    <token id="00000134A132F110" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="&lt;" scope="000001349177CA20" link="00000134A1331AB0"/>
+    <token id="00000134A132F1D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Platform" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132FB30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132F6B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="String" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132FB90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="^" scope="000001349177CA20" type="op"/>
+    <token id="00000134A132FBF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="," scope="000001349177CA20"/>
+    <token id="00000134A132FC50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Windows" scope="000001349177CA20" type="name"/>
+    <token id="00000134A132FCB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20"/>
+    <token id="00000134A132FDD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Web" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1330B50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20"/>
+    <token id="00000134A1331150" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Http" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1331FF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="::" scope="000001349177CA20"/>
+    <token id="00000134A1331510" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="HttpProgress" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1331AB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="&gt;" scope="000001349177CA20" link="00000134A132F110"/>
+    <token id="00000134A1331E70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="^" scope="000001349177CA20" type="op" astOperand2="00000134A1331930"/>
+    <token id="00000134A1331990" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="62" str="Completed" scope="000001349177CA20" type="name" astParent="00000134A1331210"/>
+    <token id="00000134A1331930" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="63" str="{" scope="000001349177CA20" link="00000134A1331450" astParent="00000134A1331E70" astOperand2="00000134A1331E10"/>
+    <token id="00000134A1330EB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A1331B70"/>
+    <token id="00000134A1331B70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A13314B0" astOperand1="00000134A1330EB0" astOperand2="00000134A1331B10"/>
+    <token id="00000134A1331B10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A1331B70"/>
+    <token id="00000134A13314B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A1331810" astOperand1="00000134A1331B70" astOperand2="00000134A1330AF0"/>
+    <token id="00000134A1330AF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="AsyncOperationWithProgressCompletedHandler" scope="000001349177CA20" type="name" astParent="00000134A13314B0"/>
+    <token id="00000134A1331810" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="&lt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A1331210" astOperand1="00000134A13314B0" astOperand2="00000134A1330970" valueType-type="bool"/>
+    <token id="00000134A1332050" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A1330970"/>
+    <token id="00000134A1330970" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A1331810" astOperand1="00000134A1332050" astOperand2="00000134A13311B0"/>
+    <token id="00000134A13311B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="String" scope="000001349177CA20" type="name" astParent="00000134A1330970"/>
+    <token id="00000134A1331210" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="^" scope="000001349177CA20" type="op" astParent="00000134A1330A30" astOperand1="00000134A1331990" astOperand2="00000134A1331810"/>
+    <token id="00000134A1331E10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="," scope="000001349177CA20" astParent="00000134A1331930" astOperand1="00000134A132FAD0" astOperand2="00000134A1331F90"/>
+    <token id="00000134A1331D50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A1331690"/>
+    <token id="00000134A1331690" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A1331870" astOperand1="00000134A1331D50" astOperand2="00000134A1331F30"/>
+    <token id="00000134A1331F30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Web" scope="000001349177CA20" type="name" astParent="00000134A1331690"/>
+    <token id="00000134A1331870" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A1331570" astOperand1="00000134A1331690" astOperand2="00000134A13316F0"/>
+    <token id="00000134A13316F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="Http" scope="000001349177CA20" type="name" astParent="00000134A1331870"/>
+    <token id="00000134A1331570" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="::" scope="000001349177CA20" astParent="00000134A1330A30" astOperand1="00000134A1331870" astOperand2="00000134A13315D0"/>
+    <token id="00000134A13315D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="HttpProgress" scope="000001349177CA20" type="name" astParent="00000134A1331570"/>
+    <token id="00000134A1330A30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="&gt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A1331F90" astOperand1="00000134A1331210" astOperand2="00000134A1331570" valueType-type="bool"/>
+    <token id="00000134A1331F90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="^" scope="000001349177CA20" type="op" astParent="00000134A1331E10" astOperand1="00000134A1330A30" astOperand2="00000134A13319F0"/>
+    <token id="00000134A1331BD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="get" scope="000001349177CA20" type="name" function="00000134A213DAC0" astParent="00000134A13319F0"/>
+    <token id="00000134A13319F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="(" scope="000001349177CA20" link="00000134A1331630" values="00000134A92039E0" astParent="00000134A1331F90" astOperand1="00000134A1331BD0"/>
+    <token id="00000134A1331630" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str=")" scope="000001349177CA20" link="00000134A13319F0"/>
+    <token id="00000134A1331750" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="{" scope="000001349177CA20" link="00000134A1330F70"/>
+    <token id="00000134A13320B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="return" scope="000001349177CA20" type="name" astOperand1="00000134A1330CD0"/>
+    <token id="00000134A1330CD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="nullptr" scope="000001349177CA20" type="name" values="00000134A9203FC0" astParent="00000134A13320B0"/>
+    <token id="00000134A1330910" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str=";" scope="000001349177CA20"/>
+    <token id="00000134A1330F70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="64" str="}" scope="000001349177CA20" link="00000134A1331750"/>
+    <token id="00000134A1330BB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="void" scope="000001349177CA20" type="name"/>
+    <token id="00000134A13310F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="set" scope="000001349177CA20" type="name" function="00000134A213F650" astParent="00000134A1330C10"/>
+    <token id="00000134A1331270" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="(" scope="000001349177CA20" link="00000134A1331030" astOperand1="00000134A1331390" valueType-type="void"/>
+    <token id="00000134A1330A90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A13312D0"/>
+    <token id="00000134A13312D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A13318D0" astOperand1="00000134A1330A90" astOperand2="00000134A1331A50"/>
+    <token id="00000134A1331A50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Foundation" scope="000001349177CA20" type="name" astParent="00000134A13312D0"/>
+    <token id="00000134A13318D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A1331DB0" astOperand1="00000134A13312D0" astOperand2="00000134A1331C30"/>
+    <token id="00000134A1331C30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="AsyncOperationWithProgressCompletedHandler" scope="000001349177CA20" type="name" astParent="00000134A13318D0"/>
+    <token id="00000134A1331DB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="&lt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A1330C10" astOperand1="00000134A13318D0" astOperand2="00000134A1331ED0" valueType-type="bool"/>
+    <token id="00000134A1331330" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A1331ED0"/>
+    <token id="00000134A1331ED0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A1331DB0" astOperand1="00000134A1331330" astOperand2="00000134A13309D0"/>
+    <token id="00000134A13309D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="String" scope="000001349177CA20" type="name" astParent="00000134A1331ED0"/>
+    <token id="00000134A1330C10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="^" scope="000001349177CA20" type="op" astParent="00000134A1330DF0" astOperand1="00000134A13310F0" astOperand2="00000134A1331DB0"/>
+    <token id="00000134A1331390" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="," scope="000001349177CA20" astParent="00000134A1331270" astOperand2="00000134A1330E50"/>
+    <token id="00000134A1330C70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Windows" scope="000001349177CA20" type="name" astParent="00000134A13317B0"/>
+    <token id="00000134A13317B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A1330D30" astOperand1="00000134A1330C70" astOperand2="00000134A1331C90"/>
+    <token id="00000134A1331C90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Web" scope="000001349177CA20" type="name" astParent="00000134A13317B0"/>
+    <token id="00000134A1330D30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A1330D90" astOperand1="00000134A13317B0" astOperand2="00000134A1331CF0"/>
+    <token id="00000134A1331CF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="Http" scope="000001349177CA20" type="name" astParent="00000134A1330D30"/>
+    <token id="00000134A1330D90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="::" scope="000001349177CA20" astParent="00000134A1330DF0" astOperand1="00000134A1330D30" astOperand2="00000134A1330F10"/>
+    <token id="00000134A1330F10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="HttpProgress" scope="000001349177CA20" type="name" astParent="00000134A1330D90"/>
+    <token id="00000134A1330DF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="&gt;" scope="000001349177CA20" type="op" isComparisonOp="True" astParent="00000134A1330E50" astOperand1="00000134A1330C10" astOperand2="00000134A1330D90" valueType-type="bool"/>
+    <token id="00000134A1330E50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="^" scope="000001349177CA20" type="op" astParent="00000134A1331390" astOperand1="00000134A1330DF0" astOperand2="00000134A1330FD0"/>
+    <token id="00000134A1330FD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="handler" scope="000001349177CA20" type="name" astParent="00000134A1330E50"/>
+    <token id="00000134A1331030" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str=")" scope="000001349177CA20" link="00000134A1331270"/>
+    <token id="00000134A1331090" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="{" scope="000001349177CD50" link="00000134A13313F0"/>
+    <token id="00000134A13313F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="65" str="}" scope="000001349177CD50" link="00000134A1331090"/>
+    <token id="00000134A1331450" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="66" str="}" scope="000001349177CA20" link="00000134A1331930"/>
+    <token id="00000134A1333130" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="virtual" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1332590" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A1332950"/>
+    <token id="00000134A1332950" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="::" scope="000001349177CA20" astParent="00000134A1333190" astOperand1="00000134A1332590" astOperand2="00000134A1332FB0"/>
+    <token id="00000134A1332FB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="String" scope="000001349177CA20" type="name" astParent="00000134A1332950"/>
+    <token id="00000134A1333190" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="^" scope="000001349177CA20" type="op" astOperand1="00000134A1332950" astOperand2="00000134A13333D0"/>
+    <token id="00000134A13330D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="GetResults" scope="000001349177CA20" type="name" astParent="00000134A13333D0"/>
+    <token id="00000134A13333D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="(" scope="000001349177CA20" link="00000134A1332890" astParent="00000134A1333190" astOperand1="00000134A13330D0"/>
+    <token id="00000134A1332890" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str=")" scope="000001349177CA20" link="00000134A13333D0"/>
+    <token id="00000134A1332EF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="{" scope="000001349177CA20" link="00000134A1333370"/>
+    <token id="00000134A1333070" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="return" scope="000001349177CA20" type="name" astOperand1="00000134A1332110"/>
+    <token id="00000134A1332110" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="m_result" scope="000001349177CA20" type="name" astParent="00000134A1333070"/>
+    <token id="00000134A1332CB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str=";" scope="000001349177CA20"/>
+    <token id="00000134A1333370" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="68" str="}" scope="000001349177CA20" link="00000134A1332EF0"/>
+    <token id="00000134A1332350" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="71" str="private:" scope="000001349177CA20" type="name"/>
+    <token id="00000134A1332BF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str="Platform" scope="000001349177CA20" type="name" astParent="00000134A1332530"/>
+    <token id="00000134A1332530" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str="::" scope="000001349177CA20" astParent="00000134A1333010" astOperand1="00000134A1332BF0" astOperand2="00000134A13324D0"/>
+    <token id="00000134A13324D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str="String" scope="000001349177CA20" type="name" astParent="00000134A1332530"/>
+    <token id="00000134A1333010" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str="^" scope="000001349177CA20" type="op" astOperand1="00000134A1332530" astOperand2="00000134A1332D10"/>
+    <token id="00000134A1332D10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str="m_result" scope="000001349177CA20" type="name" astParent="00000134A1333010"/>
+    <token id="00000134A13331F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="72" str=";" scope="000001349177CA20"/>
+    <token id="00000134A13329B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="73" str="}" scope="000001349177CA20" link="00000134A132B5D0"/>
+    <token id="00000134A13327D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="73" str=";" scope="000001349177CA20"/>
+    <token id="00000134A1332410" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="74" str="}" scope="000001349177CA20" link="00000134A1327F10"/>
+    <token id="00000134A1332770" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h" linenr="75" str="}" scope="000001349177E290" link="00000134A1328270"/>
+    <token id="00000134A1332E90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="9" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1333430" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="9" str="CalculatorUnitTests" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1332B30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="10" str="{" scope="000001349177E3A0" link="00000134A1333C70"/>
+    <token id="00000134A13325F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="15" str="struct" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A13332B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="15" str="item" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1332A10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="16" str="{" scope="000001349177CE60" link="00000134A1333790"/>
+    <token id="00000134A13336D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="17" str="CalculatorApp" scope="000001349177CE60" type="name" astParent="00000134A1332290"/>
+    <token id="00000134A1332290" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="17" str="::" scope="000001349177CE60" astOperand1="00000134A13336D0" astOperand2="00000134A13335B0"/>
+    <token id="00000134A1333490" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="17" str="NumbersAndOperatorsEnum" scope="000001349177CE60" type="name"/>
+    <token id="00000134A13335B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="17" str="command" scope="000001349177CE60" type="name" varId="1" variable="00000134A85B15A0" astParent="00000134A1332290"/>
+    <token id="00000134A13334F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="17" str=";" scope="000001349177CE60"/>
+    <token id="00000134A1332F50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="18" str="std" scope="000001349177CE60" type="name" astParent="00000134A1333610"/>
+    <token id="00000134A1333610" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="18" str="::" scope="000001349177CE60" astOperand1="00000134A1332F50" astOperand2="00000134A1333670" valueType-type="container"/>
+    <token id="00000134A1333310" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="18" str="wstring" scope="000001349177CE60" type="name"/>
+    <token id="00000134A1333670" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="18" str="expectedPrimaryDisplay" scope="000001349177CE60" type="name" varId="2" variable="00000134A85B25D0" astParent="00000134A1333610" valueType-type="container"/>
+    <token id="00000134A1332650" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="18" str=";" scope="000001349177CE60"/>
+    <token id="00000134A13328F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="19" str="std" scope="000001349177CE60" type="name" astParent="00000134A13322F0"/>
+    <token id="00000134A13322F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="19" str="::" scope="000001349177CE60" astOperand1="00000134A13328F0" astOperand2="00000134A13323B0" valueType-type="container"/>
+    <token id="00000134A13326B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="19" str="wstring" scope="000001349177CE60" type="name"/>
+    <token id="00000134A13323B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="19" str="expectedExpressions" scope="000001349177CE60" type="name" varId="3" variable="00000134A85B2250" astParent="00000134A13322F0" valueType-type="container"/>
+    <token id="00000134A1333730" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="19" str=";" scope="000001349177CE60"/>
+    <token id="00000134A1333790" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="20" str="}" scope="000001349177CE60" link="00000134A1332A10"/>
+    <token id="00000134A13339D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="20" str=";" scope="000001349177E3A0"/>
+    <token id="00000134A1332710" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="22" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1332A70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="22" str="UtfUtils" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1333850" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="22" str="{" scope="000001349177D4C0" link="00000134A1333FD0"/>
+    <token id="00000134A1332830" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str="const" scope="000001349177D4C0" type="name" originalName="constexpr"/>
+    <token id="00000134A1332D70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str="wchar_t" scope="000001349177D4C0" type="name"/>
+    <token id="00000134A13338B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str="LRE" scope="000001349177D4C0" type="name" varId="4" variable="00000134A85B24F0" astParent="00000134A1332E30"/>
+    <token id="00000134A1332E30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str="=" scope="000001349177D4C0" type="op" isAssignmentOp="True" astOperand1="00000134A13338B0" astOperand2="00000134A1332AD0"/>
+    <token id="00000134A1332AD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str="8234" scope="000001349177D4C0" type="number" isInt="True" values="00000134A9203E80" astParent="00000134A1332E30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A1332170" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="23" str=";" scope="000001349177D4C0"/>
+    <token id="00000134A13321D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str="const" scope="000001349177D4C0" type="name" originalName="constexpr"/>
+    <token id="00000134A1332230" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str="wchar_t" scope="000001349177D4C0" type="name"/>
+    <token id="00000134A1332B90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str="PDF" scope="000001349177D4C0" type="name" varId="5" variable="00000134A85B18B0" astParent="00000134A1332C50"/>
+    <token id="00000134A1332C50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str="=" scope="000001349177D4C0" type="op" isAssignmentOp="True" astOperand1="00000134A1332B90" astOperand2="00000134A1332DD0"/>
+    <token id="00000134A1332DD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str="8236" scope="000001349177D4C0" type="number" isInt="True" values="00000134A9203FE0" astParent="00000134A1332C50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A1334870" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="24" str=";" scope="000001349177D4C0"/>
+    <token id="00000134A1334690" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str="const" scope="000001349177D4C0" type="name" originalName="constexpr"/>
+    <token id="00000134A13346F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str="wchar_t" scope="000001349177D4C0" type="name"/>
+    <token id="00000134A1333B50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str="LRO" scope="000001349177D4C0" type="name" varId="6" variable="00000134A85B23A0" astParent="00000134A1333BB0"/>
+    <token id="00000134A1333BB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str="=" scope="000001349177D4C0" type="op" isAssignmentOp="True" astOperand1="00000134A1333B50" astOperand2="00000134A1333F70"/>
+    <token id="00000134A1333F70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str="8237" scope="000001349177D4C0" type="number" isInt="True" values="00000134A9204020" astParent="00000134A1333BB0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A1333C10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="25" str=";" scope="000001349177D4C0"/>
+    <token id="00000134A13340F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str="const" scope="000001349177D4C0" type="name" originalName="constexpr"/>
+    <token id="00000134A13341B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str="wchar_t" scope="000001349177D4C0" type="name"/>
+    <token id="00000134A1333A30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str="MUL" scope="000001349177D4C0" type="name" varId="7" variable="00000134A85B2B80" astParent="00000134A1334150"/>
+    <token id="00000134A1334150" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str="=" scope="000001349177D4C0" type="op" isAssignmentOp="True" astOperand1="00000134A1333A30" astOperand2="00000134A1334E10"/>
+    <token id="00000134A1334E10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str="215" scope="000001349177D4C0" type="number" isInt="True" values="00000134A9204040" astParent="00000134A1334150" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134A1334210" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="26" str=";" scope="000001349177D4C0"/>
+    <token id="00000134A1333FD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="27" str="}" scope="000001349177D4C0" link="00000134A1333850"/>
+    <token id="00000134A1333C70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h" linenr="28" str="}" scope="000001349177E3A0" link="00000134A1332B30"/>
+    <token id="00000134A1333AF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="17" str="namespace" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1334330" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="17" str="CalculatorUnitTests" scope="000001349177E3A0" type="name"/>
+    <token id="00000134A1334270" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="18" str="{" scope="000001349177D3B0" link="00000134A13362B0"/>
+    <token id="00000134A1334FF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="22" str="ref" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334510" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="22" str="class" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334AB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="22" str="App" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334E70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="22" str="sealed" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334990" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="23" str="{" scope="000001349177D3B0" link="00000134A1335290"/>
+    <token id="00000134A1334930" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="24" str="protected:" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334B70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="virtual" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334B10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="void" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A13344B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="OnLaunched" scope="000001349177D3B0" type="name" function="00000134A213F140" astParent="00000134A1333A90"/>
+    <token id="00000134A1333A90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="(" scope="000001349177D3B0" link="00000134A1333910" astOperand1="00000134A13344B0" astOperand2="00000134A1334A50" valueType-type="void"/>
+    <token id="00000134A1334BD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="Windows" scope="000001349177D3B0" type="name" astParent="00000134A13348D0"/>
+    <token id="00000134A13348D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="::" scope="000001349177D3B0" astParent="00000134A1334390" astOperand1="00000134A1334BD0" astOperand2="00000134A13342D0"/>
+    <token id="00000134A13342D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="ApplicationModel" scope="000001349177D3B0" type="name" astParent="00000134A13348D0"/>
+    <token id="00000134A1334390" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="::" scope="000001349177D3B0" astParent="00000134A1334ED0" astOperand1="00000134A13348D0" astOperand2="00000134A13343F0"/>
+    <token id="00000134A13343F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="Activation" scope="000001349177D3B0" type="name" astParent="00000134A1334390"/>
+    <token id="00000134A1334ED0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="::" scope="000001349177D3B0" astParent="00000134A1334A50" astOperand1="00000134A1334390" astOperand2="00000134A13349F0"/>
+    <token id="00000134A13349F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="LaunchActivatedEventArgs" scope="000001349177D3B0" type="name" astParent="00000134A1334ED0"/>
+    <token id="00000134A1334A50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="^" scope="000001349177D3B0" type="op" astParent="00000134A1333A90" astOperand1="00000134A1334ED0" astOperand2="00000134A1334C30"/>
+    <token id="00000134A1334C30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="e" scope="000001349177D3B0" type="name" astParent="00000134A1334A50"/>
+    <token id="00000134A1333910" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str=")" scope="000001349177D3B0" link="00000134A1333A90"/>
+    <token id="00000134A1333CD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str="override" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1333F10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="25" str=";" scope="000001349177D3B0"/>
+    <token id="00000134A1333D30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="27" str="internal" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1333DF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="27" str=":" scope="000001349177D3B0"/>
+    <token id="00000134A1334450" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="28" str="App" scope="000001349177D3B0" type="name" astParent="00000134A1334570"/>
+    <token id="00000134A1334570" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="28" str="(" scope="000001349177D3B0" link="00000134A1334C90" astOperand1="00000134A1334450"/>
+    <token id="00000134A1334C90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="28" str=")" scope="000001349177D3B0" link="00000134A1334570"/>
+    <token id="00000134A1333D90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="28" str=";" scope="000001349177D3B0"/>
+    <token id="00000134A13345D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="30" str="private:" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334630" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="void" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A1334750" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="OnSuspending" scope="000001349177D3B0" type="name" function="00000134A213F1D0" astParent="00000134A1333E50"/>
+    <token id="00000134A1333E50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="(" scope="000001349177D3B0" link="00000134A13353B0" astOperand1="00000134A1334750" astOperand2="00000134A1334CF0" valueType-type="void"/>
+    <token id="00000134A1334030" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="Platform" scope="000001349177D3B0" type="name" astParent="00000134A13347B0"/>
+    <token id="00000134A13347B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="::" scope="000001349177D3B0" astParent="00000134A1334D50" astOperand1="00000134A1334030" astOperand2="00000134A1334090"/>
+    <token id="00000134A1334090" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="Object" scope="000001349177D3B0" type="name" astParent="00000134A13347B0"/>
+    <token id="00000134A1334D50" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="^" scope="000001349177D3B0" type="op" astParent="00000134A1334CF0" astOperand1="00000134A13347B0" astOperand2="00000134A1334810"/>
+    <token id="00000134A1334810" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="sender" scope="000001349177D3B0" type="name" astParent="00000134A1334D50"/>
+    <token id="00000134A1334CF0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="," scope="000001349177D3B0" astParent="00000134A1333E50" astOperand1="00000134A1334D50" astOperand2="00000134A1333970"/>
+    <token id="00000134A1334DB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="Windows" scope="000001349177D3B0" type="name" astParent="00000134A1334F30"/>
+    <token id="00000134A1334F30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="::" scope="000001349177D3B0" astParent="00000134A1335050" astOperand1="00000134A1334DB0" astOperand2="00000134A1334F90"/>
+    <token id="00000134A1334F90" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="ApplicationModel" scope="000001349177D3B0" type="name" astParent="00000134A1334F30"/>
+    <token id="00000134A1335050" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="::" scope="000001349177D3B0" astParent="00000134A1333970" astOperand1="00000134A1334F30" astOperand2="00000134A13350B0"/>
+    <token id="00000134A13350B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="SuspendingEventArgs" scope="000001349177D3B0" type="name" astParent="00000134A1335050"/>
+    <token id="00000134A1333970" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="^" scope="000001349177D3B0" type="op" astParent="00000134A1334CF0" astOperand1="00000134A1335050" astOperand2="00000134A1335350"/>
+    <token id="00000134A1335350" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str="e" scope="000001349177D3B0" type="name" astParent="00000134A1333970"/>
+    <token id="00000134A13353B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str=")" scope="000001349177D3B0" link="00000134A1333E50"/>
+    <token id="00000134A13354D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="31" str=";" scope="000001349177D3B0"/>
+    <token id="00000134A13367F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="void" scope="000001349177D3B0" type="name"/>
+    <token id="00000134A13358F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="OnNavigationFailed" scope="000001349177D3B0" type="name" function="00000134A213D640" astParent="00000134A1335950"/>
+    <token id="00000134A1335950" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="(" scope="000001349177D3B0" link="00000134A1335FB0" astOperand1="00000134A13358F0" astOperand2="00000134A13364F0" valueType-type="void"/>
+    <token id="00000134A13361F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="Platform" scope="000001349177D3B0" type="name" astParent="00000134A13359B0"/>
+    <token id="00000134A13359B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="::" scope="000001349177D3B0" astParent="00000134A1336670" astOperand1="00000134A13361F0" astOperand2="00000134A13360D0"/>
+    <token id="00000134A13360D0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="Object" scope="000001349177D3B0" type="name" astParent="00000134A13359B0"/>
+    <token id="00000134A1336670" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="^" scope="000001349177D3B0" type="op" astParent="00000134A13364F0" astOperand1="00000134A13359B0" astOperand2="00000134A1335A70"/>
+    <token id="00000134A1335A70" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="sender" scope="000001349177D3B0" type="name" astParent="00000134A1336670"/>
+    <token id="00000134A13364F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="," scope="000001349177D3B0" astParent="00000134A1335950" astOperand1="00000134A1336670" astOperand2="00000134A1336430"/>
+    <token id="00000134A1336130" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="Windows" scope="000001349177D3B0" type="name" astParent="00000134A1336550"/>
+    <token id="00000134A1336550" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="::" scope="000001349177D3B0" astParent="00000134A13365B0" astOperand1="00000134A1336130" astOperand2="00000134A1335A10"/>
+    <token id="00000134A1335A10" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="UI" scope="000001349177D3B0" type="name" astParent="00000134A1336550"/>
+    <token id="00000134A13365B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="::" scope="000001349177D3B0" astParent="00000134A1335410" astOperand1="00000134A1336550" astOperand2="00000134A1335170"/>
+    <token id="00000134A1335170" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="Xaml" scope="000001349177D3B0" type="name" astParent="00000134A13365B0"/>
+    <token id="00000134A1335410" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="::" scope="000001349177D3B0" astParent="00000134A1336850" astOperand1="00000134A13365B0" astOperand2="00000134A1335AD0"/>
+    <token id="00000134A1335AD0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="Navigation" scope="000001349177D3B0" type="name" astParent="00000134A1335410"/>
+    <token id="00000134A1336850" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="::" scope="000001349177D3B0" astParent="00000134A1336430" astOperand1="00000134A1335410" astOperand2="00000134A1335B30"/>
+    <token id="00000134A1335B30" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="NavigationFailedEventArgs" scope="000001349177D3B0" type="name" astParent="00000134A1336850"/>
+    <token id="00000134A1336430" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="^" scope="000001349177D3B0" type="op" astParent="00000134A13364F0" astOperand1="00000134A1336850" astOperand2="00000134A13352F0"/>
+    <token id="00000134A13352F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str="e" scope="000001349177D3B0" type="name" astParent="00000134A1336430"/>
+    <token id="00000134A1335FB0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str=")" scope="000001349177D3B0" link="00000134A1335950"/>
+    <token id="00000134A13355F0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="32" str=";" scope="000001349177D3B0"/>
+    <token id="00000134A1335290" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="33" str="}" scope="000001349177D3B0" link="00000134A1334990"/>
+    <token id="00000134A1335530" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="33" str=";" scope="000001349177D3B0"/>
+    <token id="00000134A13362B0" file="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h" linenr="34" str="}" scope="000001349177D3B0" link="00000134A1334270"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349177E3A0" type="Global"/>
+    <scope id="000001349177E290" type="Namespace" className="CalculatorApp" bodyStart="00000134A1328270" bodyEnd="00000134A1332770" nestedIn="000001349177E3A0"/>
+    <scope id="000001349177D6E0" type="Namespace" className="Common" bodyStart="00000134A1328E10" bodyEnd="00000134A1335EF0" nestedIn="000001349177E290"/>
+    <scope id="000001349177CA20" type="Namespace" className="DataLoaders" bodyStart="00000134A1327F10" bodyEnd="00000134A1332410" nestedIn="000001349177E290">
+      <functionList>
+        <function id="00000134A213ED50" tokenDef="00000134A132BA50" name="MockAsyncOperationWithProgress" type="Function">
+          <arg nr="1" variable="00000134A85B1CA0"/>
+        </function>
+        <function id="00000134A213DAC0" tokenDef="00000134A132CF50" name="get" type="Function"/>
+        <function id="00000134A213E450" tokenDef="00000134A132CA70" name="get" type="Function"/>
+        <function id="00000134A213E210" tokenDef="00000134A132D7F0" name="Cancel" type="Function" isVirtual="true"/>
+        <function id="00000134A213F020" tokenDef="00000134A132DA90" name="Close" type="Function" isVirtual="true"/>
+        <function id="00000134A213E330" tokenDef="00000134A132FE90" name="set" type="Function"/>
+        <function id="00000134A213F650" tokenDef="00000134A13310F0" name="set" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="000001349177E4B0" type="Class" className="CurrencyHttpClient" bodyStart="00000134A1328A50" bodyEnd="00000134A132B2D0" nestedIn="000001349177CA20">
+      <functionList>
+        <function id="00000134A213E4E0" tokenDef="00000134A1327CD0" name="CurrencyHttpClient" type="Constructor"/>
+        <function id="00000134A213D6D0" tokenDef="00000134A1329830" name="SetSourceCurrencyCode" type="Function">
+          <arg nr="1" variable="00000134A85B1D80"/>
+        </function>
+        <function id="00000134A213E180" tokenDef="00000134A1329410" name="SetResponseLanguage" type="Function">
+          <arg nr="1" variable="00000134A85B1ED0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="000001349177D080" type="Function" className="SetSourceCurrencyCode" bodyStart="00000134A13292F0" bodyEnd="00000134A1329530" nestedIn="000001349177E4B0" function="00000134A213D6D0"/>
+    <scope id="000001349177D5D0" type="Function" className="SetResponseLanguage" bodyStart="00000134A132A3D0" bodyEnd="00000134A1329890" nestedIn="000001349177E4B0" function="00000134A213E180"/>
+    <scope id="000001349177E5C0" type="Function" className="get" bodyStart="00000134A132D010" bodyEnd="00000134A132D130" nestedIn="000001349177CA20" function="00000134A213DAC0"/>
+    <scope id="000001349177D190" type="Function" className="get" bodyStart="00000134A132D370" bodyEnd="00000134A132CE30" nestedIn="000001349177CA20" function="00000134A213E450"/>
+    <scope id="000001349177CB30" type="Function" className="Cancel" bodyStart="00000134A132E330" bodyEnd="00000134A132DA30" nestedIn="000001349177CA20" function="00000134A213E210"/>
+    <scope id="000001349177DD40" type="Function" className="Close" bodyStart="00000134A132ECF0" bodyEnd="00000134A132E030" nestedIn="000001349177CA20" function="00000134A213F020"/>
+    <scope id="000001349177CC40" type="Function" className="set" bodyStart="00000134A132FF50" bodyEnd="00000134A132FFB0" nestedIn="000001349177CA20" function="00000134A213E330"/>
+    <scope id="000001349177CD50" type="Function" className="set" bodyStart="00000134A1331090" bodyEnd="00000134A13313F0" nestedIn="000001349177CA20" function="00000134A213F650"/>
+    <scope id="000001349177D3B0" type="Namespace" className="CalculatorUnitTests" bodyStart="00000134A1334270" bodyEnd="00000134A13362B0" nestedIn="000001349177E3A0">
+      <functionList>
+        <function id="00000134A213F140" tokenDef="00000134A13344B0" name="OnLaunched" type="Function" isVirtual="true">
+          <arg nr="1" variable="00000134A85B1DF0"/>
+        </function>
+        <function id="00000134A213F1D0" tokenDef="00000134A1334750" name="OnSuspending" type="Function">
+          <arg nr="1" variable="00000134A85B2560"/>
+          <arg nr="2" variable="00000134A85B2950"/>
+        </function>
+        <function id="00000134A213D640" tokenDef="00000134A13358F0" name="OnNavigationFailed" type="Function">
+          <arg nr="1" variable="00000134A85B10D0"/>
+          <arg nr="2" variable="00000134A85B2790"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="000001349177CE60" type="Struct" className="item" bodyStart="00000134A1332A10" bodyEnd="00000134A1333790" nestedIn="000001349177D3B0">
+      <varlist>
+        <var id="00000134A85B15A0"/>
+        <var id="00000134A85B25D0"/>
+        <var id="00000134A85B2250"/>
+      </varlist>
+    </scope>
+    <scope id="000001349177D4C0" type="Namespace" className="UtfUtils" bodyStart="00000134A1333850" bodyEnd="00000134A1333FD0" nestedIn="000001349177D3B0">
+      <varlist>
+        <var id="00000134A85B24F0"/>
+        <var id="00000134A85B18B0"/>
+        <var id="00000134A85B23A0"/>
+        <var id="00000134A85B2B80"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="00000134A85B10D0" nameToken="00000134A1335A70" typeStartToken="00000134A13361F0" typeEndToken="00000134A1336670" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B15A0" nameToken="00000134A13335B0" typeStartToken="00000134A13336D0" typeEndToken="00000134A1333490" access="Public" scope="000001349177CE60" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B18B0" nameToken="00000134A1332B90" typeStartToken="00000134A1332230" typeEndToken="00000134A1332230" access="Namespace" scope="000001349177D4C0" constness="1" isArgument="false" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B1CA0" nameToken="00000134A132BED0" typeStartToken="00000134A132BB70" typeEndToken="00000134A132BE70" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B1D80" nameToken="00000134A1329170" typeStartToken="00000134A1329950" typeEndToken="00000134A132A2B0" access="Argument" scope="000001349177D080" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B1DF0" nameToken="00000134A1334C30" typeStartToken="00000134A1334BD0" typeEndToken="00000134A1334A50" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B1ED0" nameToken="00000134A132A670" typeStartToken="00000134A132A010" typeEndToken="00000134A13294D0" access="Argument" scope="000001349177D5D0" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B2250" nameToken="00000134A13323B0" typeStartToken="00000134A13328F0" typeEndToken="00000134A13326B0" access="Public" scope="000001349177CE60" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B23A0" nameToken="00000134A1333B50" typeStartToken="00000134A13346F0" typeEndToken="00000134A13346F0" access="Namespace" scope="000001349177D4C0" constness="1" isArgument="false" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B24F0" nameToken="00000134A13338B0" typeStartToken="00000134A1332D70" typeEndToken="00000134A1332D70" access="Namespace" scope="000001349177D4C0" constness="1" isArgument="false" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B2560" nameToken="00000134A1334810" typeStartToken="00000134A1334030" typeEndToken="00000134A1334D50" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B25D0" nameToken="00000134A1333670" typeStartToken="00000134A1332F50" typeEndToken="00000134A1333310" access="Public" scope="000001349177CE60" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B2790" nameToken="00000134A13352F0" typeStartToken="00000134A1336130" typeEndToken="00000134A1336430" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B2950" nameToken="00000134A1335350" typeStartToken="00000134A1334DB0" typeEndToken="00000134A1333970" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134A85B2B80" nameToken="00000134A1333A30" typeStartToken="00000134A13341B0" typeEndToken="00000134A13341B0" access="Namespace" scope="000001349177D4C0" constness="1" isArgument="false" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A9203BE0">
+      <value intvalue="128" known="true"/>
+    </values>
+    <values id="00000134A9203A40">
+      <value intvalue="128" known="true"/>
+    </values>
+    <values id="00000134A9203CA0">
+      <value intvalue="128" known="true"/>
+    </values>
+    <values id="00000134A9203FA0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A92039E0">
+      <value intvalue="128" known="true"/>
+    </values>
+    <values id="00000134A9203FC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A9203E80">
+      <value intvalue="8234" known="true"/>
+    </values>
+    <values id="00000134A9203FE0">
+      <value intvalue="8236" known="true"/>
+    </values>
+    <values id="00000134A9204020">
+      <value intvalue="8237" known="true"/>
+    </values>
+    <values id="00000134A9204040">
+      <value intvalue="215" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

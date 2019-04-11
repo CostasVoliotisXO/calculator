@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Module.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/pch.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Mocks/CurrencyHttpClient.h"/>
+    <file index="3" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/Helpers.h"/>
+    <file index="4" name="C:/sample repositories/calculator-master/src/CalculatorUnitTests/UnitTestApp.xaml.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&lt;CppUnitTest.h&gt;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="Microsoft"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="VisualStudio"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="CppUnitTestFramework"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="CalculatorUnitTests"/>
+    <tok fileIndex="0" linenr="10" str="{"/>
+    <tok fileIndex="0" linenr="11" str="BEGIN_TEST_MODULE_ATTRIBUTE"/>
+    <tok fileIndex="0" linenr="11" str="("/>
+    <tok fileIndex="0" linenr="11" str=")"/>
+    <tok fileIndex="0" linenr="12" str="TEST_MODULE_ATTRIBUTE"/>
+    <tok fileIndex="0" linenr="12" str="("/>
+    <tok fileIndex="0" linenr="12" str="L"/>
+    <tok fileIndex="0" linenr="12" str="&quot;APPX:CertificateFileName&quot;"/>
+    <tok fileIndex="0" linenr="12" str=","/>
+    <tok fileIndex="0" linenr="12" str="L"/>
+    <tok fileIndex="0" linenr="12" str="&quot;CalculatorUnitTests.cer:TrustedPeople&quot;"/>
+    <tok fileIndex="0" linenr="12" str=")"/>
+    <tok fileIndex="0" linenr="13" str="END_TEST_MODULE_ATTRIBUTE"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="15" str="TEST_MODULE_INITIALIZE"/>
+    <tok fileIndex="0" linenr="15" str="("/>
+    <tok fileIndex="0" linenr="15" str="ModuleSetup"/>
+    <tok fileIndex="0" linenr="15" str=")"/>
+    <tok fileIndex="0" linenr="16" str="{"/>
+    <tok fileIndex="0" linenr="17" str="}"/>
+    <tok fileIndex="0" linenr="19" str="TEST_MODULE_CLEANUP"/>
+    <tok fileIndex="0" linenr="19" str="("/>
+    <tok fileIndex="0" linenr="19" str="ModuleCleanup"/>
+    <tok fileIndex="0" linenr="19" str=")"/>
+    <tok fileIndex="0" linenr="20" str="{"/>
+    <tok fileIndex="0" linenr="21" str="}"/>
+    <tok fileIndex="0" linenr="22" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+</dumps>

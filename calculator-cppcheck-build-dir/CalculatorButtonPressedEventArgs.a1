@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2681662524">
+        <error id="class_X_Y" severity="information" msg="The code &apos;class CalculatorButtonPressedEventArgs sealed {&apos; is not handled. You can use -I or --include to add handling of this code." verbose="The code &apos;class CalculatorButtonPressedEventArgs sealed {&apos; is not handled. You can use -I or --include to add handling of this code.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.h" line="13"/>
+        </error>
+        <error id="internalAstError" severity="error" msg="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands." verbose="Syntax Error: AST broken, binary operator &apos;&gt;&apos; doesn&apos;t have two operands.">
+            <location file0="C:\sample repositories\calculator-master\src\CalcViewModel\Common\CalculatorButtonPressedEventArgs.cpp" file="C:\sample repositories\calculator-master\src\CalcViewModel\Common\DelegateCommand.h" line="42"/>
+        </error>
+</analyzerinfo>

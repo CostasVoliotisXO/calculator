@@ -1,0 +1,1358 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;Header Files/CalcEngine.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="8" str="using"/>
+    <tok fileIndex="0" linenr="8" str="namespace"/>
+    <tok fileIndex="0" linenr="8" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="8" str="::"/>
+    <tok fileIndex="0" linenr="8" str="RationalMath"/>
+    <tok fileIndex="0" linenr="8" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="std"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="11" str="// To be called when either the radix or num width changes. You can use -1 in either of these values to mean"/>
+    <tok fileIndex="0" linenr="12" str="// dont change that."/>
+    <tok fileIndex="0" linenr="13" str="void"/>
+    <tok fileIndex="0" linenr="13" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="13" str="::"/>
+    <tok fileIndex="0" linenr="13" str="SetRadixTypeAndNumWidth"/>
+    <tok fileIndex="0" linenr="13" str="("/>
+    <tok fileIndex="0" linenr="13" str="RADIX_TYPE"/>
+    <tok fileIndex="0" linenr="13" str="radixtype"/>
+    <tok fileIndex="0" linenr="13" str=","/>
+    <tok fileIndex="0" linenr="13" str="NUM_WIDTH"/>
+    <tok fileIndex="0" linenr="13" str="numwidth"/>
+    <tok fileIndex="0" linenr="13" str=")"/>
+    <tok fileIndex="0" linenr="14" str="{"/>
+    <tok fileIndex="0" linenr="15" str="// When in integer mode, the number is represented in 2's complement form. When a bit width is changing, we can"/>
+    <tok fileIndex="0" linenr="16" str="// change the number representation back to sign, abs num form in ratpak. Soon when display sees this, it will"/>
+    <tok fileIndex="0" linenr="17" str="// convert to 2's complement form, but this time all high bits will be propagated. Eg. -127, in byte mode is"/>
+    <tok fileIndex="0" linenr="18" str="// represented as 1000,0001. This puts it back as sign=-1, 01111111 . But DisplayNum will see this and convert it"/>
+    <tok fileIndex="0" linenr="19" str="// back to 1111,1111,1000,0001 when in Word mode."/>
+    <tok fileIndex="0" linenr="20" str="if"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="21" str="{"/>
+    <tok fileIndex="0" linenr="22" str="uint64_t"/>
+    <tok fileIndex="0" linenr="22" str="w64Bits"/>
+    <tok fileIndex="0" linenr="22" str="="/>
+    <tok fileIndex="0" linenr="22" str="m_currentVal"/>
+    <tok fileIndex="0" linenr="22" str="."/>
+    <tok fileIndex="0" linenr="22" str="ToUInt64_t"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="23" str="bool"/>
+    <tok fileIndex="0" linenr="23" str="fMsb"/>
+    <tok fileIndex="0" linenr="23" str="="/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="w64Bits"/>
+    <tok fileIndex="0" linenr="23" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="23" str="("/>
+    <tok fileIndex="0" linenr="23" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="23" str="-"/>
+    <tok fileIndex="0" linenr="23" str="1"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str=")"/>
+    <tok fileIndex="0" linenr="23" str="&amp;"/>
+    <tok fileIndex="0" linenr="23" str="1"/>
+    <tok fileIndex="0" linenr="23" str=";"/>
+    <tok fileIndex="0" linenr="23" str="// make sure you use the old width"/>
+    <tok fileIndex="0" linenr="25" str="if"/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="fMsb"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="26" str="{"/>
+    <tok fileIndex="0" linenr="27" str="// If high bit is set, then get the decimal number in -ve 2'scompl form."/>
+    <tok fileIndex="0" linenr="28" str="auto"/>
+    <tok fileIndex="0" linenr="28" str="tempResult"/>
+    <tok fileIndex="0" linenr="28" str="="/>
+    <tok fileIndex="0" linenr="28" str="m_currentVal"/>
+    <tok fileIndex="0" linenr="28" str="^"/>
+    <tok fileIndex="0" linenr="28" str="m_chopNumbers"/>
+    <tok fileIndex="0" linenr="28" str="["/>
+    <tok fileIndex="0" linenr="28" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="28" str="]"/>
+    <tok fileIndex="0" linenr="28" str=";"/>
+    <tok fileIndex="0" linenr="30" str="m_currentVal"/>
+    <tok fileIndex="0" linenr="30" str="="/>
+    <tok fileIndex="0" linenr="30" str="-"/>
+    <tok fileIndex="0" linenr="30" str="("/>
+    <tok fileIndex="0" linenr="30" str="tempResult"/>
+    <tok fileIndex="0" linenr="30" str="+"/>
+    <tok fileIndex="0" linenr="30" str="1"/>
+    <tok fileIndex="0" linenr="30" str=")"/>
+    <tok fileIndex="0" linenr="30" str=";"/>
+    <tok fileIndex="0" linenr="31" str="}"/>
+    <tok fileIndex="0" linenr="32" str="}"/>
+    <tok fileIndex="0" linenr="34" str="if"/>
+    <tok fileIndex="0" linenr="34" str="("/>
+    <tok fileIndex="0" linenr="34" str="radixtype"/>
+    <tok fileIndex="0" linenr="34" str="&gt;="/>
+    <tok fileIndex="0" linenr="34" str="HEX_RADIX"/>
+    <tok fileIndex="0" linenr="34" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="34" str="radixtype"/>
+    <tok fileIndex="0" linenr="34" str="&lt;="/>
+    <tok fileIndex="0" linenr="34" str="BIN_RADIX"/>
+    <tok fileIndex="0" linenr="34" str=")"/>
+    <tok fileIndex="0" linenr="35" str="{"/>
+    <tok fileIndex="0" linenr="36" str="m_radix"/>
+    <tok fileIndex="0" linenr="36" str="="/>
+    <tok fileIndex="0" linenr="36" str="NRadixFromRadixType"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="radixtype"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="// radixtype is not even saved"/>
+    <tok fileIndex="0" linenr="38" str="}"/>
+    <tok fileIndex="0" linenr="40" str="if"/>
+    <tok fileIndex="0" linenr="40" str="("/>
+    <tok fileIndex="0" linenr="40" str="numwidth"/>
+    <tok fileIndex="0" linenr="40" str="&gt;="/>
+    <tok fileIndex="0" linenr="40" str="QWORD_WIDTH"/>
+    <tok fileIndex="0" linenr="40" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="40" str="numwidth"/>
+    <tok fileIndex="0" linenr="40" str="&lt;="/>
+    <tok fileIndex="0" linenr="40" str="BYTE_WIDTH"/>
+    <tok fileIndex="0" linenr="40" str=")"/>
+    <tok fileIndex="0" linenr="41" str="{"/>
+    <tok fileIndex="0" linenr="42" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="42" str="="/>
+    <tok fileIndex="0" linenr="42" str="numwidth"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="43" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="43" str="="/>
+    <tok fileIndex="0" linenr="43" str="DwWordBitWidthFromeNumWidth"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str="numwidth"/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="44" str="}"/>
+    <tok fileIndex="0" linenr="46" str="// inform ratpak that a change in base or precision has occurred"/>
+    <tok fileIndex="0" linenr="47" str="BaseOrPrecisionChanged"/>
+    <tok fileIndex="0" linenr="47" str="("/>
+    <tok fileIndex="0" linenr="47" str=")"/>
+    <tok fileIndex="0" linenr="47" str=";"/>
+    <tok fileIndex="0" linenr="49" str="// display the correct number for the new state (ie convert displayed"/>
+    <tok fileIndex="0" linenr="50" str="//  number to correct base)"/>
+    <tok fileIndex="0" linenr="51" str="DisplayNum"/>
+    <tok fileIndex="0" linenr="51" str="("/>
+    <tok fileIndex="0" linenr="51" str=")"/>
+    <tok fileIndex="0" linenr="51" str=";"/>
+    <tok fileIndex="0" linenr="52" str="}"/>
+    <tok fileIndex="0" linenr="54" str="int32_t"/>
+    <tok fileIndex="0" linenr="54" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="54" str="::"/>
+    <tok fileIndex="0" linenr="54" str="DwWordBitWidthFromeNumWidth"/>
+    <tok fileIndex="0" linenr="54" str="("/>
+    <tok fileIndex="0" linenr="54" str="NUM_WIDTH"/>
+    <tok fileIndex="0" linenr="54" str="/*numwidth*/"/>
+    <tok fileIndex="0" linenr="54" str=")"/>
+    <tok fileIndex="0" linenr="55" str="{"/>
+    <tok fileIndex="0" linenr="56" str="static"/>
+    <tok fileIndex="0" linenr="56" str="constexpr"/>
+    <tok fileIndex="0" linenr="56" str="int"/>
+    <tok fileIndex="0" linenr="56" str="nBitMax"/>
+    <tok fileIndex="0" linenr="56" str="["/>
+    <tok fileIndex="0" linenr="56" str="]"/>
+    <tok fileIndex="0" linenr="56" str="="/>
+    <tok fileIndex="0" linenr="56" str="{"/>
+    <tok fileIndex="0" linenr="56" str="64"/>
+    <tok fileIndex="0" linenr="56" str=","/>
+    <tok fileIndex="0" linenr="56" str="32"/>
+    <tok fileIndex="0" linenr="56" str=","/>
+    <tok fileIndex="0" linenr="56" str="16"/>
+    <tok fileIndex="0" linenr="56" str=","/>
+    <tok fileIndex="0" linenr="56" str="8"/>
+    <tok fileIndex="0" linenr="56" str="}"/>
+    <tok fileIndex="0" linenr="56" str=";"/>
+    <tok fileIndex="0" linenr="57" str="int32_t"/>
+    <tok fileIndex="0" linenr="57" str="wmax"/>
+    <tok fileIndex="0" linenr="57" str="="/>
+    <tok fileIndex="0" linenr="57" str="nBitMax"/>
+    <tok fileIndex="0" linenr="57" str="["/>
+    <tok fileIndex="0" linenr="57" str="0"/>
+    <tok fileIndex="0" linenr="57" str="]"/>
+    <tok fileIndex="0" linenr="57" str=";"/>
+    <tok fileIndex="0" linenr="59" str="if"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="59" str="&gt;="/>
+    <tok fileIndex="0" linenr="59" str="0"/>
+    <tok fileIndex="0" linenr="59" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str="size_t"/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="59" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="59" str="&lt;"/>
+    <tok fileIndex="0" linenr="59" str="size"/>
+    <tok fileIndex="0" linenr="59" str="("/>
+    <tok fileIndex="0" linenr="59" str="nBitMax"/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="59" str=")"/>
+    <tok fileIndex="0" linenr="60" str="{"/>
+    <tok fileIndex="0" linenr="61" str="wmax"/>
+    <tok fileIndex="0" linenr="61" str="="/>
+    <tok fileIndex="0" linenr="61" str="nBitMax"/>
+    <tok fileIndex="0" linenr="61" str="["/>
+    <tok fileIndex="0" linenr="61" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="61" str="]"/>
+    <tok fileIndex="0" linenr="61" str=";"/>
+    <tok fileIndex="0" linenr="62" str="}"/>
+    <tok fileIndex="0" linenr="63" str="return"/>
+    <tok fileIndex="0" linenr="63" str="wmax"/>
+    <tok fileIndex="0" linenr="63" str=";"/>
+    <tok fileIndex="0" linenr="64" str="}"/>
+    <tok fileIndex="0" linenr="66" str="uint32_t"/>
+    <tok fileIndex="0" linenr="66" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="66" str="::"/>
+    <tok fileIndex="0" linenr="66" str="NRadixFromRadixType"/>
+    <tok fileIndex="0" linenr="66" str="("/>
+    <tok fileIndex="0" linenr="66" str="RADIX_TYPE"/>
+    <tok fileIndex="0" linenr="66" str="radixtype"/>
+    <tok fileIndex="0" linenr="66" str=")"/>
+    <tok fileIndex="0" linenr="67" str="{"/>
+    <tok fileIndex="0" linenr="68" str="static"/>
+    <tok fileIndex="0" linenr="68" str="constexpr"/>
+    <tok fileIndex="0" linenr="68" str="uint32_t"/>
+    <tok fileIndex="0" linenr="68" str="rgnRadish"/>
+    <tok fileIndex="0" linenr="68" str="["/>
+    <tok fileIndex="0" linenr="68" str="4"/>
+    <tok fileIndex="0" linenr="68" str="]"/>
+    <tok fileIndex="0" linenr="68" str="="/>
+    <tok fileIndex="0" linenr="68" str="{"/>
+    <tok fileIndex="0" linenr="68" str="16"/>
+    <tok fileIndex="0" linenr="68" str=","/>
+    <tok fileIndex="0" linenr="68" str="10"/>
+    <tok fileIndex="0" linenr="68" str=","/>
+    <tok fileIndex="0" linenr="68" str="8"/>
+    <tok fileIndex="0" linenr="68" str=","/>
+    <tok fileIndex="0" linenr="68" str="2"/>
+    <tok fileIndex="0" linenr="68" str="}"/>
+    <tok fileIndex="0" linenr="68" str=";"/>
+    <tok fileIndex="0" linenr="68" str="/* Number bases in the same order as radixtype */"/>
+    <tok fileIndex="0" linenr="69" str="uint32_t"/>
+    <tok fileIndex="0" linenr="69" str="radix"/>
+    <tok fileIndex="0" linenr="69" str="="/>
+    <tok fileIndex="0" linenr="69" str="10"/>
+    <tok fileIndex="0" linenr="69" str=";"/>
+    <tok fileIndex="0" linenr="71" str="// convert special bases into symbolic values"/>
+    <tok fileIndex="0" linenr="72" str="if"/>
+    <tok fileIndex="0" linenr="72" str="("/>
+    <tok fileIndex="0" linenr="72" str="radixtype"/>
+    <tok fileIndex="0" linenr="72" str="&gt;="/>
+    <tok fileIndex="0" linenr="72" str="0"/>
+    <tok fileIndex="0" linenr="72" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="72" str="("/>
+    <tok fileIndex="0" linenr="72" str="size_t"/>
+    <tok fileIndex="0" linenr="72" str=")"/>
+    <tok fileIndex="0" linenr="72" str="radixtype"/>
+    <tok fileIndex="0" linenr="72" str="&lt;"/>
+    <tok fileIndex="0" linenr="72" str="size"/>
+    <tok fileIndex="0" linenr="72" str="("/>
+    <tok fileIndex="0" linenr="72" str="rgnRadish"/>
+    <tok fileIndex="0" linenr="72" str=")"/>
+    <tok fileIndex="0" linenr="72" str=")"/>
+    <tok fileIndex="0" linenr="73" str="{"/>
+    <tok fileIndex="0" linenr="74" str="radix"/>
+    <tok fileIndex="0" linenr="74" str="="/>
+    <tok fileIndex="0" linenr="74" str="rgnRadish"/>
+    <tok fileIndex="0" linenr="74" str="["/>
+    <tok fileIndex="0" linenr="74" str="radixtype"/>
+    <tok fileIndex="0" linenr="74" str="]"/>
+    <tok fileIndex="0" linenr="74" str=";"/>
+    <tok fileIndex="0" linenr="75" str="}"/>
+    <tok fileIndex="0" linenr="76" str="return"/>
+    <tok fileIndex="0" linenr="76" str="radix"/>
+    <tok fileIndex="0" linenr="76" str=";"/>
+    <tok fileIndex="0" linenr="77" str="}"/>
+    <tok fileIndex="0" linenr="79" str="//  Toggles a given bit into the number representation. returns true if it changed it actually."/>
+    <tok fileIndex="0" linenr="80" str="bool"/>
+    <tok fileIndex="0" linenr="80" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="80" str="::"/>
+    <tok fileIndex="0" linenr="80" str="TryToggleBit"/>
+    <tok fileIndex="0" linenr="80" str="("/>
+    <tok fileIndex="0" linenr="80" str="CalcEngine"/>
+    <tok fileIndex="0" linenr="80" str="::"/>
+    <tok fileIndex="0" linenr="80" str="Rational"/>
+    <tok fileIndex="0" linenr="80" str="&amp;"/>
+    <tok fileIndex="0" linenr="80" str="rat"/>
+    <tok fileIndex="0" linenr="80" str=","/>
+    <tok fileIndex="0" linenr="80" str="uint32_t"/>
+    <tok fileIndex="0" linenr="80" str="wbitno"/>
+    <tok fileIndex="0" linenr="80" str=")"/>
+    <tok fileIndex="0" linenr="81" str="{"/>
+    <tok fileIndex="0" linenr="82" str="uint32_t"/>
+    <tok fileIndex="0" linenr="82" str="wmax"/>
+    <tok fileIndex="0" linenr="82" str="="/>
+    <tok fileIndex="0" linenr="82" str="DwWordBitWidthFromeNumWidth"/>
+    <tok fileIndex="0" linenr="82" str="("/>
+    <tok fileIndex="0" linenr="82" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="82" str=")"/>
+    <tok fileIndex="0" linenr="82" str=";"/>
+    <tok fileIndex="0" linenr="83" str="if"/>
+    <tok fileIndex="0" linenr="83" str="("/>
+    <tok fileIndex="0" linenr="83" str="wbitno"/>
+    <tok fileIndex="0" linenr="83" str="&gt;="/>
+    <tok fileIndex="0" linenr="83" str="wmax"/>
+    <tok fileIndex="0" linenr="83" str=")"/>
+    <tok fileIndex="0" linenr="84" str="{"/>
+    <tok fileIndex="0" linenr="85" str="return"/>
+    <tok fileIndex="0" linenr="85" str="false"/>
+    <tok fileIndex="0" linenr="85" str=";"/>
+    <tok fileIndex="0" linenr="85" str="// ignore error cant happen"/>
+    <tok fileIndex="0" linenr="86" str="}"/>
+    <tok fileIndex="0" linenr="88" str="Rational"/>
+    <tok fileIndex="0" linenr="88" str="result"/>
+    <tok fileIndex="0" linenr="88" str="="/>
+    <tok fileIndex="0" linenr="88" str="Integer"/>
+    <tok fileIndex="0" linenr="88" str="("/>
+    <tok fileIndex="0" linenr="88" str="rat"/>
+    <tok fileIndex="0" linenr="88" str=")"/>
+    <tok fileIndex="0" linenr="88" str=";"/>
+    <tok fileIndex="0" linenr="90" str="// Remove any variance in how 0 could be represented in rat e.g. -0, 0/n, etc."/>
+    <tok fileIndex="0" linenr="91" str="result"/>
+    <tok fileIndex="0" linenr="91" str="="/>
+    <tok fileIndex="0" linenr="91" str="("/>
+    <tok fileIndex="0" linenr="91" str="result"/>
+    <tok fileIndex="0" linenr="91" str="!="/>
+    <tok fileIndex="0" linenr="91" str="0"/>
+    <tok fileIndex="0" linenr="91" str="?"/>
+    <tok fileIndex="0" linenr="91" str="result"/>
+    <tok fileIndex="0" linenr="91" str=":"/>
+    <tok fileIndex="0" linenr="91" str="0"/>
+    <tok fileIndex="0" linenr="91" str=")"/>
+    <tok fileIndex="0" linenr="91" str=";"/>
+    <tok fileIndex="0" linenr="93" str="// XOR the result with 2^wbitno power"/>
+    <tok fileIndex="0" linenr="94" str="rat"/>
+    <tok fileIndex="0" linenr="94" str="="/>
+    <tok fileIndex="0" linenr="94" str="result"/>
+    <tok fileIndex="0" linenr="94" str="^"/>
+    <tok fileIndex="0" linenr="94" str="Pow"/>
+    <tok fileIndex="0" linenr="94" str="("/>
+    <tok fileIndex="0" linenr="94" str="2"/>
+    <tok fileIndex="0" linenr="94" str=","/>
+    <tok fileIndex="0" linenr="94" str="static_cast"/>
+    <tok fileIndex="0" linenr="94" str="&lt;"/>
+    <tok fileIndex="0" linenr="94" str="int32_t"/>
+    <tok fileIndex="0" linenr="94" str="&gt;"/>
+    <tok fileIndex="0" linenr="94" str="("/>
+    <tok fileIndex="0" linenr="94" str="wbitno"/>
+    <tok fileIndex="0" linenr="94" str=")"/>
+    <tok fileIndex="0" linenr="94" str=")"/>
+    <tok fileIndex="0" linenr="94" str=";"/>
+    <tok fileIndex="0" linenr="96" str="return"/>
+    <tok fileIndex="0" linenr="96" str="true"/>
+    <tok fileIndex="0" linenr="96" str=";"/>
+    <tok fileIndex="0" linenr="97" str="}"/>
+    <tok fileIndex="0" linenr="99" str="// Returns the nearest power of two"/>
+    <tok fileIndex="0" linenr="100" str="int"/>
+    <tok fileIndex="0" linenr="100" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="100" str="::"/>
+    <tok fileIndex="0" linenr="100" str="QuickLog2"/>
+    <tok fileIndex="0" linenr="100" str="("/>
+    <tok fileIndex="0" linenr="100" str="int"/>
+    <tok fileIndex="0" linenr="100" str="iNum"/>
+    <tok fileIndex="0" linenr="100" str=")"/>
+    <tok fileIndex="0" linenr="101" str="{"/>
+    <tok fileIndex="0" linenr="102" str="int"/>
+    <tok fileIndex="0" linenr="102" str="iRes"/>
+    <tok fileIndex="0" linenr="102" str="="/>
+    <tok fileIndex="0" linenr="102" str="0"/>
+    <tok fileIndex="0" linenr="102" str=";"/>
+    <tok fileIndex="0" linenr="104" str="// while first digit is a zero"/>
+    <tok fileIndex="0" linenr="105" str="while"/>
+    <tok fileIndex="0" linenr="105" str="("/>
+    <tok fileIndex="0" linenr="105" str="!"/>
+    <tok fileIndex="0" linenr="105" str="("/>
+    <tok fileIndex="0" linenr="105" str="iNum"/>
+    <tok fileIndex="0" linenr="105" str="&amp;"/>
+    <tok fileIndex="0" linenr="105" str="1"/>
+    <tok fileIndex="0" linenr="105" str=")"/>
+    <tok fileIndex="0" linenr="105" str=")"/>
+    <tok fileIndex="0" linenr="106" str="{"/>
+    <tok fileIndex="0" linenr="107" str="iRes"/>
+    <tok fileIndex="0" linenr="107" str="++"/>
+    <tok fileIndex="0" linenr="107" str=";"/>
+    <tok fileIndex="0" linenr="108" str="iNum"/>
+    <tok fileIndex="0" linenr="108" str="&gt;&gt;="/>
+    <tok fileIndex="0" linenr="108" str="1"/>
+    <tok fileIndex="0" linenr="108" str=";"/>
+    <tok fileIndex="0" linenr="109" str="}"/>
+    <tok fileIndex="0" linenr="111" str="// if our number isn't a perfect square"/>
+    <tok fileIndex="0" linenr="112" str="iNum"/>
+    <tok fileIndex="0" linenr="112" str="="/>
+    <tok fileIndex="0" linenr="112" str="iNum"/>
+    <tok fileIndex="0" linenr="112" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="112" str="1"/>
+    <tok fileIndex="0" linenr="112" str=";"/>
+    <tok fileIndex="0" linenr="113" str="if"/>
+    <tok fileIndex="0" linenr="113" str="("/>
+    <tok fileIndex="0" linenr="113" str="iNum"/>
+    <tok fileIndex="0" linenr="113" str=")"/>
+    <tok fileIndex="0" linenr="114" str="{"/>
+    <tok fileIndex="0" linenr="115" str="// find the largest digit"/>
+    <tok fileIndex="0" linenr="116" str="for"/>
+    <tok fileIndex="0" linenr="116" str="("/>
+    <tok fileIndex="0" linenr="116" str="iNum"/>
+    <tok fileIndex="0" linenr="116" str="="/>
+    <tok fileIndex="0" linenr="116" str="iNum"/>
+    <tok fileIndex="0" linenr="116" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="116" str="1"/>
+    <tok fileIndex="0" linenr="116" str=";"/>
+    <tok fileIndex="0" linenr="116" str="iNum"/>
+    <tok fileIndex="0" linenr="116" str=";"/>
+    <tok fileIndex="0" linenr="116" str="iNum"/>
+    <tok fileIndex="0" linenr="116" str="="/>
+    <tok fileIndex="0" linenr="116" str="iNum"/>
+    <tok fileIndex="0" linenr="116" str="&gt;&gt;"/>
+    <tok fileIndex="0" linenr="116" str="1"/>
+    <tok fileIndex="0" linenr="116" str=")"/>
+    <tok fileIndex="0" linenr="117" str="++"/>
+    <tok fileIndex="0" linenr="117" str="iRes"/>
+    <tok fileIndex="0" linenr="117" str=";"/>
+    <tok fileIndex="0" linenr="119" str="// and then add two"/>
+    <tok fileIndex="0" linenr="120" str="iRes"/>
+    <tok fileIndex="0" linenr="120" str="+="/>
+    <tok fileIndex="0" linenr="120" str="2"/>
+    <tok fileIndex="0" linenr="120" str=";"/>
+    <tok fileIndex="0" linenr="121" str="}"/>
+    <tok fileIndex="0" linenr="123" str="return"/>
+    <tok fileIndex="0" linenr="123" str="iRes"/>
+    <tok fileIndex="0" linenr="123" str=";"/>
+    <tok fileIndex="0" linenr="124" str="}"/>
+    <tok fileIndex="0" linenr="126" str="////////////////////////////////////////////////////////////////////////"/>
+    <tok fileIndex="0" linenr="127" str="//"/>
+    <tok fileIndex="0" linenr="128" str="//  UpdateMaxIntDigits"/>
+    <tok fileIndex="0" linenr="129" str="//"/>
+    <tok fileIndex="0" linenr="130" str="// determine the maximum number of digits needed for the current precision,"/>
+    <tok fileIndex="0" linenr="131" str="// word size, and base.  This number is conservative towards the small side"/>
+    <tok fileIndex="0" linenr="132" str="// such that there may be some extra bits left over. For example, base 8 requires 3 bits per digit."/>
+    <tok fileIndex="0" linenr="133" str="// A word size of 32 bits allows for 10 digits with a remainder of two bits.  Bases"/>
+    <tok fileIndex="0" linenr="134" str="// that require variable number of bits (non-power-of-two bases) are approximated"/>
+    <tok fileIndex="0" linenr="135" str="// by the next highest power-of-two base (again, to be conservative and guarantee"/>
+    <tok fileIndex="0" linenr="136" str="// there will be no over flow verse the current word size for numbers entered)."/>
+    <tok fileIndex="0" linenr="137" str="// Base 10 is a special case and always uses the base 10 precision (m_nPrecisionSav)."/>
+    <tok fileIndex="0" linenr="138" str="void"/>
+    <tok fileIndex="0" linenr="138" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="138" str="::"/>
+    <tok fileIndex="0" linenr="138" str="UpdateMaxIntDigits"/>
+    <tok fileIndex="0" linenr="138" str="("/>
+    <tok fileIndex="0" linenr="138" str=")"/>
+    <tok fileIndex="0" linenr="139" str="{"/>
+    <tok fileIndex="0" linenr="140" str="if"/>
+    <tok fileIndex="0" linenr="140" str="("/>
+    <tok fileIndex="0" linenr="140" str="m_radix"/>
+    <tok fileIndex="0" linenr="140" str="=="/>
+    <tok fileIndex="0" linenr="140" str="10"/>
+    <tok fileIndex="0" linenr="140" str=")"/>
+    <tok fileIndex="0" linenr="141" str="{"/>
+    <tok fileIndex="0" linenr="142" str="// if in integer mode you still have to honor the max digits you can enter based on bit width"/>
+    <tok fileIndex="0" linenr="143" str="if"/>
+    <tok fileIndex="0" linenr="143" str="("/>
+    <tok fileIndex="0" linenr="143" str="m_fIntegerMode"/>
+    <tok fileIndex="0" linenr="143" str=")"/>
+    <tok fileIndex="0" linenr="144" str="{"/>
+    <tok fileIndex="0" linenr="145" str="m_cIntDigitsSav"/>
+    <tok fileIndex="0" linenr="145" str="="/>
+    <tok fileIndex="0" linenr="145" str="static_cast"/>
+    <tok fileIndex="0" linenr="145" str="&lt;"/>
+    <tok fileIndex="0" linenr="145" str="int"/>
+    <tok fileIndex="0" linenr="145" str="&gt;"/>
+    <tok fileIndex="0" linenr="145" str="("/>
+    <tok fileIndex="0" linenr="145" str="m_maxDecimalValueStrings"/>
+    <tok fileIndex="0" linenr="145" str="["/>
+    <tok fileIndex="0" linenr="145" str="m_numwidth"/>
+    <tok fileIndex="0" linenr="145" str="]"/>
+    <tok fileIndex="0" linenr="145" str="."/>
+    <tok fileIndex="0" linenr="145" str="length"/>
+    <tok fileIndex="0" linenr="145" str="("/>
+    <tok fileIndex="0" linenr="145" str=")"/>
+    <tok fileIndex="0" linenr="145" str=")"/>
+    <tok fileIndex="0" linenr="145" str="-"/>
+    <tok fileIndex="0" linenr="145" str="1"/>
+    <tok fileIndex="0" linenr="145" str=";"/>
+    <tok fileIndex="0" linenr="146" str="// This is the max digits you can enter a decimal in fixed width mode aka integer mode -1. The last digit"/>
+    <tok fileIndex="0" linenr="147" str="// has to be checked separately"/>
+    <tok fileIndex="0" linenr="148" str="}"/>
+    <tok fileIndex="0" linenr="149" str="else"/>
+    <tok fileIndex="0" linenr="150" str="{"/>
+    <tok fileIndex="0" linenr="151" str="m_cIntDigitsSav"/>
+    <tok fileIndex="0" linenr="151" str="="/>
+    <tok fileIndex="0" linenr="151" str="m_precision"/>
+    <tok fileIndex="0" linenr="151" str=";"/>
+    <tok fileIndex="0" linenr="152" str="}"/>
+    <tok fileIndex="0" linenr="153" str="}"/>
+    <tok fileIndex="0" linenr="154" str="else"/>
+    <tok fileIndex="0" linenr="155" str="{"/>
+    <tok fileIndex="0" linenr="156" str="m_cIntDigitsSav"/>
+    <tok fileIndex="0" linenr="156" str="="/>
+    <tok fileIndex="0" linenr="156" str="m_dwWordBitWidth"/>
+    <tok fileIndex="0" linenr="156" str="/"/>
+    <tok fileIndex="0" linenr="156" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="156" str="::"/>
+    <tok fileIndex="0" linenr="156" str="QuickLog2"/>
+    <tok fileIndex="0" linenr="156" str="("/>
+    <tok fileIndex="0" linenr="156" str="m_radix"/>
+    <tok fileIndex="0" linenr="156" str=")"/>
+    <tok fileIndex="0" linenr="156" str=";"/>
+    <tok fileIndex="0" linenr="157" str="}"/>
+    <tok fileIndex="0" linenr="158" str="}"/>
+    <tok fileIndex="0" linenr="160" str="void"/>
+    <tok fileIndex="0" linenr="160" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="160" str="::"/>
+    <tok fileIndex="0" linenr="160" str="ChangeBaseConstants"/>
+    <tok fileIndex="0" linenr="160" str="("/>
+    <tok fileIndex="0" linenr="160" str="uint32_t"/>
+    <tok fileIndex="0" linenr="160" str="radix"/>
+    <tok fileIndex="0" linenr="160" str=","/>
+    <tok fileIndex="0" linenr="160" str="int"/>
+    <tok fileIndex="0" linenr="160" str="maxIntDigits"/>
+    <tok fileIndex="0" linenr="160" str=","/>
+    <tok fileIndex="0" linenr="160" str="int32_t"/>
+    <tok fileIndex="0" linenr="160" str="precision"/>
+    <tok fileIndex="0" linenr="160" str=")"/>
+    <tok fileIndex="0" linenr="161" str="{"/>
+    <tok fileIndex="0" linenr="162" str="if"/>
+    <tok fileIndex="0" linenr="162" str="("/>
+    <tok fileIndex="0" linenr="162" str="10"/>
+    <tok fileIndex="0" linenr="162" str="=="/>
+    <tok fileIndex="0" linenr="162" str="radix"/>
+    <tok fileIndex="0" linenr="162" str=")"/>
+    <tok fileIndex="0" linenr="163" str="{"/>
+    <tok fileIndex="0" linenr="164" str="ChangeConstants"/>
+    <tok fileIndex="0" linenr="164" str="("/>
+    <tok fileIndex="0" linenr="164" str="radix"/>
+    <tok fileIndex="0" linenr="164" str=","/>
+    <tok fileIndex="0" linenr="164" str="precision"/>
+    <tok fileIndex="0" linenr="164" str=")"/>
+    <tok fileIndex="0" linenr="164" str=";"/>
+    <tok fileIndex="0" linenr="164" str="// Base 10 precision for internal computing still needs to be 32, to"/>
+    <tok fileIndex="0" linenr="165" str="// take care of decimals precisely. For eg. to get the HI word of a qword, we do a rsh, which depends on getting"/>
+    <tok fileIndex="0" linenr="166" str="// 18446744073709551615 / 4294967296 = 4294967295.9999917... This is important it works this and doesn't reduce"/>
+    <tok fileIndex="0" linenr="167" str="// the precision to number of digits allowed to enter. In other words, precision and # of allowed digits to be"/>
+    <tok fileIndex="0" linenr="168" str="// entered are different."/>
+    <tok fileIndex="0" linenr="169" str="}"/>
+    <tok fileIndex="0" linenr="170" str="else"/>
+    <tok fileIndex="0" linenr="171" str="{"/>
+    <tok fileIndex="0" linenr="172" str="ChangeConstants"/>
+    <tok fileIndex="0" linenr="172" str="("/>
+    <tok fileIndex="0" linenr="172" str="radix"/>
+    <tok fileIndex="0" linenr="172" str=","/>
+    <tok fileIndex="0" linenr="172" str="maxIntDigits"/>
+    <tok fileIndex="0" linenr="172" str="+"/>
+    <tok fileIndex="0" linenr="172" str="1"/>
+    <tok fileIndex="0" linenr="172" str=")"/>
+    <tok fileIndex="0" linenr="172" str=";"/>
+    <tok fileIndex="0" linenr="173" str="}"/>
+    <tok fileIndex="0" linenr="174" str="}"/>
+    <tok fileIndex="0" linenr="176" str="void"/>
+    <tok fileIndex="0" linenr="176" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="176" str="::"/>
+    <tok fileIndex="0" linenr="176" str="BaseOrPrecisionChanged"/>
+    <tok fileIndex="0" linenr="176" str="("/>
+    <tok fileIndex="0" linenr="176" str=")"/>
+    <tok fileIndex="0" linenr="177" str="{"/>
+    <tok fileIndex="0" linenr="178" str="UpdateMaxIntDigits"/>
+    <tok fileIndex="0" linenr="178" str="("/>
+    <tok fileIndex="0" linenr="178" str=")"/>
+    <tok fileIndex="0" linenr="178" str=";"/>
+    <tok fileIndex="0" linenr="179" str="CCalcEngine"/>
+    <tok fileIndex="0" linenr="179" str="::"/>
+    <tok fileIndex="0" linenr="179" str="ChangeBaseConstants"/>
+    <tok fileIndex="0" linenr="179" str="("/>
+    <tok fileIndex="0" linenr="179" str="m_radix"/>
+    <tok fileIndex="0" linenr="179" str=","/>
+    <tok fileIndex="0" linenr="179" str="m_cIntDigitsSav"/>
+    <tok fileIndex="0" linenr="179" str=","/>
+    <tok fileIndex="0" linenr="179" str="m_precision"/>
+    <tok fileIndex="0" linenr="179" str=")"/>
+    <tok fileIndex="0" linenr="179" str=";"/>
+    <tok fileIndex="0" linenr="180" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="5" str="#include &quot;Header Files/CalcEngine.h&quot;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134977BFD70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="7" str="using" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BFDD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="7" str="namespace" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977C01F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="7" str="CalcEngine" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BF890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="7" str=";" scope="000001349115D5B0"/>
+    <token id="00000134977C0610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str="using" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BF0B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str="namespace" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BFB90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str="CalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977BF470"/>
+    <token id="00000134977BF470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str="::" scope="000001349115D5B0" astOperand1="00000134977BFB90" astOperand2="00000134977C02B0"/>
+    <token id="00000134977C02B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str="RationalMath" scope="000001349115D5B0" type="name" astParent="00000134977BF470"/>
+    <token id="00000134977BF4D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="8" str=";" scope="000001349115D5B0"/>
+    <token id="00000134977BF8F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="void" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977C0430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977C0670"/>
+    <token id="00000134977C0670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="::" scope="000001349115D5B0" astParent="00000134977C0250" astOperand1="00000134977C0430" astOperand2="00000134977C0190"/>
+    <token id="00000134977C0190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="SetRadixTypeAndNumWidth" scope="000001349115D5B0" type="name" astParent="00000134977C0670"/>
+    <token id="00000134977C0250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="(" scope="000001349115D5B0" link="00000134977BFC50" astOperand1="00000134977C0670" astOperand2="00000134977BF590"/>
+    <token id="00000134977BF110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="RADIX_TYPE" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BF2F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="radixtype" scope="000001349115D5B0" type="name" varId="1" astParent="00000134977BF590"/>
+    <token id="00000134977BF590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="," scope="000001349115D5B0" astParent="00000134977C0250" astOperand1="00000134977BF2F0" astOperand2="00000134977C06D0"/>
+    <token id="00000134977BFF50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="NUM_WIDTH" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977C06D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str="numwidth" scope="000001349115D5B0" type="name" varId="2" astParent="00000134977BF590"/>
+    <token id="00000134977BFC50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="13" str=")" scope="000001349115D5B0" link="00000134977C0250"/>
+    <token id="00000134977BF710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="14" str="{" scope="000001349115D9F0" link="00000134977B1850"/>
+    <token id="00000134977C04F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="20" str="if" scope="000001349115D9F0" type="name" astParent="00000134977BF5F0"/>
+    <token id="00000134977BF5F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="20" str="(" scope="000001349115D9F0" link="00000134977BFCB0" astOperand1="00000134977C04F0" astOperand2="00000134977BF650"/>
+    <token id="00000134977BF650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="20" str="m_fIntegerMode" scope="000001349115D9F0" type="name" astParent="00000134977BF5F0"/>
+    <token id="00000134977BFCB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="20" str=")" scope="000001349115D9F0" link="00000134977BF5F0"/>
+    <token id="00000134977BF230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="21" str="{" scope="000001349115D7D0" link="00000134977C0910"/>
+    <token id="00000134977BF6B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="uint64_t" scope="000001349115D7D0" type="name"/>
+    <token id="00000134977BF3B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="w64Bits" scope="000001349115D7D0" type="name" varId="3" variable="000001349B19C2E0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977C0370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str=";" scope="000001349115D7D0"/>
+    <token id="00000134977BBBD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="w64Bits" scope="000001349115D7D0" type="name" varId="3" variable="000001349B19C2E0" astParent="00000134977BB2D0" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977BB2D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="=" scope="000001349115D7D0" type="op" isAssignmentOp="True" astOperand1="00000134977BBBD0" astOperand2="00000134977BF950" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977C0730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="m_currentVal" scope="000001349115D7D0" type="name" astParent="00000134977BFD10"/>
+    <token id="00000134977BFD10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="." scope="000001349115D7D0" astParent="00000134977BF950" astOperand1="00000134977C0730" astOperand2="00000134977C0790"/>
+    <token id="00000134977C0790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="ToUInt64_t" scope="000001349115D7D0" type="name" astParent="00000134977BFD10"/>
+    <token id="00000134977BF950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str="(" scope="000001349115D7D0" link="00000134977BF170" astParent="00000134977BB2D0" astOperand1="00000134977BFD10"/>
+    <token id="00000134977BF170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str=")" scope="000001349115D7D0" link="00000134977BF950"/>
+    <token id="00000134977C03D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="22" str=";" scope="000001349115D7D0"/>
+    <token id="00000134977BF770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="bool" scope="000001349115D7D0" type="name"/>
+    <token id="00000134977C0490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="fMsb" scope="000001349115D7D0" type="name" varId="4" variable="000001349B19C3C0" valueType-type="bool"/>
+    <token id="00000134977BFA10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str=";" scope="000001349115D7D0"/>
+    <token id="00000134977BB4B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="fMsb" scope="000001349115D7D0" type="name" varId="4" variable="000001349B19C3C0" astParent="00000134977BAF70" valueType-type="bool"/>
+    <token id="00000134977BAF70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="=" scope="000001349115D7D0" type="op" isAssignmentOp="True" astOperand1="00000134977BB4B0" astOperand2="00000134977C05B0" valueType-type="bool"/>
+    <token id="00000134977BFBF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="(" scope="000001349115D7D0" link="00000134977C0850"/>
+    <token id="00000134977C0550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="w64Bits" scope="000001349115D7D0" type="name" varId="3" variable="000001349B19C2E0" astParent="00000134977BFE30" valueType-type="long long" valueType-sign="unsigned"/>
+    <token id="00000134977BFE30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="&gt;&gt;" scope="000001349115D7D0" type="op" isArithmeticalOp="True" astParent="00000134977C05B0" astOperand1="00000134977C0550" astOperand2="00000134977BFAD0"/>
+    <token id="00000134977C07F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="(" scope="000001349115D7D0" link="00000134977BF1D0"/>
+    <token id="00000134977BFA70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="m_dwWordBitWidth" scope="000001349115D7D0" type="name" astParent="00000134977BFAD0"/>
+    <token id="00000134977BFAD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="-" scope="000001349115D7D0" type="op" isArithmeticalOp="True" astParent="00000134977BFE30" astOperand1="00000134977BFA70" astOperand2="00000134977C0130"/>
+    <token id="00000134977C0130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="1" scope="000001349115D7D0" type="number" isInt="True" values="00000134A8C04530" astParent="00000134977BFAD0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977BF1D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str=")" scope="000001349115D7D0" link="00000134977C07F0"/>
+    <token id="00000134977C0850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str=")" scope="000001349115D7D0" link="00000134977BFBF0"/>
+    <token id="00000134977C05B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="&amp;" scope="000001349115D7D0" type="op" values="00000134A8C04F50" astParent="00000134977BAF70" astOperand1="00000134977BFE30" astOperand2="00000134977BFE90"/>
+    <token id="00000134977BFE90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str="1" scope="000001349115D7D0" type="number" isInt="True" values="00000134A8C04550" astParent="00000134977C05B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977BF290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="23" str=";" scope="000001349115D7D0"/>
+    <token id="00000134977BF7D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="25" str="if" scope="000001349115D7D0" type="name" astParent="00000134977BFFB0"/>
+    <token id="00000134977BFFB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="25" str="(" scope="000001349115D7D0" link="00000134977BF350" astOperand1="00000134977BF7D0" astOperand2="00000134977BF830"/>
+    <token id="00000134977BF830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="25" str="fMsb" scope="000001349115D7D0" type="name" varId="4" variable="000001349B19C3C0" values="00000134A8C04BB0" astParent="00000134977BFFB0" valueType-type="bool"/>
+    <token id="00000134977BF350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="25" str=")" scope="000001349115D7D0" link="00000134977BFFB0"/>
+    <token id="00000134977BFB30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="26" str="{" scope="000001349115DB00" link="00000134977C0EB0"/>
+    <token id="00000134977C0010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="auto" scope="000001349115DB00" type="name"/>
+    <token id="00000134977C0070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="tempResult" scope="000001349115DB00" type="name" varId="5" variable="000001349B1A0020"/>
+    <token id="00000134977C0C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str=";" scope="000001349115DB00"/>
+    <token id="00000134977BB510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="tempResult" scope="000001349115DB00" type="name" varId="5" variable="000001349B1A0020" astParent="00000134977BBF30"/>
+    <token id="00000134977BBF30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="=" scope="000001349115DB00" type="op" isAssignmentOp="True" astOperand1="00000134977BB510" astOperand2="00000134977C0B50"/>
+    <token id="00000134977C0AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="m_currentVal" scope="000001349115DB00" type="name" astParent="00000134977C0B50"/>
+    <token id="00000134977C0B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="^" scope="000001349115DB00" type="op" astParent="00000134977BBF30" astOperand1="00000134977C0AF0" astOperand2="00000134977C09D0"/>
+    <token id="00000134977C0A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="m_chopNumbers" scope="000001349115DB00" type="name" astParent="00000134977C09D0"/>
+    <token id="00000134977C09D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="[" scope="000001349115DB00" link="00000134977C0BB0" astParent="00000134977C0B50" astOperand1="00000134977C0A90" astOperand2="00000134977C0A30"/>
+    <token id="00000134977C0A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="m_numwidth" scope="000001349115DB00" type="name" astParent="00000134977C09D0"/>
+    <token id="00000134977C0BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str="]" scope="000001349115DB00" link="00000134977C09D0"/>
+    <token id="00000134977C0CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="28" str=";" scope="000001349115DB00"/>
+    <token id="00000134977C0C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="m_currentVal" scope="000001349115DB00" type="name" astParent="00000134977C0E50"/>
+    <token id="00000134977C0E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="=" scope="000001349115DB00" type="op" isAssignmentOp="True" astOperand1="00000134977C0C10" astOperand2="00000134977C0F10"/>
+    <token id="00000134977C0F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="-" scope="000001349115DB00" type="op" isArithmeticalOp="True" astParent="00000134977C0E50" astOperand1="00000134977C0D90"/>
+    <token id="00000134977C0F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="(" scope="000001349115DB00" link="00000134977C0970"/>
+    <token id="00000134977C08B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="tempResult" scope="000001349115DB00" type="name" varId="5" variable="000001349B1A0020" astParent="00000134977C0D90"/>
+    <token id="00000134977C0D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="+" scope="000001349115DB00" type="op" isArithmeticalOp="True" astParent="00000134977C0F10" astOperand1="00000134977C08B0" astOperand2="00000134977C0D30"/>
+    <token id="00000134977C0D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str="1" scope="000001349115DB00" type="number" isInt="True" values="00000134A8C04590" astParent="00000134977C0D90" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977C0970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str=")" scope="000001349115DB00" link="00000134977C0F70"/>
+    <token id="00000134977C0DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="30" str=";" scope="000001349115DB00"/>
+    <token id="00000134977C0EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="31" str="}" scope="000001349115DB00" link="00000134977BFB30"/>
+    <token id="00000134977C0910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="32" str="}" scope="000001349115D7D0" link="00000134977BF230"/>
+    <token id="00000134977B1370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="if" scope="000001349115D9F0" type="name" astParent="00000134977B0110"/>
+    <token id="00000134977B0110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="(" scope="000001349115D9F0" link="00000134977B04D0" astOperand1="00000134977B1370" astOperand2="00000134977B0FB0"/>
+    <token id="00000134977B05F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="radixtype" scope="000001349115D9F0" type="name" varId="1" astParent="00000134977B0E90"/>
+    <token id="00000134977B0E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="&gt;=" scope="000001349115D9F0" type="op" isComparisonOp="True" astParent="00000134977B0FB0" astOperand1="00000134977B05F0" astOperand2="00000134977B1070" valueType-type="bool"/>
+    <token id="00000134977B1070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="HEX_RADIX" scope="000001349115D9F0" type="name" astParent="00000134977B0E90"/>
+    <token id="00000134977B0FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="&amp;&amp;" scope="000001349115D9F0" type="op" isLogicalOp="True" astParent="00000134977B0110" astOperand1="00000134977B0E90" astOperand2="00000134977B00B0" valueType-type="bool"/>
+    <token id="00000134977B1250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="radixtype" scope="000001349115D9F0" type="name" varId="1" astParent="00000134977B00B0"/>
+    <token id="00000134977B00B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="&lt;=" scope="000001349115D9F0" type="op" isComparisonOp="True" astParent="00000134977B0FB0" astOperand1="00000134977B1250" astOperand2="00000134977B02F0" valueType-type="bool"/>
+    <token id="00000134977B02F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str="BIN_RADIX" scope="000001349115D9F0" type="name" astParent="00000134977B00B0"/>
+    <token id="00000134977B04D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="34" str=")" scope="000001349115D9F0" link="00000134977B0110"/>
+    <token id="00000134977B0EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="35" str="{" scope="000001349115D8E0" link="00000134977B1190"/>
+    <token id="00000134977B16D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str="m_radix" scope="000001349115D8E0" type="name" astParent="00000134977B0C50"/>
+    <token id="00000134977B0C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str="=" scope="000001349115D8E0" type="op" isAssignmentOp="True" astOperand1="00000134977B16D0" astOperand2="00000134977B1550"/>
+    <token id="00000134977B10D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str="NRadixFromRadixType" scope="000001349115D8E0" type="name" astParent="00000134977B1550"/>
+    <token id="00000134977B1550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str="(" scope="000001349115D8E0" link="00000134977B14F0" astParent="00000134977B0C50" astOperand1="00000134977B10D0" astOperand2="00000134977B1130"/>
+    <token id="00000134977B1130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str="radixtype" scope="000001349115D8E0" type="name" varId="1" astParent="00000134977B1550"/>
+    <token id="00000134977B14F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str=")" scope="000001349115D8E0" link="00000134977B1550"/>
+    <token id="00000134977B0B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="36" str=";" scope="000001349115D8E0"/>
+    <token id="00000134977B1190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="38" str="}" scope="000001349115D8E0" link="00000134977B0EF0"/>
+    <token id="00000134977B0350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="if" scope="000001349115D9F0" type="name" astParent="00000134977B0CB0"/>
+    <token id="00000134977B0CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="(" scope="000001349115D9F0" link="00000134977B0590" astOperand1="00000134977B0350" astOperand2="00000134977B0950"/>
+    <token id="00000134977B0770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="numwidth" scope="000001349115D9F0" type="name" varId="2" astParent="00000134977B0230"/>
+    <token id="00000134977B0230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="&gt;=" scope="000001349115D9F0" type="op" isComparisonOp="True" astParent="00000134977B0950" astOperand1="00000134977B0770" astOperand2="00000134977B0DD0" valueType-type="bool"/>
+    <token id="00000134977B0DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="QWORD_WIDTH" scope="000001349115D9F0" type="name" astParent="00000134977B0230"/>
+    <token id="00000134977B0950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="&amp;&amp;" scope="000001349115D9F0" type="op" isLogicalOp="True" astParent="00000134977B0CB0" astOperand1="00000134977B0230" astOperand2="00000134977B0650" valueType-type="bool"/>
+    <token id="00000134977B11F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="numwidth" scope="000001349115D9F0" type="name" varId="2" astParent="00000134977B0650"/>
+    <token id="00000134977B0650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="&lt;=" scope="000001349115D9F0" type="op" isComparisonOp="True" astParent="00000134977B0950" astOperand1="00000134977B11F0" astOperand2="00000134977B1730" valueType-type="bool"/>
+    <token id="00000134977B1730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str="BYTE_WIDTH" scope="000001349115D9F0" type="name" astParent="00000134977B0650"/>
+    <token id="00000134977B0590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="40" str=")" scope="000001349115D9F0" link="00000134977B0CB0"/>
+    <token id="00000134977B1010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="41" str="{" scope="000001349115D6C0" link="00000134977B1610"/>
+    <token id="00000134977B0B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="42" str="m_numwidth" scope="000001349115D6C0" type="name" astParent="00000134977B06B0"/>
+    <token id="00000134977B06B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="42" str="=" scope="000001349115D6C0" type="op" isAssignmentOp="True" astOperand1="00000134977B0B30" astOperand2="00000134977B0290"/>
+    <token id="00000134977B0290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="42" str="numwidth" scope="000001349115D6C0" type="name" varId="2" astParent="00000134977B06B0"/>
+    <token id="00000134977B0F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="42" str=";" scope="000001349115D6C0"/>
+    <token id="00000134977B12B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str="m_dwWordBitWidth" scope="000001349115D6C0" type="name" astParent="00000134977B1310"/>
+    <token id="00000134977B1310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str="=" scope="000001349115D6C0" type="op" isAssignmentOp="True" astOperand1="00000134977B12B0" astOperand2="00000134977B0170"/>
+    <token id="00000134977B13D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str="DwWordBitWidthFromeNumWidth" scope="000001349115D6C0" type="name" astParent="00000134977B0170"/>
+    <token id="00000134977B0170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str="(" scope="000001349115D6C0" link="00000134977B0D70" astParent="00000134977B1310" astOperand1="00000134977B13D0" astOperand2="00000134977B1790"/>
+    <token id="00000134977B1790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str="numwidth" scope="000001349115D6C0" type="name" varId="2" astParent="00000134977B0170"/>
+    <token id="00000134977B0D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str=")" scope="000001349115D6C0" link="00000134977B0170"/>
+    <token id="00000134977B1430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="43" str=";" scope="000001349115D6C0"/>
+    <token id="00000134977B1610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="44" str="}" scope="000001349115D6C0" link="00000134977B1010"/>
+    <token id="00000134977B0710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="47" str="BaseOrPrecisionChanged" scope="000001349115D9F0" type="name" astParent="00000134977B0D10"/>
+    <token id="00000134977B0D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="47" str="(" scope="000001349115D9F0" link="00000134977B0830" astOperand1="00000134977B0710"/>
+    <token id="00000134977B0830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="47" str=")" scope="000001349115D9F0" link="00000134977B0D10"/>
+    <token id="00000134977B1490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="47" str=";" scope="000001349115D9F0"/>
+    <token id="00000134977B15B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="51" str="DisplayNum" scope="000001349115D9F0" type="name" astParent="00000134977B01D0"/>
+    <token id="00000134977B01D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="51" str="(" scope="000001349115D9F0" link="00000134977B17F0" astOperand1="00000134977B15B0"/>
+    <token id="00000134977B17F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="51" str=")" scope="000001349115D9F0" link="00000134977B01D0"/>
+    <token id="00000134977B0E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="51" str=";" scope="000001349115D9F0"/>
+    <token id="00000134977B1850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="52" str="}" scope="000001349115D9F0" link="00000134977BF710"/>
+    <token id="00000134977B03B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="int32_t" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B09B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B0410"/>
+    <token id="00000134977B0410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="::" scope="000001349115D5B0" astParent="00000134977B07D0" astOperand1="00000134977B09B0" astOperand2="00000134977B1670"/>
+    <token id="00000134977B1670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="DwWordBitWidthFromeNumWidth" scope="000001349115D5B0" type="name" astParent="00000134977B0410"/>
+    <token id="00000134977B07D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="(" scope="000001349115D5B0" link="00000134977B0BF0" astOperand1="00000134977B0410" astOperand2="00000134977B0470"/>
+    <token id="00000134977B0470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str="NUM_WIDTH" scope="000001349115D5B0" type="name" astParent="00000134977B07D0"/>
+    <token id="00000134977B0BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="54" str=")" scope="000001349115D5B0" link="00000134977B07D0"/>
+    <token id="00000134977B0890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="55" str="{" scope="00000134A68FE920" link="00000134977B1E50"/>
+    <token id="00000134977B0530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="static" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B08F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="const" scope="00000134A68FE920" type="name" originalName="constexpr"/>
+    <token id="00000134977B0AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="int" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B0A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="nBitMax" scope="00000134A68FE920" type="name" varId="6" variable="000001349B1A0E90" astParent="00000134977B0A70" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B0A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="[" scope="00000134A68FE920" link="00000134977B2930" astParent="00000134977B29F0" astOperand1="00000134977B0A10" astOperand2="00000134977B5A50" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B5A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="4" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C045B0" astParent="00000134977B0A70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="]" scope="00000134A68FE920" link="00000134977B0A70"/>
+    <token id="00000134977B29F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977B0A70" astOperand2="00000134977B2870" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B2870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="{" scope="00000134A68FE920" link="00000134977B2690" astParent="00000134977B29F0" astOperand1="00000134977B2450"/>
+    <token id="00000134977B2AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="64" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C045D0" astParent="00000134977B19D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B19D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="," scope="00000134A68FE920" astParent="00000134977B2B70" astOperand1="00000134977B2AB0" astOperand2="00000134977B2F30"/>
+    <token id="00000134977B2F30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="32" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04E50" astParent="00000134977B19D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="," scope="00000134A68FE920" astParent="00000134977B2450" astOperand1="00000134977B19D0" astOperand2="00000134977B1A90"/>
+    <token id="00000134977B1A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="16" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04F90" astParent="00000134977B2B70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="," scope="00000134A68FE920" astParent="00000134977B2870" astOperand1="00000134977B2B70" astOperand2="00000134977B2030"/>
+    <token id="00000134977B2030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="8" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04F10" astParent="00000134977B2450" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str="}" scope="00000134A68FE920" link="00000134977B2870"/>
+    <token id="00000134977B2A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="56" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B1970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="int32_t" scope="00000134A68FE920" type="name"/>
+    <token id="00000134977B2ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="wmax" scope="00000134A68FE920" type="name" varId="7" variable="000001349B1A02C0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977BAF10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="wmax" scope="00000134A68FE920" type="name" varId="7" variable="000001349B1A02C0" astParent="00000134977BA8B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977BA8B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="=" scope="00000134A68FE920" type="op" isAssignmentOp="True" astOperand1="00000134977BAF10" astOperand2="00000134977B25D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="nBitMax" scope="00000134A68FE920" type="name" varId="6" variable="000001349B1A0E90" values="00000134A8C04D10" astParent="00000134977B25D0" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B25D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="[" scope="00000134A68FE920" link="00000134977B2B10" values="00000134A8C04B30" astParent="00000134977BA8B0" astOperand1="00000134977B2F90" astOperand2="00000134977B24B0" valueType-type="int" valueType-sign="signed" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B24B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="0" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C050D0" astParent="00000134977B25D0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str="]" scope="00000134A68FE920" link="00000134977B25D0"/>
+    <token id="00000134977B2FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="57" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B1CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="if" scope="00000134A68FE920" type="name" astParent="00000134977B22D0"/>
+    <token id="00000134977B22D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="(" scope="00000134A68FE920" link="00000134977B2630" astOperand1="00000134977B1CD0" astOperand2="00000134977B3050"/>
+    <token id="00000134977B27B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="m_numwidth" scope="00000134A68FE920" type="name" astParent="00000134977B1F70"/>
+    <token id="00000134977B1F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="&gt;=" scope="00000134A68FE920" type="op" isComparisonOp="True" astParent="00000134977B3050" astOperand1="00000134977B27B0" astOperand2="00000134977B2210" valueType-type="bool"/>
+    <token id="00000134977B2210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="0" scope="00000134A68FE920" type="number" isInt="True" values="00000134A8C04990" astParent="00000134977B1F70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="&amp;&amp;" scope="00000134A68FE920" type="op" isLogicalOp="True" astParent="00000134977B22D0" astOperand1="00000134977B1F70" astOperand2="00000134977B2570" valueType-type="bool"/>
+    <token id="00000134977B20F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="(" scope="00000134A68FE920" link="00000134977B26F0" astParent="00000134977B2570" astOperand1="00000134977B2810" valueType-type="long long" valueType-sign="unsigned" valueType-originalTypeName="size_t"/>
+    <token id="00000134977B1D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="long" scope="00000134A68FE920" type="name" isUnsigned="true" originalName="size_t"/>
+    <token id="00000134977B26F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str=")" scope="00000134A68FE920" link="00000134977B20F0"/>
+    <token id="00000134977B2810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="m_numwidth" scope="00000134A68FE920" type="name" astParent="00000134977B20F0"/>
+    <token id="00000134977B2570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="&lt;" scope="00000134A68FE920" type="op" isComparisonOp="True" astParent="00000134977B3050" astOperand1="00000134977B20F0" astOperand2="00000134977B1DF0" valueType-type="bool"/>
+    <token id="00000134977B1BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="size" scope="00000134A68FE920" type="name" astParent="00000134977B1DF0"/>
+    <token id="00000134977B1DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="(" scope="00000134A68FE920" link="00000134977B21B0" astParent="00000134977B2570" astOperand1="00000134977B1BB0" astOperand2="00000134977B1C10"/>
+    <token id="00000134977B1C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str="nBitMax" scope="00000134A68FE920" type="name" varId="6" variable="000001349B1A0E90" values="00000134A8C04E70" astParent="00000134977B1DF0" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B21B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str=")" scope="00000134A68FE920" link="00000134977B1DF0"/>
+    <token id="00000134977B2630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="59" str=")" scope="00000134A68FE920" link="00000134977B22D0"/>
+    <token id="00000134977B2750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="60" str="{" scope="00000134A68FEA30" link="00000134977B1D30"/>
+    <token id="00000134977B2BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="wmax" scope="00000134A68FEA30" type="name" varId="7" variable="000001349B1A02C0" astParent="00000134977B2090" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="=" scope="00000134A68FEA30" type="op" isAssignmentOp="True" astOperand1="00000134977B2BD0" astOperand2="00000134977B18B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="nBitMax" scope="00000134A68FEA30" type="name" varId="6" variable="000001349B1A0E90" values="00000134A8C04AB0" astParent="00000134977B18B0" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B18B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="[" scope="00000134A68FEA30" link="00000134977B1C70" astParent="00000134977B2090" astOperand1="00000134977B2E10" astOperand2="00000134977B2390" valueType-type="int" valueType-sign="signed" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B2390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="m_numwidth" scope="00000134A68FEA30" type="name" astParent="00000134977B18B0"/>
+    <token id="00000134977B1C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str="]" scope="00000134A68FEA30" link="00000134977B18B0"/>
+    <token id="00000134977B2C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="61" str=";" scope="00000134A68FEA30"/>
+    <token id="00000134977B1D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="62" str="}" scope="00000134A68FEA30" link="00000134977B2750"/>
+    <token id="00000134977B2150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="63" str="return" scope="00000134A68FE920" type="name" astOperand1="00000134977B28D0"/>
+    <token id="00000134977B28D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="63" str="wmax" scope="00000134A68FE920" type="name" varId="7" variable="000001349B1A02C0" values="00000134A8C05050" astParent="00000134977B2150" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B2990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="63" str=";" scope="00000134A68FE920"/>
+    <token id="00000134977B1E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="64" str="}" scope="00000134A68FE920" link="00000134977B0890"/>
+    <token id="00000134977B2CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="uint32_t" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B2D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B2E70"/>
+    <token id="00000134977B2E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="::" scope="000001349115D5B0" astParent="00000134977B1910" astOperand1="00000134977B2D50" astOperand2="00000134977B2DB0"/>
+    <token id="00000134977B2DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="NRadixFromRadixType" scope="000001349115D5B0" type="name" astParent="00000134977B2E70"/>
+    <token id="00000134977B1910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="(" scope="000001349115D5B0" link="00000134977B1EB0" astOperand1="00000134977B2E70" astOperand2="00000134977B1AF0"/>
+    <token id="00000134977B1A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="RADIX_TYPE" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B1AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str="radixtype" scope="000001349115D5B0" type="name" varId="8" astParent="00000134977B1910"/>
+    <token id="00000134977B1EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="66" str=")" scope="000001349115D5B0" link="00000134977B1910"/>
+    <token id="00000134977B1B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="67" str="{" scope="00000134A68FE1B0" link="00000134977B3710"/>
+    <token id="00000134977B1F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="static" scope="00000134A68FE1B0" type="name"/>
+    <token id="00000134977B1FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="const" scope="00000134A68FE1B0" type="name" originalName="constexpr"/>
+    <token id="00000134977B2270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="uint32_t" scope="00000134A68FE1B0" type="name"/>
+    <token id="00000134977B2330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="rgnRadish" scope="00000134A68FE1B0" type="name" varId="9" variable="000001349B1A0090" astParent="00000134977B23F0" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B23F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="[" scope="00000134A68FE1B0" link="00000134977B3C50" astParent="00000134977B3230" astOperand1="00000134977B2330" astOperand2="00000134977B3410" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B3410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="4" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C04EB0" astParent="00000134977B23F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="]" scope="00000134A68FE1B0" link="00000134977B23F0"/>
+    <token id="00000134977B3230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="=" scope="00000134A68FE1B0" type="op" isAssignmentOp="True" astOperand1="00000134977B23F0" astOperand2="00000134977B3650" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B3650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="{" scope="00000134A68FE1B0" link="00000134977B4670" astParent="00000134977B3230" astOperand1="00000134977B3A10"/>
+    <token id="00000134977B33B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="16" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C05090" astParent="00000134977B42B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B42B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="," scope="00000134A68FE1B0" astParent="00000134977B3CB0" astOperand1="00000134977B33B0" astOperand2="00000134977B4610"/>
+    <token id="00000134977B4610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="10" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C04CD0" astParent="00000134977B42B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="," scope="00000134A68FE1B0" astParent="00000134977B3A10" astOperand1="00000134977B42B0" astOperand2="00000134977B39B0"/>
+    <token id="00000134977B39B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="8" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C04FB0" astParent="00000134977B3CB0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="," scope="00000134A68FE1B0" astParent="00000134977B3650" astOperand1="00000134977B3CB0" astOperand2="00000134977B4730"/>
+    <token id="00000134977B4730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="2" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C04ED0" astParent="00000134977B3A10" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B4670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str="}" scope="00000134A68FE1B0" link="00000134977B3650"/>
+    <token id="00000134977B3D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="68" str=";" scope="00000134A68FE1B0"/>
+    <token id="00000134977B31D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str="uint32_t" scope="00000134A68FE1B0" type="name"/>
+    <token id="00000134977B4130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str="radix" scope="00000134A68FE1B0" type="name" varId="10" variable="000001349B1A1050" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B3E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str=";" scope="00000134A68FE1B0"/>
+    <token id="00000134977BBF90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str="radix" scope="00000134A68FE1B0" type="name" varId="10" variable="000001349B1A1050" astParent="00000134977BAD90" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977BAD90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str="=" scope="00000134A68FE1B0" type="op" isAssignmentOp="True" astOperand1="00000134977BBF90" astOperand2="00000134977B3530" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B3530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str="10" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C04D50" astParent="00000134977BAD90" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="69" str=";" scope="00000134A68FE1B0"/>
+    <token id="00000134977B3EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="if" scope="00000134A68FE1B0" type="name" astParent="00000134977B35F0"/>
+    <token id="00000134977B35F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="(" scope="00000134A68FE1B0" link="00000134977B3350" astOperand1="00000134977B3EF0" astOperand2="00000134977B3A70"/>
+    <token id="00000134977B4790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="radixtype" scope="00000134A68FE1B0" type="name" varId="8" astParent="00000134977B4490"/>
+    <token id="00000134977B4490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="&gt;=" scope="00000134A68FE1B0" type="op" isComparisonOp="True" astParent="00000134977B3A70" astOperand1="00000134977B4790" astOperand2="00000134977B3110" valueType-type="bool"/>
+    <token id="00000134977B3110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="0" scope="00000134A68FE1B0" type="number" isInt="True" values="00000134A8C05110" astParent="00000134977B4490" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B3A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="&amp;&amp;" scope="00000134A68FE1B0" type="op" isLogicalOp="True" astParent="00000134977B35F0" astOperand1="00000134977B4490" astOperand2="00000134977B3DD0" valueType-type="bool"/>
+    <token id="00000134977B3D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="(" scope="00000134A68FE1B0" link="00000134977B3AD0" astParent="00000134977B3DD0" astOperand1="00000134977B3890" valueType-type="long long" valueType-sign="unsigned" valueType-originalTypeName="size_t"/>
+    <token id="00000134977B4010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="long" scope="00000134A68FE1B0" type="name" isUnsigned="true" originalName="size_t"/>
+    <token id="00000134977B3AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str=")" scope="00000134A68FE1B0" link="00000134977B3D70"/>
+    <token id="00000134977B3890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="radixtype" scope="00000134A68FE1B0" type="name" varId="8" astParent="00000134977B3D70"/>
+    <token id="00000134977B3DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="&lt;" scope="00000134A68FE1B0" type="op" isComparisonOp="True" astParent="00000134977B3A70" astOperand1="00000134977B3D70" astOperand2="00000134977B34D0" valueType-type="bool"/>
+    <token id="00000134977B46D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="size" scope="00000134A68FE1B0" type="name" astParent="00000134977B34D0"/>
+    <token id="00000134977B34D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="(" scope="00000134A68FE1B0" link="00000134977B3B90" astParent="00000134977B3DD0" astOperand1="00000134977B46D0" astOperand2="00000134977B37D0"/>
+    <token id="00000134977B37D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str="rgnRadish" scope="00000134A68FE1B0" type="name" varId="9" variable="000001349B1A0090" values="00000134A8C04E90" astParent="00000134977B34D0" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B3B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str=")" scope="00000134A68FE1B0" link="00000134977B34D0"/>
+    <token id="00000134977B3350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="72" str=")" scope="00000134A68FE1B0" link="00000134977B35F0"/>
+    <token id="00000134977B44F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="73" str="{" scope="00000134A68FE4E0" link="00000134977B4550"/>
+    <token id="00000134977B47F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="radix" scope="00000134A68FE4E0" type="name" varId="10" variable="000001349B1A1050" astParent="00000134977B38F0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B38F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="=" scope="00000134A68FE4E0" type="op" isAssignmentOp="True" astOperand1="00000134977B47F0" astOperand2="00000134977B3F50" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B36B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="rgnRadish" scope="00000134A68FE4E0" type="name" varId="9" variable="000001349B1A0090" values="00000134A8C04C30" astParent="00000134977B3F50" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B3F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="[" scope="00000134A68FE4E0" link="00000134977B3830" astParent="00000134977B38F0" astOperand1="00000134977B36B0" astOperand2="00000134977B3B30" valueType-type="int" valueType-sign="unsigned" valueType-constness="1" valueType-originalTypeName="constexpr"/>
+    <token id="00000134977B3B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="radixtype" scope="00000134A68FE4E0" type="name" varId="8" astParent="00000134977B3F50"/>
+    <token id="00000134977B3830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str="]" scope="00000134A68FE4E0" link="00000134977B3F50"/>
+    <token id="00000134977B4850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="74" str=";" scope="00000134A68FE4E0"/>
+    <token id="00000134977B4550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="75" str="}" scope="00000134A68FE4E0" link="00000134977B44F0"/>
+    <token id="00000134977B3FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="76" str="return" scope="00000134A68FE1B0" type="name" astOperand1="00000134977B4190"/>
+    <token id="00000134977B4190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="76" str="radix" scope="00000134A68FE1B0" type="name" varId="10" variable="000001349B1A1050" values="00000134A8C04DB0" astParent="00000134977B3FB0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B3BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="76" str=";" scope="00000134A68FE1B0"/>
+    <token id="00000134977B3710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="77" str="}" scope="00000134A68FE1B0" link="00000134977B1B50"/>
+    <token id="00000134977B43D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="bool" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B30B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B4070"/>
+    <token id="00000134977B4070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="::" scope="000001349115D5B0" astParent="00000134977B3590" astOperand1="00000134977B30B0" astOperand2="00000134977B40D0"/>
+    <token id="00000134977B40D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="TryToggleBit" scope="000001349115D5B0" type="name" astParent="00000134977B4070"/>
+    <token id="00000134977B3590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="(" scope="000001349115D5B0" link="00000134977B4430" astOperand1="00000134977B4070" astOperand2="00000134977B4310"/>
+    <token id="00000134977B41F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="CalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B3170"/>
+    <token id="00000134977B3170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="::" scope="000001349115D5B0" astParent="00000134977B4250" astOperand1="00000134977B41F0" astOperand2="00000134977B45B0"/>
+    <token id="00000134977B45B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="Rational" scope="000001349115D5B0" type="name" astParent="00000134977B3170"/>
+    <token id="00000134977B4250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="&amp;" scope="000001349115D5B0" type="op" astParent="00000134977B4310" astOperand1="00000134977B3170" astOperand2="00000134977B3290"/>
+    <token id="00000134977B3290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="rat" scope="000001349115D5B0" type="name" varId="11" astParent="00000134977B4250"/>
+    <token id="00000134977B4310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="," scope="000001349115D5B0" astParent="00000134977B3590" astOperand1="00000134977B4250" astOperand2="00000134977B32F0"/>
+    <token id="00000134977B4370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="uint32_t" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B32F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str="wbitno" scope="000001349115D5B0" type="name" varId="12" astParent="00000134977B4310"/>
+    <token id="00000134977B4430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="80" str=")" scope="000001349115D5B0" link="00000134977B3590"/>
+    <token id="00000134977B3770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="81" str="{" scope="00000134A68FE3D0" link="00000134977B5BD0"/>
+    <token id="00000134977B3470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="uint32_t" scope="00000134A68FE3D0" type="name"/>
+    <token id="00000134977B3950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="wmax" scope="00000134A68FE3D0" type="name" varId="13" variable="000001349B1A0100" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B5150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977BB090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="wmax" scope="00000134A68FE3D0" type="name" varId="13" variable="000001349B1A0100" astParent="00000134977BB3F0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977BB3F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="=" scope="00000134A68FE3D0" type="op" isAssignmentOp="True" astOperand1="00000134977BB090" astOperand2="00000134977B5930" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B4910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="DwWordBitWidthFromeNumWidth" scope="00000134A68FE3D0" type="name" astParent="00000134977B5930"/>
+    <token id="00000134977B5930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="(" scope="00000134A68FE3D0" link="00000134977B4970" astParent="00000134977BB3F0" astOperand1="00000134977B4910" astOperand2="00000134977B5450"/>
+    <token id="00000134977B5450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str="m_numwidth" scope="00000134A68FE3D0" type="name" astParent="00000134977B5930"/>
+    <token id="00000134977B4970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str=")" scope="00000134A68FE3D0" link="00000134977B5930"/>
+    <token id="00000134977B5690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="82" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977B56F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str="if" scope="00000134A68FE3D0" type="name" astParent="00000134977B5210"/>
+    <token id="00000134977B5210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str="(" scope="00000134A68FE3D0" link="00000134977B5990" astOperand1="00000134977B56F0" astOperand2="00000134977B4AF0"/>
+    <token id="00000134977B4FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str="wbitno" scope="00000134A68FE3D0" type="name" varId="12" astParent="00000134977B4AF0"/>
+    <token id="00000134977B4AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str="&gt;=" scope="00000134A68FE3D0" type="op" isComparisonOp="True" astParent="00000134977B5210" astOperand1="00000134977B4FD0" astOperand2="00000134977B51B0" valueType-type="bool"/>
+    <token id="00000134977B51B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str="wmax" scope="00000134A68FE3D0" type="name" varId="13" variable="000001349B1A0100" astParent="00000134977B4AF0" valueType-type="int" valueType-sign="unsigned"/>
+    <token id="00000134977B5990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="83" str=")" scope="00000134A68FE3D0" link="00000134977B5210"/>
+    <token id="00000134977B5270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="84" str="{" scope="00000134A68FEC50" link="00000134977B4DF0"/>
+    <token id="00000134977B5510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="85" str="return" scope="00000134A68FEC50" type="name" astOperand1="00000134977B4E50"/>
+    <token id="00000134977B4E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="85" str="false" scope="00000134A68FEC50" type="name" values="00000134A8C04A70" astParent="00000134977B5510"/>
+    <token id="00000134977B5570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="85" str=";" scope="00000134A68FEC50"/>
+    <token id="00000134977B4DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="86" str="}" scope="00000134A68FEC50" link="00000134977B5270"/>
+    <token id="00000134977B5090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="Rational" scope="00000134A68FE3D0" type="name"/>
+    <token id="00000134977B5750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60"/>
+    <token id="00000134977B4EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977BB270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60" astParent="00000134977BAFD0"/>
+    <token id="00000134977BAFD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="=" scope="00000134A68FE3D0" type="op" isAssignmentOp="True" astOperand1="00000134977BB270" astOperand2="00000134977B52D0"/>
+    <token id="00000134977B4C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="Integer" scope="00000134A68FE3D0" type="name" astParent="00000134977B52D0"/>
+    <token id="00000134977B52D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="(" scope="00000134A68FE3D0" link="00000134977B5E70" astParent="00000134977BAFD0" astOperand1="00000134977B4C70" astOperand2="00000134977B5330"/>
+    <token id="00000134977B5330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str="rat" scope="00000134A68FE3D0" type="name" varId="11" astParent="00000134977B52D0"/>
+    <token id="00000134977B5E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str=")" scope="00000134A68FE3D0" link="00000134977B52D0"/>
+    <token id="00000134977B4F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="88" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977B5B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60" astParent="00000134977B58D0"/>
+    <token id="00000134977B58D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="=" scope="00000134A68FE3D0" type="op" isAssignmentOp="True" astOperand1="00000134977B5B10" astOperand2="00000134977B49D0"/>
+    <token id="00000134977B4B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60" astParent="00000134977B5E10"/>
+    <token id="00000134977B5E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="!=" scope="00000134A68FE3D0" type="op" isComparisonOp="True" astParent="00000134977B49D0" astOperand1="00000134977B4B50" astOperand2="00000134977B5B70" valueType-type="bool"/>
+    <token id="00000134977B5B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="0" scope="00000134A68FE3D0" type="number" isInt="True" values="00000134A8C04A30" astParent="00000134977B5E10" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B49D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="?" scope="00000134A68FE3D0" values="00000134A8C04B50" astParent="00000134977B58D0" astOperand1="00000134977B5E10" astOperand2="00000134977B57B0"/>
+    <token id="00000134977B4F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60" astParent="00000134977B57B0"/>
+    <token id="00000134977B57B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str=":" scope="00000134A68FE3D0" values="00000134A8C04EF0" astParent="00000134977B49D0" astOperand1="00000134977B4F70" astOperand2="00000134977B5870"/>
+    <token id="00000134977B5870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str="0" scope="00000134A68FE3D0" type="number" isInt="True" values="00000134A8C05030" astParent="00000134977B57B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="91" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977B48B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="rat" scope="00000134A68FE3D0" type="name" varId="11" astParent="00000134977B4BB0"/>
+    <token id="00000134977B4BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="=" scope="00000134A68FE3D0" type="op" isAssignmentOp="True" astOperand1="00000134977B48B0" astOperand2="00000134977B59F0"/>
+    <token id="00000134977B4CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="result" scope="00000134A68FE3D0" type="name" varId="14" variable="000001349B1A0C60" values="00000134A8C04BD0" astParent="00000134977B59F0"/>
+    <token id="00000134977B59F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="^" scope="00000134A68FE3D0" type="op" astParent="00000134977B4BB0" astOperand1="00000134977B4CD0" astOperand2="00000134977B54B0"/>
+    <token id="00000134977B5ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="Pow" scope="00000134A68FE3D0" type="name" astParent="00000134977B54B0"/>
+    <token id="00000134977B54B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="(" scope="00000134A68FE3D0" link="00000134977B5F90" astParent="00000134977B59F0" astOperand1="00000134977B5ED0" astOperand2="00000134977B5CF0"/>
+    <token id="00000134977B5030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="2" scope="00000134A68FE3D0" type="number" isInt="True" values="00000134A8C050F0" astParent="00000134977B5CF0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B5CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="," scope="00000134A68FE3D0" astParent="00000134977B54B0" astOperand1="00000134977B5030" astOperand2="00000134977B50F0"/>
+    <token id="00000134977B4D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="static_cast" scope="00000134A68FE3D0" type="name" astParent="00000134977B50F0"/>
+    <token id="00000134977B4C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="&lt;" scope="00000134A68FE3D0" link="00000134977B4A30"/>
+    <token id="00000134977B55D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="int32_t" scope="00000134A68FE3D0" type="name"/>
+    <token id="00000134977B4A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="&gt;" scope="00000134A68FE3D0" link="00000134977B4C10"/>
+    <token id="00000134977B50F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="(" scope="00000134A68FE3D0" link="00000134977B5AB0" astParent="00000134977B5CF0" astOperand1="00000134977B4D90" astOperand2="00000134977B4D30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B4D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str="wbitno" scope="00000134A68FE3D0" type="name" varId="12" astParent="00000134977B50F0"/>
+    <token id="00000134977B5AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str=")" scope="00000134A68FE3D0" link="00000134977B50F0"/>
+    <token id="00000134977B5F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str=")" scope="00000134A68FE3D0" link="00000134977B54B0"/>
+    <token id="00000134977B5630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="94" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977B5FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="96" str="return" scope="00000134A68FE3D0" type="name" astOperand1="00000134977B5390"/>
+    <token id="00000134977B5390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="96" str="true" scope="00000134A68FE3D0" type="name" values="00000134A8C04A90" astParent="00000134977B5FF0"/>
+    <token id="00000134977B4A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="96" str=";" scope="00000134A68FE3D0"/>
+    <token id="00000134977B5BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="97" str="}" scope="00000134A68FE3D0" link="00000134977B3770"/>
+    <token id="00000134977B53F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="int" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B5C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B5C90"/>
+    <token id="00000134977B5C90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="::" scope="000001349115D5B0" astParent="00000134977B5DB0" astOperand1="00000134977B5C30" astOperand2="00000134977B5D50"/>
+    <token id="00000134977B5D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="QuickLog2" scope="000001349115D5B0" type="name" astParent="00000134977B5C90"/>
+    <token id="00000134977B5DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="(" scope="000001349115D5B0" link="00000134977B70D0" astOperand1="00000134977B5C90" astOperand2="00000134977B7610"/>
+    <token id="00000134977B6050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="int" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B7610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str="iNum" scope="000001349115D5B0" type="name" varId="15" astParent="00000134977B5DB0"/>
+    <token id="00000134977B70D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="100" str=")" scope="000001349115D5B0" link="00000134977B5DB0"/>
+    <token id="00000134977B6E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="101" str="{" scope="00000134A68FDE80" link="00000134977B86F0"/>
+    <token id="00000134977B7670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str="int" scope="00000134A68FDE80" type="name"/>
+    <token id="00000134977B7430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str="iRes" scope="00000134A68FDE80" type="name" varId="16" variable="000001349B19F680" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977BB330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str="iRes" scope="00000134A68FDE80" type="name" varId="16" variable="000001349B19F680" astParent="00000134977BB570" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977BB570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str="=" scope="00000134A68FDE80" type="op" isAssignmentOp="True" astOperand1="00000134977BB330" astOperand2="00000134977B7730" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str="0" scope="00000134A68FDE80" type="number" isInt="True" values="00000134A8C04FF0" astParent="00000134977BB570" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="102" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977B7490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="while" scope="00000134A68FDE80" type="name" astParent="00000134977B76D0"/>
+    <token id="00000134977B76D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="(" scope="00000134A68FDE80" link="00000134977B7010" astOperand1="00000134977B7490" astOperand2="00000134977B64D0"/>
+    <token id="00000134977B64D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="!" scope="00000134A68FDE80" type="op" isLogicalOp="True" values="00000134A8C04AD0" astParent="00000134977B76D0" astOperand1="00000134977B74F0" valueType-type="bool"/>
+    <token id="00000134977B7250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="(" scope="00000134A68FDE80" link="00000134977B73D0"/>
+    <token id="00000134977B6230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="iNum" scope="00000134A68FDE80" type="name" varId="15" astParent="00000134977B74F0"/>
+    <token id="00000134977B74F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="&amp;" scope="00000134A68FDE80" type="op" values="00000134A8C04D30" astParent="00000134977B64D0" astOperand1="00000134977B6230" astOperand2="00000134977B6F50"/>
+    <token id="00000134977B6F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str="1" scope="00000134A68FDE80" type="number" isInt="True" values="00000134A8C04B90" astParent="00000134977B74F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B73D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str=")" scope="00000134A68FDE80" link="00000134977B7250"/>
+    <token id="00000134977B7010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="105" str=")" scope="00000134A68FDE80" link="00000134977B76D0"/>
+    <token id="00000134977B6530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="106" str="{" scope="00000134A68FE2C0" link="00000134977B61D0"/>
+    <token id="00000134977B7790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="107" str="iRes" scope="00000134A68FE2C0" type="name" varId="16" variable="000001349B19F680" astParent="00000134977B66B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B66B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="107" str="++" scope="00000134A68FE2C0" type="op" astOperand1="00000134977B7790" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B69B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="107" str=";" scope="00000134A68FE2C0"/>
+    <token id="00000134977B6A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="108" str="iNum" scope="00000134A68FE2C0" type="name" varId="15" astParent="00000134977B77F0"/>
+    <token id="00000134977B77F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="108" str="&gt;&gt;=" scope="00000134A68FE2C0" type="op" isAssignmentOp="True" astOperand1="00000134977B6A10" astOperand2="00000134977B7850"/>
+    <token id="00000134977B7850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="108" str="1" scope="00000134A68FE2C0" type="number" isInt="True" values="00000134A8C04A50" astParent="00000134977B77F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="108" str=";" scope="00000134A68FE2C0"/>
+    <token id="00000134977B61D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="109" str="}" scope="00000134A68FE2C0" link="00000134977B6530"/>
+    <token id="00000134977B7130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str="iNum" scope="00000134A68FDE80" type="name" varId="15" astParent="00000134977B6EF0"/>
+    <token id="00000134977B6EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str="=" scope="00000134A68FDE80" type="op" isAssignmentOp="True" astOperand1="00000134977B7130" astOperand2="00000134977B6E30"/>
+    <token id="00000134977B6590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str="iNum" scope="00000134A68FDE80" type="name" varId="15" astParent="00000134977B6E30"/>
+    <token id="00000134977B6E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str="&gt;&gt;" scope="00000134A68FDE80" type="op" isArithmeticalOp="True" astParent="00000134977B6EF0" astOperand1="00000134977B6590" astOperand2="00000134977B6FB0"/>
+    <token id="00000134977B6FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str="1" scope="00000134A68FDE80" type="number" isInt="True" values="00000134A8C05130" astParent="00000134977B6E30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B65F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="112" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977B60B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="113" str="if" scope="00000134A68FDE80" type="name" astParent="00000134977B7550"/>
+    <token id="00000134977B7550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="113" str="(" scope="00000134A68FDE80" link="00000134977B6A70" astOperand1="00000134977B60B0" astOperand2="00000134977B6110"/>
+    <token id="00000134977B6110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="113" str="iNum" scope="00000134A68FDE80" type="name" varId="15" astParent="00000134977B7550"/>
+    <token id="00000134977B6A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="113" str=")" scope="00000134A68FDE80" link="00000134977B7550"/>
+    <token id="00000134977B6C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="114" str="{" scope="00000134A68FE810" link="00000134977B6950"/>
+    <token id="00000134977B7070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="for" scope="00000134A68FE810" type="name" astParent="00000134977B6AD0"/>
+    <token id="00000134977B6AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="(" scope="00000134A68FE810" link="00000134977B7190" astOperand1="00000134977B7070" astOperand2="00000134977B6B90"/>
+    <token id="00000134977B6890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="iNum" scope="00000134A68FE810" type="name" varId="15" astParent="00000134977B6DD0"/>
+    <token id="00000134977B6DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="=" scope="00000134A68FE810" type="op" isAssignmentOp="True" astParent="00000134977B6B90" astOperand1="00000134977B6890" astOperand2="00000134977B6650"/>
+    <token id="00000134977B6290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="iNum" scope="00000134A68FE810" type="name" varId="15" astParent="00000134977B6650"/>
+    <token id="00000134977B6650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="&gt;&gt;" scope="00000134A68FE810" type="op" isArithmeticalOp="True" astParent="00000134977B6DD0" astOperand1="00000134977B6290" astOperand2="00000134977B67D0"/>
+    <token id="00000134977B67D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="1" scope="00000134A68FE810" type="number" isInt="True" values="00000134A8C04970" astParent="00000134977B6650" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str=";" scope="00000134A68FE810" astParent="00000134977B6AD0" astOperand1="00000134977B6DD0" astOperand2="00000134977B75B0"/>
+    <token id="00000134977B6350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="iNum" scope="00000134A68FE810" type="name" varId="15" astParent="00000134977B75B0"/>
+    <token id="00000134977B75B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str=";" scope="00000134A68FE810" astParent="00000134977B6B90" astOperand1="00000134977B6350" astOperand2="00000134977B68F0"/>
+    <token id="00000134977B62F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="iNum" scope="00000134A68FE810" type="name" varId="15" astParent="00000134977B68F0"/>
+    <token id="00000134977B68F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="=" scope="00000134A68FE810" type="op" isAssignmentOp="True" astParent="00000134977B75B0" astOperand1="00000134977B62F0" astOperand2="00000134977B63B0"/>
+    <token id="00000134977B6710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="iNum" scope="00000134A68FE810" type="name" varId="15" astParent="00000134977B63B0"/>
+    <token id="00000134977B63B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="&gt;&gt;" scope="00000134A68FE810" type="op" isArithmeticalOp="True" astParent="00000134977B68F0" astOperand1="00000134977B6710" astOperand2="00000134977B6410"/>
+    <token id="00000134977B6410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="1" scope="00000134A68FE810" type="number" isInt="True" values="00000134A8C049B0" astParent="00000134977B63B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str=")" scope="00000134A68FE810" link="00000134977B6AD0"/>
+    <token id="00000134977BB210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="116" str="{" scope="00000134A68FDF90" link="00000134977BB1B0"/>
+    <token id="00000134977B6470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="117" str="++" scope="00000134A68FDF90" type="op" astOperand1="00000134977B7370" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="117" str="iRes" scope="00000134A68FDF90" type="name" varId="16" variable="000001349B19F680" astParent="00000134977B6470" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="117" str=";" scope="00000134A68FDF90"/>
+    <token id="00000134977BB1B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="117" str="}" scope="00000134A68FDF90" link="00000134977BB210"/>
+    <token id="00000134977B6830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="120" str="iRes" scope="00000134A68FE810" type="name" varId="16" variable="000001349B19F680" astParent="00000134977B71F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B71F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="120" str="+=" scope="00000134A68FE810" type="op" isAssignmentOp="True" astOperand1="00000134977B6830" astOperand2="00000134977B72B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B72B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="120" str="2" scope="00000134A68FE810" type="number" isInt="True" values="00000134A8C049D0" astParent="00000134977B71F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B7310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="120" str=";" scope="00000134A68FE810"/>
+    <token id="00000134977B6950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="121" str="}" scope="00000134A68FE810" link="00000134977B6C50"/>
+    <token id="00000134977B6B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="123" str="return" scope="00000134A68FDE80" type="name" astOperand1="00000134977B6BF0"/>
+    <token id="00000134977B6BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="123" str="iRes" scope="00000134A68FDE80" type="name" varId="16" variable="000001349B19F680" astParent="00000134977B6B30" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B6CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="123" str=";" scope="00000134A68FDE80"/>
+    <token id="00000134977B86F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="124" str="}" scope="00000134A68FDE80" link="00000134977B6E90"/>
+    <token id="00000134977B8ED0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str="void" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B8450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B7F10"/>
+    <token id="00000134977B7F10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str="::" scope="000001349115D5B0" astParent="00000134977B88D0" astOperand1="00000134977B8450" astOperand2="00000134977B7910"/>
+    <token id="00000134977B7910" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str="UpdateMaxIntDigits" scope="000001349115D5B0" type="name" astParent="00000134977B7F10"/>
+    <token id="00000134977B88D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str="(" scope="000001349115D5B0" link="00000134977B8CF0" astOperand1="00000134977B7F10"/>
+    <token id="00000134977B8CF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="138" str=")" scope="000001349115D5B0" link="00000134977B88D0"/>
+    <token id="00000134977B8390" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="139" str="{" scope="00000134A68FE0A0" link="00000134977B7C10"/>
+    <token id="00000134977B8870" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str="if" scope="00000134A68FE0A0" type="name" astParent="00000134977B7AF0"/>
+    <token id="00000134977B7AF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str="(" scope="00000134A68FE0A0" link="00000134977B85D0" astOperand1="00000134977B8870" astOperand2="00000134977B7F70"/>
+    <token id="00000134977B84B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str="m_radix" scope="00000134A68FE0A0" type="name" astParent="00000134977B7F70"/>
+    <token id="00000134977B7F70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str="==" scope="00000134A68FE0A0" type="op" isComparisonOp="True" astParent="00000134977B7AF0" astOperand1="00000134977B84B0" astOperand2="00000134977B7A30" valueType-type="bool"/>
+    <token id="00000134977B7A30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str="10" scope="00000134A68FE0A0" type="number" isInt="True" values="00000134A8C049F0" astParent="00000134977B7F70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B85D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="140" str=")" scope="00000134A68FE0A0" link="00000134977B7AF0"/>
+    <token id="00000134977B8150" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="141" str="{" scope="00000134A68FE5F0" link="00000134977B79D0"/>
+    <token id="00000134977B8930" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="143" str="if" scope="00000134A68FE5F0" type="name" astParent="00000134977B7DF0"/>
+    <token id="00000134977B7DF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="143" str="(" scope="00000134A68FE5F0" link="00000134977B7D90" astOperand1="00000134977B8930" astOperand2="00000134977B8F30"/>
+    <token id="00000134977B8F30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="143" str="m_fIntegerMode" scope="00000134A68FE5F0" type="name" astParent="00000134977B7DF0"/>
+    <token id="00000134977B7D90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="143" str=")" scope="00000134A68FE5F0" link="00000134977B7DF0"/>
+    <token id="00000134977B8810" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="144" str="{" scope="00000134A68FE700" link="00000134977B8B10"/>
+    <token id="00000134977B8330" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="m_cIntDigitsSav" scope="00000134A68FE700" type="name" astParent="00000134977B7E50"/>
+    <token id="00000134977B7E50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="=" scope="00000134A68FE700" type="op" isAssignmentOp="True" astOperand1="00000134977B8330" astOperand2="00000134977B8270"/>
+    <token id="00000134977B7A90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="static_cast" scope="00000134A68FE700" type="name" astParent="00000134977B81B0"/>
+    <token id="00000134977B8690" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="&lt;" scope="00000134A68FE700" link="00000134977B83F0"/>
+    <token id="00000134977B82D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="int" scope="00000134A68FE700" type="name"/>
+    <token id="00000134977B83F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="&gt;" scope="00000134A68FE700" link="00000134977B8690"/>
+    <token id="00000134977B81B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="(" scope="00000134A68FE700" link="00000134977B8210" astParent="00000134977B8270" astOperand1="00000134977B7A90" astOperand2="00000134977B8030" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B8C30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="m_maxDecimalValueStrings" scope="00000134A68FE700" type="name" astParent="00000134977B7EB0"/>
+    <token id="00000134977B7EB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="[" scope="00000134A68FE700" link="00000134977B7FD0" astParent="00000134977B8090" astOperand1="00000134977B8C30" astOperand2="00000134977B8570"/>
+    <token id="00000134977B8570" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="m_numwidth" scope="00000134A68FE700" type="name" astParent="00000134977B7EB0"/>
+    <token id="00000134977B7FD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="]" scope="00000134A68FE700" link="00000134977B7EB0"/>
+    <token id="00000134977B8090" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="." scope="00000134A68FE700" astParent="00000134977B8030" astOperand1="00000134977B7EB0" astOperand2="00000134977B8750"/>
+    <token id="00000134977B8750" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="length" scope="00000134A68FE700" type="name" astParent="00000134977B8090"/>
+    <token id="00000134977B8030" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="(" scope="00000134A68FE700" link="00000134977B7C70" astParent="00000134977B81B0" astOperand1="00000134977B8090"/>
+    <token id="00000134977B7C70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str=")" scope="00000134A68FE700" link="00000134977B8030"/>
+    <token id="00000134977B8210" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str=")" scope="00000134A68FE700" link="00000134977B81B0"/>
+    <token id="00000134977B8270" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="-" scope="00000134A68FE700" type="op" isArithmeticalOp="True" astParent="00000134977B7E50" astOperand1="00000134977B81B0" astOperand2="00000134977B8E70" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B8E70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str="1" scope="00000134A68FE700" type="number" isInt="True" values="00000134A8C05010" astParent="00000134977B8270" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B80F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="145" str=";" scope="00000134A68FE700"/>
+    <token id="00000134977B8B10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="148" str="}" scope="00000134A68FE700" link="00000134977B8810"/>
+    <token id="00000134977B8990" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="149" str="else" scope="00000134A68FE5F0" type="name"/>
+    <token id="00000134977B7B50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="150" str="{" scope="00000134A68FEB40" link="00000134977B8630"/>
+    <token id="00000134977B8F90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="151" str="m_cIntDigitsSav" scope="00000134A68FEB40" type="name" astParent="00000134977B7970"/>
+    <token id="00000134977B7970" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="151" str="=" scope="00000134A68FEB40" type="op" isAssignmentOp="True" astOperand1="00000134977B8F90" astOperand2="00000134977B8E10"/>
+    <token id="00000134977B8E10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="151" str="m_precision" scope="00000134A68FEB40" type="name" astParent="00000134977B7970"/>
+    <token id="00000134977B89F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="151" str=";" scope="00000134A68FEB40"/>
+    <token id="00000134977B8630" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="152" str="}" scope="00000134A68FEB40" link="00000134977B7B50"/>
+    <token id="00000134977B79D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="153" str="}" scope="00000134A68FE5F0" link="00000134977B8150"/>
+    <token id="00000134977B8510" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="154" str="else" scope="00000134A68FE0A0" type="name"/>
+    <token id="00000134977B87B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="155" str="{" scope="00000134A9316180" link="00000134977B78B0"/>
+    <token id="00000134977B7CD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="m_cIntDigitsSav" scope="00000134A9316180" type="name" astParent="00000134977B8FF0"/>
+    <token id="00000134977B8FF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="=" scope="00000134A9316180" type="op" isAssignmentOp="True" astOperand1="00000134977B7CD0" astOperand2="00000134977B8AB0"/>
+    <token id="00000134977B8A50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="m_dwWordBitWidth" scope="00000134A9316180" type="name" astParent="00000134977B8AB0"/>
+    <token id="00000134977B8AB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="/" scope="00000134A9316180" type="op" isArithmeticalOp="True" astParent="00000134977B8FF0" astOperand1="00000134977B8A50" astOperand2="00000134977B8B70"/>
+    <token id="00000134977B9050" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="CCalcEngine" scope="00000134A9316180" type="name" astParent="00000134977B8C90"/>
+    <token id="00000134977B8C90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="::" scope="00000134A9316180" astParent="00000134977B8B70" astOperand1="00000134977B9050" astOperand2="00000134977B7BB0"/>
+    <token id="00000134977B7BB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="QuickLog2" scope="00000134A9316180" type="name" astParent="00000134977B8C90"/>
+    <token id="00000134977B8B70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="(" scope="00000134A9316180" link="00000134977B8D50" astParent="00000134977B8AB0" astOperand1="00000134977B8C90" astOperand2="00000134977B8BD0"/>
+    <token id="00000134977B8BD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str="m_radix" scope="00000134A9316180" type="name" astParent="00000134977B8B70"/>
+    <token id="00000134977B8D50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str=")" scope="00000134A9316180" link="00000134977B8B70"/>
+    <token id="00000134977B8DB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="156" str=";" scope="00000134A9316180"/>
+    <token id="00000134977B78B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="157" str="}" scope="00000134A9316180" link="00000134977B87B0"/>
+    <token id="00000134977B7C10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="158" str="}" scope="00000134A68FE0A0" link="00000134977B8390"/>
+    <token id="00000134977B7D30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="void" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B94D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977B97D0"/>
+    <token id="00000134977B97D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="::" scope="000001349115D5B0" astParent="00000134977B9470" astOperand1="00000134977B94D0" astOperand2="00000134977BA850"/>
+    <token id="00000134977BA850" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="ChangeBaseConstants" scope="000001349115D5B0" type="name" astParent="00000134977B97D0"/>
+    <token id="00000134977B9470" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="(" scope="000001349115D5B0" link="00000134977B9FB0" astOperand1="00000134977B97D0" astOperand2="00000134977BA7F0"/>
+    <token id="00000134977BA2B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="uint32_t" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BA6D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="radix" scope="000001349115D5B0" type="name" varId="17" astParent="00000134977B9DD0"/>
+    <token id="00000134977B9DD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="," scope="000001349115D5B0" astParent="00000134977BA7F0" astOperand1="00000134977BA6D0" astOperand2="00000134977BA310"/>
+    <token id="00000134977B9CB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="int" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977BA310" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="maxIntDigits" scope="000001349115D5B0" type="name" varId="18" astParent="00000134977B9DD0"/>
+    <token id="00000134977BA7F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="," scope="000001349115D5B0" astParent="00000134977B9470" astOperand1="00000134977B9DD0" astOperand2="00000134977B9AD0"/>
+    <token id="00000134977B9530" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="int32_t" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B9AD0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str="precision" scope="000001349115D5B0" type="name" varId="19" astParent="00000134977BA7F0"/>
+    <token id="00000134977B9FB0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="160" str=")" scope="000001349115D5B0" link="00000134977B9470"/>
+    <token id="00000134977B9770" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="161" str="{" scope="00000134A93168F0" link="00000134977BA670"/>
+    <token id="00000134977B9A10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str="if" scope="00000134A93168F0" type="name" astParent="00000134977B90B0"/>
+    <token id="00000134977B90B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str="(" scope="00000134A93168F0" link="00000134977BA010" astOperand1="00000134977B9A10" astOperand2="00000134977B9590"/>
+    <token id="00000134977B98F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str="10" scope="00000134A93168F0" type="number" isInt="True" values="00000134A8C04A10" astParent="00000134977B9590" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B9590" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str="==" scope="00000134A93168F0" type="op" isComparisonOp="True" astParent="00000134977B90B0" astOperand1="00000134977B98F0" astOperand2="00000134977B9EF0" valueType-type="bool"/>
+    <token id="00000134977B9EF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str="radix" scope="00000134A93168F0" type="name" varId="17" astParent="00000134977B9590"/>
+    <token id="00000134977BA010" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="162" str=")" scope="00000134A93168F0" link="00000134977B90B0"/>
+    <token id="00000134977B9C50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="163" str="{" scope="00000134A93165C0" link="00000134977B9890"/>
+    <token id="00000134977B93B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str="ChangeConstants" scope="00000134A93165C0" type="name" astParent="00000134977B95F0"/>
+    <token id="00000134977B95F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str="(" scope="00000134A93165C0" link="00000134977B9E30" astOperand1="00000134977B93B0" astOperand2="00000134977B99B0"/>
+    <token id="00000134977B9410" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str="radix" scope="00000134A93165C0" type="name" varId="17" astParent="00000134977B99B0"/>
+    <token id="00000134977B99B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str="," scope="00000134A93165C0" astParent="00000134977B95F0" astOperand1="00000134977B9410" astOperand2="00000134977B9D70"/>
+    <token id="00000134977B9D70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str="precision" scope="00000134A93165C0" type="name" varId="19" astParent="00000134977B99B0"/>
+    <token id="00000134977B9E30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str=")" scope="00000134A93165C0" link="00000134977B95F0"/>
+    <token id="00000134977BA1F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="164" str=";" scope="00000134A93165C0"/>
+    <token id="00000134977B9890" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="169" str="}" scope="00000134A93165C0" link="00000134977B9C50"/>
+    <token id="00000134977BA610" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="170" str="else" scope="00000134A93168F0" type="name"/>
+    <token id="00000134977B9110" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="171" str="{" scope="00000134A93163A0" link="00000134977BA430"/>
+    <token id="00000134977B9B90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="ChangeConstants" scope="00000134A93163A0" type="name" astParent="00000134977B9650"/>
+    <token id="00000134977B9650" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="(" scope="00000134A93163A0" link="00000134977B9710" astOperand1="00000134977B9B90" astOperand2="00000134977B96B0"/>
+    <token id="00000134977BA370" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="radix" scope="00000134A93163A0" type="name" varId="17" astParent="00000134977B96B0"/>
+    <token id="00000134977B96B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="," scope="00000134A93163A0" astParent="00000134977B9650" astOperand1="00000134977BA370" astOperand2="00000134977B9F50"/>
+    <token id="00000134977B9950" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="maxIntDigits" scope="00000134A93163A0" type="name" varId="18" astParent="00000134977B9F50"/>
+    <token id="00000134977B9F50" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="+" scope="00000134A93163A0" type="op" isArithmeticalOp="True" astParent="00000134977B96B0" astOperand1="00000134977B9950" astOperand2="00000134977BA0D0"/>
+    <token id="00000134977BA0D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str="1" scope="00000134A93163A0" type="number" isInt="True" values="00000134A8C04C90" astParent="00000134977B9F50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00000134977B9710" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str=")" scope="00000134A93163A0" link="00000134977B9650"/>
+    <token id="00000134977BA3D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="172" str=";" scope="00000134A93163A0"/>
+    <token id="00000134977BA430" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="173" str="}" scope="00000134A93163A0" link="00000134977B9110"/>
+    <token id="00000134977BA670" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="174" str="}" scope="00000134A93168F0" link="00000134977B9770"/>
+    <token id="00000134977BA190" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str="void" scope="000001349115D5B0" type="name"/>
+    <token id="00000134977B9830" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str="CCalcEngine" scope="000001349115D5B0" type="name" astParent="00000134977BA4F0"/>
+    <token id="00000134977BA4F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str="::" scope="000001349115D5B0" astParent="00000134977B9A70" astOperand1="00000134977B9830" astOperand2="00000134977BA490"/>
+    <token id="00000134977BA490" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str="BaseOrPrecisionChanged" scope="000001349115D5B0" type="name" astParent="00000134977BA4F0"/>
+    <token id="00000134977B9A70" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str="(" scope="000001349115D5B0" link="00000134977BA070" astOperand1="00000134977BA4F0"/>
+    <token id="00000134977BA070" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="176" str=")" scope="000001349115D5B0" link="00000134977B9A70"/>
+    <token id="00000134977BA730" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="177" str="{" scope="00000134A9316C20" link="00000134977BB450"/>
+    <token id="00000134977B9B30" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="178" str="UpdateMaxIntDigits" scope="00000134A9316C20" type="name" astParent="00000134977BA790"/>
+    <token id="00000134977BA790" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="178" str="(" scope="00000134A9316C20" link="00000134977BA550" astOperand1="00000134977B9B30"/>
+    <token id="00000134977BA550" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="178" str=")" scope="00000134A9316C20" link="00000134977BA790"/>
+    <token id="00000134977BA130" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="178" str=";" scope="00000134A9316C20"/>
+    <token id="00000134977BA5B0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="CCalcEngine" scope="00000134A9316C20" type="name" astParent="00000134977B9BF0"/>
+    <token id="00000134977B9BF0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="::" scope="00000134A9316C20" astParent="00000134977B9E90" astOperand1="00000134977BA5B0" astOperand2="00000134977B9D10"/>
+    <token id="00000134977B9D10" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="ChangeBaseConstants" scope="00000134A9316C20" type="name" astParent="00000134977B9BF0"/>
+    <token id="00000134977B9E90" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="(" scope="00000134A9316C20" link="00000134977B92F0" astOperand1="00000134977B9BF0" astOperand2="00000134977B9230"/>
+    <token id="00000134977B91D0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="m_radix" scope="00000134A9316C20" type="name" astParent="00000134977B9170"/>
+    <token id="00000134977B9170" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="," scope="00000134A9316C20" astParent="00000134977B9230" astOperand1="00000134977B91D0" astOperand2="00000134977BA250"/>
+    <token id="00000134977BA250" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="m_cIntDigitsSav" scope="00000134A9316C20" type="name" astParent="00000134977B9170"/>
+    <token id="00000134977B9230" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="," scope="00000134A9316C20" astParent="00000134977B9E90" astOperand1="00000134977B9170" astOperand2="00000134977B9290"/>
+    <token id="00000134977B9290" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str="m_precision" scope="00000134A9316C20" type="name" astParent="00000134977B9230"/>
+    <token id="00000134977B92F0" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str=")" scope="00000134A9316C20" link="00000134977B9E90"/>
+    <token id="00000134977B9350" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="179" str=";" scope="00000134A9316C20"/>
+    <token id="00000134977BB450" file="C:/sample repositories/calculator-master/src/CalcManager/CEngine/sciset.cpp" linenr="180" str="}" scope="00000134A9316C20" link="00000134977BA730"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349115D5B0" type="Global"/>
+    <scope id="000001349115D9F0" type="Function" className="SetRadixTypeAndNumWidth" bodyStart="00000134977BF710" bodyEnd="00000134977B1850" nestedIn="000001349115D5B0"/>
+    <scope id="000001349115D7D0" type="If" bodyStart="00000134977BF230" bodyEnd="00000134977C0910" nestedIn="000001349115D9F0">
+      <varlist>
+        <var id="000001349B19C2E0"/>
+        <var id="000001349B19C3C0"/>
+      </varlist>
+    </scope>
+    <scope id="000001349115DB00" type="If" bodyStart="00000134977BFB30" bodyEnd="00000134977C0EB0" nestedIn="000001349115D7D0">
+      <varlist>
+        <var id="000001349B1A0020"/>
+      </varlist>
+    </scope>
+    <scope id="000001349115D8E0" type="If" bodyStart="00000134977B0EF0" bodyEnd="00000134977B1190" nestedIn="000001349115D9F0"/>
+    <scope id="000001349115D6C0" type="If" bodyStart="00000134977B1010" bodyEnd="00000134977B1610" nestedIn="000001349115D9F0"/>
+    <scope id="00000134A68FE920" type="Function" className="DwWordBitWidthFromeNumWidth" bodyStart="00000134977B0890" bodyEnd="00000134977B1E50" nestedIn="000001349115D5B0">
+      <varlist>
+        <var id="000001349B1A0E90"/>
+        <var id="000001349B1A02C0"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FEA30" type="If" bodyStart="00000134977B2750" bodyEnd="00000134977B1D30" nestedIn="00000134A68FE920"/>
+    <scope id="00000134A68FE1B0" type="Function" className="NRadixFromRadixType" bodyStart="00000134977B1B50" bodyEnd="00000134977B3710" nestedIn="000001349115D5B0">
+      <varlist>
+        <var id="000001349B1A0090"/>
+        <var id="000001349B1A1050"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FE4E0" type="If" bodyStart="00000134977B44F0" bodyEnd="00000134977B4550" nestedIn="00000134A68FE1B0"/>
+    <scope id="00000134A68FE3D0" type="Function" className="TryToggleBit" bodyStart="00000134977B3770" bodyEnd="00000134977B5BD0" nestedIn="000001349115D5B0">
+      <varlist>
+        <var id="000001349B1A0100"/>
+        <var id="000001349B1A0C60"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FEC50" type="If" bodyStart="00000134977B5270" bodyEnd="00000134977B4DF0" nestedIn="00000134A68FE3D0"/>
+    <scope id="00000134A68FDE80" type="Function" className="QuickLog2" bodyStart="00000134977B6E90" bodyEnd="00000134977B86F0" nestedIn="000001349115D5B0">
+      <varlist>
+        <var id="000001349B19F680"/>
+      </varlist>
+    </scope>
+    <scope id="00000134A68FE2C0" type="While" bodyStart="00000134977B6530" bodyEnd="00000134977B61D0" nestedIn="00000134A68FDE80"/>
+    <scope id="00000134A68FE810" type="If" bodyStart="00000134977B6C50" bodyEnd="00000134977B6950" nestedIn="00000134A68FDE80"/>
+    <scope id="00000134A68FDF90" type="For" bodyStart="00000134977BB210" bodyEnd="00000134977BB1B0" nestedIn="00000134A68FE810"/>
+    <scope id="00000134A68FE0A0" type="Function" className="UpdateMaxIntDigits" bodyStart="00000134977B8390" bodyEnd="00000134977B7C10" nestedIn="000001349115D5B0"/>
+    <scope id="00000134A68FE5F0" type="If" bodyStart="00000134977B8150" bodyEnd="00000134977B79D0" nestedIn="00000134A68FE0A0"/>
+    <scope id="00000134A68FE700" type="If" bodyStart="00000134977B8810" bodyEnd="00000134977B8B10" nestedIn="00000134A68FE5F0"/>
+    <scope id="00000134A68FEB40" type="Else" bodyStart="00000134977B7B50" bodyEnd="00000134977B8630" nestedIn="00000134A68FE5F0"/>
+    <scope id="00000134A9316180" type="Else" bodyStart="00000134977B87B0" bodyEnd="00000134977B78B0" nestedIn="00000134A68FE0A0"/>
+    <scope id="00000134A93168F0" type="Function" className="ChangeBaseConstants" bodyStart="00000134977B9770" bodyEnd="00000134977BA670" nestedIn="000001349115D5B0"/>
+    <scope id="00000134A93165C0" type="If" bodyStart="00000134977B9C50" bodyEnd="00000134977B9890" nestedIn="00000134A93168F0"/>
+    <scope id="00000134A93163A0" type="Else" bodyStart="00000134977B9110" bodyEnd="00000134977BA430" nestedIn="00000134A93168F0"/>
+    <scope id="00000134A9316C20" type="Function" className="BaseOrPrecisionChanged" bodyStart="00000134977BA730" bodyEnd="00000134977BB450" nestedIn="000001349115D5B0"/>
+  </scopes>
+  <variables>
+    <var id="000001349B19C2E0" nameToken="00000134977BF3B0" typeStartToken="00000134977BF6B0" typeEndToken="00000134977BF6B0" access="Local" scope="000001349115D7D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19C3C0" nameToken="00000134977C0490" typeStartToken="00000134977BF770" typeEndToken="00000134977BF770" access="Local" scope="000001349115D7D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B19F680" nameToken="00000134977B7430" typeStartToken="00000134977B7670" typeEndToken="00000134977B7670" access="Local" scope="00000134A68FDE80" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B1A0020" nameToken="00000134977C0070" typeStartToken="00000134977C0010" typeEndToken="00000134977C0010" access="Local" scope="000001349115DB00" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B1A0090" nameToken="00000134977B2330" typeStartToken="00000134977B2270" typeEndToken="00000134977B2270" access="Local" scope="00000134A68FE1B0" constness="1" isArgument="false" isArray="true" isClass="false" isConst="true" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="true"/>
+    <var id="000001349B1A0100" nameToken="00000134977B3950" typeStartToken="00000134977B3470" typeEndToken="00000134977B3470" access="Local" scope="00000134A68FE3D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B1A02C0" nameToken="00000134977B2ED0" typeStartToken="00000134977B1970" typeEndToken="00000134977B1970" access="Local" scope="00000134A68FE920" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B1A0C60" nameToken="00000134977B5750" typeStartToken="00000134977B5090" typeEndToken="00000134977B5090" access="Local" scope="00000134A68FE3D0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001349B1A0E90" nameToken="00000134977B0A10" typeStartToken="00000134977B0AD0" typeEndToken="00000134977B0AD0" access="Local" scope="00000134A68FE920" constness="1" isArgument="false" isArray="true" isClass="false" isConst="true" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="true"/>
+    <var id="000001349B1A1050" nameToken="00000134977B4130" typeStartToken="00000134977B31D0" typeEndToken="00000134977B31D0" access="Local" scope="00000134A68FE1B0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A8C04530">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04F50">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04550">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04BB0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04590">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C045B0">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A8C045D0">
+      <value intvalue="64" known="true"/>
+    </values>
+    <values id="00000134A8C04E50">
+      <value intvalue="32" known="true"/>
+    </values>
+    <values id="00000134A8C04F90">
+      <value intvalue="16" known="true"/>
+    </values>
+    <values id="00000134A8C04F10">
+      <value intvalue="8" known="true"/>
+    </values>
+    <values id="00000134A8C04D10">
+      <value tokvalue="00000134977B2870" known="true"/>
+    </values>
+    <values id="00000134A8C04B30">
+      <value intvalue="64" known="true"/>
+    </values>
+    <values id="00000134A8C050D0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04990">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04E70">
+      <value tokvalue="00000134977B2870" known="true"/>
+    </values>
+    <values id="00000134A8C04AB0">
+      <value tokvalue="00000134977B2870" known="true"/>
+    </values>
+    <values id="00000134A8C05050">
+      <value intvalue="64" possible="true"/>
+    </values>
+    <values id="00000134A8C04EB0">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="00000134A8C05090">
+      <value intvalue="16" known="true"/>
+    </values>
+    <values id="00000134A8C04CD0">
+      <value intvalue="10" known="true"/>
+    </values>
+    <values id="00000134A8C04FB0">
+      <value intvalue="8" known="true"/>
+    </values>
+    <values id="00000134A8C04ED0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A8C04D50">
+      <value intvalue="10" known="true"/>
+    </values>
+    <values id="00000134A8C05110">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04E90">
+      <value tokvalue="00000134977B3650" known="true"/>
+    </values>
+    <values id="00000134A8C04C30">
+      <value tokvalue="00000134977B3650" known="true"/>
+    </values>
+    <values id="00000134A8C04DB0">
+      <value intvalue="10" possible="true"/>
+    </values>
+    <values id="00000134A8C04A70">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04A30">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04B50">
+      <value intvalue="0" possible="true"/>
+    </values>
+    <values id="00000134A8C04EF0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C05030">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04BD0">
+      <value intvalue="0" possible="true"/>
+    </values>
+    <values id="00000134A8C050F0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A8C04A90">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04FF0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A8C04AD0">
+      <value intvalue="1" possible="true"/>
+      <value intvalue="0" possible="true"/>
+    </values>
+    <values id="00000134A8C04D30">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="00000134A8C04B90">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04A50">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C05130">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04970">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C049B0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C049D0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="00000134A8C049F0">
+      <value intvalue="10" known="true"/>
+    </values>
+    <values id="00000134A8C05010">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="00000134A8C04A10">
+      <value intvalue="10" known="true"/>
+    </values>
+    <values id="00000134A8C04C90">
+      <value intvalue="1" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

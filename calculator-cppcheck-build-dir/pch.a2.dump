@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/CalcViewModel/pch.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h"/>
+    <file index="2" name="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="7" str="#include &quot;targetver.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="9" str="#ifndef WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="10" str="#define WIN32_LEAN_AND_MEAN"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="11" str="#endif"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="15" str="#define NOMINMAX"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="17" str="#include &lt;windows.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="19" str="#include &lt;collection.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="20" str="#include &lt;unordered_map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="21" str="#include &lt;map&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="22" str="#include &lt;vector&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="23" str="#include &lt;ppltasks.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="24" str="#include &lt;pplawait.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="25" str="#include &lt;memory&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="26" str="#include &lt;mutex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="27" str="#include &lt;cassert&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="28" str="#include &lt;locale&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="29" str="#include &lt;sal.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="30" str="#include &lt;sstream&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="31" str="#include &lt;concrt.h&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="32" str="#include &lt;regex&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="33" str="#include &lt;iterator&gt;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="35" str="#include &quot;winrt/base.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="36" str="#include &quot;winrt/Windows.Foundation.Diagnostics.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="37" str="#include &quot;winrt/Windows.Globalization.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="38" str="#include &quot;winrt/Windows.Globalization.DateTimeFormatting.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="39" str="#include &quot;winrt/Windows.System.UserProfile.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="40" str="#include &quot;winrt/Windows.UI.Xaml.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h" linenr="4" str="#pragma once"/>
+    <directive file="C:/sample repositories/calculator-master/src/CalcViewModel/targetver.h" linenr="11" str="#include &lt;SDKDDKVer.h&gt;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="00000134A3467ED0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="namespace" scope="000001349127A1A0" type="name"/>
+    <token id="00000134A3467D50" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="CalculatorApp" scope="000001349127A1A0" type="name" astParent="00000134A3467690"/>
+    <token id="00000134A3467690" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="{" scope="0000013491279920" link="00000134A34674B0" astOperand1="00000134A3467D50" astOperand2="00000134A3467390"/>
+    <token id="00000134A3467E10" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="namespace" scope="0000013491279920" type="name"/>
+    <token id="00000134A3467CF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="Common" scope="0000013491279920" type="name" astParent="00000134A3467390"/>
+    <token id="00000134A3467390" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="{" scope="0000013491279C50" link="00000134A3466AF0" astParent="00000134A3467690" astOperand1="00000134A3467CF0"/>
+    <token id="00000134A3466AF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="}" scope="0000013491279C50" link="00000134A3467390"/>
+    <token id="00000134A34674B0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="48" str="}" scope="0000013491279920" link="00000134A3467690"/>
+    <token id="00000134A3467FF0" file="C:/sample repositories/calculator-master/src/CalcViewModel/pch.h" linenr="49" str=";" scope="000001349127A1A0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001349127A1A0" type="Global"/>
+    <scope id="0000013491279920" type="Namespace" className="CalculatorApp" bodyStart="00000134A3467690" bodyEnd="00000134A34674B0" nestedIn="000001349127A1A0"/>
+    <scope id="0000013491279C50" type="Namespace" className="Common" bodyStart="00000134A3467390" bodyEnd="00000134A3466AF0" nestedIn="0000013491279920"/>
+  </scopes>
+  <variables>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>

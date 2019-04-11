@@ -1,0 +1,970 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp"/>
+    <file index="1" name="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h"/>
+    <tok fileIndex="0" linenr="1" str="// Copyright (c) Microsoft Corporation. All rights reserved."/>
+    <tok fileIndex="0" linenr="2" str="// Licensed under the MIT License."/>
+    <tok fileIndex="0" linenr="4" str="#"/>
+    <tok fileIndex="0" linenr="4" str="include"/>
+    <tok fileIndex="0" linenr="4" str="&quot;pch.h&quot;"/>
+    <tok fileIndex="0" linenr="5" str="#"/>
+    <tok fileIndex="0" linenr="5" str="include"/>
+    <tok fileIndex="0" linenr="5" str="&quot;BooleanToVisibilityConverter.h&quot;"/>
+    <tok fileIndex="0" linenr="7" str="using"/>
+    <tok fileIndex="0" linenr="7" str="namespace"/>
+    <tok fileIndex="0" linenr="7" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="7" str="::"/>
+    <tok fileIndex="0" linenr="7" str="Common"/>
+    <tok fileIndex="0" linenr="7" str=";"/>
+    <tok fileIndex="0" linenr="9" str="using"/>
+    <tok fileIndex="0" linenr="9" str="namespace"/>
+    <tok fileIndex="0" linenr="9" str="Platform"/>
+    <tok fileIndex="0" linenr="9" str=";"/>
+    <tok fileIndex="0" linenr="10" str="using"/>
+    <tok fileIndex="0" linenr="10" str="namespace"/>
+    <tok fileIndex="0" linenr="10" str="Windows"/>
+    <tok fileIndex="0" linenr="10" str="::"/>
+    <tok fileIndex="0" linenr="10" str="Foundation"/>
+    <tok fileIndex="0" linenr="10" str=";"/>
+    <tok fileIndex="0" linenr="11" str="using"/>
+    <tok fileIndex="0" linenr="11" str="namespace"/>
+    <tok fileIndex="0" linenr="11" str="Windows"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="UI"/>
+    <tok fileIndex="0" linenr="11" str="::"/>
+    <tok fileIndex="0" linenr="11" str="Xaml"/>
+    <tok fileIndex="0" linenr="11" str=";"/>
+    <tok fileIndex="0" linenr="12" str="using"/>
+    <tok fileIndex="0" linenr="12" str="namespace"/>
+    <tok fileIndex="0" linenr="12" str="Windows"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="UI"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="Xaml"/>
+    <tok fileIndex="0" linenr="12" str="::"/>
+    <tok fileIndex="0" linenr="12" str="Interop"/>
+    <tok fileIndex="0" linenr="12" str=";"/>
+    <tok fileIndex="0" linenr="14" str="namespace"/>
+    <tok fileIndex="0" linenr="14" str="CalculatorApp"/>
+    <tok fileIndex="0" linenr="15" str="{"/>
+    <tok fileIndex="0" linenr="16" str="namespace"/>
+    <tok fileIndex="0" linenr="16" str="Converters"/>
+    <tok fileIndex="0" linenr="17" str="{"/>
+    <tok fileIndex="0" linenr="18" str="Object"/>
+    <tok fileIndex="0" linenr="18" str="^"/>
+    <tok fileIndex="0" linenr="18" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="18" str="::"/>
+    <tok fileIndex="0" linenr="18" str="Convert"/>
+    <tok fileIndex="0" linenr="18" str="("/>
+    <tok fileIndex="0" linenr="18" str="Object"/>
+    <tok fileIndex="0" linenr="18" str="^"/>
+    <tok fileIndex="0" linenr="18" str="value"/>
+    <tok fileIndex="0" linenr="18" str=","/>
+    <tok fileIndex="0" linenr="18" str="TypeName"/>
+    <tok fileIndex="0" linenr="18" str="targetType"/>
+    <tok fileIndex="0" linenr="18" str=","/>
+    <tok fileIndex="0" linenr="18" str="Object"/>
+    <tok fileIndex="0" linenr="18" str="^"/>
+    <tok fileIndex="0" linenr="18" str="parameter"/>
+    <tok fileIndex="0" linenr="18" str=","/>
+    <tok fileIndex="0" linenr="18" str="String"/>
+    <tok fileIndex="0" linenr="18" str="^"/>
+    <tok fileIndex="0" linenr="18" str="language"/>
+    <tok fileIndex="0" linenr="18" str=")"/>
+    <tok fileIndex="0" linenr="19" str="{"/>
+    <tok fileIndex="0" linenr="20" str="("/>
+    <tok fileIndex="0" linenr="20" str="void"/>
+    <tok fileIndex="0" linenr="20" str=")"/>
+    <tok fileIndex="0" linenr="20" str="targetType"/>
+    <tok fileIndex="0" linenr="20" str=";"/>
+    <tok fileIndex="0" linenr="20" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="21" str="("/>
+    <tok fileIndex="0" linenr="21" str="void"/>
+    <tok fileIndex="0" linenr="21" str=")"/>
+    <tok fileIndex="0" linenr="21" str="parameter"/>
+    <tok fileIndex="0" linenr="21" str=";"/>
+    <tok fileIndex="0" linenr="21" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="22" str="("/>
+    <tok fileIndex="0" linenr="22" str="void"/>
+    <tok fileIndex="0" linenr="22" str=")"/>
+    <tok fileIndex="0" linenr="22" str="language"/>
+    <tok fileIndex="0" linenr="22" str=";"/>
+    <tok fileIndex="0" linenr="22" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="24" str="auto"/>
+    <tok fileIndex="0" linenr="24" str="boxedBool"/>
+    <tok fileIndex="0" linenr="24" str="="/>
+    <tok fileIndex="0" linenr="24" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="24" str="&lt;"/>
+    <tok fileIndex="0" linenr="24" str="Box"/>
+    <tok fileIndex="0" linenr="24" str="&lt;"/>
+    <tok fileIndex="0" linenr="24" str="bool"/>
+    <tok fileIndex="0" linenr="24" str="&gt;"/>
+    <tok fileIndex="0" linenr="24" str="^"/>
+    <tok fileIndex="0" linenr="24" str="&gt;"/>
+    <tok fileIndex="0" linenr="24" str="("/>
+    <tok fileIndex="0" linenr="24" str="value"/>
+    <tok fileIndex="0" linenr="24" str=")"/>
+    <tok fileIndex="0" linenr="24" str=";"/>
+    <tok fileIndex="0" linenr="25" str="auto"/>
+    <tok fileIndex="0" linenr="25" str="boolValue"/>
+    <tok fileIndex="0" linenr="25" str="="/>
+    <tok fileIndex="0" linenr="25" str="("/>
+    <tok fileIndex="0" linenr="25" str="boxedBool"/>
+    <tok fileIndex="0" linenr="25" str="!="/>
+    <tok fileIndex="0" linenr="25" str="nullptr"/>
+    <tok fileIndex="0" linenr="25" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="25" str="boxedBool"/>
+    <tok fileIndex="0" linenr="25" str="-&gt;"/>
+    <tok fileIndex="0" linenr="25" str="Value"/>
+    <tok fileIndex="0" linenr="25" str=")"/>
+    <tok fileIndex="0" linenr="25" str=";"/>
+    <tok fileIndex="0" linenr="26" str="return"/>
+    <tok fileIndex="0" linenr="26" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="26" str="::"/>
+    <tok fileIndex="0" linenr="26" str="Convert"/>
+    <tok fileIndex="0" linenr="26" str="("/>
+    <tok fileIndex="0" linenr="26" str="boolValue"/>
+    <tok fileIndex="0" linenr="26" str=")"/>
+    <tok fileIndex="0" linenr="26" str=";"/>
+    <tok fileIndex="0" linenr="27" str="}"/>
+    <tok fileIndex="0" linenr="29" str="Object"/>
+    <tok fileIndex="0" linenr="29" str="^"/>
+    <tok fileIndex="0" linenr="29" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="29" str="::"/>
+    <tok fileIndex="0" linenr="29" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="29" str="("/>
+    <tok fileIndex="0" linenr="29" str="Object"/>
+    <tok fileIndex="0" linenr="29" str="^"/>
+    <tok fileIndex="0" linenr="29" str="value"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="TypeName"/>
+    <tok fileIndex="0" linenr="29" str="targetType"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="Object"/>
+    <tok fileIndex="0" linenr="29" str="^"/>
+    <tok fileIndex="0" linenr="29" str="parameter"/>
+    <tok fileIndex="0" linenr="29" str=","/>
+    <tok fileIndex="0" linenr="29" str="String"/>
+    <tok fileIndex="0" linenr="29" str="^"/>
+    <tok fileIndex="0" linenr="29" str="language"/>
+    <tok fileIndex="0" linenr="29" str=")"/>
+    <tok fileIndex="0" linenr="30" str="{"/>
+    <tok fileIndex="0" linenr="31" str="("/>
+    <tok fileIndex="0" linenr="31" str="void"/>
+    <tok fileIndex="0" linenr="31" str=")"/>
+    <tok fileIndex="0" linenr="31" str="targetType"/>
+    <tok fileIndex="0" linenr="31" str=";"/>
+    <tok fileIndex="0" linenr="31" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="32" str="("/>
+    <tok fileIndex="0" linenr="32" str="void"/>
+    <tok fileIndex="0" linenr="32" str=")"/>
+    <tok fileIndex="0" linenr="32" str="parameter"/>
+    <tok fileIndex="0" linenr="32" str=";"/>
+    <tok fileIndex="0" linenr="32" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="33" str="("/>
+    <tok fileIndex="0" linenr="33" str="void"/>
+    <tok fileIndex="0" linenr="33" str=")"/>
+    <tok fileIndex="0" linenr="33" str="language"/>
+    <tok fileIndex="0" linenr="33" str=";"/>
+    <tok fileIndex="0" linenr="33" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="35" str="auto"/>
+    <tok fileIndex="0" linenr="35" str="visibility"/>
+    <tok fileIndex="0" linenr="35" str="="/>
+    <tok fileIndex="0" linenr="35" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="35" str="&lt;"/>
+    <tok fileIndex="0" linenr="35" str="Box"/>
+    <tok fileIndex="0" linenr="35" str="&lt;"/>
+    <tok fileIndex="0" linenr="35" str="Visibility"/>
+    <tok fileIndex="0" linenr="35" str="&gt;"/>
+    <tok fileIndex="0" linenr="35" str="^"/>
+    <tok fileIndex="0" linenr="35" str="&gt;"/>
+    <tok fileIndex="0" linenr="35" str="("/>
+    <tok fileIndex="0" linenr="35" str="value"/>
+    <tok fileIndex="0" linenr="35" str=")"/>
+    <tok fileIndex="0" linenr="35" str=";"/>
+    <tok fileIndex="0" linenr="36" str="return"/>
+    <tok fileIndex="0" linenr="36" str="("/>
+    <tok fileIndex="0" linenr="36" str="visibility"/>
+    <tok fileIndex="0" linenr="36" str="!="/>
+    <tok fileIndex="0" linenr="36" str="nullptr"/>
+    <tok fileIndex="0" linenr="36" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="36" str="visibility"/>
+    <tok fileIndex="0" linenr="36" str="-&gt;"/>
+    <tok fileIndex="0" linenr="36" str="Value"/>
+    <tok fileIndex="0" linenr="36" str="=="/>
+    <tok fileIndex="0" linenr="36" str="Visibility"/>
+    <tok fileIndex="0" linenr="36" str="::"/>
+    <tok fileIndex="0" linenr="36" str="Visible"/>
+    <tok fileIndex="0" linenr="36" str=")"/>
+    <tok fileIndex="0" linenr="36" str=";"/>
+    <tok fileIndex="0" linenr="37" str="}"/>
+    <tok fileIndex="0" linenr="39" str="Object"/>
+    <tok fileIndex="0" linenr="39" str="^"/>
+    <tok fileIndex="0" linenr="39" str="BooleanToVisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="39" str="::"/>
+    <tok fileIndex="0" linenr="39" str="Convert"/>
+    <tok fileIndex="0" linenr="39" str="("/>
+    <tok fileIndex="0" linenr="39" str="Object"/>
+    <tok fileIndex="0" linenr="39" str="^"/>
+    <tok fileIndex="0" linenr="39" str="value"/>
+    <tok fileIndex="0" linenr="39" str=","/>
+    <tok fileIndex="0" linenr="39" str="TypeName"/>
+    <tok fileIndex="0" linenr="39" str="targetType"/>
+    <tok fileIndex="0" linenr="39" str=","/>
+    <tok fileIndex="0" linenr="39" str="Object"/>
+    <tok fileIndex="0" linenr="39" str="^"/>
+    <tok fileIndex="0" linenr="39" str="parameter"/>
+    <tok fileIndex="0" linenr="39" str=","/>
+    <tok fileIndex="0" linenr="39" str="String"/>
+    <tok fileIndex="0" linenr="39" str="^"/>
+    <tok fileIndex="0" linenr="39" str="language"/>
+    <tok fileIndex="0" linenr="39" str=")"/>
+    <tok fileIndex="0" linenr="40" str="{"/>
+    <tok fileIndex="0" linenr="41" str="("/>
+    <tok fileIndex="0" linenr="41" str="void"/>
+    <tok fileIndex="0" linenr="41" str=")"/>
+    <tok fileIndex="0" linenr="41" str="targetType"/>
+    <tok fileIndex="0" linenr="41" str=";"/>
+    <tok fileIndex="0" linenr="41" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="42" str="("/>
+    <tok fileIndex="0" linenr="42" str="void"/>
+    <tok fileIndex="0" linenr="42" str=")"/>
+    <tok fileIndex="0" linenr="42" str="parameter"/>
+    <tok fileIndex="0" linenr="42" str=";"/>
+    <tok fileIndex="0" linenr="42" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="43" str="("/>
+    <tok fileIndex="0" linenr="43" str="void"/>
+    <tok fileIndex="0" linenr="43" str=")"/>
+    <tok fileIndex="0" linenr="43" str="language"/>
+    <tok fileIndex="0" linenr="43" str=";"/>
+    <tok fileIndex="0" linenr="43" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="45" str="auto"/>
+    <tok fileIndex="0" linenr="45" str="boxedBool"/>
+    <tok fileIndex="0" linenr="45" str="="/>
+    <tok fileIndex="0" linenr="45" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="45" str="&lt;"/>
+    <tok fileIndex="0" linenr="45" str="Box"/>
+    <tok fileIndex="0" linenr="45" str="&lt;"/>
+    <tok fileIndex="0" linenr="45" str="bool"/>
+    <tok fileIndex="0" linenr="45" str="&gt;"/>
+    <tok fileIndex="0" linenr="45" str="^"/>
+    <tok fileIndex="0" linenr="45" str="&gt;"/>
+    <tok fileIndex="0" linenr="45" str="("/>
+    <tok fileIndex="0" linenr="45" str="value"/>
+    <tok fileIndex="0" linenr="45" str=")"/>
+    <tok fileIndex="0" linenr="45" str=";"/>
+    <tok fileIndex="0" linenr="46" str="auto"/>
+    <tok fileIndex="0" linenr="46" str="boolValue"/>
+    <tok fileIndex="0" linenr="46" str="="/>
+    <tok fileIndex="0" linenr="46" str="("/>
+    <tok fileIndex="0" linenr="46" str="boxedBool"/>
+    <tok fileIndex="0" linenr="46" str="!="/>
+    <tok fileIndex="0" linenr="46" str="nullptr"/>
+    <tok fileIndex="0" linenr="46" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="46" str="boxedBool"/>
+    <tok fileIndex="0" linenr="46" str="-&gt;"/>
+    <tok fileIndex="0" linenr="46" str="Value"/>
+    <tok fileIndex="0" linenr="46" str=")"/>
+    <tok fileIndex="0" linenr="46" str=";"/>
+    <tok fileIndex="0" linenr="47" str="return"/>
+    <tok fileIndex="0" linenr="47" str="BooleanToVisibilityConverter"/>
+    <tok fileIndex="0" linenr="47" str="::"/>
+    <tok fileIndex="0" linenr="47" str="Convert"/>
+    <tok fileIndex="0" linenr="47" str="("/>
+    <tok fileIndex="0" linenr="47" str="!"/>
+    <tok fileIndex="0" linenr="47" str="boolValue"/>
+    <tok fileIndex="0" linenr="47" str=")"/>
+    <tok fileIndex="0" linenr="47" str=";"/>
+    <tok fileIndex="0" linenr="48" str="}"/>
+    <tok fileIndex="0" linenr="50" str="Object"/>
+    <tok fileIndex="0" linenr="50" str="^"/>
+    <tok fileIndex="0" linenr="50" str="BooleanToVisibilityNegationConverter"/>
+    <tok fileIndex="0" linenr="50" str="::"/>
+    <tok fileIndex="0" linenr="50" str="ConvertBack"/>
+    <tok fileIndex="0" linenr="50" str="("/>
+    <tok fileIndex="0" linenr="50" str="Object"/>
+    <tok fileIndex="0" linenr="50" str="^"/>
+    <tok fileIndex="0" linenr="50" str="value"/>
+    <tok fileIndex="0" linenr="50" str=","/>
+    <tok fileIndex="0" linenr="50" str="TypeName"/>
+    <tok fileIndex="0" linenr="50" str="targetType"/>
+    <tok fileIndex="0" linenr="50" str=","/>
+    <tok fileIndex="0" linenr="50" str="Object"/>
+    <tok fileIndex="0" linenr="50" str="^"/>
+    <tok fileIndex="0" linenr="50" str="parameter"/>
+    <tok fileIndex="0" linenr="50" str=","/>
+    <tok fileIndex="0" linenr="50" str="String"/>
+    <tok fileIndex="0" linenr="50" str="^"/>
+    <tok fileIndex="0" linenr="50" str="language"/>
+    <tok fileIndex="0" linenr="50" str=")"/>
+    <tok fileIndex="0" linenr="51" str="{"/>
+    <tok fileIndex="0" linenr="52" str="("/>
+    <tok fileIndex="0" linenr="52" str="void"/>
+    <tok fileIndex="0" linenr="52" str=")"/>
+    <tok fileIndex="0" linenr="52" str="targetType"/>
+    <tok fileIndex="0" linenr="52" str=";"/>
+    <tok fileIndex="0" linenr="52" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="53" str="("/>
+    <tok fileIndex="0" linenr="53" str="void"/>
+    <tok fileIndex="0" linenr="53" str=")"/>
+    <tok fileIndex="0" linenr="53" str="parameter"/>
+    <tok fileIndex="0" linenr="53" str=";"/>
+    <tok fileIndex="0" linenr="53" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="54" str="("/>
+    <tok fileIndex="0" linenr="54" str="void"/>
+    <tok fileIndex="0" linenr="54" str=")"/>
+    <tok fileIndex="0" linenr="54" str="language"/>
+    <tok fileIndex="0" linenr="54" str=";"/>
+    <tok fileIndex="0" linenr="54" str="// Unused parameter"/>
+    <tok fileIndex="0" linenr="56" str="auto"/>
+    <tok fileIndex="0" linenr="56" str="visibility"/>
+    <tok fileIndex="0" linenr="56" str="="/>
+    <tok fileIndex="0" linenr="56" str="dynamic_cast"/>
+    <tok fileIndex="0" linenr="56" str="&lt;"/>
+    <tok fileIndex="0" linenr="56" str="Box"/>
+    <tok fileIndex="0" linenr="56" str="&lt;"/>
+    <tok fileIndex="0" linenr="56" str="Visibility"/>
+    <tok fileIndex="0" linenr="56" str="&gt;"/>
+    <tok fileIndex="0" linenr="56" str="^"/>
+    <tok fileIndex="0" linenr="56" str="&gt;"/>
+    <tok fileIndex="0" linenr="56" str="("/>
+    <tok fileIndex="0" linenr="56" str="value"/>
+    <tok fileIndex="0" linenr="56" str=")"/>
+    <tok fileIndex="0" linenr="56" str=";"/>
+    <tok fileIndex="0" linenr="57" str="return"/>
+    <tok fileIndex="0" linenr="57" str="("/>
+    <tok fileIndex="0" linenr="57" str="visibility"/>
+    <tok fileIndex="0" linenr="57" str="!="/>
+    <tok fileIndex="0" linenr="57" str="nullptr"/>
+    <tok fileIndex="0" linenr="57" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="57" str="visibility"/>
+    <tok fileIndex="0" linenr="57" str="-&gt;"/>
+    <tok fileIndex="0" linenr="57" str="Value"/>
+    <tok fileIndex="0" linenr="57" str="!="/>
+    <tok fileIndex="0" linenr="57" str="Visibility"/>
+    <tok fileIndex="0" linenr="57" str="::"/>
+    <tok fileIndex="0" linenr="57" str="Visible"/>
+    <tok fileIndex="0" linenr="57" str=")"/>
+    <tok fileIndex="0" linenr="57" str=";"/>
+    <tok fileIndex="0" linenr="58" str="}"/>
+    <tok fileIndex="0" linenr="60" str="}"/>
+    <tok fileIndex="0" linenr="61" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <directivelist>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="4" str="#include &quot;pch.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="5" str="#include &quot;BooleanToVisibilityConverter.h&quot;"/>
+    <directive file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="4" str="#pragma once"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001349B486680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="6" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B486200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="6" str="CalculatorApp" scope="00000134913904E0" type="name" astParent="000001349B4857E0"/>
+    <token id="000001349B4857E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="7" str="{" scope="00000134913904E0" link="000001349B479540" astOperand1="000001349B486200" astOperand2="000001349B485EA0"/>
+    <token id="000001349B4854E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="8" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B485480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="8" str="Converters" scope="00000134913904E0" type="name" astParent="000001349B485EA0"/>
+    <token id="000001349B485EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="9" str="{" scope="00000134913904E0" link="000001349B479420" astParent="000001349B4857E0" astOperand1="000001349B485480" astOperand2="000001349B4862C0"/>
+    <token id="000001349B485FC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="public" scope="00000134913904E0" type="name"/>
+    <token id="000001349B485C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="ref" scope="00000134913904E0" type="name"/>
+    <token id="000001349B486320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="class" scope="00000134913904E0" type="name"/>
+    <token id="000001349B485540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="BooleanToVisibilityConverter" scope="00000134913904E0" type="name"/>
+    <token id="000001349B4860E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="sealed" scope="00000134913904E0" type="name" astParent="000001349B4862C0"/>
+    <token id="000001349B4862C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str=":" scope="00000134913904E0" astParent="000001349B485EA0" astOperand1="000001349B4860E0" astOperand2="000001349B485D80"/>
+    <token id="000001349B485CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B485180"/>
+    <token id="000001349B485180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913904E0" astParent="000001349B485A80" astOperand1="000001349B485CC0" astOperand2="000001349B485B40"/>
+    <token id="000001349B485B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="UI" scope="00000134913904E0" type="name" astParent="000001349B485180"/>
+    <token id="000001349B485A80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913904E0" astParent="000001349B4866E0" astOperand1="000001349B485180" astOperand2="000001349B486860"/>
+    <token id="000001349B486860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B485A80"/>
+    <token id="000001349B4866E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913904E0" astParent="000001349B485D80" astOperand1="000001349B485A80" astOperand2="000001349B485D20"/>
+    <token id="000001349B485D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="Data" scope="00000134913904E0" type="name" astParent="000001349B4866E0"/>
+    <token id="000001349B485D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="::" scope="00000134913904E0" astParent="000001349B4862C0" astOperand1="000001349B4866E0" astOperand2="000001349B486380"/>
+    <token id="000001349B486380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="14" str="IValueConverter" scope="00000134913904E0" type="name" astParent="000001349B485D80"/>
+    <token id="000001349B486740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="15" str="{" scope="00000134913904E0" link="000001349B477BC0"/>
+    <token id="000001349B4856C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="16" str="public:" scope="00000134913904E0" type="name"/>
+    <token id="000001349B4855A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="static" scope="00000134913904E0" type="name"/>
+    <token id="000001349B485840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="const" scope="00000134913904E0" type="name" originalName="constexpr"/>
+    <token id="000001349B486440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B486140"/>
+    <token id="000001349B486140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913904E0" astParent="000001349B486500" astOperand1="000001349B486440" astOperand2="000001349B4864A0"/>
+    <token id="000001349B4864A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="UI" scope="00000134913904E0" type="name" astParent="000001349B486140"/>
+    <token id="000001349B486500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913904E0" astParent="000001349B485BA0" astOperand1="000001349B486140" astOperand2="000001349B485720"/>
+    <token id="000001349B485720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B486500"/>
+    <token id="000001349B485BA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="::" scope="00000134913904E0" astParent="000001349B485600" astOperand1="000001349B486500" astOperand2="000001349B485C00"/>
+    <token id="000001349B4865C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Visibility" scope="00000134913904E0" type="name"/>
+    <token id="000001349B485C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="Convert" scope="00000134913904E0" type="name" function="00000134A2140340" astParent="000001349B485BA0"/>
+    <token id="000001349B485600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="(" scope="00000134913904E0" link="000001349B486620" astOperand1="000001349B485BA0" astOperand2="000001349B4858A0"/>
+    <token id="000001349B486560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="bool" scope="00000134913904E0" type="name"/>
+    <token id="000001349B4858A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str="visibility" scope="00000134913904E0" type="name" varId="1" variable="0000013491660480" astParent="000001349B485600" valueType-type="bool"/>
+    <token id="000001349B486620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="17" str=")" scope="00000134913904E0" link="000001349B485600"/>
+    <token id="000001349B4867A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="18" str="{" scope="000001349138EA50" link="000001349B486B60"/>
+    <token id="000001349B4853C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="19" str="return" scope="000001349138EA50" type="name" astOperand1="000001349B485DE0"/>
+    <token id="000001349B486800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="19" str="visibility" scope="000001349138EA50" type="name" varId="1" variable="0000013491660480" values="00000134A91FB780" astParent="000001349B485DE0" valueType-type="bool"/>
+    <token id="000001349B485DE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="?" scope="000001349138EA50" astParent="000001349B4853C0" astOperand1="000001349B486800" astOperand2="000001349B485360"/>
+    <token id="000001349B485120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Windows" scope="000001349138EA50" type="name" astParent="000001349B4851E0"/>
+    <token id="000001349B4851E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EA50" astParent="000001349B485F00" astOperand1="000001349B485120" astOperand2="000001349B485240"/>
+    <token id="000001349B485240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="UI" scope="000001349138EA50" type="name" astParent="000001349B4851E0"/>
+    <token id="000001349B485F00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EA50" astParent="000001349B4852A0" astOperand1="000001349B4851E0" astOperand2="000001349B485900"/>
+    <token id="000001349B485900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Xaml" scope="000001349138EA50" type="name" astParent="000001349B485F00"/>
+    <token id="000001349B4852A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EA50" astParent="000001349B485E40" astOperand1="000001349B485F00" astOperand2="000001349B485F60"/>
+    <token id="000001349B485F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Visibility" scope="000001349138EA50" type="name" astParent="000001349B4852A0"/>
+    <token id="000001349B485E40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="::" scope="000001349138EA50" astParent="000001349B485360" astOperand1="000001349B4852A0" astOperand2="000001349B485300"/>
+    <token id="000001349B485300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="20" str="Visible" scope="000001349138EA50" type="name" astParent="000001349B485E40"/>
+    <token id="000001349B485360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str=":" scope="000001349138EA50" astParent="000001349B485DE0" astOperand1="000001349B485E40" astOperand2="000001349B485AE0"/>
+    <token id="000001349B485420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Windows" scope="000001349138EA50" type="name" astParent="000001349B485660"/>
+    <token id="000001349B485660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EA50" astParent="000001349B486020" astOperand1="000001349B485420" astOperand2="000001349B485780"/>
+    <token id="000001349B485780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="UI" scope="000001349138EA50" type="name" astParent="000001349B485660"/>
+    <token id="000001349B486020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EA50" astParent="000001349B485960" astOperand1="000001349B485660" astOperand2="000001349B485A20"/>
+    <token id="000001349B485A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Xaml" scope="000001349138EA50" type="name" astParent="000001349B486020"/>
+    <token id="000001349B485960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EA50" astParent="000001349B485AE0" astOperand1="000001349B486020" astOperand2="000001349B4859C0"/>
+    <token id="000001349B4859C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Visibility" scope="000001349138EA50" type="name" astParent="000001349B485960"/>
+    <token id="000001349B485AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="::" scope="000001349138EA50" astParent="000001349B485360" astOperand1="000001349B485960" astOperand2="000001349B486EC0"/>
+    <token id="000001349B486EC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str="Collapsed" scope="000001349138EA50" type="name" astParent="000001349B485AE0"/>
+    <token id="000001349B486920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="21" str=";" scope="000001349138EA50"/>
+    <token id="000001349B486B60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="22" str="}" scope="000001349138EA50" link="000001349B4867A0"/>
+    <token id="000001349B486980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="virtual" scope="00000134913904E0" type="name"/>
+    <token id="000001349B486D40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B486BC0"/>
+    <token id="000001349B486BC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B476720" astOperand1="000001349B486D40" astOperand2="000001349B486E00"/>
+    <token id="000001349B486E00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913904E0" type="name" astParent="000001349B486BC0"/>
+    <token id="000001349B476720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913904E0" type="op" astOperand1="000001349B486BC0" astOperand2="000001349B476420"/>
+    <token id="000001349B476AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Convert" scope="00000134913904E0" type="name" astParent="000001349B476420"/>
+    <token id="000001349B476420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="(" scope="00000134913904E0" link="000001349B476F60" astParent="000001349B476720" astOperand1="000001349B476AE0" astOperand2="000001349B476780"/>
+    <token id="000001349B477320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B477200"/>
+    <token id="000001349B477200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B4769C0" astOperand1="000001349B477320" astOperand2="000001349B4775C0"/>
+    <token id="000001349B4775C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913904E0" type="name" astParent="000001349B477200"/>
+    <token id="000001349B4769C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913904E0" type="op" astParent="000001349B476120" astOperand1="000001349B477200" astOperand2="000001349B476540"/>
+    <token id="000001349B476540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="value" scope="00000134913904E0" type="name" astParent="000001349B4769C0"/>
+    <token id="000001349B476120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913904E0" astParent="000001349B4761E0" astOperand1="000001349B4769C0" astOperand2="000001349B476CC0"/>
+    <token id="000001349B477020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B477620"/>
+    <token id="000001349B477620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B476180" astOperand1="000001349B477020" astOperand2="000001349B476C60"/>
+    <token id="000001349B476C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="UI" scope="00000134913904E0" type="name" astParent="000001349B477620"/>
+    <token id="000001349B476180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B4763C0" astOperand1="000001349B477620" astOperand2="000001349B476EA0"/>
+    <token id="000001349B476EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B476180"/>
+    <token id="000001349B4763C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B476CC0" astOperand1="000001349B476180" astOperand2="000001349B4774A0"/>
+    <token id="000001349B4774A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Interop" scope="00000134913904E0" type="name" astParent="000001349B4763C0"/>
+    <token id="000001349B476CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B476120" astOperand1="000001349B4763C0" astOperand2="000001349B477080"/>
+    <token id="000001349B4762A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="TypeName" scope="00000134913904E0" type="name"/>
+    <token id="000001349B477080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="targetType" scope="00000134913904E0" type="name" varId="2" astParent="000001349B476CC0"/>
+    <token id="000001349B4761E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913904E0" astParent="000001349B476780" astOperand1="000001349B476120" astOperand2="000001349B4771A0"/>
+    <token id="000001349B476960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B477800"/>
+    <token id="000001349B477800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B4771A0" astOperand1="000001349B476960" astOperand2="000001349B476D20"/>
+    <token id="000001349B476D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Object" scope="00000134913904E0" type="name" astParent="000001349B477800"/>
+    <token id="000001349B4771A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913904E0" type="op" astParent="000001349B4761E0" astOperand1="000001349B477800" astOperand2="000001349B477500"/>
+    <token id="000001349B477500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="parameter" scope="00000134913904E0" type="name" astParent="000001349B4771A0"/>
+    <token id="000001349B476780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="," scope="00000134913904E0" astParent="000001349B476420" astOperand1="000001349B4761E0" astOperand2="000001349B476D80"/>
+    <token id="000001349B477680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B477740"/>
+    <token id="000001349B477740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="::" scope="00000134913904E0" astParent="000001349B476D80" astOperand1="000001349B477680" astOperand2="000001349B4767E0"/>
+    <token id="000001349B4767E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="String" scope="00000134913904E0" type="name" astParent="000001349B477740"/>
+    <token id="000001349B476D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="^" scope="00000134913904E0" type="op" astParent="000001349B476780" astOperand1="000001349B477740" astOperand2="000001349B4777A0"/>
+    <token id="000001349B4777A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str="language" scope="00000134913904E0" type="name" astParent="000001349B476D80"/>
+    <token id="000001349B476F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str=")" scope="00000134913904E0" link="000001349B476420"/>
+    <token id="000001349B476840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="24" str=";" scope="00000134913904E0"/>
+    <token id="000001349B4768A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="virtual" scope="00000134913904E0" type="name"/>
+    <token id="000001349B4770E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B476900"/>
+    <token id="000001349B476900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B476A20" astOperand1="000001349B4770E0" astOperand2="000001349B477860"/>
+    <token id="000001349B477860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913904E0" type="name" astParent="000001349B476900"/>
+    <token id="000001349B476A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913904E0" type="op" astOperand1="000001349B476900" astOperand2="000001349B477140"/>
+    <token id="000001349B476B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="ConvertBack" scope="00000134913904E0" type="name" astParent="000001349B477140"/>
+    <token id="000001349B477140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="(" scope="00000134913904E0" link="000001349B477F80" astParent="000001349B476A20" astOperand1="000001349B476B40" astOperand2="000001349B478CA0"/>
+    <token id="000001349B476C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B477260"/>
+    <token id="000001349B477260" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B477EC0" astOperand1="000001349B476C00" astOperand2="000001349B4772C0"/>
+    <token id="000001349B4772C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913904E0" type="name" astParent="000001349B477260"/>
+    <token id="000001349B477EC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913904E0" type="op" astParent="000001349B4786A0" astOperand1="000001349B477260" astOperand2="000001349B478760"/>
+    <token id="000001349B478760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="value" scope="00000134913904E0" type="name" astParent="000001349B477EC0"/>
+    <token id="000001349B4786A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913904E0" astParent="000001349B478D60" astOperand1="000001349B477EC0" astOperand2="000001349B478280"/>
+    <token id="000001349B477E60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B477980"/>
+    <token id="000001349B477980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B477DA0" astOperand1="000001349B477E60" astOperand2="000001349B478B80"/>
+    <token id="000001349B478B80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="UI" scope="00000134913904E0" type="name" astParent="000001349B477980"/>
+    <token id="000001349B477DA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B4779E0" astOperand1="000001349B477980" astOperand2="000001349B4781C0"/>
+    <token id="000001349B4781C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B477DA0"/>
+    <token id="000001349B4779E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B478280" astOperand1="000001349B477DA0" astOperand2="000001349B477F20"/>
+    <token id="000001349B477F20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Interop" scope="00000134913904E0" type="name" astParent="000001349B4779E0"/>
+    <token id="000001349B478280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B4786A0" astOperand1="000001349B4779E0" astOperand2="000001349B478520"/>
+    <token id="000001349B479000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="TypeName" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="targetType" scope="00000134913904E0" type="name" varId="3" astParent="000001349B478280"/>
+    <token id="000001349B478D60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913904E0" astParent="000001349B478CA0" astOperand1="000001349B4786A0" astOperand2="000001349B478B20"/>
+    <token id="000001349B478040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B4785E0"/>
+    <token id="000001349B4785E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B478B20" astOperand1="000001349B478040" astOperand2="000001349B478BE0"/>
+    <token id="000001349B478BE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Object" scope="00000134913904E0" type="name" astParent="000001349B4785E0"/>
+    <token id="000001349B478B20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913904E0" type="op" astParent="000001349B478D60" astOperand1="000001349B4785E0" astOperand2="000001349B478220"/>
+    <token id="000001349B478220" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="parameter" scope="00000134913904E0" type="name" astParent="000001349B478B20"/>
+    <token id="000001349B478CA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="," scope="00000134913904E0" astParent="000001349B477140" astOperand1="000001349B478D60" astOperand2="000001349B4782E0"/>
+    <token id="000001349B477E00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B477FE0"/>
+    <token id="000001349B477FE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="::" scope="00000134913904E0" astParent="000001349B4782E0" astOperand1="000001349B477E00" astOperand2="000001349B477B60"/>
+    <token id="000001349B477B60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="String" scope="00000134913904E0" type="name" astParent="000001349B477FE0"/>
+    <token id="000001349B4782E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="^" scope="00000134913904E0" type="op" astParent="000001349B478CA0" astOperand1="000001349B477FE0" astOperand2="000001349B478FA0"/>
+    <token id="000001349B478FA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str="language" scope="00000134913904E0" type="name" astParent="000001349B4782E0"/>
+    <token id="000001349B477F80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str=")" scope="00000134913904E0" link="000001349B477140"/>
+    <token id="000001349B478EE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="25" str=";" scope="00000134913904E0"/>
+    <token id="000001349B477BC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="26" str="}" scope="00000134913904E0" link="000001349B486740"/>
+    <token id="000001349B477B00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="26" str=";" scope="00000134913904E0"/>
+    <token id="000001349B478F40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="public" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478C40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="ref" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="class" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478AC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="BooleanToVisibilityNegationConverter" scope="00000134913904E0" type="name"/>
+    <token id="000001349B479060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="sealed" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str=":" scope="00000134913904E0"/>
+    <token id="000001349B4778C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B4780A0"/>
+    <token id="000001349B4780A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913904E0" astParent="000001349B4783A0" astOperand1="000001349B4778C0" astOperand2="000001349B478D00"/>
+    <token id="000001349B478D00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="UI" scope="00000134913904E0" type="name" astParent="000001349B4780A0"/>
+    <token id="000001349B4783A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913904E0" astParent="000001349B478100" astOperand1="000001349B4780A0" astOperand2="000001349B478580"/>
+    <token id="000001349B478580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B4783A0"/>
+    <token id="000001349B478100" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913904E0" astParent="000001349B477920" astOperand1="000001349B4783A0" astOperand2="000001349B478160"/>
+    <token id="000001349B478160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="Data" scope="00000134913904E0" type="name" astParent="000001349B478100"/>
+    <token id="000001349B477920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="::" scope="00000134913904E0" astOperand1="000001349B478100" astOperand2="000001349B477D40"/>
+    <token id="000001349B477D40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="32" str="IValueConverter" scope="00000134913904E0" type="name" astParent="000001349B477920"/>
+    <token id="000001349B478400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="33" str="{" scope="00000134913904E0" link="000001349B47A7A0"/>
+    <token id="000001349B478460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="34" str="public:" scope="00000134913904E0" type="name"/>
+    <token id="000001349B477C20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="virtual" scope="00000134913904E0" type="name"/>
+    <token id="000001349B478880" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B4784C0"/>
+    <token id="000001349B4784C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B478DC0" astOperand1="000001349B478880" astOperand2="000001349B478640"/>
+    <token id="000001349B478640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913904E0" type="name" astParent="000001349B4784C0"/>
+    <token id="000001349B478DC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913904E0" type="op" astOperand1="000001349B4784C0" astOperand2="000001349B478820"/>
+    <token id="000001349B4787C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Convert" scope="00000134913904E0" type="name" astParent="000001349B478820"/>
+    <token id="000001349B478820" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="(" scope="00000134913904E0" link="000001349B479D20" astParent="000001349B478DC0" astOperand1="000001349B4787C0" astOperand2="000001349B47A440"/>
+    <token id="000001349B4788E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B478940"/>
+    <token id="000001349B478940" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B4789A0" astOperand1="000001349B4788E0" astOperand2="000001349B478E20"/>
+    <token id="000001349B478E20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913904E0" type="name" astParent="000001349B478940"/>
+    <token id="000001349B4789A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913904E0" type="op" astParent="000001349B478A00" astOperand1="000001349B478940" astOperand2="000001349B477C80"/>
+    <token id="000001349B477C80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="value" scope="00000134913904E0" type="name" astParent="000001349B4789A0"/>
+    <token id="000001349B478A00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913904E0" astParent="000001349B479F00" astOperand1="000001349B4789A0" astOperand2="000001349B4799C0"/>
+    <token id="000001349B478E80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B477A40"/>
+    <token id="000001349B477A40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B477CE0" astOperand1="000001349B478E80" astOperand2="000001349B477AA0"/>
+    <token id="000001349B477AA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="UI" scope="00000134913904E0" type="name" astParent="000001349B477A40"/>
+    <token id="000001349B477CE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B47A140" astOperand1="000001349B477A40" astOperand2="000001349B479960"/>
+    <token id="000001349B479960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B477CE0"/>
+    <token id="000001349B47A140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B4799C0" astOperand1="000001349B477CE0" astOperand2="000001349B479720"/>
+    <token id="000001349B479720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Interop" scope="00000134913904E0" type="name" astParent="000001349B47A140"/>
+    <token id="000001349B4799C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B478A00" astOperand1="000001349B47A140" astOperand2="000001349B479780"/>
+    <token id="000001349B47A3E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="TypeName" scope="00000134913904E0" type="name"/>
+    <token id="000001349B479780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="targetType" scope="00000134913904E0" type="name" varId="4" astParent="000001349B4799C0"/>
+    <token id="000001349B479F00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913904E0" astParent="000001349B47A440" astOperand1="000001349B478A00" astOperand2="000001349B4797E0"/>
+    <token id="000001349B479CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B479A20"/>
+    <token id="000001349B479A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B4797E0" astOperand1="000001349B479CC0" astOperand2="000001349B47A1A0"/>
+    <token id="000001349B47A1A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Object" scope="00000134913904E0" type="name" astParent="000001349B479A20"/>
+    <token id="000001349B4797E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913904E0" type="op" astParent="000001349B479F00" astOperand1="000001349B479A20" astOperand2="000001349B479A80"/>
+    <token id="000001349B479A80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="parameter" scope="00000134913904E0" type="name" astParent="000001349B4797E0"/>
+    <token id="000001349B47A440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="," scope="00000134913904E0" astParent="000001349B478820" astOperand1="000001349B479F00" astOperand2="000001349B4790C0"/>
+    <token id="000001349B479840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B479F60"/>
+    <token id="000001349B479F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="::" scope="00000134913904E0" astParent="000001349B4790C0" astOperand1="000001349B479840" astOperand2="000001349B479DE0"/>
+    <token id="000001349B479DE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="String" scope="00000134913904E0" type="name" astParent="000001349B479F60"/>
+    <token id="000001349B4790C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="^" scope="00000134913904E0" type="op" astParent="000001349B47A440" astOperand1="000001349B479F60" astOperand2="000001349B479120"/>
+    <token id="000001349B479120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str="language" scope="00000134913904E0" type="name" astParent="000001349B4790C0"/>
+    <token id="000001349B479D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str=")" scope="00000134913904E0" link="000001349B478820"/>
+    <token id="000001349B479D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="35" str=";" scope="00000134913904E0"/>
+    <token id="000001349B4792A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="virtual" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47A200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B4798A0"/>
+    <token id="000001349B4798A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B479BA0" astOperand1="000001349B47A200" astOperand2="000001349B47A2C0"/>
+    <token id="000001349B47A2C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913904E0" type="name" astParent="000001349B4798A0"/>
+    <token id="000001349B479BA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913904E0" type="op" astOperand1="000001349B4798A0" astOperand2="000001349B47A260"/>
+    <token id="000001349B47A4A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="ConvertBack" scope="00000134913904E0" type="name" astParent="000001349B47A260"/>
+    <token id="000001349B47A260" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="(" scope="00000134913904E0" link="000001349B47A740" astParent="000001349B479BA0" astOperand1="000001349B47A4A0" astOperand2="000001349B479360"/>
+    <token id="000001349B479EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B47A500"/>
+    <token id="000001349B47A500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B479180" astOperand1="000001349B479EA0" astOperand2="000001349B479AE0"/>
+    <token id="000001349B479AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913904E0" type="name" astParent="000001349B47A500"/>
+    <token id="000001349B479180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913904E0" type="op" astParent="000001349B479E40" astOperand1="000001349B47A500" astOperand2="000001349B479B40"/>
+    <token id="000001349B479B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="value" scope="00000134913904E0" type="name" astParent="000001349B479180"/>
+    <token id="000001349B479E40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913904E0" astParent="000001349B47A320" astOperand1="000001349B479180" astOperand2="000001349B47A020"/>
+    <token id="000001349B479C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B4791E0"/>
+    <token id="000001349B4791E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B479FC0" astOperand1="000001349B479C00" astOperand2="000001349B479240"/>
+    <token id="000001349B479240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="UI" scope="00000134913904E0" type="name" astParent="000001349B4791E0"/>
+    <token id="000001349B479FC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B479C60" astOperand1="000001349B4791E0" astOperand2="000001349B479660"/>
+    <token id="000001349B479660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B479FC0"/>
+    <token id="000001349B479C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B47A020" astOperand1="000001349B479FC0" astOperand2="000001349B479600"/>
+    <token id="000001349B479600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Interop" scope="00000134913904E0" type="name" astParent="000001349B479C60"/>
+    <token id="000001349B47A020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B479E40" astOperand1="000001349B479C60" astOperand2="000001349B479300"/>
+    <token id="000001349B47A080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="TypeName" scope="00000134913904E0" type="name"/>
+    <token id="000001349B479300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="targetType" scope="00000134913904E0" type="name" varId="5" astParent="000001349B47A020"/>
+    <token id="000001349B47A320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913904E0" astParent="000001349B479360" astOperand1="000001349B479E40" astOperand2="000001349B47A560"/>
+    <token id="000001349B47A380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B47A0E0"/>
+    <token id="000001349B47A0E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B47A560" astOperand1="000001349B47A380" astOperand2="000001349B47A860"/>
+    <token id="000001349B47A860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Object" scope="00000134913904E0" type="name" astParent="000001349B47A0E0"/>
+    <token id="000001349B47A560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913904E0" type="op" astParent="000001349B47A320" astOperand1="000001349B47A0E0" astOperand2="000001349B4796C0"/>
+    <token id="000001349B4796C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="parameter" scope="00000134913904E0" type="name" astParent="000001349B47A560"/>
+    <token id="000001349B479360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="," scope="00000134913904E0" astParent="000001349B47A260" astOperand1="000001349B47A320" astOperand2="000001349B47A6E0"/>
+    <token id="000001349B47A5C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="Platform" scope="00000134913904E0" type="name" astParent="000001349B47A620"/>
+    <token id="000001349B47A620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="::" scope="00000134913904E0" astParent="000001349B47A6E0" astOperand1="000001349B47A5C0" astOperand2="000001349B47A680"/>
+    <token id="000001349B47A680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="String" scope="00000134913904E0" type="name" astParent="000001349B47A620"/>
+    <token id="000001349B47A6E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="^" scope="00000134913904E0" type="op" astParent="000001349B479360" astOperand1="000001349B47A620" astOperand2="000001349B4794E0"/>
+    <token id="000001349B4794E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str="language" scope="00000134913904E0" type="name" astParent="000001349B47A6E0"/>
+    <token id="000001349B47A740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str=")" scope="00000134913904E0" link="000001349B47A260"/>
+    <token id="000001349B4793C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="36" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47A7A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="37" str="}" scope="00000134913904E0" link="000001349B478400"/>
+    <token id="000001349B47A800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="37" str=";" scope="00000134913904E0"/>
+    <token id="000001349B479420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="39" str="}" scope="00000134913904E0" link="000001349B485EA0"/>
+    <token id="000001349B479540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.h" linenr="40" str="}" scope="00000134913904E0" link="000001349B4857E0"/>
+    <token id="000001349B479480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str="using" scope="00000134913904E0" type="name"/>
+    <token id="000001349B4795A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47BDC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str="CalculatorApp" scope="00000134913904E0" type="name" astParent="000001349B47B280"/>
+    <token id="000001349B47B280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str="::" scope="00000134913904E0" astOperand1="000001349B47BDC0" astOperand2="000001349B47AF80"/>
+    <token id="000001349B47AF80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str="Common" scope="00000134913904E0" type="name" astParent="000001349B47B280"/>
+    <token id="000001349B47B940" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="7" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47B640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="9" str="using" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47B9A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="9" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47AFE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="9" str="Platform" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47B700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="9" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47A8C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str="using" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47AAA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47BB20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B47B460"/>
+    <token id="000001349B47B460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str="::" scope="00000134913904E0" astOperand1="000001349B47BB20" astOperand2="000001349B47B100"/>
+    <token id="000001349B47B100" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str="Foundation" scope="00000134913904E0" type="name" astParent="000001349B47B460"/>
+    <token id="000001349B47BB80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="10" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47AB60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="using" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47BE80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47BA00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B47B040"/>
+    <token id="000001349B47B040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="::" scope="00000134913904E0" astParent="000001349B47AC80" astOperand1="000001349B47BA00" astOperand2="000001349B47ACE0"/>
+    <token id="000001349B47ACE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="UI" scope="00000134913904E0" type="name" astParent="000001349B47B040"/>
+    <token id="000001349B47AC80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="::" scope="00000134913904E0" astOperand1="000001349B47B040" astOperand2="000001349B47B6A0"/>
+    <token id="000001349B47B6A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B47AC80"/>
+    <token id="000001349B47B7C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="11" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47B4C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="using" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47BBE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47AD40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="Windows" scope="00000134913904E0" type="name" astParent="000001349B47ABC0"/>
+    <token id="000001349B47ABC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="::" scope="00000134913904E0" astParent="000001349B47B0A0" astOperand1="000001349B47AD40" astOperand2="000001349B47BE20"/>
+    <token id="000001349B47BE20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="UI" scope="00000134913904E0" type="name" astParent="000001349B47ABC0"/>
+    <token id="000001349B47B0A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="::" scope="00000134913904E0" astParent="000001349B47AA40" astOperand1="000001349B47ABC0" astOperand2="000001349B47ADA0"/>
+    <token id="000001349B47ADA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="Xaml" scope="00000134913904E0" type="name" astParent="000001349B47B0A0"/>
+    <token id="000001349B47AA40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="::" scope="00000134913904E0" astOperand1="000001349B47B0A0" astOperand2="000001349B47B820"/>
+    <token id="000001349B47B820" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str="Interop" scope="00000134913904E0" type="name" astParent="000001349B47AA40"/>
+    <token id="000001349B47A920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="12" str=";" scope="00000134913904E0"/>
+    <token id="000001349B47B160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="14" str="namespace" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47C000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="14" str="CalculatorApp" scope="00000134913904E0" type="name"/>
+    <token id="000001349B47B520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="15" str="{" scope="000001349138FA40" link="000001349B482720"/>
+    <token id="000001349B47BA60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="16" str="namespace" scope="000001349138FA40" type="name"/>
+    <token id="000001349B47BC40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="16" str="Converters" scope="000001349138FA40" type="name"/>
+    <token id="000001349B47AC20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="17" str="{" scope="000001349138F0B0" link="000001349B482D80"/>
+    <token id="000001349B47BD00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47BCA0"/>
+    <token id="000001349B47BCA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B47BD00" astOperand2="000001349B47B1C0"/>
+    <token id="000001349B47B880" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="BooleanToVisibilityConverter" scope="000001349138F0B0" type="name" astParent="000001349B47BEE0"/>
+    <token id="000001349B47BEE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="::" scope="000001349138F0B0" astParent="000001349B47B1C0" astOperand1="000001349B47B880" astOperand2="000001349B47B2E0"/>
+    <token id="000001349B47B2E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="Convert" scope="000001349138F0B0" type="name" astParent="000001349B47BEE0"/>
+    <token id="000001349B47B1C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="(" scope="000001349138F0B0" link="000001349B47B3A0" astParent="000001349B47BCA0" astOperand1="000001349B47BEE0" astOperand2="000001349B47BFA0"/>
+    <token id="000001349B47BAC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47B760"/>
+    <token id="000001349B47B760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47B220" astOperand1="000001349B47BAC0" astOperand2="000001349B47BD60"/>
+    <token id="000001349B47BD60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="value" scope="000001349138F0B0" type="name" astParent="000001349B47B760"/>
+    <token id="000001349B47B220" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B47AB00" astOperand1="000001349B47B760" astOperand2="000001349B47A980"/>
+    <token id="000001349B47B8E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47A980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="targetType" scope="000001349138F0B0" type="name" varId="6" astParent="000001349B47B220"/>
+    <token id="000001349B47AB00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B47BFA0" astOperand1="000001349B47B220" astOperand2="000001349B47B580"/>
+    <token id="000001349B47BF40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47B580"/>
+    <token id="000001349B47B580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47AB00" astOperand1="000001349B47BF40" astOperand2="000001349B47B340"/>
+    <token id="000001349B47B340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B47B580"/>
+    <token id="000001349B47BFA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="," scope="000001349138F0B0" astParent="000001349B47B1C0" astOperand1="000001349B47AB00" astOperand2="000001349B47C060"/>
+    <token id="000001349B47AE00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="String" scope="000001349138F0B0" type="name" astParent="000001349B47C060"/>
+    <token id="000001349B47C060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47BFA0" astOperand1="000001349B47AE00" astOperand2="000001349B47A9E0"/>
+    <token id="000001349B47A9E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str="language" scope="000001349138F0B0" type="name" astParent="000001349B47C060"/>
+    <token id="000001349B47B3A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="18" str=")" scope="000001349138F0B0" link="000001349B47B1C0"/>
+    <token id="000001349B47AE60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="19" str="{" scope="000001349138F0B0" link="000001349B47D860"/>
+    <token id="000001349B47AEC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="20" str="(" scope="000001349138F0B0" link="000001349B47B400" astOperand1="000001349B47B5E0" valueType-type="void"/>
+    <token id="000001349B47AF20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="20" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47B400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="20" str=")" scope="000001349138F0B0" link="000001349B47AEC0"/>
+    <token id="000001349B47B5E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="20" str="targetType" scope="000001349138F0B0" type="name" varId="6" astParent="000001349B47AEC0"/>
+    <token id="000001349B47D320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="20" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47C540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="21" str="(" scope="000001349138F0B0" link="000001349B47D620" astOperand1="000001349B47C780" valueType-type="void"/>
+    <token id="000001349B47C360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="21" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47D620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="21" str=")" scope="000001349138F0B0" link="000001349B47C540"/>
+    <token id="000001349B47C780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="21" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B47C540"/>
+    <token id="000001349B47C5A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="21" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47D680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="22" str="(" scope="000001349138F0B0" link="000001349B47D3E0" astOperand1="000001349B47C840" valueType-type="void"/>
+    <token id="000001349B47CCC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="22" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47D3E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="22" str=")" scope="000001349138F0B0" link="000001349B47D680"/>
+    <token id="000001349B47C840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="22" str="language" scope="000001349138F0B0" type="name" astParent="000001349B47D680"/>
+    <token id="000001349B47C3C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="22" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47CF60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="auto" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47D380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="boxedBool" scope="000001349138F0B0" type="name" varId="7"/>
+    <token id="000001349B47D4A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B478A60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="boxedBool" scope="000001349138F0B0" type="name" varId="7" astParent="000001349B482360"/>
+    <token id="000001349B482360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B478A60" astOperand2="000001349B47D6E0"/>
+    <token id="000001349B47CC60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="dynamic_cast" scope="000001349138F0B0" type="name" function="00000134A213FFE0" astParent="000001349B47D6E0"/>
+    <token id="000001349B47D500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="&lt;" scope="000001349138F0B0" link="000001349B47D560"/>
+    <token id="000001349B47CF00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="Box" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47C180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="&lt;" scope="000001349138F0B0" link="000001349B47CEA0"/>
+    <token id="000001349B47C120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="bool" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47CEA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="&gt;" scope="000001349138F0B0" link="000001349B47C180"/>
+    <token id="000001349B47C4E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="^" scope="000001349138F0B0" type="op"/>
+    <token id="000001349B47D560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="&gt;" scope="000001349138F0B0" link="000001349B47D500"/>
+    <token id="000001349B47D6E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="(" scope="000001349138F0B0" link="000001349B47CE40" astParent="000001349B482360" astOperand1="000001349B47CC60" astOperand2="000001349B47C420"/>
+    <token id="000001349B47C420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str="value" scope="000001349138F0B0" type="name" astParent="000001349B47D6E0"/>
+    <token id="000001349B47CE40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str=")" scope="000001349138F0B0" link="000001349B47D6E0"/>
+    <token id="000001349B47C1E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="24" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47D440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="auto" scope="000001349138F0B0" type="name" valueType-type="bool"/>
+    <token id="000001349B47D5C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="boolValue" scope="000001349138F0B0" type="name" varId="8" valueType-type="bool"/>
+    <token id="000001349B47C6C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B482F60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="boolValue" scope="000001349138F0B0" type="name" varId="8" astParent="000001349B482660" valueType-type="bool"/>
+    <token id="000001349B482660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B482F60" astOperand2="000001349B47D740" valueType-type="bool"/>
+    <token id="000001349B47CFC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="boxedBool" scope="000001349138F0B0" type="name" varId="7" astParent="000001349B47C660"/>
+    <token id="000001349B47C660" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="!=" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B47D740" astOperand1="000001349B47CFC0" astOperand2="000001349B47C240" valueType-type="bool"/>
+    <token id="000001349B47C240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="nullptr" scope="000001349138F0B0" type="name" values="00000134A91FB640" astParent="000001349B47C660"/>
+    <token id="000001349B47D740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="&amp;&amp;" scope="000001349138F0B0" type="op" isLogicalOp="True" astParent="000001349B482660" astOperand1="000001349B47C660" astOperand2="000001349B47C9C0" valueType-type="bool"/>
+    <token id="000001349B47C600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="boxedBool" scope="000001349138F0B0" type="name" varId="7" astParent="000001349B47C9C0"/>
+    <token id="000001349B47C9C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="." scope="000001349138F0B0" astParent="000001349B47D740" astOperand1="000001349B47C600" astOperand2="000001349B47C2A0" originalName="->"/>
+    <token id="000001349B47C2A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str="Value" scope="000001349138F0B0" type="name" varId="9" astParent="000001349B47C9C0"/>
+    <token id="000001349B47C720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="25" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47D800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="return" scope="000001349138F0B0" type="name" astOperand1="000001349B47CD20"/>
+    <token id="000001349B47CA20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="BooleanToVisibilityConverter" scope="000001349138F0B0" type="name" astParent="000001349B47D080"/>
+    <token id="000001349B47D080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="::" scope="000001349138F0B0" astParent="000001349B47CD20" astOperand1="000001349B47CA20" astOperand2="000001349B47D7A0"/>
+    <token id="000001349B47D7A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="Convert" scope="000001349138F0B0" type="name" astParent="000001349B47D080"/>
+    <token id="000001349B47CD20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="(" scope="000001349138F0B0" link="000001349B47CDE0" astParent="000001349B47D800" astOperand1="000001349B47D080" astOperand2="000001349B47C300"/>
+    <token id="000001349B47C300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str="boolValue" scope="000001349138F0B0" type="name" varId="8" astParent="000001349B47CD20"/>
+    <token id="000001349B47CDE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str=")" scope="000001349138F0B0" link="000001349B47CD20"/>
+    <token id="000001349B47C480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="26" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47D860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="27" str="}" scope="000001349138F0B0" link="000001349B47AE60"/>
+    <token id="000001349B47CD80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47C7E0"/>
+    <token id="000001349B47C7E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B47CD80" astOperand2="000001349B47C0C0"/>
+    <token id="000001349B47C8A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="BooleanToVisibilityConverter" scope="000001349138F0B0" type="name" astParent="000001349B47C900"/>
+    <token id="000001349B47C900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="::" scope="000001349138F0B0" astParent="000001349B47C0C0" astOperand1="000001349B47C8A0" astOperand2="000001349B47D0E0"/>
+    <token id="000001349B47D0E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="ConvertBack" scope="000001349138F0B0" type="name" astParent="000001349B47C900"/>
+    <token id="000001349B47C0C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="(" scope="000001349138F0B0" link="000001349B47DF20" astParent="000001349B47C7E0" astOperand1="000001349B47C900" astOperand2="000001349B47E700"/>
+    <token id="000001349B47C960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47CAE0"/>
+    <token id="000001349B47CAE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47D140" astOperand1="000001349B47C960" astOperand2="000001349B47CB40"/>
+    <token id="000001349B47CB40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="value" scope="000001349138F0B0" type="name" astParent="000001349B47CAE0"/>
+    <token id="000001349B47D140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="," scope="000001349138F0B0" astParent="000001349B47CC00" astOperand1="000001349B47CAE0" astOperand2="000001349B47D1A0"/>
+    <token id="000001349B47CBA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47D1A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="targetType" scope="000001349138F0B0" type="name" varId="10" astParent="000001349B47D140"/>
+    <token id="000001349B47CC00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="," scope="000001349138F0B0" astParent="000001349B47E700" astOperand1="000001349B47D140" astOperand2="000001349B47D260"/>
+    <token id="000001349B47D200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47D260"/>
+    <token id="000001349B47D260" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47CC00" astOperand1="000001349B47D200" astOperand2="000001349B47D2C0"/>
+    <token id="000001349B47D2C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B47D260"/>
+    <token id="000001349B47E700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="," scope="000001349138F0B0" astParent="000001349B47C0C0" astOperand1="000001349B47CC00" astOperand2="000001349B47E100"/>
+    <token id="000001349B47E4C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="String" scope="000001349138F0B0" type="name" astParent="000001349B47E100"/>
+    <token id="000001349B47E100" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47E700" astOperand1="000001349B47E4C0" astOperand2="000001349B47E940"/>
+    <token id="000001349B47E940" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str="language" scope="000001349138F0B0" type="name" astParent="000001349B47E100"/>
+    <token id="000001349B47DF20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="29" str=")" scope="000001349138F0B0" link="000001349B47C0C0"/>
+    <token id="000001349B47E160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="30" str="{" scope="000001349138F0B0" link="000001349B47E8E0"/>
+    <token id="000001349B47EBE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="31" str="(" scope="000001349138F0B0" link="000001349B47E760" astOperand1="000001349B47E5E0" valueType-type="void"/>
+    <token id="000001349B47DF80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="31" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47E760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="31" str=")" scope="000001349138F0B0" link="000001349B47EBE0"/>
+    <token id="000001349B47E5E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="31" str="targetType" scope="000001349138F0B0" type="name" varId="10" astParent="000001349B47EBE0"/>
+    <token id="000001349B47D8C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="31" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47D920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="32" str="(" scope="000001349138F0B0" link="000001349B47E580" astOperand1="000001349B47DAA0" valueType-type="void"/>
+    <token id="000001349B47E520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="32" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47E580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="32" str=")" scope="000001349138F0B0" link="000001349B47D920"/>
+    <token id="000001349B47DAA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="32" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B47D920"/>
+    <token id="000001349B47EA00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="32" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47DFE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="33" str="(" scope="000001349138F0B0" link="000001349B47E3A0" astOperand1="000001349B47ECA0" valueType-type="void"/>
+    <token id="000001349B47EAC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="33" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47E3A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="33" str=")" scope="000001349138F0B0" link="000001349B47DFE0"/>
+    <token id="000001349B47ECA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="33" str="language" scope="000001349138F0B0" type="name" astParent="000001349B47DFE0"/>
+    <token id="000001349B47E9A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="33" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47E6A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="auto" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47EC40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="visibility" scope="000001349138F0B0" type="name" varId="11"/>
+    <token id="000001349B47E1C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B482900" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="visibility" scope="000001349138F0B0" type="name" varId="11" astParent="000001349B482A20"/>
+    <token id="000001349B482A20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B482900" astOperand2="000001349B47E280"/>
+    <token id="000001349B47D980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="dynamic_cast" scope="000001349138F0B0" type="name" astParent="000001349B47E280"/>
+    <token id="000001349B47E220" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="&lt;" scope="000001349138F0B0" link="000001349B47DE60"/>
+    <token id="000001349B47E640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="Box" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47E0A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="&lt;" scope="000001349138F0B0" link="000001349B47DA40"/>
+    <token id="000001349B47D9E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="Visibility" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47DA40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="&gt;" scope="000001349138F0B0" link="000001349B47E0A0"/>
+    <token id="000001349B47E7C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="^" scope="000001349138F0B0" type="op"/>
+    <token id="000001349B47DE60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="&gt;" scope="000001349138F0B0" link="000001349B47E220"/>
+    <token id="000001349B47E280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="(" scope="000001349138F0B0" link="000001349B47E820" astParent="000001349B482A20" astOperand1="000001349B47D980" astOperand2="000001349B47DE00"/>
+    <token id="000001349B47DE00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str="value" scope="000001349138F0B0" type="name" astParent="000001349B47E280"/>
+    <token id="000001349B47E820" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str=")" scope="000001349138F0B0" link="000001349B47E280"/>
+    <token id="000001349B47E2E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="35" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47DB00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="return" scope="000001349138F0B0" type="name" astOperand1="000001349B47E040"/>
+    <token id="000001349B47EA60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="(" scope="000001349138F0B0" link="000001349B47EEE0"/>
+    <token id="000001349B47EB80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="visibility" scope="000001349138F0B0" type="name" varId="11" astParent="000001349B47E340"/>
+    <token id="000001349B47E340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="!=" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B47E040" astOperand1="000001349B47EB80" astOperand2="000001349B47F060" valueType-type="bool"/>
+    <token id="000001349B47F060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="nullptr" scope="000001349138F0B0" type="name" values="00000134A91FB760" astParent="000001349B47E340"/>
+    <token id="000001349B47E040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="&amp;&amp;" scope="000001349138F0B0" type="op" isLogicalOp="True" astParent="000001349B47DB00" astOperand1="000001349B47E340" astOperand2="000001349B47E400" valueType-type="bool"/>
+    <token id="000001349B47DEC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="visibility" scope="000001349138F0B0" type="name" varId="11" astParent="000001349B47DB60"/>
+    <token id="000001349B47DB60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="." scope="000001349138F0B0" astParent="000001349B47E400" astOperand1="000001349B47DEC0" astOperand2="000001349B47E880" originalName="->"/>
+    <token id="000001349B47E880" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="Value" scope="000001349138F0B0" type="name" varId="12" astParent="000001349B47DB60"/>
+    <token id="000001349B47E400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="==" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B47E040" astOperand1="000001349B47DB60" astOperand2="000001349B47ED60" valueType-type="bool"/>
+    <token id="000001349B47E460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="Visibility" scope="000001349138F0B0" type="name" astParent="000001349B47ED60"/>
+    <token id="000001349B47ED60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="::" scope="000001349138F0B0" astParent="000001349B47E400" astOperand1="000001349B47E460" astOperand2="000001349B47DCE0"/>
+    <token id="000001349B47DCE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str="Visible" scope="000001349138F0B0" type="name" astParent="000001349B47ED60"/>
+    <token id="000001349B47EEE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str=")" scope="000001349138F0B0" link="000001349B47EA60"/>
+    <token id="000001349B47DBC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="36" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B47E8E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="37" str="}" scope="000001349138F0B0" link="000001349B47E160"/>
+    <token id="000001349B47ED00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47DC20"/>
+    <token id="000001349B47DC20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B47ED00" astOperand2="000001349B47EE80"/>
+    <token id="000001349B47EDC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="BooleanToVisibilityNegationConverter" scope="000001349138F0B0" type="name" astParent="000001349B47EB20"/>
+    <token id="000001349B47EB20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="::" scope="000001349138F0B0" astParent="000001349B47EE80" astOperand1="000001349B47EDC0" astOperand2="000001349B47EE20"/>
+    <token id="000001349B47EE20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="Convert" scope="000001349138F0B0" type="name" astParent="000001349B47EB20"/>
+    <token id="000001349B47EE80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="(" scope="000001349138F0B0" link="000001349B47F240" astParent="000001349B47DC20" astOperand1="000001349B47EB20" astOperand2="000001349B480440"/>
+    <token id="000001349B47DC80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47EF40"/>
+    <token id="000001349B47EF40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47DD40" astOperand1="000001349B47DC80" astOperand2="000001349B47EFA0"/>
+    <token id="000001349B47EFA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="value" scope="000001349138F0B0" type="name" astParent="000001349B47EF40"/>
+    <token id="000001349B47DD40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="," scope="000001349138F0B0" astParent="000001349B47FD20" astOperand1="000001349B47EF40" astOperand2="000001349B47DDA0"/>
+    <token id="000001349B47F000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47DDA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="targetType" scope="000001349138F0B0" type="name" varId="13" astParent="000001349B47DD40"/>
+    <token id="000001349B47FD20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="," scope="000001349138F0B0" astParent="000001349B480440" astOperand1="000001349B47DD40" astOperand2="000001349B47F120"/>
+    <token id="000001349B4803E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B47F120"/>
+    <token id="000001349B47F120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="^" scope="000001349138F0B0" type="op" astParent="000001349B47FD20" astOperand1="000001349B4803E0" astOperand2="000001349B47F6C0"/>
+    <token id="000001349B47F6C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B47F120"/>
+    <token id="000001349B480440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="," scope="000001349138F0B0" astParent="000001349B47EE80" astOperand1="000001349B47FD20" astOperand2="000001349B47FC60"/>
+    <token id="000001349B47F1E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="String" scope="000001349138F0B0" type="name" astParent="000001349B47FC60"/>
+    <token id="000001349B47FC60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="^" scope="000001349138F0B0" type="op" astParent="000001349B480440" astOperand1="000001349B47F1E0" astOperand2="000001349B4800E0"/>
+    <token id="000001349B4800E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str="language" scope="000001349138F0B0" type="name" astParent="000001349B47FC60"/>
+    <token id="000001349B47F240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="39" str=")" scope="000001349138F0B0" link="000001349B47EE80"/>
+    <token id="000001349B47F360" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="40" str="{" scope="000001349138F0B0" link="000001349B481100"/>
+    <token id="000001349B47F540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="41" str="(" scope="000001349138F0B0" link="000001349B47FEA0" astOperand1="000001349B47F780" valueType-type="void"/>
+    <token id="000001349B47FCC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="41" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B47FEA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="41" str=")" scope="000001349138F0B0" link="000001349B47F540"/>
+    <token id="000001349B47F780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="41" str="targetType" scope="000001349138F0B0" type="name" varId="13" astParent="000001349B47F540"/>
+    <token id="000001349B480B60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="41" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B481E80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="42" str="(" scope="000001349138F0B0" link="000001349B480FE0" astOperand1="000001349B480CE0" valueType-type="void"/>
+    <token id="000001349B481A00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="42" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B480FE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="42" str=")" scope="000001349138F0B0" link="000001349B481E80"/>
+    <token id="000001349B480CE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="42" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B481E80"/>
+    <token id="000001349B480C80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="42" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B4816A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="43" str="(" scope="000001349138F0B0" link="000001349B481460" astOperand1="000001349B481B20" valueType-type="void"/>
+    <token id="000001349B4817C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="43" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B481460" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="43" str=")" scope="000001349138F0B0" link="000001349B4816A0"/>
+    <token id="000001349B481B20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="43" str="language" scope="000001349138F0B0" type="name" astParent="000001349B4816A0"/>
+    <token id="000001349B480D40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="43" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B480BC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="auto" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B481E20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="boxedBool" scope="000001349138F0B0" type="name" varId="14"/>
+    <token id="000001349B480F80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B482C00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="boxedBool" scope="000001349138F0B0" type="name" varId="14" astParent="000001349B4826C0"/>
+    <token id="000001349B4826C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B482C00" astOperand2="000001349B481CA0"/>
+    <token id="000001349B480DA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="dynamic_cast" scope="000001349138F0B0" type="name" astParent="000001349B481CA0"/>
+    <token id="000001349B481EE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="&lt;" scope="000001349138F0B0" link="000001349B481B80"/>
+    <token id="000001349B4814C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="Box" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B481BE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="&lt;" scope="000001349138F0B0" link="000001349B480C20"/>
+    <token id="000001349B481040" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="bool" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B480C20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="&gt;" scope="000001349138F0B0" link="000001349B481BE0"/>
+    <token id="000001349B481760" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="^" scope="000001349138F0B0" type="op"/>
+    <token id="000001349B481B80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="&gt;" scope="000001349138F0B0" link="000001349B481EE0"/>
+    <token id="000001349B481CA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="(" scope="000001349138F0B0" link="000001349B481D00" astParent="000001349B4826C0" astOperand1="000001349B480DA0" astOperand2="000001349B481520"/>
+    <token id="000001349B481520" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str="value" scope="000001349138F0B0" type="name" astParent="000001349B481CA0"/>
+    <token id="000001349B481D00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str=")" scope="000001349138F0B0" link="000001349B481CA0"/>
+    <token id="000001349B481700" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="45" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B480980" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="auto" scope="000001349138F0B0" type="name" valueType-type="bool"/>
+    <token id="000001349B480920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="boolValue" scope="000001349138F0B0" type="name" varId="15" valueType-type="bool"/>
+    <token id="000001349B481820" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B483080" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="boolValue" scope="000001349138F0B0" type="name" varId="15" astParent="000001349B4830E0" valueType-type="bool"/>
+    <token id="000001349B4830E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B483080" astOperand2="000001349B481640" valueType-type="bool"/>
+    <token id="000001349B480E00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="boxedBool" scope="000001349138F0B0" type="name" varId="14" astParent="000001349B481F40"/>
+    <token id="000001349B481F40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="!=" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B481640" astOperand1="000001349B480E00" astOperand2="000001349B480E60" valueType-type="bool"/>
+    <token id="000001349B480E60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="nullptr" scope="000001349138F0B0" type="name" values="00000134A91FB880" astParent="000001349B481F40"/>
+    <token id="000001349B481640" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="&amp;&amp;" scope="000001349138F0B0" type="op" isLogicalOp="True" astParent="000001349B4830E0" astOperand1="000001349B481F40" astOperand2="000001349B481C40" valueType-type="bool"/>
+    <token id="000001349B4809E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="boxedBool" scope="000001349138F0B0" type="name" varId="14" astParent="000001349B481C40"/>
+    <token id="000001349B481C40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="." scope="000001349138F0B0" astParent="000001349B481640" astOperand1="000001349B4809E0" astOperand2="000001349B481DC0" originalName="->"/>
+    <token id="000001349B481DC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str="Value" scope="000001349138F0B0" type="name" varId="16" astParent="000001349B481C40"/>
+    <token id="000001349B480EC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="46" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B4818E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="return" scope="000001349138F0B0" type="name" astOperand1="000001349B4810A0"/>
+    <token id="000001349B481940" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="BooleanToVisibilityConverter" scope="000001349138F0B0" type="name" astParent="000001349B480F20"/>
+    <token id="000001349B480F20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="::" scope="000001349138F0B0" astParent="000001349B4810A0" astOperand1="000001349B481940" astOperand2="000001349B481280"/>
+    <token id="000001349B481280" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="Convert" scope="000001349138F0B0" type="name" astParent="000001349B480F20"/>
+    <token id="000001349B4810A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="(" scope="000001349138F0B0" link="000001349B482000" astParent="000001349B4818E0" astOperand1="000001349B480F20" astOperand2="000001349B481FA0"/>
+    <token id="000001349B481FA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="!" scope="000001349138F0B0" type="op" isLogicalOp="True" astParent="000001349B4810A0" astOperand1="000001349B481A60" valueType-type="bool"/>
+    <token id="000001349B481A60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str="boolValue" scope="000001349138F0B0" type="name" varId="15" astParent="000001349B481FA0"/>
+    <token id="000001349B482000" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str=")" scope="000001349138F0B0" link="000001349B4810A0"/>
+    <token id="000001349B4811C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="47" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B481100" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="48" str="}" scope="000001349138F0B0" link="000001349B47F360"/>
+    <token id="000001349B480A40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B4819A0"/>
+    <token id="000001349B4819A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="^" scope="000001349138F0B0" type="op" astOperand1="000001349B480A40" astOperand2="000001349B481220"/>
+    <token id="000001349B4815E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="BooleanToVisibilityNegationConverter" scope="000001349138F0B0" type="name" astParent="000001349B481160"/>
+    <token id="000001349B481160" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="::" scope="000001349138F0B0" astParent="000001349B481220" astOperand1="000001349B4815E0" astOperand2="000001349B482060"/>
+    <token id="000001349B482060" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="ConvertBack" scope="000001349138F0B0" type="name" astParent="000001349B481160"/>
+    <token id="000001349B481220" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="(" scope="000001349138F0B0" link="000001349B482780" astParent="000001349B4819A0" astOperand1="000001349B481160" astOperand2="000001349B483500"/>
+    <token id="000001349B4812E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B481340"/>
+    <token id="000001349B481340" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="^" scope="000001349138F0B0" type="op" astParent="000001349B4813A0" astOperand1="000001349B4812E0" astOperand2="000001349B481AC0"/>
+    <token id="000001349B481AC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="value" scope="000001349138F0B0" type="name" astParent="000001349B481340"/>
+    <token id="000001349B4813A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="," scope="000001349138F0B0" astParent="000001349B481580" astOperand1="000001349B481340" astOperand2="000001349B4808C0"/>
+    <token id="000001349B481400" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="TypeName" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B4808C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="targetType" scope="000001349138F0B0" type="name" varId="17" astParent="000001349B4813A0"/>
+    <token id="000001349B481580" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="," scope="000001349138F0B0" astParent="000001349B483500" astOperand1="000001349B4813A0" astOperand2="000001349B480B00"/>
+    <token id="000001349B480AA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="Object" scope="000001349138F0B0" type="name" astParent="000001349B480B00"/>
+    <token id="000001349B480B00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="^" scope="000001349138F0B0" type="op" astParent="000001349B481580" astOperand1="000001349B480AA0" astOperand2="000001349B482AE0"/>
+    <token id="000001349B482AE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B480B00"/>
+    <token id="000001349B483500" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="," scope="000001349138F0B0" astParent="000001349B481220" astOperand1="000001349B481580" astOperand2="000001349B482540"/>
+    <token id="000001349B4820C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="String" scope="000001349138F0B0" type="name" astParent="000001349B482540"/>
+    <token id="000001349B482540" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="^" scope="000001349138F0B0" type="op" astParent="000001349B483500" astOperand1="000001349B4820C0" astOperand2="000001349B4832C0"/>
+    <token id="000001349B4832C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str="language" scope="000001349138F0B0" type="name" astParent="000001349B482540"/>
+    <token id="000001349B482780" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="50" str=")" scope="000001349138F0B0" link="000001349B481220"/>
+    <token id="000001349B4835C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="51" str="{" scope="000001349138F0B0" link="000001349B482BA0"/>
+    <token id="000001349B482A80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="52" str="(" scope="000001349138F0B0" link="000001349B483140" astOperand1="000001349B482E40" valueType-type="void"/>
+    <token id="000001349B4827E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="52" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B483140" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="52" str=")" scope="000001349138F0B0" link="000001349B482A80"/>
+    <token id="000001349B482E40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="52" str="targetType" scope="000001349138F0B0" type="name" varId="17" astParent="000001349B482A80"/>
+    <token id="000001349B4834A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="52" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B483560" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="53" str="(" scope="000001349138F0B0" link="000001349B4831A0" astOperand1="000001349B4825A0" valueType-type="void"/>
+    <token id="000001349B482840" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="53" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B4831A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="53" str=")" scope="000001349138F0B0" link="000001349B483560"/>
+    <token id="000001349B4825A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="53" str="parameter" scope="000001349138F0B0" type="name" astParent="000001349B483560"/>
+    <token id="000001349B4837A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="53" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B482EA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="54" str="(" scope="000001349138F0B0" link="000001349B482B40" astOperand1="000001349B482420" valueType-type="void"/>
+    <token id="000001349B482600" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="54" str="void" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B482B40" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="54" str=")" scope="000001349138F0B0" link="000001349B482EA0"/>
+    <token id="000001349B482420" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="54" str="language" scope="000001349138F0B0" type="name" astParent="000001349B482EA0"/>
+    <token id="000001349B483320" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="54" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B483200" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="auto" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B483620" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="visibility" scope="000001349138F0B0" type="name" varId="18"/>
+    <token id="000001349B4829C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B483920" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="visibility" scope="000001349138F0B0" type="name" varId="18" astParent="000001349B4844C0"/>
+    <token id="000001349B4844C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="=" scope="000001349138F0B0" type="op" isAssignmentOp="True" astOperand1="000001349B483920" astOperand2="000001349B483380"/>
+    <token id="000001349B4824E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="dynamic_cast" scope="000001349138F0B0" type="name" astParent="000001349B483380"/>
+    <token id="000001349B482120" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="&lt;" scope="000001349138F0B0" link="000001349B4823C0"/>
+    <token id="000001349B482FC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="Box" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B483680" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="&lt;" scope="000001349138F0B0" link="000001349B482180"/>
+    <token id="000001349B482C60" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="Visibility" scope="000001349138F0B0" type="name"/>
+    <token id="000001349B482180" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="&gt;" scope="000001349138F0B0" link="000001349B483680"/>
+    <token id="000001349B482DE0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="^" scope="000001349138F0B0" type="op"/>
+    <token id="000001349B4823C0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="&gt;" scope="000001349138F0B0" link="000001349B482120"/>
+    <token id="000001349B483380" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="(" scope="000001349138F0B0" link="000001349B482240" astParent="000001349B4844C0" astOperand1="000001349B4824E0" astOperand2="000001349B482CC0"/>
+    <token id="000001349B482CC0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str="value" scope="000001349138F0B0" type="name" astParent="000001349B483380"/>
+    <token id="000001349B482240" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str=")" scope="000001349138F0B0" link="000001349B483380"/>
+    <token id="000001349B483020" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="56" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B4821E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="return" scope="000001349138F0B0" type="name" astOperand1="000001349B483440"/>
+    <token id="000001349B482960" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="(" scope="000001349138F0B0" link="000001349B4828A0"/>
+    <token id="000001349B483800" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="visibility" scope="000001349138F0B0" type="name" varId="18" astParent="000001349B482D20"/>
+    <token id="000001349B482D20" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="!=" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B483440" astOperand1="000001349B483800" astOperand2="000001349B483260" valueType-type="bool"/>
+    <token id="000001349B483260" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="nullptr" scope="000001349138F0B0" type="name" values="00000134A91FB5C0" astParent="000001349B482D20"/>
+    <token id="000001349B483440" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="&amp;&amp;" scope="000001349138F0B0" type="op" isLogicalOp="True" astParent="000001349B4821E0" astOperand1="000001349B482D20" astOperand2="000001349B4822A0" valueType-type="bool"/>
+    <token id="000001349B482480" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="visibility" scope="000001349138F0B0" type="name" varId="18" astParent="000001349B4836E0"/>
+    <token id="000001349B4836E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="." scope="000001349138F0B0" astParent="000001349B4822A0" astOperand1="000001349B482480" astOperand2="000001349B4833E0" originalName="->"/>
+    <token id="000001349B4833E0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="Value" scope="000001349138F0B0" type="name" varId="19" astParent="000001349B4836E0"/>
+    <token id="000001349B4822A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="!=" scope="000001349138F0B0" type="op" isComparisonOp="True" astParent="000001349B483440" astOperand1="000001349B4836E0" astOperand2="000001349B482F00" valueType-type="bool"/>
+    <token id="000001349B483860" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="Visibility" scope="000001349138F0B0" type="name" astParent="000001349B482F00"/>
+    <token id="000001349B482F00" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="::" scope="000001349138F0B0" astParent="000001349B4822A0" astOperand1="000001349B483860" astOperand2="000001349B482300"/>
+    <token id="000001349B482300" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str="Visible" scope="000001349138F0B0" type="name" astParent="000001349B482F00"/>
+    <token id="000001349B4828A0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str=")" scope="000001349138F0B0" link="000001349B482960"/>
+    <token id="000001349B483740" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="57" str=";" scope="000001349138F0B0"/>
+    <token id="000001349B482BA0" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="58" str="}" scope="000001349138F0B0" link="000001349B4835C0"/>
+    <token id="000001349B482D80" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="60" str="}" scope="000001349138F0B0" link="000001349B47AC20"/>
+    <token id="000001349B482720" file="C:/sample repositories/calculator-master/src/Calculator/Converters/BooleanToVisibilityConverter.cpp" linenr="61" str="}" scope="000001349138FA40" link="000001349B47B520"/>
+  </tokenlist>
+  <scopes>
+    <scope id="00000134913904E0" type="Global"/>
+    <scope id="000001349138FA40" type="Namespace" className="CalculatorApp" bodyStart="000001349B47B520" bodyEnd="000001349B482720" nestedIn="00000134913904E0"/>
+    <scope id="000001349138F0B0" type="Namespace" className="Converters" bodyStart="000001349B47AC20" bodyEnd="000001349B482D80" nestedIn="000001349138FA40">
+      <functionList>
+        <function id="00000134A2140340" tokenDef="000001349B485C00" name="Convert" type="Function">
+          <arg nr="1" variable="0000013491660480"/>
+        </function>
+        <function id="00000134A213FFE0" tokenDef="000001349B47CC60" name="dynamic_cast" type="Function">
+          <arg nr="1" variable="00000134916605D0"/>
+        </function>
+      </functionList>
+    </scope>
+    <scope id="000001349138EA50" type="Function" className="Convert" bodyStart="000001349B4867A0" bodyEnd="000001349B486B60" nestedIn="000001349138F0B0" function="00000134A2140340"/>
+  </scopes>
+  <variables>
+    <var id="0000013491660480" nameToken="000001349B4858A0" typeStartToken="000001349B486560" typeEndToken="000001349B486560" access="Argument" scope="000001349138EA50" constness="0" isArgument="true" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00000134916605D0" nameToken="0000000000000000" typeStartToken="000001349B47C420" typeEndToken="000001349B47C420" access="Argument" scope="0000000000000000" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="00000134A91FB780">
+      <value intvalue="0" condition-line="20" possible="true"/>
+    </values>
+    <values id="00000134A91FB640">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB760">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB880">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="00000134A91FB5C0">
+      <value intvalue="0" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>
